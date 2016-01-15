@@ -1,0 +1,49 @@
+//
+// Outline Style
+// -------------
+
+.outlineStyle-none     { outline-style: none; }
+.outlineStyle-dotted   { outline-style: dotted; }
+.outlineStyle-dashed   { outline-style: dashed; }
+.outlineStyle-solid    { outline-style: solid; }
+.outlineStyle-double   { outline-style: double; }
+.outlineStyle-groove   { outline-style: groove; }
+.outlineStyle-ridge    { outline-style: ridge; }
+.outlineStyle-inset    { outline-style: inset; }
+.outlineStyle-outset   { outline-style: outset; }
+
+@include breakPoint(s) {
+    .breakPointS-outlineStyle-none     { outline-style: none; }
+    .breakPointS-outlineStyle-dotted   { outline-style: dotted; }
+    .breakPointS-outlineStyle-dashed   { outline-style: dashed; }
+    .breakPointS-outlineStyle-solid    { outline-style: solid; }
+    .breakPointS-outlineStyle-double   { outline-style: double; }
+    .breakPointS-outlineStyle-groove   { outline-style: groove; }
+    .breakPointS-outlineStyle-ridge    { outline-style: ridge; }
+    .breakPointS-outlineStyle-inset    { outline-style: inset; }
+    .breakPointS-outlineStyle-outset   { outline-style: outset; }
+}
+
+@include breakPoint(m) {
+    .breakPointM-outlineStyle-none     { outline-style: none; }
+    .breakPointM-outlineStyle-dotted   { outline-style: dotted; }
+    .breakPointM-outlineStyle-dashed   { outline-style: dashed; }
+    .breakPointM-outlineStyle-solid    { outline-style: solid; }
+    .breakPointM-outlineStyle-double   { outline-style: double; }
+    .breakPointM-outlineStyle-groove   { outline-style: groove; }
+    .breakPointM-outlineStyle-ridge    { outline-style: ridge; }
+    .breakPointM-outlineStyle-inset    { outline-style: inset; }
+    .breakPointM-outlineStyle-outset   { outline-style: outset; }
+}
+
+@include breakPoint(l) {
+    .breakPointL-outlineStyle-none     { outline-style: none; }
+    .breakPointL-outlineStyle-dotted   { outline-style: dotted; }
+    .breakPointL-outlineStyle-dashed   { outline-style: dashed; }
+    .breakPointL-outlineStyle-solid    { outline-style: solid; }
+    .breakPointL-outlineStyle-double   { outline-style: double; }
+    .breakPointL-outlineStyle-groove   { outline-style: groove; }
+    .breakPointL-outlineStyle-ridge    { outline-style: ridge; }
+    .breakPointL-outlineStyle-inset    { outline-style: inset; }
+    .breakPointL-outlineStyle-outset   { outline-style: outset; }
+}

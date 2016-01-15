@@ -1,0 +1,7 @@
+//
+// Tap Highlight
+// -------------
+
+//  Prevent iOS adding a black background flash to elements when tapped.
+
+.tapHighlight-none { -webkit-tap-highlight-color: rgba(0,0,0,0); }

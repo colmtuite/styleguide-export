@@ -1,0 +1,134 @@
+//
+// Grid
+// -------------------------
+
+.grid                   { @extend .cf; }
+.grid > div             { @extend .float-left; }
+
+// Columns
+// -------------------------
+
+.grid--1 > div                  { @extend .width-100; }
+.grid--2 > div                  { @extend .width-50; }
+.grid--3 > div                  { @extend .width-33; }
+.grid--4 > div                  { @extend .width-25; }
+.grid--5 > div                  { @extend .width-20; }
+.grid--6 > div                  { width: 16.6666%; }
+
+.grid--6-4 > div:first-child    { @extend .width-60; }
+.grid--6-4 > div:last-child     { @extend .width-40; }
+
+.grid--7-3 > div:first-child    { @extend .width-70; }
+.grid--7-3 > div:last-child     { @extend .width-30; }
+
+// Gutter sizes
+// -------------------------
+
+.grid--xl         { margin-top: -$spacing-xl; margin-left: -$spacing-xl; }
+.grid--xl > div   { padding-top: $spacing-xl; padding-left: $spacing-xl; }
+
+.grid--l         { margin-top: -$spacing-l; margin-left: -$spacing-l; }
+.grid--l > div   { padding-top: $spacing-l; padding-left: $spacing-l; }
+
+.grid--m         { margin-top: -$spacing-m; margin-left: -$spacing-m; }
+.grid--m > div   { padding-top: $spacing-m; padding-left: $spacing-m; }
+
+//
+// Responsive rules
+// -------------------------
+
+@include breakPoint(s) {
+    .breakPointS-grid--1 > div { width: 100%; }
+    .breakPointS-grid--2 > div { width: 50%; }
+    .breakPointS-grid--3 > div { width: 33.3333%; }
+    .breakPointS-grid--4 > div { width: 25%; }
+    .breakPointS-grid--5 > div { width: 20%; }
+    .breakPointS-grid--6 > div { width: 16.6666%; }
+
+    .breakPointS-grid--7-3 > div:first-child    { width: 70%; }
+    .breakPointS-grid--7-3 > div:last-child     { width: 30%; }
+
+    .breakPointS-grid--6-4 > div:first-child    { width: 60%; }
+    .breakPointS-grid--6-4 > div:last-child     { width: 40%; }
+
+    .breakPointS-grid--xl         { margin-top: -$spacing-xl; margin-left: -$spacing-xl; }
+    .breakPointS-grid--xl > div   { padding-top: $spacing-xl; padding-left: $spacing-xl; }
+
+    .breakPointS-grid--l         { margin-top: -$spacing-l; margin-left: -$spacing-l; }
+    .breakPointS-grid--l > div   { padding-top: $spacing-l; padding-left: $spacing-l; }
+
+    .breakPointS-grid--m         { margin-top: -$spacing-m; margin-left: -$spacing-m; }
+    .breakPointS-grid--m > div   { padding-top: $spacing-m; padding-left: $spacing-m; }
+}
+
+@include breakPoint(m) {
+    .breakPointM-grid--1 > div { width: 100%; }
+    .breakPointM-grid--2 > div { width: 50%; }
+    .breakPointM-grid--3 > div { width: 33.3333%; }
+    .breakPointM-grid--4 > div { width: 25%; }
+    .breakPointM-grid--5 > div { width: 20%; }
+    .breakPointM-grid--6 > div { width: 16.6666%; }
+
+    .breakPointM-grid--7-3 > div:first-child    { width: 70%; }
+    .breakPointM-grid--7-3 > div:last-child     { width: 30%; }
+
+    .breakPointM-grid--6-4 > div:first-child    { width: 60%; }
+    .breakPointM-grid--6-4 > div:last-child     { width: 40%; }
+
+    .breakPointM-grid--xl         { margin-top: -$spacing-xl; margin-left: -$spacing-xl; }
+    .breakPointM-grid--xl > div   { padding-top: $spacing-xl; padding-left: $spacing-xl; }
+
+    .breakPointM-grid--l         { margin-top: -$spacing-l; margin-left: -$spacing-l; }
+    .breakPointM-grid--l > div   { padding-top: $spacing-l; padding-left: $spacing-l; }
+
+    .breakPointM-grid--m         { margin-top: -$spacing-m; margin-left: -$spacing-m; }
+    .breakPointM-grid--m > div   { padding-top: $spacing-m; padding-left: $spacing-m; }
+}
+
+@include breakPoint(l) {
+    .breakPointL-grid--1 > div { width: 100%; }
+    .breakPointL-grid--2 > div { width: 50%; }
+    .breakPointL-grid--3 > div { width: 33.3333%; }
+    .breakPointL-grid--4 > div { width: 25%; }
+    .breakPointL-grid--5 > div { width: 20%; }
+    .breakPointL-grid--6 > div { width: 16.6666%; }
+
+    .breakPointL-grid--7-3 > div:first-child    { width: 70%; }
+    .breakPointL-grid--7-3 > div:last-child     { width: 30%; }
+
+    .breakPointL-grid--6-4 > div:first-child    { width: 60%; }
+    .breakPointL-grid--6-4 > div:last-child     { width: 40%; }
+
+    .breakPointL-grid--xl         { margin-top: -$spacing-xl; margin-left: -$spacing-xl; }
+    .breakPointL-grid--xl > div   { padding-top: $spacing-xl; padding-left: $spacing-xl; }
+
+    .breakPointL-grid--l         { margin-top: -$spacing-l; margin-left: -$spacing-l; }
+    .breakPointL-grid--l > div   { padding-top: $spacing-l; padding-left: $spacing-l; }
+
+    .breakPointL-grid--m         { margin-top: -$spacing-m; margin-left: -$spacing-m; }
+    .breakPointL-grid--m > div   { padding-top: $spacing-m; padding-left: $spacing-m; }
+}
+
+@include breakPoint(xl) {
+    .breakPointXL-grid--1 > div { width: 100%; }
+    .breakPointXL-grid--2 > div { width: 50%; }
+    .breakPointXL-grid--3 > div { width: 33.3333%; }
+    .breakPointXL-grid--4 > div { width: 25%; }
+    .breakPointXL-grid--5 > div { width: 20%; }
+    .breakPointXL-grid--6 > div { width: 16.6666%; }
+
+    .breakPointXL-grid--7-3 > div:first-child    { width: 70%; }
+    .breakPointXL-grid--7-3 > div:last-child     { width: 30%; }
+
+    .breakPointXL-grid--6-4 > div:first-child    { width: 60%; }
+    .breakPointXL-grid--6-4 > div:last-child     { width: 40%; }
+
+    .breakPointXL-grid--xl         { margin-top: -$spacing-xl; margin-left: -$spacing-xl; }
+    .breakPointXL-grid--xl > div   { padding-top: $spacing-xl; padding-left: $spacing-xl; }
+
+    .breakPointXL-grid--l         { margin-top: -$spacing-l; margin-left: -$spacing-l; }
+    .breakPointXL-grid--l > div   { padding-top: $spacing-l; padding-left: $spacing-l; }
+
+    .breakPointXL-grid--m         { margin-top: -$spacing-m; margin-left: -$spacing-m; }
+    .breakPointXL-grid--m > div   { padding-top: $spacing-m; padding-left: $spacing-m; }
+}

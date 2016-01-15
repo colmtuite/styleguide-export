@@ -1,0 +1,33 @@
+//
+// Clear
+// -------------
+
+.clear-none    { clear: none; }
+.clear-left    { clear: left; }
+.clear-right   { clear: right; }
+.clear-both    { clear: both; }
+.clear-inherit { clear: inherit; }
+
+@include breakPoint(s) {
+    .breakPointS-clear-none    { clear: none; }
+    .breakPointS-clear-left    { clear: left; }
+    .breakPointS-clear-right   { clear: right; }
+    .breakPointS-clear-both    { clear: both; }
+    .breakPointS-clear-inherit { clear: inherit; }
+}
+
+@include breakPoint(m) {
+    .breakPointM-clear-none    { clear: none; }
+    .breakPointM-clear-left    { clear: left; }
+    .breakPointM-clear-right   { clear: right; }
+    .breakPointM-clear-both    { clear: both; }
+    .breakPointM-clear-inherit { clear: inherit; }
+}
+
+@include breakPoint(l) {
+    .breakPointL-clear-none    { clear: none; }
+    .breakPointL-clear-left    { clear: left; }
+    .breakPointL-clear-right   { clear: right; }
+    .breakPointL-clear-both    { clear: both; }
+    .breakPointL-clear-inherit { clear: inherit; }
+}

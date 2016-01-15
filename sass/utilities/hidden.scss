@@ -1,0 +1,24 @@
+//
+// Hidden
+// -------------------------
+
+// Hide from both screenreaders and browsers
+
+.hidden {
+    display: none !important;
+    @extend .visibility-hidden;
+}
+
+//
+// Visually hide something so that you can apply transition
+// -------------------------
+
+.concealed {
+    @extend .visibility-hidden;
+    @extend .opacity-0;
+}
+
+.disclosed {
+    @extend .visibility-visible;
+    @extend .opacity-100;
+}

@@ -1,0 +1,104 @@
+//
+// Border Colors
+// -------------------------
+
+// This file depends on color-scheme.scss and
+// therefore must follow it in the compiler.
+
+// Single-responsibility classes for every color in the
+// color scheme.
+
+// Brand background colors
+// -------------------------
+
+.borderColor-marvel              { border-color: $marvel; }
+.borderColor-green               { border-color: $green; }
+.borderColor-yellow              { border-color: $yellow; }
+.borderColor-orange              { border-color: $orange; }
+.borderColor-pink                { border-color: $pink; }
+.borderColor-purple              { border-color: $purple; }
+.borderColor-red                 { border-color: $red; }
+
+.borderColor-marvel--d           { border-color: $marvel--d; }
+.borderColor-marvel--l           { border-color: $marvel--l; }
+
+.borderColor-green--d            { border-color: $green--d; }
+.borderColor-green--l            { border-color: $green--l; }
+
+.borderColor-yellow--d           { border-color: $yellow--d; }
+.borderColor-yellow--l           { border-color: $yellow--l; }
+
+.borderColor-orange--d           { border-color: $orange--d; }
+.borderColor-orange--l           { border-color: $orange--l; }
+
+.borderColor-pink--d             { border-color: $pink--d; }
+.borderColor-pink--l             { border-color: $pink--l; }
+
+.borderColor-purple--d           { border-color: $purple--d; }
+.borderColor-purple--l           { border-color: $purple--l; }
+
+.borderColor-red--d              { border-color: $red--d; }
+.borderColor-red--l              { border-color: $red--l; }
+
+// Gray background colors
+// -------------------------
+
+.borderColor-black               { border-color: $black; }
+.borderColor-steel               { border-color: $steel; }
+.borderColor-slate               { border-color: $slate; }
+.borderColor-silver              { border-color: $silver; }
+.borderColor-snow                { border-color: $snow; }
+.borderColor-smoke               { border-color: $smoke; }
+.borderColor-white               { border-color: $white; }
+
+.borderColor-snow--d             { border-color: $snow--d }
+.borderColor-snow--xd            { border-color: $snow--xd }
+
+.borderColor-smoke--d            { border-color: $smoke--d }
+.borderColor-smoke--xd           { border-color: $smoke--xd }
+
+// UI colors
+// -------------------------
+
+.borderColor-blue                { border-color: $blue; }
+.borderColor-positive            { border-color: $positive; }
+.borderColor-negative            { border-color: $negative; }
+.borderColor-warning             { border-color: $warning; }
+
+.borderColor-blue--d             { border-color: $blue--d; }
+.borderColor-blue--l             { border-color: $blue--l; }
+
+// Transparent colors
+// -------------------------
+
+.borderColor-blue--translucent   { border-color: $blue--translucent; }
+.borderColor-blue--transparent   { border-color: $blue--transparent; }
+.borderColor-blue--pellucid      { border-color: $blue--pellucid; }
+.borderColor-blue--limpid        { border-color: $blue--limpid; }
+
+.borderColor-white--translucent  { border-color: $white--translucent; }
+.borderColor-white--transparent  { border-color: $white--transparent; }
+.borderColor-white--pellucid     { border-color: $white--pellucid; }
+.borderColor-white--limpid       { border-color: $white--limpid; }
+
+.borderColor-black--translucent  { border-color: $black--translucent; }
+.borderColor-black--transparent  { border-color: $black--transparent; }
+.borderColor-black--pellucid     { border-color: $black--pellucid; }
+.borderColor-black--limpid       { border-color: $black--limpid; }
+
+// Social colors
+// -------------------------
+
+.borderColor-twitter             { border-color: $twitter; }
+.borderColor-facebook            { border-color: $facebook; }
+.borderColor-dribbble            { border-color: $dribbble; }
+.borderColor-dropbox             { border-color: $dropbox; }
+.borderColor-google              { border-color: $google; }
+.borderColor-instagram           { border-color: $instagram; }
+.borderColor-linkedin            { border-color: $linkedin; }
+
+// Misc
+// -------------------------
+
+.borderColor-transparent         { border-color: transparent; }
+.borderRightColor-transparent    { border-right-color: transparent; }

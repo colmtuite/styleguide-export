@@ -1,0 +1,179 @@
+//
+// Border radius
+// -------------
+
+// Variables
+// -------------
+
+$borderRadius-l: 10px;
+$borderRadius-m: 4px;
+$borderRadius-s: 3px;
+
+// Equal corners
+// -------------
+
+.borderRadius-l       { border-radius: $borderRadius-l; }
+.borderRadius-m       { border-radius: $borderRadius-m; }
+.borderRadius-s       { border-radius: $borderRadius-s; }
+.borderRadius-0       { border-radius: 0; }
+.borderRadius-circle  { border-radius: 50%; }
+
+// Unequal corners
+// -------------
+
+.borderRadiusTop-l    { border-radius: $borderRadius-l $borderRadius-l 0 0; }
+.borderRadiusTop-m    { border-radius: $borderRadius-m $borderRadius-m 0 0; }
+.borderRadiusTop-s    { border-radius: $borderRadius-s $borderRadius-s 0 0; }
+
+.borderRadiusBottom-l { border-radius: 0 0 $borderRadius-l $borderRadius-l; }
+.borderRadiusBottom-m { border-radius: 0 0 $borderRadius-m $borderRadius-m; }
+.borderRadiusBottom-s { border-radius: 0 0 $borderRadius-s $borderRadius-s; }
+
+.borderRadiusLeft-l   { border-radius: $borderRadius-l 0 0 $borderRadius-l; }
+.borderRadiusLeft-m   { border-radius: $borderRadius-m 0 0 $borderRadius-m; }
+.borderRadiusLeft-s   { border-radius: $borderRadius-s 0 0 $borderRadius-s; }
+
+.borderRadiusRight-l  { border-radius: 0 $borderRadius-l $borderRadius-l 0; }
+.borderRadiusRight-m  { border-radius: 0 $borderRadius-m $borderRadius-m 0; }
+.borderRadiusRight-s  { border-radius: 0 $borderRadius-s $borderRadius-s 0; }
+
+
+.borderRadiusBottomLeft-l    { border-radius: 0 0 0 $borderRadius-l; }
+.borderRadiusBottomLeft-m    { border-radius: 0 0 0 $borderRadius-m; }
+.borderRadiusBottomLeft-s    { border-radius: 0 0 0 $borderRadius-s; }
+
+@include breakPoint(s) {
+    // Equal corners
+    // -------------
+
+    .breakPointS-borderRadius-l       { border-radius: $borderRadius-l; }
+    .breakPointS-borderRadius-m       { border-radius: $borderRadius-m; }
+    .breakPointS-borderRadius-s       { border-radius: $borderRadius-s; }
+    .breakPointS-borderRadius-0       { border-radius: 0; }
+    .breakPointS-borderRadius-circle  { border-radius: 50%; }
+
+    // Unequal corners
+    // -------------
+
+    .breakPointS-borderRadiusTop-l    { border-radius: $borderRadius-l $borderRadius-l 0 0; }
+    .breakPointS-borderRadiusTop-m    { border-radius: $borderRadius-m $borderRadius-m 0 0; }
+    .breakPointS-borderRadiusTop-s    { border-radius: $borderRadius-s $borderRadius-s 0 0; }
+
+    .breakPointS-borderRadiusBottom-l { border-radius: 0 0 $borderRadius-l $borderRadius-l; }
+    .breakPointS-borderRadiusBottom-m { border-radius: 0 0 $borderRadius-m $borderRadius-m; }
+    .breakPointS-borderRadiusBottom-s { border-radius: 0 0 $borderRadius-s $borderRadius-s; }
+
+    .breakPointS-borderRadiusLeft-l   { border-radius: $borderRadius-l 0 0 $borderRadius-l; }
+    .breakPointS-borderRadiusLeft-m   { border-radius: $borderRadius-m 0 0 $borderRadius-m; }
+    .breakPointS-borderRadiusLeft-s   { border-radius: $borderRadius-s 0 0 $borderRadius-s; }
+
+    .breakPointS-borderRadiusRight-l  { border-radius: 0 $borderRadius-l $borderRadius-l 0; }
+    .breakPointS-borderRadiusRight-m  { border-radius: 0 $borderRadius-m $borderRadius-m 0; }
+    .breakPointS-borderRadiusRight-s  { border-radius: 0 $borderRadius-s $borderRadius-s 0; }
+
+    .breakPointS-borderRadiusBottomLeft-l    { border-radius: 0 0 0 $borderRadius-l; }
+    .breakPointS-borderRadiusBottomLeft-m    { border-radius: 0 0 0 $borderRadius-m; }
+    .breakPointS-borderRadiusBottomLeft-s    { border-radius: 0 0 0 $borderRadius-s; }
+}
+
+@include breakPoint(m) {
+    // Equal corners
+    // -------------
+
+    .breakPointM-borderRadius-l       { border-radius: $borderRadius-l; }
+    .breakPointM-borderRadius-m       { border-radius: $borderRadius-m; }
+    .breakPointM-borderRadius-s       { border-radius: $borderRadius-s; }
+    .breakPointM-borderRadius-0       { border-radius: 0; }
+    .breakPointM-borderRadius-circle  { border-radius: 50%; }
+
+    // Unequal corners
+    // -------------
+
+    .breakPointM-borderRadiusTop-l    { border-radius: $borderRadius-l $borderRadius-l 0 0; }
+    .breakPointM-borderRadiusTop-m    { border-radius: $borderRadius-m $borderRadius-m 0 0; }
+    .breakPointM-borderRadiusTop-s    { border-radius: $borderRadius-s $borderRadius-s 0 0; }
+
+    .breakPointM-borderRadiusBottom-l { border-radius: 0 0 $borderRadius-l $borderRadius-l; }
+    .breakPointM-borderRadiusBottom-m { border-radius: 0 0 $borderRadius-m $borderRadius-m; }
+    .breakPointM-borderRadiusBottom-s { border-radius: 0 0 $borderRadius-s $borderRadius-s; }
+
+    .breakPointM-borderRadiusLeft-l   { border-radius: $borderRadius-l 0 0 $borderRadius-l; }
+    .breakPointM-borderRadiusLeft-m   { border-radius: $borderRadius-m 0 0 $borderRadius-m; }
+    .breakPointM-borderRadiusLeft-s   { border-radius: $borderRadius-s 0 0 $borderRadius-s; }
+
+    .breakPointM-borderRadiusRight-l  { border-radius: 0 $borderRadius-l $borderRadius-l 0; }
+    .breakPointM-borderRadiusRight-m  { border-radius: 0 $borderRadius-m $borderRadius-m 0; }
+    .breakPointM-borderRadiusRight-s  { border-radius: 0 $borderRadius-s $borderRadius-s 0; }
+
+    .breakPointM-borderRadiusBottomLeft-l    { border-radius: 0 0 0 $borderRadius-l; }
+    .breakPointM-borderRadiusBottomLeft-m    { border-radius: 0 0 0 $borderRadius-m; }
+    .breakPointM-borderRadiusBottomLeft-s    { border-radius: 0 0 0 $borderRadius-s; }
+}
+
+@include breakPoint(l) {
+    // Equal corners
+    // -------------
+
+    .breakPointL-borderRadius-l       { border-radius: $borderRadius-l; }
+    .breakPointL-borderRadius-m       { border-radius: $borderRadius-m; }
+    .breakPointL-borderRadius-s       { border-radius: $borderRadius-s; }
+    .breakPointL-borderRadius-0       { border-radius: 0; }
+    .breakPointL-borderRadius-circle  { border-radius: 50%; }
+
+    // Unequal corners
+    // -------------
+
+    .breakPointL-borderRadiusTop-l    { border-radius: $borderRadius-l $borderRadius-l 0 0; }
+    .breakPointL-borderRadiusTop-m    { border-radius: $borderRadius-m $borderRadius-m 0 0; }
+    .breakPointL-borderRadiusTop-s    { border-radius: $borderRadius-s $borderRadius-s 0 0; }
+
+    .breakPointL-borderRadiusBottom-l { border-radius: 0 0 $borderRadius-l $borderRadius-l; }
+    .breakPointL-borderRadiusBottom-m { border-radius: 0 0 $borderRadius-m $borderRadius-m; }
+    .breakPointL-borderRadiusBottom-s { border-radius: 0 0 $borderRadius-s $borderRadius-s; }
+
+    .breakPointL-borderRadiusLeft-l   { border-radius: $borderRadius-l 0 0 $borderRadius-l; }
+    .breakPointL-borderRadiusLeft-m   { border-radius: $borderRadius-m 0 0 $borderRadius-m; }
+    .breakPointL-borderRadiusLeft-s   { border-radius: $borderRadius-s 0 0 $borderRadius-s; }
+
+    .breakPointL-borderRadiusRight-l  { border-radius: 0 $borderRadius-l $borderRadius-l 0; }
+    .breakPointL-borderRadiusRight-m  { border-radius: 0 $borderRadius-m $borderRadius-m 0; }
+    .breakPointL-borderRadiusRight-s  { border-radius: 0 $borderRadius-s $borderRadius-s 0; }
+
+    .breakPointL-borderRadiusBottomLeft-l    { border-radius: 0 0 0 $borderRadius-l; }
+    .breakPointL-borderRadiusBottomLeft-m    { border-radius: 0 0 0 $borderRadius-m; }
+    .breakPointL-borderRadiusBottomLeft-s    { border-radius: 0 0 0 $borderRadius-s; }
+}
+
+@include breakPoint(xl) {
+    // Equal corners
+    // -------------
+
+    .breakPointXL-borderRadius-l       { border-radius: $borderRadius-l; }
+    .breakPointXL-borderRadius-m       { border-radius: $borderRadius-m; }
+    .breakPointXL-borderRadius-s       { border-radius: $borderRadius-s; }
+    .breakPointXL-borderRadius-0       { border-radius: 0; }
+    .breakPointXL-borderRadius-circle  { border-radius: 50%; }
+
+    // Unequal corners
+    // -------------
+
+    .breakPointXL-borderRadiusTop-l    { border-radius: $borderRadius-l $borderRadius-l 0 0; }
+    .breakPointXL-borderRadiusTop-m    { border-radius: $borderRadius-m $borderRadius-m 0 0; }
+    .breakPointXL-borderRadiusTop-s    { border-radius: $borderRadius-s $borderRadius-s 0 0; }
+
+    .breakPointXL-borderRadiusBottom-l { border-radius: 0 0 $borderRadius-l $borderRadius-l; }
+    .breakPointXL-borderRadiusBottom-m { border-radius: 0 0 $borderRadius-m $borderRadius-m; }
+    .breakPointXL-borderRadiusBottom-s { border-radius: 0 0 $borderRadius-s $borderRadius-s; }
+
+    .breakPointXL-borderRadiusLeft-l   { border-radius: $borderRadius-l 0 0 $borderRadius-l; }
+    .breakPointXL-borderRadiusLeft-m   { border-radius: $borderRadius-m 0 0 $borderRadius-m; }
+    .breakPointXL-borderRadiusLeft-s   { border-radius: $borderRadius-s 0 0 $borderRadius-s; }
+
+    .breakPointXL-borderRadiusRight-l  { border-radius: 0 $borderRadius-l $borderRadius-l 0; }
+    .breakPointXL-borderRadiusRight-m  { border-radius: 0 $borderRadius-m $borderRadius-m 0; }
+    .breakPointXL-borderRadiusRight-s  { border-radius: 0 $borderRadius-s $borderRadius-s 0; }
+
+    .breakPointXL-borderRadiusBottomLeft-l    { border-radius: 0 0 0 $borderRadius-l; }
+    .breakPointXL-borderRadiusBottomLeft-m    { border-radius: 0 0 0 $borderRadius-m; }
+    .breakPointXL-borderRadiusBottomLeft-s    { border-radius: 0 0 0 $borderRadius-s; }
+}

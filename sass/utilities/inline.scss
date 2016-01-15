@@ -1,0 +1,29 @@
+//
+//  Inline
+//  -------------------------
+
+//  Place elements inline. Useful for navs, horizontal lists, controls etc.
+//
+//  How to use:
+//
+//  <div class="inline">
+//    <div><a href=#>Home</a></div>
+//    <div><a href=#>About</a></div>
+//    <div><a href=#>Pricing</a></div>
+//    <div><a href=#>Contact</a></div>
+//  </div>
+
+.inline                         { @extend .cf; font-size: 0; }
+.inline > div                   { @extend .display-inlineBlock; }
+
+@include breakPoint(s) {
+    .breakPointS-inline         { @extend .cf; font-size: 0; }
+}
+
+@include breakPoint(m) {
+    .breakPointM-inline         { @extend .cf; font-size: 0; }
+}
+
+@include breakPoint(l) {
+    .breakPointL-inline         { @extend .cf; font-size: 0; }
+}

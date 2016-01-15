@@ -1,0 +1,45 @@
+//
+// Width break points
+// -------------
+
+$breakpoint-s: 480px;
+$breakpoint-m: 768px;
+$breakpoint-l: 1180px;
+$breakpoint-xl: 1320px;
+
+@mixin breakPoint($point) {
+    @if $point == s {
+        @media screen and (min-width: $breakpoint-s) {
+        	@content;
+        }
+    }
+    @else if $point == m {
+        @media screen and (min-width: $breakpoint-m) {
+            @content;
+        }
+    }
+    @else if $point == l {
+        @media screen and (min-width: $breakpoint-l) {
+            @content;
+        }
+    }
+    @else if $point == xl {
+        @media screen and (min-width: $breakpoint-xl) {
+            @content;
+        }
+    }
+}
+
+//
+// Height break points — these are
+// -------------
+
+$breakpointHeight-m: 800px;
+
+@mixin breakPointHeight($point) {
+    @if $point == m {
+        @media screen and (max-height: $breakpointHeight-m) {
+            @content;
+        }
+    }
+}

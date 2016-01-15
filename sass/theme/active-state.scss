@@ -1,0 +1,16 @@
+//
+// Active states
+// -------------------------
+
+// Box shadows
+// -------------------------
+
+.boxShadow-deboss--active:active          { @extend .boxShadow-deboss; }
+.boxShadow-emboss--active:active          { @extend .boxShadow-emboss; }
+.boxShadow-depress--active:active         { @extend .boxShadow-depress; }
+.boxShadow-smokeDepress--active:active    { @extend .boxShadow-smokeDepress; }
+
+// Transition properties
+// -------------------------
+
+.tp-none--active:active                   { transition-property: none; }

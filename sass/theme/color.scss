@@ -1,0 +1,404 @@
+//
+// Colors
+// -------------------------
+
+// This file depends on color-scheme.scss and
+// therefore must follow it in the compiler.
+
+// Single-responsibility classes for every color in the
+// color scheme.
+
+// Brand background colors
+// -------------------------
+
+.c-marvel              { color: $marvel; }
+.c-green               { color: $green; }
+.c-yellow              { color: $yellow; }
+.c-orange              { color: $orange; }
+.c-pink                { color: $pink; }
+.c-purple              { color: $purple; }
+.c-red                 { color: $red; }
+
+.c-marvel--d           { color: $marvel--d; }
+.c-marvel--l           { color: $marvel--l; }
+
+.c-green--d            { color: $green--d; }
+.c-green--l            { color: $green--l; }
+
+.c-yellow--d           { color: $yellow--d; }
+.c-yellow--l           { color: $yellow--l; }
+
+.c-orange--d           { color: $orange--d; }
+.c-orange--l           { color: $orange--l; }
+
+.c-pink--d             { color: $pink--d; }
+.c-pink--l             { color: $pink--l; }
+
+.c-purple--d           { color: $purple--d; }
+.c-purple--l           { color: $purple--l; }
+
+.c-red--d              { color: $red--d; }
+.c-red--l              { color: $red--l; }
+
+// Gray background colors
+// -------------------------
+
+.c-black               { color: $black; }
+.c-steel               { color: $steel; }
+.c-slate               { color: $slate; }
+.c-silver              { color: $silver; }
+.c-snow                { color: $snow; }
+.c-smoke               { color: $smoke; }
+.c-white               { color: $white; }
+
+.c-snow--d             { color: $snow--d }
+.c-snow--xd            { color: $snow--xd }
+
+.c-smoke--d            { color: $smoke--d }
+.c-smoke--xd           { color: $smoke--xd }
+
+// UI colors
+// -------------------------
+
+.c-blue                { color: $blue; }
+.c-positive            { color: $positive; }
+.c-negative            { color: $negative; }
+.c-warning             { color: $warning; }
+
+.c-blue--d             { color: $blue--d; }
+.c-blue--l             { color: $blue--l; }
+
+// Transparent colors
+// -------------------------
+
+.c-blue--translucent   { color: $blue--translucent; }
+.c-blue--transparent   { color: $blue--transparent; }
+.c-blue--pellucid      { color: $blue--pellucid; }
+.c-blue--limpid        { color: $blue--limpid; }
+
+.c-white--translucent  { color: $white--translucent; }
+.c-white--transparent  { color: $white--transparent; }
+.c-white--pellucid     { color: $white--pellucid; }
+.c-white--limpid       { color: $white--limpid; }
+
+.c-black--translucent  { color: $black--translucent; }
+.c-black--transparent  { color: $black--transparent; }
+.c-black--pellucid     { color: $black--pellucid; }
+.c-black--limpid       { color: $black--limpid; }
+
+// Social colors
+// -------------------------
+
+.c-twitter             { color: $twitter; }
+.c-facebook            { color: $facebook; }
+.c-dribbble            { color: $dribbble; }
+.c-dropbox             { color: $dropbox; }
+.c-google              { color: $google; }
+.c-instagram           { color: $instagram; }
+.c-linkedin            { color: $linkedin; }
+
+// Syntax highlighting
+// -------------------------
+
+.hljs-tag              { color: $hljs-tag; }
+.hljs-value            { color: $hljs-value; }
+.hljs-attribute        { color: $hljs-attribute; }
+
+
+//
+// Responsive rules
+// -------------------------
+
+@include breakPoint(s) {
+    // Brand background colors
+    // -------------------------
+
+    .breakPointS-c-marvel              { color: $marvel; }
+    .breakPointS-c-green               { color: $green; }
+    .breakPointS-c-yellow              { color: $yellow; }
+    .breakPointS-c-orange              { color: $orange; }
+    .breakPointS-c-pink                { color: $pink; }
+    .breakPointS-c-purple              { color: $purple; }
+    .breakPointS-c-red                 { color: $red; }
+
+    .breakPointS-c-marvel--d           { color: $marvel--d; }
+    .breakPointS-c-marvel--l           { color: $marvel--l; }
+
+    .breakPointS-c-green--d            { color: $green--d; }
+    .breakPointS-c-green--l            { color: $green--l; }
+
+    .breakPointS-c-yellow--d           { color: $yellow--d; }
+    .breakPointS-c-yellow--l           { color: $yellow--l; }
+
+    .breakPointS-c-orange--d           { color: $orange--d; }
+    .breakPointS-c-orange--l           { color: $orange--l; }
+
+    .breakPointS-c-pink--d             { color: $pink--d; }
+    .breakPointS-c-pink--l             { color: $pink--l; }
+
+    .breakPointS-c-purple--d           { color: $purple--d; }
+    .breakPointS-c-purple--l           { color: $purple--l; }
+
+    .breakPointS-c-red--d              { color: $red--d; }
+    .breakPointS-c-red--l              { color: $red--l; }
+
+    // Gray background colors
+    // -------------------------
+
+    .breakPointS-c-black               { color: $black; }
+    .breakPointS-c-steel               { color: $steel; }
+    .breakPointS-c-slate               { color: $slate; }
+    .breakPointS-c-silver              { color: $silver; }
+    .breakPointS-c-snow                { color: $snow; }
+    .breakPointS-c-smoke               { color: $smoke; }
+    .breakPointS-c-white               { color: $white; }
+
+    .breakPointS-c-snow--d             { color: $snow--d }
+    .breakPointS-c-snow--xd            { color: $snow--xd }
+
+    .breakPointS-c-smoke--d            { color: $smoke--d }
+    .breakPointS-c-smoke--xd           { color: $smoke--xd }
+
+    // UI colors
+    // -------------------------
+
+    .breakPointS-c-blue                { color: $blue; }
+    .breakPointS-c-positive            { color: $positive; }
+    .breakPointS-c-negative            { color: $negative; }
+    .breakPointS-c-warning             { color: $warning; }
+
+    .breakPointS-c-blue--d             { color: $blue--d; }
+    .breakPointS-c-blue--l             { color: $blue--l; }
+
+    // Transparent colors
+    // -------------------------
+
+    .breakPointS-c-blue--translucent   { color: $blue--translucent; }
+    .breakPointS-c-blue--transparent   { color: $blue--transparent; }
+    .breakPointS-c-blue--pellucid      { color: $blue--pellucid; }
+    .breakPointS-c-blue--limpid        { color: $blue--limpid; }
+
+    .breakPointS-c-white--translucent  { color: $white--translucent; }
+    .breakPointS-c-white--transparent  { color: $white--transparent; }
+    .breakPointS-c-white--pellucid     { color: $white--pellucid; }
+    .breakPointS-c-white--limpid       { color: $white--limpid; }
+
+    .breakPointS-c-black--translucent  { color: $black--translucent; }
+    .breakPointS-c-black--transparent  { color: $black--transparent; }
+    .breakPointS-c-black--pellucid     { color: $black--pellucid; }
+    .breakPointS-c-black--limpid       { color: $black--limpid; }
+
+    // Social colors
+    // -------------------------
+
+    .breakPointS-c-twitter             { color: $twitter; }
+    .breakPointS-c-facebook            { color: $facebook; }
+    .breakPointS-c-dribbble            { color: $dribbble; }
+    .breakPointS-c-dropbox             { color: $dropbox; }
+    .breakPointS-c-google              { color: $google; }
+    .breakPointS-c-instagram           { color: $instagram; }
+    .breakPointS-c-linkedin            { color: $linkedin; }
+
+    // Syntax highlighting
+    // -------------------------
+
+    .breakPointS-hljs-tag              { color: $hljs-tag; }
+    .breakPointS-hljs-value            { color: $hljs-value; }
+    .breakPointS-hljs-attribute        { color: $hljs-attribute; }
+}
+
+@include breakPoint(m) {
+    // Brand background colors
+    // -------------------------
+
+    .breakPointM-c-marvel              { color: $marvel; }
+    .breakPointM-c-green               { color: $green; }
+    .breakPointM-c-yellow              { color: $yellow; }
+    .breakPointM-c-orange              { color: $orange; }
+    .breakPointM-c-pink                { color: $pink; }
+    .breakPointM-c-purple              { color: $purple; }
+    .breakPointM-c-red                 { color: $red; }
+
+    .breakPointM-c-marvel--d           { color: $marvel--d; }
+    .breakPointM-c-marvel--l           { color: $marvel--l; }
+
+    .breakPointM-c-green--d            { color: $green--d; }
+    .breakPointM-c-green--l            { color: $green--l; }
+
+    .breakPointM-c-yellow--d           { color: $yellow--d; }
+    .breakPointM-c-yellow--l           { color: $yellow--l; }
+
+    .breakPointM-c-orange--d           { color: $orange--d; }
+    .breakPointM-c-orange--l           { color: $orange--l; }
+
+    .breakPointM-c-pink--d             { color: $pink--d; }
+    .breakPointM-c-pink--l             { color: $pink--l; }
+
+    .breakPointM-c-purple--d           { color: $purple--d; }
+    .breakPointM-c-purple--l           { color: $purple--l; }
+
+    .breakPointM-c-red--d              { color: $red--d; }
+    .breakPointM-c-red--l              { color: $red--l; }
+
+    // Gray background colors
+    // -------------------------
+
+    .breakPointM-c-black               { color: $black; }
+    .breakPointM-c-steel               { color: $steel; }
+    .breakPointM-c-slate               { color: $slate; }
+    .breakPointM-c-silver              { color: $silver; }
+    .breakPointM-c-snow                { color: $snow; }
+    .breakPointM-c-smoke               { color: $smoke; }
+    .breakPointM-c-white               { color: $white; }
+
+    .breakPointM-c-snow--d             { color: $snow--d }
+    .breakPointM-c-snow--xd            { color: $snow--xd }
+
+    .breakPointM-c-smoke--d            { color: $smoke--d }
+    .breakPointM-c-smoke--xd           { color: $smoke--xd }
+
+    // UI colors
+    // -------------------------
+
+    .breakPointM-c-blue                { color: $blue; }
+    .breakPointM-c-positive            { color: $positive; }
+    .breakPointM-c-negative            { color: $negative; }
+    .breakPointM-c-warning             { color: $warning; }
+
+    .breakPointM-c-blue--d             { color: $blue--d; }
+    .breakPointM-c-blue--l             { color: $blue--l; }
+
+    // Transparent colors
+    // -------------------------
+
+    .breakPointM-c-blue--translucent   { color: $blue--translucent; }
+    .breakPointM-c-blue--transparent   { color: $blue--transparent; }
+    .breakPointM-c-blue--pellucid      { color: $blue--pellucid; }
+    .breakPointM-c-blue--limpid        { color: $blue--limpid; }
+
+    .breakPointM-c-white--translucent  { color: $white--translucent; }
+    .breakPointM-c-white--transparent  { color: $white--transparent; }
+    .breakPointM-c-white--pellucid     { color: $white--pellucid; }
+    .breakPointM-c-white--limpid       { color: $white--limpid; }
+
+    .breakPointM-c-black--translucent  { color: $black--translucent; }
+    .breakPointM-c-black--transparent  { color: $black--transparent; }
+    .breakPointM-c-black--pellucid     { color: $black--pellucid; }
+    .breakPointM-c-black--limpid       { color: $black--limpid; }
+
+    // Social colors
+    // -------------------------
+
+    .breakPointM-c-twitter             { color: $twitter; }
+    .breakPointM-c-facebook            { color: $facebook; }
+    .breakPointM-c-dribbble            { color: $dribbble; }
+    .breakPointM-c-dropbox             { color: $dropbox; }
+    .breakPointM-c-google              { color: $google; }
+    .breakPointM-c-instagram           { color: $instagram; }
+    .breakPointM-c-linkedin            { color: $linkedin; }
+
+    // Syntax highlighting
+    // -------------------------
+
+    .breakPointM-hljs-tag              { color: $hljs-tag; }
+    .breakPointM-hljs-value            { color: $hljs-value; }
+    .breakPointM-hljs-attribute        { color: $hljs-attribute; }
+}
+
+@include breakPoint(l) {
+    // Brand background colors
+    // -------------------------
+
+    .breakPointL-c-marvel              { color: $marvel; }
+    .breakPointL-c-green               { color: $green; }
+    .breakPointL-c-yellow              { color: $yellow; }
+    .breakPointL-c-orange              { color: $orange; }
+    .breakPointL-c-pink                { color: $pink; }
+    .breakPointL-c-purple              { color: $purple; }
+    .breakPointL-c-red                 { color: $red; }
+
+    .breakPointL-c-marvel--d           { color: $marvel--d; }
+    .breakPointL-c-marvel--l           { color: $marvel--l; }
+
+    .breakPointL-c-green--d            { color: $green--d; }
+    .breakPointL-c-green--l            { color: $green--l; }
+
+    .breakPointL-c-yellow--d           { color: $yellow--d; }
+    .breakPointL-c-yellow--l           { color: $yellow--l; }
+
+    .breakPointL-c-orange--d           { color: $orange--d; }
+    .breakPointL-c-orange--l           { color: $orange--l; }
+
+    .breakPointL-c-pink--d             { color: $pink--d; }
+    .breakPointL-c-pink--l             { color: $pink--l; }
+
+    .breakPointL-c-purple--d           { color: $purple--d; }
+    .breakPointL-c-purple--l           { color: $purple--l; }
+
+    .breakPointL-c-red--d              { color: $red--d; }
+    .breakPointL-c-red--l              { color: $red--l; }
+
+    // Gray background colors
+    // -------------------------
+
+    .breakPointL-c-black               { color: $black; }
+    .breakPointL-c-steel               { color: $steel; }
+    .breakPointL-c-slate               { color: $slate; }
+    .breakPointL-c-silver              { color: $silver; }
+    .breakPointL-c-snow                { color: $snow; }
+    .breakPointL-c-smoke               { color: $smoke; }
+    .breakPointL-c-white               { color: $white; }
+
+    .breakPointL-c-snow--d             { color: $snow--d }
+    .breakPointL-c-snow--xd            { color: $snow--xd }
+
+    .breakPointL-c-smoke--d            { color: $smoke--d }
+    .breakPointL-c-smoke--xd           { color: $smoke--xd }
+
+    // UI colors
+    // -------------------------
+
+    .breakPointL-c-blue                { color: $blue; }
+    .breakPointL-c-positive            { color: $positive; }
+    .breakPointL-c-negative            { color: $negative; }
+    .breakPointL-c-warning             { color: $warning; }
+
+    .breakPointL-c-blue--d             { color: $blue--d; }
+    .breakPointL-c-blue--l             { color: $blue--l; }
+
+    // Transparent colors
+    // -------------------------
+
+    .breakPointL-c-blue--translucent   { color: $blue--translucent; }
+    .breakPointL-c-blue--transparent   { color: $blue--transparent; }
+    .breakPointL-c-blue--pellucid      { color: $blue--pellucid; }
+    .breakPointL-c-blue--limpid        { color: $blue--limpid; }
+
+    .breakPointL-c-white--translucent  { color: $white--translucent; }
+    .breakPointL-c-white--transparent  { color: $white--transparent; }
+    .breakPointL-c-white--pellucid     { color: $white--pellucid; }
+    .breakPointL-c-white--limpid       { color: $white--limpid; }
+
+    .breakPointL-c-black--translucent  { color: $black--translucent; }
+    .breakPointL-c-black--transparent  { color: $black--transparent; }
+    .breakPointL-c-black--pellucid     { color: $black--pellucid; }
+    .breakPointL-c-black--limpid       { color: $black--limpid; }
+
+    // Social colors
+    // -------------------------
+
+    .breakPointL-c-twitter             { color: $twitter; }
+    .breakPointL-c-facebook            { color: $facebook; }
+    .breakPointL-c-dribbble            { color: $dribbble; }
+    .breakPointL-c-dropbox             { color: $dropbox; }
+    .breakPointL-c-google              { color: $google; }
+    .breakPointL-c-instagram           { color: $instagram; }
+    .breakPointL-c-linkedin            { color: $linkedin; }
+
+    // Syntax highlighting
+    // -------------------------
+
+    .breakPointL-hljs-tag              { color: $hljs-tag; }
+    .breakPointL-hljs-value            { color: $hljs-value; }
+    .breakPointL-hljs-attribute        { color: $hljs-attribute; }
+}

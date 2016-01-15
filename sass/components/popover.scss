@@ -1,0 +1,126 @@
+//
+// Popovers
+// -------------------------
+
+.popover {
+    @extend .position-relative;
+    @extend .bg-white;
+    @extend .borderWidth-1;
+    @extend .borderRadius-m;
+    @extend .borderStyle-solid;
+
+    border-color: $black--pellucid;
+    box-shadow: 0 1px 1px 0 $black--limpid;
+}
+
+// Popover ticks
+// -------------------------
+
+.popover-tick {
+    @extend .position-absolute;
+    @extend .display-block;
+
+    @extend .bg-white;
+    @extend .borderRadius-s;
+
+    width: 14px;
+    height: 14px;
+
+    transform: rotate(45deg);
+}
+
+.horizontally-centered-tick {
+    margin-left: -7px;
+    left: 50%;
+}
+
+.vertically-centered-tick {
+    margin-top: -7px;
+    top: 50%;
+}
+
+// Popover top, right, bottom and left ticks
+// -------------------------
+
+.popover-top-tick {
+    @extend .horizontally-centered-tick;
+
+    top: -6px;
+    box-shadow: -1px -1px 0 0 $black--pellucid;
+}
+
+.popover-right-tick {
+    @extend .vertically-centered-tick;
+
+    right: -6px;
+    box-shadow: 1px -1px 0 0 $black--pellucid;
+}
+
+.popover-bottom-tick {
+    @extend .horizontally-centered-tick;
+
+    bottom: -6px;
+    box-shadow: 1px 1px 0 0 $black--pellucid;
+}
+
+.popover-left-tick {
+    @extend .vertically-centered-tick;
+
+    left: -6px;
+    box-shadow: -1px 1px 0 0 $black--pellucid;
+}
+
+// Popover block
+// -------------------------
+
+.popover-block {
+    @extend .paddingTopBottom-m;
+
+    @extend .bg-snow--hover;
+    @extend .borderWidth-0;
+    @extend .borderRightWidth-1;
+    @extend .borderStyle-solid;
+    @extend .borderColor-smoke;
+
+    @extend .cursor-pointer;
+    @extend .transitionProperty-all;
+    @extend .transitionDuration-s;
+    @extend .transitionTimingFunction-linear;
+
+    width: 140px;
+}
+
+.popover-block:first-child {
+    @extend .borderRadiusLeft-m;
+}
+
+.popover-block:last-child {
+    @extend .borderWidth-0;
+    @extend .borderRadiusRight-m;
+}
+
+.popover-block-icon {
+    @extend .centered;
+    @extend .marginBottom-s;
+
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.popover-list a{
+    @extend .display-block;
+    @extend .paddingTopBottom-s;
+    @extend .paddingLeftRight-m;
+    @extend .textDecoration-none;
+    @extend .fontSize-m;
+    @extend .c-slate;
+    @extend .c-blue--hover;
+}
+
+.popover-separator{
+    @extend .bg-smoke;
+    @extend .marginTopBottom-xxs;
+    height: 1px;
+}

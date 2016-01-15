@@ -1,0 +1,31 @@
+//
+// Position
+// -------------
+
+// 1. Promote fixed elements onto a new layer for performance.
+
+.position-fixed    { position: fixed; backface-visibility: hidden; /* 1 */ }
+.position-absolute { position: absolute; }
+.position-relative { position: relative; }
+.position-static   { position: static; }
+
+@include breakPoint(s) {
+    .breakPointS-position-fixed    { position: fixed; backface-visibility: hidden; /* 1 */ }
+    .breakPointS-position-absolute { position: absolute; }
+    .breakPointS-position-relative { position: relative; }
+    .breakPointS-position-static   { position: static; }
+}
+
+@include breakPoint(m) {
+    .breakPointM-position-fixed    { position: fixed; backface-visibility: hidden; /* 1 */ }
+    .breakPointM-position-absolute { position: absolute; }
+    .breakPointM-position-relative { position: relative; }
+    .breakPointM-position-static   { position: static; }
+}
+
+@include breakPoint(l) {
+    .breakPointL-position-fixed    { position: fixed; backface-visibility: hidden; /* 1 */ }
+    .breakPointL-position-absolute { position: absolute; }
+    .breakPointL-position-relative { position: relative; }
+    .breakPointL-position-static   { position: static; }
+}

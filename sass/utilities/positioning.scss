@@ -1,0 +1,113 @@
+//
+// Positioning
+// -------------------------
+
+// Pin an element to the top left edge of its parent.
+// -------------------------
+.posPinTL {
+    @extend .position-absolute;
+    top: 0;
+    left: 0;
+}
+
+// Pin an element to the top right edge of its parent.
+// -------------------------
+.posPinTR {
+    @extend .position-absolute;
+    top: 0;
+    right: 0;
+}
+
+// Pin an element to the bottom left edge of its parent.
+// -------------------------
+.posPinBL {
+    @extend .position-absolute;
+    bottom: 0;
+    left: 0;
+}
+
+// Pin an element to the bottom left edge of its parent.
+// -------------------------
+.posPinBR {
+    @extend .position-absolute;
+    bottom: 0;
+    right: 0;
+}
+
+// Absolutely center an element vertically and horizontally
+// -------------------------
+.absolutelyCenter {
+    @extend .position-absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+
+// Fix an element to the top left edge.
+// -------------------------
+.posFixTL {
+    @extend .position-fixed;
+    top: 0;
+    left: 0;
+}
+
+// Fix an element to the top right edge.
+// -------------------------
+.posFixTR {
+    @extend .position-fixed;
+    top: 0;
+    right: 0;
+}
+
+// Fix an element to the bottom left edge.
+// -------------------------
+.posFixBL {
+    @extend .position-fixed;
+    bottom: 0;
+    left: 0;
+}
+
+// Fix an element to the bottom left edge.
+// -------------------------
+.posFixBR {
+    @extend .position-fixed;
+    bottom: 0;
+    right: 0;
+}
+
+// Pin an element to all corners. But when a width and/or height are
+// provided, the element will be centered in its nearest
+// relatively-positioned ancestor.
+// -------------------------
+
+.posPinAll {
+    @extend .position-absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+// Fix an element to all corners.
+// -------------------------
+
+.posFixAll {
+    @extend .position-fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+// Fix an element to all corners.
+// -------------------------
+
+.posOffScreen {
+    @extend .position-absolute;
+    top: -999999px;
+    left: -999999px;
+}

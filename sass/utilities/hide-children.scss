@@ -1,0 +1,8 @@
+.hideChildren-child {
+    @extend .opacity-0;
+}
+
+.hideChildren:hover .hideChildren-child {
+    @extend .opacity-100;
+    @extend .transitionDuration-s;
+}

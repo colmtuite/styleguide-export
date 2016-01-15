@@ -1,0 +1,97 @@
+//
+// Widths
+// -------------
+
+.width-10   { width: 10%; }
+.width-15   { width: 15%; }
+.width-20   { width: 20%; }
+.width-25   { width: 25%; }
+.width-30   { width: 30%; }
+.width-33   { width: 33.3333%; }
+.width-35   { width: 35%; }
+.width-40   { width: 40%; }
+.width-45   { width: 45%; }
+.width-50   { width: 50%; }
+.width-55   { width: 55%; }
+.width-60   { width: 60%; }
+.width-65   { width: 65%; }
+.width-70   { width: 70%; }
+.width-75   { width: 75%; }
+.width-80   { width: 80%; }
+.width-85   { width: 85%; }
+.width-90   { width: 90%; }
+.width-95   { width: 95%; }
+.width-100  { width: 100%; }
+.width-auto { width: auto; }
+
+@include breakPoint(s) {
+    .breakPointS-width-10   { width: 10%; }
+    .breakPointS-width-15   { width: 15%; }
+    .breakPointS-width-20   { width: 20%; }
+    .breakPointS-width-25   { width: 25%; }
+    .breakPointS-width-30   { width: 30%; }
+    .breakPointS-width-33   { width: 33.3333%; }
+    .breakPointS-width-35   { width: 35%; }
+    .breakPointS-width-40   { width: 40%; }
+    .breakPointS-width-45   { width: 45%; }
+    .breakPointS-width-50   { width: 50%; }
+    .breakPointS-width-55   { width: 55%; }
+    .breakPointS-width-60   { width: 60%; }
+    .breakPointS-width-65   { width: 65%; }
+    .breakPointS-width-70   { width: 70%; }
+    .breakPointS-width-75   { width: 75%; }
+    .breakPointS-width-80   { width: 80%; }
+    .breakPointS-width-85   { width: 85%; }
+    .breakPointS-width-90   { width: 90%; }
+    .breakPointS-width-95   { width: 95%; }
+    .breakPointS-width-100  { width: 100%; }
+    .breakPointS-width-auto { width: auto; }
+}
+
+@include breakPoint(m) {
+    .breakPointM-width-10   { width: 10%; }
+    .breakPointM-width-15   { width: 15%; }
+    .breakPointM-width-20   { width: 20%; }
+    .breakPointM-width-25   { width: 25%; }
+    .breakPointM-width-30   { width: 30%; }
+    .breakPointM-width-33   { width: 33.3333%; }
+    .breakPointM-width-35   { width: 35%; }
+    .breakPointM-width-40   { width: 40%; }
+    .breakPointM-width-45   { width: 45%; }
+    .breakPointM-width-50   { width: 50%; }
+    .breakPointM-width-55   { width: 55%; }
+    .breakPointM-width-60   { width: 60%; }
+    .breakPointM-width-65   { width: 65%; }
+    .breakPointM-width-70   { width: 70%; }
+    .breakPointM-width-75   { width: 75%; }
+    .breakPointM-width-80   { width: 80%; }
+    .breakPointM-width-85   { width: 85%; }
+    .breakPointM-width-90   { width: 90%; }
+    .breakPointM-width-95   { width: 95%; }
+    .breakPointM-width-100  { width: 100%; }
+    .breakPointM-width-auto { width: auto; }
+}
+
+@include breakPoint(l) {
+    .breakPointL-width-10   { width: 10%; }
+    .breakPointL-width-15   { width: 15%; }
+    .breakPointL-width-20   { width: 20%; }
+    .breakPointL-width-25   { width: 25%; }
+    .breakPointL-width-30   { width: 30%; }
+    .breakPointL-width-33   { width: 33.3333%; }
+    .breakPointL-width-35   { width: 35%; }
+    .breakPointL-width-40   { width: 40%; }
+    .breakPointL-width-45   { width: 45%; }
+    .breakPointL-width-50   { width: 50%; }
+    .breakPointL-width-55   { width: 55%; }
+    .breakPointL-width-60   { width: 60%; }
+    .breakPointL-width-65   { width: 65%; }
+    .breakPointL-width-70   { width: 70%; }
+    .breakPointL-width-75   { width: 75%; }
+    .breakPointL-width-80   { width: 80%; }
+    .breakPointL-width-85   { width: 85%; }
+    .breakPointL-width-90   { width: 90%; }
+    .breakPointL-width-95   { width: 95%; }
+    .breakPointL-width-100  { width: 100%; }
+    .breakPointL-width-auto { width: auto; }
+}

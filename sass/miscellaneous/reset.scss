@@ -1,0 +1,151 @@
+//
+// Custom reset
+// -------------------------
+
+// Reset global margin
+// -------------------------
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+}
+
+// Reset base font size and line-height
+// -------------------------
+
+nav,
+main,
+section,
+article,
+aside,
+header,
+footer,
+div,
+details,
+summary,
+form,
+fieldset,
+textarea,
+select,
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="email"],
+input[type="search"],
+input[type="number"],
+input[type="password"],
+input[type="submit"],
+pre,
+code,
+a,
+button,
+nav:before,
+main:before,
+section:before,
+article:before,
+aside:before,
+header:before,
+footer:before,
+div:before,
+details:before,
+summary:before,
+form:before,
+fieldset:before,
+textarea:before,
+pre:before,
+code:before,
+a:before,
+button:before,
+nav:after,
+main:after,
+section:after,
+article:after,
+aside:after,
+header:after,
+footer:after,
+div:after,
+details:after,
+summary:after,
+form:after,
+fieldset:after,
+textarea:after,
+pre:after,
+code:after,
+a:after,
+button:after {
+    @extend .boxSizing-borderBox;
+}
+
+// Reset base font size and line-height
+// -------------------------
+
+html {
+    font-size: 100%;
+    line-height: 1;
+}
+
+// Allow for full page effects
+// -------------------------
+
+html,
+body {
+    height: 100%;
+}
+
+// Set <body> background color
+// -------------------------
+
+body { background-color: #fff; }
+
+// Reset base image alignment
+// -------------------------
+
+img { vertical-align: bottom; }
+
+// Reset base figure styles
+// -------------------------
+
+figure { margin: 0; }
+
+// Reset font size, weight and margin
+// -------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+small {
+    font-size: 100%;
+    margin: 0;
+    font-weight: normal;
+}
+
+// Reset base font styles
+// -------------------------
+
+html,
+body,
+input,
+button,
+select,
+textarea {
+    @extend .fontFamily-faktSoft;
+    @extend .fontSize-m;
+    @extend .c-black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @extend .textRendering-legibility;
+    line-height: 1;
+}
+
+// Reset mark styles
+// -------------------------
+
+mark {
+    background: none;
+}

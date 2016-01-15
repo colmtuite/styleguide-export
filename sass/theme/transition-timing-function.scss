@@ -1,0 +1,22 @@
+//
+// Transition Timing Function
+// -------------
+
+.transitionTimingFunction-linear         { transition-timing-function: linear; }
+.transitionTimingFunction-ease           { transition-timing-function: ease; }
+.transitionTimingFunction-ease-in        { transition-timing-function: ease-in; }
+.transitionTimingFunction-ease-out       { transition-timing-function: ease-out; }
+.transitionTimingFunction-ease-in-out    { transition-timing-function: ease-in-out; }
+
+//
+// Hover transitions
+// -------------
+
+.transitionTimingFunction-cb--scaleUp    { transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55) }
+
+//
+// Modal transitions
+// -------------
+
+.transitionTimingFunction-cb--scaleOut          { transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000); }
+.transitionTimingFunction-cv-easeOutCircular    { transition-timing-function: cubic-bezier(0.075, 0.820, 0.165, 1.000) }

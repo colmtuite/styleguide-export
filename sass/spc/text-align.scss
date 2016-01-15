@@ -1,0 +1,29 @@
+//
+// Text Align
+// -------------
+
+.textAlign-left     { text-align: left; }
+.textAlign-center   { text-align: center; }
+.textAlign-right    { text-align: right; }
+.textAlign-inherit  { text-align: inherit; }
+
+@include breakPoint(s) {
+    .breakPointS-textAlign-left     { text-align: left; }
+    .breakPointS-textAlign-center   { text-align: center; }
+    .breakPointS-textAlign-right    { text-align: right; }
+    .breakPointS-textAlign-inherit  { text-align: inherit; }
+}
+
+@include breakPoint(m) {
+    .breakPointM-textAlign-left     { text-align: left; }
+    .breakPointM-textAlign-center   { text-align: center; }
+    .breakPointM-textAlign-right    { text-align: right; }
+    .breakPointM-textAlign-inherit  { text-align: inherit; }
+}
+
+@include breakPoint(l) {
+    .breakPointL-textAlign-left     { text-align: left; }
+    .breakPointL-textAlign-center   { text-align: center; }
+    .breakPointL-textAlign-right    { text-align: right; }
+    .breakPointL-textAlign-inherit  { text-align: inherit; }
+}

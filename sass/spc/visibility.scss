@@ -1,0 +1,25 @@
+//
+// Visibility
+// -------------
+
+.visibility-hidden    { visibility: hidden; }
+.visibility-visible   { visibility: visible; }
+.visibility-collapse  { visibility: collapse; }
+
+@include breakPoint(s) {
+    .breakPointS-visibility-hidden    { visibility: hidden; }
+    .breakPointS-visibility-visible   { visibility: visible; }
+    .breakPointS-visibility-collapse  { visibility: collapse; }
+}
+
+@include breakPoint(m) {
+    .breakPointM-visibility-hidden    { visibility: hidden; }
+    .breakPointM-visibility-visible   { visibility: visible; }
+    .breakPointM-visibility-collapse  { visibility: collapse; }
+}
+
+@include breakPoint(l) {
+    .breakPointL-visibility-hidden    { visibility: hidden; }
+    .breakPointL-visibility-visible   { visibility: visible; }
+    .breakPointL-visibility-collapse  { visibility: collapse; }
+}

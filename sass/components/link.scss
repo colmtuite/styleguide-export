@@ -1,0 +1,143 @@
+//
+// Links
+// -------------------------
+
+// Root component
+// -------------------------
+
+.link,
+.link:link {
+    @extend .textDecoration-none;
+    @extend .cursor-pointer;
+    @extend .transitionDuration-m;
+}
+
+.link:focus {
+    outline: thin dotted;
+    outline: 1px auto -webkit-focus-ring-color;
+    outline-offset: 3px;
+}
+
+// General link styles
+// -------------------------
+
+.link--light {
+    @extend .c-silver;
+    @extend .c-black--hover;
+}
+
+.link--light.is-active {
+    @extend .c-marvel;
+    @extend .c-blue--d--hover;
+}
+
+.link--lightReversed {
+    @extend .c-silver;
+    @extend .c-white--hover;
+}
+
+.link--lightReversed.is-active {
+    @extend .c-white;
+    @extend .c-white--hover;
+}
+
+.link--dark {
+    @extend .c-slate;
+    @extend .c-black--hover;
+}
+
+.link--negative {
+    @extend .c-silver;
+    @extend .c-negative--hover;
+}
+
+// Colourful link styles
+// -------------------------
+
+.link--blue {
+    @extend .c-blue;
+    @extend .c-blue--d--hover;
+}
+
+.link--green {
+    @extend .c-green;
+    @extend .c-green--d--hover;
+}
+
+.link--orange {
+    @extend .c-orange;
+    @extend .c-orange--d--hover;
+}
+
+.link--pink {
+    @extend .c-pink;
+    @extend .c-pink--d--hover;
+}
+
+.link--purple {
+    @extend .c-purple;
+    @extend .c-purple--d--hover;
+}
+
+.link--red {
+    @extend .c-red;
+    @extend .c-red--d--hover;
+}
+
+// Opacity link styles
+// -------------------------
+
+.link--opaque {
+    @extend .c-white;
+    @extend .opacity-60;
+    @extend .opacity-100--hover;
+}
+
+.link--opaque.is-active {
+    @extend .c-white;
+    @extend .opacity-100;
+    @extend .c-white--hover;
+}
+
+.link--opaqueReversed {
+    @extend .c-white;
+    @extend .opacity-100;
+    @extend .opacity-60--hover;
+}
+
+// Background link styles
+// -------------------------
+
+.link--snowBg {
+    @extend .c-black;
+    @extend .bg-snow--hover;
+}
+
+
+//
+// Responsive rules
+// -------------------------
+
+@include breakPoint(m) {
+    .breakPointM-link--lightReversed {
+        @extend .c-silver;
+        @extend .c-white--hover;
+    }
+
+    .breakPointM-link--lightReversed.is-active {
+        @extend .c-white;
+        @extend .c-silver--hover;
+    }
+
+    .breakPointM-link--opaque {
+        @extend .c-white;
+        @extend .opacity-60;
+        @extend .opacity-100--hover;
+    }
+
+    .breakPointM-link--opaque.is-active {
+        @extend .c-white;
+        @extend .opacity-100;
+        @extend .c-white--hover;
+    }
+}

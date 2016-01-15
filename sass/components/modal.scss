@@ -1,0 +1,174 @@
+//
+// Modal
+// -------------------------
+
+.modal {
+    @extend .position-relative;
+    @extend .padding-l;
+
+    @extend .concealed;
+
+    @extend .bg-white;
+    @extend .borderWidth-1;
+    @extend .borderStyle-solid;
+    @extend .borderColor-smoke;
+    @extend .borderRadius-l;
+
+    @extend .boxShadow-distant;
+    @extend .centered;
+    @extend .cf;
+
+    @extend .transformStyle-preserve3d;
+    transform: scale(0.5);
+    @extend .transitionProperty-all;
+    @extend .transitionDuration-l;
+    @extend .transitionTimingFunction-cb--scaleOut;
+}
+
+.modal--scrollable {
+    @extend .overflowY-auto;
+    @extend .scrollbar;
+}
+
+// Size variations
+// -------------------------
+
+.modal--s {
+    max-width: 500px;
+    max-height: 750px;
+}
+
+.modal--m {
+    max-width: 800px;
+    max-height: 750px;
+}
+
+// Modal icons
+// -------------------------
+
+$modal-icon-size: 30px;
+
+.modal-icon-wrapper {
+    @extend .concealed;
+    @extend .transitionDuration-xl;
+    @extend .transitionProperty-all;
+    @extend .transitionTimingFunction-easeInOut;
+}
+
+.modal-icon {
+    @extend .transitionDuration-m;
+    @extend .transitionProperty-all;
+
+    @extend .bg-snow--xd;
+    @extend .bg-marvel--hover;
+    @extend .cursor-pointer;
+    @extend .borderRadius-circle;
+
+    @extend .backgroundRepeat-noRepeat;
+    @extend .backgroundPosition-centerCenter;
+
+    width: $modal-icon-size;
+    height: $modal-icon-size;
+    top: -$modal-icon-size;
+}
+
+.modal-iconClose {
+    @extend .posPinTR;
+
+    right: -($modal-icon-size + 10);
+    background-image: url('/static/assets/images/global/icon-cross.svg');
+}
+
+.modal-iconBack {
+    @extend .posPinTL;
+
+    left: -($modal-icon-size + 10);
+    background-image: url('/static/assets/images/global/icon-back.svg');
+}
+
+.modal-iconClose:hover {
+    background-image: url('/static/assets/images/global/icon-cross--hover.svg');
+}
+
+.modal-iconBack:hover {
+    background-image: url('/static/assets/images/global/icon-back--hover.svg');
+}
+
+// Modal subtext
+// -------------------------
+
+.modal-subtext {
+    @extend .concealed;
+    @extend .transitionDuration-xl;
+    @extend .transitionProperty-all;
+    @extend .transitionTimingFunction-cv-easeOutCircular;
+    @extend .textAlign-center;
+}
+
+.modal-subtext--after {
+    @extend .marginTop-l;
+    transform: translateY(30px);
+}
+
+.modal-subtext--before {
+    @extend .marginBottom-l;
+    transform: translateY(-30px);
+}
+
+
+// White screen
+// -------------------------
+
+// TODO: ".overlay", ".overlay.activated" & ".overlay.activated .modal"
+// have to be removed once we have time to tidy up JS
+// -------------------------
+
+.modal-overlay,
+.overlay {
+  	@extend .posFixAll;
+  	@extend .concealed;
+
+    @extend .transitionDuration-l;
+    @extend .transitionProperty-all;
+    @extend .transitionTimingFunction-ease-in-out;
+
+  	@extend .bg-white--translucent;
+  	@extend .zi-overlay;
+}
+
+.modal-overlay.is-active,
+.overlay.activated {
+    @extend .disclosed;
+    @extend .transitionDuration-l;
+    @extend .transitionProperty-all;
+}
+
+.modal-overlay.is-active .modal,
+.overlay.activated .modal {
+    transform: scale(1);
+
+    @extend .disclosed;
+    @extend .transitionProperty-all;
+    @extend .transitionDuration-l;
+    @extend .transitionTimingFunction-cb--scaleOut;
+}
+
+.modal-overlay.is-active .modal-subtext,
+.overlay.activated .modal-subtext {
+    transform: translateY(0);
+
+    @extend .disclosed;
+    @extend .transitionDelay-m;
+    @extend .transitionDuration-xl;
+    @extend .transitionProperty-all;
+    @extend .transitionTimingFunction-cv-easeOutCircular;
+}
+
+.modal-overlay.is-active .modal-icon-wrapper,
+.overlay.activated .modal-icon-wrapper {
+    @extend .disclosed;
+    @extend .transitionDelay-l;
+    @extend .transitionDuration-xl;
+    @extend .transitionProperty-all;
+    @extend .transitionTimingFunction-easeInOut;
+}

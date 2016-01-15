@@ -1,0 +1,54 @@
+//
+// Z-index
+// -------------
+
+// Full z-index scale
+// -------------
+
+.zi-negative  { z-index: -1; }
+.zi-100       { z-index: 100; }
+.zi-200       { z-index: 200; }
+.zi-300       { z-index: 300; }
+.zi-400       { z-index: 400; }
+.zi-500       { z-index: 500; }
+.zi-600       { z-index: 600; }
+.zi-700       { z-index: 700; }
+.zi-800       { z-index: 800; }
+.zi-900       { z-index: 900; }
+
+// Abstracted z-index layers
+// -------------
+
+.zi-weak      { @extend .zi-100; }
+.zi-chrome    { @extend .zi-300; }
+.zi-overlay   { @extend .zi-500; }
+.zi-modal     { @extend .zi-700; }
+.zi-strong    { @extend .zi-900; }
+.zi-max       { z-index: 9999; }
+
+@include breakPoint(s) {
+    .breakPointS-zi-weak      { @extend .zi-100; }
+    .breakPointS-zi-chrome    { @extend .zi-300; }
+    .breakPointS-zi-overlay   { @extend .zi-500; }
+    .breakPointS-zi-modal     { @extend .zi-700; }
+    .breakPointS-zi-strong    { @extend .zi-900; }
+    .breakPointS-zi-max       { z-index: 9999; }
+}
+
+@include breakPoint(m) {
+    .breakPointM-zi-weak      { @extend .zi-100; }
+    .breakPointM-zi-chrome    { @extend .zi-300; }
+    .breakPointM-zi-overlay   { @extend .zi-500; }
+    .breakPointM-zi-modal     { @extend .zi-700; }
+    .breakPointM-zi-strong    { @extend .zi-900; }
+    .breakPointM-zi-max       { z-index: 9999; }
+}
+
+@include breakPoint(l) {
+    .breakPointL-zi-weak      { @extend .zi-100; }
+    .breakPointL-zi-chrome    { @extend .zi-300; }
+    .breakPointL-zi-overlay   { @extend .zi-500; }
+    .breakPointL-zi-modal     { @extend .zi-700; }
+    .breakPointL-zi-strong    { @extend .zi-900; }
+    .breakPointL-zi-max       { z-index: 9999; }
+}

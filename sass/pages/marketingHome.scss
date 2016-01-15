@@ -1,0 +1,208 @@
+//
+// MarketingHome
+// -------------------------
+
+// Related property declarations should be
+// grouped together following the order:
+//
+//  1. Positioning
+//  2. Box model
+//  3. Typographic
+//  4. Visual
+//  5. Misc
+
+//
+// Global classes (TODO: there has to be a better place for those.
+// Is that the best implementation?)
+// -------------------------
+
+.geometric-pattern {
+    @extend .width-100;
+    @extend .height-100;
+    @extend .posPinTR;
+    @extend .zi-weak;
+
+    background-size: 400px 400px; // maybe define 50% 50%
+    background-image: url("https://dl.dropboxusercontent.com/u/24093/Pattern.svg");
+}
+
+//
+// Homepage specific classes
+// -------------------------
+
+$home-header-width: 1600px;
+$home-section-height: 90px;
+
+.home-fixed-wrapper {
+    @extend .centered;
+    width: $breakpoint-l;
+}
+
+.home-wrapper {
+    @extend .centered;
+    max-width: $breakpoint-l;
+}
+
+.home-section {
+    @extend .textAlign-center;
+    @extend .borderWidth-0;
+    @extend .borderColor-snow;
+    @extend .borderBottomWidth-1;
+    @extend .borderStyle-solid;
+}
+
+.home-marvel-logo {
+    @extend .cursor-pointer;
+    @extend .scaleUp--hover;
+    @extend .transitionDuration-m;
+    @extend .transitionProperty-all;
+    @extend .transitionTimingFunction-cb--scaleUp;
+}
+
+//
+// Homepage header section
+// -------------------------
+
+.home-header-wrapper {
+    @extend .centered;
+    @extend .zi-weak;
+    @extend .position-relative;
+
+    max-width: $home-header-width;
+}
+
+.home-header {
+    @extend .height-100;
+    @extend .bg-brand--1;
+    @extend .boxSizing-borderBox;
+    @extend .paddingBottom-xxl;
+    @extend .gradient-brand;
+}
+
+.home-image {
+    @extend .width-100;
+    @extend .height-auto;
+    @extend .borderRadiusLeft-l;
+    @extend .breakPointXL-borderRadius-l;
+    @extend .boxShadow-distant;
+
+    margin-top: $home-section-height / 2;
+}
+
+.home-heading {
+    @extend .c-white;
+    @extend .fontWeight-5;
+    @extend .fontSize-xxxl;
+    @extend .lineHeight-xxl;
+    @extend .textShadow-translucent;
+
+    @extend .breakPointL-fontSize-xxxxl;
+    @extend .breakPointL-lineHeight-xxxl;
+}
+
+.home-header-left {
+    @extend .width-50;
+    @extend .display-tableCell;
+    @extend .verticalAlign-middle;
+    @extend .textAlign-left;
+    @extend .paddingLeft-xl;
+    @extend .breakPointL-paddingLeft-xxl;
+}
+
+.home-header-right {
+    @extend .width-50;
+    @extend .display-tableCell;
+    @extend .verticalAlign-middle;
+    @extend .textAlign-right;
+}
+
+//
+// Navigation
+// -------------------------
+
+.home-navigation {
+    @extend .width-100;
+    @extend .posPinTL;
+    @extend .zi-overlay;
+
+    height: $home-section-height;
+}
+
+.home-navigation-wrapper {
+    @extend .paddingLeftRight-xl;
+    @extend .breakPointL-paddingLeftRight-xxl;
+    @extend .height-100;
+    @extend .cf;
+}
+
+.home-navigation-link {
+    @extend .fontSize-m;
+    @extend .c-white;
+    @extend .opacity-70;
+    @extend .opacity-100--hover;
+    @extend .transitionDuration-s;
+    @extend .transitionProperty-opacity;
+}
+
+//
+// Homepage partner logo section
+// -------------------------
+
+.home-logo-section {
+    @extend .bg-white;
+    @extend .posPinBL;
+    @extend .posPinBR;
+    @extend .borderWidth-0;
+    @extend .borderBottomWidth-1;
+    @extend .borderStyle-solid;
+    @extend .borderColor-snow;
+    @extend .zi-weak;
+
+    @extend .height-100;
+    @extend .overflowX-scroll;
+    @extend .whiteSpace-nowrap;
+
+    height: $home-section-height;
+}
+
+.home-partner-logo {
+     @extend .fill-silver;
+     @extend .position-absolute;
+     @extend .absolutelyCenter;
+     @extend .opacity-60;
+}
+
+.home-logo-transferwise {
+    margin-top: -5px;
+}
+
+//
+// Tweets section
+// -------------------------
+
+.home-tweets-gradient-left {
+    @extend .width-20;
+    @extend .height-100;
+    @extend .posPinTL;
+    @extend .left-fade;
+}
+
+.home-tweets-gradient-right {
+    @extend .width-20;
+    @extend .height-100;
+    @extend .posPinTR;
+    @extend .right-fade;
+}
+
+.home-tweets-wrapper {
+    @extend .inline;
+    @extend .paddingLeft-m;
+    @extend .overflowX-scroll;
+    @extend .whiteSpace-nowrap;
+}
+
+.home-tweet-container {
+    @extend .marginRight-m;
+    @extend .breakPointL-width-30;
+    @extend .verticalAlign-top;
+}

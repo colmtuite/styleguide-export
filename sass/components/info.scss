@@ -1,0 +1,10 @@
+//
+// Info message
+// -------------------------
+
+.info-message {
+    @extend .bg-blue--transparent;
+    @extend .borderRadius-m;
+    @extend .cf;
+    background-image: url('https://sandbox02.marvelapp.com/static/assets/images/upgrade-message.png');
+}

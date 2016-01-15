@@ -1,0 +1,77 @@
+//
+// Loading spinner
+// -------------------------
+
+// Variables
+// -------------------------
+
+$loader-xl: 22px;
+$loader-l: 14px;
+$loader-m: 14px;
+$loader-s: 8px;
+
+// Loader
+// -------------------------
+
+.is-loading:after {
+    @extend .transitionDuration-m;
+    @extend .transitionProperty-opacity;
+    @extend .transitionTimingFunction-ease-in-out;
+}
+
+.is-loading:after {
+    @extend .display-block;
+    @extend .absolutelyCenter;
+
+    @extend .borderStyle-solid;
+    @extend .borderRadius-circle;
+    @extend .borderColor-silver;
+    @extend .borderRightColor-transparent;
+
+    @extend .animation-spin;
+    content: "";
+}
+
+// Loader colours
+// -------------------------
+
+.is-loading--white:after {
+    @extend .borderColor-white;
+    @extend .borderRightColor-transparent;
+}
+
+
+// Loader sizes
+// -------------------------
+
+.is-loading--xl:after {
+    width: $loader-xl;
+    height: $loader-xl;
+    border-width: 3px;
+    margin-top: -($loader-xl / 2);
+    margin-left: -($loader-xl / 2);
+}
+
+.is-loading--l:after {
+    width: $loader-l;
+    height: $loader-l;
+    border-width: 2px;
+    margin-top: -($loader-l / 2);
+    margin-left: -($loader-l / 2);
+}
+
+.is-loading--m:after {
+    width: $loader-m;
+    height: $loader-m;
+    border-width: 2px;
+    margin-top: -($loader-m / 2);
+    margin-left: -($loader-m / 2);
+}
+
+.is-loading--s:after {
+    width: $loader-s;
+    height: $loader-s;
+    border-width: 1px;
+    margin-top: -($loader-s / 2);
+    margin-left: -($loader-s / 2);
+}

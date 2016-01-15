@@ -1,0 +1,152 @@
+//* scss-compile-options: --precision 1
+
+//
+// Input
+// -------------------------
+
+.input {
+    @extend .appearance-none;
+    @extend .verticalAlign-middle;
+    @extend .outlineStyle-none;
+    @extend .borderWidth-0;
+
+    @extend .fontWeight-3;
+    @extend .transitionDuration-s;
+    @extend .transitionProperty-all;
+    @extend .transitionTimingFunction-ease-in-out;
+}
+
+// Input sizes
+// -------------------------
+
+.input--xl,
+.inputGroup--xl .inputGroup-context {
+    @extend .height-control--xl;
+    padding: 0 $control-xl / 3;
+    @extend .fontSize-l;
+    @extend .borderRadius-m;
+}
+
+.input--l,
+.inputGroup--l .inputGroup-context {
+    @extend .height-control--l;
+    padding: 0 floor($control-l / 3);
+    @extend .fontSize-m;
+    @extend .borderRadius-m;
+}
+
+.input--m,
+.inputGroup--m .inputGroup-context {
+    @extend .height-control--m;
+    padding: 0 ceil($control-m / 3);
+    @extend .fontSize-m;
+    @extend .borderRadius-s;
+}
+
+.input--s,
+.inputGroup--s .inputGroup-context {
+    @extend .height-control--s;
+    padding: 0 $control-s / 3;
+    @extend .fontSize-xs;
+    @extend .borderRadius-s;
+}
+
+.input--legible {
+    @extend .height-control--s;
+    padding: 0 ceil($control-s / 4);
+    @extend .fontSize-m;
+    @extend .borderRadius-s;
+}
+
+// Default Input
+// -------------------------
+
+.input--default {
+    @extend .bg-white;
+    @extend .boxShadow-smoke;
+    @extend .boxShadow-smoke--xd--hover;
+    @extend .boxShadow-marvel--focus;
+}
+
+.input--invisible {
+    @extend .bg-none;
+}
+
+// States
+// -------------------------
+
+.input.is-disabled {
+    @extend .boxShadow-smoke;
+    @extend .c-silver;
+    @extend .bg-snow;
+    @extend .pointerEvents-none;
+    @extend .cursor-default;
+}
+
+.input.has-error {
+    @extend .boxShadow-negative;
+}
+
+// Native placeholder
+// -------------------------
+
+::-webkit-input-placeholder {
+    line-height: normal;
+    color: $silver;
+}
+
+::-moz-input-placeholder {
+    line-height: normal;
+    color: $silver;
+}
+
+// Input group
+// -------------------------
+
+.inputGroup {
+    @extend .inline;
+}
+
+.inputGroup-context {
+    @extend .display-inlineBlock;
+    @extend .verticalAlign-middle;
+    @extend .bg-snow;
+    @extend .c-silver;
+    @extend .textAlign-center;
+}
+
+.inputGroup div:first-child .input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.inputGroup div:last-child .input {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.inputGroup div:first-child .inputGroup-context {
+    @extend .borderRadiusLeft-m;
+    box-shadow: inset 0 1px 0 0 $smoke, inset 0 -1px 0 0 $smoke, inset 1px 0 0 $smoke;
+}
+
+.inputGroup div:last-child .inputGroup-context {
+    @extend .borderRadiusRight-m;
+    box-shadow: inset 0 1px 0 0 $smoke, inset -1px 0 0 $smoke, inset 0 -1px 0 0 $smoke;
+}
+
+.inputGroup--xl .inputGroup-context {
+    @extend .lineHeight-control--xl;
+}
+
+.inputGroup--l .inputGroup-context {
+    @extend .lineHeight-control--l;
+}
+
+.inputGroup--m .inputGroup-context {
+    @extend .lineHeight-control--m;
+}
+
+.inputGroup--s .inputGroup-context {
+    @extend .lineHeight-control--s;
+}

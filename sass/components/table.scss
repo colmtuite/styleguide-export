@@ -1,0 +1,69 @@
+//
+// Tables
+// -------------------------
+
+// Root component
+// -------------------------
+
+.table {
+    @extend .width-100;
+    max-width: 100%;
+    @extend .bg-none;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+// Child elements
+// -------------------------
+
+caption {
+    @extend .paddingBottom-s;
+    @extend .c-silver;
+    @extend .textAlign-left;
+}
+
+.table > thead > tr > td,
+.table > tbody > tr > th,
+.table > tbody > tr > td,
+.table > tfoot > tr > th,
+.table > tfoot > tr > td {
+    @extend .verticalAlign-top;
+    border-top: 1px solid $smoke;
+    @extend .padding-s;
+}
+
+.table > thead > tr > th {
+    @extend .padding-s;
+    @extend .verticalAlign-bottom;
+    @extend .c-silver;
+}
+
+.table thead > tr:first-child > th {
+    border-top: 0;
+}
+
+th {
+    @extend .textAlign-left;
+    @extend .fontWeight-4;
+}
+
+// Table sizes
+// -------------------------
+
+.table--m > thead > tr > th,
+.table--m > thead > tr > td,
+.table--m > tbody > tr > th,
+.table--m > tbody > tr > td,
+.table--m > tfoot > tr > th,
+.table--m > tfoot > tr > td {
+    @extend .padding-m;
+}
+
+.table--s > thead > tr > th,
+.table--s > thead > tr > td,
+.table--s > tbody > tr > th,
+.table--s > tbody > tr > td,
+.table--s > tfoot > tr > th,
+.table--s > tfoot > tr > td {
+    @extend .padding-s;
+}

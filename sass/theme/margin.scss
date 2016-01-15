@@ -1,0 +1,236 @@
+//
+// Margin
+// -------------
+
+// Margin scale
+// -------------
+
+.margin-0           { margin: 0; }
+.marginTop-0        { margin-top: 0; }
+.marginRight-0      { margin-right: 0; }
+.marginBottom-0     { margin-bottom: 0; }
+.marginLeft-0       { margin-left: 0; }
+.marginTopBottom-0  { margin-top: 0; margin-bottom: 0; }
+.marginLeftRight-0  { margin-left: 0; margin-right: 0; }
+
+.margin-xxs          { margin: $spacing-xxs; }
+.marginTop-xxs       { margin-top: $spacing-xxs; }
+.marginRight-xxs     { margin-right: $spacing-xxs; }
+.marginBottom-xxs    { margin-bottom: $spacing-xxs; }
+.marginLeft-xxs      { margin-left: $spacing-xxs; }
+.marginTopBottom-xxs { margin-top: $spacing-xxs; margin-bottom: $spacing-xxs; }
+.marginLeftRight-xxs  { margin-left: $spacing-xxs; margin-right: $spacing-xxs; }
+
+.margin-xs          { margin: $spacing-xs; }
+.marginTop-xs       { margin-top: $spacing-xs; }
+.marginRight-xs     { margin-right: $spacing-xs; }
+.marginBottom-xs    { margin-bottom: $spacing-xs; }
+.marginLeft-xs      { margin-left: $spacing-xs; }
+.marginTopBottom-xs { margin-top: $spacing-xs; margin-bottom: $spacing-xs; }
+.marginLeftRight-xs  { margin-left: $spacing-xs; margin-right: $spacing-xs; }
+
+.margin-s           { margin: $spacing-s; }
+.marginTop-s        { margin-top: $spacing-s; }
+.marginRight-s      { margin-right: $spacing-s; }
+.marginBottom-s     { margin-bottom: $spacing-s; }
+.marginLeft-s       { margin-left: $spacing-s; }
+.marginTopBottom-s  { margin-top: $spacing-s; margin-bottom: $spacing-s; }
+.marginLeftRight-s  { margin-left: $spacing-s; margin-right: $spacing-s; }
+
+.margin-m           { margin: $spacing-m; }
+.marginTop-m        { margin-top: $spacing-m; }
+.marginRight-m      { margin-right: $spacing-m; }
+.marginBottom-m     { margin-bottom: $spacing-m; }
+.marginLeft-m       { margin-left: $spacing-m; }
+.marginTopBottom-m  { margin-top: $spacing-m; margin-bottom: $spacing-m; }
+.marginLeftRight-m  { margin-left: $spacing-m; margin-right: $spacing-m; }
+
+.margin-l           { margin: $spacing-l; }
+.marginTop-l        { margin-top: $spacing-l; }
+.marginRight-l      { margin-right: $spacing-l; }
+.marginBottom-l     { margin-bottom: $spacing-l; }
+.marginLeft-l       { margin-left: $spacing-l; }
+.marginTopBottom-l  { margin-top: $spacing-l; margin-bottom: $spacing-l; }
+.marginLeftRight-l  { margin-left: $spacing-l; margin-right: $spacing-l; }
+
+.margin-xl          { margin: $spacing-xl; }
+.marginTop-xl       { margin-top: $spacing-xl; }
+.marginRight-xl     { margin-right: $spacing-xl; }
+.marginBottom-xl    { margin-bottom: $spacing-xl; }
+.marginLeft-xl      { margin-left: $spacing-xl; }
+.marginTopBottom-xl { margin-top: $spacing-xl; margin-bottom: $spacing-xl; }
+.marginLeftRight-xl  { margin-left: $spacing-xl; margin-right: $spacing-xl; }
+
+@include breakPoint(s) {
+    .breakPointS-margin-0           { margin: 0; }
+    .breakPointS-marginTop-0        { margin-top: 0; }
+    .breakPointS-marginRight-0      { margin-right: 0; }
+    .breakPointS-marginBottom-0     { margin-bottom: 0; }
+    .breakPointS-marginLeft-0       { margin-left: 0; }
+    .breakPointS-marginTopBottom-0  { margin-top: 0; margin-bottom: 0; }
+    .breakPointS-marginLeftRight-0  { margin-left: 0; margin-right: 0; }
+
+    .breakPointS-margin-xxs          { margin: $spacing-xxs; }
+    .breakPointS-marginTop-xxs       { margin-top: $spacing-xxs; }
+    .breakPointS-marginRight-xxs     { margin-right: $spacing-xxs; }
+    .breakPointS-marginBottom-xxs    { margin-bottom: $spacing-xxs; }
+    .breakPointS-marginLeft-xxs      { margin-left: $spacing-xxs; }
+    .breakPointS-marginTopBottom-xxs { margin-top: $spacing-xxs; margin-bottom: $spacing-xxs; }
+    .breakPointS-marginLeftRight-xxs  { margin-left: $spacing-xxs; margin-right: $spacing-xxs; }
+
+    .breakPointS-margin-xs          { margin: $spacing-xs; }
+    .breakPointS-marginTop-xs       { margin-top: $spacing-xs; }
+    .breakPointS-marginRight-xs     { margin-right: $spacing-xs; }
+    .breakPointS-marginBottom-xs    { margin-bottom: $spacing-xs; }
+    .breakPointS-marginLeft-xs      { margin-left: $spacing-xs; }
+    .breakPointS-marginTopBottom-xs { margin-top: $spacing-xs; margin-bottom: $spacing-xs; }
+    .breakPointS-marginLeftRight-xs { margin-left: $spacing-xs; margin-right: $spacing-xs; }
+
+    .breakPointS-margin-s           { margin: $spacing-s; }
+    .breakPointS-marginTop-s        { margin-top: $spacing-s; }
+    .breakPointS-marginRight-s      { margin-right: $spacing-s; }
+    .breakPointS-marginBottom-s     { margin-bottom: $spacing-s; }
+    .breakPointS-marginLeft-s       { margin-left: $spacing-s; }
+    .breakPointS-marginTopBottom-s  { margin-top: $spacing-s; margin-bottom: $spacing-s; }
+    .breakPointS-marginLeftRight-s  { margin-left: $spacing-xs; margin-right: $spacing-xs; }
+
+    .breakPointS-margin-m           { margin: $spacing-m; }
+    .breakPointS-marginTop-m        { margin-top: $spacing-m; }
+    .breakPointS-marginRight-m      { margin-right: $spacing-m; }
+    .breakPointS-marginBottom-m     { margin-bottom: $spacing-m; }
+    .breakPointS-marginLeft-m       { margin-left: $spacing-m; }
+    .breakPointS-marginTopBottom-m  { margin-top: $spacing-m; margin-bottom: $spacing-m; }
+    .breakPointS-marginLeftRight-m  { margin-left: $spacing-m; margin-right: $spacing-m; }
+
+    .breakPointS-margin-l           { margin: $spacing-l; }
+    .breakPointS-marginTop-l        { margin-top: $spacing-l; }
+    .breakPointS-marginRight-l      { margin-right: $spacing-l; }
+    .breakPointS-marginBottom-l     { margin-bottom: $spacing-l; }
+    .breakPointS-marginLeft-l       { margin-left: $spacing-l; }
+    .breakPointS-marginTopBottom-l  { margin-top: $spacing-l; margin-bottom: $spacing-l; }
+    .breakPointS-marginLeftRight-l  { margin-left: $spacing-l; margin-right: $spacing-l; }
+
+    .breakPointS-margin-xl          { margin: $spacing-xl; }
+    .breakPointS-marginTop-xl       { margin-top: $spacing-xl; }
+    .breakPointS-marginRight-xl     { margin-right: $spacing-xl; }
+    .breakPointS-marginBottom-xl    { margin-bottom: $spacing-xl; }
+    .breakPointS-marginLeft-xl      { margin-left: $spacing-xl; }
+    .breakPointS-marginTopBottom-xl { margin-top: $spacing-xl; margin-bottom: $spacing-xl; }
+    .breakPointS-marginLeftRight-xl { margin-left: $spacing-xl; margin-right: $spacing-xl; }
+}
+
+@include breakPoint(m) {
+    .breakPointM-margin-0           { margin: 0; }
+    .breakPointM-marginTop-0        { margin-top: 0; }
+    .breakPointM-marginRight-0      { margin-right: 0; }
+    .breakPointM-marginBottom-0     { margin-bottom: 0; }
+    .breakPointM-marginLeft-0       { margin-left: 0; }
+    .breakPointM-marginTopBottom-0  { margin-top: 0; margin-bottom: 0; }
+    .breakPointM-marginLeftRight-0  { margin-left: 0; margin-right: 0; }
+
+    .breakPointM-margin-xxs          { margin: $spacing-xxs; }
+    .breakPointM-marginTop-xxs       { margin-top: $spacing-xxs; }
+    .breakPointM-marginRight-xxs     { margin-right: $spacing-xxs; }
+    .breakPointM-marginBottom-xxs    { margin-bottom: $spacing-xxs; }
+    .breakPointM-marginLeft-xxs      { margin-left: $spacing-xxs; }
+    .breakPointM-marginTopBottom-xxs { margin-top: $spacing-xxs; margin-bottom: $spacing-xxs; }
+    .breakPointM-marginLeftRight-xxs  { margin-left: $spacing-xxs; margin-right: $spacing-xxs; }
+
+    .breakPointM-margin-xs          { margin: $spacing-xs; }
+    .breakPointM-marginTop-xs       { margin-top: $spacing-xs; }
+    .breakPointM-marginRight-xs     { margin-right: $spacing-xs; }
+    .breakPointM-marginBottom-xs    { margin-bottom: $spacing-xs; }
+    .breakPointM-marginLeft-xs      { margin-left: $spacing-xs; }
+    .breakPointM-marginTopBottom-xs { margin-top: $spacing-xs; margin-bottom: $spacing-xs; }
+    .breakPointM-marginLeftRight-xs { margin-left: $spacing-xs; margin-right: $spacing-xs; }
+
+    .breakPointM-margin-s           { margin: $spacing-s; }
+    .breakPointM-marginTop-s        { margin-top: $spacing-s; }
+    .breakPointM-marginRight-s      { margin-right: $spacing-s; }
+    .breakPointM-marginBottom-s     { margin-bottom: $spacing-s; }
+    .breakPointM-marginLeft-s       { margin-left: $spacing-s; }
+    .breakPointM-marginTopBottom-s  { margin-top: $spacing-s; margin-bottom: $spacing-s; }
+    .breakPointM-marginLeftRight-s  { margin-left: $spacing-s; margin-right: $spacing-s; }
+
+    .breakPointM-margin-m           { margin: $spacing-m; }
+    .breakPointM-marginTop-m        { margin-top: $spacing-m; }
+    .breakPointM-marginRight-m      { margin-right: $spacing-m; }
+    .breakPointM-marginBottom-m     { margin-bottom: $spacing-m; }
+    .breakPointM-marginLeft-m       { margin-left: $spacing-m; }
+    .breakPointM-marginTopBottom-m  { margin-top: $spacing-m; margin-bottom: $spacing-m; }
+    .breakPointM-marginLeftRight-m  { margin-left: $spacing-m; margin-right: $spacing-m; }
+
+    .breakPointM-margin-l           { margin: $spacing-l; }
+    .breakPointM-marginTop-l        { margin-top: $spacing-l; }
+    .breakPointM-marginRight-l      { margin-right: $spacing-l; }
+    .breakPointM-marginBottom-l     { margin-bottom: $spacing-l; }
+    .breakPointM-marginLeft-l       { margin-left: $spacing-l; }
+    .breakPointM-marginTopBottom-l  { margin-top: $spacing-l; margin-bottom: $spacing-l; }
+    .breakPointM-marginLeftRight-l  { margin-left: $spacing-l; margin-right: $spacing-l; }
+
+    .breakPointM-margin-xl          { margin: $spacing-xl; }
+    .breakPointM-marginTop-xl       { margin-top: $spacing-xl; }
+    .breakPointM-marginRight-xl     { margin-right: $spacing-xl; }
+    .breakPointM-marginBottom-xl    { margin-bottom: $spacing-xl; }
+    .breakPointM-marginLeft-xl      { margin-left: $spacing-xl; }
+    .breakPointM-marginTopBottom-xl { margin-top: $spacing-xl; margin-bottom: $spacing-xl; }
+    .breakPointM-marginLeftRight-xl { margin-left: $spacing-xl; margin-right: $spacing-xl; }
+}
+
+@include breakPoint(l) {
+    .breakPointL-margin-0           { margin: 0; }
+    .breakPointL-marginTop-0        { margin-top: 0; }
+    .breakPointL-marginRight-0      { margin-right: 0; }
+    .breakPointL-marginBottom-0     { margin-bottom: 0; }
+    .breakPointL-marginLeft-0       { margin-left: 0; }
+    .breakPointL-marginTopBottom-0  { margin-top: 0; margin-bottom: 0; }
+    .breakPointL-marginLeftRight-0  { margin-left: 0; margin-right: 0; }
+
+    .breakPointL-margin-xxs          { margin: $spacing-xxs; }
+    .breakPointL-marginTop-xxs       { margin-top: $spacing-xxs; }
+    .breakPointL-marginRight-xxs     { margin-right: $spacing-xxs; }
+    .breakPointL-marginBottom-xxs    { margin-bottom: $spacing-xxs; }
+    .breakPointL-marginLeft-xxs      { margin-left: $spacing-xxs; }
+    .breakPointL-marginTopBottom-xxs { margin-top: $spacing-xxs; margin-bottom: $spacing-xxs; }
+    .breakPointL-marginLeftRight-xxs  { margin-left: $spacing-xxs; margin-right: $spacing-xxs; }
+
+    .breakPointL-margin-xs          { margin: $spacing-xs; }
+    .breakPointL-marginTop-xs       { margin-top: $spacing-xs; }
+    .breakPointL-marginRight-xs     { margin-right: $spacing-xs; }
+    .breakPointL-marginBottom-xs    { margin-bottom: $spacing-xs; }
+    .breakPointL-marginLeft-xs      { margin-left: $spacing-xs; }
+    .breakPointL-marginTopBottom-xs { margin-top: $spacing-xs; margin-bottom: $spacing-xs; }
+    .breakPointL-marginLeftRight-xs { margin-left: $spacing-xs; margin-right: $spacing-xs; }
+
+    .breakPointL-margin-s           { margin: $spacing-s; }
+    .breakPointL-marginTop-s        { margin-top: $spacing-s; }
+    .breakPointL-marginRight-s      { margin-right: $spacing-s; }
+    .breakPointL-marginBottom-s     { margin-bottom: $spacing-s; }
+    .breakPointL-marginLeft-s       { margin-left: $spacing-s; }
+    .breakPointL-marginTopBottom-s  { margin-top: $spacing-s; margin-bottom: $spacing-s; }
+    .breakPointL-marginLeftRight-s  { margin-left: $spacing-s; margin-right: $spacing-s; }
+
+    .breakPointL-margin-m           { margin: $spacing-m; }
+    .breakPointL-marginTop-m        { margin-top: $spacing-m; }
+    .breakPointL-marginRight-m      { margin-right: $spacing-m; }
+    .breakPointL-marginBottom-m     { margin-bottom: $spacing-m; }
+    .breakPointL-marginLeft-m       { margin-left: $spacing-m; }
+    .breakPointL-marginTopBottom-m  { margin-top: $spacing-m; margin-bottom: $spacing-m; }
+    .breakPointL-marginLeftRight-m  { margin-left: $spacing-m; margin-right: $spacing-m; }
+
+    .breakPointL-margin-l           { margin: $spacing-l; }
+    .breakPointL-marginTop-l        { margin-top: $spacing-l; }
+    .breakPointL-marginRight-l      { margin-right: $spacing-l; }
+    .breakPointL-marginBottom-l     { margin-bottom: $spacing-l; }
+    .breakPointL-marginLeft-l       { margin-left: $spacing-l; }
+    .breakPointL-marginTopBottom-l  { margin-top: $spacing-l; margin-bottom: $spacing-l; }
+    .breakPointL-marginLeftRight-l  { margin-left: $spacing-l; margin-right: $spacing-l; }
+
+    .breakPointL-margin-xl          { margin: $spacing-xl; }
+    .breakPointL-marginTop-xl       { margin-top: $spacing-xl; }
+    .breakPointL-marginRight-xl     { margin-right: $spacing-xl; }
+    .breakPointL-marginBottom-xl    { margin-bottom: $spacing-xl; }
+    .breakPointL-marginLeft-xl      { margin-left: $spacing-xl; }
+    .breakPointL-marginTopBottom-xl { margin-top: $spacing-xl; margin-bottom: $spacing-xl; }
+    .breakPointL-marginLeftRight-xl { margin-left: $spacing-xl; margin-right: $spacing-xl; }
+}

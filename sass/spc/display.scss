@@ -1,0 +1,49 @@
+//
+// Display
+// -------------
+
+.display-none        { display: none; }
+.display-block       { display: block; }
+.display-inline      { display: inline; }
+.display-inlineBlock { display: inline-block; }
+.display-inlineTable { display: inline-table; }
+.display-table       { display: table; width: 100%; }
+.display-tableCell   { display: table-cell; }
+.display-tableColumn { display: table-column; }
+.display-tableRow    { display: table-row; }
+
+@include breakPoint(s) {
+    .breakPointS-display-none        { display: none; }
+    .breakPointS-display-block       { display: block; }
+    .breakPointS-display-inline      { display: inline; }
+    .breakPointS-display-inlineBlock { display: inline-block; }
+    .breakPointS-display-inlineTable { display: inline-table; }
+    .breakPointS-display-table       { display: table; width: 100%; }
+    .breakPointS-display-tableCell   { display: table-cell; }
+    .breakPointS-display-tableColumn { display: table-column; }
+    .breakPointS-display-tableRow    { display: table-row; }
+}
+
+@include breakPoint(m) {
+    .breakPointM-display-none        { display: none; }
+    .breakPointM-display-block       { display: block; }
+    .breakPointM-display-inline      { display: inline; }
+    .breakPointM-display-inlineBlock { display: inline-block; }
+    .breakPointM-display-inlineTable { display: inline-table; }
+    .breakPointM-display-table       { display: table; width: 100%; }
+    .breakPointM-display-tableCell   { display: table-cell; }
+    .breakPointM-display-tableColumn { display: table-column; }
+    .breakPointM-display-tableRow    { display: table-row; }
+}
+
+@include breakPoint(l) {
+      .breakPointL-display-none        { display: none; }
+      .breakPointL-display-block       { display: block; }
+      .breakPointL-display-inline      { display: inline; }
+      .breakPointL-display-inlineBlock { display: inline-block; }
+      .breakPointL-display-inlineTable { display: inline-table; }
+      .breakPointL-display-table       { display: table; width: 100%; }
+      .breakPointL-display-tableCell   { display: table-cell; }
+      .breakPointL-display-tableColumn { display: table-column; }
+      .breakPointL-display-tableRow    { display: table-row; }
+}

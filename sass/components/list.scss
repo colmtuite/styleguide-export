@@ -1,0 +1,28 @@
+//
+// Lists
+// -------------------------
+
+// Root component
+// -------------------------
+
+.list {
+    @extend .lineHeight-m;
+    @extend .marginTop-xs;
+    @extend .paddingLeft-m;
+}
+
+.list--unordered {
+    @extend .listStyle-disc;
+}
+
+.list--ordered {
+    @extend .listStyle-decimal;
+}
+
+// Child elements
+// -------------------------
+
+.list > li {
+    @extend .marginBottom-xs;
+    @extend .marginLeft-m;
+}

@@ -1,0 +1,236 @@
+//
+// Padding
+// -------------
+
+// Padding scale
+// -------------
+
+.padding-0              { padding: 0; }
+.paddingTop-0           { padding-top: 0; }
+.paddingRight-0         { padding-right: 0; }
+.paddingBottom-0        { padding-bottom: 0; }
+.paddingLeft-0          { padding-left: 0; }
+.paddingTopBottom-0     { padding-top: 0; padding-bottom: 0; }
+.paddingLeftRight-0     { padding-left: 0; padding-right: 0; }
+
+.padding-xxs             { padding: $spacing-xxs; }
+.paddingTop-xxs          { padding-top: $spacing-xxs; }
+.paddingRight-xxs        { padding-right: $spacing-xxs; }
+.paddingBottom-xxs       { padding-bottom: $spacing-xxs; }
+.paddingLeft-xxs         { padding-left: $spacing-xxs; }
+.paddingTopBottom-xxs    { padding-top: $spacing-xxs; padding-bottom: $spacing-xxs; }
+.paddingLeftRight-xxs    { padding-left: $spacing-xxs; padding-right: $spacing-xxs; }
+
+.padding-xs             { padding: $spacing-xs; }
+.paddingTop-xs          { padding-top: $spacing-xs; }
+.paddingRight-xs        { padding-right: $spacing-xs; }
+.paddingBottom-xs       { padding-bottom: $spacing-xs; }
+.paddingLeft-xs         { padding-left: $spacing-xs; }
+.paddingTopBottom-xs    { padding-top: $spacing-xs; padding-bottom: $spacing-xs; }
+.paddingLeftRight-xs    { padding-left: $spacing-xs; padding-right: $spacing-xs; }
+
+.padding-s              { padding: $spacing-s; }
+.paddingTop-s           { padding-top: $spacing-s; }
+.paddingRight-s         { padding-right: $spacing-s; }
+.paddingBottom-s        { padding-bottom: $spacing-s; }
+.paddingLeft-s          { padding-left: $spacing-s; }
+.paddingTopBottom-s     { padding-top: $spacing-s; padding-bottom: $spacing-s; }
+.paddingLeftRight-s     { padding-left: $spacing-s; padding-right: $spacing-s; }
+
+.padding-m              { padding: $spacing-m; }
+.paddingTop-m           { padding-top: $spacing-m; }
+.paddingRight-m         { padding-right: $spacing-m; }
+.paddingBottom-m        { padding-bottom: $spacing-m; }
+.paddingLeft-m          { padding-left: $spacing-m; }
+.paddingTopBottom-m     { padding-top: $spacing-m; padding-bottom: $spacing-m; }
+.paddingLeftRight-m     { padding-left: $spacing-m; padding-right: $spacing-m; }
+
+.padding-l              { padding: $spacing-l; }
+.paddingTop-l           { padding-top: $spacing-l; }
+.paddingRight-l         { padding-right: $spacing-l; }
+.paddingBottom-l        { padding-bottom: $spacing-l; }
+.paddingLeft-l          { padding-left: $spacing-l; }
+.paddingTopBottom-l     { padding-top: $spacing-l; padding-bottom: $spacing-l; }
+.paddingLeftRight-l     { padding-left: $spacing-l; padding-right: $spacing-l; }
+
+.padding-xl             { padding: $spacing-xl; }
+.paddingTop-xl          { padding-top: $spacing-xl; }
+.paddingRight-xl        { padding-right: $spacing-xl; }
+.paddingBottom-xl       { padding-bottom: $spacing-xl; }
+.paddingLeft-xl         { padding-left: $spacing-xl; }
+.paddingTopBottom-xl    { padding-top: $spacing-xl; padding-bottom: $spacing-xl; }
+.paddingLeftRight-xl    { padding-left: $spacing-xl; padding-right: $spacing-xl; }
+
+@include breakPoint(s) {
+    .breakPointS-padding-0              { padding: 0; }
+    .breakPointS-paddingTop-0           { padding-top: 0; }
+    .breakPointS-paddingRight-0         { padding-right: 0; }
+    .breakPointS-paddingBottom-0        { padding-bottom: 0; }
+    .breakPointS-paddingLeft-0          { padding-left: 0; }
+    .breakPointS-paddingTopBottom-0     { padding-top: 0; padding-bottom: 0; }
+    .breakPointS-paddingLeftRight-0     { padding-left: 0; padding-right: 0; }
+
+    .breakPointS-padding-xxs             { padding: $spacing-xxs; }
+    .breakPointS-paddingTop-xxs          { padding-top: $spacing-xxs; }
+    .breakPointS-paddingRight-xxs        { padding-right: $spacing-xxs; }
+    .breakPointS-paddingBottom-xxs       { padding-bottom: $spacing-xxs; }
+    .breakPointS-paddingLeft-xxs         { padding-left: $spacing-xxs; }
+    .breakPointS-paddingTopBottom-xxs    { padding-top: $spacing-xxs; padding-bottom: $spacing-xxs; }
+    .breakPointS-paddingLeftRight-xxs    { padding-left: $spacing-xxs; padding-right: $spacing-xxs; }
+
+    .breakPointS-padding-xs             { padding: $spacing-xs; }
+    .breakPointS-paddingTop-xs          { padding-top: $spacing-xs; }
+    .breakPointS-paddingRight-xs        { padding-right: $spacing-xs; }
+    .breakPointS-paddingBottom-xs       { padding-bottom: $spacing-xs; }
+    .breakPointS-paddingLeft-xs         { padding-left: $spacing-xs; }
+    .breakPointS-paddingTopBottom-xs    { padding-top: $spacing-xs; padding-bottom: $spacing-xs; }
+    .breakPointS-paddingLeftRight-xs    { padding-left: $spacing-xs; padding-right: $spacing-xs; }
+
+    .breakPointS-padding-s              { padding: $spacing-s; }
+    .breakPointS-paddingTop-s           { padding-top: $spacing-s; }
+    .breakPointS-paddingRight-s         { padding-right: $spacing-s; }
+    .breakPointS-paddingBottom-s        { padding-bottom: $spacing-s; }
+    .breakPointS-paddingLeft-s          { padding-left: $spacing-s; }
+    .breakPointS-paddingTopBottom-s     { padding-top: $spacing-s; padding-bottom: $spacing-s; }
+    .breakPointS-paddingLeftRight-s     { padding-left: $spacing-s; padding-right: $spacing-s; }
+
+    .breakPointS-padding-m              { padding: $spacing-m; }
+    .breakPointS-paddingTop-m           { padding-top: $spacing-m; }
+    .breakPointS-paddingRight-m         { padding-right: $spacing-m; }
+    .breakPointS-paddingBottom-m        { padding-bottom: $spacing-m; }
+    .breakPointS-paddingLeft-m          { padding-left: $spacing-m; }
+    .breakPointS-paddingTopBottom-m     { padding-top: $spacing-m; padding-bottom: $spacing-m; }
+    .breakPointS-paddingLeftRight-m     { padding-left: $spacing-m; padding-right: $spacing-m; }
+
+    .breakPointS-padding-l              { padding: $spacing-l; }
+    .breakPointS-paddingTop-l           { padding-top: $spacing-l; }
+    .breakPointS-paddingRight-l         { padding-right: $spacing-l; }
+    .breakPointS-paddingBottom-l        { padding-bottom: $spacing-l; }
+    .breakPointS-paddingLeft-l          { padding-left: $spacing-l; }
+    .breakPointS-paddingTopBottom-l     { padding-top: $spacing-l; padding-bottom: $spacing-l; }
+    .breakPointS-paddingLeftRight-l     { padding-left: $spacing-l; padding-right: $spacing-l; }
+
+    .breakPointS-padding-xl             { padding: $spacing-xl; }
+    .breakPointS-paddingTop-xl          { padding-top: $spacing-xl; }
+    .breakPointS-paddingRight-xl        { padding-right: $spacing-xl; }
+    .breakPointS-paddingBottom-xl       { padding-bottom: $spacing-xl; }
+    .breakPointS-paddingLeft-xl         { padding-left: $spacing-xl; }
+    .breakPointS-paddingTopBottom-xl    { padding-top: $spacing-xl; padding-bottom: $spacing-xl; }
+    .breakPointS-paddingLeftRight-xl    { padding-left: $spacing-xl; padding-right: $spacing-xl; }
+}
+
+@include breakPoint(m) {
+    .breakPointM-padding-0              { padding: 0; }
+    .breakPointM-paddingTop-0           { padding-top: 0; }
+    .breakPointM-paddingRight-0         { padding-right: 0; }
+    .breakPointM-paddingBottom-0        { padding-bottom: 0; }
+    .breakPointM-paddingLeft-0          { padding-left: 0; }
+    .breakPointM-paddingTopBottom-0     { padding-top: 0; padding-bottom: 0; }
+    .breakPointM-paddingLeftRight-0     { padding-left: 0; padding-right: 0; }
+
+    .breakPointM-padding-xxs             { padding: $spacing-xxs; }
+    .breakPointM-paddingTop-xxs          { padding-top: $spacing-xxs; }
+    .breakPointM-paddingRight-xxs        { padding-right: $spacing-xxs; }
+    .breakPointM-paddingBottom-xxs       { padding-bottom: $spacing-xxs; }
+    .breakPointM-paddingLeft-xxs         { padding-left: $spacing-xxs; }
+    .breakPointM-paddingTopBottom-xxs    { padding-top: $spacing-xxs; padding-bottom: $spacing-xxs; }
+    .breakPointM-paddingLeftRight-xxs    { padding-left: $spacing-xxs; padding-right: $spacing-xxs; }
+
+    .breakPointM-padding-xs             { padding: $spacing-xs; }
+    .breakPointM-paddingTop-xs          { padding-top: $spacing-xs; }
+    .breakPointM-paddingRight-xs        { padding-right: $spacing-xs; }
+    .breakPointM-paddingBottom-xs       { padding-bottom: $spacing-xs; }
+    .breakPointM-paddingLeft-xs         { padding-left: $spacing-xs; }
+    .breakPointM-paddingTopBottom-xs    { padding-top: $spacing-xs; padding-bottom: $spacing-xs; }
+    .breakPointM-paddingLeftRight-xs    { padding-left: $spacing-xs; padding-right: $spacing-xs; }
+
+    .breakPointM-padding-s              { padding: $spacing-s; }
+    .breakPointM-paddingTop-s           { padding-top: $spacing-s; }
+    .breakPointM-paddingRight-s         { padding-right: $spacing-s; }
+    .breakPointM-paddingBottom-s        { padding-bottom: $spacing-s; }
+    .breakPointM-paddingLeft-s          { padding-left: $spacing-s; }
+    .breakPointM-paddingTopBottom-s     { padding-top: $spacing-s; padding-bottom: $spacing-s; }
+    .breakPointM-paddingLeftRight-s     { padding-left: $spacing-s; padding-right: $spacing-s; }
+
+    .breakPointM-padding-m              { padding: $spacing-m; }
+    .breakPointM-paddingTop-m           { padding-top: $spacing-m; }
+    .breakPointM-paddingRight-m         { padding-right: $spacing-m; }
+    .breakPointM-paddingBottom-m        { padding-bottom: $spacing-m; }
+    .breakPointM-paddingLeft-m          { padding-left: $spacing-m; }
+    .breakPointM-paddingTopBottom-m     { padding-top: $spacing-m; padding-bottom: $spacing-m; }
+    .breakPointM-paddingLeftRight-m     { padding-left: $spacing-m; padding-right: $spacing-m; }
+
+    .breakPointM-padding-l              { padding: $spacing-l; }
+    .breakPointM-paddingTop-l           { padding-top: $spacing-l; }
+    .breakPointM-paddingRight-l         { padding-right: $spacing-l; }
+    .breakPointM-paddingBottom-l        { padding-bottom: $spacing-l; }
+    .breakPointM-paddingLeft-l          { padding-left: $spacing-l; }
+    .breakPointM-paddingTopBottom-l     { padding-top: $spacing-l; padding-bottom: $spacing-l; }
+    .breakPointM-paddingLeftRight-l     { padding-left: $spacing-l; padding-right: $spacing-l; }
+
+    .breakPointM-padding-xl             { padding: $spacing-xl; }
+    .breakPointM-paddingTop-xl          { padding-top: $spacing-xl; }
+    .breakPointM-paddingRight-xl        { padding-right: $spacing-xl; }
+    .breakPointM-paddingBottom-xl       { padding-bottom: $spacing-xl; }
+    .breakPointM-paddingLeft-xl         { padding-left: $spacing-xl; }
+    .breakPointM-paddingTopBottom-xl    { padding-top: $spacing-xl; padding-bottom: $spacing-xl; }
+    .breakPointM-paddingLeftRight-xl    { padding-left: $spacing-xl; padding-right: $spacing-xl; }
+}
+
+@include breakPoint(l) {
+    .breakPointL-padding-0              { padding: 0; }
+    .breakPointL-paddingTop-0           { padding-top: 0; }
+    .breakPointL-paddingRight-0         { padding-right: 0; }
+    .breakPointL-paddingBottom-0        { padding-bottom: 0; }
+    .breakPointL-paddingLeft-0          { padding-left: 0; }
+    .breakPointL-paddingTopBottom-0     { padding-top: 0; padding-bottom: 0; }
+    .breakPointL-paddingLeftRight-0     { padding-left: 0; padding-right: 0; }
+
+    .breakPointL-padding-xxs             { padding: $spacing-xxs; }
+    .breakPointL-paddingTop-xxs          { padding-top: $spacing-xxs; }
+    .breakPointL-paddingRight-xxs        { padding-right: $spacing-xxs; }
+    .breakPointL-paddingBottom-xxs       { padding-bottom: $spacing-xxs; }
+    .breakPointL-paddingLeft-xxs         { padding-left: $spacing-xxs; }
+    .breakPointL-paddingTopBottom-xxs    { padding-top: $spacing-xxs; padding-bottom: $spacing-xxs; }
+    .breakPointL-paddingLeftRight-xxs    { padding-left: $spacing-xxs; padding-right: $spacing-xxs; }
+
+    .breakPointL-padding-xs             { padding: $spacing-xs; }
+    .breakPointL-paddingTop-xs          { padding-top: $spacing-xs; }
+    .breakPointL-paddingRight-xs        { padding-right: $spacing-xs; }
+    .breakPointL-paddingBottom-xs       { padding-bottom: $spacing-xs; }
+    .breakPointL-paddingLeft-xs         { padding-left: $spacing-xs; }
+    .breakPointL-paddingTopBottom-xs    { padding-top: $spacing-xs; padding-bottom: $spacing-xs; }
+    .breakPointL-paddingLeftRight-xs    { padding-left: $spacing-xs; padding-right: $spacing-xs; }
+
+    .breakPointL-padding-s              { padding: $spacing-s; }
+    .breakPointL-paddingTop-s           { padding-top: $spacing-s; }
+    .breakPointL-paddingRight-s         { padding-right: $spacing-s; }
+    .breakPointL-paddingBottom-s        { padding-bottom: $spacing-s; }
+    .breakPointL-paddingLeft-s          { padding-left: $spacing-s; }
+    .breakPointL-paddingTopBottom-s     { padding-top: $spacing-s; padding-bottom: $spacing-s; }
+    .breakPointL-paddingLeftRight-s     { padding-left: $spacing-s; padding-right: $spacing-s; }
+
+    .breakPointL-padding-m              { padding: $spacing-m; }
+    .breakPointL-paddingTop-m           { padding-top: $spacing-m; }
+    .breakPointL-paddingRight-m         { padding-right: $spacing-m; }
+    .breakPointL-paddingBottom-m        { padding-bottom: $spacing-m; }
+    .breakPointL-paddingLeft-m          { padding-left: $spacing-m; }
+    .breakPointL-paddingTopBottom-m     { padding-top: $spacing-m; padding-bottom: $spacing-m; }
+    .breakPointL-paddingLeftRight-m     { padding-left: $spacing-m; padding-right: $spacing-m; }
+
+    .breakPointL-padding-l              { padding: $spacing-l; }
+    .breakPointL-paddingTop-l           { padding-top: $spacing-l; }
+    .breakPointL-paddingRight-l         { padding-right: $spacing-l; }
+    .breakPointL-paddingBottom-l        { padding-bottom: $spacing-l; }
+    .breakPointL-paddingLeft-l          { padding-left: $spacing-l; }
+    .breakPointL-paddingTopBottom-l     { padding-top: $spacing-l; padding-bottom: $spacing-l; }
+    .breakPointL-paddingLeftRight-l     { padding-left: $spacing-l; padding-right: $spacing-l; }
+
+    .breakPointL-padding-xl             { padding: $spacing-xl; }
+    .breakPointL-paddingTop-xl          { padding-top: $spacing-xl; }
+    .breakPointL-paddingRight-xl        { padding-right: $spacing-xl; }
+    .breakPointL-paddingBottom-xl       { padding-bottom: $spacing-xl; }
+    .breakPointL-paddingLeft-xl         { padding-left: $spacing-xl; }
+    .breakPointL-paddingTopBottom-xl    { padding-top: $spacing-xl; padding-bottom: $spacing-xl; }
+    .breakPointL-paddingLeftRight-xl    { padding-left: $spacing-xl; padding-right: $spacing-xl; }
+}

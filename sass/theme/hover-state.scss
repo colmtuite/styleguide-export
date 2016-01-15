@@ -1,0 +1,187 @@
+//
+// Hover states
+// -------------------------
+
+// All hover states are wrapped in a desktop
+// media query because hover states are not
+// possible on touch devices, plus they stick
+// and cause issues.
+
+@include breakPoint(l) {
+    // Brand color hovers
+    // -------------------------
+
+    .c-marvel--hover:hover                  { color: $marvel; }
+    .c-green--hover:hover                   { color: $green; }
+    .c-yellow--hover:hover                  { color: $yellow; }
+    .c-orange--hover:hover                  { color: $orange; }
+    .c-pink--hover:hover                    { color: $pink; }
+    .c-purple--hover:hover                  { color: $purple; }
+    .c-red--hover:hover                     { color: $red; }
+
+    .c-marvel--d--hover:hover               { color: $marvel--d; }
+    .c-marvel--l--hover:hover               { color: $marvel--l; }
+
+    .c-green--d--hover:hover                { color: $green--d; }
+    .c-green--l--hover:hover                { color: $green--l; }
+
+    .c-yellow--d--hover:hover               { color: $yellow--d; }
+    .c-yellow--l--hover:hover               { color: $yellow--l; }
+
+    .c-orange--d--hover:hover               { color: $orange--d; }
+    .c-orange--l--hover:hover               { color: $orange--l; }
+
+    .c-pink--d--hover:hover                 { color: $pink--d; }
+    .c-pink--l--hover:hover                 { color: $pink--l; }
+
+    .c-purple--d--hover:hover               { color: $purple--d; }
+    .c-purple--l--hover:hover               { color: $purple--l; }
+
+    .c-red--d--hover:hover                  { color: $red--d; }
+    .c-red--l--hover:hover                  { color: $red--l; }
+
+    // Brand fill hovers
+    // -------------------------
+
+    .fill-marvel--hover:hover               { fill: $marvel; }
+    .fill-green--hover:hover                { fill: $green; }
+    .fill-yellow--hover:hover               { fill: $yellow; }
+    .fill-orange--hover:hover               { fill: $orange; }
+    .fill-pink--hover:hover                 { fill: $pink; }
+    .fill-purple--hover:hover               { fill: $purple; }
+    .fill-red--hover:hover                  { fill: $red; }
+
+    .fill-marvel--d--hover:hover            { fill: $marvel--d; }
+    .fill-marvel--l--hover:hover            { fill: $marvel--l; }
+
+    .fill-green--d--hover:hover             { fill: $green--d; }
+    .fill-green--l--hover:hover             { fill: $green--l; }
+
+    .fill-yellow--d--hover:hover            { fill: $yellow--d; }
+    .fill-yellow--l--hover:hover            { fill: $yellow--l; }
+
+    .fill-orange--d--hover:hover            { fill: $orange--d; }
+    .fill-orange--l--hover:hover            { fill: $orange--l; }
+
+    .fill-pink--d--hover:hover              { fill: $pink--d; }
+    .fill-pink--l--hover:hover              { fill: $pink--l; }
+
+    .fill-purple--d--hover:hover            { fill: $purple--d; }
+    .fill-purple--l--hover:hover            { fill: $purple--l; }
+
+    .fill-red--d--hover:hover               { fill: $red--d; }
+    .fill-red--l--hover:hover               { fill: $red--l; }
+
+    // Grey color hovers
+    // -------------------------
+
+    .c-black--hover:hover                   { color: $black; }
+    .c-steel--hover:hover                   { color: $steel; }
+    .c-slate--hover:hover                   { color: $slate; }
+    .c-silver--hover:hover                  { color: $silver; }
+    .c-snow--hover:hover                    { color: $snow; }
+    .c-smoke--hover:hover                   { color: $smoke; }
+    .c-white--hover:hover                   { color: $white; }
+
+    .c-snow--d--hover:hover                 { color: $snow--d }
+    .c-snow--xd--hover:hover                { color: $snow--xd }
+
+    .c-smoke--d--hover:hover                { color: $smoke--d }
+    .c-smoke--xd--hover:hover               { color: $smoke--xd }
+
+    // Grey fill hovers
+    // -------------------------
+
+    .fill-black--hover:hover                { fill: $black; }
+    .fill-steel--hover:hover                { fill: $steel; }
+    .fill-slate--hover:hover                { fill: $slate; }
+    .fill-silver--hover:hover               { fill: $silver; }
+    .fill-snow--hover:hover                 { fill: $snow; }
+    .fill-smoke--hover:hover                { fill: $smoke; }
+    .fill-white--hover:hover                { fill: $white; }
+
+    .fill-snow--d--hover:hover              { fill: $snow--d }
+    .fill-snow--xd--hover:hover             { fill: $snow--xd }
+
+    .fill-smoke--d--hover:hover             { fill: $smoke--d }
+    .fill-smoke--xd--hover:hover            { fill: $smoke--xd }
+
+    // UI color hovers
+    // -------------------------
+
+    .c-blue--hover:hover                    { color: $blue; }
+    .c-positive--hover:hover                { color: $positive; }
+    .c-negative--hover:hover                { color: $negative; }
+    .c-warning--hover:hover                 { color: $warning; }
+
+    .c-blue--d--hover:hover                 { color: $blue--d; }
+    .c-blue--l--hover:hover                 { color: $blue--l; }
+
+    .fill-blue--hover:hover                 { fill: $blue; }
+    .fill-positive--hover:hover             { fill: $positive; }
+    .fill-negative--hover:hover             { fill: $negative; }
+    .fill-warning--hover:hover              { fill: $warning; }
+
+    .fill-blue--d--hover:hover              { fill: $blue--d; }
+    .fill-blue--l--hover:hover              { fill: $blue--l; }
+
+    // Social hovers
+    // -------------------------
+
+    .c-twitter--hover:hover                 { color: $twitter; }
+    .c-facebook--hover:hover                { color: $facebook; }
+    .c-dribbble--hover:hover                { color: $dribbble; }
+    .c-dropbox--hover:hover                 { color: $dropbox; }
+    .c-google--hover:hover                  { color: $google; }
+    .c-instagram--hover:hover               { color: $instagram; }
+    .c-linkedin--hover:hover                { color: $linkedin; }
+
+    .fill-twitter--hover:hover              { fill: $twitter; }
+    .fill-facebook--hover:hover             { fill: $facebook; }
+    .fill-dribbble--hover:hover             { fill: $dribbble; }
+    .fill-dropbox--hover:hover              { fill: $dropbox; }
+    .fill-google--hover:hover               { fill: $google; }
+    .fill-instagram--hover:hover            { fill: $instagram; }
+    .fill-linkedin--hover:hover             { fill: $linkedin; }
+
+    // Background colors
+    // -------------------------
+
+    .bg-white--hover:hover                  { @extend .bg-white; }
+    .bg-snow--hover:hover                   { @extend .bg-snow; }
+    .bg-marvel--hover:hover                 { @extend .bg-marvel; }
+    .bg-negative--hover:hover               { @extend .bg-negative; }
+    .bg-positive--hover:hover               { @extend .bg-positive; }
+
+    .bg-pink--hover:hover                   { @extend .bg-pink; }
+    .bg-purple--hover:hover                 { @extend .bg-purple; }
+    .bg-yellow--hover:hover                 { @extend .bg-yellow; }
+    .bg-orange--hover:hover                 { @extend .bg-orange; }
+
+    // Box shadows
+    // -------------------------
+
+    .boxShadow-deboss--hover:hover          { @extend .boxShadow-deboss; }
+    .boxShadow-emboss--hover:hover          { @extend .boxShadow-emboss; }
+    .boxShadow-raise--hover:hover           { @extend .boxShadow-raise; }
+    .boxShadow-bevelRaise--hover:hover      { @extend .boxShadow-bevelRaise; }
+    .boxShadow-none--hover:hover            { @extend .boxShadow-none;}
+    .boxShadow-smoke--hover:hover           { @extend .boxShadow-smoke; }
+    .boxShadow-smoke--xd--hover:hover       { @extend .boxShadow-smoke--xd; }
+
+    // Scale effects
+    // -------------------------
+
+    .scaleUp--hover:hover                   { transform: scale(1.2); }
+
+    // Underline effects
+    // -------------------------
+    .textDecoration-underline--hover:hover  { @extend .textDecoration-underline; }
+
+    // Opacity effects
+    // -------------------------
+
+    .opacity-60--hover:hover                { @extend .opacity-60; }
+    .opacity-90--hover:hover                { @extend .opacity-90; }
+    .opacity-100--hover:hover               { @extend .opacity-100; }
+}

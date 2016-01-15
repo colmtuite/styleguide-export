@@ -1,0 +1,16 @@
+//
+// SVG Icon
+// -------------------------
+
+.svgIcon {
+    @extend .transitionProperty-all;
+    @extend .transitionDuration-s;
+    @extend .transitionTimingFunction-linear;
+}
+
+// Icons inside buttons
+// -------------------------
+
+.button:hover .svgIcon {
+    @extend .fill-white;
+}

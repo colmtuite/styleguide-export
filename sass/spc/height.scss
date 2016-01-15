@@ -1,0 +1,161 @@
+//
+// Heights
+// -------------
+
+.height-5       { height: 5%; }
+.height-10      { height: 10%; }
+.height-15      { height: 15%; }
+.height-20      { height: 20%; }
+.height-25      { height: 25%; }
+.height-30      { height: 30%; }
+.height-35      { height: 30%; }
+.height-40      { height: 40%; }
+.height-45      { height: 40%; }
+.height-50      { height: 50%; }
+.height-55      { height: 50%; }
+.height-60      { height: 60%; }
+.height-65      { height: 65%; }
+.height-70      { height: 70%; }
+.height-75      { height: 75%; }
+.height-80      { height: 80%; }
+.height-85      { height: 85%; }
+.height-90      { height: 90%; }
+.height-95      { height: 95%; }
+.height-100     { height: 100%; }
+.height-auto    { height: auto; }
+
+.height-xl      { height: $spacing-xl; }
+.height-l       { height: $spacing-l; }
+.height-m       { height: $spacing-m; }
+.height-s       { height: $spacing-s; }
+.height-xs      { height: $spacing-xs; }
+.height-xxs     { height: $spacing-xxs; }
+
+.height-control--xl { height: $control-xl; }
+.height-control--l  { height: $control-l; }
+.height-control--m  { height: $control-m; }
+.height-control--s  { height: $control-s; }
+
+@include breakPoint(s) {
+    .breakPointS-height-5       { height: 5%; }
+    .breakPointS-height-10      { height: 10%; }
+    .breakPointS-height-15      { height: 15%; }
+    .breakPointS-height-20      { height: 20%; }
+    .breakPointS-height-25      { height: 25%; }
+    .breakPointS-height-30      { height: 30%; }
+    .breakPointS-height-35      { height: 30%; }
+    .breakPointS-height-40      { height: 40%; }
+    .breakPointS-height-45      { height: 40%; }
+    .breakPointS-height-50      { height: 50%; }
+    .breakPointS-height-55      { height: 50%; }
+    .breakPointS-height-60      { height: 60%; }
+    .breakPointS-height-65      { height: 65%; }
+    .breakPointS-height-70      { height: 70%; }
+    .breakPointS-height-75      { height: 75%; }
+    .breakPointS-height-80      { height: 80%; }
+    .breakPointS-height-85      { height: 85%; }
+    .breakPointS-height-90      { height: 90%; }
+    .breakPointS-height-95      { height: 95%; }
+    .breakPointS-height-100     { height: 100%; }
+    .breakPointS-height-auto    { height: auto; }
+
+    .breakPointS-height-xl      { height: $spacing-xl; }
+    .breakPointS-height-l       { height: $spacing-l; }
+    .breakPointS-height-m       { height: $spacing-m; }
+    .breakPointS-height-s       { height: $spacing-s; }
+    .breakPointS-height-xs      { height: $spacing-xs; }
+    .breakPointS-height-xxs     { height: $spacing-xxs; }
+}
+
+@include breakPoint(m) {
+    .breakPointM-height-5       { height: 5%; }
+    .breakPointM-height-10      { height: 10%; }
+    .breakPointM-height-15      { height: 15%; }
+    .breakPointM-height-20      { height: 20%; }
+    .breakPointM-height-25      { height: 25%; }
+    .breakPointM-height-30      { height: 30%; }
+    .breakPointM-height-35      { height: 30%; }
+    .breakPointM-height-40      { height: 40%; }
+    .breakPointM-height-45      { height: 40%; }
+    .breakPointM-height-50      { height: 50%; }
+    .breakPointM-height-55      { height: 50%; }
+    .breakPointM-height-60      { height: 60%; }
+    .breakPointM-height-65      { height: 65%; }
+    .breakPointM-height-70      { height: 70%; }
+    .breakPointM-height-75      { height: 75%; }
+    .breakPointM-height-80      { height: 80%; }
+    .breakPointM-height-85      { height: 85%; }
+    .breakPointM-height-90      { height: 90%; }
+    .breakPointM-height-95      { height: 95%; }
+    .breakPointM-height-100     { height: 100%; }
+    .breakPointM-height-auto    { height: auto; }
+
+    .breakPointM-height-xl      { height: $spacing-xl; }
+    .breakPointM-height-l       { height: $spacing-l; }
+    .breakPointM-height-m       { height: $spacing-m; }
+    .breakPointM-height-s       { height: $spacing-s; }
+    .breakPointM-height-xs      { height: $spacing-xs; }
+    .breakPointM-height-xxs     { height: $spacing-xxs; }
+}
+
+@include breakPoint(l) {
+    .breakPointL-height-5       { height: 5%; }
+    .breakPointL-height-10      { height: 10%; }
+    .breakPointL-height-15      { height: 15%; }
+    .breakPointL-height-20      { height: 20%; }
+    .breakPointL-height-25      { height: 25%; }
+    .breakPointL-height-30      { height: 30%; }
+    .breakPointL-height-35      { height: 30%; }
+    .breakPointL-height-40      { height: 40%; }
+    .breakPointL-height-45      { height: 40%; }
+    .breakPointL-height-50      { height: 50%; }
+    .breakPointL-height-55      { height: 50%; }
+    .breakPointL-height-60      { height: 60%; }
+    .breakPointL-height-65      { height: 65%; }
+    .breakPointL-height-70      { height: 70%; }
+    .breakPointL-height-75      { height: 75%; }
+    .breakPointL-height-80      { height: 80%; }
+    .breakPointL-height-85      { height: 85%; }
+    .breakPointL-height-90      { height: 90%; }
+    .breakPointL-height-95      { height: 95%; }
+    .breakPointL-height-100     { height: 100%; }
+    .breakPointL-height-auto    { height: auto; }
+
+    .breakPointL-height-xl      { height: $spacing-xl; }
+    .breakPointL-height-l       { height: $spacing-l; }
+    .breakPointL-height-m       { height: $spacing-m; }
+    .breakPointL-height-s       { height: $spacing-s; }
+    .breakPointL-height-xs      { height: $spacing-xs; }
+    .breakPointL-height-xxs     { height: $spacing-xxs; }
+}
+
+@include breakPointHeight(xl) {
+    .breakPointHeightXL-height-5       { height: 5%; }
+    .breakPointHeightXL-height-10      { height: 10%; }
+    .breakPointHeightXL-height-15      { height: 15%; }
+    .breakPointHeightXL-height-20      { height: 20%; }
+    .breakPointHeightXL-height-25      { height: 25%; }
+    .breakPointHeightXL-height-30      { height: 30%; }
+    .breakPointHeightXL-height-35      { height: 30%; }
+    .breakPointHeightXL-height-40      { height: 40%; }
+    .breakPointHeightXL-height-45      { height: 40%; }
+    .breakPointHeightXL-height-50      { height: 50%; }
+    .breakPointHeightXL-height-55      { height: 50%; }
+    .breakPointHeightXL-height-60      { height: 60%; }
+    .breakPointHeightXL-height-65      { height: 65%; }
+    .breakPointHeightXL-height-70      { height: 70%; }
+    .breakPointHeightXL-height-75      { height: 75%; }
+    .breakPointHeightXL-height-80      { height: 80%; }
+    .breakPointHeightXL-height-85      { height: 85%; }
+    .breakPointHeightXL-height-90      { height: 90%; }
+    .breakPointHeightXL-height-95      { height: 95%; }
+    .breakPointHeightXL-height-100     { height: 100%; }
+    .breakPointHeightXL-height-auto    { height: auto; }
+
+    .breakPointXL-height-xl      { height: $spacing-xl; }
+    .breakPointXL-height-l       { height: $spacing-l; }
+    .breakPointXL-height-m       { height: $spacing-m; }
+    .breakPointXL-height-s       { height: $spacing-s; }
+    .breakPointXL-height-xs      { height: $spacing-xs; }
+    .breakPointXL-height-xxs     { height: $spacing-xxs; }
+}

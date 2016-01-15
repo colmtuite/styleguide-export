@@ -1,0 +1,69 @@
+//
+// Opacity
+// -------------
+
+.opacity-0      { opacity: 0; }
+.opacity-5      { opacity: .03; }
+.opacity-5      { opacity: .05; }
+.opacity-10     { opacity: .1; }
+.opacity-15     { opacity: .15; }
+.opacity-20     { opacity: .2; }
+.opacity-30     { opacity: .3; }
+.opacity-40     { opacity: .4; }
+.opacity-50     { opacity: .5; }
+.opacity-60     { opacity: .6; }
+.opacity-70     { opacity: .7; }
+.opacity-80     { opacity: .8; }
+.opacity-90     { opacity: .9; }
+.opacity-100    { opacity: 1; }
+
+@include breakPoint(s) {
+    .breakPointS-opacity-0      { opacity: 0; }
+    .breakPointS-opacity-5      { opacity: .03; }
+    .breakPointS-opacity-5      { opacity: .05; }
+    .breakPointS-opacity-10     { opacity: .1; }
+    .breakPointS-opacity-15     { opacity: .15; }
+    .breakPointS-opacity-20     { opacity: .2; }
+    .breakPointS-opacity-30     { opacity: .3; }
+    .breakPointS-opacity-40     { opacity: .4; }
+    .breakPointS-opacity-50     { opacity: .5; }
+    .breakPointS-opacity-60     { opacity: .6; }
+    .breakPointS-opacity-70     { opacity: .7; }
+    .breakPointS-opacity-80     { opacity: .8; }
+    .breakPointS-opacity-90     { opacity: .9; }
+    .breakPointS-opacity-100    { opacity: 1; }
+}
+
+@include breakPoint(m) {
+    .breakPointM-opacity-0      { opacity: 0; }
+    .breakPointM-opacity-5      { opacity: .03; }
+    .breakPointM-opacity-5      { opacity: .05; }
+    .breakPointM-opacity-10     { opacity: .1; }
+    .breakPointM-opacity-15     { opacity: .15; }
+    .breakPointM-opacity-20     { opacity: .2; }
+    .breakPointM-opacity-30     { opacity: .3; }
+    .breakPointM-opacity-40     { opacity: .4; }
+    .breakPointM-opacity-50     { opacity: .5; }
+    .breakPointM-opacity-60     { opacity: .6; }
+    .breakPointM-opacity-70     { opacity: .7; }
+    .breakPointM-opacity-80     { opacity: .8; }
+    .breakPointM-opacity-90     { opacity: .9; }
+    .breakPointM-opacity-100    { opacity: 1; }
+}
+
+@include breakPoint(l) {
+    .breakPointL-opacity-0      { opacity: 0; }
+    .breakPointL-opacity-5      { opacity: .03; }
+    .breakPointL-opacity-5      { opacity: .05; }
+    .breakPointL-opacity-10     { opacity: .1; }
+    .breakPointL-opacity-15     { opacity: .15; }
+    .breakPointL-opacity-20     { opacity: .2; }
+    .breakPointL-opacity-30     { opacity: .3; }
+    .breakPointL-opacity-40     { opacity: .4; }
+    .breakPointL-opacity-50     { opacity: .5; }
+    .breakPointL-opacity-60     { opacity: .6; }
+    .breakPointL-opacity-70     { opacity: .7; }
+    .breakPointL-opacity-80     { opacity: .8; }
+    .breakPointL-opacity-90     { opacity: .9; }
+    .breakPointL-opacity-100    { opacity: 1; }
+}

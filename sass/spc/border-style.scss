@@ -1,0 +1,29 @@
+//
+// Border Style
+// -------------
+
+.borderStyle-none   { border-style: none; }
+.borderStyle-dashed { border-style: dashed; }
+.borderStyle-dotted { border-style: dotted; }
+.borderStyle-solid  { border-style: solid; }
+
+@include breakPoint(s) {
+    .breakPointS-borderStyle-none   { border-style: none; }
+    .breakPointS-borderStyle-dashed { border-style: dashed; }
+    .breakPointS-borderStyle-dotted { border-style: dotted; }
+    .breakPointS-borderStyle-solid  { border-style: solid; }
+}
+
+@include breakPoint(m) {
+    .breakPointM-borderStyle-none   { border-style: none; }
+    .breakPointM-borderStyle-dashed { border-style: dashed; }
+    .breakPointM-borderStyle-dotted { border-style: dotted; }
+    .breakPointM-borderStyle-solid  { border-style: solid; }
+}
+
+@include breakPoint(l) {
+    .breakPointL-borderStyle-none   { border-style: none; }
+    .breakPointL-borderStyle-dashed { border-style: dashed; }
+    .breakPointL-borderStyle-dotted { border-style: dotted; }
+    .breakPointL-borderStyle-solid  { border-style: solid; }
+}

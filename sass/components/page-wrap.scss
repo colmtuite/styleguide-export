@@ -1,0 +1,24 @@
+//
+// Page Wrap
+// -------------------------
+
+// Wrap a piece of content in a horizontally
+// centered container.
+
+.pageWrap {
+    @extend .width-90;
+    @extend .centered;
+    @extend .cf;
+}
+
+.pageWrap--s {
+    max-width: 720px;
+}
+
+.pageWrap--m {
+    max-width: $breakpoint-l;
+}
+
+.pageWrap--l {
+    max-width: $breakpoint-xl;
+}

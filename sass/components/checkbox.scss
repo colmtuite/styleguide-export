@@ -1,0 +1,107 @@
+//
+// Checkboxes and radio buttons
+// -------------------------
+
+$checkBox-size: 16px;
+
+.form-control {
+    @extend .position-relative;
+    @extend .display-inlineBlock;
+    @extend .cursor-pointer;
+
+    padding-left: $checkBox-size + 10;
+    line-height: $checkBox-size;
+}
+
+.form-control input {
+    @extend .position-absolute;
+    @extend .opacity-0;
+    @extend .zi-negative;
+}
+
+.form-control-indicator {
+    @extend .posPinTL;
+    @extend .display-block;
+
+    @extend .bg-snow;
+    @extend .borderWidth-1;
+    @extend .borderStyle-solid;
+    @extend .borderColor-smoke;
+
+    @extend .userSelect-none;
+    @extend .boxSizing-borderBox;
+
+    @extend .transitionDuration-m;
+    @extend .transitionProperty-all;
+
+    width: $checkBox-size;
+    height: $checkBox-size;
+}
+
+.checkbox-tick {
+    @extend .opacity-0;
+    @extend .fill-white;
+    @extend .absolutelyCenter;
+
+    @extend .transitionDuration-s;
+    @extend .transitionProperty-all;
+}
+
+.radio-tick {
+    width: $checkBox-size / 2 - 2;
+    height: $checkBox-size / 2 - 2;
+
+    @extend .bg-white;
+    @extend .opacity-0;
+    @extend .absolutelyCenter;
+    @extend .borderRadius-circle;
+
+    @extend .transitionDuration-s;
+    @extend .transitionProperty-all;
+}
+
+.form-control:hover .form-control-indicator {
+    @extend .bg-smoke;
+}
+
+//
+// Checked state
+// -------------------------
+
+.form-control input:checked ~ .form-control-indicator {
+    @extend .bg-positive;
+    @extend .borderColor-positive;
+}
+
+//
+// Active state
+// -------------------------
+
+.form-control input:active ~ .form-control-indicator {
+    @extend .bg-positive--d;
+    @extend .borderColor-positive--d;
+}
+
+//
+// Checkbox modifiers
+// -------------------------
+
+.checkbox .form-control-indicator {
+    @extend .borderRadius-m;
+}
+
+.checkbox input:checked ~ .form-control-indicator .checkbox-tick {
+    @extend .opacity-100;
+}
+
+//
+// Radio modifiers
+// -------------------------
+
+.radio .form-control-indicator {
+    @extend .borderRadius-circle;
+}
+
+.radio input:checked ~ .form-control-indicator .radio-tick {
+    @extend .opacity-100;
+}

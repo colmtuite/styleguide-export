@@ -1,0 +1,121 @@
+//
+// Color Scheme
+// -------------------------
+
+// The entire color scheme. Colors are grouped into 5
+// categories - brand, grayscale, gray, and UI. In each
+// category, we first define the base colors. Then we define
+// darker shades or lighter tints as needed.
+
+// Legend
+// -------------------------
+
+//  d = Dark
+//  l = Light
+//  x = Extra
+
+// Brand Colors
+// -------------------------
+
+$marvel: #1fb6ff;
+$green: #13ce66;
+$yellow: #ffc82c;
+$orange: #ff7849;
+$pink: #ff49db;
+$purple: #7e5bef;
+$red: #ff4949;
+
+$marvel--d: darken($marvel, 10%);
+$marvel--l: lighten($marvel, 20%);
+
+$green--d: darken($green, 10%);
+$green--l: lighten($green, 10%);
+
+$yellow--d: darken($yellow, 10%);
+$yellow--l: lighten($yellow, 10%);
+
+$orange--d: darken($orange, 10%);
+$orange--l: lighten($orange, 10%);
+
+$pink--d: darken($pink, 10%);
+$pink--l: lighten($pink, 10%);
+
+$purple--d: darken($purple, 10%);
+$purple--l: lighten($purple, 10%);
+
+$red--d: darken($red, 10%);
+$red--l: lighten($red, 10%);
+
+// Gray Colors
+// -------------------------
+
+$black: #1f2d3d;
+$steel: #273444;
+$slate: #3c4858;
+$silver: #8492a6;
+$smoke: #e0e6ed;
+$snow: #f9fafc;
+$white: #fff;
+
+$snow--d: darken($snow, 3%);
+$snow--xd: darken($snow, 6%);
+
+$smoke--d: darken($smoke, 4%);
+$smoke--xd: darken($smoke, 10%);
+
+// UI colors
+// -------------------------
+
+$blue: $marvel;
+$positive: $green;
+$negative: $red;
+$warning: $yellow;
+
+$blue--d: $marvel--d;
+$blue--l: $marvel--l;
+
+// Transparent Colors
+// -------------------------
+
+// Translucent = 98
+// Transparent = 30
+// Pellucid = 15
+// Limpid = 05
+
+$translucent: .98;
+$transparent: .30;
+$pellucid: .15;
+$limpid: .05;
+
+$blue--translucent: rgba($blue--l,$translucent);
+$blue--transparent: rgba($blue--l,$transparent);
+$blue--pellucid: rgba($blue--l,$pellucid);
+$blue--limpid: rgba($blue--l,$limpid);
+
+$black--translucent: rgba($black,$translucent);
+$black--transparent: rgba($black,$transparent);
+$black--pellucid: rgba($black,$pellucid);
+$black--limpid: rgba($black,$limpid);
+
+$white--translucent: rgba($white,$translucent);
+$white--transparent: rgba($white,$transparent);
+$white--pellucid: rgba($white,$pellucid);
+$white--limpid: rgba($white,$limpid);
+
+// Social Colors
+// -------------------------
+
+$twitter: #55acee;
+$facebook: #3b5999;
+$dribbble: #ea4c89;
+$dropbox: #007ee5;
+$google: #dc4e41;
+$instagram: #3f729b;
+$linkedin: #0077b5;
+
+// Syntax highlighting
+// -------------------------
+
+$hljs-tag: #073642;
+$hljs-value: #d33682;
+$hljs-attribute: #2aa198;

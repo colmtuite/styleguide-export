@@ -1,0 +1,13 @@
+//
+// Truncate Text
+// -------------------------
+
+// Clip overflowing text and append 3 dots to the end of
+// the text span.
+
+.truncateText {
+    @extend .display-block;
+    @extend .overflow-hidden;
+    @extend .textOverflow-ellipsis;
+    @extend .whiteSpace-nowrap;
+}

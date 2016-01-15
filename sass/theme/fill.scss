@@ -1,0 +1,376 @@
+//
+// Fill colors
+// -------------------------
+
+// This file depends on color-scheme.scss and
+// therefore must follow it in the compiler.
+
+// Single-responsibility classes for every color in the
+// color scheme.
+
+// Brand fill colors
+// -------------------------
+
+.fill-marvel              { fill: $marvel; }
+.fill-green               { fill: $green; }
+.fill-yellow              { fill: $yellow; }
+.fill-orange              { fill: $orange; }
+.fill-pink                { fill: $pink; }
+.fill-purple              { fill: $purple; }
+.fill-red                 { fill: $red; }
+
+.fill-marvel--d           { fill: $marvel--d; }
+.fill-marvel--l           { fill: $marvel--l; }
+
+.fill-green--d            { fill: $green--d; }
+.fill-green--l            { fill: $green--l; }
+
+.fill-yellow--d           { fill: $yellow--d; }
+.fill-yellow--l           { fill: $yellow--l; }
+
+.fill-orange--d           { fill: $orange--d; }
+.fill-orange--l           { fill: $orange--l; }
+
+.fill-pink--d             { fill: $pink--d; }
+.fill-pink--l             { fill: $pink--l; }
+
+.fill-purple--d           { fill: $purple--d; }
+.fill-purple--l           { fill: $purple--l; }
+
+.fill-red--d              { fill: $red--d; }
+.fill-red--l              { fill: $red--l; }
+
+// Gray fill colors
+// -------------------------
+
+.fill-black               { fill: $black; }
+.fill-steel               { fill: $steel; }
+.fill-slate               { fill: $slate; }
+.fill-silver              { fill: $silver; }
+.fill-snow                { fill: $snow; }
+.fill-smoke               { fill: $smoke; }
+.fill-white               { fill: $white; }
+
+.fill-snow--d             { fill: $snow--d }
+.fill-snow--xd            { fill: $snow--xd }
+
+.fill-smoke--d            { fill: $smoke--d }
+.fill-smoke--xd           { fill: $smoke--xd }
+
+// UI fill Colors
+// -------------------------
+
+.fill-blue                { fill: $blue; }
+.fill-positive            { fill: $positive; }
+.fill-negative            { fill: $negative; }
+.fill-warning             { fill: $warning; }
+
+.fill-blue--d             { fill: $blue--d; }
+.fill-blue--l             { fill: $blue--l; }
+
+// Transparent fill colors
+// -------------------------
+
+.fill-blue--translucent   { fill: $blue--translucent; }
+.fill-blue--transparent   { fill: $blue--transparent; }
+.fill-blue--pellucid      { fill: $blue--pellucid; }
+.fill-blue--limpid        { fill: $blue--limpid; }
+
+.fill-white--translucent  { fill: $white--translucent; }
+.fill-white--transparent  { fill: $white--transparent; }
+.fill-white--pellucid     { fill: $white--pellucid; }
+.fill-white--limpid       { fill: $white--limpid; }
+
+.fill-black--translucent  { fill: $black--translucent; }
+.fill-black--transparent  { fill: $black--transparent; }
+.fill-black--pellucid     { fill: $black--pellucid; }
+.fill-black--limpid       { fill: $black--limpid; }
+
+// Social fill colors
+// -------------------------
+
+.fill-twitter             { fill: $twitter; }
+.fill-facebook            { fill: $facebook; }
+.fill-dribbble            { fill: $dribbble; }
+.fill-dropbox             { fill: $dropbox; }
+.fill-google              { fill: $google; }
+.fill-instagram           { fill: $instagram; }
+.fill-linkedin            { fill: $linkedin; }
+
+
+//
+// Responsive rules
+// -------------------------
+
+@include breakPoint(s) {
+    // Brand fill colors
+    // -------------------------
+
+    .breakPointS-fill-marvel              { fill: $marvel; }
+    .breakPointS-fill-green               { fill: $green; }
+    .breakPointS-fill-yellow              { fill: $yellow; }
+    .breakPointS-fill-orange              { fill: $orange; }
+    .breakPointS-fill-pink                { fill: $pink; }
+    .breakPointS-fill-purple              { fill: $purple; }
+    .breakPointS-fill-red                 { fill: $red; }
+
+    .breakPointS-fill-marvel--d           { fill: $marvel--d; }
+    .breakPointS-fill-marvel--l           { fill: $marvel--l; }
+
+    .breakPointS-fill-green--d            { fill: $green--d; }
+    .breakPointS-fill-green--l            { fill: $green--l; }
+
+    .breakPointS-fill-yellow--d           { fill: $yellow--d; }
+    .breakPointS-fill-yellow--l           { fill: $yellow--l; }
+
+    .breakPointS-fill-orange--d           { fill: $orange--d; }
+    .breakPointS-fill-orange--l           { fill: $orange--l; }
+
+    .breakPointS-fill-pink--d             { fill: $pink--d; }
+    .breakPointS-fill-pink--l             { fill: $pink--l; }
+
+    .breakPointS-fill-purple--d           { fill: $purple--d; }
+    .breakPointS-fill-purple--l           { fill: $purple--l; }
+
+    .breakPointS-fill-red--d              { fill: $red--d; }
+    .breakPointS-fill-red--l              { fill: $red--l; }
+
+    // Gray fill colors
+    // -------------------------
+
+    .breakPointS-fill-black               { fill: $black; }
+    .breakPointS-fill-steel               { fill: $steel; }
+    .breakPointS-fill-slate               { fill: $slate; }
+    .breakPointS-fill-silver              { fill: $silver; }
+    .breakPointS-fill-snow                { fill: $snow; }
+    .breakPointS-fill-smoke               { fill: $smoke; }
+    .breakPointS-fill-white               { fill: $white; }
+
+    .breakPointS-fill-snow--d             { fill: $snow--d }
+    .breakPointS-fill-snow--xd            { fill: $snow--xd }
+
+    .breakPointS-fill-smoke--d            { fill: $smoke--d }
+    .breakPointS-fill-smoke--xd           { fill: $smoke--xd }
+
+    // UI fill Colors
+    // -------------------------
+
+    .breakPointS-fill-blue                { fill: $blue; }
+    .breakPointS-fill-positive            { fill: $positive; }
+    .breakPointS-fill-negative            { fill: $negative; }
+    .breakPointS-fill-warning             { fill: $warning; }
+
+    .breakPointS-fill-blue--d             { fill: $blue--d; }
+    .breakPointS-fill-blue--l             { fill: $blue--l; }
+
+    // Transparent fill colors
+    // -------------------------
+
+    .breakPointS-fill-blue--translucent   { fill: $blue--translucent; }
+    .breakPointS-fill-blue--transparent   { fill: $blue--transparent; }
+    .breakPointS-fill-blue--pellucid      { fill: $blue--pellucid; }
+    .breakPointS-fill-blue--limpid        { fill: $blue--limpid; }
+
+    .breakPointS-fill-white--translucent  { fill: $white--translucent; }
+    .breakPointS-fill-white--transparent  { fill: $white--transparent; }
+    .breakPointS-fill-white--pellucid     { fill: $white--pellucid; }
+    .breakPointS-fill-white--limpid       { fill: $white--limpid; }
+
+    .breakPointS-fill-black--translucent  { fill: $black--translucent; }
+    .breakPointS-fill-black--transparent  { fill: $black--transparent; }
+    .breakPointS-fill-black--pellucid     { fill: $black--pellucid; }
+    .breakPointS-fill-black--limpid       { fill: $black--limpid; }
+
+    // Social fill colors
+    // -------------------------
+
+    .breakPointS-fill-twitter             { fill: $twitter; }
+    .breakPointS-fill-facebook            { fill: $facebook; }
+    .breakPointS-fill-dribbble            { fill: $dribbble; }
+    .breakPointS-fill-dropbox             { fill: $dropbox; }
+    .breakPointS-fill-google              { fill: $google; }
+    .breakPointS-fill-instagram           { fill: $instagram; }
+    .breakPointS-fill-linkedin            { fill: $linkedin; }
+}
+
+@include breakPoint(m) {
+    // Brand fill colors
+    // -------------------------
+
+    .breakPointM-fill-marvel              { fill: $marvel; }
+    .breakPointM-fill-green               { fill: $green; }
+    .breakPointM-fill-yellow              { fill: $yellow; }
+    .breakPointM-fill-orange              { fill: $orange; }
+    .breakPointM-fill-pink                { fill: $pink; }
+    .breakPointM-fill-purple              { fill: $purple; }
+    .breakPointM-fill-red                 { fill: $red; }
+
+    .breakPointM-fill-marvel--d           { fill: $marvel--d; }
+    .breakPointM-fill-marvel--l           { fill: $marvel--l; }
+
+    .breakPointM-fill-green--d            { fill: $green--d; }
+    .breakPointM-fill-green--l            { fill: $green--l; }
+
+    .breakPointM-fill-yellow--d           { fill: $yellow--d; }
+    .breakPointM-fill-yellow--l           { fill: $yellow--l; }
+
+    .breakPointM-fill-orange--d           { fill: $orange--d; }
+    .breakPointM-fill-orange--l           { fill: $orange--l; }
+
+    .breakPointM-fill-pink--d             { fill: $pink--d; }
+    .breakPointM-fill-pink--l             { fill: $pink--l; }
+
+    .breakPointM-fill-purple--d           { fill: $purple--d; }
+    .breakPointM-fill-purple--l           { fill: $purple--l; }
+
+    .breakPointM-fill-red--d              { fill: $red--d; }
+    .breakPointM-fill-red--l              { fill: $red--l; }
+
+    // Gray fill colors
+    // -------------------------
+
+    .breakPointM-fill-black               { fill: $black; }
+    .breakPointM-fill-steel               { fill: $steel; }
+    .breakPointM-fill-slate               { fill: $slate; }
+    .breakPointM-fill-silver              { fill: $silver; }
+    .breakPointM-fill-snow                { fill: $snow; }
+    .breakPointM-fill-smoke               { fill: $smoke; }
+    .breakPointM-fill-white               { fill: $white; }
+
+    .breakPointM-fill-snow--d             { fill: $snow--d }
+    .breakPointM-fill-snow--xd            { fill: $snow--xd }
+
+    .breakPointM-fill-smoke--d            { fill: $smoke--d }
+    .breakPointM-fill-smoke--xd           { fill: $smoke--xd }
+
+    // UI fill Colors
+    // -------------------------
+
+    .breakPointM-fill-blue                { fill: $blue; }
+    .breakPointM-fill-positive            { fill: $positive; }
+    .breakPointM-fill-negative            { fill: $negative; }
+    .breakPointM-fill-warning             { fill: $warning; }
+
+    .breakPointM-fill-blue--d             { fill: $blue--d; }
+    .breakPointM-fill-blue--l             { fill: $blue--l; }
+
+    // Transparent fill colors
+    // -------------------------
+
+    .breakPointM-fill-blue--translucent   { fill: $blue--translucent; }
+    .breakPointM-fill-blue--transparent   { fill: $blue--transparent; }
+    .breakPointM-fill-blue--pellucid      { fill: $blue--pellucid; }
+    .breakPointM-fill-blue--limpid        { fill: $blue--limpid; }
+
+    .breakPointM-fill-white--translucent  { fill: $white--translucent; }
+    .breakPointM-fill-white--transparent  { fill: $white--transparent; }
+    .breakPointM-fill-white--pellucid     { fill: $white--pellucid; }
+    .breakPointM-fill-white--limpid       { fill: $white--limpid; }
+
+    .breakPointM-fill-black--translucent  { fill: $black--translucent; }
+    .breakPointM-fill-black--transparent  { fill: $black--transparent; }
+    .breakPointM-fill-black--pellucid     { fill: $black--pellucid; }
+    .breakPointM-fill-black--limpid       { fill: $black--limpid; }
+
+    // Social fill colors
+    // -------------------------
+
+    .breakPointM-fill-twitter             { fill: $twitter; }
+    .breakPointM-fill-facebook            { fill: $facebook; }
+    .breakPointM-fill-dribbble            { fill: $dribbble; }
+    .breakPointM-fill-dropbox             { fill: $dropbox; }
+    .breakPointM-fill-google              { fill: $google; }
+    .breakPointM-fill-instagram           { fill: $instagram; }
+    .breakPointM-fill-linkedin            { fill: $linkedin; }
+}
+
+@include breakPoint(l) {
+    /// Brand fill colors
+    // -------------------------
+
+    .breakPointL-fill-marvel              { fill: $marvel; }
+    .breakPointL-fill-green               { fill: $green; }
+    .breakPointL-fill-yellow              { fill: $yellow; }
+    .breakPointL-fill-orange              { fill: $orange; }
+    .breakPointL-fill-pink                { fill: $pink; }
+    .breakPointL-fill-purple              { fill: $purple; }
+    .breakPointL-fill-red                 { fill: $red; }
+
+    .breakPointL-fill-marvel--d           { fill: $marvel--d; }
+    .breakPointL-fill-marvel--l           { fill: $marvel--l; }
+
+    .breakPointL-fill-green--d            { fill: $green--d; }
+    .breakPointL-fill-green--l            { fill: $green--l; }
+
+    .breakPointL-fill-yellow--d           { fill: $yellow--d; }
+    .breakPointL-fill-yellow--l           { fill: $yellow--l; }
+
+    .breakPointL-fill-orange--d           { fill: $orange--d; }
+    .breakPointL-fill-orange--l           { fill: $orange--l; }
+
+    .breakPointL-fill-pink--d             { fill: $pink--d; }
+    .breakPointL-fill-pink--l             { fill: $pink--l; }
+
+    .breakPointL-fill-purple--d           { fill: $purple--d; }
+    .breakPointL-fill-purple--l           { fill: $purple--l; }
+
+    .breakPointL-fill-red--d              { fill: $red--d; }
+    .breakPointL-fill-red--l              { fill: $red--l; }
+
+    // Gray fill colors
+    // -------------------------
+
+    .breakPointL-fill-black               { fill: $black; }
+    .breakPointL-fill-steel               { fill: $steel; }
+    .breakPointL-fill-slate               { fill: $slate; }
+    .breakPointL-fill-silver              { fill: $silver; }
+    .breakPointL-fill-snow                { fill: $snow; }
+    .breakPointL-fill-smoke               { fill: $smoke; }
+    .breakPointL-fill-white               { fill: $white; }
+
+    .breakPointL-fill-snow--d             { fill: $snow--d }
+    .breakPointL-fill-snow--xd            { fill: $snow--xd }
+
+    .breakPointL-fill-smoke--d            { fill: $smoke--d }
+    .breakPointL-fill-smoke--xd           { fill: $smoke--xd }
+
+    // UI fill Colors
+    // -------------------------
+
+    .breakPointL-fill-blue                { fill: $blue; }
+    .breakPointL-fill-positive            { fill: $positive; }
+    .breakPointL-fill-negative            { fill: $negative; }
+    .breakPointL-fill-warning             { fill: $warning; }
+
+    .breakPointL-fill-blue--d             { fill: $blue--d; }
+    .breakPointL-fill-blue--l             { fill: $blue--l; }
+
+    // Transparent fill colors
+    // -------------------------
+
+    .breakPointL-fill-blue--translucent   { fill: $blue--translucent; }
+    .breakPointL-fill-blue--transparent   { fill: $blue--transparent; }
+    .breakPointL-fill-blue--pellucid      { fill: $blue--pellucid; }
+    .breakPointL-fill-blue--limpid        { fill: $blue--limpid; }
+
+    .breakPointL-fill-white--translucent  { fill: $white--translucent; }
+    .breakPointL-fill-white--transparent  { fill: $white--transparent; }
+    .breakPointL-fill-white--pellucid     { fill: $white--pellucid; }
+    .breakPointL-fill-white--limpid       { fill: $white--limpid; }
+
+    .breakPointL-fill-black--translucent  { fill: $black--translucent; }
+    .breakPointL-fill-black--transparent  { fill: $black--transparent; }
+    .breakPointL-fill-black--pellucid     { fill: $black--pellucid; }
+    .breakPointL-fill-black--limpid       { fill: $black--limpid; }
+
+    // Social fill colors
+    // -------------------------
+
+    .breakPointL-fill-twitter             { fill: $twitter; }
+    .breakPointL-fill-facebook            { fill: $facebook; }
+    .breakPointL-fill-dribbble            { fill: $dribbble; }
+    .breakPointL-fill-dropbox             { fill: $dropbox; }
+    .breakPointL-fill-google              { fill: $google; }
+    .breakPointL-fill-instagram           { fill: $instagram; }
+    .breakPointL-fill-linkedin            { fill: $linkedin; }
+}

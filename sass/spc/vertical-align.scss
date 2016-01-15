@@ -1,0 +1,47 @@
+//
+// Vertical Align
+// -------------
+
+// Depends on an appropriate `display` value.
+
+.verticalAlign-baseline   { vertical-align: baseline; }
+.verticalAlign-sub        { vertical-align: sub; }
+.verticalAlign-super      { vertical-align: super; }
+.verticalAlign-top        { vertical-align: top; }
+.verticalAlign-textTop    { vertical-align: text-top; }
+.verticalAlign-middle     { vertical-align: middle; }
+.verticalAlign-bottom     { vertical-align: bottom; }
+.verticalAlign-textBottom { vertical-align: text-bottom; }
+
+@include breakPoint(s) {
+	.breakPointS-verticalAlign-baseline   { vertical-align: baseline; }
+	.breakPointS-verticalAlign-sub        { vertical-align: sub; }
+	.breakPointS-verticalAlign-super      { vertical-align: super; }
+	.breakPointS-verticalAlign-top        { vertical-align: top; }
+	.breakPointS-verticalAlign-textTop    { vertical-align: text-top; }
+	.breakPointS-verticalAlign-middle     { vertical-align: middle; }
+	.breakPointS-verticalAlign-bottom     { vertical-align: bottom; }
+	.breakPointS-verticalAlign-textBottom { vertical-align: text-bottom; }
+}
+
+@include breakPoint(m) {
+	.breakPointM-verticalAlign-baseline   { vertical-align: baseline; }
+	.breakPointM-verticalAlign-sub        { vertical-align: sub; }
+	.breakPointM-verticalAlign-super      { vertical-align: super; }
+	.breakPointM-verticalAlign-top        { vertical-align: top; }
+	.breakPointM-verticalAlign-textTop    { vertical-align: text-top; }
+	.breakPointM-verticalAlign-middle     { vertical-align: middle; }
+	.breakPointM-verticalAlign-bottom     { vertical-align: bottom; }
+	.breakPointM-verticalAlign-textBottom { vertical-align: text-bottom; }
+}
+
+@include breakPoint(l) {
+	.breakPointL-verticalAlign-baseline   { vertical-align: baseline; }
+	.breakPointL-verticalAlign-sub        { vertical-align: sub; }
+	.breakPointL-verticalAlign-super      { vertical-align: super; }
+	.breakPointL-verticalAlign-top        { vertical-align: top; }
+	.breakPointL-verticalAlign-textTop    { vertical-align: text-top; }
+	.breakPointL-verticalAlign-middle     { vertical-align: middle; }
+	.breakPointL-verticalAlign-bottom     { vertical-align: bottom; }
+	.breakPointL-verticalAlign-textBottom { vertical-align: text-bottom; }
+}

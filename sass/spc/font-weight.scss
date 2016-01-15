@@ -1,0 +1,29 @@
+//
+// Font Weight
+// -------------
+
+.fontWeight-3 { font-weight: 300; }
+.fontWeight-4 { font-weight: 400; }
+.fontWeight-5 { font-weight: 500; }
+.fontWeight-7 { font-weight: 700; }
+
+@include breakPoint(s) {
+    .breakPointS-fontWeight-3 { font-weight: 300; }
+    .breakPointS-fontWeight-4 { font-weight: 400; }
+    .breakPointS-fontWeight-5 { font-weight: 500; }
+    .breakPointS-fontWeight-7 { font-weight: 700; }
+}
+
+@include breakPoint(m) {
+    .breakPointM-fontWeight-3 { font-weight: 300; }
+    .breakPointM-fontWeight-4 { font-weight: 400; }
+    .breakPointM-fontWeight-5 { font-weight: 500; }
+    .breakPointM-fontWeight-7 { font-weight: 700; }
+}
+
+@include breakPoint(l) {
+    .breakPointL-fontWeight-3 { font-weight: 300; }
+    .breakPointL-fontWeight-4 { font-weight: 400; }
+    .breakPointL-fontWeight-5 { font-weight: 500; }
+    .breakPointL-fontWeight-7 { font-weight: 700; }
+}

@@ -1,0 +1,13 @@
+.scrollbar::-webkit-scrollbar {
+  width: 4px;
+	position: relative;
+	right: 2px;
+}
+ 
+.scrollbar::-webkit-scrollbar-track {
+   @extend .bg-none;
+}
+ 
+.scrollbar::-webkit-scrollbar-thumb {
+  @extend .bg-silver;
+}

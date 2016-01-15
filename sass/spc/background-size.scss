@@ -1,0 +1,25 @@
+//
+// Background Size
+// -------------
+
+.backgroundSize-cover   { background-size: cover; }
+.backgroundSize-contain { background-size: contain; }
+.backgroundSize-auto    { background-size: auto; }
+
+@include breakPoint(s) {
+    .breakPointS-backgroundSize-cover   { background-size: cover; }
+    .breakPointS-backgroundSize-contain { background-size: contain; }
+    .breakPointS-backgroundSize-auto    { background-size: auto; }
+}
+
+@include breakPoint(m) {
+    .breakPointM-backgroundSize-cover   { background-size: cover; }
+    .breakPointM-backgroundSize-contain { background-size: contain; }
+    .breakPointM-backgroundSize-auto    { background-size: auto; }
+}
+
+@include breakPoint(l) {
+    .breakPointL-backgroundSize-cover   { background-size: cover; }
+    .breakPointL-backgroundSize-contain { background-size: contain; }
+    .breakPointL-backgroundSize-auto    { background-size: auto; }
+}

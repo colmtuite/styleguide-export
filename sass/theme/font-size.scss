@@ -1,0 +1,121 @@
+//
+// Font sizes
+// -------------------------
+
+// Variables
+// -------------------------
+
+$fontSize-xxxxl: 46px;
+$fontSize-xxxl: 38px;
+$fontSize-xxl: 28px;
+$fontSize-xl: 20px;
+$fontSize-l: 18px;
+$fontSize-m: 16px;
+$fontSize-s: 14px;
+$fontSize-xs: 12px;
+
+// Font size scale
+// -------------------------
+
+.fontSize-xxxxl {
+    margin-left: -4px;
+    font-size: $fontSize-xxxxl;
+    @extend .letterSpacing-xs;
+}
+
+.fontSize-xxxl {
+    margin-left: -2px;
+    font-size: $fontSize-xxxl;
+    @extend .letterSpacing-xs;
+}
+
+.fontSize-xxl {
+    margin-left: -2px;
+    font-size: $fontSize-xxl;
+    letter-spacing: -.5px;
+}
+
+.fontSize-xl    { font-size: $fontSize-xl; }
+.fontSize-l     { font-size: $fontSize-l; }
+.fontSize-m     { font-size: $fontSize-m; }
+.fontSize-s     { font-size: $fontSize-s; }
+.fontSize-xs    { font-size: $fontSize-xs; }
+
+
+@include breakPoint(s) {
+    .breakPointS-fontSize-xxxxl {
+        margin-left: -4px;
+        font-size: $fontSize-xxxxl;
+        @extend .letterSpacing-xs;
+    }
+
+    .breakPointS-fontSize-xxxl {
+        margin-left: -2px;
+        font-size: $fontSize-xxxl;
+        @extend .letterSpacing-xs;
+    }
+
+    .breakPointS-fontSize-xxl {
+        margin-left: -2px;
+        font-size: $fontSize-xxl;
+        letter-spacing: -.5px;
+    }
+
+    .breakPointS-fontSize-xl    { font-size: $fontSize-xl; }
+    .breakPointS-fontSize-l     { font-size: $fontSize-l; }
+    .breakPointS-fontSize-m     { font-size: $fontSize-m; }
+    .breakPointS-fontSize-s     { font-size: $fontSize-s; }
+    .breakPointS-fontSize-xs    { font-size: $fontSize-xs; }
+}
+
+@include breakPoint(m) {
+    .breakPointM-fontSize-xxxxl {
+        margin-left: -4px;
+        font-size: $fontSize-xxxxl;
+        @extend .letterSpacing-xs;
+    }
+
+    .breakPointM-fontSize-xxxl {
+        margin-left: -2px;
+        font-size: $fontSize-xxxl;
+        @extend .letterSpacing-xs;
+    }
+
+    .breakPointM-fontSize-xxl {
+        margin-left: -2px;
+        font-size: $fontSize-xxl;
+        letter-spacing: -.5px;
+    }
+
+    .breakPointM-fontSize-xl    { font-size: $fontSize-xl; }
+    .breakPointM-fontSize-l     { font-size: $fontSize-l; }
+    .breakPointM-fontSize-m     { font-size: $fontSize-m; }
+    .breakPointM-fontSize-s     { font-size: $fontSize-s; }
+    .breakPointM-fontSize-xs    { font-size: $fontSize-xs; }
+}
+
+@include breakPoint(l) {
+    .breakPointL-fontSize-xxxxl {
+        margin-left: -4px;
+        font-size: $fontSize-xxxxl;
+        @extend .letterSpacing-xs;
+    }
+
+    .breakPointL-fontSize-xxxl {
+        margin-left: -2px;
+        font-size: $fontSize-xxxl;
+        @extend .letterSpacing-xs;
+    }
+
+    .breakPointL-fontSize-xxl {
+        margin-left: -2px;
+        font-size: $fontSize-xxl;
+        letter-spacing: -.5px;
+    }
+
+    .breakPointL-fontSize-xl    { font-size: $fontSize-xl; }
+    .breakPointL-fontSize-l     { font-size: $fontSize-l; }
+    .breakPointL-fontSize-m     { font-size: $fontSize-m; }
+    .breakPointL-fontSize-s     { font-size: $fontSize-s; }
+    .breakPointL-fontSize-xs    { font-size: $fontSize-xs; }
+}

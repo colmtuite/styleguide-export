@@ -1,0 +1,193 @@
+//
+// Select menu
+// -------------------------
+
+$dropdown-xl: 36px;
+$dropdown-l: 30px;
+$dropdown-m: 24px;
+$dropdown-s: 18px;
+
+// Override Marvel CSS
+// -------------------------
+
+.select {
+    box-shadow: none;
+    width: auto;
+    top: auto;
+    right: auto;
+    z-index: auto;
+    position: relative;
+    text-align: initial;
+    display: inline-block;
+    cursor: default;
+    height: auto;
+    border-radius: 0;
+    transition: none;
+    text-indent: 0;
+    font-weight: 300;
+}
+
+.select:after {
+    background: none;
+    background-size: auto;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+    transition: none;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+// Root component
+// -------------------------
+
+.select {
+    @extend .position-relative;
+    @extend .display-inlineBlock;
+}
+
+.select select {
+    @extend .width-100;
+    @extend .display-inlineBlock;
+
+    @extend .appearance-none;
+    @extend .bg-none;
+    @extend .outlineStyle-none;
+    @extend .borderWidth-0;
+    @extend .cursor-pointer;
+
+    @extend .transitionDuration-s;
+    @extend .transitionProperty-all;
+    @extend .transitionTimingFunction-ease-in-out;
+}
+
+// Select menu styles
+// -------------------------
+
+.select--default select {
+    @extend .bg-white;
+    @extend .boxShadow-smoke;
+    @extend .boxShadow-smoke--xd--hover;
+}
+
+// Select menu sizes
+// -------------------------
+
+.select--xl select {
+    @extend .height-control--xl;
+    padding: 0 $control-xl 0 20px;
+    @extend .fontSize-l;
+    @extend .lineHeight-control--xl;
+    @extend .borderRadius-m;
+}
+
+.select--l select {
+    @extend .height-control--l;
+    padding: 0 $control-l 0 15px;
+    @extend .fontSize-m;
+    @extend .lineHeight-control--l;
+    @extend .borderRadius-m;
+}
+
+.select--m select {
+    @extend .height-control--m;
+    padding: 0 $control-m 0 10px;
+    @extend .fontSize-m;
+    @extend .lineHeight-control--m;
+    @extend .borderRadius-m;
+}
+
+.select--s select {
+    @extend .height-control--s;
+    padding: 0 $control-s 0 8px;
+    @extend .fontSize-xs;
+    @extend .lineHeight-control--s;
+    @extend .borderRadius-m;
+}
+
+.select--legible select {
+    @extend .height-control--s;
+    padding: 0 $control-s 0 8px;
+    @extend .fontSize-m;
+    @extend .lineHeight-control--s;
+    @extend .borderRadius-m;
+}
+
+// Caret
+// -------------------------
+
+.select:after {
+    @extend .posPinTR;
+    @extend .display-block;
+    content: "";
+    @extend .pointerEvents-none;
+}
+
+.select--xl:after {
+    width: $dropdown-xl;
+    height: $dropdown-xl;
+
+    margin-top: ($control-xl - $dropdown-xl) / 2;
+    margin-right: ($control-xl - $dropdown-xl) / 2;
+
+    background-size: $dropdown-xl $dropdown-xl;
+    background-image: url('/static/assets/images/global/icon-dropdown--xl.svg');
+}
+
+.select--l:after {
+    width: $dropdown-l;
+    height: $dropdown-l;
+
+    margin-top: ($control-l - $dropdown-l) / 2;
+    margin-right: ($control-l - $dropdown-l) / 2;
+
+    background-size: $dropdown-l $dropdown-l;
+    background-image: url('/static/assets/images/global/icon-dropdown--l.svg');
+}
+
+.select--m:after {
+    width: $dropdown-m;
+    height: $dropdown-m;
+
+    margin-top: ($control-m - $dropdown-m) / 2;
+    margin-right: ($control-m - $dropdown-m) / 2;
+
+    background-size: $dropdown-m $dropdown-m;
+    background-image: url('/static/assets/images/global/icon-dropdown--m.svg');
+}
+
+.select--s:after,
+.select--legible:after {
+    width: $dropdown-s;
+    height: $dropdown-s;
+
+    margin-top: ($control-s - $dropdown-s) / 2;
+    margin-right: ($control-s - $dropdown-s) / 2;
+
+    background-size: $dropdown-s $dropdown-s;
+    background-image: url('/static/assets/images/global/icon-dropdown--s.svg');
+}
+
+// Hacks & browser specific styles
+// -------------------------
+
+// Undo the Firefox inner focus ring
+.select select:focus:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+// Hide the arrow in IE10 and up
+.select select::-ms-expand {
+  display: none;
+}
+
+// Reset <option> style inheritance in FF
+@-moz-document url-prefix() {
+  .select option {
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,526 @@
+//
+// Buttons
+// -------------------------
+
+// Root component
+// -------------------------
+
+.button {
+    box-sizing: border-box;
+    @extend .display-inlineBlock;
+    @extend .verticalAlign-middle;
+    @extend .borderWidth-0;
+    @extend .appearance-none;
+    @extend .whiteSpace-nowrap;
+    @extend .outlineStyle-none;
+    @extend .cursor-pointer;
+    @extend .userSelect-none;
+    @extend .textDecoration-none;
+    @extend .fontWeight-4;
+    @extend .textAlign-center;
+    @extend .transitionProperty-all;
+    @extend .transitionDuration-s;
+    @extend .transitionTimingFunction-linear;
+    @extend .tp-none--active;
+}
+
+// Button sizes
+// -------------------------
+
+.button--xl {
+    min-width: $control-xl;
+    @extend .height-control--xl;
+    padding: 0 $control-xl / 2;
+    @extend .fontSize-l;
+    @extend .lineHeight-control--xl;
+    @extend .borderRadius-m;
+    @extend .is-loading--xl;
+}
+
+.button--l {
+    min-width: $control-l;
+    @extend .height-control--l;
+    padding: 0 $control-l / 2;
+    @extend .fontSize-m;
+    @extend .lineHeight-control--l;
+    @extend .borderRadius-m;
+    @extend .is-loading--l;
+}
+
+.button--m {
+    min-width: $control-m;
+    @extend .height-control--m;
+    padding: 0 $control-m / 2;
+    @extend .fontSize-m;
+    @extend .lineHeight-control--m;
+    @extend .borderRadius-m;
+    @extend .is-loading--m;
+}
+
+.button--s {
+    min-width: $control-s;
+    @extend .height-control--s;
+    padding: 0 $control-s / 2;
+    @extend .fontSize-xs;
+    @extend .lineHeight-control--s;
+    @extend .borderRadius-s;
+    @extend .is-loading--s;
+}
+
+.button--legible {
+    min-width: $control-s;
+    @extend .height-control--s;
+    padding: 0 $control-s / 2;
+    @extend .fontSize-m;
+    @extend .lineHeight-control--s;
+    @extend .borderRadius-s;
+    @extend .is-loading--s;
+}
+
+// Ghost button
+// -------------------------
+
+.button--ghost,
+.button--ghost:visited {
+    @extend .bg-none;
+    @extend .c-slate;
+    @extend .c-white--hover;
+    @extend .boxShadow-smoke;
+    @extend .boxShadow-emboss--hover;
+    @extend .boxShadow-deboss--active;
+}
+
+.button--ghost.is-reversed {
+    @extend .c-white;
+    @extend .c-black--hover;
+    @extend .boxShadow-white--transparent;
+    @extend .boxShadow-none--hover;
+}
+
+// Outlined button
+// -------------------------
+
+.button--outlined,
+.button--outlined:visited {
+    @extend .c-slate;
+    @extend .c-white--hover;
+    @extend .boxShadow-smoke;
+    @extend .boxShadow-emboss--hover;
+    @extend .boxShadow-deboss--active;
+}
+
+// Flat button
+// -------------------------
+
+.button--flat {
+    @extend .c-white;
+    @extend .boxShadow-none;
+    @extend .boxShadow-emboss--hover;
+    @extend .boxShadow-deboss--active;
+}
+
+// Button group
+// -------------------------
+
+.buttonGroup {
+    @extend .inline;
+}
+
+.buttonGroup .button {
+    @extend .borderRadius-0;
+    @extend .position-relative;
+    box-shadow: inset 1px 1px 0 0 $smoke, inset 0 -1px 0 0 $smoke;
+    @extend .boxShadow-none--hover;
+    @extend .boxShadow-deboss--active;
+}
+
+.buttonGroup div:first-child .button {
+    @extend .borderRadiusLeft-m;
+}
+
+.buttonGroup div:last-child .button {
+    @extend .borderRadiusRight-m;
+    box-shadow: inset 1px 1px 0 0 $smoke, inset 0 -1px 0 0 $smoke, inset -1px 0 0 0 $smoke;
+    @extend .boxShadow-none--hover;
+    @extend .boxShadow-deboss--active;
+}
+
+.buttonGroup div.active .button,
+.buttonGroup div.is-active .button,
+.buttonGroup div:last-child.active .button,
+.buttonGroup div:last-child.is-active .button {
+    @extend .c-white;
+    @extend .bg-marvel;
+    @extend .boxShadow-none;
+}
+
+.buttonGroup div:not(:last-child) .button:hover:before,
+.buttonGroup div.active:not(:last-child) .button:before,
+.buttonGroup div.is-active:not(:last-child) .button:before {
+    @extend .position-absolute;
+    top: 0;
+    right: -1px;
+    bottom: 0;
+    @extend .display-block;
+    @extend .bg-marvel;
+    width: 1px;
+    content: "";
+    z-index: 1;
+    @extend .transitionProperty-all;
+    @extend .transitionDuration-s;
+    @extend .transitionTimingFunction-linear;
+}
+
+// States
+// -------------------------
+
+.button.is-disabled {
+    @extend .c-silver;
+    @extend .bg-snow;
+    @extend .boxShadow-smoke;
+    @extend .boxShadow-smoke--hover;
+    @extend .boxShadow-smoke--active;
+
+    @extend .cursor-default;
+    @extend .pointerEvents-none;
+}
+
+// TODO:
+// There's a hover state that stays on the button even when it is disabled.
+// It only happens if you don't move your cursor away, so the pointer events
+// are still active. Alternatively can be triggered with chrome's inspector.
+//
+// The problem, however, is that this little piece of shit doesn't take the
+// hover state from the .is-disabled class, but instead it inherits the one
+// from .button--flat. I'm out of options so leaving this hacky fix here.
+//
+// Ideally it should just work with the boxShadow-smoke--hover that the
+// .is-disabled class extends.
+
+.button.is-disabled:hover,
+.button--flat.is-disabled:hover  {
+    @extend .boxShadow-smoke;
+}
+
+// -------------------------
+
+.button.is-loading,
+.button--flat.is-loading {
+    @extend .position-relative;
+    @extend .button.is-disabled;
+    @extend .is-loading--silver;
+}
+
+.button--xl:after {
+    @extend .position-absolute;
+    margin: 0;
+    transform: translate(0);
+    top: ($control-xl - $loader-xl) / 2;
+    left: ($control-xl - $loader-xl) / 2;
+}
+
+.button--xl.is-loading {
+    padding-left: $control-xl;
+}
+
+.button--l:after {
+    @extend .position-absolute;
+    margin: 0;
+    transform: translate(0);
+    top: ($control-l - $loader-l) / 2;
+    left: ($control-l - $loader-l) / 2;
+}
+
+.button--l.is-loading {
+    padding-left: $control-l;
+}
+
+.button--m:after {
+    @extend .position-absolute;
+    margin: 0;
+    transform: translate(0);
+    top: ($control-m - $loader-m) / 2;
+    left: ($control-m - $loader-m) / 2;
+}
+
+.button--m.is-loading {
+    padding-left: $control-m;
+}
+
+.button--s:after {
+    @extend .position-absolute;
+    margin: 0;
+    transform: translate(0);
+    top: ($control-s - $loader-s) / 2;
+    left: ($control-s - $loader-s) / 2;
+}
+
+.button--s.is-loading {
+    padding-left: $control-s;
+}
+
+// Responsive button
+// -------------------------
+
+.button--responsive {
+    @extend .button--m;
+    @extend .breakPointM-fontSize-l;
+}
+
+.button--responsive:after {
+    @extend .position-absolute;
+    margin: 0;
+    transform: translate(0);
+    top: ($control-m - $loader-m) / 2;
+    left: ($control-m - $loader-m) / 2;
+}
+
+.button--responsive.is-loading {
+    padding-left: $control-m;
+}
+
+@include breakPoint(s) {
+    .button--responsive {
+        height: $control-l;
+        line-height: $control-l;
+        padding: 0 $control-l / 2;
+    }
+
+    .button--responsive:after {
+        width: $loader-l;
+        height: $loader-l;
+        border-width: 2px;
+        transform: translate(0);
+        top: ($control-l - $loader-l) / 2;
+        left: ($control-l - $loader-l) / 2;
+    }
+
+    .button--responsive.is-loading {
+        padding-left: $control-l;
+    }
+}
+
+@include breakPoint(m) {
+    .button--responsive {
+        height: $control-xl;
+        line-height: $control-xl;
+        padding: 0 $control-xl / 2;
+    }
+
+    .button--responsive:after {
+        width: $loader-xl;
+        height: $loader-xl;
+        border-width: 3px;
+        transform: translate(0);
+        top: ($control-xl - $loader-xl) / 2;
+        left: ($control-xl - $loader-xl) / 2;
+    }
+
+    .button--responsive.is-loading {
+        padding-left: $control-xl;
+    }
+}
+
+// Sad button is used for negative actions like
+// deleting an account or downgrading a paid/pro plan
+// -------------------------
+
+.button.is-sad {
+    @extend .position-relative;
+    @extend .transitionTimingFunction-cv-easeOutCircular;
+    @extend .transitionDuration-xxl;
+
+    transition-property: background-color, padding, color;
+}
+
+.button.is-sad:before  {
+    @extend .posPinTL;
+    @extend .opacity-0;
+    @extend .display-block;
+
+    @extend .transitionDuration-xxl;
+    @extend .transitionProperty-all;
+    @extend .transitionTimingFunction-cv-easeOutCircular;
+
+    content: "";
+}
+
+.button.is-sad:hover:before {
+    @extend .opacity-100;
+    @extend .transitionDelay-s;
+}
+
+.button.is-sad:before {
+    transform: translateX(-30px);
+}
+
+.button.is-sad:hover:before {
+    transform: translateX(0);
+}
+
+.button--xl.is-sad:before {
+    width: $control-xl;
+    height: $control-xl;
+    background-image: url('/static/assets/images/global/icon-sad--xl.svg');
+}
+
+.button--xl.is-sad:hover {
+    padding-left: $control-xl;
+}
+
+
+.button--l.is-sad:before {
+    width: $control-l;
+    height: $control-l;
+    background-image: url('/static/assets/images/global/icon-sad--l.svg');
+}
+
+.button--l.is-sad:hover {
+    padding-left: $control-l;
+}
+
+.button--m.is-sad:before {
+    width: $control-m;
+    height: $control-m;
+    background-image: url('/static/assets/images/global/icon-sad--m.svg');
+}
+
+.button--m.is-sad:hover {
+    padding-left: $control-m;
+}
+
+.button--s.is-sad:before {
+    width: $control-s;
+    height: $control-s;
+    background-image: url('/static/assets/images/global/icon-sad--s.svg');
+}
+
+.button--s.is-sad:hover {
+    padding-left: $control-s;
+}
+
+// Stateful buttons are buttons that have a particular state & response
+// Example: loading & success; loading & failure
+// -------------------------
+
+.button--stateful {
+    @extend .position-relative;
+    @extend .overflow-hidden;
+    @extend .transitionTimingFunction-cv-easeOutCircular;
+
+    transition-duration: 700ms;
+    transition-property: background-color, padding, color;
+}
+
+.button--stateful:before {
+    @extend .position-absolute;
+    @extend .opacity-0;
+    @extend .transitionDuration-xxl;
+    @extend .transitionProperty-all;
+    @extend .transitionTimingFunction-cb--scaleUp;
+
+    top: 50%;
+    left: 50%;
+    content: "";
+    transform: scale(0);
+}
+
+.button--stateful span {
+    @extend .display-inlineBlock;
+    @extend .transitionDelay-xl;
+    @extend .transitionDuration-xxl;
+    @extend .transitionTimingFunction-cv-easeOutCircular;
+
+    transition-property: opacity, transform;
+}
+
+.button--stateful.is-delayed span,
+.button--stateful.is-delayed:before {
+    @extend .transitionDelay-xl;
+}
+
+.button--stateful.has-responded span {
+    @extend .opacity-0;
+    @extend .transitionDelay-m;
+    @extend .transitionDuration-xxl;
+    transform: translateY(40px);
+}
+
+.button--stateful.has-responded:before {
+    @extend .opacity-100;
+    transform: scale(1);
+}
+
+.button--xl.button--stateful:before {
+    width: $control-xl;
+    height: $control-xl;
+    margin-top: -($control-xl / 2);
+    margin-left: -($control-xl / 2);
+}
+
+.button--l.button--stateful:before {
+    width: $control-l;
+    height: $control-l;
+    margin-top: -($control-l / 2);
+    margin-left: -($control-l / 2);
+}
+
+.button--m.button--stateful:before {
+    width: $control-m;
+    height: $control-m;
+    margin-top: -($control-m / 2);
+    margin-left: -($control-m / 2);
+}
+
+.button--s.button--stateful:before {
+    width: $control-s;
+    height: $control-s;
+    margin-top: -($control-s / 2);
+    margin-left: -($control-s / 2);
+}
+
+// Success
+// -------------------------
+
+.has-succeeded.has-responded {
+    @extend .bg-positive;
+}
+
+.button--xl.has-succeeded:before {
+    background-image: url('/static/assets/images/global/icon-success--xl.svg');
+}
+
+.button--l.has-succeeded:before {
+    background-image: url('/static/assets/images/global/icon-success--l.svg');
+}
+
+.button--m.has-succeeded:before {
+    background-image: url('/static/assets/images/global/icon-success--m.svg');
+}
+
+.button--s.has-succeeded:before {
+    background-image: url('/static/assets/images/global/icon-success--s.svg');
+}
+
+// Failure
+// -------------------------
+
+.has-failed.has-responded {
+    @extend .bg-negative;
+}
+
+.button--xl.has-failed:before {
+    background-image: url('/static/assets/images/global/icon-sad--xl.svg');
+}
+
+.button--l.has-failed:before {
+    background-image: url('/static/assets/images/global/icon-sad--l.svg');
+}
+
+.button--m.has-failed:before {
+    background-image: url('/static/assets/images/global/icon-sad--m.svg');
+}
+
+.button--s.has-failed:before {
+    background-image: url('/static/assets/images/global/icon-sad--s.svg');
+}

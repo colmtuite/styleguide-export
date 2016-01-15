@@ -1,0 +1,24 @@
+//
+// Code
+// -------------------------
+
+// Reset
+// -------------------------
+
+pre {
+  @extend .display-block;
+  @extend .wordBreak-normal;
+  @extend .whiteSpace-nowrap;
+
+  line-height: 22px;
+  font-size: 13px;
+
+  color: #93a1a1;
+}
+
+code {
+  @extend .whiteSpace-preWrap;
+  @extend .fontWeight-5;
+
+  font-family: "Menlo", "Monaco", Courier, monospace;
+}

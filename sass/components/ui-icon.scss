@@ -1,0 +1,184 @@
+//
+// UI with icon
+// -------------------------
+
+// Add an icon to a UI element - button, input etc.
+
+// Icon sizes
+// -------------------------
+
+$icon-xl: 36px;
+$icon-l: 30px;
+$icon-m: 24px;
+$icon-s: 18px;
+
+// Root component
+// -------------------------
+
+.uiIcon {
+    @extend .position-relative;
+    @extend .display-inlineBlock;
+    @extend .cf;
+}
+
+// Component sizes
+// -------------------------
+
+.uiIcon--xl {
+    @extend .height-control--xl;
+    @extend .is-loading--xl;
+}
+
+.uiIcon--l {
+    @extend .height-control--l;
+    @extend .is-loading--l;
+}
+
+.uiIcon--m {
+    @extend .height-control--m;
+    @extend .is-loading--m;
+}
+
+.uiIcon--s {
+    @extend .height-control--s;
+    @extend .is-loading--s;
+}
+
+.uiIcon--textarea {
+    height: auto;
+}
+
+.uiIcon--xl .input,
+.uiIcon--xl .button,
+.uiIcon--xl .textarea,
+.uiIcon--xl select {
+    padding-left: $control-xl - 2;  // - 2px to account for border and font
+}
+
+.uiIcon--l .input,
+.uiIcon--l .button,
+.uiIcon--l .textarea,
+.uiIcon--l select {
+    padding-left: $control-l - 2;  // - 2px to account for border and font
+}
+
+.uiIcon--m .input,
+.uiIcon--m .button,
+.uiIcon--m .textarea,
+.uiIcon--m select {
+    padding-left: $control-m - 2;  // - 2px to account for border and font
+}
+
+.uiIcon--s .input,
+.uiIcon--s .button,
+.uiIcon--s .textarea,
+.uiIcon--s select {
+    padding-left: $control-s - 2;  // - 2px to account for border and font
+}
+
+.uiIcon--xl .svgIcon {
+    margin-top: ($control-xl - $icon-xl) / 2;
+    margin-left: ($control-xl - $icon-xl) / 2;
+    @extend .lineHeight-control--xl;
+}
+
+.uiIcon--l .svgIcon {
+    margin-top: ($control-l - $icon-l) / 2;
+    margin-left: ($control-l - $icon-l) / 2;
+    @extend .lineHeight-control--l;
+}
+
+.uiIcon--m .svgIcon {
+    margin-top: ($control-m - $icon-m) / 2;
+    margin-left: ($control-m - $icon-m) / 2;
+    @extend .lineHeight-control--m;
+}
+
+.uiIcon--s .svgIcon {
+    margin-top: ($control-s - $icon-s) / 2;
+    margin-left: ($control-s - $icon-s) / 2;
+    @extend .lineHeight-control--s;
+}
+
+// States
+// -------------------------
+
+.uiIcon.is-loading {
+    @extend .is-disabled;
+    @extend .position-relative;
+    @extend .c-snow;
+}
+
+.uiIcon.is-loading:after {
+    @extend .borderColor-silver;
+    border-right-color: transparent;
+}
+
+.uiIcon.is-loading .svgIcon {
+    @extend .display-none;
+}
+
+// Pseudo elements
+// -------------------------
+
+.uiIcon:after {
+    @extend .pointerEvents-none;
+}
+
+.uiIcon--xl:after {
+    @extend .position-absolute;
+    margin: 0;
+    transform: translate(0);
+    top: ($control-xl - $loader-xl) / 2;
+    left: ($control-xl - $loader-xl) / 2;
+}
+
+.uiIcon--l:after {
+    @extend .position-absolute;
+    margin: 0;
+    transform: translate(0);
+    top: ($control-l - $loader-l) / 2;
+    left: ($control-l - $loader-l) / 2;
+}
+
+.uiIcon--m:after {
+    @extend .position-absolute;
+    margin: 0;
+    transform: translate(0);
+    top: ($control-m - $loader-m) / 2;
+    left: ($control-m - $loader-m) / 2;
+}
+
+.uiIcon--s:after {
+    @extend .position-absolute;
+    margin: 0;
+    transform: translate(0);
+    top: ($control-s - $loader-s) / 2;
+    left: ($control-s - $loader-s) / 2;
+}
+
+// Component child elements
+// -------------------------
+
+.uiIcon .svgIcon {
+    @extend .posPinTL;
+    @extend .pointerEvents-none;
+}
+
+// States
+// -------------------------
+
+.uiIcon:hover .button + .svgIcon {
+    @extend .fill-white;
+}
+
+.uiIcon .input:focus + .svgIcon,
+.uiIcon .textarea:focus + .svgIcon {
+    @extend .fill-marvel;
+}
+
+.uiIcon .input.has-error + .svgIcon,
+.uiIcon .input.has-error:focus + .svgIcon,
+.uiIcon .textarea.has-error:focus + .svgIcon {
+    @extend .fill-negative;
+}

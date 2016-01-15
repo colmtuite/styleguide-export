@@ -1,0 +1,74 @@
+//
+// Line heights
+// -------------------------
+
+// Variables
+// -------------------------
+
+$lineHeight-xxxxl: 58px;
+$lineHeight-xxxl: 46px;
+$lineHeight-xxl: 40px;
+$lineHeight-xl: 34px;
+$lineHeight-l: 28px;
+$lineHeight-m: 24px;
+$lineHeight-s: 20px;
+$lineHeight-xs: 18px;
+$lineHeight-xxs: 14px;
+
+// Line height scale
+// -------------------------
+
+.lineHeight-xxxxl	{ line-height: $lineHeight-xxxxl; }
+.lineHeight-xxxl	{ line-height: $lineHeight-xxxl; }
+.lineHeight-xxl 	{ line-height: $lineHeight-xxl; }
+.lineHeight-xl  	{ line-height: $lineHeight-xl; }
+.lineHeight-l   	{ line-height: $lineHeight-l; }
+.lineHeight-m   	{ line-height: $lineHeight-m; }
+.lineHeight-s   	{ line-height: $lineHeight-s; }
+.lineHeight-xs  	{ line-height: $lineHeight-xs; }
+.lineHeight-xxs 	{ line-height: $lineHeight-xxs; }
+.lineHeight-1   	{ line-height: 1; }
+
+.lineHeight-control--xl { line-height: $control-xl; }
+.lineHeight-control--l  { line-height: $control-l; }
+.lineHeight-control--m  { line-height: $control-m; }
+.lineHeight-control--s  { line-height: $control-s; }
+
+@include breakPoint(s) {
+	.breakPointS-lineHeight-xxxxl	{ line-height: $lineHeight-xxxxl; }
+	.breakPointS-lineHeight-xxxl	{ line-height: $lineHeight-xxxl; }
+	.breakPointS-lineHeight-xxl 	{ line-height: $lineHeight-xxl; }
+	.breakPointS-lineHeight-xl  	{ line-height: $lineHeight-xl; }
+	.breakPointS-lineHeight-l   	{ line-height: $lineHeight-l; }
+	.breakPointS-lineHeight-m   	{ line-height: $lineHeight-m; }
+	.breakPointS-lineHeight-s   	{ line-height: $lineHeight-s; }
+	.breakPointS-lineHeight-xs  	{ line-height: $lineHeight-xs; }
+	.breakPointS-lineHeight-xxs 	{ line-height: $lineHeight-xxs; }
+	.breakPointS-lineHeight-1   	{ line-height: 1; }
+}
+
+@include breakPoint(m) {
+	.breakPointM-lineHeight-xxxxl	{ line-height: $lineHeight-xxxxl; }
+	.breakPointM-lineHeight-xxxl	{ line-height: $lineHeight-xxxl; }
+	.breakPointM-lineHeight-xxl 	{ line-height: $lineHeight-xxl; }
+	.breakPointM-lineHeight-xl  	{ line-height: $lineHeight-xl; }
+	.breakPointM-lineHeight-l   	{ line-height: $lineHeight-l; }
+	.breakPointM-lineHeight-m   	{ line-height: $lineHeight-m; }
+	.breakPointM-lineHeight-s   	{ line-height: $lineHeight-s; }
+	.breakPointM-lineHeight-xs  	{ line-height: $lineHeight-xs; }
+	.breakPointM-lineHeight-xxs 	{ line-height: $lineHeight-xxs; }
+	.breakPointM-lineHeight-1   	{ line-height: 1; }
+}
+
+@include breakPoint(l) {
+	.breakPointL-lineHeight-xxxxl	{ line-height: $lineHeight-xxxxl; }
+	.breakPointL-lineHeight-xxxl	{ line-height: $lineHeight-xxxl; }
+	.breakPointL-lineHeight-xxl 	{ line-height: $lineHeight-xxl; }
+	.breakPointL-lineHeight-xl  	{ line-height: $lineHeight-xl; }
+	.breakPointL-lineHeight-l   	{ line-height: $lineHeight-l; }
+	.breakPointL-lineHeight-m   	{ line-height: $lineHeight-m; }
+	.breakPointL-lineHeight-s   	{ line-height: $lineHeight-s; }
+	.breakPointL-lineHeight-xs  	{ line-height: $lineHeight-xs; }
+	.breakPointL-lineHeight-xxs 	{ line-height: $lineHeight-xxs; }
+	.breakPointL-lineHeight-1   	{ line-height: 1; }
+}

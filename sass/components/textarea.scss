@@ -1,0 +1,97 @@
+//
+// Textarea
+// -------------------------
+
+.textarea {
+    @extend .verticalAlign-middle;
+    @extend .outlineStyle-none;
+    @extend .borderWidth-0;
+    @extend .width-100;
+
+    @extend .fontWeight-3;
+    @extend .transitionDuration-s;
+    @extend .transitionProperty-all;
+    @extend .transitionTimingFunction-ease-in-out;
+}
+
+// Textarea sizes
+// -------------------------
+
+.textarea--xl {
+    min-height: 100px;
+    padding: 16px 20px;
+    @extend .lineHeight-l;
+    @extend .fontSize-l;
+    @extend .borderRadius-m;
+    @extend .resize-vertical;
+}
+
+.textarea--l {
+    min-height: 100px;
+    padding: 14px 16px;
+    @extend .lineHeight-m;
+    @extend .fontSize-m;
+    @extend .borderRadius-m;
+    @extend .resize-vertical;
+}
+
+.textarea--m {
+    min-height: 100px;
+    padding: 8px 12px;
+    @extend .fontSize-m;
+    @extend .lineHeight-m;
+    @extend .borderRadius-s;
+    @extend .resize-vertical;
+}
+
+.textarea--s {
+    min-height: 80px;
+    padding: 6px 8px;
+    @extend .fontSize-xs;
+    @extend .lineHeight-xm;
+    @extend .borderRadius-s;
+    @extend .resize-vertical;
+}
+
+.textarea--growing {
+    height: $control-m;
+    padding: 6px 10px;
+    @extend .fontSize-m;
+    @extend .lineHeight-m;
+    @extend .borderRadius-s;
+    @extend .resize-none;
+    @extend .transitionDelay-l;
+}
+.textarea--growing:focus {
+    height: 140px;
+    @extend .transitionDelay-0;
+}
+
+// Textarea styles
+// -------------------------
+
+.textarea--default {
+    @extend .boxShadow-smoke;
+    @extend .boxShadow-smoke--xd--hover;
+    @extend .boxShadow-marvel--focus;
+}
+
+.textarea--invisible {
+    @extend .boxShadow-none;
+}
+
+// Textarea states
+// -------------------------
+
+.textarea.is-disabled {
+    @extend .borderWidth-1;
+    @extend .borderStyle-solid;
+    @extend .borderColor-smoke;
+    @extend .c-silver;
+    @extend .bg-snow;
+    @extend .pointerEvents-none;
+    @extend .cursor-default;
+}
+.textarea.has-error {
+    @extend .borderColor-negative;
+}

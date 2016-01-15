@@ -1,0 +1,40 @@
+//
+// Vertically center
+// -------------------------
+
+// Center an element vertically. This works with variable heights.
+
+.verticallyCenter {
+    @extend .position-relative;
+
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.verticallyCenter-absolute {
+    @extend .position-absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@include breakPoint(s) {
+    .breakPointS-verticallyCenter {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@include breakPoint(m) {
+    .breakPointM-verticallyCenter {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@include breakPoint(l) {
+    .breakPointL-verticallyCenter {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

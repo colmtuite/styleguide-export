@@ -1,0 +1,10 @@
+//
+// Focus states
+// -------------------------
+
+.boxShadow-inset--focus:focus   { box-shadow: inset 0 2px 0px rgba(0, 0, 0, 0.15); }
+.boxShadow-light--focus:focus   { box-shadow: inset 0 2px 0px rgba(0, 0, 0, 0.06); }
+.boxShadow--focus:focus         { box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.08); }
+
+.boxShadow-marvel--focus:focus  { box-shadow: inset 0 0 0 1px $marvel; }
+.has-error:focus                { box-shadow: inset 0 0 0 1px $negative;  }

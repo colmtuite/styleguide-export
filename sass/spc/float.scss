@@ -1,0 +1,25 @@
+//
+// Float
+// -------------
+
+.float-none    { float: none; }
+.float-left    { float: left; }
+.float-right   { float: right; }
+
+@include breakPoint(s) {
+    .breakPointS-float-none    { float: none; }
+    .breakPointS-float-left    { float: left; }
+    .breakPointS-float-right   { float: right; }
+}
+
+@include breakPoint(m) {
+    .breakPointM-float-none    { float: none; }
+    .breakPointM-float-left    { float: left; }
+    .breakPointM-float-right   { float: right; }
+}
+
+@include breakPoint(l) {
+    .breakPointL-float-none    { float: none; }
+    .breakPointL-float-left    { float: left; }
+    .breakPointL-float-right   { float: right; }
+}

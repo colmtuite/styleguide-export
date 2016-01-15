@@ -1,0 +1,101 @@
+//
+// Styleguide
+// -------------------------
+
+// Related property declarations should be
+// grouped together following the order:
+//
+//  1. Positioning
+//  2. Box model
+//  3. Typographic
+//  4. Visual
+//  5. Misc
+
+//
+// Styleguide sidebar
+// -------------------------
+
+.styleguide-logo {
+    @extend .display-block;
+    @extend .fill-smoke;
+
+    @extend .cursor-pointer;
+    @extend .scaleUp--hover;
+    @extend .transitionDuration-m;
+    @extend .transitionProperty-all;
+    @extend .transitionTimingFunction-cb--scaleUp;
+
+    width: 102px;
+    height: 44px;
+}
+
+.styleguide-sidebar-link {
+    @extend .display-block;
+    @extend .paddingTopBottom-s;
+
+    @extend .transitionDuration-s;
+    @extend .transitionProperty-color;
+    @extend .transitionTimingFunction-linear;
+}
+
+.styleguide-sidebar-link.is-active {
+    @extend .c-black;
+    @extend .cursor-default;
+}
+
+.styleguideWrapper {
+    width: 90%;
+    max-width: 670px;
+    @extend .centered;
+}
+
+//
+// Styleguide colors
+// -------------------------
+
+.styleguide-color-block {
+    @extend .width-100;
+
+    @extend .borderWidth-1;
+    @extend .borderStyle-solid;
+    @extend .borderRadiusTop-m;
+
+    padding-top: 80%;
+}
+
+.styleguide-color-description {
+    @extend .padding-m;
+
+    @extend .borderWidth-0;
+    @extend .borderRightWidth-1;
+    @extend .borderBottomWidth-1;
+    @extend .borderLeftWidth-1;
+    @extend .borderStyle-solid;
+    @extend .borderColor-smoke;
+    @extend .borderRadiusBottom-m;
+}
+
+.styleguide-color-description-title {
+    @extend .marginBottom-xs;
+
+    @extend .fontSize-m;
+    @extend .fontWeight-6;
+    @extend .lineHeight-m;
+    @extend .truncateText;
+}
+
+//
+// Code Snippet
+// -------------------------
+
+.styleguide-code-snippet {
+    @extend .padding-m;
+
+    @extend .borderWidth-0;
+    @extend .borderRightWidth-1;
+    @extend .borderBottomWidth-1;
+    @extend .borderLeftWidth-1;
+    @extend .borderStyle-solid;
+    @extend .borderColor-smoke;
+    @extend .borderRadiusBottom-m;
+}

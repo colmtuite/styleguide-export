@@ -1,0 +1,137 @@
+//
+// Avatars
+// -------------------------
+
+// Variables
+// -------------------------
+
+$avatar-xs: 24px;
+$avatar-s: 40px;
+$avatar-m: 54px;
+$avatar-l: 70px;
+$avatar-xl: 100px;
+
+// Root component
+// -------------------------
+
+.avatar {
+    @extend .position-relative;
+    @extend .borderRadius-circle;
+}
+
+// Child elements
+// -------------------------
+
+.avatar-img {
+    @extend .position-absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border: 2px solid white;
+
+    @extend .backgroundSize-cover;
+    @extend .backgroundRepeat-noRepeat;
+    @extend .borderRadius-circle;
+    @extend .transitionDuration-l;
+    @extend .transitionProperty-opacity;
+    @extend .transitionTimingFunction-ease-in-out;
+    z-index: 1;
+}
+
+.avatar-img.is-hidden{
+    @extend .opacity-0;
+}
+
+.avatar-initials {
+    @extend .width-100;
+    @extend .textAlign-center;
+    @extend .c-white;
+    @extend .textTransform-uppercase;
+}
+
+.avatar-team {
+    @extend .position-absolute;
+    bottom: -4px;
+    right: -4px;
+    @extend .backgroundSize-cover;
+    @extend .backgroundRepeat-noRepeat;
+    @extend .borderRadius-circle;
+    @extend .boxSizing-contentBox;
+    border: 2px solid white;
+    z-index: 2;
+}
+
+.avatar-team.is-hidden{
+    @extend .opacity-0;
+}
+
+// Avatar sizes
+// -------------------------
+
+.avatar--custom {
+    @extend .width-100;
+    @extend .height-100;
+
+    margin-left: -4px;
+    font-size: 116px;
+    letter-spacing: -4px;
+}
+
+.avatar--xl {
+    width: $avatar-xl;
+    height: $avatar-xl;
+    line-height: $avatar-xl;
+    @extend .fontSize-xxl;
+}
+.avatar--xl .avatar-team {
+    width: 40px;
+    height: 40px;
+    bottom: -6px;
+    right: -6px;
+}
+
+.avatar--l {
+    width: $avatar-l;
+    height: $avatar-l;
+    line-height: $avatar-l;
+    @extend .fontSize-xxl;
+}
+.avatar--l .avatar-team {
+    width: 32px;
+    height: 32px;
+    bottom: -8px;
+    right: -8px;
+}
+
+.avatar--m {
+    width: $avatar-m;
+    height: $avatar-m;
+    line-height: $avatar-m;
+    @extend .fontSize-l;
+}
+.avatar--m .avatar-team {
+    width: 24px;
+    height: 24px;
+}
+
+.avatar--s {
+    width: $avatar-s;
+    height: $avatar-s;
+    line-height: $avatar-s;
+}
+.avatar--s .avatar-team {
+    width: 18px;
+    height: 18px;
+}
+
+.avatar--xs {
+    width: $avatar-xs;
+    height: $avatar-xs;
+    line-height: $avatar-xs;
+    @extend .fontSize-xs;
+}
+.avatar--xs .avatar-team {
+    width: 10px;
+    height: 10px;
+}
