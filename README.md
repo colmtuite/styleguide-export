@@ -1,2 +1,2 @@
 # styleguide
-Marvelapp Styelguide
+Marvelapp Styleguide
