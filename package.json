@@ -1,0 +1,22 @@
+{
+  "name": "marvel-styleguide",
+  "version": "0.0.1",
+  "description": "Base styling for Marvel products",
+  "main": "sass/all.scss",
+  "scripts": {
+    "build": "./node_modules/node-sass/bin/node-sass sass/all.scss css/styleguide.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marvelapp/styleguide.git"
+  },
+  "author": "Marvel",
+  "bugs": {
+    "url": "https://github.com/marvelapp/styleguide/issues"
+  },
+  "homepage": "https://github.com/marvelapp/styleguide#readme",
+  "devDependencies": {
+    "node-sass": "^3.4.2"
+  }
+}
