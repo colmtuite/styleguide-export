@@ -4,7 +4,8 @@
   "description": "Base styling for Marvel products",
   "main": "sass/all.scss",
   "scripts": {
-    "release": "./node_modules/gulp/bin/gulp release",
+    "build:css": "node ./node_modules/gulp/bin/gulp.js css",
+    "build:site": "node ./node_modules/gulp/bin/gulp.js site",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
