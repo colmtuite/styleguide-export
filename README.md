@@ -7,13 +7,13 @@ See [marvelapp.github.io/styleguide/](http://marvelapp.github.io/styleguide/) fo
 
 ### Release
 
-Execute the `npm run build` command to compile the CSS.  
+Execute the `npm run build:css` command to compile the CSS.  
 This should be done before all releases as some projects will just use the
-compiled CSS for convenience and it also updates the CSS for the demo site.
+compiled CSS for convenience.
 
 ### Deploying the site
 
-First make sure you run `npm run build` to generate the CSS.  
+First execute `npm run build:site`. To build the site.
+Then execute `git subtree push --prefix dist/site origin gh-pages`.  
 
-On the master branch run `git subtree push --prefix site origin gh-pages`.  
 **Note:** There is no reason to make manual edits to the `gh-pages` branch.
