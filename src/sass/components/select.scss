@@ -134,7 +134,7 @@ $dropdown-s: 18px;
     margin-right: ($control-xl - $dropdown-xl) / 2;
 
     background-size: $dropdown-xl $dropdown-xl;
-    background-image: url('https://marvelapp.com/static/assets/images/global/icon-dropdown--xl.svg');
+    background-image: url('${image-base-uri}/icon-dropdown--xl.svg');
 }
 
 .select--l:after {
@@ -145,7 +145,7 @@ $dropdown-s: 18px;
     margin-right: ($control-l - $dropdown-l) / 2;
 
     background-size: $dropdown-l $dropdown-l;
-    background-image: url('https://marvelapp.com/static/assets/images/global/icon-dropdown--l.svg');
+    background-image: url('${image-base-uri}/icon-dropdown--l.svg');
 }
 
 .select--m:after {
@@ -156,7 +156,7 @@ $dropdown-s: 18px;
     margin-right: ($control-m - $dropdown-m) / 2;
 
     background-size: $dropdown-m $dropdown-m;
-    background-image: url('https://marvelapp.com/static/assets/images/global/icon-dropdown--m.svg');
+    background-image: url('${image-base-uri}/icon-dropdown--m.svg');
 }
 
 .select--s:after,
@@ -168,7 +168,7 @@ $dropdown-s: 18px;
     margin-right: ($control-s - $dropdown-s) / 2;
 
     background-size: $dropdown-s $dropdown-s;
-    background-image: url('https://marvelapp.com/static/assets/images/global/icon-dropdown--s.svg');
+    background-image: url('${image-base-uri}/icon-dropdown--s.svg');
 }
 
 // Hacks & browser specific styles
