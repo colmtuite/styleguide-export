@@ -1,10 +1,10 @@
 {
   "name": "marvel-styleguide",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Base styling for Marvel products",
   "main": "sass/all.scss",
   "scripts": {
-    "build": "./node_modules/node-sass/bin/node-sass sass/all.scss css/styleguide.css",
+    "release": "./node_modules/gulp/bin/gulp release",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/marvelapp/styleguide#readme",
   "devDependencies": {
-    "node-sass": "^3.4.2"
+    "gulp": "^3.9.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1",
+    "merge-stream": "^1.0.0"
   }
 }
