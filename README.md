@@ -3,6 +3,10 @@
 Base styling for Marvelapp projects.  
 See [marvelapp.github.io/styleguide/](http://marvelapp.github.io/styleguide/) for documentation and usage.
 
+## Installing
+
+Clone the repository then `npm install`.
+
 ## Maintaining this repo
 
 ### Release
