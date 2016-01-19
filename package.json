@@ -1,27 +1,42 @@
 {
-  "name": "marvel-styleguide",
-  "version": "1.0.0",
-  "description": "Base styling for Marvel products",
-  "main": "sass/all.scss",
-  "scripts": {
-    "build:css": "node ./node_modules/gulp/bin/gulp.js css",
-    "build:site": "node ./node_modules/gulp/bin/gulp.js site",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/marvelapp/styleguide.git"
-  },
-  "author": "Marvel",
-  "bugs": {
-    "url": "https://github.com/marvelapp/styleguide/issues"
-  },
-  "homepage": "https://github.com/marvelapp/styleguide#readme",
-  "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-clean": "^0.3.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.1.1",
-    "merge-stream": "^1.0.0"
-  }
+    "name": "marvel-styleguide",
+    "version": "1.0.0",
+    "description": "Base styling for Marvel products",
+    "main": "sass/all.scss",
+    "scripts": {
+        "build:css": "node ./node_modules/gulp/bin/gulp.js css",
+        "build:site": "node ./node_modules/gulp/bin/gulp.js site",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/marvelapp/styleguide.git"
+    },
+    "author": "Marvel",
+    "homepage": "http://marvelapp.github.io/styleguide/",
+    "bugs": {
+        "url": "https://github.com/marvelapp/styleguide/issues"
+    },
+    "dependencies": {
+        "eyeglass": "^0.8.1"
+    },
+    "devDependencies": {
+        "gulp": "^3.9.0",
+        "gulp-clean": "^0.3.1",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^2.1.1",
+        "merge-stream": "^1.0.0"
+    },
+    "keywords": [
+        "eyeglass-module",
+        "sass",
+        "marvel",
+        "styleguide"
+    ],
+    "eyeglass": {
+        "sassDir": "src/sass",
+        "exports": "eyeglass-exports.js",
+        "name": "marvel-styleguide",
+        "needs": "^0.8.0"
+    }
 }
