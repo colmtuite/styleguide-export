@@ -4,27 +4,33 @@ var path = require('path'),
 	rename = require('gulp-rename'),
 	clean = require('gulp-clean'),
 	merge = require('merge-stream'),
-	eyeglass = require("eyeglass");
+	Eyeglass = require("eyeglass");
 
 var rootDir = __dirname,
+	distDir =  path.join(rootDir, 'dist'),
 	assetsDir = path.join(rootDir, 'assets');
 
-function sassify(compressed) {
-	var outputStyle = compressed ? 'compressed' : 'expanded';
-	return sass(eyeglass({
-		// sass options
-		outputStyle: outputStyle
-	},{
+function sassify() {
+	var options = {
+		outputStyle: 'compressed',
 		// eyeglass options
-		assets: {
-			// Add assets except for js and sass files
-			sources: [
-				{
-					directory: assetsDir, globOpts: { ignore: ["**/*.js", "**/*.scss"] }
-				}
-			]
+		eyeglass: {
+			root: rootDir,
+			buildDir: path.join(distDir, 'site', 'assets'),
+			assets:  {
+				relativeTo: '/thisisahack',
+				sources: [{
+			        directory: assetsDir,
+			        globOpts: {
+			          pattern: "images/**/*"
+			        }
+				}]
+			}
 		}
-	})).on('error', sass.logError);
+	};
+	var eyeglass = new Eyeglass(options, sass);
+
+	return sass(eyeglass.options).on('error', sass.logError);
 }
 
 gulp.task('clean', function () {
@@ -38,11 +44,11 @@ gulp.task('clean:css', function () {
 });
 
 gulp.task('clean:site', function () {
-	return gulp.src('dist/css', {read: false})
+	return gulp.src('dist/site', {read: false})
         .pipe(clean());
 });
 
-gulp.task('css', ['clean'], function() {
+gulp.task('build:css', ['clean'], function() {
     return gulp.src('src/sass/all.scss')
         .pipe(sassify())
 		.pipe(rename({
@@ -51,13 +57,11 @@ gulp.task('css', ['clean'], function() {
         .pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('site', ['css'], function() {
+gulp.task('build:site', ['build:css'], function() {
 	var site = gulp.src('src/site/**/*')
 		.pipe(gulp.dest('dist/site'));
-	var assets = gulp.src('assets/**/*')
-		.pipe(gulp.dest('dist/site/assets'));
 	var css = gulp.src('dist/css/styleguide.css')
 		.pipe(gulp.dest('dist/site/assets/css'));
 
-	return merge(site, assets, css);
+	return merge(site, css);
 });
