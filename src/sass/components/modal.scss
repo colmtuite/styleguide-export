@@ -76,22 +76,22 @@ $modal-icon-size: 30px;
     @extend .posPinTR;
 
     right: -($modal-icon-size + 10);
-    background-image: url('${image-base-uri}/icon-cross.svg');
+    background-image: asset-url('images/icon-cross.svg');
 }
 
 .modal-iconBack {
     @extend .posPinTL;
 
     left: -($modal-icon-size + 10);
-    background-image: url('${image-base-uri}/icon-back.svg');
+    background-image: asset-url('images/icon-back.svg');
 }
 
 .modal-iconClose:hover {
-    background-image: url('${image-base-uri}/icon-cross--hover.svg');
+    background-image: asset-url('images/icon-cross--hover.svg');
 }
 
 .modal-iconBack:hover {
-    background-image: url('${image-base-uri}/icon-back--hover.svg');
+    background-image: asset-url('images/icon-back--hover.svg');
 }
 
 // Modal subtext
