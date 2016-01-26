@@ -1,7 +1,10 @@
+var path = require("path"),
+    rootDir = __dirname,
+    assetDir = path.join(rootDir, "assets");
+
 module.exports = function(eyeglass, sass) {
-    return {
-        functions: {
-            // Any functions you want to export here.
-        }
-    };
+    eyeglass.assets.addSource(assetDir, {
+      pattern: "images/**/*"
+    });
+    return eyeglass;
 };
