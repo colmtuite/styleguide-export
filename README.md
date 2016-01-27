@@ -58,7 +58,7 @@ sassOptions.eyeglass = {
 	}
 }
 
-var eyeglass = new Eyeglass(options);
+var eyeglass = new Eyeglass(sassOptions);
 sass.render(eyeglass.options, function(err, result) {
 	// Do whatever you normally do here
 });
