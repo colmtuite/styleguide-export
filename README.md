@@ -17,7 +17,7 @@ Add to your `package.json` dependencies like so:
 Then run `npm install`.
 
 *PROTIP: You can add a `#version` to the end to get a specific version
-`"https://github.com/marvelapp/styleguide#1.1.2"` would pull version `1.1.2`.*
+`"https://github.com/marvelapp/styleguide#1.1.3"` would pull version `1.1.3`.*
 
 ### With sass-eyeglass
 
