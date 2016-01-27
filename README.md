@@ -1,11 +1,23 @@
-# Marvelapp styleguide
+# Marvel styleguide
 
 Base styling for Marvelapp projects.  
 See [marvelapp.github.io/styleguide/](http://marvelapp.github.io/styleguide/) for documentation and usage.
 
-## Installing
+## Importing marvel styleguide into your projects
 
-Clone the repository then `npm install`.
+Add to your `package.json` dependencies like so:
+
+```json
+{
+	"dependencies": {
+		"marvel-styleguide": "https://github.com/marvelapp/styleguide"
+	}
+}
+```
+Then run `npm install`.
+
+*PROTIP: You can add a `#version` to the end to get a specific version
+`"https://github.com/marvelapp/styleguide#1.1.2"` would pull version `1.1.2`.*
 
 ### With sass-eyeglass
 
@@ -53,6 +65,10 @@ sass.render(eyeglass.options, function(err, result) {
 ```
 
 Given these settings assets from the module will be imported into `dist/assets` in your project and their urls will be written as `'/assets/something.png'`. There are many more ways you can configure this including having relative urls. See [sass-eyeglass working with assets](https://github.com/sass/node-sass) for more options.
+
+## Installing for development
+
+Clone the repository then `npm install`.
 
 ## Maintaining this repo
 
