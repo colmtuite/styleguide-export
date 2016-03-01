@@ -1,7 +1,6 @@
 $(function() {
     $(".styleguide-link").addClass("active");
     $('pre code').each(function(i, block) {
-        console.log(block);
         hljs.highlightBlock(block);
     });
 

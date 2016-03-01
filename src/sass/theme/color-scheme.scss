@@ -49,6 +49,7 @@ $red--l: lighten($red, 10%);
 // Gray Colors
 // -------------------------
 
+$licorice: #000000;
 $black: #1f2d3d;
 $steel: #273444;
 $slate: #3c4858;
@@ -92,6 +93,11 @@ $blue--transparent: rgba($blue--l,$transparent);
 $blue--pellucid: rgba($blue--l,$pellucid);
 $blue--limpid: rgba($blue--l,$limpid);
 
+$licorice--translucent: rgba($licorice,$translucent);
+$licorice--transparent: rgba($licorice,$transparent);
+$licorice--pellucid: rgba($licorice,$pellucid);
+$licorice--limpid: rgba($licorice,$limpid);
+
 $black--translucent: rgba($black,$translucent);
 $black--transparent: rgba($black,$transparent);
 $black--pellucid: rgba($black,$pellucid);
@@ -101,6 +107,11 @@ $white--translucent: rgba($white,$translucent);
 $white--transparent: rgba($white,$transparent);
 $white--pellucid: rgba($white,$pellucid);
 $white--limpid: rgba($white,$limpid);
+
+$snow--translucent: rgba($snow,$translucent);
+$snow--transparent: rgba($snow,$transparent);
+$snow--pellucid: rgba($snow,$pellucid);
+$snow--limpid: rgba($snow,$limpid);
 
 // Social Colors
 // -------------------------

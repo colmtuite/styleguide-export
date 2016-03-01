@@ -43,6 +43,7 @@
 // Gray background colors
 // -------------------------
 
+.bg-licorice            { background-color: $licorice; }
 .bg-black               { background-color: $black; }
 .bg-steel               { background-color: $steel; }
 .bg-slate               { background-color: $slate; }
@@ -71,20 +72,25 @@
 // Transparent background colors
 // -------------------------
 
-.bg-blue--translucent   { background-color: $blue--translucent; }
-.bg-blue--transparent   { background-color: $blue--transparent; }
-.bg-blue--pellucid      { background-color: $blue--pellucid; }
-.bg-blue--limpid        { background-color: $blue--limpid; }
+.bg-blue--translucent       { background-color: $blue--translucent; }
+.bg-blue--transparent       { background-color: $blue--transparent; }
+.bg-blue--pellucid          { background-color: $blue--pellucid; }
+.bg-blue--limpid            { background-color: $blue--limpid; }
 
-.bg-white--translucent  { background-color: $white--translucent; }
-.bg-white--transparent  { background-color: $white--transparent; }
-.bg-white--pellucid     { background-color: $white--pellucid; }
-.bg-white--limpid       { background-color: $white--limpid; }
+.bg-licorice--translucent   { background-color: $licorice--translucent; }
+.bg-licorice--transparent   { background-color: $licorice--transparent; }
+.bg-licorice--pellucid      { background-color: $licorice--pellucid; }
+.bg-licorice--limpid        { background-color: $licorice--limpid; }
 
-.bg-black--translucent  { background-color: $black--translucent; }
-.bg-black--transparent  { background-color: $black--transparent; }
-.bg-black--pellucid     { background-color: $black--pellucid; }
-.bg-black--limpid       { background-color: $black--limpid; }
+.bg-black--translucent      { background-color: $black--translucent; }
+.bg-black--transparent      { background-color: $black--transparent; }
+.bg-black--pellucid         { background-color: $black--pellucid; }
+.bg-black--limpid           { background-color: $black--limpid; }
+
+.bg-white--translucent      { background-color: $white--translucent; }
+.bg-white--transparent      { background-color: $white--transparent; }
+.bg-white--pellucid         { background-color: $white--pellucid; }
+.bg-white--limpid           { background-color: $white--limpid; }
 
 // Social background colors
 // -------------------------
@@ -143,6 +149,7 @@
     // Gray background colors
     // -------------------------
 
+    .breakPointS-bg-licorice            { background-color: $licorice; }
     .breakPointS-bg-black               { background-color: $black; }
     .breakPointS-bg-steel               { background-color: $steel; }
     .breakPointS-bg-slate               { background-color: $slate; }
@@ -171,20 +178,25 @@
     // Transparent background colors
     // -------------------------
 
-    .breakPointS-bg-blue--translucent   { background-color: $blue--translucent; }
-    .breakPointS-bg-blue--transparent   { background-color: $blue--transparent; }
-    .breakPointS-bg-blue--pellucid      { background-color: $blue--pellucid; }
-    .breakPointS-bg-blue--limpid        { background-color: $blue--limpid; }
+    .breakPointS-bg-blue--translucent       { background-color: $blue--translucent; }
+    .breakPointS-bg-blue--transparent       { background-color: $blue--transparent; }
+    .breakPointS-bg-blue--pellucid          { background-color: $blue--pellucid; }
+    .breakPointS-bg-blue--limpid            { background-color: $blue--limpid; }
 
-    .breakPointS-bg-white--translucent  { background-color: $white--translucent; }
-    .breakPointS-bg-white--transparent  { background-color: $white--transparent; }
-    .breakPointS-bg-white--pellucid     { background-color: $white--pellucid; }
-    .breakPointS-bg-white--limpid       { background-color: $white--limpid; }
+    .breakPointS-bg-licorice--translucent  { background-color: $licorice--translucent; }
+    .breakPointS-bg-licorice--transparent  { background-color: $licorice--transparent; }
+    .breakPointS-bg-licorice--pellucid     { background-color: $licorice--pellucid; }
+    .breakPointS-bg-licorice--limpid       { background-color: $licorice--limpid; }
 
-    .breakPointS-bg-black--translucent  { background-color: $black--translucent; }
-    .breakPointS-bg-black--transparent  { background-color: $black--transparent; }
-    .breakPointS-bg-black--pellucid     { background-color: $black--pellucid; }
-    .breakPointS-bg-black--limpid       { background-color: $black--limpid; }
+    .breakPointS-bg-black--translucent      { background-color: $black--translucent; }
+    .breakPointS-bg-black--transparent      { background-color: $black--transparent; }
+    .breakPointS-bg-black--pellucid         { background-color: $black--pellucid; }
+    .breakPointS-bg-black--limpid           { background-color: $black--limpid; }
+
+    .breakPointS-bg-white--translucent      { background-color: $white--translucent; }
+    .breakPointS-bg-white--transparent      { background-color: $white--transparent; }
+    .breakPointS-bg-white--pellucid         { background-color: $white--pellucid; }
+    .breakPointS-bg-white--limpid           { background-color: $white--limpid; }
 
     // Social background colors
     // -------------------------
@@ -239,6 +251,7 @@
     // Gray background colors
     // -------------------------
 
+    .breakPointM-bg-licorice            { background-color: $licorice; }
     .breakPointM-bg-black               { background-color: $black; }
     .breakPointM-bg-steel               { background-color: $steel; }
     .breakPointM-bg-slate               { background-color: $slate; }
@@ -267,20 +280,25 @@
     // Transparent background colors
     // -------------------------
 
-    .breakPointM-bg-blue--translucent   { background-color: $blue--translucent; }
-    .breakPointM-bg-blue--transparent   { background-color: $blue--transparent; }
-    .breakPointM-bg-blue--pellucid      { background-color: $blue--pellucid; }
-    .breakPointM-bg-blue--limpid        { background-color: $blue--limpid; }
+    .breakPointM-bg-blue--translucent       { background-color: $blue--translucent; }
+    .breakPointM-bg-blue--transparent       { background-color: $blue--transparent; }
+    .breakPointM-bg-blue--pellucid          { background-color: $blue--pellucid; }
+    .breakPointM-bg-blue--limpid            { background-color: $blue--limpid; }
 
-    .breakPointM-bg-white--translucent  { background-color: $white--translucent; }
-    .breakPointM-bg-white--transparent  { background-color: $white--transparent; }
-    .breakPointM-bg-white--pellucid     { background-color: $white--pellucid; }
-    .breakPointM-bg-white--limpid       { background-color: $white--limpid; }
+    .breakPointM-bg-licorice--translucent  { background-color: $licorice--translucent; }
+    .breakPointM-bg-licorice--transparent  { background-color: $licorice--transparent; }
+    .breakPointM-bg-licorice--pellucid     { background-color: $licorice--pellucid; }
+    .breakPointM-bg-licorice--limpid       { background-color: $licorice--limpid; }
 
-    .breakPointM-bg-black--translucent  { background-color: $black--translucent; }
-    .breakPointM-bg-black--transparent  { background-color: $black--transparent; }
-    .breakPointM-bg-black--pellucid     { background-color: $black--pellucid; }
-    .breakPointM-bg-black--limpid       { background-color: $black--limpid; }
+    .breakPointM-bg-black--translucent      { background-color: $black--translucent; }
+    .breakPointM-bg-black--transparent      { background-color: $black--transparent; }
+    .breakPointM-bg-black--pellucid         { background-color: $black--pellucid; }
+    .breakPointM-bg-black--limpid           { background-color: $black--limpid; }
+
+    .breakPointM-bg-white--translucent      { background-color: $white--translucent; }
+    .breakPointM-bg-white--transparent      { background-color: $white--transparent; }
+    .breakPointM-bg-white--pellucid         { background-color: $white--pellucid; }
+    .breakPointM-bg-white--limpid           { background-color: $white--limpid; }
 
     // Social background colors
     // -------------------------
@@ -335,6 +353,7 @@
     // Gray background colors
     // -------------------------
 
+    .breakPointL-bg-licorice            { background-color: $licorice; }
     .breakPointL-bg-black               { background-color: $black; }
     .breakPointL-bg-steel               { background-color: $steel; }
     .breakPointL-bg-slate               { background-color: $slate; }
@@ -363,20 +382,25 @@
     // Transparent background colors
     // -------------------------
 
-    .breakPointL-bg-blue--translucent   { background-color: $blue--translucent; }
-    .breakPointL-bg-blue--transparent   { background-color: $blue--transparent; }
-    .breakPointL-bg-blue--pellucid      { background-color: $blue--pellucid; }
-    .breakPointL-bg-blue--limpid        { background-color: $blue--limpid; }
+    .breakPointL-bg-blue--translucent       { background-color: $blue--translucent; }
+    .breakPointL-bg-blue--transparent       { background-color: $blue--transparent; }
+    .breakPointL-bg-blue--pellucid          { background-color: $blue--pellucid; }
+    .breakPointL-bg-blue--limpid            { background-color: $blue--limpid; }
 
-    .breakPointL-bg-white--translucent  { background-color: $white--translucent; }
-    .breakPointL-bg-white--transparent  { background-color: $white--transparent; }
-    .breakPointL-bg-white--pellucid     { background-color: $white--pellucid; }
-    .breakPointL-bg-white--limpid       { background-color: $white--limpid; }
+    .breakPointL-bg-licorice--translucent  { background-color: $licorice--translucent; }
+    .breakPointL-bg-licorice--transparent  { background-color: $licorice--transparent; }
+    .breakPointL-bg-licorice--pellucid     { background-color: $licorice--pellucid; }
+    .breakPointL-bg-licorice--limpid       { background-color: $licorice--limpid; }
 
-    .breakPointL-bg-black--translucent  { background-color: $black--translucent; }
-    .breakPointL-bg-black--transparent  { background-color: $black--transparent; }
-    .breakPointL-bg-black--pellucid     { background-color: $black--pellucid; }
-    .breakPointL-bg-black--limpid       { background-color: $black--limpid; }
+    .breakPointL-bg-black--translucent      { background-color: $black--translucent; }
+    .breakPointL-bg-black--transparent      { background-color: $black--transparent; }
+    .breakPointL-bg-black--pellucid         { background-color: $black--pellucid; }
+    .breakPointL-bg-black--limpid           { background-color: $black--limpid; }
+
+    .breakPointL-bg-white--translucent      { background-color: $white--translucent; }
+    .breakPointL-bg-white--transparent      { background-color: $white--transparent; }
+    .breakPointL-bg-white--pellucid         { background-color: $white--pellucid; }
+    .breakPointL-bg-white--limpid           { background-color: $white--limpid; }
 
     // Social background colors
     // -------------------------

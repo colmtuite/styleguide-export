@@ -7,8 +7,11 @@
 // possible on touch devices, plus they stick
 // and cause issues.
 
-@include breakPoint(l) {
-    // Brand color hovers
+// TODO: Investigate why extends don't work with this break point.
+// Weirdly enough they work in onther places sometimes.
+
+@include breakPoint(m) {
+    // Brand hovers
     // -------------------------
 
     .c-marvel--hover:hover                  { color: $marvel; }
@@ -39,6 +42,158 @@
 
     .c-red--d--hover:hover                  { color: $red--d; }
     .c-red--l--hover:hover                  { color: $red--l; }
+
+    // Gray hovers
+    // -------------------------
+
+    .c-black--hover:hover                   { color: $black; }
+    .c-steel--hover:hover                   { color: $steel; }
+    .c-slate--hover:hover                   { color: $slate; }
+    .c-silver--hover:hover                  { color: $silver; }
+    .c-snow--hover:hover                    { color: $snow; }
+    .c-smoke--hover:hover                   { color: $smoke; }
+    .c-white--hover:hover                   { color: $white; }
+
+    .c-snow--d--hover:hover                 { color: $snow--d }
+    .c-snow--xd--hover:hover                { color: $snow--xd }
+
+    .c-smoke--d--hover:hover                { color: $smoke--d }
+    .c-smoke--xd--hover:hover               { color: $smoke--xd }
+
+    // UI hovers
+    // -------------------------
+
+    .c-blue--hover:hover                    { color: $blue; }
+    .c-positive--hover:hover                { color: $positive; }
+    .c-negative--hover:hover                { color: $negative; }
+    .c-warning--hover:hover                 { color: $warning; }
+
+    .c-blue--d--hover:hover                 { color: $blue--d; }
+    .c-blue--l--hover:hover                 { color: $blue--l; }
+
+    // Transparent hovers
+    // -------------------------
+
+    .c-blue--translucent--hover:hover       { color: $blue--translucent; }
+    .c-blue--transparent--hover:hover       { color: $blue--transparent; }
+    .c-blue--pellucid--hover:hover          { color: $blue--pellucid; }
+    .c-blue--limpid--hover:hover            { color: $blue--limpid; }
+
+    .c-white--translucent--hover:hover      { color: $white--translucent; }
+    .c-white--transparent--hover:hover      { color: $white--transparent; }
+    .c-white--pellucid--hover:hover         { color: $white--pellucid; }
+    .c-white--limpid--hover:hover           { color: $white--limpid; }
+
+    .c-black--translucent--hover:hover      { color: $black--translucent; }
+    .c-black--transparent--hover:hover      { color: $black--transparent; }
+    .c-black--pellucid--hover:hover         { color: $black--pellucid; }
+    .c-black--limpid--hover:hover           { color: $black--limpid; }
+
+    // Social hovers
+    // -------------------------
+
+    .c-twitter--hover:hover                 { color: $twitter; }
+    .c-facebook--hover:hover                { color: $facebook; }
+    .c-dribbble--hover:hover                { color: $dribbble; }
+    .c-dropbox--hover:hover                 { color: $dropbox; }
+    .c-google--hover:hover                  { color: $google; }
+    .c-instagram--hover:hover               { color: $instagram; }
+    .c-linkedin--hover:hover                { color: $linkedin; }
+
+    // Brand background hovers
+    // -------------------------
+
+    .bg-marvel--hover:hover                 { background-color: $marvel; }
+    .bg-green--hover:hover                  { background-color: $green; }
+    .bg-yellow--hover:hover                 { background-color: $yellow; }
+    .bg-orange--hover:hover                 { background-color: $orange; }
+    .bg-pink--hover:hover                   { background-color: $pink; }
+    .bg-purple--hover:hover                 { background-color: $purple; }
+    .bg-red--hover:hover                    { background-color: $red; }
+
+    .bg-marvel--d--hover:hover              { background-color: $marvel--d; }
+    .bg-marvel--l--hover:hover              { background-color: $marvel--l; }
+
+    .bg-green--d--hover:hover               { background-color: $green--d; }
+    .bg-green--l--hover:hover               { background-color: $green--l; }
+
+    .bg-yellow--d--hover:hover              { background-color: $yellow--d; }
+    .bg-yellow--l--hover:hover              { background-color: $yellow--l; }
+
+    .bg-orange--d--hover:hover              { background-color: $orange--d; }
+    .bg-orange--l--hover:hover              { background-color: $orange--l; }
+
+    .bg-pink--d--hover:hover                { background-color: $pink--d; }
+    .bg-pink--l--hover:hover                { background-color: $pink--l; }
+
+    .bg-purple--d--hover:hover              { background-color: $purple--d; }
+    .bg-purple--l--hover:hover              { background-color: $purple--l; }
+
+    .bg-red--d--hover:hover                 { background-color: $red--d; }
+    .bg-red--l--hover:hover                 { background-color: $red--l; }
+
+    // Gray background hovers
+    // -------------------------
+
+    .bg-licorice--hover:hover               { background-color: $licorice; }
+    .bg-black--hover:hover                  { background-color: $black; }
+    .bg-steel--hover:hover                  { background-color: $steel; }
+    .bg-slate--hover:hover                  { background-color: $slate; }
+    .bg-silver--hover:hover                 { background-color: $silver; }
+    .bg-snow--hover:hover                   { background-color: $snow; }
+    .bg-smoke--hover:hover                  { background-color: $smoke; }
+    .bg-white--hover:hover                  { background-color: $white; }
+
+    .bg-snow--d--hover:hover                { background-color: $snow--d }
+    .bg-snow--xd--hover:hover               { background-color: $snow--xd }
+
+    .bg-smoke--d--hover:hover               { background-color: $smoke--d }
+    .bg-smoke--xd--hover:hover              { background-color: $smoke--xd }
+
+    // UI background hovers
+    // -------------------------
+
+    .bg-blue--hover:hover                   { background-color: $blue; }
+    .bg-positive--hover:hover               { background-color: $positive; }
+    .bg-negative--hover:hover               { background-color: $negative; }
+    .bg-warning--hover:hover                { background-color: $warning; }
+
+    .bg-blue--d--hover:hover                { background-color: $blue--d; }
+    .bg-blue--l--hover:hover                { background-color: $blue--l; }
+
+    // Transparent background hovers
+    // -------------------------
+
+    .bg-blue--translucent--hover:hover      { background-color: $blue--translucent; }
+    .bg-blue--transparent--hover:hover      { background-color: $blue--transparent; }
+    .bg-blue--pellucid--hover:hover         { background-color: $blue--pellucid; }
+    .bg-blue--limpid--hover:hover           { background-color: $blue--limpid; }
+
+    .bg-licorice--translucent--hover:hover  { background-color: $licorice--translucent; }
+    .bg-licorice--transparent--hover:hover  { background-color: $licorice--transparent; }
+    .bg-licorice--pellucid--hover:hover     { background-color: $licorice--pellucid; }
+    .bg-licorice--limpid--hover:hover       { background-color: $licorice--limpid; }
+
+    .bg-black--translucent--hover:hover     { background-color: $black--translucent; }
+    .bg-black--transparent--hover:hover     { background-color: $black--transparent; }
+    .bg-black--pellucid--hover:hover        { background-color: $black--pellucid; }
+    .bg-black--limpid--hover:hover          { background-color: $black--limpid; }
+
+    .bg-white--translucent--hover:hover     { background-color: $white--translucent; }
+    .bg-white--transparent--hover:hover     { background-color: $white--transparent; }
+    .bg-white--pellucid--hover:hover        { background-color: $white--pellucid; }
+    .bg-white--limpid--hover:hover          { background-color: $white--limpid; }
+
+    // Social background hovers
+    // -------------------------
+
+    .bg-twitter--hover:hover                { background-color: $twitter; }
+    .bg-facebook--hover:hover               { background-color: $facebook; }
+    .bg-dribbble--hover:hover               { background-color: $dribbble; }
+    .bg-dropbox--hover:hover                { background-color: $dropbox; }
+    .bg-google--hover:hover                 { background-color: $google; }
+    .bg-instagram--hover:hover              { background-color: $instagram; }
+    .bg-linkedin--hover:hover               { background-color: $linkedin; }
 
     // Brand fill hovers
     // -------------------------
@@ -72,24 +227,7 @@
     .fill-red--d--hover:hover               { fill: $red--d; }
     .fill-red--l--hover:hover               { fill: $red--l; }
 
-    // Grey color hovers
-    // -------------------------
-
-    .c-black--hover:hover                   { color: $black; }
-    .c-steel--hover:hover                   { color: $steel; }
-    .c-slate--hover:hover                   { color: $slate; }
-    .c-silver--hover:hover                  { color: $silver; }
-    .c-snow--hover:hover                    { color: $snow; }
-    .c-smoke--hover:hover                   { color: $smoke; }
-    .c-white--hover:hover                   { color: $white; }
-
-    .c-snow--d--hover:hover                 { color: $snow--d }
-    .c-snow--xd--hover:hover                { color: $snow--xd }
-
-    .c-smoke--d--hover:hover                { color: $smoke--d }
-    .c-smoke--xd--hover:hover               { color: $smoke--xd }
-
-    // Grey fill hovers
+    // Gray fill hovers
     // -------------------------
 
     .fill-black--hover:hover                { fill: $black; }
@@ -106,16 +244,8 @@
     .fill-smoke--d--hover:hover             { fill: $smoke--d }
     .fill-smoke--xd--hover:hover            { fill: $smoke--xd }
 
-    // UI color hovers
+    // UI fill hovers
     // -------------------------
-
-    .c-blue--hover:hover                    { color: $blue; }
-    .c-positive--hover:hover                { color: $positive; }
-    .c-negative--hover:hover                { color: $negative; }
-    .c-warning--hover:hover                 { color: $warning; }
-
-    .c-blue--d--hover:hover                 { color: $blue--d; }
-    .c-blue--l--hover:hover                 { color: $blue--l; }
 
     .fill-blue--hover:hover                 { fill: $blue; }
     .fill-positive--hover:hover             { fill: $positive; }
@@ -125,16 +255,26 @@
     .fill-blue--d--hover:hover              { fill: $blue--d; }
     .fill-blue--l--hover:hover              { fill: $blue--l; }
 
-    // Social hovers
+    // Transparent fill hovers
     // -------------------------
 
-    .c-twitter--hover:hover                 { color: $twitter; }
-    .c-facebook--hover:hover                { color: $facebook; }
-    .c-dribbble--hover:hover                { color: $dribbble; }
-    .c-dropbox--hover:hover                 { color: $dropbox; }
-    .c-google--hover:hover                  { color: $google; }
-    .c-instagram--hover:hover               { color: $instagram; }
-    .c-linkedin--hover:hover                { color: $linkedin; }
+    .fill-blue--translucent--hover:hover    { fill: $blue--translucent; }
+    .fill-blue--transparent--hover:hover    { fill: $blue--transparent; }
+    .fill-blue--pellucid--hover:hover       { fill: $blue--pellucid; }
+    .fill-blue--limpid--hover:hover         { fill: $blue--limpid; }
+
+    .fill-white--translucent--hover:hover   { fill: $white--translucent; }
+    .fill-white--transparent--hover:hover   { fill: $white--transparent; }
+    .fill-white--pellucid--hover:hover      { fill: $white--pellucid; }
+    .fill-white--limpid--hover:hover        { fill: $white--limpid; }
+
+    .fill-black--translucent--hover:hover   { fill: $black--translucent; }
+    .fill-black--transparent--hover:hover   { fill: $black--transparent; }
+    .fill-black--pellucid--hover:hover      { fill: $black--pellucid; }
+    .fill-black--limpid--hover:hover        { fill: $black--limpid; }
+
+    // Social fill hovers
+    // -------------------------
 
     .fill-twitter--hover:hover              { fill: $twitter; }
     .fill-facebook--hover:hover             { fill: $facebook; }
@@ -144,44 +284,42 @@
     .fill-instagram--hover:hover            { fill: $instagram; }
     .fill-linkedin--hover:hover             { fill: $linkedin; }
 
-    // Background colors
+    // Box shadow hovers
     // -------------------------
 
-    .bg-white--hover:hover                  { @extend .bg-white; }
-    .bg-snow--hover:hover                   { @extend .bg-snow; }
-    .bg-marvel--hover:hover                 { @extend .bg-marvel; }
-    .bg-negative--hover:hover               { @extend .bg-negative; }
-    .bg-positive--hover:hover               { @extend .bg-positive; }
+    .boxShadow-deboss--hover:hover          { box-shadow: inset 0 2px 0 $black--pellucid; }
+    .boxShadow-emboss--hover:hover          { box-shadow: inset 0 -2px 0 $black--pellucid; }
+    .boxShadow-raise--hover:hover           { box-shadow: 0 1px 1px 0 $black--limpid; }
+    .boxShadow-bevelRaise--hover:hover      { box-shadow: inset 0 1px 0 0 $smoke, inset 1px 0 0 0 $smoke--d, inset -1px 0 0 0 $smoke--d, inset 0 -1px 0 0 $smoke--xd, 0 1px 1px 0 $black--limpid; }
+    .boxShadow-none--hover:hover            { box-shadow: none;}
+    .boxShadow-smoke--hover:hover           { box-shadow: inset 0 0 0 1px $smoke; }
+    .boxShadow-smoke--xd--hover:hover       { box-shadow: inset 0 0 0 1px $smoke--xd; }
 
-    .bg-pink--hover:hover                   { @extend .bg-pink; }
-    .bg-purple--hover:hover                 { @extend .bg-purple; }
-    .bg-yellow--hover:hover                 { @extend .bg-yellow; }
-    .bg-orange--hover:hover                 { @extend .bg-orange; }
-
-    // Box shadows
-    // -------------------------
-
-    .boxShadow-deboss--hover:hover          { @extend .boxShadow-deboss; }
-    .boxShadow-emboss--hover:hover          { @extend .boxShadow-emboss; }
-    .boxShadow-raise--hover:hover           { @extend .boxShadow-raise; }
-    .boxShadow-bevelRaise--hover:hover      { @extend .boxShadow-bevelRaise; }
-    .boxShadow-none--hover:hover            { @extend .boxShadow-none;}
-    .boxShadow-smoke--hover:hover           { @extend .boxShadow-smoke; }
-    .boxShadow-smoke--xd--hover:hover       { @extend .boxShadow-smoke--xd; }
-
-    // Scale effects
+    // Scale hovers
     // -------------------------
 
     .scaleUp--hover:hover                   { transform: scale(1.2); }
 
-    // Underline effects
+    // Underline hovers
     // -------------------------
-    .textDecoration-underline--hover:hover  { @extend .textDecoration-underline; }
+    .textDecoration-underline--hover:hover  { text-decoration: underline; }
 
-    // Opacity effects
+    // Opacity hovers
     // -------------------------
 
-    .opacity-60--hover:hover                { @extend .opacity-60; }
-    .opacity-90--hover:hover                { @extend .opacity-90; }
-    .opacity-100--hover:hover               { @extend .opacity-100; }
+    .opacity-0--hover:hover                 { opacity: 0; }
+    .opacity-5--hover:hover                 { opacity: .03; }
+    .opacity-5--hover:hover                 { opacity: .05; }
+    .opacity-8--hover:hover                 { opacity: .08; }
+    .opacity-10--hover:hover                { opacity: .1; }
+    .opacity-15--hover:hover                { opacity: .15; }
+    .opacity-20--hover:hover                { opacity: .2; }
+    .opacity-30--hover:hover                { opacity: .3; }
+    .opacity-40--hover:hover                { opacity: .4; }
+    .opacity-50--hover:hover                { opacity: .5; }
+    .opacity-60--hover:hover                { opacity: .6; }
+    .opacity-70--hover:hover                { opacity: .7; }
+    .opacity-80--hover:hover                { opacity: .8; }
+    .opacity-90--hover:hover                { opacity: .9; }
+    .opacity-100--hover:hover               { opacity: 1; }
 }

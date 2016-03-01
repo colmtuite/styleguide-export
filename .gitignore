@@ -1,2 +1,4 @@
 node_modules/
 .eyeglass_cache/
+
+npm-debug.log

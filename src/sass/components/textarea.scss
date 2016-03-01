@@ -3,10 +3,11 @@
 // -------------------------
 
 .textarea {
+    @extend .width-100;
     @extend .verticalAlign-middle;
     @extend .outlineStyle-none;
+    @extend .appearance-none;
     @extend .borderWidth-0;
-    @extend .width-100;
 
     @extend .fontWeight-3;
     @extend .transitionDuration-s;
@@ -45,6 +46,15 @@
 }
 
 .textarea--s {
+    min-height: 80px;
+    padding: 6px 8px;
+    @extend .fontSize-s;
+    @extend .lineHeight-xm;
+    @extend .borderRadius-s;
+    @extend .resize-vertical;
+}
+
+.textarea--xs {
     min-height: 80px;
     padding: 6px 8px;
     @extend .fontSize-xs;
@@ -92,6 +102,7 @@
     @extend .pointerEvents-none;
     @extend .cursor-default;
 }
+
 .textarea.has-error {
-    @extend .borderColor-negative;
+    @extend .boxShadow-negative;
 }

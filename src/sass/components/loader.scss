@@ -24,6 +24,7 @@ $loader-s: 8px;
     @extend .absolutelyCenter;
 
     @extend .borderStyle-solid;
+    @extend .borderColor-silver;
     @extend .borderRadius-circle;
     @extend .borderColor-silver;
     @extend .borderRightColor-transparent;
@@ -37,6 +38,11 @@ $loader-s: 8px;
 
 .is-loading--white:after {
     @extend .borderColor-white;
+    @extend .borderRightColor-transparent;
+}
+
+.is-loading--smoke--d:after {
+    @extend .borderColor-smoke--d;
     @extend .borderRightColor-transparent;
 }
 

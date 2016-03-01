@@ -1,11 +1,14 @@
 //
-// Width break points
-// -------------
+// Responsive rules
+// -------------------------
 
 $breakpoint-s: 480px;
 $breakpoint-m: 768px;
 $breakpoint-l: 1180px;
 $breakpoint-xl: 1320px;
+
+// Width break points
+// -------------------------
 
 @mixin breakPoint($point) {
     @if $point == s {
@@ -28,17 +31,26 @@ $breakpoint-xl: 1320px;
             @content;
         }
     }
+    @else {
+        @media screen and (min-width: $point) {
+            @content;
+        }
+    }
 }
 
-//
-// Height break points — these are
-// -------------
+// Height break points
+// -------------------------
 
 $breakpointHeight-m: 800px;
 
 @mixin breakPointHeight($point) {
     @if $point == m {
         @media screen and (max-height: $breakpointHeight-m) {
+            @content;
+        }
+    }
+    @else {
+        @media screen and (max-height: $point) {
             @content;
         }
     }

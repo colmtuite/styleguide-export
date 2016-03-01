@@ -2,8 +2,35 @@
 // White Space
 // -------------
 
-.ws-normal          { white-space: normal; }
+.whiteSpace-normal  { white-space: normal; }
 .whiteSpace-nowrap  { white-space: nowrap; }
 .whiteSpace-pre     { white-space: pre; }
 .whiteSpace-preLine { white-space: pre-line; }
 .whiteSpace-preWrap { white-space: pre-wrap; }
+
+// Responsive rules
+// -------------
+
+@include breakPoint(s) {
+    .breakPointS-whiteSpace-normal  { white-space: normal; }
+    .breakPointS-whiteSpace-nowrap  { white-space: nowrap; }
+    .breakPointS-whiteSpace-pre     { white-space: pre; }
+    .breakPointS-whiteSpace-preLine { white-space: pre-line; }
+    .breakPointS-whiteSpace-preWrap { white-space: pre-wrap; }
+}
+
+@include breakPoint(m) {
+    .breakPointM-whiteSpace-normal  { white-space: normal; }
+    .breakPointM-whiteSpace-nowrap  { white-space: nowrap; }
+    .breakPointM-whiteSpace-pre     { white-space: pre; }
+    .breakPointM-whiteSpace-preLine { white-space: pre-line; }
+    .breakPointM-whiteSpace-preWrap { white-space: pre-wrap; }
+}
+
+@include breakPoint(l) {
+    .breakPointL-whiteSpace-normal  { white-space: normal; }
+    .breakPointL-whiteSpace-nowrap  { white-space: nowrap; }
+    .breakPointL-whiteSpace-pre     { white-space: pre; }
+    .breakPointL-whiteSpace-preLine { white-space: pre-line; }
+    .breakPointL-whiteSpace-preWrap { white-space: pre-wrap; }
+}

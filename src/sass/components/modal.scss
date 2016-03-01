@@ -4,9 +4,7 @@
 
 .modal {
     @extend .position-relative;
-    @extend .padding-l;
-
-    @extend .concealed;
+    @extend .padding-m;
 
     @extend .bg-white;
     @extend .borderWidth-1;
@@ -18,16 +16,14 @@
     @extend .centered;
     @extend .cf;
 
+    @extend .concealed;
     @extend .transformStyle-preserve3d;
     transform: scale(0.5);
     @extend .transitionProperty-all;
     @extend .transitionDuration-l;
     @extend .transitionTimingFunction-cb--scaleOut;
-}
 
-.modal--scrollable {
-    @extend .overflowY-auto;
-    @extend .scrollbar;
+    @extend .breakPointS-padding-l;
 }
 
 // Size variations
@@ -35,12 +31,10 @@
 
 .modal--s {
     max-width: 500px;
-    max-height: 750px;
 }
 
 .modal--m {
     max-width: 800px;
-    max-height: 750px;
 }
 
 // Modal icons
@@ -59,8 +53,6 @@ $modal-icon-size: 30px;
     @extend .transitionDuration-m;
     @extend .transitionProperty-all;
 
-    @extend .bg-snow--xd;
-    @extend .bg-marvel--hover;
     @extend .cursor-pointer;
     @extend .borderRadius-circle;
 
@@ -69,29 +61,112 @@ $modal-icon-size: 30px;
 
     width: $modal-icon-size;
     height: $modal-icon-size;
-    top: -$modal-icon-size;
+    top: 15px;
+}
+
+.modal-icon:before,
+.modal-icon:after {
+    @extend .display-block;
+    @extend .absolutelyCenter;
 }
 
 .modal-iconClose {
     @extend .posPinTR;
-
-    right: -($modal-icon-size + 10);
-    background-image: asset-url('images/icon-cross.svg');
+    right: 15px;
 }
 
 .modal-iconBack {
     @extend .posPinTL;
-
-    left: -($modal-icon-size + 10);
-    background-image: asset-url('images/icon-back.svg');
+    left: 15px;
 }
 
-.modal-iconClose:hover {
-    background-image: asset-url('images/icon-cross--hover.svg');
+@include breakPoint(m) {
+    .modal-iconClose {
+        top: -$modal-icon-size;
+        right: -($modal-icon-size + 10);
+    }
+
+    .modal-iconBack {
+        top: -$modal-icon-size;
+        left: -($modal-icon-size + 10);
+    }
 }
 
-.modal-iconBack:hover {
-    background-image: asset-url('images/icon-back--hover.svg');
+.modal-iconClose:before,
+.modal-iconClose:after, {
+    width: 14px;
+    height: 2px;
+    content: "";
+    margin: -1px 0 0 -7px;
+    border-radius: 2px;
+}
+
+.modal-iconClose:before {
+    transform: rotate(45deg);
+}
+
+.modal-iconClose:after {
+    transform: rotate(-45deg);
+}
+
+.modal-iconBack:before,
+.modal-iconBack:after {
+    width: 10px;
+    height: 2px;
+    content: "";
+    border-radius: 2px;
+}
+
+.modal-iconBack:before {
+    top: auto;
+    left: 50%;
+    bottom: 11px;
+    margin-left: -6px;
+    transform: rotate(45deg);
+}
+
+.modal-iconBack:after {
+    top: 11px;
+    left: 50%;
+    margin-left: -6px;
+    transform: rotate(-45deg);
+}
+
+// Modal icon colors
+// -------------------------
+
+.modal-icon--light {
+    @extend .bg-snow--d;
+    @extend .bg-marvel--hover;
+}
+
+.modal-icon--light.modal-iconClose:before,
+.modal-icon--light.modal-iconClose:after,
+.modal-icon--light.modal-iconBack:before,
+.modal-icon--light.modal-iconBack:after {
+    @extend .bg-smoke--d;
+    @extend .bg-white--hover;
+}
+
+.modal-icon--dark {
+    @extend .bg-smoke;
+    @extend .bg-marvel--hover;
+}
+
+.modal-icon--dark.modal-iconClose:before,
+.modal-icon--dark.modal-iconClose:after {
+    @extend .bg-smoke--xd;
+    @extend .bg-white--hover;
+}
+
+.modal-icon--universal {
+    @extend .bg-licorice--transparent;
+    @extend .bg-licorice--translucent--hover;
+}
+
+.modal-icon--universal.modal-iconClose:before,
+.modal-icon--universal.modal-iconClose:after {
+    @extend .bg-white;
 }
 
 // Modal subtext
@@ -103,15 +178,22 @@ $modal-icon-size: 30px;
     @extend .transitionProperty-all;
     @extend .transitionTimingFunction-cv-easeOutCircular;
     @extend .textAlign-center;
+    @extend .fontWeight-3;
 }
 
 .modal-subtext--after {
     @extend .marginTop-l;
+    @extend .marginBottom-m;
+    @extend .breakPointM-marginBottom-0;
+
     transform: translateY(30px);
 }
 
 .modal-subtext--before {
+    @extend .marginTop-m;
     @extend .marginBottom-l;
+    @extend .breakPointM-marginTop-0;
+
     transform: translateY(-30px);
 }
 
@@ -134,6 +216,7 @@ $modal-icon-size: 30px;
 
   	@extend .bg-white--translucent;
   	@extend .zi-overlay;
+    @extend .overflowY-scroll;
 }
 
 .modal-overlay.is-active,
@@ -141,6 +224,7 @@ $modal-icon-size: 30px;
     @extend .disclosed;
     @extend .transitionDuration-l;
     @extend .transitionProperty-all;
+    -webkit-overflow-scrolling: touch;
 }
 
 .modal-overlay.is-active .modal,

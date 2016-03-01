@@ -61,6 +61,16 @@
     min-width: $control-s;
     @extend .height-control--s;
     padding: 0 $control-s / 2;
+    @extend .fontSize-s;
+    @extend .lineHeight-control--s;
+    @extend .borderRadius-s;
+    @extend .is-loading--s;
+}
+
+.button--xs {
+    min-width: $control-s;
+    @extend .height-control--s;
+    padding: 0 $control-s / 2;
     @extend .fontSize-xs;
     @extend .lineHeight-control--s;
     @extend .borderRadius-s;
@@ -114,7 +124,6 @@
 
 .button--flat {
     @extend .c-white;
-    @extend .boxShadow-none;
     @extend .boxShadow-emboss--hover;
     @extend .boxShadow-deboss--active;
 }
@@ -146,29 +155,32 @@
 }
 
 .buttonGroup div.active .button,
-.buttonGroup div.is-active .button,
-.buttonGroup div:last-child.active .button,
-.buttonGroup div:last-child.is-active .button {
+.buttonGroup div:last-child.active .button {
     @extend .c-white;
     @extend .bg-marvel;
     @extend .boxShadow-none;
 }
 
 .buttonGroup div:not(:last-child) .button:hover:before,
-.buttonGroup div.active:not(:last-child) .button:before,
-.buttonGroup div.is-active:not(:last-child) .button:before {
+.buttonGroup div.active:not(:last-child) .button:before {
     @extend .position-absolute;
     top: 0;
     right: -1px;
     bottom: 0;
     @extend .display-block;
-    @extend .bg-marvel;
     width: 1px;
     content: "";
     z-index: 1;
     @extend .transitionProperty-all;
     @extend .transitionDuration-s;
     @extend .transitionTimingFunction-linear;
+}
+
+@include breakPoint(m) {
+    .buttonGroup div:not(:last-child) .button:hover:before,
+    .buttonGroup div.active:not(:last-child) .button:before {
+        background: $marvel;
+    }
 }
 
 // States
@@ -190,7 +202,7 @@
 // It only happens if you don't move your cursor away, so the pointer events
 // are still active. Alternatively can be triggered with chrome's inspector.
 //
-// The problem, however, is that this little piece of shit doesn't take the
+// The problem, however, is that this little piece of crap doesn't take the
 // hover state from the .is-disabled class, but instead it inherits the one
 // from .button--flat. I'm out of options so leaving this hacky fix here.
 //
@@ -198,7 +210,9 @@
 // .is-disabled class extends.
 
 .button.is-disabled:hover,
-.button--flat.is-disabled:hover  {
+.button.is-disabled:active,
+.button--flat.is-disabled:hover,
+.button--flat.is-disabled:active {
     @extend .boxShadow-smoke;
 }
 
@@ -259,6 +273,18 @@
     padding-left: $control-s;
 }
 
+.button--xs:after {
+    @extend .position-absolute;
+    margin: 0;
+    transform: translate(0);
+    top: ($control-s - $loader-s) / 2;
+    left: ($control-s - $loader-s) / 2;
+}
+
+.button--xs.is-loading {
+    padding-left: $control-s;
+}
+
 // Responsive button
 // -------------------------
 
@@ -297,27 +323,6 @@
 
     .button--responsive.is-loading {
         padding-left: $control-l;
-    }
-}
-
-@include breakPoint(m) {
-    .button--responsive {
-        height: $control-xl;
-        line-height: $control-xl;
-        padding: 0 $control-xl / 2;
-    }
-
-    .button--responsive:after {
-        width: $loader-xl;
-        height: $loader-xl;
-        border-width: 3px;
-        transform: translate(0);
-        top: ($control-xl - $loader-xl) / 2;
-        left: ($control-xl - $loader-xl) / 2;
-    }
-
-    .button--responsive.is-loading {
-        padding-left: $control-xl;
     }
 }
 
@@ -397,6 +402,58 @@
 
 .button--s.is-sad:hover {
     padding-left: $control-s;
+}
+
+.button--xs.is-sad:before {
+    width: $control-s;
+    height: $control-s;
+    background-image: asset-url('images/icon-sad--s.svg');
+}
+
+.button--xs.is-sad:hover {
+    padding-left: $control-s;
+}
+
+// Button with logo
+// -------------------------
+
+.logoWrap {
+    @extend .height-100;
+    @extend .position-relative;
+    @extend .display-inlineBlock;
+}
+
+.button .logoWrap .svgIcon,
+.button .logoWrap .svgIcon path,
+.button .logoWrap .svgIcon circle {
+    @extend .transitionDuration-s;
+    @extend .transitionProperty-all;
+    @extend .transitionTimingFunction-linear;
+}
+
+.button:hover .logoWrap .svgIcon,
+.button:hover .logoWrap .svgIcon path,
+.button:hover .logoWrap .svgIcon circle {
+    @extend .transitionDuration-s;
+    @extend .transitionProperty-all;
+    @extend .transitionTimingFunction-linear;
+}
+
+@include breakPoint(m) {
+    .button:hover .logoWrap .svgIcon,
+    .button:hover .logoWrap .svgIcon path,
+    .button:hover .logoWrap .svgIcon circle {
+        fill: $white;
+    }
+}
+
+.button.is-loading .logoWrap .svgIcon,
+.button.is-loading .logoWrap .svgIcon path,
+.button.is-loading .logoWrap .svgIcon circle,
+.button.is-disabled .logoWrap .svgIcon,
+.button.is-disabled .logoWrap .svgIcon path,
+.button.is-disabled .logoWrap .svgIcon circle {
+    @extend .fill-smoke;
 }
 
 // Stateful buttons are buttons that have a particular state & response
@@ -479,6 +536,13 @@
     margin-left: -($control-s / 2);
 }
 
+.button--xs.button--stateful:before {
+    width: $control-s;
+    height: $control-s;
+    margin-top: -($control-s / 2);
+    margin-left: -($control-s / 2);
+}
+
 // Success
 // -------------------------
 
@@ -502,6 +566,10 @@
     background-image: asset-url('images/icon-success--s.svg');
 }
 
+.button--xs.has-succeeded:before {
+    background-image: asset-url('images/icon-success--s.svg');
+}
+
 // Failure
 // -------------------------
 
@@ -522,5 +590,9 @@
 }
 
 .button--s.has-failed:before {
+    background-image: asset-url('images/icon-sad--s.svg');
+}
+
+.button--xs.has-failed:before {
     background-image: asset-url('images/icon-sad--s.svg');
 }

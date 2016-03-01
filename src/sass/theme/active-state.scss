@@ -5,10 +5,12 @@
 // Box shadows
 // -------------------------
 
-.boxShadow-deboss--active:active          { @extend .boxShadow-deboss; }
-.boxShadow-emboss--active:active          { @extend .boxShadow-emboss; }
-.boxShadow-depress--active:active         { @extend .boxShadow-depress; }
-.boxShadow-smokeDepress--active:active    { @extend .boxShadow-smokeDepress; }
+@include breakPoint(m) {
+    .boxShadow-deboss--active:active          { box-shadow: inset 0 2px 0 $black--pellucid; }
+    .boxShadow-emboss--active:active          { box-shadow: inset 0 -2px 0 $black--pellucid; }
+    .boxShadow-depress--active:active         { box-shadow: inset 0 1px 1px 0 $black--limpid; }
+    .boxShadow-smokeDepress--active:active    { box-shadow: 0 0 0 1px $smoke, inset 0 1px 1px 0 $black--limpid; }
+}
 
 // Transition properties
 // -------------------------

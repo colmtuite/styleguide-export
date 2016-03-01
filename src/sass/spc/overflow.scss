@@ -25,3 +25,84 @@
 .overflowY-scroll  { overflow-y: scroll; }
 .overflowY-auto    { overflow-y: auto; }
 .overflowY-inherit { overflow-y: inherit; }
+
+// Responsive rules
+// -------------
+
+@include breakPoint(s) {
+    .breakPointS-overflow-visible  { overflow: visible; }
+    .breakPointS-overflow-hidden   { overflow: hidden; }
+    .breakPointS-overflow-scroll   { overflow: scroll; }
+    .breakPointS-overflow-auto     { overflow: auto; }
+    .breakPointS-overflow-inherit  { overflow: inherit; }
+
+    // X-axis
+    // -------------
+
+    .breakPointS-overflowX-visible { overflow-x: visible; }
+    .breakPointS-overflowX-hidden  { overflow-x: hidden; }
+    .breakPointS-overflowX-scroll  { overflow-x: scroll; }
+    .breakPointS-overflowX-auto    { overflow-x: auto; }
+    .breakPointS-overflowX-inherit { overflow-x: inherit; }
+
+    // Y-axis
+    // -------------
+
+    .breakPointS-overflowY-visible { overflow-y: visible; }
+    .breakPointS-overflowY-hidden  { overflow-y: hidden; }
+    .breakPointS-overflowY-scroll  { overflow-y: scroll; }
+    .breakPointS-overflowY-auto    { overflow-y: auto; }
+    .breakPointS-overflowY-inherit { overflow-y: inherit; }
+}
+
+@include breakPoint(m) {
+    .breakPointM-overflow-visible  { overflow: visible; }
+    .breakPointM-overflow-hidden   { overflow: hidden; }
+    .breakPointM-overflow-scroll   { overflow: scroll; }
+    .breakPointM-overflow-auto     { overflow: auto; }
+    .breakPointM-overflow-inherit  { overflow: inherit; }
+
+    // X-axis
+    // -------------
+
+    .breakPointM-overflowX-visible { overflow-x: visible; }
+    .breakPointM-overflowX-hidden  { overflow-x: hidden; }
+    .breakPointM-overflowX-scroll  { overflow-x: scroll; }
+    .breakPointM-overflowX-auto    { overflow-x: auto; }
+    .breakPointM-overflowX-inherit { overflow-x: inherit; }
+
+    // Y-axis
+    // -------------
+
+    .breakPointM-overflowY-visible { overflow-y: visible; }
+    .breakPointM-overflowY-hidden  { overflow-y: hidden; }
+    .breakPointM-overflowY-scroll  { overflow-y: scroll; }
+    .breakPointM-overflowY-auto    { overflow-y: auto; }
+    .breakPointM-overflowY-inherit { overflow-y: inherit; }
+}
+
+@include breakPoint(l) {
+    .breakPointL-overflow-visible  { overflow: visible; }
+    .breakPointL-overflow-hidden   { overflow: hidden; }
+    .breakPointL-overflow-scroll   { overflow: scroll; }
+    .breakPointL-overflow-auto     { overflow: auto; }
+    .breakPointL-overflow-inherit  { overflow: inherit; }
+
+    // X-axis
+    // -------------
+
+    .breakPointL-overflowX-visible { overflow-x: visible; }
+    .breakPointL-overflowX-hidden  { overflow-x: hidden; }
+    .breakPointL-overflowX-scroll  { overflow-x: scroll; }
+    .breakPointL-overflowX-auto    { overflow-x: auto; }
+    .breakPointL-overflowX-inherit { overflow-x: inherit; }
+
+    // Y-axis
+    // -------------
+
+    .breakPointL-overflowY-visible { overflow-y: visible; }
+    .breakPointL-overflowY-hidden  { overflow-y: hidden; }
+    .breakPointL-overflowY-scroll  { overflow-y: scroll; }
+    .breakPointL-overflowY-auto    { overflow-y: auto; }
+    .breakPointL-overflowY-inherit { overflow-y: inherit; }
+}

@@ -12,7 +12,7 @@ $dropdown-s: 18px;
 
 .select {
     box-shadow: none;
-    width: auto;
+    width: 100%;
     top: auto;
     right: auto;
     z-index: auto;
@@ -73,6 +73,13 @@ $dropdown-s: 18px;
     @extend .boxShadow-smoke--xd--hover;
 }
 
+// States
+// -------------------------
+
+.select--default.has-error select {
+    @extend .boxShadow-negative;
+}
+
 // Select menu sizes
 // -------------------------
 
@@ -101,6 +108,14 @@ $dropdown-s: 18px;
 }
 
 .select--s select {
+    @extend .height-control--s;
+    padding: 0 $control-s 0 8px;
+    @extend .fontSize-s;
+    @extend .lineHeight-control--s;
+    @extend .borderRadius-m;
+}
+
+.select--xs select {
     @extend .height-control--s;
     padding: 0 $control-s 0 8px;
     @extend .fontSize-xs;
@@ -160,6 +175,7 @@ $dropdown-s: 18px;
 }
 
 .select--s:after,
+.select--xs:after,
 .select--legible:after {
     width: $dropdown-s;
     height: $dropdown-s;
