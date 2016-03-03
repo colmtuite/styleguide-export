@@ -94,9 +94,7 @@
 // -------------------------
 
 .textarea.is-disabled {
-    @extend .borderWidth-1;
-    @extend .borderStyle-solid;
-    @extend .borderColor-smoke;
+    @extend .boxShadow-smoke;
     @extend .c-silver;
     @extend .bg-snow;
     @extend .pointerEvents-none;
