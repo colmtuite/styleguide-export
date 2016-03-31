@@ -217,3 +217,56 @@
     width: 50px;
     height: 50px;
 }
+
+// Popover select menu
+// -------------------------
+
+.popover-select-item {
+    @extend .position-relative;
+    @extend .cursor-pointer;
+    @extend .userSelect-none;
+}
+
+.popover-select-item.has-border {
+    @extend .borderWidth-0;
+    @extend .borderBottomWidth-1;
+    @extend .borderStyle-solid;
+    @extend .borderColor-smoke;
+}
+
+.popover-select-title {
+    @extend .fontSize-m;
+    @extend .lineHeight-s;
+    @extend .c-silver;
+
+    @extend .truncateText;
+    @extend .transitionDuration-m;
+    @extend .transitionProperty-color;
+}
+
+.popover-select-subtitle {
+    @extend .fontWeight-3;
+    @extend .fontSize-s;
+    @extend .lineHeight-s;
+    @extend .c-silver;
+    @extend .truncateText;
+}
+
+.popover-select-item:hover .popover-select-title,
+.popover-select-item.is-active .popover-select-title {
+    @extend .c-slate;
+}
+
+.popover-select-item.is-active .select-toggle {
+    @extend .select-toggle.selected;
+}
+
+.popover--s .popover-select-title,
+.popover--s .popover-select-subtitle {
+    max-width: 130px;
+}
+
+.popover--m .popover-select-title,
+.popover--m .popover-select-subtitle {
+    max-width: 180px;
+}

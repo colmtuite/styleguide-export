@@ -198,12 +198,109 @@ $dropdown-s: 18px;
 
 // Hide the arrow in IE10 and up
 .select select::-ms-expand {
-  display: none;
+    display: none;
 }
 
 // Reset <option> style inheritance in FF
 @-moz-document url-prefix() {
-  .select option {
-    background-color: #fff;
-  }
+    .select option {
+        background-color: #fff;
+    }
+}
+
+// Select toggle
+// -------------------------
+
+.select-toggle {
+	@extend .position-relative;
+    @extend .zi-200;
+
+	@extend .display-inlineBlock;
+	@extend .borderRadius-circle;
+
+    @extend .transitionDuration-l;
+    @extend .transitionProperty-all;
+	@extend .transitionTimingFunction-cb--scaleIn;
+
+	@extend .cursor-pointer;
+
+    width: $control-xs;
+    height: $control-xs;
+    text-indent: -9999px;
+	box-shadow: inset 0 0 0 2px $smoke;
+}
+
+.select-toggle--large {
+	width: $control-s;
+	height: $control-s;
+}
+
+.select-toggle:after {
+	@extend .posPinTR;
+	@extend .width-100;
+	@extend .height-100;
+
+    @extend .transitionDelay-m;
+    @extend .transitionDuration-l;
+    @extend .transitionProperty-all;
+	@extend .transitionTimingFunction-cb--scaleIn;
+
+	transform: scale(0);
+	background: url(/static/assets/images/select-property.svg) center center no-repeat;
+    background-size: 100%;
+    content: '';
+}
+
+.select-toggle.disabled {
+	box-shadow: inset 0 0 0 2px $smoke;
+	pointer-events: none;
+}
+
+// Selected
+.select-toggle.selected {
+	box-shadow: inset 0 0 0 20px $positive;
+	opacity: 1;
+}
+
+.select-toggle.selected:after {
+    transform: scale(1);
+}
+
+.select-toggle.selected.disabled {
+    box-shadow: inset 0 0 0 20px $smoke;
+    cursor: default;
+}
+
+// Inverse
+.select-toggle.inverse {
+	box-shadow: inset 0 0 0 20px $positive;
+}
+
+.select-toggle.inverse:after {
+    transform: scale(1);
+}
+
+.select-toggle.inverse.selected {
+    box-shadow: inset 0 0 0 2px $smoke;
+}
+
+.select-toggle.inverse.selected:after {
+    transform: scale(0);
+}
+
+// Loading
+.select-toggle.is-loading {
+    @extend .is-loading--s;
+}
+
+.select-toggle.select-toggle--large.is-loading {
+    @extend .is-loading--m;
+}
+
+.select-toggle.is-loading {
+    @extend .bg-snow;
+}
+
+.select-toggle.is-loading:after {
+    background-image: none;
 }

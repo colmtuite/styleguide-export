@@ -41,6 +41,11 @@ $loader-s: 8px;
     @extend .borderRightColor-transparent;
 }
 
+.is-loading--smoke:after {
+    @extend .borderColor-smoke;
+    @extend .borderRightColor-transparent;
+}
+
 .is-loading--smoke--d:after {
     @extend .borderColor-smoke--d;
     @extend .borderRightColor-transparent;

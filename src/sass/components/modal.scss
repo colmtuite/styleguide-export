@@ -4,8 +4,21 @@
 
 .modal {
     @extend .position-relative;
-    @extend .padding-m;
+    @extend .centered;
+    @extend .cf;
 
+    @extend .concealed;
+    @extend .transformStyle-preserve3d;
+
+    transform: scale(0.5);
+
+    @extend .transitionProperty-all;
+    @extend .transitionDuration-l;
+    @extend .transitionTimingFunction-cb--scaleOut;
+}
+
+.modal:not(.modal--borderless) {
+    @extend .padding-m;
     @extend .bg-white;
     @extend .borderWidth-1;
     @extend .borderStyle-solid;
@@ -13,16 +26,6 @@
     @extend .borderRadius-l;
 
     @extend .boxShadow-distant;
-    @extend .centered;
-    @extend .cf;
-
-    @extend .concealed;
-    @extend .transformStyle-preserve3d;
-    transform: scale(0.5);
-    @extend .transitionProperty-all;
-    @extend .transitionDuration-l;
-    @extend .transitionTimingFunction-cb--scaleOut;
-
     @extend .breakPointS-padding-l;
 }
 
@@ -40,8 +43,10 @@
 // Modal icons
 // -------------------------
 
-$modal-icon-size: 30px;
+$modal-icon-size--s: 30px;
+$modal-icon-size--m: 40px;
 
+.modal-image,
 .modal-icon-wrapper {
     @extend .concealed;
     @extend .transitionDuration-xl;
@@ -59,9 +64,17 @@ $modal-icon-size: 30px;
     @extend .backgroundRepeat-noRepeat;
     @extend .backgroundPosition-centerCenter;
 
-    width: $modal-icon-size;
-    height: $modal-icon-size;
     top: 15px;
+}
+
+.modal-icon:not(.modal-icon--s) {
+    width: $modal-icon-size--m;
+    height: $modal-icon-size--m;
+}
+
+.modal-icon--s {
+    width: $modal-icon-size--s;
+    height: $modal-icon-size--s;
 }
 
 .modal-icon:before,
@@ -81,24 +94,55 @@ $modal-icon-size: 30px;
 }
 
 @include breakPoint(m) {
-    .modal-iconClose {
-        top: -$modal-icon-size;
-        right: -($modal-icon-size + 10);
+    .modal-icon:not(.modal-icon--s).modal-iconClose:not(.modal-iconClose--outside) {
+        top: -$modal-icon-size--m;
+        right: -($modal-icon-size--m + 10);
     }
 
-    .modal-iconBack {
-        top: -$modal-icon-size;
-        left: -($modal-icon-size + 10);
+    .modal-icon:not(.modal-icon--s).modal-iconBack:not(.modal-iconBack--outside) {
+        top: -$modal-icon-size--m;
+        left: -($modal-icon-size--m + 10);
+    }
+
+    .modal-icon--s.modal-iconClose:not(.modal-iconClose--outside) {
+        top: -$modal-icon-size--s;
+        right: -($modal-icon-size--s + 10);
+    }
+
+    .modal-icon--s.modal-iconBack:not(.modal-iconBack--outside) {
+        top: -$modal-icon-size--s;
+        left: -($modal-icon-size--s + 10);
+    }
+
+    .modal-iconClose--outside {
+        top: 30px;
+        right: 40px;
+    }
+
+    .modal-iconBack--outside {
+        top: 30px;
+        left: 40px;
     }
 }
 
 .modal-iconClose:before,
-.modal-iconClose:after, {
-    width: 14px;
-    height: 2px;
+.modal-iconClose:after {
     content: "";
-    margin: -1px 0 0 -7px;
     border-radius: 2px;
+}
+
+.modal-icon:not(.modal-icon--s).modal-iconClose:before,
+.modal-icon:not(.modal-icon--s).modal-iconClose:after {
+    width: 16px;
+    height: 2px;
+    margin: -1px 0 0 -8px;
+}
+
+.modal-icon--s.modal-iconClose:before,
+.modal-icon--s.modal-iconClose:after {
+    width: 12px;
+    height: 2px;
+    margin: -1px 0 0 -6px;
 }
 
 .modal-iconClose:before {
@@ -111,32 +155,61 @@ $modal-icon-size: 30px;
 
 .modal-iconBack:before,
 .modal-iconBack:after {
-    width: 10px;
-    height: 2px;
     content: "";
     border-radius: 2px;
 }
 
 .modal-iconBack:before {
-    top: auto;
     left: 50%;
-    bottom: 11px;
-    margin-left: -6px;
     transform: rotate(45deg);
 }
 
 .modal-iconBack:after {
-    top: 11px;
     left: 50%;
-    margin-left: -6px;
     transform: rotate(-45deg);
+}
+
+.modal-icon:not(.modal-icon--s).modal-iconBack:before,
+.modal-icon:not(.modal-icon--s).modal-iconBack:after {
+    width: 10px;
+    height: 2px;
+}
+
+.modal-icon:not(.modal-icon--s).modal-iconBack:before {
+    top: auto;
+    bottom: 16px;
+    margin-left: -7px;
+}
+
+.modal-icon:not(.modal-icon--s).modal-iconBack:after {
+    top: 16px;
+    margin-left: -7px;
+}
+
+
+
+.modal-icon--s.modal-iconBack:before,
+.modal-icon--s.modal-iconBack:after {
+    width: 9px;
+    height: 2px;
+}
+
+.modal-icon--s.modal-iconBack:before {
+    top: auto;
+    bottom: 11px;
+    margin-left: -6px;
+}
+
+.modal-icon--s.modal-iconBack:after {
+    top: 11px;
+    margin-left: -6px;
 }
 
 // Modal icon colors
 // -------------------------
 
 .modal-icon--light {
-    @extend .bg-snow--d;
+    @extend .bg-snow--xd;
     @extend .bg-marvel--hover;
 }
 
@@ -144,7 +217,7 @@ $modal-icon-size: 30px;
 .modal-icon--light.modal-iconClose:after,
 .modal-icon--light.modal-iconBack:before,
 .modal-icon--light.modal-iconBack:after {
-    @extend .bg-smoke--d;
+    @extend .bg-silver;
     @extend .bg-white--hover;
 }
 
@@ -197,7 +270,6 @@ $modal-icon-size: 30px;
     transform: translateY(-30px);
 }
 
-
 // White screen
 // -------------------------
 
@@ -219,6 +291,20 @@ $modal-icon-size: 30px;
     @extend .overflowY-scroll;
 }
 
+.modal-container {
+    @extend .posPinAll;
+    @extend .transitionDuration-l;
+    @extend .transitionProperty-all;
+    @extend .transitionTimingFunction-ease-in-out;
+}
+
+// Activated modals and animations
+// -------------------------
+
+// In the next lines '> div:not(.concealed)' is needed to make
+// the switch between different states of the same modal smooth.
+// -------------------------
+
 .modal-overlay.is-active,
 .overlay.activated {
     @extend .disclosed;
@@ -227,8 +313,8 @@ $modal-icon-size: 30px;
     -webkit-overflow-scrolling: touch;
 }
 
-.modal-overlay.is-active .modal,
-.overlay.activated .modal {
+.modal-overlay.is-active > div:not(.concealed) .modal,
+.overlay.activated > div:not(.concealed) .modal {
     transform: scale(1);
 
     @extend .disclosed;
@@ -237,8 +323,8 @@ $modal-icon-size: 30px;
     @extend .transitionTimingFunction-cb--scaleOut;
 }
 
-.modal-overlay.is-active .modal-subtext,
-.overlay.activated .modal-subtext {
+.modal-overlay.is-active > div:not(.concealed) .modal-subtext,
+.overlay.activated > div:not(.concealed) .modal-subtext {
     transform: translateY(0);
 
     @extend .disclosed;
@@ -248,8 +334,10 @@ $modal-icon-size: 30px;
     @extend .transitionTimingFunction-cv-easeOutCircular;
 }
 
-.modal-overlay.is-active .modal-icon-wrapper,
-.overlay.activated .modal-icon-wrapper {
+.modal-overlay.is-active > div:not(.concealed) .modal-image,
+.overlay.activated > div:not(.concealed) .modal-image,
+.modal-overlay.is-active > div:not(.concealed) .modal-icon-wrapper,
+.overlay.activated > div:not(.concealed) .modal-icon-wrapper {
     @extend .disclosed;
     @extend .transitionDelay-l;
     @extend .transitionDuration-xl;

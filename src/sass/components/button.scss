@@ -285,6 +285,18 @@
     padding-left: $control-s;
 }
 
+.button--legible:after {
+    @extend .position-absolute;
+    margin: 0;
+    transform: translate(0);
+    top: ($control-s - $loader-s) / 2;
+    left: ($control-s - $loader-s) / 2;
+}
+
+.button--legible.is-loading {
+    padding-left: $control-s;
+}
+
 // Responsive button
 // -------------------------
 

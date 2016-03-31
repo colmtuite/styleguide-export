@@ -1,0 +1,15 @@
+//
+// Progress-bar
+// -------------------------
+
+.progress-bar,
+.progress-bar-inner {
+    height: 6px;
+    border-radius: 3px;
+}
+
+.progress-bar-inner {
+    @extend .transitionProperty-all;
+    @extend .transitionDuration-xxl;
+    @extend .transitionTimingFunction-cv-easeOutCircular;
+}

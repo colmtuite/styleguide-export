@@ -121,6 +121,7 @@ $avatar-xl: 100px;
     width: $avatar-s;
     height: $avatar-s;
     line-height: $avatar-s;
+    @extend .fontSize-m;
 }
 .avatar--s .avatar-team {
     width: 18px;
