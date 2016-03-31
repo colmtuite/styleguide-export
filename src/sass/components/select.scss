@@ -246,7 +246,7 @@ $dropdown-s: 18px;
 	@extend .transitionTimingFunction-cb--scaleIn;
 
 	transform: scale(0);
-	background: url(/static/assets/images/select-property.svg) center center no-repeat;
+	background: asset-url('images/select-property.svg') center center no-repeat;
     background-size: 100%;
     content: '';
 }

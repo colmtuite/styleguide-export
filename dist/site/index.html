@@ -2386,6 +2386,132 @@
             </aside>
         </div>
 
+        <h3 class="fontSize-xl lineHeight-xl">Popover with select menu</h3>
+        <p class="lineHeight-l fontSize-l fontWeight-3">Add an optional element <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.popover-separator</code> as a separator between popover list elements.</p>
+
+        <div class="marginTop-m marginBottom-l">
+            <div class="padding-m borderWidth-1 borderStyle-solid borderColor-smoke borderRadiusTop-m">
+                <div class="inline">
+                    <div class="position-relative marginRight-m">
+                        <div class="popover popover--top has-caret" style="width: 260px">
+                            <div class="js-popover-select-item popover-select-item paddingLeftRight-m paddingTopBottom-s has-border is-active">
+                                <div class="inline">
+                                    <div class="verticalAlign-middle marginRight-m">
+                                        <div class="select-toggle"></div>
+                                    </div>
+
+                                    <div class="verticalAlign-middle">
+                                        <div class="marginBottom-xxs">
+                                            <span class="popover-select-title fontWeight-5">Editor</span>
+                                        </div>
+                                        <span class="popover-select-subtitle">Create and edit projects</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="js-popover-select-item popover-select-item paddingLeftRight-m paddingTopBottom-s has-border">
+                                <div class="inline">
+                                    <div class="verticalAlign-middle marginRight-m">
+                                        <div class="select-toggle"></div>
+                                    </div>
+
+                                    <div class="verticalAlign-middle">
+                                        <div class="marginBottom-xxs">
+                                            <span class="popover-select-title fontWeight-5">Client/Reviewer</span>
+                                        </div>
+                                        <span class="popover-select-subtitle">Read and comment only</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="js-popover-select-item popover-select-item paddingLeftRight-m paddingTopBottom-s has-border">
+                                <div class="inline">
+                                    <div class="verticalAlign-middle marginRight-m">
+                                        <div class="select-toggle"></div>
+                                    </div>
+
+                                    <div class="verticalAlign-middle">
+                                        <div class="marginBottom-xxs">
+                                            <span class="popover-select-title fontWeight-5">Account Admin</span>
+                                        </div>
+                                        <span class="popover-select-subtitle">Add and remove people</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="js-popover-button button button--ghost button--m bg-marvel--hover" data-active-color="marvel">Popover with select menu</button>
+                    </div>
+
+                    <div class="position-relative">
+                        <div class="popover popover--s popover--top has-caret">
+                            <div class="js-popover-select-item popover-select-item cursor-default padding-s has-border">
+                                <svg class="fill-silver marginRight-xs" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M9.11,4H3.47L5.69,1.78A1,1,0,0,0,4.21.31L0.3,4.22A1,1,0,0,0,0,5a1,1,0,0,0,.3.78L4.21,9.69A1,1,0,0,0,5.69,8.22L3.47,6H9.11A0.9,0.9,0,0,0,10,5.11V4.89A0.9,0.9,0,0,0,9.11,4Z"/></svg>
+                                <span class="popover-select-title display-inline link link-light">Back</span>
+                            </div>
+
+                            <div class="js-popover-select-item popover-select-item paddingLeftRight-s paddingTopBottom-xs paddingTop-m is-active">
+                                <div class="inline">
+                                    <div class="verticalAlign-middle marginRight-s">
+                                        <div class="select-toggle"></div>
+                                    </div>
+
+                                    <div class="verticalAlign-middle">
+                                        <span class="popover-select-title">My Folder</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="js-popover-select-item popover-select-item paddingLeftRight-s paddingTopBottom-xs">
+                                <div class="inline">
+                                    <div class="verticalAlign-middle marginRight-s">
+                                        <div class="select-toggle"></div>
+                                    </div>
+
+                                    <div class="verticalAlign-middle">
+                                        <span class="popover-select-title">Personal Projects</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="js-popover-select-item popover-select-item paddingLeftRight-s paddingTopBottom-xs paddingBottom-m has-border">
+                                <div class="inline">
+                                    <div class="verticalAlign-middle marginRight-s">
+                                        <div class="select-toggle"></div>
+                                    </div>
+
+                                    <div class="verticalAlign-middle">
+                                        <span class="popover-select-title">Wireframes</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="js-popover-select-item popover-select-item cursor-default padding-s has-border">
+                                <svg class="fill-silver marginRight-xs" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M9,4H6V1A1,1,0,0,0,4,1V4H1A1,1,0,0,0,1,6H4V9A1,1,0,0,0,6,9V6H9A1,1,0,0,0,9,4Z"/></svg>
+                                <span class="popover-select-title display-inline link link-light">New folder</span>
+                            </div>
+                        </div>
+
+                        <button class="js-popover-button button button--ghost button--m bg-marvel--hover" data-active-color="marvel">Folders</button>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="styleguide-code-snippet">
+                <pre>
+                    <code>&lt;div class="popover popover--s popover--top has-caret">
+  &lt;div class="popover-list">
+    &lt;a href="#">...&lt;/a>
+    &lt;a href="#">...&lt;/a>
+    &lt;a href="#">...&lt;/a>
+    &lt;div class="popover-separator">&lt;/div>
+    &lt;a href="#">...&lt;/a>
+  &lt;/div>
+&lt;/div></code>
+                </pre>
+            </aside>
+        </div>
+
         <h3 class="fontSize-xl lineHeight-xl">Popover that appears on hover</h3>
         <p class="lineHeight-l fontSize-l fontWeight-3">Add an optional element <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.popover-separator</code> as a separator between popover list elements.</p>
 
