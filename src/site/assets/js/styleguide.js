@@ -58,6 +58,17 @@ $(function() {
         }, 1200);
     });
 
+    $('body').on('click', '.js-popover-button', function (event) {
+        var backgroundClass = "bg-" + $(this).attr('data-active-color');
+        $(this).prev().toggleClass("is-visible");
+        $(this).toggleClass('button--ghost button--flat boxShadow-deboss--hover boxShadow-deboss ' + backgroundClass);
+    });
+
+    $('body').on('click', '.js-popover-select-item', function (event) {
+        $('.js-popover-select-item').removeClass("is-active");
+        $(this).addClass("is-active");
+    });
+
     // Styleguide navigation
     $('.js-styleguideNavLink').click(function(e) {
         $('.js-styleguideSubNavLink').hide().css({"left":"-30px"});
