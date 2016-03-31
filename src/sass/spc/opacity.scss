@@ -3,7 +3,7 @@
 // -------------
 
 .opacity-0      { opacity: 0; }
-.opacity-5      { opacity: .03; }
+.opacity-3      { opacity: .03; }
 .opacity-5      { opacity: .05; }
 .opacity-8      { opacity: .08; }
 .opacity-10     { opacity: .1; }
@@ -20,7 +20,7 @@
 
 @include breakPoint(s) {
     .breakPointS-opacity-0      { opacity: 0; }
-    .breakPointS-opacity-5      { opacity: .03; }
+    .breakPointS-opacity-3      { opacity: .03; }
     .breakPointS-opacity-5      { opacity: .05; }
     .breakPointS-opacity-10     { opacity: .1; }
     .breakPointS-opacity-15     { opacity: .15; }
@@ -54,7 +54,7 @@
 
 @include breakPoint(l) {
     .breakPointL-opacity-0      { opacity: 0; }
-    .breakPointL-opacity-5      { opacity: .03; }
+    .breakPointL-opacity-3      { opacity: .03; }
     .breakPointL-opacity-5      { opacity: .05; }
     .breakPointL-opacity-10     { opacity: .1; }
     .breakPointL-opacity-15     { opacity: .15; }
