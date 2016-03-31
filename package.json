@@ -1,42 +1,44 @@
 {
+  "name": "marvel-styleguide",
+  "version": "1.1.5",
+  "description": "Base styling for Marvel products",
+  "main": "eyeglass-exports.js",
+  "scripts": {
+    "start": "nodemon --watch src -e scss,html,js,png,gif,jpg,jpeg -x \"npm run build:site\"",
+    "build": "node ./node_modules/gulp/bin/gulp.js build:css",
+    "build:site": "node ./node_modules/gulp/bin/gulp.js build:site",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marvelapp/styleguide.git"
+  },
+  "author": "Marvel",
+  "homepage": "http://marvelapp.github.io/styleguide/",
+  "bugs": {
+    "url": "https://github.com/marvelapp/styleguide/issues"
+  },
+  "dependencies": {
+    "eyeglass": "^0.8.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1",
+    "merge-stream": "^1.0.0",
+    "nodemon": "^1.9.1"
+  },
+  "keywords": [
+    "eyeglass-module",
+    "sass",
+    "marvel",
+    "styleguide"
+  ],
+  "eyeglass": {
     "name": "marvel-styleguide",
-    "version": "1.1.5",
-    "description": "Base styling for Marvel products",
-    "main": "eyeglass-exports.js",
-    "scripts": {
-        "build": "node ./node_modules/gulp/bin/gulp.js build:css",
-        "build:site": "node ./node_modules/gulp/bin/gulp.js build:site",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/marvelapp/styleguide.git"
-    },
-    "author": "Marvel",
-    "homepage": "http://marvelapp.github.io/styleguide/",
-    "bugs": {
-        "url": "https://github.com/marvelapp/styleguide/issues"
-    },
-    "dependencies": {
-        "eyeglass": "^0.8.1"
-    },
-    "devDependencies": {
-        "gulp": "^3.9.0",
-        "gulp-clean": "^0.3.1",
-        "gulp-rename": "^1.2.2",
-        "gulp-sass": "^2.1.1",
-        "merge-stream": "^1.0.0"
-    },
-    "keywords": [
-        "eyeglass-module",
-        "sass",
-        "marvel",
-        "styleguide"
-    ],
-    "eyeglass": {
-        "name": "marvel-styleguide",
-        "sassDir": "src/sass",
-        "exports": "eyeglass-exports.js",
-        "needs": "^0.8.0"
-    }
+    "sassDir": "src/sass",
+    "exports": "eyeglass-exports.js",
+    "needs": "^0.8.0"
+  }
 }
