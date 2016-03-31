@@ -3,20 +3,21 @@
 // -------------------------
 
 .popover {
-    @extend .position-relative;
-    @extend .bg-white;
-    @extend .borderWidth-1;
-    @extend .borderRadius-m;
-    @extend .borderStyle-solid;
+    @extend .position-absolute;
+    @extend .zi-chrome;
 
-    border-color: $black--pellucid;
-    box-shadow: 0 1px 1px 0 $black--limpid;
+    @extend .bg-white;
+    @extend .borderWidth-0; // TODO: remove when old website code is deleted
+    @extend .borderRadius-m;
+    @extend .boxShadow-subtle;
+
+    @extend .concealed;
 }
 
-// Popover ticks
+// Popover has stuff
 // -------------------------
 
-.popover-tick {
+.popover.has-caret:after {
     @extend .position-absolute;
     @extend .display-block;
 
@@ -26,48 +27,158 @@
     width: 14px;
     height: 14px;
 
+    content: "";
     transform: rotate(45deg);
 }
 
-.horizontally-centered-tick {
+.popover.is-visible {
+    @extend .disclosed;
+}
+
+// TODO:
+// Move the trigger in the JS to keep it consistent
+// -------------------------
+
+.popover-trigger:hover .popover {
+    @extend .is-visible;
+}
+
+// Popover sizes
+// -------------------------
+
+.popover--s {
+    width: 200px;
+}
+
+.popover--m {
+    width: 300px;
+}
+
+.popover--l {
+    width: 400px;
+}
+
+// Popover positioning
+// -------------------------
+
+.popover--horizontallyCentered {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.popover--horizontallyCentered:after {
     margin-left: -7px;
     left: 50%;
 }
 
-.vertically-centered-tick {
+.popover--verticallyCentered {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.popover--verticallyCentered:after {
     margin-top: -7px;
     top: 50%;
 }
 
-// Popover top, right, bottom and left ticks
+// Popover top
 // -------------------------
 
-.popover-top-tick {
-    @extend .horizontally-centered-tick;
-
-    top: -6px;
-    box-shadow: -1px -1px 0 0 $black--pellucid;
+.popover--top {
+    @extend .popover--horizontallyCentered;
+    @extend .marginBottom-0;
+    bottom: 100%;
 }
 
-.popover-right-tick {
-    @extend .vertically-centered-tick;
-
-    right: -6px;
-    box-shadow: 1px -1px 0 0 $black--pellucid;
+.popover--top.is-visible {
+    @extend .marginBottom-m;
 }
 
-.popover-bottom-tick {
-    @extend .horizontally-centered-tick;
-
+.popover--top.has-caret:after {
     bottom: -6px;
     box-shadow: 1px 1px 0 0 $black--pellucid;
 }
 
-.popover-left-tick {
-    @extend .vertically-centered-tick;
+// Popover bottom
+// -------------------------
 
+.popover--bottom {
+    @extend .popover--horizontallyCentered;
+    @extend .marginTop-0;
+    top: 100%;
+}
+
+.popover--bottom.is-visible {
+    @extend .marginTop-m;
+}
+
+.popover--bottom.has-caret:after {
+    top: -6px;
+    box-shadow: -1px -1px 0 0 $black--pellucid;
+}
+
+// Popover right
+// -------------------------
+
+.popover--right {
+    @extend .popover--verticallyCentered;
+    @extend .marginLeft-0;
+    left: 100%;
+}
+
+.popover--right.is-visible {
+    @extend .marginLeft-m;
+}
+
+.popover--right.has-caret:after {
     left: -6px;
     box-shadow: -1px 1px 0 0 $black--pellucid;
+}
+
+// Popover right
+// -------------------------
+
+.popover--left {
+    @extend .popover--verticallyCentered;
+    @extend .marginRight-0;
+    right: 100%;
+}
+
+.popover--left.is-visible {
+    @extend .marginRight-m;
+}
+
+.popover--left.has-caret:after {
+    right: -6px;
+    box-shadow: 1px -1px 0 0 $black--pellucid;
+}
+
+// Popover list
+// -------------------------
+
+.popover-list {
+    @extend .textAlign-left;
+}
+
+.popover-list a {
+    @extend .link;
+    @extend .display-block;
+    @extend .paddingBottom-m;
+    @extend .paddingLeftRight-m;
+
+    @extend .fontSize-m;
+    @extend .c-slate;
+    @extend .c-marvel--hover;
+}
+
+.popover-list a:first-child {
+    @extend .paddingTop-m;
+}
+
+.popover-separator {
+    @extend .bg-smoke;
+    @extend .marginBottom-m;
+    height: 1px;
 }
 
 // Popover block
@@ -107,20 +218,55 @@
     height: 50px;
 }
 
+// Popover select menu
+// -------------------------
 
-
-.popover-list a{
-    @extend .display-block;
-    @extend .paddingTopBottom-s;
-    @extend .paddingLeftRight-m;
-    @extend .textDecoration-none;
-    @extend .fontSize-m;
-    @extend .c-slate;
-    @extend .c-blue--hover;
+.popover-select-item {
+    @extend .position-relative;
+    @extend .cursor-pointer;
+    @extend .userSelect-none;
 }
 
-.popover-separator{
-    @extend .bg-smoke;
-    @extend .marginTopBottom-xxs;
-    height: 1px;
+.popover-select-item.has-border {
+    @extend .borderWidth-0;
+    @extend .borderBottomWidth-1;
+    @extend .borderStyle-solid;
+    @extend .borderColor-smoke;
+}
+
+.popover-select-title {
+    @extend .fontSize-m;
+    @extend .lineHeight-s;
+    @extend .c-silver;
+
+    @extend .truncateText;
+    @extend .transitionDuration-m;
+    @extend .transitionProperty-color;
+}
+
+.popover-select-subtitle {
+    @extend .fontWeight-3;
+    @extend .fontSize-s;
+    @extend .lineHeight-s;
+    @extend .c-silver;
+    @extend .truncateText;
+}
+
+.popover-select-item:hover .popover-select-title,
+.popover-select-item.is-active .popover-select-title {
+    @extend .c-slate;
+}
+
+.popover-select-item.is-active .select-toggle {
+    @extend .select-toggle.selected;
+}
+
+.popover--s .popover-select-title,
+.popover--s .popover-select-subtitle {
+    max-width: 130px;
+}
+
+.popover--m .popover-select-title,
+.popover--m .popover-select-subtitle {
+    max-width: 180px;
 }

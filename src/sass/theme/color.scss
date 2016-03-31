@@ -8,7 +8,7 @@
 // Single-responsibility classes for every color in the
 // color scheme.
 
-// Brand background colors
+// Brand colors
 // -------------------------
 
 .c-marvel              { color: $marvel; }
@@ -40,7 +40,7 @@
 .c-red--d              { color: $red--d; }
 .c-red--l              { color: $red--l; }
 
-// Gray background colors
+// Gray colors
 // -------------------------
 
 .c-black               { color: $black; }
@@ -110,7 +110,7 @@
 // -------------------------
 
 @include breakPoint(s) {
-    // Brand background colors
+    // Brand colors
     // -------------------------
 
     .breakPointS-c-marvel              { color: $marvel; }
@@ -142,7 +142,7 @@
     .breakPointS-c-red--d              { color: $red--d; }
     .breakPointS-c-red--l              { color: $red--l; }
 
-    // Gray background colors
+    // Gray colors
     // -------------------------
 
     .breakPointS-c-black               { color: $black; }
@@ -208,7 +208,7 @@
 }
 
 @include breakPoint(m) {
-    // Brand background colors
+    // Brand colors
     // -------------------------
 
     .breakPointM-c-marvel              { color: $marvel; }
@@ -240,7 +240,7 @@
     .breakPointM-c-red--d              { color: $red--d; }
     .breakPointM-c-red--l              { color: $red--l; }
 
-    // Gray background colors
+    // Gray colors
     // -------------------------
 
     .breakPointM-c-black               { color: $black; }
@@ -306,7 +306,7 @@
 }
 
 @include breakPoint(l) {
-    // Brand background colors
+    // Brand colors
     // -------------------------
 
     .breakPointL-c-marvel              { color: $marvel; }
@@ -338,7 +338,7 @@
     .breakPointL-c-red--d              { color: $red--d; }
     .breakPointL-c-red--l              { color: $red--l; }
 
-    // Gray background colors
+    // Gray colors
     // -------------------------
 
     .breakPointL-c-black               { color: $black; }

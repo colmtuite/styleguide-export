@@ -11,3 +11,11 @@
     @extend .textOverflow-ellipsis;
     @extend .whiteSpace-nowrap;
 }
+
+.truncateText-two {
+    @extend .overflow-hidden;
+    @extend .wordWrap-breakWord;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

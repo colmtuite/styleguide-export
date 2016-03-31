@@ -1,0 +1,121 @@
+//
+// Range slider
+// -------------------------
+
+// Base styles
+// -------------------------
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%; // Specific width is required for Firefox.
+    position: relative;
+    top: -3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+// Thumb
+// -------------------------
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: $silver;
+    cursor: pointer;
+    margin-top: -5px; // Chrome requires a negative margin
+}
+
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: $silver;
+    cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: $silver;
+    cursor: pointer;
+}
+
+input[type=range]:hover::-webkit-slider-thumb,
+input[type=range]:hover::-moz-range-thumb {
+    transform: scale(1.2);
+}
+
+input[type=range]:focus::-webkit-slider-thumb,
+input[type=range]:focus::-moz-range-thumb {
+    transform: scale(1.2);
+    background: $black;
+    cursor: grab;
+}
+
+// Track
+// -------------------------
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: $smoke;
+    border-radius: 10px;
+    border: none;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: $smoke;
+    border-radius: 10px;
+    border: none;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 0;
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: $smoke;
+    border: none;
+    border-radius: 10px;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: $smoke;
+}
+input[type=range]::-ms-fill-upper {
+    background: $smoke;
+    border: none;
+    border-radius: 10px;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: $smoke;
+}

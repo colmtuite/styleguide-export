@@ -6,8 +6,6 @@
 // -------------------------
 
 .list {
-    @extend .lineHeight-m;
-    @extend .marginTop-xs;
     @extend .paddingLeft-m;
 }
 
@@ -23,6 +21,9 @@
 // -------------------------
 
 .list > li {
-    @extend .marginBottom-xs;
     @extend .marginLeft-m;
+}
+
+.list > li:not(:last-child) {
+    @extend .marginBottom-m;
 }

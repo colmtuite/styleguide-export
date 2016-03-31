@@ -6,5 +6,5 @@
     @extend .bg-blue--transparent;
     @extend .borderRadius-m;
     @extend .cf;
-    background-image: url('https://sandbox02.marvelapp.com/static/${image-base-uri}/upgrade-message.png');
+    background-image: asset-url('images/upgrade-message.png');
 }

@@ -1,7 +1,6 @@
 $(function() {
     $(".styleguide-link").addClass("active");
     $('pre code').each(function(i, block) {
-        console.log(block);
         hljs.highlightBlock(block);
     });
 
@@ -57,6 +56,17 @@ $(function() {
             $(".js-fail-button").removeClass("is-loading");
             $(".js-fail-button").addClass("has-failed is-delayed has-responded");
         }, 1200);
+    });
+
+    $('body').on('click', '.js-popover-button', function (event) {
+        var backgroundClass = "bg-" + $(this).attr('data-active-color');
+        $(this).prev().toggleClass("is-visible");
+        $(this).toggleClass('button--ghost button--flat boxShadow-deboss--hover boxShadow-deboss ' + backgroundClass);
+    });
+
+    $('body').on('click', '.js-popover-select-item', function (event) {
+        $('.js-popover-select-item').removeClass("is-active");
+        $(this).addClass("is-active");
     });
 
     // Styleguide navigation

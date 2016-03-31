@@ -10,6 +10,7 @@
     @extend .outlineStyle-none;
     @extend .borderWidth-0;
 
+    @extend .c-slate;
     @extend .fontWeight-3;
     @extend .transitionDuration-s;
     @extend .transitionProperty-all;
@@ -47,6 +48,14 @@
 .inputGroup--s .inputGroup-context {
     @extend .height-control--s;
     padding: 0 $control-s / 3;
+    @extend .fontSize-s;
+    @extend .borderRadius-s;
+}
+
+.input--xs,
+.inputGroup--xs .inputGroup-context {
+    @extend .height-control--s;
+    padding: 0 $control-s / 3;
     @extend .fontSize-xs;
     @extend .borderRadius-s;
 }
@@ -70,6 +79,17 @@
 
 .input--invisible {
     @extend .bg-none;
+}
+
+.input--underline {
+    @extend .bg-none;
+    box-shadow: inset 0 0 0 0 $smoke, inset 0 0 0 0 $smoke, inset 0 0 0 0 $smoke, inset 0 -1px 0 0 $smoke;
+}
+.input--underline:hover {
+    box-shadow: inset 0 0 0 0 $smoke, inset 0 0 0 0 $smoke, inset 0 0 0 0 $smoke, inset 0 -1px 0 0 $smoke--xd;
+}
+.input--underline:focus {
+    box-shadow: inset 0 0 0 0 $smoke, inset 0 0 0 0 $smoke, inset 0 0 0 0 $smoke, inset 0 -1px 0 0 $marvel;
 }
 
 // States
@@ -108,6 +128,7 @@
 }
 
 .inputGroup-context {
+    @extend .fontWeight-3;
     @extend .display-inlineBlock;
     @extend .verticalAlign-middle;
     @extend .bg-snow;
@@ -149,4 +170,179 @@
 
 .inputGroup--s .inputGroup-context {
     @extend .lineHeight-control--s;
+}
+
+.inputGroup--xs .inputGroup-context {
+    @extend .lineHeight-control--s;
+}
+
+// International telephone input
+// -------------------------
+
+.intl-tel-input {
+    @extend .width-100;
+	@extend .textAlign-left;
+}
+
+.iti-flag {
+    @extend .boxShadow-black--transparent;
+}
+
+.intl-tel-input .country-list {
+    @extend .boxShadow-distant;
+    margin-top: 10px;
+}
+
+.intl-tel-input .country-list.dropup {
+    margin-bottom: 10px;
+}
+
+.intl-tel-input .country-list .country-name {
+    margin-right: 5px;
+}
+
+.intl-tel-input .selected-flag {
+    @extend .borderWidth-0;
+    @extend .borderRightWidth-1;
+    @extend .borderStyle-solid;
+    @extend .borderColor-smoke;
+    @extend .outlineStyle-none;
+}
+
+.intl-tel-input .selected-flag .arrow {
+    right: 10px;
+}
+
+.input-tel--borderless .intl-tel-input .country-list {
+    @extend .borderWidth-0;
+}
+
+// Internation telephone input sizes
+// -------------------------
+
+.input-tel--xl .intl-tel-input .selected-flag {
+    width: 66px;
+    padding-left: 20px;
+}
+
+.input-tel--xl .intl-tel-input input,
+.input-tel--xl .intl-tel-input input[type=text],
+.input-tel--xl .intl-tel-input input[type=tel] {
+    padding-left: 80px;
+}
+
+.input-tel--xl .intl-tel-input .country-list {
+    @extend .fontSize-l;
+    @extend .borderRadius-m;
+    max-height: 285px;
+}
+
+.input-tel--xl .intl-tel-input .country-list .country {
+    @extend .height-control--xl;
+    @extend .lineHeight-control--xl;
+    padding: 0 0 0 20px;
+}
+
+.input-tel--xl .intl-tel-input .selected-flag {
+    @extend .borderRadiusLeft-m;
+}
+
+.input-tel--xl .intl-tel-input .country-list .flag {
+    margin-right: 20px;
+}
+
+// -------------------------
+
+.input-tel--l .intl-tel-input .selected-flag {
+    width: 62px;
+    padding-left: 16px;
+}
+
+.input-tel--l .intl-tel-input input,
+.input-tel--l .intl-tel-input input[type=text],
+.input-tel--l .intl-tel-input input[type=tel] {
+    padding-left: 78px;
+}
+
+.input-tel--l .intl-tel-input .country-list {
+    @extend .fontSize-m;
+    @extend .borderRadius-m;
+}
+
+.input-tel--l .intl-tel-input .country-list .country {
+    @extend .height-control--l;
+    @extend .lineHeight-control--l;
+    padding: 0 0 0 16px;
+}
+
+.input-tel--l .intl-tel-input .selected-flag {
+    @extend .borderRadiusLeft-m;
+}
+
+.input-tel--l .intl-tel-input .country-list .flag {
+    margin-right: 16px;
+}
+
+// -------------------------
+
+.input-tel--m .intl-tel-input .selected-flag {
+    width: 58px;
+    padding-left: 12px;
+}
+
+.input-tel--m .intl-tel-input input,
+.input-tel--m .intl-tel-input input[type=text],
+.input-tel--m .intl-tel-input input[type=tel] {
+    padding-left: 70px;
+}
+
+.input-tel--m .intl-tel-input .country-list {
+    @extend .fontSize-m;
+    @extend .borderRadius-s;
+}
+
+.input-tel--m .intl-tel-input .country-list .country {
+    @extend .height-control--m;
+    @extend .lineHeight-control--m;
+    padding: 0 0 0 12px;
+}
+
+.input-tel--m .intl-tel-input .selected-flag {
+    @extend .borderRadiusLeft-s;
+}
+
+.input-tel--m .intl-tel-input .country-list .flag {
+    margin-right: 12px;
+}
+
+// -------------------------
+
+.input-tel--s .intl-tel-input .selected-flag {
+    width: 54px;
+    padding-left: 8px;
+}
+
+.input-tel--s .intl-tel-input input,
+.input-tel--s .intl-tel-input input[type=text],
+.input-tel--s .intl-tel-input input[type=tel] {
+    padding-left: 62px;
+}
+
+.input-tel--s .intl-tel-input .country-list {
+    @extend .fontSize-s;
+    @extend .borderRadius-s;
+}
+
+.input-tel--s .intl-tel-input .country-list .country {
+    @extend .height-control--s;
+    @extend .lineHeight-control--s;
+    padding: 0 0 0 8px;
+}
+
+.input-tel--s .intl-tel-input .selected-flag {
+    @extend .borderRadiusLeft-s;
+}
+
+.input-tel--s .intl-tel-input .country-list .flag {
+    margin-right: 8px;
 }

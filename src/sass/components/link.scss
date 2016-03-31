@@ -89,7 +89,7 @@
 
 .link--opaque {
     @extend .c-white;
-    @extend .opacity-60;
+    @extend .breakPointM-opacity-60;
     @extend .opacity-100--hover;
 }
 
@@ -111,33 +111,4 @@
 .link--snowBg {
     @extend .c-black;
     @extend .bg-snow--hover;
-}
-
-
-//
-// Responsive rules
-// -------------------------
-
-@include breakPoint(m) {
-    .breakPointM-link--lightReversed {
-        @extend .c-silver;
-        @extend .c-white--hover;
-    }
-
-    .breakPointM-link--lightReversed.is-active {
-        @extend .c-white;
-        @extend .c-silver--hover;
-    }
-
-    .breakPointM-link--opaque {
-        @extend .c-white;
-        @extend .opacity-60;
-        @extend .opacity-100--hover;
-    }
-
-    .breakPointM-link--opaque.is-active {
-        @extend .c-white;
-        @extend .opacity-100;
-        @extend .c-white--hover;
-    }
 }

@@ -78,6 +78,18 @@
     right: 0;
 }
 
+// Make an element fill the available space while being pinned. Used where pinning to all corners
+// yields results that we don't want.
+// -------------------------
+
+.posFill{
+    @extend .position-absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
 // Pin an element to all corners. But when a width and/or height are
 // provided, the element will be centered in its nearest
 // relatively-positioned ancestor.

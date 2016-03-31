@@ -5,7 +5,8 @@
 // Variables
 // -------------------------
 
-$avatar-xs: 24px;
+$avatar-xxs: 22px;
+$avatar-xs: 30px;
 $avatar-s: 40px;
 $avatar-m: 54px;
 $avatar-l: 70px;
@@ -31,6 +32,7 @@ $avatar-xl: 100px;
     border: 2px solid white;
 
     @extend .backgroundSize-cover;
+    @extend .backgroundPosition-centerCenter;
     @extend .backgroundRepeat-noRepeat;
     @extend .borderRadius-circle;
     @extend .transitionDuration-l;
@@ -119,6 +121,7 @@ $avatar-xl: 100px;
     width: $avatar-s;
     height: $avatar-s;
     line-height: $avatar-s;
+    @extend .fontSize-m;
 }
 .avatar--s .avatar-team {
     width: 18px;
@@ -134,4 +137,15 @@ $avatar-xl: 100px;
 .avatar--xs .avatar-team {
     width: 10px;
     height: 10px;
+}
+
+.avatar--xxs {
+    width: $avatar-xxs;
+    height: $avatar-xxs;
+    line-height: $avatar-xxs;
+    @extend .fontSize-xxs;
+}
+.avatar--xxs .avatar-team {
+    width: 8px;
+    height: 8px;
 }

@@ -24,6 +24,7 @@ $loader-s: 8px;
     @extend .absolutelyCenter;
 
     @extend .borderStyle-solid;
+    @extend .borderColor-silver;
     @extend .borderRadius-circle;
     @extend .borderColor-silver;
     @extend .borderRightColor-transparent;
@@ -40,6 +41,16 @@ $loader-s: 8px;
     @extend .borderRightColor-transparent;
 }
 
+.is-loading--smoke:after {
+    @extend .borderColor-smoke;
+    @extend .borderRightColor-transparent;
+}
+
+.is-loading--smoke--d:after {
+    @extend .borderColor-smoke--d;
+    @extend .borderRightColor-transparent;
+}
+
 
 // Loader sizes
 // -------------------------
@@ -47,7 +58,7 @@ $loader-s: 8px;
 .is-loading--xl:after {
     width: $loader-xl;
     height: $loader-xl;
-    border-width: 3px;
+    border-width: 2px;
     margin-top: -($loader-xl / 2);
     margin-left: -($loader-xl / 2);
 }

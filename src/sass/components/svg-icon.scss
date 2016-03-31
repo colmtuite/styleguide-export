@@ -11,6 +11,8 @@
 // Icons inside buttons
 // -------------------------
 
-.button:hover .svgIcon {
-    @extend .fill-white;
+@include breakPoint(m) {
+    .button:hover .svgIcon {
+        fill: $white;
+    }
 }
