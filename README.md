@@ -72,6 +72,12 @@ Clone the repository then `npm install`.
 
 ## Maintaining this repo
 
+### Development
+
+`npm start` command will start a development server on port 8080 (configurable via the `--port, -p` option, e.g., `npm start -- --port 6969`).
+
+Open `http://localhost:8080` in your browser to preview it. Changes will be automatically reloaded.
+
 ### Release
 
 Execute the `npm run build:css` command to compile the CSS.  
