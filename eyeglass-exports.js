@@ -1,10 +1,9 @@
-var path = require("path"),
-    rootDir = __dirname,
-    assetDir = path.join(rootDir, "assets");
+const path = require('path');
+const assetDir = path.resolve(__dirname, 'src', 'assets');
 
-module.exports = function(eyeglass, sass) {
+module.exports = eyeglass => {
     eyeglass.assets.addSource(assetDir, {
-      pattern: "images/**/*"
+        pattern: 'images/**/*',
     });
     return eyeglass;
 };

@@ -1,67 +1,113 @@
-var path = require('path'),
-	gulp = require('gulp'),
-	sass = require('gulp-sass'),
-	rename = require('gulp-rename'),
-	clean = require('gulp-clean'),
-	merge = require('merge-stream'),
-	Eyeglass = require("eyeglass");
+const yargs = require('yargs');
+const path = require('path');
+const gulp = require('gulp');
+const gutil = require('gulp-util');
+const sass = require('gulp-sass');
+const rename = require('gulp-rename');
+const clean = require('gulp-clean');
+const webpack = require('webpack');
+const WebpackDevServer = require('webpack-dev-server');
+const Eyeglass = require('eyeglass');
+const webpackConfig = require('./webpack.config.js');
 
-var rootDir = __dirname,
-	distDir =  path.join(rootDir, 'dist'),
-	assetsDir = path.join(rootDir, 'assets');
+const paths = {
+    root: __dirname,
+    src: path.join(__dirname, 'src'),
+    dist: path.join(__dirname, 'dist'),
+};
 
 function sassify() {
-	var options = {
-		outputStyle: 'compressed',
-		// eyeglass options
-		eyeglass: {
-			root: rootDir,
-			buildDir: path.join(distDir, 'site', 'assets'),
-			assets:  {
-				relativeTo: '/thisisahack',
-				sources: [{
-			        directory: assetsDir,
-			        globOpts: {
-			          pattern: "images/**/*"
-			        }
-				}]
-			}
-		}
-	};
-	var eyeglass = new Eyeglass(options, sass);
+    const options = {
+        outputStyle: 'compressed',
+        // eyeglass options
+        eyeglass: {
+            root: paths.root,
+            assets: {
+                // TODO: Work out a better way to make these paths relative how we want them
+                relativeTo: '/thisisahack',
+                sources: [{
+                    directory: path.resolve(paths.src, 'assets'),
+                    globOpts: {
+                        pattern: 'images/**/*',
+                    },
+                }],
+            },
+        },
+    };
+    const eyeglass = new Eyeglass(options, sass);
 
-	return sass(eyeglass.options).on('error', sass.logError);
+    return sass(eyeglass.options).on('error', sass.logError);
 }
 
-gulp.task('clean', function () {
-	return gulp.src('dist', {read: false})
-        .pipe(clean());
-});
+gulp.task('clean', () => (
+    gulp.src('dist', { read: false })
+        .pipe(clean())
+));
 
-gulp.task('clean:css', function () {
-	return gulp.src('dist/css', {read: false})
-        .pipe(clean());
-});
+gulp.task('clean:css', () => (
+    gulp.src('dist/css', { read: false })
+        .pipe(clean())
+));
 
-gulp.task('clean:site', function () {
-	return gulp.src('dist/site', {read: false})
-        .pipe(clean());
-});
+gulp.task('clean:site', () => (
+    gulp.src('dist/site', { read: false })
+        .pipe(clean())
+));
 
-gulp.task('build:css', ['clean'], function() {
-    return gulp.src('src/sass/all.scss')
+gulp.task('build:css', ['clean:css'], () => (
+    gulp.src('src/sass/all.scss')
         .pipe(sassify())
-		.pipe(rename({
-			basename: 'styleguide'
-		}))
-        .pipe(gulp.dest('dist/css'));
+        .pipe(rename({
+            basename: 'styleguide',
+        }))
+        .pipe(gulp.dest('dist/css'))
+));
+
+gulp.task('build:site', ['clean:site'], done => {
+    webpackConfig.plugins.push(
+        new webpack.optimize.UglifyJsPlugin(),
+        new webpack.optimize.OccurenceOrderPlugin()
+    );
+    webpack(webpackConfig, (err, stats) => {
+        console.log(err, stats);
+        if (err) throw new gutil.PluginError('webpack', err);
+        gutil.log('[webpack]', stats.toString({
+            colors: true,
+        }));
+        done();
+    });
 });
 
-gulp.task('build:site', ['build:css'], function() {
-	var site = gulp.src('src/site/**/*')
-		.pipe(gulp.dest('dist/site'));
-	var css = gulp.src('dist/css/styleguide.css')
-		.pipe(gulp.dest('dist/site/assets/css'));
+gulp.task('watch:css', () => {
+    const sassGlob = path.join(paths.src, 'sass/**/*.scss');
+    return gulp.watch(sassGlob, ['build:css']);
+});
 
-	return merge(site, css);
+gulp.task('watch:site', ['clean:site'], () => {
+    webpackConfig.watch = true;
+    webpack(webpackConfig, (err, stats) => {
+        if (err) throw new gutil.PluginError('webpack', err);
+        gutil.log('[webpack]', stats.toString({
+            colors: true,
+        }));
+    });
+});
+
+gulp.task('default', ['clean', 'build:css', 'watch:css'], () => {
+    yargs.option('port', {
+        alias: 'p',
+        describe: 'port to run webpack-dev-server on',
+        default: 8080,
+    });
+    const port = yargs.argv.port;
+    const uri = `http://localhost:${port}/`;
+    webpackConfig.entry.unshift(
+        `webpack-dev-server/client?${uri}`,
+        'webpack/hot/dev-server'
+    );
+    const compiler = webpack(webpackConfig);
+    new WebpackDevServer(compiler, webpackConfig.devServer).listen(port, 'localhost', err => {
+        if (err) throw new gutil.PluginError('webpack-dev-server', err);
+        gutil.log('[webpack-dev-server]', uri);
+    });
 });
