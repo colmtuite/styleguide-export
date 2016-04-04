@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Styleguide - Marvel</title>
+
+        <meta charset="utf-8">
+        <meta name="author" content="Marvel">
+        <meta name="description" content="Base styling from Marvelapp">
+
+        <link rel="stylesheet" href="assets/css/styleguide.css?v=0.0.1">
+
+        <script src="assets/js/lib/jquery.min.js"></script>
+        <script src="assets/js/lib/highlight.min.js"></script>
+        <script src="assets/js/lib/antiscroll.min.js"></script>
+        <script src="assets/js/styleguide.js"></script>
+    </head>
+
+    <body>
+        <aside class="posFixTL width-20 height-100 borderWidth-0 borderRightWidth-1 borderStyle-solid borderColor-smoke overflow-auto">
+            <div class="textAlign-center paddingTopBottom-l borderWidth-0 borderBottomWidth-1 borderStyle-solid borderColor-smoke">
+                <div class="paddingTopBottom-m">
+                    <div class="marginBottom-s">
+                        <svg class="link fill-blue fill-effect--hover" id="marvel-logo" width="80" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 34">
+                            <pattern id="effect" width="1" height="1" viewBox="0 0 80 30" preserveAspectRatio="none"><image id="effect-image" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/static/assets/images/logo/5.gif" width="80" height="30" preserveAspectRatio="none"></image></pattern>
+                            <path d="M67.93,22c-29.1-2.21-53.16,4.67-58.54,7.22-3,1.36-3.21,3.06-2.78,4C7,33.94,8.43,34.36,10,33.6c11.55-6.12,34.92-11,57.94-9.6A1,1,0,0,0,67.93,22Zm7.21-8.58c-1.22,1.36-3,2.38-3.56,1.87s0-2.12,0-2.12C74.44,11.34,80,6.67,80,3.1c0-3.31-3-4.33-6.17-1.27a22.83,22.83,0,0,0-5.39,9.68c-1.65,1.61-4.26,3.65-6.6,3.65-1.22,0-1.56-.85-1.39-2C62.45,13.13,68,11.6,68,7a2.76,2.76,0,0,0-3-2.72c-2.52,0-5.73,2.55-7.3,6.12A5.1,5.1,0,0,1,56.46,10a17,17,0,0,0,1-2.72c0.35-1.87-.43-3.06-2-2.89-1,.08-2.17.93-2.43,2.89a5.25,5.25,0,0,0,.52,2.89c-0.69,2.12-3.47,4.76-4.43,4.67S49.25,11,50.21,8.2a5.72,5.72,0,0,0,1.22-1.87A1.19,1.19,0,0,0,51,4.8a2.92,2.92,0,0,0-3.65,1.53,16.81,16.81,0,0,0-1,2.12c-0.78.93-2,2.12-2.35,2-0.52-.34,1.22-2.63,1-3.91a2,2,0,0,0-2.17-1.7C41.26,5.06,39.18,8,39.18,8a4.91,4.91,0,0,0,.43-1.7c-0.09-1.1-2.17-1.61-3.21.42a32.07,32.07,0,0,0-1.56,6c-0.43.93-2.17,3.65-3.56,3.74-1.13.08,0.26-4.84,0.43-5.1,0.61-.93,1.39-2.89,1.22-3.74a1.28,1.28,0,0,0-1.65-1.27,2.67,2.67,0,0,0-1.65,1.27,2.15,2.15,0,0,0-2.08-.76C22.93,7.35,20,15.25,20.33,19c0.26,2,1.22,3.23,3,3,2-.25,3.65-3.14,3.65-3.14s0.43,2.38,2.61,2.12a8.25,8.25,0,0,0,4.08-2.8,1.46,1.46,0,0,0-.09.42c-0.35,2,3,1.78,3.3.25,1-7.56,3.56-10.7,4.34-10.7,0.61,0-1.65,3.57-.35,4.93,1,1.19,2.78.25,4.26-1a12.24,12.24,0,0,0-.43,2.89c-0.09,2.12.69,3.82,2.78,3.74,2.78-.08,5.73-3.48,7.64-6.71a4.79,4.79,0,0,0,1.65.68A7.17,7.17,0,0,0,56.55,15c0.17,2.46,1.91,3.4,3.91,3.31,2.35-.08,5.12-1.87,7-3.48a0.31,0.31,0,0,1-.09.25c-0.17,1.19.09,3.4,1.82,3.48,2,0.17,5.47-1.87,7.21-4C77.65,13.64,76.18,12.28,75.14,13.38ZM77,3.19a0.39,0.39,0,0,1,.35.42c0,2.12-5.39,6.63-5.39,6.63S75.48,3.19,77,3.19ZM64,7.6a0.57,0.57,0,0,1,.61.68c0,1.19-1.65,2.12-3.47,2.12C62.11,9,63.24,7.6,64,7.6ZM28,10.92c-0.17,1.27-2.43,7-3.65,7-1.56.08,0.78-8.07,3.3-8C28.14,9.9,28.14,10.24,28,10.92ZM8.43,12.45c1.48,0-1.22,7.56-.87,10.87s4.08,2.38,3.82.42c-0.43-3.23,1.82-13.51,4.08-13.51,1.65,0-1.82,7.05-1.13,11.47,0.43,2.89,4.43,2,4,.17C17.11,16.1,21.2,10.49,20.67,6.42c-0.26-1.7-1.22-2.63-2.35-2.63-3.74,0-6.78,7.47-6.78,7.47S11.9,7,8.86,6.84C4.43,6.58-.09,17.46,0,27.31c0.09,3.14,4.08,2.63,3.82.08C3.56,23,6.17,12.45,8.43,12.45h0Z"></path>
+                        </svg>
+                    </div>
+
+                    <span class="textTransform-uppercase fontSize-xxs c-silver" style="letter-spacing: 3px">Styleguide</span>
+                </div>
+            </div>
+
+            <dl class="borderWidth-0 borderBottomWidth-1 borderStyle-solid borderColor-smoke">
+                <dt class="position-relative">
+                    <span class="link link--dark display-block padding-m fontSize-xl cursor-pointer">
+                        <span class="display-block padding-xs userSelect-none">Overview</span>
+                    </span>
+
+                    <div class="posPinTR height-100">
+                        <div class="display-table height-100">
+                            <div class="display-tableCell verticalAlign-middle padding-m">
+                                <svg class="display-block fill-smoke--d" width="8" height="4" viewBox="0 0 8 4" xmlns="http://www.w3.org/2000/svg"><path d="M7.027 1.577c-.346.354-.658.654-.937.9s-.572.492-.88.738l-.63.492-.284.208c-.083.056-.181.085-.293.085-.112 0-.21-.028-.293-.085l-.279-.2c-.147-.108-.359-.273-.634-.496-.276-.223-.559-.463-.851-.719-.292-.256-.607-.556-.947-.9-.34-.344-.638-.679-.894-1.008-.07-.067-.106-.144-.106-.231 0-.097.045-.182.135-.254.09-.072.195-.108.317-.108h7.094c.179 0 .311.062.394.185.083.128.08.251-.01.369-.256.328-.558.669-.904 1.023z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                </dt>
+
+                <dd class="paddingLeftRight-l paddingBottom-l is-active">
+                    <a class="paddingLeftRight-s paddingBottom-s display-block fontSize-m link link--blue" href="#">Introduction</a>
+                    <a class="padding-s display-block fontSize-m link link--light" href="#">Naming convention</a>
+                    <a class="padding-s display-block fontSize-m link link--light" href="#">Code guidelines</a>
+                    <a class="paddingLeftRight-s paddingTop-s display-block fontSize-m link link--light" href="#">Rules</a>
+                </dd>
+            </dl>
+
+            <dl class="borderWidth-0 borderBottomWidth-1 borderStyle-solid borderColor-smoke">
+                <dt class="position-relative">
+                    <span class="link link--dark display-block padding-m fontSize-xl cursor-pointer">
+                        <span class="display-block padding-xs userSelect-none">Components</span>
+                    </span>
+
+                    <div class="posPinTR height-100">
+                        <div class="display-table height-100">
+                            <div class="display-tableCell verticalAlign-middle padding-m">
+                                <svg class="display-block fill-smoke--d" width="8" height="4" viewBox="0 0 8 4" xmlns="http://www.w3.org/2000/svg"><path d="M7.027 1.577c-.346.354-.658.654-.937.9s-.572.492-.88.738l-.63.492-.284.208c-.083.056-.181.085-.293.085-.112 0-.21-.028-.293-.085l-.279-.2c-.147-.108-.359-.273-.634-.496-.276-.223-.559-.463-.851-.719-.292-.256-.607-.556-.947-.9-.34-.344-.638-.679-.894-1.008-.07-.067-.106-.144-.106-.231 0-.097.045-.182.135-.254.09-.072.195-.108.317-.108h7.094c.179 0 .311.062.394.185.083.128.08.251-.01.369-.256.328-.558.669-.904 1.023z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                </dt>
+
+                <dd class="paddingLeftRight-l paddingBottom-l">
+                    <a class="paddingLeftRight-s paddingBottom-s display-block fontSize-m link link--light" href="#">Color scheme</a>
+                    <a class="padding-s display-block fontSize-m link link--light" href="#">Typography</a>
+                    <a class="padding-s display-block fontSize-m link link--light" href="#">Lists</a>
+                    <a class="padding-s display-block fontSize-m link link--light" href="#">Links</a>
+                    <a class="padding-s display-block fontSize-m link link--light" href="#">Icons</a>
+                    <a class="padding-s display-block fontSize-m link link--light" href="#">Buttons</a>
+                    <a class="padding-s display-block fontSize-m link link--light" href="#">Forms</a>
+                    <a class="padding-s display-block fontSize-m link link--light" href="#">Avatars</a>
+                    <a class="padding-s display-block fontSize-m link link--light" href="#">Popovers</a>
+                    <a class="padding-s display-block fontSize-m link link--light" href="#">Modals</a>
+                    <a class="padding-s display-block fontSize-m link link--light" href="#">Tables</a>
+                    <a class="paddingLeftRight-s paddingTop-s display-block fontSize-m link link--light" href="#">Cards</a>
+                </dd>
+            </dl>
+
+            <dl class="borderWidth-0 borderBottomWidth-1 borderStyle-solid borderColor-smoke">
+                <dt class="position-relative">
+                    <span class="link link--dark display-block padding-m fontSize-xl cursor-pointer" href="#">
+                        <span class="display-block padding-xs userSelect-none">Utilities</span>
+                    </span>
+
+                    <div class="posPinTR height-100">
+                        <div class="display-table height-100">
+                            <div class="display-tableCell verticalAlign-middle padding-m">
+                                <svg class="display-block fill-smoke--d" width="8" height="4" viewBox="0 0 8 4" xmlns="http://www.w3.org/2000/svg"><path d="M7.027 1.577c-.346.354-.658.654-.937.9s-.572.492-.88.738l-.63.492-.284.208c-.083.056-.181.085-.293.085-.112 0-.21-.028-.293-.085l-.279-.2c-.147-.108-.359-.273-.634-.496-.276-.223-.559-.463-.851-.719-.292-.256-.607-.556-.947-.9-.34-.344-.638-.679-.894-1.008-.07-.067-.106-.144-.106-.231 0-.097.045-.182.135-.254.09-.072.195-.108.317-.108h7.094c.179 0 .311.062.394.185.083.128.08.251-.01.369-.256.328-.558.669-.904 1.023z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                </dt>
+
+                <dd class="paddingLeftRight-l paddingBottom-l">
+                    <a class="paddingLeftRight-s paddingBottom-s display-block fontSize-m link link--light" href="#">Hide elements</a>
+                    <a class="padding-s display-block fontSize-m link link--light" href="#">Text manipulation</a>
+                    <a class="padding-s display-block fontSize-m link link--light" href="#">Center elements</a>
+                    <a class="paddingLeftRight-s paddingTop-s display-block fontSize-m link link--light" href="#">Layout</a>
+                </dd>
+            </dl>
+
+            <dl class="borderWidth-0 borderBottomWidth-1 borderStyle-solid borderColor-smoke">
+                <dt class="position-relative">
+                    <span class="link link--dark display-block padding-m fontSize-xl cursor-pointer" href="#">
+                        <span class="display-block padding-xs userSelect-none">Theme</span>
+                    </span>
+
+                    <div class="posPinTR height-100">
+                        <div class="display-table height-100">
+                            <div class="display-tableCell verticalAlign-middle padding-m">
+                                <svg class="display-block fill-smoke--d" width="8" height="4" viewBox="0 0 8 4" xmlns="http://www.w3.org/2000/svg"><path d="M7.027 1.577c-.346.354-.658.654-.937.9s-.572.492-.88.738l-.63.492-.284.208c-.083.056-.181.085-.293.085-.112 0-.21-.028-.293-.085l-.279-.2c-.147-.108-.359-.273-.634-.496-.276-.223-.559-.463-.851-.719-.292-.256-.607-.556-.947-.9-.34-.344-.638-.679-.894-1.008-.07-.067-.106-.144-.106-.231 0-.097.045-.182.135-.254.09-.072.195-.108.317-.108h7.094c.179 0 .311.062.394.185.083.128.08.251-.01.369-.256.328-.558.669-.904 1.023z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                </dt>
+
+                <dd class="paddingLeftRight-l paddingBottom-l">
+                    <a class="paddingLeftRight-s paddingBottom-s display-block fontSize-m link link--light" href="#">Border radius</a>
+                    <a class="padding-s display-block fontSize-m link link--light" href="#">Box shadows</a>
+                    <a class="padding-s display-block fontSize-m link link--light" href="#">Transitions</a>
+                    <a class="paddingLeftRight-s paddingTop-s display-block fontSize-m link link--light" href="#">Colors</a>
+                </dd>
+            </dl>
+        </aside>
+
+        <div style="padding-left: 20%">
+            <div class="padding-xl marginLeftRight-m" style="max-width: 960px">
+                <div class="marginTop-l marginBottom-xl">
+                    <h2 class="fontSize-xxxl">Buttons</h2>
+                </div>
+
+                <section class="marginBottom-xl">
+                    <div class="marginBottom-l">
+                        <div class="marginBottom-xxs">
+                            <h3 class="fontSize-xl lineHeight-xl">Button sizes</h3>
+                        </div>
+
+                        <p class="lineHeight-l fontSize-l fontWeight-3 c-silver">Define a button size with <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.button--xs</code>, <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.button--s</code>, <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.button--m</code>, <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.button--l</code> or <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.button--xl</code>. The default button size is <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.button--m</code>.</p>
+                    </div>
+
+                    <div class="borderWidth-1 borderStyle-solid borderColor-smoke borderRadiusTop-m">
+                        <div class="grid grid--4">
+                            <div class="padding-m textAlign-center borderWidth-0 borderRightWidth-1 borderStyle-solid borderColor-smoke">
+                                <div class="marginTop-xs marginBottom-s">
+                                    <button class="button button--xl button--flat bg-marvel" type="button">Button</button>
+                                </div>
+
+                                <p class="lineHeight-s fontSize-s fontWeight-3 c-silver">Extra Large Button</p>
+                            </div>
+
+                            <div class="padding-m textAlign-center borderWidth-0 borderRightWidth-1 borderStyle-solid borderColor-smoke">
+                                <div class="marginTop-xs marginBottom-s paddingTopBottom-xxs">
+                                    <button class="button button--l button--flat bg-marvel" type="button">Button</button>
+                                </div>
+
+                                <p class="lineHeight-s fontSize-s fontWeight-3 c-silver">Large Button</p>
+                            </div>
+
+                            <div class="padding-m textAlign-center borderWidth-0 borderRightWidth-1 borderStyle-solid borderColor-smoke">
+                                <div class="marginTop-xs marginBottom-s paddingTopBottom-xs">
+                                    <button class="button button--m button--flat bg-marvel" type="button">Button</button>
+                                </div>
+
+                                <p class="lineHeight-s fontSize-s fontWeight-3 c-silver">Medium Button</p>
+                            </div>
+
+                            <div class="padding-m textAlign-center">
+                                <div class="marginTop-xs marginBottom-s paddingTopBottom-s">
+                                    <button class="button button--s button--flat bg-marvel" type="button">Button</button>
+                                </div>
+
+                                <p class="lineHeight-s fontSize-s fontWeight-3 c-silver">Small Button</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="padding-m bg-snow borderWidth-0 borderRightWidth-1 borderBottomWidth-1 borderLeftWidth-1 borderStyle-solid borderColor-smoke borderRadiusBottom-m">
+                        <pre>
+                          <code>&lt;button class="button button--xl button--flat bg-marvel">...&lt;/button>
+&lt;button class="button button--l button--flat bg-marvel">...&lt;/button>
+&lt;button class="button button--m button--flat bg-marvel">...&lt;/button>
+&lt;button class="button button--s button--flat bg-marvel">...&lt;/button></code>
+                        </pre>
+                    </div>
+                </section>
+
+                <section class="marginBottom-xl">
+                    <div class="marginBottom-l">
+                        <div class="marginBottom-xxs">
+                            <h3 class="fontSize-xl lineHeight-xl">Flat button</h3>
+                        </div>
+
+                        <p class="lineHeight-l fontSize-l fontWeight-3 c-silver">Flat buttons should be used to signify necessary or mandatory actions. There are two color options, specified with an additional class <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.bg--marvel</code> or <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.bg--positive</code>.</p>
+                    </div>
+
+                    <div class="padding-m borderWidth-1 borderStyle-solid borderColor-smoke borderRadiusTop-m">
+                        <div class="inline">
+                            <div class="marginRight-m">
+                                <a class="button button--m button--flat bg-marvel" href="#" role="button">Default</a>
+                            </div>
+
+                            <div>
+                                <a class="button button--m button--flat bg-positive" href="#" role="button">Positive</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside class="padding-m bg-snow borderWidth-0 borderRightWidth-1 borderBottomWidth-1 borderLeftWidth-1 borderStyle-solid borderColor-smoke borderRadiusBottom-m">
+                        <pre>
+                            <code>&lt;button class="button button--m button--flat bg-marvel">...&lt;/button>
+&lt;button class="button button--m button--flat bg-positive">...&lt;/button></code>
+                        </pre>
+                    </aside>
+                </section>
+
+                <section class="marginBottom-xl">
+                    <div class="marginBottom-l">
+                        <div class="marginBottom-xxs">
+                            <h3 class="fontSize-xl lineHeight-xl">Ghost button</h3>
+                        </div>
+
+                        <p class="lineHeight-l fontSize-l fontWeight-3 c-silver">Ghost buttons should be used to signify optional, infrequent or subtle actions. There are three color options, specified with an additional class <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.bg--marvel--hover</code>, <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.bg--orange--hover</code> or <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.bg--negative--hover</code>.</p>
+                    </div>
+
+                    <div class="padding-m borderWidth-1 borderStyle-solid borderColor-smoke borderRadiusTop-m">
+                        <div class="inline">
+                            <div class="marginRight-m">
+                                <a class="button button--m button--ghost bg-marvel--hover" href="#" role="button">Default</a>
+                            </div>
+
+                            <div class="marginRight-m">
+                                <a class="button button--m button--ghost bg-orange--hover" href="#" role="button">Orange</a>
+                            </div>
+
+                            <div>
+                                <a class="button button--m button--ghost bg-negative--hover" href="#" role="button">Negative</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside class="padding-m bg-snow borderWidth-0 borderRightWidth-1 borderBottomWidth-1 borderLeftWidth-1 borderStyle-solid borderColor-smoke borderRadiusBottom-m">
+                        <pre>
+                            <code>&lt;button class="button button--m button--ghost bg-marvel--hover" type="button">...&lt;/button></code>
+                        </pre>
+                    </aside>
+                </section>
+
+                <section class="marginBottom-xl">
+                    <div class="marginBottom-l">
+                        <div class="marginBottom-xxs">
+                            <h3 class="fontSize-xl lineHeight-xl">Outlined button</h3>
+                        </div>
+
+                        <p class="lineHeight-l fontSize-l fontWeight-3 c-silver">Outlined buttons should be used to signify optional, infrequent or subtle actions. There are three color options, specified with an additional class <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.bg--marvel--hover</code>, <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.bg--orange--hover</code> or <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.bg--negative--hover</code>.</p>
+                    </div>
+
+                    <div class="padding-m bg-snow borderWidth-1 borderStyle-solid borderColor-smoke borderRadiusTop-m">
+                        <div class="inline">
+                            <div class="marginRight-m">
+                                <a class="button button--m button--outlined bg-white bg-marvel--hover" href="#" role="button">Default</a>
+                            </div>
+                            <div class="marginRight-m">
+                                <a class="button button--m button--outlined bg-white bg-orange--hover" href="#" role="button">Orange</a>
+                            </div>
+                            <div>
+                                <a class="button button--m button--outlined bg-white bg-negative--hover" href="#" role="button">Negative</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside class="padding-m bg-snow borderWidth-0 borderRightWidth-1 borderBottomWidth-1 borderLeftWidth-1 borderStyle-solid borderColor-smoke borderRadiusBottom-m">
+                        <pre>
+                            <code>&lt;button class="button button--m button--outlined bg-white bg-marvel--hover" type="button">...&lt;/button></code>
+                        </pre>
+                    </aside>
+                </section>
+
+                <section class="marginBottom-xl">
+                    <div class="marginBottom-l">
+                        <div class="marginBottom-xxs">
+                            <h3 class="fontSize-xl lineHeight-xl">Ghost button on dark background</h3>
+                        </div>
+
+                        <p class="lineHeight-l fontSize-l fontWeight-3 c-silver">Ghost buttons should be used to signify optional, infrequent or subtle actions. There are three color options, specified with an additional class <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.bg--marvel--hover</code>, <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.bg--orange--hover</code> or <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.bg--negative--hover</code>.</p>
+                    </div>
+
+                    <div class="padding-m borderWidth-1 borderStyle-solid borderColor-transparent borderRadiusTop-m bg-black">
+                        <div class="inline">
+                            <div>
+                                <a class="button button--m button--ghost bg-white--hover is-reversed" href="#" role="button">Default</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside class="padding-m bg-snow borderWidth-0 borderRightWidth-1 borderBottomWidth-1 borderLeftWidth-1 borderStyle-solid borderColor-smoke borderRadiusBottom-m">
+                        <pre>
+                            <code>&lt;button class="button button--m button--ghost bg-white--hover is-reversed" type="button">...&lt;/button></code>
+                        </pre>
+                    </aside>
+                </section>
+
+                <section class="marginBottom-xl">
+                    <div class="marginBottom-l">
+                        <div class="marginBottom-xxs">
+                            <h3 class="fontSize-xl lineHeight-xl">Stateful buttons</h3>
+                        </div>
+
+                        <p class="lineHeight-l fontSize-l fontWeight-3 c-silver">Stateful buttons have different states and behaviour to the regular ones. The pre-action feedback button, defined with <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.is-sad</code>, will show a sad face on hover and is meant to be used on negative action buttons like deleting an account or downgrading. There are 3 post-click feedback buttons to be used for instant feedback and feedback after contacting a server. Those are defined by <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.is-stateful</code>.</p>
+                    </div>
+
+                    <div class="borderWidth-1 borderStyle-solid borderColor-smoke borderRadiusTop-m">
+                        <div class="grid grid--4">
+                            <div class="padding-m textAlign-center borderWidth-0 borderRightWidth-1 borderStyle-solid borderColor-smoke">
+                                <div class="marginTop-xs marginBottom-s">
+                                    <a class="button button--m button--ghost bg-negative--hover is-sad" role="button">Hover me!</a>
+                                </div>
+
+                                <p class="lineHeight-s fontSize-s fontWeight-3 c-silver">Pre-click feedback</p>
+                            </div>
+
+                            <div class="padding-m textAlign-center borderWidth-0 borderRightWidth-1 borderStyle-solid borderColor-smoke">
+                                <div class="marginTop-xs marginBottom-s">
+                                    <a class="js-success-button-one button button--m button--flat button--stateful bg-positive" role="button">
+                                        <span>Click me!</span>
+                                    </a>
+                                </div>
+
+                                <p class="lineHeight-s fontSize-s fontWeight-3 c-silver">Instant positive response</p>
+                            </div>
+
+                            <div class="padding-m textAlign-center borderWidth-0 borderRightWidth-1 borderStyle-solid borderColor-smoke">
+                                <div class="marginTop-xs marginBottom-s">
+                                    <a class="js-success-button-two button button--m button--flat button--stateful bg-positive" role="button">
+                                        <span>Click me!</span>
+                                    </a>
+                                </div>
+
+                                <p class="lineHeight-s fontSize-s fontWeight-3 c-silver">Positive response</p>
+                            </div>
+
+                            <div class="padding-m textAlign-center">
+                                <div class="marginTop-xs marginBottom-s">
+                                    <a class="js-fail-button button button--m button--flat button--stateful bg-marvel" role="button">
+                                        <span>Click me!</span>
+                                    </a>
+                                </div>
+
+                                <p class="lineHeight-s fontSize-s fontWeight-3 c-silver">Negative response</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside class="padding-m bg-snow borderWidth-0 borderRightWidth-1 borderBottomWidth-1 borderLeftWidth-1 borderStyle-solid borderColor-smoke borderRadiusBottom-m">
+                        <pre>
+                            <code>&lt;button class="button button--m button--ghost bg-negative--hover is-sad">...&lt;/button>
+
+// Add classes "has-succeeded" and "has-responded" on click
+&lt;button class="button button--m button--flat button--stateful bg-positive">
+    &lt;span>Response&lt;/span>
+&lt;/button>
+
+// Add class "is-loading" on click until the server responds,
+// then "is-delayed", "has-succeeded" and "has-responded"
+&lt;button class="button button--m button--flat button--stateful bg-positive">
+    &lt;span>Response&lt;/span>
+&lt;/button>
+
+// Add class "is-loading" on click until the server responds,
+// then "is-delayed", "has-failed" and "has-responded"
+&lt;button class="button button--m button--flat button--stateful bg-marvel">
+    &lt;span>Response&lt;/span>
+&lt;/button></code>
+                        </pre>
+                    </aside>
+                </section>
+
+                <section class="marginBottom-xl">
+                    <div class="marginBottom-l">
+                        <div class="marginBottom-xxs">
+                            <h3 class="fontSize-xl lineHeight-xl">Button with icon</h3>
+                        </div>
+
+                        <p class="lineHeight-l fontSize-l fontWeight-3 c-silver">Use a single class to define a size for your button.</p>
+                    </div>
+
+                    <div class="padding-m borderWidth-1 borderStyle-solid borderColor-smoke borderRadiusTop-m">
+                        <div class="uiIcon uiIcon--m">
+                            <a class="button button--m button--ghost bg-marvel--hover" href="#" role="button">Button</a>
+                            <svg class="svgIcon fill-positive" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" enable-background="new 0 0 24 24">
+                                <path d="M17 10h-3v-3c0-1.1-.9-2-2-2s-2 .9-2 2v3h-3c-1.1 0-2 .9-2 2s.9 2 2 2h3v3c0 1.1.9 2 2 2s2-.9 2-2v-3h3c1.1 0 2-.9 2-2s-.9-2-2-2z"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <aside class="padding-m bg-snow borderWidth-0 borderRightWidth-1 borderBottomWidth-1 borderLeftWidth-1 borderStyle-solid borderColor-smoke borderRadiusBottom-m">
+                        <pre>
+                            <code>&lt;button class="button button--xl"&gt;
+    &lt;span class="display-inlineBlock marginRight-xs"&gt;
+        &lt;svg class="verticalAlign-middle"&gt;...&lt;/svg&gt;
+    &lt;/span&gt;
+
+    &lt;span class="display-inlineBlock"&gt;...&lt;/span&gt;
+&lt;/button&gt;</code>
+                        </pre>
+                    </aside>
+                </section>
+
+                <section class="marginBottom-xl">
+                    <div class="marginBottom-l">
+                        <div class="marginBottom-xxs">
+                            <h3 class="fontSize-xl lineHeight-xl">Button with lone icon</h3>
+                        </div>
+
+                        <p class="lineHeight-l fontSize-l fontWeight-3 c-silver">Use a single class to define a size for your button.</p>
+                    </div>
+
+                    <div class="padding-m borderWidth-1 borderStyle-solid borderColor-smoke borderRadiusTop-m">
+                        <a class="uiIcon uiIcon--m button button--m button--ghost bg-marvel--hover" href="#" role="button">
+                            <svg class="svgIcon fill-positive" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" enable-background="new 0 0 24 24">
+                                <path d="M17 10h-3v-3c0-1.1-.9-2-2-2s-2 .9-2 2v3h-3c-1.1 0-2 .9-2 2s.9 2 2 2h3v3c0 1.1.9 2 2 2s2-.9 2-2v-3h3c1.1 0 2-.9 2-2s-.9-2-2-2z"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <aside class="padding-m bg-snow borderWidth-0 borderRightWidth-1 borderBottomWidth-1 borderLeftWidth-1 borderStyle-solid borderColor-smoke borderRadiusBottom-m">
+                        <pre>
+                            <code>&lt;button class="button button--xl"&gt;
+    &lt;span class="display-inlineBlock marginRight-xs"&gt;
+        &lt;svg class="verticalAlign-middle"&gt;...&lt;/svg&gt;
+    &lt;/span&gt;
+
+    &lt;span class="display-inlineBlock"&gt;...&lt;/span&gt;
+&lt;/button&gt;</code>
+                        </pre>
+                    </aside>
+                </section>
+
+                <section class="marginBottom-xl">
+                    <div class="marginBottom-l">
+                        <div class="marginBottom-xxs">
+                            <h3 class="fontSize-xl lineHeight-xl">Disabled button</h3>
+                        </div>
+
+                        <p class="lineHeight-l fontSize-l fontWeight-3 c-silver">Disabled buttons receive an <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.is-disabled</code> class and a <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">disabled</code> attribute.</p>
+                    </div>
+
+                    <div class="padding-m borderWidth-1 borderStyle-solid borderColor-smoke borderRadiusTop-m">
+                        <button class="button button--m button--flat bg-marvel is-disabled" type="button" disabled>Disabled</button>
+                    </div>
+
+                    <aside class="padding-m bg-snow borderWidth-0 borderRightWidth-1 borderBottomWidth-1 borderLeftWidth-1 borderStyle-solid borderColor-smoke borderRadiusBottom-m">
+                        <pre>
+                          <code>&lt;button class="button button--m button--flat bg-marvel is-disabled" disabled>Button&lt;/button></code>
+                        </pre>
+                    </aside>
+                </section>
+
+                <section class="marginBottom-xl">
+                    <div class="marginBottom-l">
+                        <div class="marginBottom-xxs">
+                            <h3 class="fontSize-xl lineHeight-xl">Button with logo</h3>
+                        </div>
+
+                        <p class="lineHeight-l fontSize-l fontWeight-3 c-silver">Use a single class to define a size for your button.</p>
+                    </div>
+
+                    <div class="padding-m borderWidth-1 borderStyle-solid borderColor-smoke borderRadiusTop-m">
+                        <div class="grid grid--2 grid--m">
+                            <div>
+                                <button class="asana import width-100 button button--l button--ghost bg-marvel--hover">
+                                    <span class="logoWrap" style="padding-left:34px;">
+                                        <svg class="svgIcon posPinTL" xmlns="http://www.w3.org/2000/svg" width="34" height="50" viewBox="0 0 34 50"><circle cx="10" cy="20" r="4" fill="#f95353"></circle><circle cx="4" cy="30" r="4" fill="#f95353"></circle><circle cx="16" cy="30" r="4" fill="#f95353"></circle></svg>
+                                        <span>Asana</span>
+                                    </span>
+                                </button>
+                            </div>
+                            <div>
+                                <button class="slack import width-100 button button--l button--ghost bg-marvel--hover">
+                                    <span class="logoWrap" style="padding-left:34px;">
+                                        <svg class="svgIcon posPinTL" xmlns="http://www.w3.org/2000/svg" width="38" height="50" viewBox="0 0 38 50"><path d="M13.9,15.76A2,2,0,1,0,10.2,17l5,15.48a2,2,0,0,0,3.7-1.2Z" fill="#e8a723"></path><path d="M6.11,18.3a2,2,0,0,0-3.7,1.2L7.44,35a2,2,0,0,0,3.7-1.2Z" fill="#3eb890"></path><path d="M20.24,28.59a2,2,0,1,0-1.2-3.7l-15.49,5a2,2,0,0,0,1.2,3.7Z" fill="#e01765"></path><path d="M6.77,33l3.7-1.2-1.2-3.7-3.7,1.2Z" fill="#472a49"></path><path d="M14.57,30.43l3.7-1.2-1.2-3.7-3.7,1.2Z" fill="#cc2027"></path><path d="M17.7,20.79a2,2,0,0,0-1.2-3.7L1,22.12a2,2,0,0,0,1.2,3.7Z" fill="#70cadb"></path><path d="M4.24,25.16L7.95,24l-1.2-3.7L3,21.46Z" fill="#1a937d"></path><path d="M12,22.63l3.7-1.2-1.2-3.7-3.7,1.2Z" fill="#65863a"></path></svg>
+                                        <span>Slack</span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside class="padding-m bg-snow borderWidth-0 borderRightWidth-1 borderBottomWidth-1 borderLeftWidth-1 borderStyle-solid borderColor-smoke borderRadiusBottom-m">
+                        <pre>
+                            <code>&lt;button class="button button--xl"&gt;
+    &lt;span class="display-inlineBlock marginRight-xs"&gt;
+        &lt;svg class="verticalAlign-middle"&gt;...&lt;/svg&gt;
+    &lt;/span&gt;
+
+    &lt;span class="display-inlineBlock"&gt;...&lt;/span&gt;
+&lt;/button&gt;</code>
+                        </pre>
+                    </aside>
+                </section>
+
+                <section class="marginBottom-xl">
+                    <div class="marginBottom-l">
+                        <div class="marginBottom-xxs">
+                            <h3 class="fontSize-xl lineHeight-xl">Disabled button</h3>
+                        </div>
+
+                        <p class="lineHeight-l fontSize-l fontWeight-3 c-silver">Disabled buttons receive an <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.is-disabled</code> class and a <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">disabled</code> attribute.</p>
+                    </div>
+
+                    <div class="padding-m borderWidth-1 borderStyle-solid borderColor-smoke borderRadiusTop-m">
+                        <button class="button button--m button--flat bg-marvel is-disabled" type="button" disabled>Disabled</button>
+                    </div>
+
+                    <aside class="padding-m bg-snow borderWidth-0 borderRightWidth-1 borderBottomWidth-1 borderLeftWidth-1 borderStyle-solid borderColor-smoke borderRadiusBottom-m">
+                        <pre>
+                          <code>&lt;button class="button button--m button--flat bg-marvel is-disabled" disabled>Button&lt;/button></code>
+                        </pre>
+                    </aside>
+                </section>
+
+                <section class="marginBottom-xl">
+                    <div class="marginBottom-l">
+                        <div class="marginBottom-xxs">
+                            <h3 class="fontSize-xl lineHeight-xl">Waiting button</h3>
+                        </div>
+
+                        <p class="lineHeight-l fontSize-l fontWeight-3 c-silver">Waiting buttons receive an <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.is-loading</code> class.</p>
+                    </div>
+
+                    <div class="padding-m borderWidth-1 borderStyle-solid borderColor-smoke borderRadiusTop-m">
+                        <div class="inline">
+                            <div class="uiIcon uiIcon--m is-loading">
+                                <button class="button button--m button--flat bg-marvel is-disabled" type="button" disabled>Loading...</button>
+                                <svg class="svgIcon fill-silver" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" enable-background="new 0 0 24 24">
+                                    <path d="M17 10h-3v-3c0-1.1-.9-2-2-2s-2 .9-2 2v3h-3c-1.1 0-2 .9-2 2s.9 2 2 2h3v3c0 1.1.9 2 2 2s2-.9 2-2v-3h3c1.1 0 2-.9 2-2s-.9-2-2-2z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside class="padding-m bg-snow borderWidth-0 borderRightWidth-1 borderBottomWidth-1 borderLeftWidth-1 borderStyle-solid borderColor-smoke borderRadiusBottom-m">
+                        <pre>
+                          <code>&lt;button class="button button--m button--flat bg-marvel is-disabled" disabled>Button&lt;/button></code>
+                        </pre>
+                    </aside>
+                </section>
+
+                <section class="marginBottom-m">
+                    <div class="marginBottom-l">
+                        <div class="marginBottom-xxs">
+                            <h3 class="fontSize-xl lineHeight-xl">Button group</h3>
+                        </div>
+
+                        <p class="lineHeight-l fontSize-l fontWeight-3 c-silver">Group multiple buttons inline. Useful for action bars. Only ghost buttons should be placed in a button group.</p>
+                    </div>
+
+                    <div class="padding-m borderWidth-1 borderStyle-solid borderColor-smoke borderRadiusTop-m">
+                        <div class="buttonGroup">
+                            <div>
+                                <button class="button button--m button--ghost bg-marvel--hover">Button</button>
+                            </div>
+
+                            <div>
+                                <button class="button button--m button--ghost bg-marvel--hover">Button</button>
+                            </div>
+
+                            <div>
+                                <button class="button button--m button--ghost bg-marvel--hover">Button</button>
+                            </div>
+
+                            <div>
+                                <button class="button button--m button--ghost bg-marvel--hover">Button</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside class="padding-m bg-snow borderWidth-0 borderRightWidth-1 borderBottomWidth-1 borderLeftWidth-1 borderStyle-solid borderColor-smoke borderRadiusBottom-m">
+                        <pre>
+                            <code>&lt;div class="buttonGroup">
+    &lt;div>
+        &lt;button class="button button--m button--ghost bg-marvel--hover">&lt;/button>
+    &lt;/div>
+
+    &lt;div>
+        &lt;button class="button button--m button--ghost bg-marvel--hover">&lt;/button>
+    &lt;/div>
+
+    &lt;div>
+        &lt;button class="button button--m button--ghost bg-marvel--hover">&lt;/button>
+    &lt;/div>
+
+    &lt;div>
+        &lt;button class="button button--m button--ghost bg-marvel--hover">&lt;/button>
+    &lt;/div>
+&lt;/div></code>
+                        </pre>
+                    </aside>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
