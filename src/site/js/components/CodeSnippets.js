@@ -1,3 +1,15 @@
+// Lists
+export const orderedListCode = `<ol class="list list--ordered">
+    <li>...</li>
+    <li>...</li>
+</ol>`;
+
+export const unorderedListCode = `<ul class="list list--unordered">
+    <li>...</li>
+    <li>...</li>
+</ul>`;
+
+// Layout code snippets
 export const pageWrapCode = `<div class="pageWrap pageWrap--s">...</div>
 <div class="pageWrap pageWrap--m">...</div>
 <div class="pageWrap pageWrap--l">...</div>`;
