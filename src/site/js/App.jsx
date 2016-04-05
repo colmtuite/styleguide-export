@@ -1,12 +1,17 @@
 import React from 'react';
 
-import Navigation from '~/Navigation';
+import Sidebar from '~/Sidebar';
 
 export default function App(props) {
     return (
-        <div className="pageWrap pageWrap--s">
-            <Navigation />
-            {props.children}
+        <div>
+            <Sidebar />
+
+            <div style={{ paddingLeft: '20%' }}>
+                <div className="padding-xl marginLeftRight-m" style={{ maxWidth: '960px' }}>
+                    {props.children}
+                </div>
+            </div>
         </div>
     );
 }
