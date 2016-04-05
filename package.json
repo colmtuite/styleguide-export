@@ -24,7 +24,8 @@
     "eyeglass": "^0.8.1",
     "react": "^0.14.8",
     "react-dom": "^0.14.8",
-    "react-router": "^2.0.1"
+    "react-router": "^2.0.1",
+    "highlight.js": "^9.2.0"
   },
   "devDependencies": {
     "babel": "^6.5.2",
