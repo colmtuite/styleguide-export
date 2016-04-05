@@ -4,6 +4,14 @@ import NavigationMenu from '~/NavigationMenu';
 
 const menus = [
     {
+        title: 'Overview',
+        items: [
+           { title: 'Introduction', url: '/overview/introduction' },
+           { title: 'Code Guidelines', url: '/overview/code-guidelines' },
+           { title: 'Naming Convention', url: '/overview/naming-convention' },
+           { title: 'Rules', url: '/overview/rules' },
+        ],
+    }, {
         title: 'Design',
         items: [
             { title: 'Colors', url: '/design/colors' },
@@ -22,14 +30,6 @@ const menus = [
             { title: 'Modals', url: '/components/modals' },
             { title: 'Popovers', url: '/components/popovers' },
             { title: 'Tables', url: '/components/tables' },
-        ],
-    }, {
-        title: 'Overview',
-        items: [
-            { title: 'Introduction', url: '/overview/introduction' },
-            { title: 'Code Guidelines', url: '/overview/code-guidelines' },
-            { title: 'Naming Convention', url: '/overview/naming-convention' },
-            { title: 'Rules', url: '/overview/rules' },
         ],
     },
 ];
