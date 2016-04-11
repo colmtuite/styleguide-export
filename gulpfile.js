@@ -23,8 +23,8 @@ function sassify() {
         eyeglass: {
             root: paths.root,
             assets: {
-                // TODO: Work out a better way to make these paths relative how we want them
-                relativeTo: '/thisisahack',
+                httpPrefix: 'assets',
+                relativeTo: '/marvel-styleguide',
                 sources: [{
                     directory: path.resolve(paths.src, 'assets'),
                     globOpts: {

@@ -10,12 +10,12 @@ const paths = {
 
 const eyeglass = new Eyeglass({
     outputStyle: 'compressed',
-    includePaths: [path.resolve(paths.src, 'sass'), path.resolve('ass')],
     // eyeglass options
     eyeglass: {
         root: paths.root,
         buildDir: path.resolve(paths.dist, 'site'),
         assets: {
+            httpPrefix: 'assets',
             sources: [{
                 directory: path.resolve(paths.src, 'assets'),
                 globOpts: {
