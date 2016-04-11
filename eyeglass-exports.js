@@ -1,9 +1,14 @@
 const path = require('path');
-const assetDir = path.resolve(__dirname, 'src', 'assets');
 
-module.exports = eyeglass => {
-    eyeglass.assets.addSource(assetDir, {
-        pattern: 'images/**/*',
-    });
-    return eyeglass;
-};
+module.exports = () => ({
+    assets: {
+        httpPrefix: 'assets',
+        relativeTo: '/marvel-styleguide',
+        sources: [{
+            directory: path.resolve(__dirname, 'src', 'assets'),
+            globOpts: {
+                pattern: 'images/**/*',
+            },
+        }],
+    },
+});

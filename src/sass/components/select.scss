@@ -149,7 +149,7 @@ $dropdown-s: 18px;
     margin-right: ($control-xl - $dropdown-xl) / 2;
 
     background-size: $dropdown-xl $dropdown-xl;
-    background-image: asset-url('images/icon-dropdown--xl.svg');
+    background-image: asset-url('marvel-styleguide/images/icon-dropdown--xl.svg');
 }
 
 .select--l:after {
@@ -160,7 +160,7 @@ $dropdown-s: 18px;
     margin-right: ($control-l - $dropdown-l) / 2;
 
     background-size: $dropdown-l $dropdown-l;
-    background-image: asset-url('images/icon-dropdown--l.svg');
+    background-image: asset-url('marvel-styleguide/images/icon-dropdown--l.svg');
 }
 
 .select--m:after {
@@ -171,7 +171,7 @@ $dropdown-s: 18px;
     margin-right: ($control-m - $dropdown-m) / 2;
 
     background-size: $dropdown-m $dropdown-m;
-    background-image: asset-url('images/icon-dropdown--m.svg');
+    background-image: asset-url('marvel-styleguide/images/icon-dropdown--m.svg');
 }
 
 .select--s:after,
@@ -184,7 +184,7 @@ $dropdown-s: 18px;
     margin-right: ($control-s - $dropdown-s) / 2;
 
     background-size: $dropdown-s $dropdown-s;
-    background-image: asset-url('images/icon-dropdown--s.svg');
+    background-image: asset-url('marvel-styleguide/images/icon-dropdown--s.svg');
 }
 
 // Hacks & browser specific styles
@@ -246,7 +246,7 @@ $dropdown-s: 18px;
 	@extend .transitionTimingFunction-cb--scaleIn;
 
 	transform: scale(0);
-	background: asset-url('images/select-property.svg') center center no-repeat;
+	background: asset-url('marvel-styleguide/images/select-property.svg') center center no-repeat;
     background-size: 100%;
     content: '';
 }
