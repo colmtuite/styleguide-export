@@ -7,7 +7,7 @@ import { Router, Route, IndexRedirect, hashHistory } from 'react-router';
 import App from '~/App';
 
 // Design pages
-import ColorScheme from '~/pages/design/ColorScheme';
+import ColorScheme from '~/pages/design/colors/ColorScheme';
 import Typography from '~/pages/design/Typography';
 
 // Components pages
@@ -21,6 +21,7 @@ import Lists from '~/pages/components/lists/Lists';
 import Modals from '~/pages/components/Modals';
 import Popovers from '~/pages/components/Popovers';
 import Tables from '~/pages/components/Tables';
+import NoMatch from '~/pages/404';
 
 export function render(container) {
     ReactDOM.render(
@@ -48,6 +49,8 @@ export function render(container) {
                 <Route path="Popovers" component={Popovers} />
                 <Route path="Tables" component={Tables} />
             </Route>
+
+            <Route path="*" component={NoMatch} />
         </Router>,
     container);
 }

@@ -100,10 +100,13 @@
 // Syntax highlighting
 // -------------------------
 
-.hljs-tag              { color: $hljs-tag; }
-.hljs-value            { color: $hljs-value; }
-.hljs-attribute        { color: $hljs-attribute; }
+.hljs-tag               { color: $hljs-tag; }
+.hljs-value             { color: $hljs-value; }
+.hljs-attribute         { color: $hljs-attribute; }
 
+.hljs-keyword           { color: $hljs-tag; }
+.hljs-string            { color: $hljs-value; }
+.hljs-built_in          { color: $hljs-attribute; }
 
 //
 // Responsive rules
@@ -202,9 +205,13 @@
     // Syntax highlighting
     // -------------------------
 
-    .breakPointS-hljs-tag              { color: $hljs-tag; }
-    .breakPointS-hljs-value            { color: $hljs-value; }
-    .breakPointS-hljs-attribute        { color: $hljs-attribute; }
+    .breakPointS-hljs-tag               { color: $hljs-tag; }
+    .breakPointS-hljs-value             { color: $hljs-value; }
+    .breakPointS-hljs-attribute         { color: $hljs-attribute; }
+
+    .breakPointS-hljs-keyword           { color: $hljs-tag; }
+    .breakPointS-hljs-string            { color: $hljs-value; }
+    .breakPointS-hljs-built_in          { color: $hljs-attribute; }
 }
 
 @include breakPoint(m) {
@@ -300,9 +307,13 @@
     // Syntax highlighting
     // -------------------------
 
-    .breakPointM-hljs-tag              { color: $hljs-tag; }
-    .breakPointM-hljs-value            { color: $hljs-value; }
-    .breakPointM-hljs-attribute        { color: $hljs-attribute; }
+    .breakPointM-hljs-tag               { color: $hljs-tag; }
+    .breakPointM-hljs-value             { color: $hljs-value; }
+    .breakPointM-hljs-attribute         { color: $hljs-attribute; }
+
+    .breakPointM-hljs-keyword           { color: $hljs-tag; }
+    .breakPointM-hljs-string            { color: $hljs-value; }
+    .breakPointM-hljs-built_in          { color: $hljs-attribute; }
 }
 
 @include breakPoint(l) {
@@ -398,7 +409,11 @@
     // Syntax highlighting
     // -------------------------
 
-    .breakPointL-hljs-tag              { color: $hljs-tag; }
-    .breakPointL-hljs-value            { color: $hljs-value; }
-    .breakPointL-hljs-attribute        { color: $hljs-attribute; }
+    .breakPointL-hljs-tag               { color: $hljs-tag; }
+    .breakPointL-hljs-value             { color: $hljs-value; }
+    .breakPointL-hljs-attribute         { color: $hljs-attribute; }
+
+    .breakPointL-hljs-keyword           { color: $hljs-tag; }
+    .breakPointL-hljs-string            { color: $hljs-value; }
+    .breakPointL-hljs-built_in          { color: $hljs-attribute; }
 }

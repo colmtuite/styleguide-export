@@ -3,6 +3,10 @@ import React from 'react';
 import Sidebar from '~/Sidebar';
 
 export default function App(props) {
+    App.propTypes = {
+        children: React.PropTypes.node,
+    };
+
     return (
         <div>
             <Sidebar />
@@ -15,7 +19,3 @@ export default function App(props) {
         </div>
     );
 }
-
-App.propTypes = {
-    children: React.PropTypes.node,
-};
