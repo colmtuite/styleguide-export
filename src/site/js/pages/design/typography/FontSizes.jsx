@@ -1,9 +1,11 @@
 import React from 'react';
-import SectionTitle from '~/components/SectionTitle';
+
+import { orderedListCode } from '~/components/CodeSnippets.js';
+import FontSize from '~/pages/design/typography/FontSize';
+import SectionCode from '~/components/SectionCode';
 import SectionDescription from '~/components/SectionDescription';
 import SectionExample from '~/components/SectionExample';
-import SectionCode from '~/components/SectionCode';
-import { orderedListCode } from '~/components/CodeSnippets.js';
+import SectionTitle from '~/components/SectionTitle';
 
 export default function FontSizes() {
     return (
@@ -17,114 +19,20 @@ export default function FontSizes() {
             </div>
 
             <SectionExample>
-                <div className="borderWidth-0 borderBottomWidth-1 borderStyle-solid borderColor-smoke">
-                    <div className="padding-m overflowY-hidden overflowX-scroll whiteSpace-nowrap">
-                        <div className="padding-xxs">
-                            <div className="marginBottom-s">
-                                <p className="fontSize-xxxxl">The quick brown fox jumps over the lazy dog</p>
-                            </div>
-
-                            <p className="fontSize-s fontWeight-3 c-silver">46px &mdash; Extra extra extra extra large</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="borderWidth-0 borderBottomWidth-1 borderStyle-solid borderColor-smoke">
-                    <div className="padding-m overflowY-hidden overflowX-scroll whiteSpace-nowrap">
-                        <div className="padding-xxs">
-                            <div className="marginBottom-s">
-                                <p className="fontSize-xxxl">The quick brown fox jumps over the lazy dog</p>
-                            </div>
-
-                            <p className="fontSize-s fontWeight-3 c-silver">46px &mdash; Extra extra extra large</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="borderWidth-0 borderBottomWidth-1 borderStyle-solid borderColor-smoke">
-                    <div className="padding-m overflowY-hidden overflowX-scroll whiteSpace-nowrap">
-                        <div className="padding-xxs">
-                            <div className="marginBottom-s">
-                                <p className="fontSize-xxl">The quick brown fox jumps over the lazy dog</p>
-                            </div>
-
-                            <p className="fontSize-s fontWeight-3 c-silver">46px &mdash; Extra extra large</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="borderWidth-0 borderBottomWidth-1 borderStyle-solid borderColor-smoke">
-                    <div className="padding-m overflowY-hidden overflowX-scroll whiteSpace-nowrap">
-                        <div className="padding-xxs">
-                            <div className="marginBottom-s">
-                                <p className="fontSize-xl">The quick brown fox jumps over the lazy dog</p>
-                            </div>
-
-                            <p className="fontSize-s fontWeight-3 c-silver">46px &mdash; Extra large</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="borderWidth-0 borderBottomWidth-1 borderStyle-solid borderColor-smoke">
-                    <div className="padding-m overflowY-hidden overflowX-scroll whiteSpace-nowrap">
-                        <div className="padding-xxs">
-                            <div className="marginBottom-s">
-                                <p className="fontSize-l">The quick brown fox jumps over the lazy dog</p>
-                            </div>
-
-                            <p className="fontSize-s fontWeight-3 c-silver">46px &mdash; Large</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="borderWidth-0 borderBottomWidth-1 borderStyle-solid borderColor-smoke">
-                    <div className="padding-m overflowY-hidden overflowX-scroll whiteSpace-nowrap">
-                        <div className="padding-xxs">
-                            <div className="marginBottom-s">
-                                <p className="fontSize-m">The quick brown fox jumps over the lazy dog</p>
-                            </div>
-
-                            <p className="fontSize-s fontWeight-3 c-silver">46px &mdash; Medium</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="borderWidth-0 borderBottomWidth-1 borderStyle-solid borderColor-smoke">
-                    <div className="padding-m overflowY-hidden overflowX-scroll whiteSpace-nowrap">
-                        <div className="padding-xxs">
-                            <div className="marginBottom-s">
-                                <p className="fontSize-s">The quick brown fox jumps over the lazy dog</p>
-                            </div>
-
-                            <p className="fontSize-s fontWeight-3 c-silver">46px &mdash; Small</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="borderWidth-0 borderBottomWidth-1 borderStyle-solid borderColor-smoke">
-                    <div className="padding-m overflowY-hidden overflowX-scroll whiteSpace-nowrap">
-                        <div className="padding-xxs">
-                            <div className="marginBottom-s">
-                                <p className="fontSize-xs">The quick brown fox jumps over the lazy dog</p>
-                            </div>
-
-                            <p className="fontSize-s fontWeight-3 c-silver">46px &mdash; Extra small</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="padding-m overflowY-hidden overflowX-scroll whiteSpace-nowrap">
-                    <div className="padding-xxs">
-                        <div className="marginBottom-s">
-                            <p className="fontSize-xxs">The quick brown fox jumps over the lazy dog</p>
-                        </div>
-
-                        <p className="fontSize-s fontWeight-3 c-silver">46px &mdash; Extra extra small</p>
-                    </div>
-                </div>
+                <FontSize fontSize="xxxxl" fontDescription="46px &mdash; Extra extra extra extra large" />
+                <FontSize fontSize="xxxl" fontDescription="38px &mdash; Extra extra extra large" />
+                <FontSize fontSize="xxl" fontDescription="28px &mdash; Extra extra large" />
+                <FontSize fontSize="xl" fontDescription="20px &mdash; Extra large" />
+                <FontSize fontSize="l" fontDescription="18px &mdash; Large" />
+                <FontSize fontSize="m" fontDescription="16px &mdash; Medium" />
+                <FontSize fontSize="s" fontDescription="14px &mdash; Small" />
+                <FontSize fontSize="xs" fontDescription="12px &mdash; Extra small" />
+                <FontSize fontSize="xxs" fontDescription="10px &mdash; Extra extra small" />
             </SectionExample>
 
-            <SectionCode code={ orderedListCode } />
+            <div style={{ marginTop: '-1px' }}>
+                <SectionCode code={ orderedListCode } />
+            </div>
         </section>
     );
 }

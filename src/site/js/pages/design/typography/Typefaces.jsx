@@ -9,7 +9,7 @@ export default function Typefaces() {
     return (
         <section className="marginBottom-xl">
             <div className="marginBottom-l">
-                <SectionTitle sectionTitle={ "Typegaces" } />
+                <SectionTitle sectionTitle={ "Typefaces" } />
 
                 <SectionDescription>
                     Marvel's primary typeface is Fakt Pro Rounded. We chose Fakt Pro Rounded because we needed a robust typeface with legible numbers that rendered well at small sizes. It needed to be soft and friendly, yet plain enough to get out of the way and let the user's designs shine.
