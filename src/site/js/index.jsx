@@ -8,7 +8,7 @@ import App from '~/App';
 
 // Design pages
 import ColorScheme from '~/pages/design/colors/ColorScheme';
-import Typography from '~/pages/design/Typography';
+import Typography from '~/pages/design/typography/Typography';
 
 // Components pages
 import Avatars from '~/pages/components/Avatars';
