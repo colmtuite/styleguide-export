@@ -18,18 +18,20 @@ export default function UnorderedList() {
             </div>
 
             <SectionExample>
-                <ul className="list list--unordered lineHeight-m">
-                    <li>This is a list item</li>
-                    <li>This is another list item</li>
-                    <li>Yep, another list item</li>
-                    <li>This is a list item</li>
-                    <li>This is another list item</li>
-                    <li>Yep, another list item</li>
-                    <li>This is a list item</li>
-                    <li>This is another list item</li>
-                    <li>Yep, another list item</li>
-                    <li>This is a list item</li>
-                </ul>
+                <div className="padding-m">
+                    <ul className="list list--unordered lineHeight-m">
+                        <li>This is a list item</li>
+                        <li>This is another list item</li>
+                        <li>Yep, another list item</li>
+                        <li>This is a list item</li>
+                        <li>This is another list item</li>
+                        <li>Yep, another list item</li>
+                        <li>This is a list item</li>
+                        <li>This is another list item</li>
+                        <li>Yep, another list item</li>
+                        <li>This is a list item</li>
+                    </ul>
+                </div>
             </SectionExample>
 
             <SectionCode code={ unorderedListCode } />

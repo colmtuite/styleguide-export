@@ -18,20 +18,24 @@ export default function GridSize() {
             </div>
 
             <SectionExample>
-                <div className="grid grid--m grid--2">
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                <div className="padding-m">
+                    <div className="grid grid--m grid--2">
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                    </div>
                 </div>
             </SectionExample>
 
-            <div className="padding-l borderWidth-0  borderStyle-solid borderColor-smoke borderLeftWidth-1 borderRightWidth-1 borderBottomWidth-1">
-                <div className="grid grid--l grid--2">
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+            <div className="borderWidth-0  borderStyle-solid borderColor-smoke borderLeftWidth-1 borderRightWidth-1 borderBottomWidth-1">
+                <div className="padding-l">
+                    <div className="grid grid--l grid--2">
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                    </div>
                 </div>
             </div>
 

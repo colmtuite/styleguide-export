@@ -18,12 +18,14 @@ export default function PageWrap() {
             </div>
 
             <SectionExample>
-                <div className="pageWrap pageWrap--s marginBottom-m">
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                </div>
+                <div className="padding-m">
+                    <div className="pageWrap pageWrap--s marginBottom-m">
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                    </div>
 
-                <div className="pageWrap pageWrap--m">
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                    <div className="pageWrap pageWrap--m">
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                    </div>
                 </div>
             </SectionExample>
 

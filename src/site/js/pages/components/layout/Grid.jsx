@@ -18,43 +18,45 @@ export default function Grid() {
             </div>
 
             <SectionExample>
-                <div className="grid grid--m grid--1">
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                </div>
+                <div className="padding-m">
+                    <div className="grid grid--m grid--1">
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                    </div>
 
-                <div className="grid grid--m grid--2">
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                </div>
+                    <div className="grid grid--m grid--2">
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                    </div>
 
-                <div className="grid grid--m grid--3">
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                </div>
+                    <div className="grid grid--m grid--3">
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                    </div>
 
-                <div className="grid grid--m grid--4">
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                </div>
+                    <div className="grid grid--m grid--4">
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                    </div>
 
-                <div className="grid grid--m grid--5">
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                </div>
+                    <div className="grid grid--m grid--5">
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                    </div>
 
-                <div className="grid grid--m grid--6">
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
-                    <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                    <div className="grid grid--m grid--6">
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                        <div><div className="padding-xs bg-smoke borderRadius-s"></div></div>
+                    </div>
                 </div>
             </SectionExample>
 

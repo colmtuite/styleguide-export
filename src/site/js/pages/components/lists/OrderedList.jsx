@@ -18,18 +18,20 @@ export default function OrderedList() {
             </div>
 
             <SectionExample>
-                <ol className="list list--ordered lineHeight-m">
-                    <li>This is a list item</li>
-                    <li>This is another list item</li>
-                    <li>Yep, another list item</li>
-                    <li>This is a list item</li>
-                    <li>This is another list item</li>
-                    <li>Yep, another list item</li>
-                    <li>This is a list item</li>
-                    <li>This is another list item</li>
-                    <li>Yep, another list item</li>
-                    <li>This is a list item</li>
-                </ol>
+                <div className="padding-m">
+                    <ol className="list list--ordered lineHeight-m">
+                        <li>This is a list item</li>
+                        <li>This is another list item</li>
+                        <li>Yep, another list item</li>
+                        <li>This is a list item</li>
+                        <li>This is another list item</li>
+                        <li>Yep, another list item</li>
+                        <li>This is a list item</li>
+                        <li>This is another list item</li>
+                        <li>Yep, another list item</li>
+                        <li>This is a list item</li>
+                    </ol>
+                </div>
             </SectionExample>
 
             <SectionCode code={ orderedListCode } />
