@@ -57,6 +57,11 @@ export default class NavigationMenu extends React.Component {
 }
 
 function NavigationMenuItem(props) {
+    NavigationMenuItem.propTypes = {
+        title: React.PropTypes.string.isRequired,
+        url: React.PropTypes.string.isRequired,
+    };
+
     const { title, url } = props;
     return (
          <Link activeClassName="is-active" className="padding-s display-block fontSize-m link link--light" to={url}>
@@ -64,8 +69,3 @@ function NavigationMenuItem(props) {
          </Link>
     );
 }
-
-NavigationMenuItem.propTypes = {
-    title: React.PropTypes.string.isRequired,
-    url: React.PropTypes.string.isRequired,
-};
