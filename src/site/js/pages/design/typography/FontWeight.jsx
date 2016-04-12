@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { orderedListCode } from '~/components/CodeSnippets.js';
+import { fontWeightCode } from '~/components/CodeSnippets.js';
 import SectionCode from '~/components/SectionCode';
 import SectionDescription from '~/components/SectionDescription';
 import SectionExample from '~/components/SectionExample';
@@ -45,7 +45,7 @@ export default function FontWeight() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={ orderedListCode } />
+            <SectionCode code={ fontWeightCode } />
         </section>
     );
 }

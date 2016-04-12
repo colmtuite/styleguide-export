@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { orderedListCode } from '~/components/CodeSnippets.js';
+import { fontSizesCode } from '~/components/CodeSnippets.js';
 import FontSize from '~/pages/design/typography/FontSize';
 import SectionCode from '~/components/SectionCode';
 import SectionDescription from '~/components/SectionDescription';
@@ -31,7 +31,7 @@ export default function FontSizes() {
             </SectionExample>
 
             <div style={{ marginTop: '-1px' }}>
-                <SectionCode code={ orderedListCode } />
+                <SectionCode code={ fontSizesCode } />
             </div>
         </section>
     );

@@ -3,7 +3,7 @@ import SectionTitle from '~/components/SectionTitle';
 import SectionDescription from '~/components/SectionDescription';
 import SectionExample from '~/components/SectionExample';
 import SectionCode from '~/components/SectionCode';
-import { orderedListCode } from '~/components/CodeSnippets.js';
+import { fontFamilyCode } from '~/components/CodeSnippets.js';
 
 export default function Typefaces() {
     return (
@@ -93,7 +93,7 @@ export default function Typefaces() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={ orderedListCode } />
+            <SectionCode code={ fontFamilyCode } />
         </section>
     );
 }

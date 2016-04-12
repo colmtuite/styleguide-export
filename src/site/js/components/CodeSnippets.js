@@ -1,3 +1,28 @@
+// Typography
+export const fontFamilyCode = '<p class="fontFamily-faktSoft">...</p>';
+
+export const fontSizesCode = `// For title headings in highlighted, hero sections.
+<p class="fontSize-xxl">...</p>
+
+// For primary headings or longform text.
+<p class="fontSize-xl">...</p>
+
+// Default paragraph text
+<p class="fontSize-m">...</p>
+
+// For supporting paragraph text
+<p class="fontSize-s">...</p>
+
+// For subtle text, UI hints or very small headings.
+<p class="fontSize-xs">...</p>`;
+
+export const fontWeightCode = `<p class="fontWeight-5">...</p>
+<p class="fontWeight-4">...</p>
+<p class="fontWeight-3">...</p>`;
+
+export const typeTagsCode = `<strong class="fontWeight-5">...</strong>
+<small class="fontSize-s fontWeight-3">...</small>`;
+
 // Lists
 export const orderedListCode = `<ol class="list list--ordered">
     <li>...</li>
