@@ -27,6 +27,10 @@ export const alignmentClassesCode = `<p class="textAlign-left">...</p>
 <p class="textAlign-center">...</p>
 <p class="textAlign-right">...</p>`;
 
+export const transformationClassesCode = `<p class="textTransform-lowercase">...</p>
+<p class="textTransform-uppercase">...</p>
+<p class="textTransform-capitalize">...</p>`;
+
 // Lists
 export const orderedListCode = `<ol class="list list--ordered">
     <li>...</li>
@@ -37,6 +41,7 @@ export const unorderedListCode = `<ul class="list list--unordered">
     <li>...</li>
     <li>...</li>
 </ul>`;
+
 
 // Layout code snippets
 export const pageWrapCode = `<div class="pageWrap pageWrap--s">...</div>
