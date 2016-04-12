@@ -69,6 +69,12 @@ export const avatarSizesCode = `<div class="avatar avatar--xs" title="Dean Blacc
     <div class="avatar-initials">...</div>
 </div>`;
 
+export const avatarsWithIconsCode = `<div class="avatar avatar--m" title="Dean Blacc" style="...">
+    <div class="avatar-img" style="..."></div>
+    <div class="avatar-initials">...</div>
+    <div class="avatar-team" style="..."></div>
+</div>`;
+
 
 // Layout code snippets
 export const pageWrapCode = `<div class="pageWrap pageWrap--s">...</div>
