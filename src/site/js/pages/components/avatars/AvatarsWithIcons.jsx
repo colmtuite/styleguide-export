@@ -21,23 +21,7 @@ export default function AvatarsWithIcons() {
                 <div className="padding-m">
                     <div className="inline">
                         <div className="marginRight-m verticalAlign-middle">
-                            <div className="avatar avatar--xs" title="Dean Blacc" style={{ backgroundColor: '#776FB3' }}>
-                                <div className="avatar-img" style={{ backgroundImage: 'url(https://res.cloudinary.com/marvel-content/image/fetch/s--Z3QEVGWe--/t_profile_image_200/https://marvelapp-live.storage.googleapis.com/serve/1435759062.46_6862311.gif)' }}></div>
-                                <div className="avatar-initials">DB</div>
-                                <div className="avatar-team" style={{ backgroundImage: 'url(assets/images/team-demo-logo.png)' }}></div>
-                            </div>
-                        </div>
-
-                        <div className="marginRight-m verticalAlign-middle">
-                            <div className="avatar avatar--s" title="Dean Blacc" style={{ backgroundColor: '#776FB3' }}>
-                                <div className="avatar-img" style={{ backgroundImage: 'url(https://res.cloudinary.com/marvel-content/image/fetch/s--Z3QEVGWe--/t_profile_image_200/https://marvelapp-live.storage.googleapis.com/serve/1435759062.46_6862311.gif)' }}></div>
-                                <div className="avatar-initials">DB</div>
-                                <div className="avatar-team" style={{ backgroundImage: 'url(assets/images/team-demo-logo.png)' }}></div>
-                            </div>
-                        </div>
-
-                        <div className="marginRight-m verticalAlign-middle">
-                            <div className="avatar avatar--m" title="Dean Blacc" style={{ backgroundColor: '#776FB3' }}>
+                            <div className="avatar avatar--xl" title="Dean Blacc" style={{ backgroundColor: '#776FB3' }}>
                                 <div className="avatar-img" style={{ backgroundImage: 'url(https://res.cloudinary.com/marvel-content/image/fetch/s--Z3QEVGWe--/t_profile_image_200/https://marvelapp-live.storage.googleapis.com/serve/1435759062.46_6862311.gif)' }}></div>
                                 <div className="avatar-initials">DB</div>
                                 <div className="avatar-team" style={{ backgroundImage: 'url(assets/images/team-demo-logo.png)' }}></div>
@@ -53,7 +37,23 @@ export default function AvatarsWithIcons() {
                         </div>
 
                         <div className="marginRight-m verticalAlign-middle">
-                            <div className="avatar avatar--xl" title="Dean Blacc" style={{ backgroundColor: '#776FB3' }}>
+                            <div className="avatar avatar--m" title="Dean Blacc" style={{ backgroundColor: '#776FB3' }}>
+                                <div className="avatar-img" style={{ backgroundImage: 'url(https://res.cloudinary.com/marvel-content/image/fetch/s--Z3QEVGWe--/t_profile_image_200/https://marvelapp-live.storage.googleapis.com/serve/1435759062.46_6862311.gif)' }}></div>
+                                <div className="avatar-initials">DB</div>
+                                <div className="avatar-team" style={{ backgroundImage: 'url(assets/images/team-demo-logo.png)' }}></div>
+                            </div>
+                        </div>
+
+                        <div className="marginRight-m verticalAlign-middle">
+                            <div className="avatar avatar--s" title="Dean Blacc" style={{ backgroundColor: '#776FB3' }}>
+                                <div className="avatar-img" style={{ backgroundImage: 'url(https://res.cloudinary.com/marvel-content/image/fetch/s--Z3QEVGWe--/t_profile_image_200/https://marvelapp-live.storage.googleapis.com/serve/1435759062.46_6862311.gif)' }}></div>
+                                <div className="avatar-initials">DB</div>
+                                <div className="avatar-team" style={{ backgroundImage: 'url(assets/images/team-demo-logo.png)' }}></div>
+                            </div>
+                        </div>
+
+                        <div className="marginRight-m verticalAlign-middle">
+                            <div className="avatar avatar--xs" title="Dean Blacc" style={{ backgroundColor: '#776FB3' }}>
                                 <div className="avatar-img" style={{ backgroundImage: 'url(https://res.cloudinary.com/marvel-content/image/fetch/s--Z3QEVGWe--/t_profile_image_200/https://marvelapp-live.storage.googleapis.com/serve/1435759062.46_6862311.gif)' }}></div>
                                 <div className="avatar-initials">DB</div>
                                 <div className="avatar-team" style={{ backgroundImage: 'url(assets/images/team-demo-logo.png)' }}></div>

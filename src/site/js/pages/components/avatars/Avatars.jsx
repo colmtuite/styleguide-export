@@ -3,6 +3,7 @@ import PageTitle from '~/components/PageTitle';
 import BasicAvatars from '~/pages/components/avatars/BasicAvatars';
 import AvatarSizes from '~/pages/components/avatars/AvatarSizes';
 import AvatarsWithIcons from '~/pages/components/avatars/AvatarsWithIcons';
+import CustomAvatarSizes from '~/pages/components/avatars/CustomAvatarSizes';
 
 export default function Avatars() {
     return (
@@ -11,6 +12,7 @@ export default function Avatars() {
             <BasicAvatars />
             <AvatarSizes />
             <AvatarsWithIcons />
+            <CustomAvatarSizes />
         </div>
     );
 }
