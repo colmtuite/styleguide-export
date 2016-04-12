@@ -5,6 +5,7 @@ import Typefaces from '~/pages/design/typography/Typefaces';
 import FontSizes from '~/pages/design/typography/FontSizes';
 import FontWeight from '~/pages/design/typography/FontWeight';
 import TypeTags from '~/pages/design/typography/TypeTags';
+import AlignmentClasses from '~/pages/design/typography/AlignmentClasses';
 
 export default function Typography() {
     return (
@@ -14,6 +15,7 @@ export default function Typography() {
             <FontSizes />
             <FontWeight />
             <TypeTags />
+            <AlignmentClasses />
         </div>
     );
 }

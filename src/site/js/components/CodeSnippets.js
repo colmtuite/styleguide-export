@@ -23,6 +23,10 @@ export const fontWeightCode = `<p class="fontWeight-5">...</p>
 export const typeTagsCode = `<strong class="fontWeight-5">...</strong>
 <small class="fontSize-s fontWeight-3">...</small>`;
 
+export const alignmentClassesCode = `<p class="textAlign-left">...</p>
+<p class="textAlign-center">...</p>
+<p class="textAlign-right">...</p>`;
+
 // Lists
 export const orderedListCode = `<ol class="list list--ordered">
     <li>...</li>
