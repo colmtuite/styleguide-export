@@ -8,7 +8,7 @@ import SectionTitle from '~/components/SectionTitle';
 
 export default function TransformationClasses() {
     return (
-        <section className="marginBottom-xl">
+        <section className="marginBottom-m">
             <div className="marginBottom-l">
                 <SectionTitle sectionTitle={ "Transformation classes" } />
 

@@ -9,7 +9,7 @@ export default function ColorBlock({ color, textColor, border, lightColor }) {
         border: React.PropTypes.node,
         color: React.PropTypes.string.isRequired,
         textColor: React.PropTypes.string.isRequired,
-        lightColor: React.PropTypes.string.isRequired,
+        lightColor: React.PropTypes.string,
     };
 
     if (lightColor === '1') {

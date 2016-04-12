@@ -1,19 +1,10 @@
 // Typography
 export const fontFamilyCode = '<p class="fontFamily-faktSoft">...</p>';
 
-export const fontSizesCode = `// For title headings in highlighted, hero sections.
-<p class="fontSize-xxl">...</p>
-
-// For primary headings or longform text.
+export const fontSizesCode = `<p class="fontSize-xxl">...</p>
 <p class="fontSize-xl">...</p>
-
-// Default paragraph text
 <p class="fontSize-m">...</p>
-
-// For supporting paragraph text
 <p class="fontSize-s">...</p>
-
-// For subtle text, UI hints or very small headings.
 <p class="fontSize-xs">...</p>`;
 
 export const fontWeightCode = `<p class="fontWeight-5">...</p>
