@@ -11,16 +11,16 @@ import ColorScheme from '~/pages/design/colors/ColorScheme';
 import Typography from '~/pages/design/typography/Typography';
 
 // Components pages
-import Avatars from '~/pages/components/Avatars';
-import Buttons from '~/pages/components/Buttons';
-import Cards from '~/pages/components/Cards';
-import FormElements from '~/pages/components/FormElements';
+import Avatars from '~/pages/components/avatars/Avatars';
+import Buttons from '~/pages/components/buttons/Buttons';
+import Cards from '~/pages/components/cards/Cards';
+import FormElements from '~/pages/components/forms/FormElements';
 import Layout from '~/pages/components/layout/Layout';
-import Links from '~/pages/components/Links';
+import Links from '~/pages/components/links/Links';
 import Lists from '~/pages/components/lists/Lists';
-import Modals from '~/pages/components/Modals';
-import Popovers from '~/pages/components/Popovers';
-import Tables from '~/pages/components/Tables';
+import Modals from '~/pages/components/modals/Modals';
+import Popovers from '~/pages/components/popovers/Popovers';
+import Tables from '~/pages/components/tables/Tables';
 import NoMatch from '~/pages/404';
 
 export function render(container) {

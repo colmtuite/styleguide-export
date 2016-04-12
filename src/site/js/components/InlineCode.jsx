@@ -6,7 +6,7 @@ export default function InlineCode({ children }) {
     };
 
     return (
-        <code className="paddingLeftRight-xs paddingTopBottom-xxs fontSize-xxs c-marvel borderRadius-s bg-snow">
+        <code className="paddingLeftRight-xs paddingTopBottom-xxs fontSize-xxs borderRadius-s bg-snow--d hljs-string">
             { children }
         </code>
     );

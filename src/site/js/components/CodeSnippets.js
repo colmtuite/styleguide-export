@@ -43,6 +43,12 @@ export const unorderedListCode = `<ul class="list list--unordered">
 </ul>`;
 
 
+// Avatars
+export const basicAvatarsCode = `<div class="avatar avatar--m" title="Dean Blacc" style="...">
+<div class="avatar-img" style="..."></div>
+<div class="avatar-initials">...<`;
+
+
 // Layout code snippets
 export const pageWrapCode = `<div class="pageWrap pageWrap--s">...</div>
 <div class="pageWrap pageWrap--m">...</div>

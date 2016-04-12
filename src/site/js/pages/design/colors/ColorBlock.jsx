@@ -6,7 +6,7 @@ export default function ColorBlock({ color, textColor, border, lightColor }) {
     let extraDarkColorRow = '';
 
     ColorBlock.propTypes = {
-        border: React.PropTypes.string,
+        border: React.PropTypes.node,
         color: React.PropTypes.string.isRequired,
         textColor: React.PropTypes.string.isRequired,
         lightColor: React.PropTypes.string.isRequired,

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function SectionExample({ children }) {
     SectionExample.propTypes = {
-        children: React.PropTypes.string.isRequired,
+        children: React.PropTypes.node.isRequired,
     };
 
     return (
