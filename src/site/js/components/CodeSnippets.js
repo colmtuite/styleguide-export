@@ -31,6 +31,7 @@ export const transformationClassesCode = `<p class="textTransform-lowercase">...
 <p class="textTransform-uppercase">...</p>
 <p class="textTransform-capitalize">...</p>`;
 
+
 // Lists
 export const orderedListCode = `<ol class="list list--ordered">
     <li>...</li>
@@ -47,6 +48,26 @@ export const unorderedListCode = `<ul class="list list--unordered">
 export const basicAvatarsCode = `<div class="avatar avatar--m" title="Dean Blacc" style="...">
 <div class="avatar-img" style="..."></div>
 <div class="avatar-initials">...</div>`;
+
+export const avatarSizesCode = `<div class="avatar avatar--xs" title="Dean Blacc" style="...">
+    <div class="avatar-img" style="..."></div>
+    <div class="avatar-initials">...</div>
+</div>
+
+<div class="avatar avatar--s" title="Dean Blacc" style="...">
+    <div class="avatar-img" style="..."></div>
+    <div class="avatar-initials">...</div>
+</div>
+
+<div class="avatar avatar--m" title="Dean Blacc" style="...">
+    <div class="avatar-img" style="..."></div>
+    <div class="avatar-initials">...</div>
+</div>
+
+<div class="avatar avatar--l" title="Dean Blacc" style="...">
+    <div class="avatar-img" style="..."></div>
+    <div class="avatar-initials">...</div>
+</div>`;
 
 
 // Layout code snippets
