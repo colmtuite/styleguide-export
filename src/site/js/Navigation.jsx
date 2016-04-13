@@ -36,7 +36,7 @@ const menus = [
 
 export default function Navigation() {
     return (
-        <div>
+        <div className="position-relative">
             { menus.map(({ title, items }, i) => <NavigationMenu title={title} items={items} key={i} />) }
         </div>
     );

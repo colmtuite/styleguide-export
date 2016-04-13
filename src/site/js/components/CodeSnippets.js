@@ -168,7 +168,7 @@ export const buttonGroupCode = `<div class="buttonGroup">
 </div>`;
 
 //
-// Cards snippets
+// Cards
 // -------------------------
 
 export const projectCardCode = `<div class="position-relative borderWidth-1 borderStyle-solid borderColor-smoke borderRadius-m bg-snow hideChildren" style="width: 260px;">
@@ -190,7 +190,44 @@ export const projectCardCode = `<div class="position-relative borderWidth-1 bord
 </div>`;
 
 //
-// Layout code snippets
+// Form elements
+// -------------------------
+
+export const inputSizesCode = `<input class="input input--xl" type="text">
+<input class="input input--l" type="text">
+<input class="input input--m" type="text">
+<input class="input input--s" type="text">`;
+
+export const inputStyleCode = '<input class="input input--m input-default" type="text">';
+
+export const inputWithIconCode = `<div className="uiIcon uiIcon--m">
+    <input className="input input--m input--default" type="text" placeholder="..." />
+    <svg>...</svg>
+</div>`;
+
+export const disabledInputCode = '<input class="input input--m input-default is-disabled" type="text" disabled>';
+
+export const textareaCode = '<textarea class="textarea textarea--m textarea--default"></textarea>';
+
+export const textareaWithIconCode = `<div class="uiIcon uiIcon--m uiIcon--textarea">
+    <textarea class="textarea textarea--m textarea--default" placeholder="..."></textarea>
+    <svg>...</svg>
+</div>`;
+
+export const growingTextarea = '<textarea class="textarea textarea--growing textarea--invisible"></textarea>';
+
+export const inpitWithContextCode = `<div class="inputGroup inputGroup--m">
+    <div>
+        <input class="input input--m input--default" type="text">
+    </div>
+
+    <div>
+        <div class="inputGroup-context">@marvelapp.com</div>
+    </div>
+</div>`;
+
+//
+// Layout
 // -------------------------
 
 export const pageWrapCode = `<div class="pageWrap pageWrap--s">...</div>

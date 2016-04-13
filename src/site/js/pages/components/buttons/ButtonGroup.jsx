@@ -7,7 +7,7 @@ import { buttonGroupCode } from '~/components/CodeSnippets.js';
 
 export default function ButtonGroup() {
     return (
-        <section className="marginBottom-xl">
+        <section className="marginBottom-m">
             <div className="marginBottom-l">
                 <SectionTitle sectionTitle={ "Button group" } />
 
