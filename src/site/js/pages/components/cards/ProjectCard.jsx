@@ -3,7 +3,7 @@ import SectionTitle from '~/components/SectionTitle';
 import SectionDescription from '~/components/SectionDescription';
 import SectionExample from '~/components/SectionExample';
 import SectionCode from '~/components/SectionCode';
-import { buttonSizesCode } from '~/components/CodeSnippets.js';
+import { projectCardCode } from '~/components/CodeSnippets.js';
 
 export default function ProjectCard() {
     return (
@@ -42,7 +42,7 @@ export default function ProjectCard() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={ buttonSizesCode } />
+            <SectionCode code={ projectCardCode } />
         </section>
     );
 }
