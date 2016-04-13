@@ -1,4 +1,7 @@
+//
 // Typography
+// -------------------------
+
 export const fontFamilyCode = '<p class="fontFamily-faktSoft">...</p>';
 
 export const fontSizesCode = `<p class="fontSize-xxl">...</p>
@@ -22,8 +25,10 @@ export const transformationClassesCode = `<p class="textTransform-lowercase">...
 <p class="textTransform-uppercase">...</p>
 <p class="textTransform-capitalize">...</p>`;
 
-
+//
 // Lists
+// -------------------------
+
 export const orderedListCode = `<ol class="list list--ordered">
     <li>...</li>
     <li>...</li>
@@ -34,8 +39,10 @@ export const unorderedListCode = `<ul class="list list--unordered">
     <li>...</li>
 </ul>`;
 
-
+//
 // Avatars
+// -------------------------
+
 export const basicAvatarsCode = `<div class="avatar avatar--m" title="Dean Blacc" style="...">
 <div class="avatar-img" style="..."></div>
 <div class="avatar-initials">...</div>`;
@@ -77,8 +84,93 @@ export const customAvatarSizesCode = `<div style="width: 200px; height: 200px;">
     </div>
 </div>`;
 
+//
+// Buttons
+// -------------------------
 
+export const buttonSizesCode = `<button class="button button--xl button--flat bg-marvel">...</button>
+<button class="button button--l button--flat bg-marvel">...</button>
+<button class="button button--m button--flat bg-marvel">...</button>
+<button class="button button--s button--flat bg-marvel">...</button>`;
+
+export const flatButtonCode = `<button class="button button--m button--flat bg-marvel">...</button>
+<button class="button button--m button--flat bg-positive">...</button>`;
+
+export const ghostButtonCode = '<button class="button button--m button--ghost bg-marvel--hover" type="button">...</button>';
+
+export const outlinedButtonCode = '<button class="button button--m button--outlined bg-white bg-marvel--hover" type="button">...</button>';
+
+export const ghostButtonReversedCode = '<button class="button button--m button--ghost bg-white--hover is-reversed" type="button">...</button>';
+
+export const statefulButtonsCode = `<button class="button button--m button--ghost bg-negative--hover is-sad">...</button>
+
+<!-- Add classes "has-succeeded" and "has-responded" on click -->
+<button class="button button--m button--flat button--stateful bg-positive">
+    <span>Response</span>
+</button>
+
+<!-- Add class "is-loading" on click until the server responds,
+then "is-delayed", "has-succeeded" and "has-responded" -->
+<button class="button button--m button--flat button--stateful bg-positive">
+    <span>Response</span>
+</button>
+
+<!-- Add class "is-loading" on click until the server responds,
+then "is-delayed", "has-failed" and "has-responded" -->
+<button class="button button--m button--flat button--stateful bg-marvel">
+    <span>Response</span>
+</button>`;
+
+export const buttonWithIconCode = `<button class="button button--xl">
+    <span class="display-inlineBlock marginRight-xs">
+        <svg class="verticalAlign-middle">...</svg>
+    </span>
+
+    <span class="display-inlineBlock">...</span>
+</button>`;
+
+export const buttonWithLoneIconCode = `<button class="button button--xl">
+    <span class="display-inlineBlock marginRight-xs">
+        <svg class="verticalAlign-middle">...</svg>
+    </span>
+
+    <span class="display-inlineBlock">...</span>
+</button>`;
+
+export const disabledButtonCode = '<button class="button button--m button--flat bg-marvel is-disabled" disabled>Button</button>';
+
+export const buttonWithLogoCode = `<button class="button button--xl">
+    <span class="display-inlineBlock marginRight-xs">
+        <svg class="verticalAlign-middle">...</svg>
+    </span>
+
+    <span class="display-inlineBlock">...</span>
+</button>`;
+
+export const buttonWaitingCode = '<button class="button button--m button--flat bg-marvel is-disabled" disabled>Button</button>';
+
+export const buttonGroupCode = `<div class="buttonGroup">
+    <div>
+        <button class="button button--m button--ghost bg-marvel--hover"></button>
+    </div>
+
+    <div>
+        <button class="button button--m button--ghost bg-marvel--hover"></button>
+    </div>
+
+    <div>
+        <button class="button button--m button--ghost bg-marvel--hover"></button>
+    </div>
+
+    <div>
+        <button class="button button--m button--ghost bg-marvel--hover"></button>
+    </div>
+</div>`;
+
+//
 // Layout code snippets
+// -------------------------
+
 export const pageWrapCode = `<div class="pageWrap pageWrap--s">...</div>
 <div class="pageWrap pageWrap--m">...</div>
 <div class="pageWrap pageWrap--l">...</div>`;
