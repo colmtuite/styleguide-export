@@ -1,9 +1,12 @@
 import React from 'react';
+import PageTitle from '~/components/PageTitle';
+import ProjectCard from '~/pages/components/cards/ProjectCard';
 
-export default function Cards() {
+export default function Buttons() {
     return (
-        <div className="marginTop-l marginBottom-xl">
-            <h2 className="fontSize-xxxl">Cards</h2>
+        <div>
+            <PageTitle title="Cards" />
+            <ProjectCard />
         </div>
     );
 }
