@@ -3,7 +3,7 @@ import SectionTitle from '~/components/SectionTitle';
 import SectionDescription from '~/components/SectionDescription';
 import SectionExample from '~/components/SectionExample';
 import SectionCode from '~/components/SectionCode';
-import { inpitWithContextCode } from '~/components/CodeSnippets.js';
+import { inputWithContextCode } from '~/components/CodeSnippets.js';
 
 export default function InputWithContext() {
     return (
@@ -58,7 +58,7 @@ export default function InputWithContext() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={ inpitWithContextCode } />
+            <SectionCode code={ inputWithContextCode } />
         </section>
     );
 }

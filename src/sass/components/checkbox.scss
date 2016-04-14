@@ -2,14 +2,14 @@
 // Checkboxes and radio buttons
 // -------------------------
 
-$checkBox-size: 16px;
+$checkBox-size: 30px;
 
 .form-control {
     @extend .position-relative;
     @extend .display-inlineBlock;
     @extend .cursor-pointer;
 
-    padding-left: $checkBox-size + 10;
+    padding-left: $checkBox-size + 15;
     line-height: $checkBox-size;
 }
 
@@ -23,28 +23,31 @@ $checkBox-size: 16px;
     @extend .posPinTL;
     @extend .display-block;
 
-    @extend .bg-snow;
-    @extend .borderWidth-1;
-    @extend .borderStyle-solid;
-    @extend .borderColor-smoke;
+    @extend .bg-white;
 
     @extend .userSelect-none;
     @extend .boxSizing-borderBox;
 
-    @extend .transitionDuration-m;
+    @extend .transitionDuration-xl;
     @extend .transitionProperty-all;
+	@extend .transitionTimingFunction-cb--scaleIn;
 
     width: $checkBox-size;
     height: $checkBox-size;
+    box-shadow: inset 0 0 0 2px $smoke;
 }
 
 .checkbox-tick {
     @extend .opacity-0;
     @extend .fill-white;
-    @extend .absolutelyCenter;
 
-    @extend .transitionDuration-s;
+    @extend .transitionDuration-xl;
     @extend .transitionProperty-all;
+	@extend .transitionTimingFunction-cb--scaleIn;
+
+    width: $checkBox-size;
+    height: $checkBox-size;
+    transform: scale(0);
 }
 
 .radio-tick {
@@ -56,12 +59,13 @@ $checkBox-size: 16px;
     @extend .absolutelyCenter;
     @extend .borderRadius-circle;
 
-    @extend .transitionDuration-s;
+    @extend .transitionDuration-xl;
     @extend .transitionProperty-all;
+	@extend .transitionTimingFunction-cb--scaleIn;
 }
 
 .form-control:hover .form-control-indicator {
-    @extend .bg-smoke;
+    @extend .bg-snow--d;
 }
 
 //
@@ -69,8 +73,10 @@ $checkBox-size: 16px;
 // -------------------------
 
 .form-control input:checked ~ .form-control-indicator {
-    @extend .bg-positive;
-    @extend .borderColor-positive;
+    box-shadow: inset 0 0 0 $checkBox-size / 2 $positive;
+    @extend .transitionDuration-xl;
+    @extend .transitionProperty-all;
+	@extend .transitionTimingFunction-cb--scaleIn;
 }
 
 //
@@ -78,8 +84,10 @@ $checkBox-size: 16px;
 // -------------------------
 
 .form-control input:active ~ .form-control-indicator {
-    @extend .bg-positive--d;
-    @extend .borderColor-positive--d;
+    box-shadow: inset 0 0 0 $checkBox-size / 2 $green--d;
+    @extend .transitionDuration-xl;
+    @extend .transitionProperty-all;
+	@extend .transitionTimingFunction-cb--scaleIn;
 }
 
 //
@@ -87,11 +95,16 @@ $checkBox-size: 16px;
 // -------------------------
 
 .checkbox .form-control-indicator {
-    @extend .borderRadius-m;
+    @extend .borderRadius-circle;
 }
 
 .checkbox input:checked ~ .form-control-indicator .checkbox-tick {
     @extend .opacity-100;
+    @extend .transitionDelay-l;
+    @extend .transitionDuration-xl;
+    @extend .transitionProperty-all;
+	@extend .transitionTimingFunction-cb--scaleIn;
+    transform: scale(1);
 }
 
 //

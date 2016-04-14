@@ -8,6 +8,8 @@ import Textarea from '~/pages/components/forms/Textarea';
 import TextareaWithIcon from '~/pages/components/forms/TextareaWithIcon';
 import GrowingTextarea from '~/pages/components/forms/GrowingTextarea';
 import InputWithContext from '~/pages/components/forms/InputWithContext';
+import SelectMenu from '~/pages/components/forms/SelectMenu';
+import Checkbox from '~/pages/components/forms/Checkbox';
 
 export default function FormElements() {
     return (
@@ -21,6 +23,8 @@ export default function FormElements() {
             <TextareaWithIcon />
             <GrowingTextarea />
             <InputWithContext />
+            <SelectMenu />
+            <Checkbox />
         </div>
     );
 }

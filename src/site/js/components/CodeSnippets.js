@@ -216,7 +216,7 @@ export const textareaWithIconCode = `<div class="uiIcon uiIcon--m uiIcon--textar
 
 export const growingTextarea = '<textarea class="textarea textarea--growing textarea--invisible"></textarea>';
 
-export const inpitWithContextCode = `<div class="inputGroup inputGroup--m">
+export const inputWithContextCode = `<div class="inputGroup inputGroup--m">
     <div>
         <input class="input input--m input--default" type="text">
     </div>
@@ -225,6 +225,20 @@ export const inpitWithContextCode = `<div class="inputGroup inputGroup--m">
         <div class="inputGroup-context">@marvelapp.com</div>
     </div>
 </div>`;
+
+export const selectMenuCode = `<div class="select select--default select--m">
+    <select></select>
+</div>`;
+
+export const checkboxCode = `<label className="form-control checkbox">
+    <input type="checkbox" />
+
+    <span className="form-control-indicator">
+        <svg>...</svg>
+    </span>
+
+    Check this custom checkbox
+</label>`;
 
 //
 // Layout
