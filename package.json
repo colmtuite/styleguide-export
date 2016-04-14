@@ -21,6 +21,7 @@
     "url": "https://github.com/marvelapp/styleguide/issues"
   },
   "dependencies": {
+    "classnames": "^2.2.3",
     "eyeglass": "^0.8.1",
     "highlight.js": "^9.2.0",
     "react": "^0.14.8",
