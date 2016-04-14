@@ -174,14 +174,14 @@ export const buttonGroupCode = `<div class="buttonGroup">
 export const projectCardCode = `<div class="position-relative borderWidth-1 borderStyle-solid borderColor-smoke borderRadius-m bg-snow hideChildren" style="width: 260px;">
     <div class="display-table textAlign-center" style="height: 200px;">
         <div class="display-tableCell verticalAlign-middle">
-            <a class="button button--m button--flat bg-marvel hideChildren-child" href="#">View project</a>
+            <a class="button button--m button--flat bg-marvel hideChildren-child">...</a>
         </div>
     </div>
 
     <div class="bg-white padding-s textAlign-center borderWidth-0 borderTopWidth-1 borderStyle-solid borderColor-smoke borderRadiusBottom-m">
         <span class="display-block fontSize-m lineHeight-s">...</span>
 
-        <span class="display-block fontSize-xs lineHeight-xs c-silver">6 screens</span>
+        <span class="display-block fontSize-xs lineHeight-xs c-silver">...</span>
 
         <a class="link link--light">
             <svg>...</svg>
