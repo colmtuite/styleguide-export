@@ -7,11 +7,11 @@ export default function Popovers() {
             <h2 className="fontSize-xxxl marginBottom-xl">Popovers</h2>
 
             <div className="marginBottom-m">
-                <Popover />
+                <Popover hello />
             </div>
 
             <div className="marginBottom-m">
-                <Popover padded/>
+                <Popover padded />
             </div>
         </div>
     );
