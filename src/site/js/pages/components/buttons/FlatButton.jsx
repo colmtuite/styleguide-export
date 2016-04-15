@@ -21,24 +21,6 @@ export default function FlatButton() {
             <SectionExample>
                 <div className="padding-m inline">
                     <div className="marginRight-m">
-                        <Button kind="flat" size="medium" color="green" type="button">
-                            Please work
-                        </Button>
-                    </div>
-
-                    <div className="marginRight-m">
-                        <Button type="button">
-                            Please work
-                        </Button>
-                    </div>
-
-                    <div className="marginRight-m">
-                        <Button size="medium" color="red" type="button">
-                            Fuck you React
-                        </Button>
-                    </div>
-
-                    <div className="marginRight-m">
                         <a className="button button--m button--flat bg-marvel" href="#" role="button">Default</a>
                     </div>
 
