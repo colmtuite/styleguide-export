@@ -4,15 +4,22 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRedirect, hashHistory } from 'react-router';
 
+// App pages
+// -------------------------
+
 import App from '~/App';
 import NoMatch from '~/pages/404';
 
-// Overview
+// Overview pages
+// -------------------------
+
 import Introduction from '~/pages/overview/introduction/Introduction';
 import CodeGuidelines from '~/pages/overview/code-guidelines/CodeGuidelines';
 import NamingConvention from '~/pages/overview/naming-convention/NamingConvention';
 
 // Design pages
+// -------------------------
+
 import ColorScheme from '~/pages/design/colors/ColorScheme';
 import Typography from '~/pages/design/typography/Typography';
 import BorderRadius from '~/pages/design/border-radius/BorderRadius';
@@ -20,6 +27,8 @@ import BoxShadow from '~/pages/design/box-shadow/BoxShadow';
 import Transitions from '~/pages/design/transitions/Transitions';
 
 // Components pages
+// -------------------------
+
 import Avatars from '~/pages/components/avatars/Avatars';
 import Buttons from '~/pages/components/buttons/Buttons';
 import Cards from '~/pages/components/cards/Cards';
@@ -30,7 +39,14 @@ import Lists from '~/pages/components/lists/Lists';
 import Modals from '~/pages/components/modals/Modals';
 import Popovers from '~/pages/components/popovers/Popovers';
 
-// Theme pages
+// Utility pages
+// -------------------------
+
+import Positioning from '~/pages/utility/positioning/Positioning';
+import HideElements from '~/pages/utility/hide-elements/HideElements';
+import CenterElements from '~/pages/utility/center-elements/CenterElements';
+import TextManipulation from '~/pages/utility/text-manipulation/TextManipulation';
+import Scrollbar from '~/pages/utility/scrollbar/Scrollbar';
 
 export function render(container) {
     ReactDOM.render(
@@ -66,6 +82,15 @@ export function render(container) {
                 <Route path="lists" component={Lists} />
                 <Route path="Modals" component={Modals} />
                 <Route path="Popovers" component={Popovers} />
+            </Route>
+
+            <Route path="/utility" component={App}>
+                <IndexRedirect to="positioning" />
+                <Route path="positioning" component={Positioning} />
+                <Route path="hide-elements" component={HideElements} />
+                <Route path="center-elements" component={CenterElements} />
+                <Route path="text-manipulation" component={TextManipulation} />
+                <Route path="scrollbar" component={Scrollbar} />
             </Route>
 
             <Route path="*" component={NoMatch} />

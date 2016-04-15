@@ -37,7 +37,7 @@ const menus = [
         items: [
             { title: 'Scrollbar', url: '/utility/scrollbar' },
             { title: 'Hide elements', url: '/utility/hide-elements' },
-            { title: 'Center elements', url: '/utility/hide-elements' },
+            { title: 'Center elements', url: '/utility/center-elements' },
             { title: 'Text manipulation', url: '/utility/text-manipulation' },
             { title: 'Positioning', url: '/utility/positioning' },
         ],
