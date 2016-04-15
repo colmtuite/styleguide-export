@@ -1,10 +1,10 @@
 import React from 'react';
 import PageTitle from '~/components/PageTitle';
 
-export default function Modals() {
+export default function NamingConvention() {
     return (
         <div>
-            <PageTitle title="Modals" />
+            <PageTitle title="Naming convention" />
         </div>
     );
 }

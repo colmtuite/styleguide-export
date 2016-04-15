@@ -7,6 +7,11 @@ import { Router, Route, IndexRedirect, hashHistory } from 'react-router';
 import App from '~/App';
 import NoMatch from '~/pages/404';
 
+// Overview
+import Introduction from '~/pages/overview/introduction/Introduction';
+import CodeGuidelines from '~/pages/overview/code-guidelines/CodeGuidelines';
+import NamingConvention from '~/pages/overview/naming-convention/NamingConvention';
+
 // Design pages
 import ColorScheme from '~/pages/design/colors/ColorScheme';
 import Typography from '~/pages/design/typography/Typography';
@@ -21,7 +26,6 @@ import Links from '~/pages/components/links/Links';
 import Lists from '~/pages/components/lists/Lists';
 import Modals from '~/pages/components/modals/Modals';
 import Popovers from '~/pages/components/popovers/Popovers';
-import Tables from '~/pages/components/tables/Tables';
 
 // Theme pages
 
@@ -30,6 +34,13 @@ export function render(container) {
         <Router history={hashHistory}>
             <Route path="/" component={App}>
                 <IndexRedirect to="design/colors" />
+            </Route>
+
+            <Route path="/overview" component={App}>
+                <IndexRedirect to="introduction" />
+                <Route path="introduction" component={Introduction} />
+                <Route path="code-guidelines" component={CodeGuidelines} />
+                <Route path="naming-convention" component={NamingConvention} />
             </Route>
 
             <Route path="/design" component={App}>
@@ -49,7 +60,6 @@ export function render(container) {
                 <Route path="lists" component={Lists} />
                 <Route path="Modals" component={Modals} />
                 <Route path="Popovers" component={Popovers} />
-                <Route path="Tables" component={Tables} />
             </Route>
 
             <Route path="*" component={NoMatch} />

@@ -9,10 +9,9 @@ const menus = [
            { title: 'Introduction', url: '/overview/introduction' },
            { title: 'Code Guidelines', url: '/overview/code-guidelines' },
            { title: 'Naming Convention', url: '/overview/naming-convention' },
-           { title: 'Rules', url: '/overview/rules' },
         ],
     }, {
-        title: 'Theme',
+        title: 'Design',
         items: [
             { title: 'Colors', url: '/design/colors' },
             { title: 'Typography', url: '/design/typography' },
@@ -32,7 +31,6 @@ const menus = [
             { title: 'Lists', url: '/components/lists' },
             { title: 'Modals', url: '/components/modals' },
             { title: 'Popovers', url: '/components/popovers' },
-            { title: 'Tables', url: '/components/tables' },
         ],
     }, {
         title: 'Utility',
