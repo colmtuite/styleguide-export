@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 import { Router, Route, IndexRedirect, hashHistory } from 'react-router';
 
 import App from '~/App';
+import NoMatch from '~/pages/404';
 
 // Design pages
 import ColorScheme from '~/pages/design/colors/ColorScheme';
@@ -21,7 +22,8 @@ import Lists from '~/pages/components/lists/Lists';
 import Modals from '~/pages/components/modals/Modals';
 import Popovers from '~/pages/components/popovers/Popovers';
 import Tables from '~/pages/components/tables/Tables';
-import NoMatch from '~/pages/404';
+
+// Theme pages
 
 export function render(container) {
     ReactDOM.render(
