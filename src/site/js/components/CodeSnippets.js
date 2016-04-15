@@ -253,6 +253,21 @@ export const checkboxCode = `<label className="form-control checkbox">
 
 export const blueLinkCode = '<a class="link link--blue" href="#">...</a>';
 
+export const lightLinkCode = '<a class="link link--light" href="#">...</a>';
+
+export const lightLinkReversedCode = '<a class="link link--lightReversed" href="#">...</a>';
+
+export const negativeLinkCode = '<a class="link link--negative" href="#">Negative link</a>';
+
+export const snowBackgroundLinkCode = '<a class="padding-s link link--snowBg" href="#">...</a>';
+
+export const colourfulLinksCode = `<a class="link link--blue" href="#">...</a>
+<a class="link link--green" href="#">...</a>
+<a class="link link--orange" href="#">...</a>
+<a class="link link--pink" href="#">...</a>
+<a class="link link--purple" href="#">...</a>
+<a class="link link--red" href="#">...</a>`;
+
 //
 // Layout
 // -------------------------
