@@ -1,10 +1,10 @@
 import React from 'react';
 import PageTitle from '~/components/PageTitle';
 
-export default function Modals() {
+export default function HideElements() {
     return (
         <div>
-            <PageTitle title="Modals" />
+            <PageTitle title="Hide Elements" />
         </div>
     );
 }

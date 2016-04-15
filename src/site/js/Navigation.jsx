@@ -9,13 +9,15 @@ const menus = [
            { title: 'Introduction', url: '/overview/introduction' },
            { title: 'Code Guidelines', url: '/overview/code-guidelines' },
            { title: 'Naming Convention', url: '/overview/naming-convention' },
-           { title: 'Rules', url: '/overview/rules' },
         ],
     }, {
         title: 'Design',
         items: [
             { title: 'Colors', url: '/design/colors' },
             { title: 'Typography', url: '/design/typography' },
+            { title: 'Border Radius', url: '/design/border-radius' },
+            { title: 'Box Shadow', url: '/design/box-shadow' },
+            { title: 'Transitions', url: '/design/transitions' },
         ],
     }, {
         title: 'Components',
@@ -29,7 +31,15 @@ const menus = [
             { title: 'Lists', url: '/components/lists' },
             { title: 'Modals', url: '/components/modals' },
             { title: 'Popovers', url: '/components/popovers' },
-            { title: 'Tables', url: '/components/tables' },
+        ],
+    }, {
+        title: 'Utility',
+        items: [
+            { title: 'Scrollbar', url: '/utility/scrollbar' },
+            { title: 'Hide elements', url: '/utility/hide-elements' },
+            { title: 'Center elements', url: '/utility/center-elements' },
+            { title: 'Text manipulation', url: '/utility/text-manipulation' },
+            { title: 'Positioning', url: '/utility/positioning' },
         ],
     },
 ];

@@ -1,10 +1,10 @@
 import React from 'react';
 import PageTitle from '~/components/PageTitle';
 
-export default function Modals() {
+export default function Positioning() {
     return (
         <div>
-            <PageTitle title="Modals" />
+            <PageTitle title="Positioning" />
         </div>
     );
 }

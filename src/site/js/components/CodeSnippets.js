@@ -200,10 +200,17 @@ export const inputSizesCode = `<input class="input input--xl" type="text">
 
 export const inputStyleCode = '<input class="input input--m input-default" type="text">';
 
-export const inputWithIconCode = `<div className="uiIcon uiIcon--m">
-    <input className="input input--m input--default" type="text" placeholder="..." />
-    <svg>...</svg>
-</div>`;
+export const inputWithIconCode = `<label class="componentIcon componentIcon--m componentIcon--input">
+    <input class="input input--default" type="text" placeholder="Placeholder text">
+
+    <div class="componentIconContainer">
+        <div class="height-100 display-table">
+            <div class="display-tableCell verticalAlign-middle">
+                <svg class="svgIcon fill-smoke--d display-block"></svg>
+            </div>
+        </div>
+    </div>
+</label>`;
 
 export const disabledInputCode = '<input class="input input--m input-default is-disabled" type="text" disabled>';
 
@@ -239,6 +246,27 @@ export const checkboxCode = `<label className="form-control checkbox">
 
     Check this custom checkbox
 </label>`;
+
+//
+// Links
+// -------------------------
+
+export const blueLinkCode = '<a class="link link--blue" href="#">...</a>';
+
+export const lightLinkCode = '<a class="link link--light" href="#">...</a>';
+
+export const lightLinkReversedCode = '<a class="link link--lightReversed" href="#">...</a>';
+
+export const negativeLinkCode = '<a class="link link--negative" href="#">Negative link</a>';
+
+export const snowBackgroundLinkCode = '<a class="padding-s link link--snowBg" href="#">...</a>';
+
+export const colourfulLinksCode = `<a class="link link--blue" href="#">...</a>
+<a class="link link--green" href="#">...</a>
+<a class="link link--orange" href="#">...</a>
+<a class="link link--pink" href="#">...</a>
+<a class="link link--purple" href="#">...</a>
+<a class="link link--red" href="#">...</a>`;
 
 //
 // Layout
