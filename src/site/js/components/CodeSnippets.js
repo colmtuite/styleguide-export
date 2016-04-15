@@ -248,6 +248,12 @@ export const checkboxCode = `<label className="form-control checkbox">
 </label>`;
 
 //
+// Links
+// -------------------------
+
+export const blueLinkCode = '<a class="link link--blue" href="#">...</a>';
+
+//
 // Layout
 // -------------------------
 

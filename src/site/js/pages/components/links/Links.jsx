@@ -1,9 +1,12 @@
 import React from 'react';
+import PageTitle from '~/components/PageTitle';
+import BlueLink from '~/pages/components/links/BlueLink';
 
 export default function Links() {
     return (
-        <div className="marginTop-l marginBottom-xl">
-            <h2 className="fontSize-xxxl">Links</h2>
+        <div>
+            <PageTitle title="Links" />
+            <BlueLink />
         </div>
     );
 }
