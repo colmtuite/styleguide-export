@@ -15,6 +15,9 @@ import NamingConvention from '~/pages/overview/naming-convention/NamingConventio
 // Design pages
 import ColorScheme from '~/pages/design/colors/ColorScheme';
 import Typography from '~/pages/design/typography/Typography';
+import BorderRadius from '~/pages/design/border-radius/BorderRadius';
+import BoxShadow from '~/pages/design/box-shadow/BoxShadow';
+import Transitions from '~/pages/design/transitions/Transitions';
 
 // Components pages
 import Avatars from '~/pages/components/avatars/Avatars';
@@ -47,6 +50,9 @@ export function render(container) {
                 <IndexRedirect to="colors" />
                 <Route path="colors" component={ColorScheme} />
                 <Route path="typography" component={Typography} />
+                <Route path="border-radius" component={BorderRadius} />
+                <Route path="box-shadow" component={BoxShadow} />
+                <Route path="transitions" component={Transitions} />
             </Route>
 
             <Route path="/components" component={App}>
