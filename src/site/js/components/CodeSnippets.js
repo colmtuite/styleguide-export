@@ -200,10 +200,17 @@ export const inputSizesCode = `<input class="input input--xl" type="text">
 
 export const inputStyleCode = '<input class="input input--m input-default" type="text">';
 
-export const inputWithIconCode = `<div className="uiIcon uiIcon--m">
-    <input className="input input--m input--default" type="text" placeholder="..." />
-    <svg>...</svg>
-</div>`;
+export const inputWithIconCode = `<label class="componentIcon componentIcon--m componentIcon--input">
+    <input class="input input--default" type="text" placeholder="Placeholder text">
+
+    <div class="componentIconContainer">
+        <div class="height-100 display-table">
+            <div class="display-tableCell verticalAlign-middle">
+                <svg class="svgIcon fill-smoke--d display-block"></svg>
+            </div>
+        </div>
+    </div>
+</label>`;
 
 export const disabledInputCode = '<input class="input input--m input-default is-disabled" type="text" disabled>';
 

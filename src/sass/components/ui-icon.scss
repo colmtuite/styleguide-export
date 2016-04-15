@@ -182,3 +182,195 @@ $icon-s: 18px;
 .uiIcon .textarea.has-error:focus + .svgIcon {
     @extend .fill-negative;
 }
+
+
+
+//
+// New way of doing icons in components
+// Just to clarify — those "+1s" and "-1s" are to compensate for the font
+// -------------------------
+
+$componentPadding--s: 10px;
+$componentPadding--m: 12px;
+$componentPadding--l: 18px;
+$componentPadding--xl: 24px;
+
+.componentIcon {
+    @extend .display-inlineBlock;
+}
+
+.componentIconContainer {
+    @extend .height-100;
+    @extend .float-left;
+    @extend .display-block;
+    @extend .position-relative;
+
+    @extend .transitionDuration-s;
+    @extend .transitionProperty-all;
+    @extend .transitionTimingFunction-ease-in-out;
+}
+
+// Input & textarea
+// -------------------------
+
+.componentIcon--input {
+    @extend .cf;
+    @extend .cursor-text;
+}
+
+.componentIcon--input .input,
+.componentIcon--input .textarea {
+    @extend .float-right;
+    box-shadow: inset 0 1px 0 0 $smoke, inset -1px 0 0 $smoke, inset 0 -1px 0 0 $smoke;
+}
+
+.componentIcon--input .componentIconContainer {
+    box-shadow: inset 0 1px 0 0 $smoke, inset 0 -1px 0 0 $smoke, inset 1px 0 0 $smoke;
+}
+
+.componentIcon--input:hover .input,
+.componentIcon--input:hover .textarea {
+    box-shadow: inset 0 1px 0 0 $smoke--xd, inset -1px 0 0 $smoke--xd, inset 0 -1px 0 0 $smoke--xd;
+}
+
+.componentIcon--input:hover .componentIconContainer {
+    box-shadow: inset 0 1px 0 0 $smoke--xd, inset 0 -1px 0 0 $smoke--xd, inset 1px 0 0 $smoke--xd;
+}
+
+.componentIcon--input .input:focus,
+.componentIcon--input .textarea:focus {
+    box-shadow: inset 0 1px 0 0 $marvel, inset -1px 0 0 $marvel, inset 0 -1px 0 0 $marvel;
+}
+
+.componentIcon--input .input:focus + .componentIconContainer,
+.componentIcon--input .textarea:focus + .componentIconContainer {
+    box-shadow: inset 0 1px 0 0 $marvel, inset 0 -1px 0 0 $marvel, inset 1px 0 0 $marvel;
+}
+
+.componentIcon--input .input:focus + .componentIconContainer .svgIcon,
+.componentIcon--input .textarea:focus + .componentIconContainer .svgIcon {
+    @extend .fill-marvel;
+}
+
+// Button
+// -------------------------
+
+.componentIcon .button {
+    @extend .cf;
+}
+
+// Small
+// -------------------------
+
+.componentIcon--s {
+    @extend .height-control--s;
+}
+
+.componentIcon--s .button {
+    @extend .button--s;
+    padding-left: $componentPadding--s;
+    padding-right: $componentPadding--s;
+}
+
+.componentIcon--s .input {
+    @extend .borderRadiusRight-s;
+    @extend .input--s;
+    padding-left: $componentPadding--s - 1;
+    padding-right: $componentPadding--s;
+}
+
+.componentIcon--input.componentIcon--s .componentIconContainer {
+    @extend .borderRadiusLeft-s;
+    padding-left: $componentPadding--s + 1;
+}
+
+.componentIcon--s:not(.componentIcon--input) .componentIconContainer {
+    margin-right: $componentPadding--s - 1;
+}
+
+// Medium
+// -------------------------
+
+.componentIcon--m {
+    @extend .height-control--m;
+}
+
+.componentIcon--m .button {
+    @extend .button--m;
+    padding-left: $componentPadding--m;
+    padding-right: $componentPadding--m;
+}
+
+.componentIcon--m .input {
+    @extend .borderRadiusRight-s;
+    @extend .input--m;
+    padding-left: $componentPadding--m - 1;
+    padding-right: $componentPadding--m;
+}
+
+.componentIcon--input.componentIcon--m .componentIconContainer {
+    @extend .borderRadiusLeft-s;
+    padding-left: $componentPadding--m + 1;
+}
+
+.componentIcon--m:not(.componentIcon--input) .componentIconContainer {
+    margin-right: $componentPadding--m - 1;
+}
+
+// Large
+// -------------------------
+
+.componentIcon--l {
+    @extend .height-control--l;
+}
+
+.componentIcon--l .button {
+    @extend .button--l;
+    padding-left: $componentPadding--l;
+    padding-right: $componentPadding--l;
+}
+
+.componentIcon--l .input {
+    @extend .borderRadiusRight-m;
+    @extend .input--l;
+    padding-left: $componentPadding--l - 1;
+    padding-right: $componentPadding--l;
+}
+
+.componentIcon--input.componentIcon--l .componentIconContainer {
+    @extend .borderRadiusLeft-m;
+    padding-left: $componentPadding--l + 1;
+}
+
+.componentIcon--l:not(.componentIcon--input) .componentIconContainer {
+    margin-right: $componentPadding--l - 1;
+}
+
+// Extra Large
+// -------------------------
+
+.componentIcon--xl {
+    @extend .height-control--xl;
+}
+
+.componentIcon--xl .button {
+    @extend .button--xl;
+    padding-left: $componentPadding--xl;
+    padding-right: $componentPadding--xl;
+}
+
+.componentIcon--xl .input {
+    @extend .borderRadiusRight-m;
+    @extend .input--xl;
+    padding-left: $componentPadding--xl - 1;
+    padding-right: $componentPadding--xl;
+}
+
+.componentIcon--input.componentIcon--xl .componentIconContainer {
+    @extend .borderRadiusLeft-m;
+    padding-left: $componentPadding--xl + 1;
+}
+
+.componentIcon--xl:not(.componentIcon--input) .componentIconContainer {
+    margin-right: $componentPadding--xl - 1;
+}
