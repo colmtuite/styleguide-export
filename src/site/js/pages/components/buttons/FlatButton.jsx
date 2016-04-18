@@ -5,6 +5,7 @@ import SectionExample from '~/components/SectionExample';
 import SectionCode from '~/components/SectionCode';
 import InlineCode from '~/components/InlineCode';
 import { flatButtonCode } from '~/components/CodeSnippets.js';
+import Button from '~/../../js/components/Button.react';
 
 export default function FlatButton() {
     return (
