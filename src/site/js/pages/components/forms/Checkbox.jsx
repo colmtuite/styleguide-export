@@ -18,7 +18,7 @@ export default function Checkbox() {
 
             <SectionExample>
                 <div className="padding-m">
-                    <label className="form-control checkbox">
+                    <label className="form-control checkbox c-silver c-slate--hover userSelect-none">
                         <input type="checkbox" />
 
                         <span className="form-control-indicator">
@@ -27,7 +27,7 @@ export default function Checkbox() {
                             </svg>
                         </span>
 
-                        <span className="fontWeight-3 fontSize-m c-silver">Check this custom checkbox</span>
+                        <span className="link fontWeight-3 fontSize-m">Check this custom checkbox</span>
                     </label>
                 </div>
             </SectionExample>

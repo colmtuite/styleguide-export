@@ -339,3 +339,42 @@ export const gridSizeCode = `<div class="grid grid--m grid--2">
     <div>...</div>
     <div>...</div>
 </div>`;
+
+//
+// Theme classes
+// -------------------------
+
+export const borderRadiusCode = `<div class="borderRadius-s"></div>
+<div class="borderRadius-m"></div>
+<div class="borderRadius-l"></div>
+<div class="borderRadius-circle"></div>`;
+
+
+export const boxShadowCode = `<div class="boxShadow-distant"></div>
+<div class="boxShadow-deboss--hover"></div>
+<div class="boxShadow-emboss--hover"></div>
+<div class="boxShadow-raise--hover"></div>`;
+
+export const transitionsCode = '<div class="scaleUp--hover"></div>';
+
+//
+// Scrollbar
+// -------------------------
+
+export const scrollbarCode = `<div class="antiscroll-wrap">
+    <div class="antiscroll-inner">
+        <div>...</div>
+    </div>
+</div>`;
+
+//
+// Hide elements
+// -------------------------
+
+export const hideElementsCompletelyCode = '<div class="hidden"></div>';
+
+export const hideElementsVisuallyCode = '<div class="visuallyHidden"></div>';
+
+export const hideChildrenCode = `<div class="hideChildren">
+    <div class="hideChildren-child"></div>
+</div>`;
