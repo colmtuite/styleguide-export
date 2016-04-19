@@ -378,3 +378,9 @@ export const hideElementsVisuallyCode = '<div class="visuallyHidden"></div>';
 export const hideChildrenCode = `<div class="hideChildren">
     <div class="hideChildren-child"></div>
 </div>`;
+
+//
+// Text manipulation
+// -------------------------
+
+export const truncateTextCode = '<p class="truncateText">...</p>';
