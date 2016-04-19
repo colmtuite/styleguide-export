@@ -384,3 +384,13 @@ export const hideChildrenCode = `<div class="hideChildren">
 // -------------------------
 
 export const truncateTextCode = '<p class="truncateText">...</p>';
+
+//
+// Center elements
+// -------------------------
+
+export const horizontallyCenterElementsCode = '<div class="centered"></div>';
+
+export const verticallyCenterElementsCode = `<div style="height: 300px">
+    <div class="verticallyCenter">...</div>
+</div>`;
