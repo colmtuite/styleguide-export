@@ -20,7 +20,7 @@ import NamingConvention from '~/pages/overview/naming-convention/NamingConventio
 // Design pages
 // -------------------------
 
-import ColorScheme from '~/pages/design/colors/ColorScheme';
+import ColorScheme from '~/pages/design/colors/ColorScheme.react';
 import Typography from '~/pages/design/typography/Typography';
 import ThemeClasses from '~/pages/utility/theme-classes/ThemeClasses';
 

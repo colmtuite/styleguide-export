@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ColorBlock from '~/pages/design/colors/ColorBlock';
+import ColorBlock from '~/pages/design/colors/ColorBlock.react';
 import SectionDescription from '~/components/SectionDescription';
 import SectionTitle from '~/components/SectionTitle';
 
@@ -8,7 +8,7 @@ export default function BandColors() {
     return (
         <section className="marginBottom-xl">
             <div className="marginBottom-l">
-                <SectionTitle sectionTitle={ "Brand colors" } />
+                <SectionTitle sectionTitle={"Brand colors"} />
 
                 <SectionDescription>
                     Primary brand colors, used for elements that must reflect Marvel's brand.

@@ -7,10 +7,13 @@ export default function ReversibleGreys() {
     return (
         <section className="marginBottom-m">
             <div className="marginBottom-l">
-                <SectionTitle sectionTitle={ "Reversible grays" } />
+                <SectionTitle sectionTitle={"Reversible grays"} />
 
                 <SectionDescription>
-                    The gray colors are reversible. Each light gray color has a complementary dark gray color. The helps keep the colors well balanced and also makes it easier to implement light/dark themes.
+                    The gray colors are reversible. Each light gray color has
+                    a complementary dark gray color. The helps keep the colors
+                    well balanced and also makes it easier to implement
+                    light/dark themes.
                 </SectionDescription>
             </div>
 
@@ -19,10 +22,15 @@ export default function ReversibleGreys() {
                     <div className="position-relative borderRadius-m">
                         <div className="padding-m bg-white borderRadiusTop-s">
                             <div className="marginBottom-xs">
-                                <p className="fontSize-xl lineHeight-m">Light theme</p>
+                                <p className="fontSize-xl lineHeight-m">
+                                    Light theme
+                                </p>
                             </div>
 
-                            <p className="fontWeight-3 fontSize-m lineHeight-m c-silver">This subtle paragraph text color works equally well on a light or dark background.</p>
+                            <p className="fontWeight-3 fontSize-m lineHeight-m c-silver">
+                                This subtle paragraph text color works equally
+                                well on a light or dark background.
+                            </p>
                         </div>
 
                         <div className="padding-m bg-snow--d"></div>
@@ -38,7 +46,10 @@ export default function ReversibleGreys() {
                                 <p className="fontSize-xl lineHeight-m c-white">Dark theme</p>
                             </div>
 
-                            <p className="fontWeight-3 fontSize-m lineHeight-m c-silver">This subtle paragraph text color works equally well on a light or dark background.</p>
+                            <p className="fontWeight-3 fontSize-m lineHeight-m c-silver">
+                                This subtle paragraph text color works equally
+                                well on a light or dark background.
+                            </p>
                         </div>
 
                         <div className="padding-m bg-steel"></div>

@@ -42,22 +42,32 @@ export default class ColorRow extends React.Component {
         } : {};
 
         return (
-            <div className={`width-100 bg-${color}`} style={{ height: '80px' }}>
+            <div
+                className={`width-100 bg-${color}`}
+                style={{ height: '80px' }}>
                 <div className="position-relative width-100 height-100 display-table">
                     <div className="paddingLeftRight-s display-tableCell verticalAlign-middle">
-                        <div className={`fontSize-m lineHeight-m c-${textColor} textTransform-capitalize`}>{ title }</div>
-                        <div className={`fontSize-s lineHeight-s textTransform-uppercase c-${textColor} opacity-70`}>#00ffdd</div>
+                        <div
+                            className={`fontSize-m lineHeight-m c-${textColor} textTransform-capitalize`}>
+                            {title}
+                        </div>
+                        <div
+                            className={`fontSize-s lineHeight-s textTransform-uppercase c-${textColor} opacity-70`}>
+                            #00ffdd
+                        </div>
                     </div>
 
                     <div className={`posPinAll overflow-hidden opacity-0 opacity-100--hover transitionDuration-l transitionTimingFunction-ease-in-out bg-${color}`}>
                         <div className="height-100 display-table">
                             <div className="width-100 display-tableCell verticalAlign-middle">
-                                <div className={`position-absolute paddingLeftRight-m fontSize-m fontWeight-5 c-${textColor} transitionDuration-xl transitionTimingFunction-cv-easeOutCircular`}
+                                <div
+                                    className={`position-absolute paddingLeftRight-m fontSize-m fontWeight-5 c-${textColor} transitionDuration-xl transitionTimingFunction-cv-easeOutCircular`}
                                     style={copyFeedbackStyle}>
                                         Copy hex code
                                 </div>
 
-                                <ClipboardButton className={`position-relative paddingLeftRight-m borderWidth-0 textAlign-left fontSize-m fontWeight-5 c-${textColor} bg-${color} outlineStyle-none`}
+                                <ClipboardButton
+                                    className={`position-relative paddingLeftRight-m borderWidth-0 textAlign-left fontSize-m fontWeight-5 c-${textColor} bg-${color} outlineStyle-none`}
                                     option-text={this.getText}
                                     onSuccess={this.onSuccess}>
                                         Copy hex code
