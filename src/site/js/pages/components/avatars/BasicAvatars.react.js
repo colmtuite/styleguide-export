@@ -1,9 +1,11 @@
 import React from 'react';
-import SectionTitle from '~/components/SectionTitle';
+
+import InlineCode from '~/components/InlineCode';
+import SectionCode from '~/components/SectionCode';
 import SectionDescription from '~/components/SectionDescription';
 import SectionExample from '~/components/SectionExample';
-import SectionCode from '~/components/SectionCode';
-import InlineCode from '~/components/InlineCode';
+import SectionTitle from '~/components/SectionTitle';
+
 import { basicAvatarsCode } from '~/components/CodeSnippets.js';
 
 export default function BasicAvatars() {
@@ -21,15 +23,26 @@ export default function BasicAvatars() {
                 <div className="padding-m">
                     <div className="inline">
                         <div className="marginRight-m verticalAlign-middle">
-                            <div className="avatar avatar--m" title="Dean Blacc" style={{ backgroundColor: '#776FB3' }}>
-                                <div className="avatar-img" style={{ backgroundImage: 'url(https://res.cloudinary.com/marvel-content/image/fetch/s--Z3QEVGWe--/t_profile_image_200/https://marvelapp-live.storage.googleapis.com/serve/1435759062.46_6862311.gif)' }} ></div>
+                            <div
+                                className="avatar avatar--m"
+                                title="Dean Blacc"
+                                style={{ backgroundColor: '#776FB3' }}>
+                                <div
+                                    className="avatar-img"
+                                    style={{ backgroundImage: 'url(https://res.cloudinary.com/marvel-content/image/fetch/s--Z3QEVGWe--/t_profile_image_200/https://marvelapp-live.storage.googleapis.com/serve/1435759062.46_6862311.gif)' }} >
+                                </div>
+
                                 <div className="avatar-initials">DB</div>
                             </div>
                         </div>
 
                         <div className="marginRight-m verticalAlign-middle">
-                            <div className="avatar avatar--m" title="Dean Blacc" style={{ backgroundColor: '#776FB3' }}>
+                            <div
+                                className="avatar avatar--m"
+                                title="Dean Blacc"
+                                style={{ backgroundColor: '#776FB3' }}>
                                 <div className="avatar-img"></div>
+
                                 <div className="avatar-initials">DB</div>
                             </div>
                         </div>

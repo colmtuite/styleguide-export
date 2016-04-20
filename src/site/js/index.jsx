@@ -27,7 +27,7 @@ import ThemeClasses from '~/pages/utility/theme-classes/ThemeClasses';
 // Components pages
 // -------------------------
 
-import Avatars from '~/pages/components/avatars/Avatars';
+import Avatars from '~/pages/components/avatars/Avatars.react';
 import Buttons from '~/pages/components/buttons/Buttons';
 import Cards from '~/pages/components/cards/Cards';
 import FormElements from '~/pages/components/forms/FormElements';

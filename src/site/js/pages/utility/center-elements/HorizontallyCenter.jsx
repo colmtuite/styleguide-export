@@ -7,7 +7,7 @@ import { horizontallyCenterElementsCode } from '~/components/CodeSnippets.js';
 
 export default function HorizontallyCenter() {
     return (
-        <section className="marginBottom-m">
+        <section className="marginBottom-xl">
             <div className="marginBottom-l">
                 <SectionTitle sectionTitle={ "Horizontally center" } />
 

@@ -1,9 +1,10 @@
 import React from 'react';
+
+import AvatarSizes from '~/pages/components/avatars/AvatarSizes.react';
+import AvatarsWithIcons from '~/pages/components/avatars/AvatarsWithIcons.react';
+import BasicAvatars from '~/pages/components/avatars/BasicAvatars.react';
+import CustomAvatarSizes from '~/pages/components/avatars/CustomAvatarSizes.react';
 import PageTitle from '~/components/PageTitle';
-import BasicAvatars from '~/pages/components/avatars/BasicAvatars';
-import AvatarSizes from '~/pages/components/avatars/AvatarSizes';
-import AvatarsWithIcons from '~/pages/components/avatars/AvatarsWithIcons';
-import CustomAvatarSizes from '~/pages/components/avatars/CustomAvatarSizes';
 
 export default function Avatars() {
     return (

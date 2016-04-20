@@ -7,7 +7,7 @@ import { pinCode } from '~/components/CodeSnippets.js';
 
 export default function Positioning() {
     return (
-        <section className="marginBottom-xl">
+        <section className="marginBottom-m">
             <div className="marginBottom-l">
                 <SectionTitle sectionTitle={ "Positioning" } />
 

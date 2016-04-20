@@ -9,7 +9,7 @@ export default function VerticallyCenter() {
     return (
         <section className="marginBottom-m">
             <div className="marginBottom-l">
-                <SectionTitle sectionTitle={ "Horizontally center" } />
+                <SectionTitle sectionTitle={ "Vertically center" } />
 
                 <SectionDescription>
                     Center an element horizontally. The element must have a width declared.
