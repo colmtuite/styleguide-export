@@ -1,15 +1,17 @@
 import React from 'react';
-import SectionTitle from '~/components/SectionTitle';
+
+import SectionCode from '~/components/SectionCode';
 import SectionDescription from '~/components/SectionDescription';
 import SectionExample from '~/components/SectionExample';
-import SectionCode from '~/components/SectionCode';
+import SectionTitle from '~/components/SectionTitle';
+
 import { horizontallyCenterElementsCode } from '~/components/CodeSnippets.js';
 
 export default function HorizontallyCenter() {
     return (
         <section className="marginBottom-xl">
             <div className="marginBottom-l">
-                <SectionTitle sectionTitle={ "Horizontally center" } />
+                <SectionTitle sectionTitle={"Horizontally center"} />
 
                 <SectionDescription>
                     Center an element horizontally. The element must have a width declared.
@@ -18,11 +20,14 @@ export default function HorizontallyCenter() {
 
             <SectionExample>
                 <div className="padding-m">
-                    <div className="bg-smoke borderRadius-m centered" style={{ height: '100px', width: '100px' }}></div>
+                    <div
+                        className="bg-smoke borderRadius-m centered"
+                        style={{ height: '100px', width: '100px' }}>
+                    </div>
                 </div>
             </SectionExample>
 
-            <SectionCode code={ horizontallyCenterElementsCode } />
+            <SectionCode code={horizontallyCenterElementsCode} />
         </section>
     );
 }

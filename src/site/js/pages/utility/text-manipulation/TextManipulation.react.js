@@ -1,9 +1,11 @@
 import React from 'react';
+
 import PageTitle from '~/components/PageTitle';
-import SectionTitle from '~/components/SectionTitle';
+import SectionCode from '~/components/SectionCode';
 import SectionDescription from '~/components/SectionDescription';
 import SectionExample from '~/components/SectionExample';
-import SectionCode from '~/components/SectionCode';
+import SectionTitle from '~/components/SectionTitle';
+
 import { truncateTextCode } from '~/components/CodeSnippets.js';
 
 export default function TextManipulation() {
@@ -13,7 +15,7 @@ export default function TextManipulation() {
 
             <section className="marginBottom-m">
                 <div className="marginBottom-l">
-                    <SectionTitle sectionTitle={ "Truncate text" } />
+                    <SectionTitle sectionTitle={"Truncate text"} />
 
                     <SectionDescription>
                         When text overflows its container, truncate the text and append 3 dots.
@@ -22,11 +24,16 @@ export default function TextManipulation() {
 
                 <SectionExample>
                     <div className="padding-m">
-                        <p className="fontSize-m lineHeight-m c-slate truncateText">This text overflows its parent element and therefore will be truncated and three dots will be appended. This text overflows its parent element and therefore will be truncated and three dots will be appended.</p>
+                        <p className="fontSize-m lineHeight-m c-slate truncateText">
+                            This text overflows its parent element and therefore
+                            will be truncated and three dots will be appended. This
+                            text overflows its parent element and therefore will be
+                            truncated and three dots will be appended.
+                        </p>
                     </div>
                 </SectionExample>
 
-                <SectionCode code={ truncateTextCode } />
+                <SectionCode code={truncateTextCode} />
             </section>
         </div>
     );

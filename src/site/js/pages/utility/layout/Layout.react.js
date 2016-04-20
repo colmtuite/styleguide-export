@@ -1,8 +1,9 @@
 import React from 'react';
+
+import Clearfix from '~/pages/utility/layout/Clearfix.react';
+import Inline from '~/pages/utility/layout/Inline.react';
 import PageTitle from '~/components/PageTitle';
-import Clearfix from '~/pages/utility/layout/Clearfix';
-import Inline from '~/pages/utility/layout/Inline';
-import Positioning from '~/pages/utility/layout/Positioning';
+import Positioning from '~/pages/utility/layout/Positioning.react';
 
 export default function Layout() {
     return (

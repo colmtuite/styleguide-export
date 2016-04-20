@@ -39,12 +39,12 @@ import Popovers from '~/pages/components/popovers/Popovers.react';
 // Utility pages
 // -------------------------
 
-import CenterElements from '~/pages/utility/center-elements/CenterElements';
-import HideElements from '~/pages/utility/hide-elements/HideElements';
-import Layout from '~/pages/utility/layout/Layout';
-import Scrollbar from '~/pages/utility/scrollbar/Scrollbar';
-import TextManipulation from '~/pages/utility/text-manipulation/TextManipulation';
-import ThemeClasses from '~/pages/utility/theme-classes/ThemeClasses';
+import CenterElements from '~/pages/utility/center-elements/CenterElements.react';
+import HideElements from '~/pages/utility/hide-elements/HideElements.react';
+import Layout from '~/pages/utility/layout/Layout.react';
+import Scrollbar from '~/pages/utility/scrollbar/Scrollbar.react';
+import TextManipulation from '~/pages/utility/text-manipulation/TextManipulation.react';
+import ThemeClasses from '~/pages/utility/theme-classes/ThemeClasses.react';
 
 export function render(container) {
     ReactDOM.render(
