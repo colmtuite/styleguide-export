@@ -12,7 +12,7 @@ import GhostButtonReversed from '~/pages/components/buttons/GhostButtonReversed.
 import OutlinedButton from '~/pages/components/buttons/OutlinedButton.react';
 import PageTitle from '~/components/PageTitle';
 import StatefulButtons from '~/pages/components/buttons/StatefulButtons.react';
-import WaitingButton from '~/pages/components/buttons/WaitingButton';
+import WaitingButton from '~/pages/components/buttons/WaitingButton.react';
 
 export default function Buttons() {
     return (
