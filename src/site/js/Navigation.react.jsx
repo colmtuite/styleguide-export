@@ -1,6 +1,6 @@
 import React from 'react';
 
-import NavigationMenu from '~/NavigationMenu';
+import NavigationMenu from '~/NavigationMenu.react';
 
 const menus = [
     {
@@ -32,7 +32,7 @@ const menus = [
     }, {
         title: 'Utility',
         items: [
-            { title: 'Theme classes', url: 'utility/theme-classes' },
+            { title: 'Theme classes', url: '/utility/theme-classes' },
             { title: 'Scrollbar', url: '/utility/scrollbar' },
             { title: 'Hide elements', url: '/utility/hide-elements' },
             { title: 'Center elements', url: '/utility/center-elements' },

@@ -7,22 +7,21 @@ import { Router, Route, IndexRedirect, hashHistory } from 'react-router';
 // App pages
 // -------------------------
 
-import App from '~/App';
-import NoMatch from '~/pages/404';
+import App from '~/App.react';
+import NoMatch from '~/pages/404.react';
 
 // Overview pages
 // -------------------------
 
-import Introduction from '~/pages/overview/introduction/Introduction';
-import CodeGuidelines from '~/pages/overview/code-guidelines/CodeGuidelines';
-import NamingConvention from '~/pages/overview/naming-convention/NamingConvention';
+import Introduction from '~/pages/overview/introduction/Introduction.react';
+import CodeGuidelines from '~/pages/overview/code-guidelines/CodeGuidelines.react';
+import NamingConvention from '~/pages/overview/naming-convention/NamingConvention.react';
 
 // Design pages
 // -------------------------
 
 import ColorScheme from '~/pages/design/colors/ColorScheme.react';
-import Typography from '~/pages/design/typography/Typography';
-import ThemeClasses from '~/pages/utility/theme-classes/ThemeClasses';
+import Typography from '~/pages/design/typography/Typography.react';
 
 // Components pages
 // -------------------------
@@ -40,11 +39,12 @@ import Popovers from '~/pages/components/popovers/Popovers.react';
 // Utility pages
 // -------------------------
 
-import Layout from '~/pages/utility/layout/Layout';
-import HideElements from '~/pages/utility/hide-elements/HideElements';
 import CenterElements from '~/pages/utility/center-elements/CenterElements';
-import TextManipulation from '~/pages/utility/text-manipulation/TextManipulation';
+import HideElements from '~/pages/utility/hide-elements/HideElements';
+import Layout from '~/pages/utility/layout/Layout';
 import Scrollbar from '~/pages/utility/scrollbar/Scrollbar';
+import TextManipulation from '~/pages/utility/text-manipulation/TextManipulation';
+import ThemeClasses from '~/pages/utility/theme-classes/ThemeClasses';
 
 export function render(container) {
     ReactDOM.render(

@@ -11,10 +11,14 @@ export default function FontSize({ fontSize, fontDescription }) {
             <div className="padding-m overflowY-hidden overflowX-scroll whiteSpace-nowrap">
                 <div className="padding-xxs">
                     <div className="marginBottom-s">
-                        <p className={`fontSize-${fontSize}`}>The quick brown fox jumps over the lazy dog</p>
+                        <p className={`fontSize-${fontSize}`}>
+                            The quick brown fox jumps over the lazy dog
+                        </p>
                     </div>
 
-                    <p className="fontSize-s fontWeight-3 c-silver">{ fontDescription }</p>
+                    <p className="fontSize-s fontWeight-3 c-silver">
+                        { fontDescription }
+                    </p>
                 </div>
             </div>
         </div>

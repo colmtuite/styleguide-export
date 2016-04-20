@@ -1,6 +1,8 @@
 import React from 'react';
-import Navigation from '~/Navigation';
+
 import classNames from 'classnames';
+import Navigation from '~/Navigation.react';
+
 import { IndexLink } from 'react-router';
 
 export default function Sidebar() {

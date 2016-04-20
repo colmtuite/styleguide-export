@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Sidebar from '~/Sidebar';
+import Sidebar from '~/Sidebar.react';
 
 export default function App(props) {
     App.propTypes = {
@@ -12,7 +12,9 @@ export default function App(props) {
             <Sidebar />
 
             <div style={{ paddingLeft: '20%' }}>
-                <div className="padding-xl centered" style={{ maxWidth: '960px' }}>
+                <div
+                    className="padding-xl centered"
+                    style={{ maxWidth: '960px' }}>
                     {props.children}
                 </div>
             </div>

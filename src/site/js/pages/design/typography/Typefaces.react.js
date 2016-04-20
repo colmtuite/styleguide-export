@@ -1,18 +1,24 @@
 import React from 'react';
-import SectionTitle from '~/components/SectionTitle';
+
+import SectionCode from '~/components/SectionCode';
 import SectionDescription from '~/components/SectionDescription';
 import SectionExample from '~/components/SectionExample';
-import SectionCode from '~/components/SectionCode';
+import SectionTitle from '~/components/SectionTitle';
+
 import { fontFamilyCode } from '~/components/CodeSnippets.js';
 
 export default function Typefaces() {
     return (
         <section className="marginBottom-xl">
             <div className="marginBottom-l">
-                <SectionTitle sectionTitle={ "Typefaces" } />
+                <SectionTitle sectionTitle={"Typefaces"} />
 
                 <SectionDescription>
-                    Marvel's primary typeface is Fakt Pro Rounded. We chose Fakt Pro Rounded because we needed a robust typeface with legible numbers that rendered well at small sizes. It needed to be soft and friendly, yet plain enough to get out of the way and let the user's designs shine.
+                    Marvel's primary typeface is Fakt Pro Rounded. We chose
+                    Fakt Pro Rounded because we needed a robust typeface with
+                    legible numbers that rendered well at small sizes. It needed
+                    to be soft and friendly, yet plain enough to get out of the
+                    way and let the user's designs shine.
                 </SectionDescription>
             </div>
 
@@ -93,7 +99,7 @@ export default function Typefaces() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={ fontFamilyCode } />
+            <SectionCode code={fontFamilyCode} />
         </section>
     );
 }
