@@ -1,15 +1,17 @@
 import React from 'react';
-import SectionTitle from '~/components/SectionTitle';
+
+import SectionCode from '~/components/SectionCode';
 import SectionDescription from '~/components/SectionDescription';
 import SectionExample from '~/components/SectionExample';
-import SectionCode from '~/components/SectionCode';
+import SectionTitle from '~/components/SectionTitle';
+
 import { selectMenuCode } from '~/components/CodeSnippets.js';
 
 export default function SelectMenu() {
     return (
         <section className="marginBottom-xl">
             <div className="marginBottom-l">
-                <SectionTitle sectionTitle={ "Select menu" } />
+                <SectionTitle sectionTitle={"Select menu"} />
 
                 <SectionDescription>
                     Use a single class to define a size for your button.
@@ -88,7 +90,7 @@ export default function SelectMenu() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={ selectMenuCode } />
+            <SectionCode code={selectMenuCode} />
         </section>
     );
 }

@@ -29,13 +29,13 @@ import ThemeClasses from '~/pages/utility/theme-classes/ThemeClasses';
 
 import Avatars from '~/pages/components/avatars/Avatars.react';
 import Buttons from '~/pages/components/buttons/Buttons.react';
-import Cards from '~/pages/components/cards/Cards';
-import FormElements from '~/pages/components/forms/FormElements';
-import Grid from '~/pages/components/grid/Grid';
-import Links from '~/pages/components/links/Links';
-import Lists from '~/pages/components/lists/Lists';
-import Modals from '~/pages/components/modals/Modals';
-import Popovers from '~/pages/components/popovers/Popovers';
+import Cards from '~/pages/components/cards/Cards.react';
+import FormElements from '~/pages/components/forms/FormElements.react';
+import Grid from '~/pages/components/grid/Grid.react';
+import Links from '~/pages/components/links/Links.react';
+import Lists from '~/pages/components/lists/Lists.react';
+import Modals from '~/pages/components/modals/Modals.react';
+import Popovers from '~/pages/components/popovers/Popovers.react';
 
 // Utility pages
 // -------------------------

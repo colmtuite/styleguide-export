@@ -1,19 +1,24 @@
 import React from 'react';
-import SectionTitle from '~/components/SectionTitle';
+
+import InlineCode from '~/components/InlineCode';
+import SectionCode from '~/components/SectionCode';
 import SectionDescription from '~/components/SectionDescription';
 import SectionExample from '~/components/SectionExample';
-import SectionCode from '~/components/SectionCode';
-import InlineCode from '~/components/InlineCode';
+import SectionTitle from '~/components/SectionTitle';
+
 import { gridSizeCode } from '~/components/CodeSnippets.js';
 
 export default function GridSize() {
     return (
         <section className="marginBottom-m">
             <div className="marginBottom-l">
-                <SectionTitle sectionTitle={ "Grid sizes" } />
+                <SectionTitle sectionTitle={"Grid sizes"} />
 
                 <SectionDescription>
-                    You have three grid size options to choose from, specified by a class. <InlineCode>.grid--m</InlineCode> is the default. <InlineCode>.grid--l</InlineCode> and <InlineCode>.grid--xl</InlineCode> are used mostly in the marketing site.
+                    You have three grid size options to choose from, specified
+                    by a class. <InlineCode>.grid--m</InlineCode> is the default.
+                    <InlineCode>.grid--l</InlineCode> and <InlineCode>.grid--xl</InlineCode>
+                    are used mostly in the marketing site.
                 </SectionDescription>
             </div>
 
@@ -39,7 +44,7 @@ export default function GridSize() {
                 </div>
             </div>
 
-            <SectionCode code={ gridSizeCode } />
+            <SectionCode code={gridSizeCode} />
         </section>
     );
 }

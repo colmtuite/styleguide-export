@@ -1,9 +1,9 @@
 import React from 'react';
 import PageTitle from '~/components/PageTitle';
 
-import PageWrap from '~/pages/components/grid/PageWrap';
-import BasicGrid from '~/pages/components/grid/BasicGrid';
-import GridSize from '~/pages/components/grid/GridSize';
+import PageWrap from '~/pages/components/grid/PageWrap.react';
+import BasicGrid from '~/pages/components/grid/BasicGrid.react';
+import GridSize from '~/pages/components/grid/GridSize.react';
 
 export default function Grid() {
     return (

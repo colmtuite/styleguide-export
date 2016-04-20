@@ -1,15 +1,17 @@
 import React from 'react';
-import SectionTitle from '~/components/SectionTitle';
+
+import SectionCode from '~/components/SectionCode';
 import SectionDescription from '~/components/SectionDescription';
 import SectionExample from '~/components/SectionExample';
-import SectionCode from '~/components/SectionCode';
+import SectionTitle from '~/components/SectionTitle';
+
 import { lightLinkCode } from '~/components/CodeSnippets.js';
 
 export default function LightLink() {
     return (
         <section className="marginBottom-xl">
             <div className="marginBottom-l">
-                <SectionTitle sectionTitle={ "Light link" } />
+                <SectionTitle sectionTitle={"Light link"} />
 
                 <SectionDescription>
                     For subtle or infrequently used links. To be used on light backgrounds.
@@ -18,11 +20,15 @@ export default function LightLink() {
 
             <SectionExample>
                 <div className="padding-m">
-                    <a className="link link--light" href="#">Light link</a>
+                    <a
+                        className="link link--light"
+                        href="#">
+                        Light link
+                    </a>
                 </div>
             </SectionExample>
 
-            <SectionCode code={ lightLinkCode } />
+            <SectionCode code={lightLinkCode} />
         </section>
     );
 }

@@ -1,19 +1,30 @@
 import React from 'react';
-import SectionTitle from '~/components/SectionTitle';
+
+import InlineCode from '~/components/InlineCode';
+import SectionCode from '~/components/SectionCode';
 import SectionDescription from '~/components/SectionDescription';
 import SectionExample from '~/components/SectionExample';
-import SectionCode from '~/components/SectionCode';
-import InlineCode from '~/components/InlineCode';
+import SectionTitle from '~/components/SectionTitle';
+
 import { gridCode } from '~/components/CodeSnippets.js';
 
 export default function BasicGrid() {
     return (
         <section className="marginBottom-xl">
             <div className="marginBottom-l">
-                <SectionTitle sectionTitle={ "Basic grid" } />
+                <SectionTitle sectionTitle={"Basic grid"} />
 
                 <SectionDescription>
-                    We use grids exclusively for layouts which require a number of columns of equal width. Grids can have 1-6 columns, specified by a class <InlineCode>.grid--1</InlineCode>, <InlineCode>.grid--2</InlineCode>, <InlineCode>.grid--3</InlineCode>, <InlineCode>.grid--4</InlineCode>, <InlineCode>.grid--5</InlineCode> or <InlineCode>.grid--6</InlineCode>. If you need more than 6 columns, try taking a long, hard look in the mirror. There are also two grids with uneven widths which can be specified by using classes <InlineCode>.grid--6-4</InlineCode> and <InlineCode>.grid--7-3</InlineCode>.
+                    We use grids exclusively for layouts which require a number
+                    of columns of equal width. Grids can have 1-6 columns,
+                    specified by a class <InlineCode>.grid--1</InlineCode>,
+                    <InlineCode>.grid--2</InlineCode>, <InlineCode>.grid--3</InlineCode>,
+                    <InlineCode>.grid--4</InlineCode>, <InlineCode>.grid--5</InlineCode>
+                    or <InlineCode>.grid--6</InlineCode>. If you need more
+                    than 6 columns, try taking a long, hard look in the mirror.
+                    There are also two grids with uneven widths which can be
+                    specified by using classes <InlineCode>.grid--6-4</InlineCode>
+                    and <InlineCode>.grid--7-3</InlineCode>.
                 </SectionDescription>
             </div>
 
@@ -60,7 +71,7 @@ export default function BasicGrid() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={ gridCode } />
+            <SectionCode code={gridCode} />
         </section>
     );
 }
