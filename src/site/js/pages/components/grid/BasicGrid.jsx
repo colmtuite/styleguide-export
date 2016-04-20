@@ -6,7 +6,7 @@ import SectionCode from '~/components/SectionCode';
 import InlineCode from '~/components/InlineCode';
 import { gridCode } from '~/components/CodeSnippets.js';
 
-export default function Grid() {
+export default function BasicGrid() {
     return (
         <section className="marginBottom-xl">
             <div className="marginBottom-l">

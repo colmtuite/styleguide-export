@@ -31,7 +31,7 @@ import Avatars from '~/pages/components/avatars/Avatars';
 import Buttons from '~/pages/components/buttons/Buttons';
 import Cards from '~/pages/components/cards/Cards';
 import FormElements from '~/pages/components/forms/FormElements';
-import Layout from '~/pages/components/layout/Layout';
+import Grid from '~/pages/components/grid/Grid';
 import Links from '~/pages/components/links/Links';
 import Lists from '~/pages/components/lists/Lists';
 import Modals from '~/pages/components/modals/Modals';
@@ -40,7 +40,7 @@ import Popovers from '~/pages/components/popovers/Popovers';
 // Utility pages
 // -------------------------
 
-import Positioning from '~/pages/utility/positioning/Positioning';
+import Layout from '~/pages/utility/layout/Layout';
 import HideElements from '~/pages/utility/hide-elements/HideElements';
 import CenterElements from '~/pages/utility/center-elements/CenterElements';
 import TextManipulation from '~/pages/utility/text-manipulation/TextManipulation';
@@ -72,7 +72,7 @@ export function render(container) {
                 <Route path="buttons" component={Buttons} />
                 <Route path="cards" component={Cards} />
                 <Route path="form-elements" component={FormElements} />
-                <Route path="layout" component={Layout} />
+                <Route path="grid" component={Grid} />
                 <Route path="links" component={Links} />
                 <Route path="lists" component={Lists} />
                 <Route path="Modals" component={Modals} />
@@ -80,9 +80,9 @@ export function render(container) {
             </Route>
 
             <Route path="/utility" component={App}>
-                <IndexRedirect to="positioning" />
+                <IndexRedirect to="layout" />
                 <Route path="theme-classes" component={ThemeClasses} />
-                <Route path="positioning" component={Positioning} />
+                <Route path="layout" component={Layout} />
                 <Route path="hide-elements" component={HideElements} />
                 <Route path="center-elements" component={CenterElements} />
                 <Route path="text-manipulation" component={TextManipulation} />

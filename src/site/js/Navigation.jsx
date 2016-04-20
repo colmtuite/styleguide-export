@@ -23,7 +23,7 @@ const menus = [
             { title: 'Buttons', url: '/components/buttons' },
             { title: 'Cards', url: '/components/cards' },
             { title: 'Form elements', url: '/components/form-elements' },
-            { title: 'Layout', url: '/components/layout' },
+            { title: 'Grid', url: '/components/grid' },
             { title: 'Links', url: '/components/links' },
             { title: 'Lists', url: '/components/lists' },
             { title: 'Modals', url: '/components/modals' },
@@ -37,7 +37,7 @@ const menus = [
             { title: 'Hide elements', url: '/utility/hide-elements' },
             { title: 'Center elements', url: '/utility/center-elements' },
             { title: 'Text manipulation', url: '/utility/text-manipulation' },
-            { title: 'Positioning', url: '/utility/positioning' },
+            { title: 'Layout', url: '/utility/layout' },
         ],
     },
 ];

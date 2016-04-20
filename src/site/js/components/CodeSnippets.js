@@ -394,3 +394,53 @@ export const horizontallyCenterElementsCode = '<div class="centered"></div>';
 export const verticallyCenterElementsCode = `<div style="height: 300px">
     <div class="verticallyCenter">...</div>
 </div>`;
+
+//
+// Positioning
+// -------------------------
+
+export const clearfixCode = '<div class="cf">...</div>';
+
+export const inlineCode = `<!-- Basic example without margins -->
+<div class="inline">
+    <div>
+        <div class="bg-smoke"></div>
+    </div>
+
+    <div>
+        <div class="bg-silver"></div>
+    </div>
+
+    <div>
+        <div class="bg-steel"></div>
+    </div>
+</div>
+
+<!--  Example with margins -->
+<div class="inline">
+    <div class="marginRight-m">
+        <div class="bg-smoke"></div>
+    </div>
+
+    <div class="marginRight-m">
+        <div class="bg-silver"></div>
+    </div>
+
+    <div class="marginRight-m">
+        <div class="bg-steel"></div>
+    </div>
+</div>`;
+
+export const pinCode = `<!-- Absolutely pin an element to its closest relative parent -->
+<div class="position-relative">
+    <div class="posPinTL"></div>
+    <div class="posPinTR"></div>
+    <div class="posPinBL"></div>
+    <div class="posPinBR"></div>
+</div>
+
+<!-- Fix an element to a viewport corner -->
+<div class="posFixTL"></div>
+<div class="posFixTR"></div>
+<div class="posFixBL"></div>
+<div class="posFixBR"></div>`;
