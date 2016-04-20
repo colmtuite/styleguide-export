@@ -22,7 +22,7 @@ export default function Checkbox() {
                         <input type="checkbox" />
 
                         <span className="form-control-indicator">
-                            <svg className="checkbox-tick" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                            <svg className="checkbox-tick" width="30" height="30" viewBox="0 0 30 30">
                                 <path d="M13.08,16.53l-2.08-2a1.7,1.7,0,0,0-2.48,0,1.88,1.88,0,0,0,0,2.59L12,20.46a1.71,1.71,0,0,0,1.27.54,1.75,1.75,0,0,0,1.3-.55l6.91-8.23a2,2,0,0,0,0-2.66,1.73,1.73,0,0,0-2.54,0l-5.85,7h0Z" />
                             </svg>
                         </span>

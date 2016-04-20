@@ -1,19 +1,28 @@
 import React from 'react';
-import SectionTitle from '~/components/SectionTitle';
+
+import InlineCode from '~/components/InlineCode';
+import SectionCode from '~/components/SectionCode';
 import SectionDescription from '~/components/SectionDescription';
 import SectionExample from '~/components/SectionExample';
-import SectionCode from '~/components/SectionCode';
-import InlineCode from '~/components/InlineCode';
+import SectionTitle from '~/components/SectionTitle';
+
 import { statefulButtonsCode } from '~/components/CodeSnippets.js';
 
 export default function StatefulButtons() {
     return (
         <section className="marginBottom-xl">
             <div className="marginBottom-l">
-                <SectionTitle sectionTitle={ "Stateful buttons" } />
+                <SectionTitle sectionTitle={"Stateful buttons"} />
 
                 <SectionDescription>
-                    Stateful buttons have different states and behaviour to the regular ones. The pre-action feedback button, defined with <InlineCode>.is-sad</InlineCode>, will show a sad face on hover and is meant to be used on negative action buttons like deleting an account or downgrading. There are 3 post-click feedback buttons to be used for instant feedback and feedback after contacting a server. Those are defined by <InlineCode>.is-stateful</InlineCode>.
+                    Stateful buttons have different states and behaviour to the
+                    regular ones. The pre-action feedback button, defined with
+                    <InlineCode>.is-sad</InlineCode>, will show a sad face on
+                    hover and is meant to be used on negative action buttons like
+                    deleting an account or downgrading. There are 3 post-click
+                    feedback buttons to be used for instant feedback and feedback
+                    after contacting a server. Those are defined by
+                    <InlineCode>.is-stateful</InlineCode>.
                 </SectionDescription>
             </div>
 
@@ -21,7 +30,11 @@ export default function StatefulButtons() {
                 <div className="grid grid--4">
                     <div className="padding-m textAlign-center borderWidth-0 borderRightWidth-1 borderStyle-solid borderColor-smoke">
                         <div className="marginTop-xs marginBottom-s">
-                            <a className="button button--m button--ghost bg-negative--hover is-sad" role="button">Hover me!</a>
+                            <a
+                                className="button button--m button--ghost bg-negative--hover is-sad"
+                                role="button">
+                                Hover me!
+                            </a>
                         </div>
 
                         <p className="lineHeight-s fontSize-s fontWeight-3 c-silver">Pre-click feedback</p>
@@ -29,7 +42,9 @@ export default function StatefulButtons() {
 
                     <div className="padding-m textAlign-center borderWidth-0 borderRightWidth-1 borderStyle-solid borderColor-smoke">
                         <div className="marginTop-xs marginBottom-s">
-                            <a className="js-success-button-one button button--m button--flat button--stateful bg-positive" role="button">
+                            <a
+                                className="button button--m button--flat button--stateful bg-positive"
+                                role="button">
                                 <span>Click me!</span>
                             </a>
                         </div>
@@ -39,7 +54,9 @@ export default function StatefulButtons() {
 
                     <div className="padding-m textAlign-center borderWidth-0 borderRightWidth-1 borderStyle-solid borderColor-smoke">
                         <div className="marginTop-xs marginBottom-s">
-                            <a className="js-success-button-two button button--m button--flat button--stateful bg-positive" role="button">
+                            <a
+                                className="button button--m button--flat button--stateful bg-positive"
+                                role="button">
                                 <span>Click me!</span>
                             </a>
                         </div>
@@ -49,7 +66,9 @@ export default function StatefulButtons() {
 
                     <div className="padding-m textAlign-center">
                         <div className="marginTop-xs marginBottom-s">
-                            <a className="js-fail-button button button--m button--flat button--stateful bg-marvel" role="button">
+                            <a
+                                className="js-fail-button button button--m button--flat button--stateful bg-marvel"
+                                role="button">
                                 <span>Click me!</span>
                             </a>
                         </div>
@@ -59,7 +78,7 @@ export default function StatefulButtons() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={ statefulButtonsCode } />
+            <SectionCode code={statefulButtonsCode} />
         </section>
     );
 }

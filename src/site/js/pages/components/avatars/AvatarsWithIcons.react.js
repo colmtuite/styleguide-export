@@ -12,10 +12,13 @@ export default function AvatarsWithIcons() {
     return (
         <section className="marginBottom-xl">
             <div className="marginBottom-l">
-                <SectionTitle sectionTitle={ "Avatars with team icons" } />
+                <SectionTitle sectionTitle={"Avatars with team icons"} />
 
                 <SectionDescription>
-                    Append an optional <InlineCode>.avatar-team</InlineCode> into the avatar and set its background image in order to show that a user belongs to a team. Team icons automatically respond according to the parent avatar size.
+                    Append an optional <InlineCode>.avatar-team</InlineCode>
+                    into the avatar and set its background image in order to
+                    show that a user belongs to a team. Team icons automatically
+                    respond according to the parent avatar size.
                 </SectionDescription>
             </div>
 
@@ -120,7 +123,7 @@ export default function AvatarsWithIcons() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={ avatarsWithIconsCode } />
+            <SectionCode code={avatarsWithIconsCode} />
         </section>
     );
 }

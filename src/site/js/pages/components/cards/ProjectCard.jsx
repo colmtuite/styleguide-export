@@ -32,7 +32,7 @@ export default function ProjectCard() {
                                 <span className="display-block fontSize-xs lineHeight-xs c-silver">6 screens</span>
 
                                 <a className="link link--light">
-                                    <svg className="posPinBR padding-s fill-silver verticalAlign-middle hideChildren-child" width="14" height="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" enable-background="new 0 0 14 14">
+                                    <svg className="posPinBR padding-s fill-silver verticalAlign-middle hideChildren-child" width="14" height="14" viewBox="0 0 14 14">
                                         <path d="M12 5h-3v-3c0-1.1-.9-2-2-2s-2 .9-2 2v3h-3c-1.1 0-2 .9-2 2s.9 2 2 2h3v3c0 1.1.9 2 2 2s2-.9 2-2v-3h3c1.1 0 2-.9 2-2s-.9-2-2-2z"></path>
                                     </svg>
                                 </a>

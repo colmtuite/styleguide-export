@@ -28,7 +28,7 @@ import ThemeClasses from '~/pages/utility/theme-classes/ThemeClasses';
 // -------------------------
 
 import Avatars from '~/pages/components/avatars/Avatars.react';
-import Buttons from '~/pages/components/buttons/Buttons';
+import Buttons from '~/pages/components/buttons/Buttons.react';
 import Cards from '~/pages/components/cards/Cards';
 import FormElements from '~/pages/components/forms/FormElements';
 import Grid from '~/pages/components/grid/Grid';
