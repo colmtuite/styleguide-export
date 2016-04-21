@@ -51,7 +51,7 @@ $modal-icon-size--m: 40px;
     @extend .concealed;
     @extend .transitionDuration-xl;
     @extend .transitionProperty-all;
-    @extend .transitionTimingFunction-easeInOut;
+    @extend .transitionTimingFunction-ease-in-out;
 }
 
 .modal-icon {
@@ -317,30 +317,36 @@ $modal-icon-size--m: 40px;
 .overlay.activated > div:not(.concealed) .modal {
     transform: scale(1);
 
-    @extend .disclosed;
-    @extend .transitionProperty-all;
-    @extend .transitionDuration-l;
-    @extend .transitionTimingFunction-cb--scaleOut;
+    visibility: visible;
+    opacity: 1;
+
+    transition-property: all;
+    transition-duration: $transitionDuration-l;
+    transition-timing-function: $transitionTimingFunction-cb--scaleOut;
 }
 
 .modal-overlay.is-active > div:not(.concealed) .modal-subtext,
 .overlay.activated > div:not(.concealed) .modal-subtext {
     transform: translateY(0);
 
-    @extend .disclosed;
-    @extend .transitionDelay-m;
-    @extend .transitionDuration-xl;
-    @extend .transitionProperty-all;
-    @extend .transitionTimingFunction-cv-easeOutCircular;
+    visibility: visible;
+    opacity: 1;
+
+    transition-property: all;
+    transition-delay: $transitionDelay-m;
+    transition-duration: $transitionDuration-xl;
+    transition-timing-function: $transitionTimingFunction-cv-easeOutCircular;
 }
 
 .modal-overlay.is-active > div:not(.concealed) .modal-image,
 .overlay.activated > div:not(.concealed) .modal-image,
 .modal-overlay.is-active > div:not(.concealed) .modal-icon-wrapper,
 .overlay.activated > div:not(.concealed) .modal-icon-wrapper {
-    @extend .disclosed;
-    @extend .transitionDelay-l;
-    @extend .transitionDuration-xl;
-    @extend .transitionProperty-all;
-    @extend .transitionTimingFunction-easeInOut;
+    visibility: visible;
+    opacity: 1;
+
+    transition-property: all;
+    transition-delay: $transitionDelay-l;
+    transition-duration: $transitionDuration-xl;
+    transition-timing-function: ease-in-out;
 }

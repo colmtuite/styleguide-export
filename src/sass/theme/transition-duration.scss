@@ -9,9 +9,16 @@
 // m = medium
 // s = short
 
-.transitionDuration-xxl { transition-duration: 700ms }
-.transitionDuration-xl  { transition-duration: 500ms }
-.transitionDuration-l   { transition-duration: 300ms }
-.transitionDuration-m   { transition-duration: 150ms }
-.transitionDuration-s   { transition-duration: 80ms }
-.transitionDuration-0   { transition-duration: 0 }
+$transitionDuration-xxl: 700ms;
+$transitionDuration-xl: 500ms;
+$transitionDuration-l: 300ms;
+$transitionDuration-m: 150ms;
+$transitionDuration-s: 80ms;
+$transitionDuration-0: 0;
+
+.transitionDuration-xxl { transition-duration: $transitionDuration-xxl; }
+.transitionDuration-xl  { transition-duration: $transitionDuration-xl; }
+.transitionDuration-l   { transition-duration: $transitionDuration-l; }
+.transitionDuration-m   { transition-duration: $transitionDuration-m; }
+.transitionDuration-s   { transition-duration: $transitionDuration-s; }
+.transitionDuration-0   { transition-duration: $transitionDuration-0; }

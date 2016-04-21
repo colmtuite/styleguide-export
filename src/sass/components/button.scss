@@ -222,7 +222,7 @@
 .button--flat.is-loading {
     @extend .position-relative;
     @extend .button.is-disabled;
-    @extend .is-loading--silver;
+    @extend .is-loading--smoke;
 }
 
 .button--xl:after {

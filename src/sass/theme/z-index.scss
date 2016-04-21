@@ -44,11 +44,11 @@
     // Abstracted z-index layers
     // -------------
 
-    .breakPointS-zi-weak      { @extend .zi-100; }
-    .breakPointS-zi-chrome    { @extend .zi-300; }
-    .breakPointS-zi-overlay   { @extend .zi-500; }
-    .breakPointS-zi-modal     { @extend .zi-700; }
-    .breakPointS-zi-strong    { @extend .zi-900; }
+    .breakPointS-zi-weak      { z-index: 100; }
+    .breakPointS-zi-chrome    { z-index: 300; }
+    .breakPointS-zi-overlay   { z-index: 500; }
+    .breakPointS-zi-modal     { z-index: 700; }
+    .breakPointS-zi-strong    { z-index: 900; }
     .breakPointS-zi-max       { z-index: 9999; }
 }
 
@@ -70,11 +70,11 @@
     // Abstracted z-index layers
     // -------------
 
-    .breakPointM-zi-weak      { @extend .zi-100; }
-    .breakPointM-zi-chrome    { @extend .zi-300; }
-    .breakPointM-zi-overlay   { @extend .zi-500; }
-    .breakPointM-zi-modal     { @extend .zi-700; }
-    .breakPointM-zi-strong    { @extend .zi-900; }
+    .breakPointM-zi-weak      { z-index: 100; }
+    .breakPointM-zi-chrome    { z-index: 300; }
+    .breakPointM-zi-overlay   { z-index: 500; }
+    .breakPointM-zi-modal     { z-index: 700; }
+    .breakPointM-zi-strong    { z-index: 900; }
     .breakPointM-zi-max       { z-index: 9999; }
 }
 
@@ -96,10 +96,10 @@
     // Abstracted z-index layers
     // -------------
 
-    .breakPointL-zi-weak      { @extend .zi-100; }
-    .breakPointL-zi-chrome    { @extend .zi-300; }
-    .breakPointL-zi-overlay   { @extend .zi-500; }
-    .breakPointL-zi-modal     { @extend .zi-700; }
-    .breakPointL-zi-strong    { @extend .zi-900; }
+    .breakPointL-zi-weak      { z-index: 100; }
+    .breakPointL-zi-chrome    { z-index: 300; }
+    .breakPointL-zi-overlay   { z-index: 500; }
+    .breakPointL-zi-modal     { z-index: 700; }
+    .breakPointL-zi-strong    { z-index: 900; }
     .breakPointL-zi-max       { z-index: 9999; }
 }

@@ -49,8 +49,8 @@
 @import 'spc/word-wrap';
 @import 'spc/direction';
 
-// Utilities
-// -------------------------
+// // Utilities
+// // -------------------------
 @import 'utilities/aspect-ratio';
 @import 'utilities/centered';
 @import 'utilities/clearfix';
@@ -62,8 +62,8 @@
 @import 'utilities/vertically-center';
 @import 'utilities/visually-hidden';
 
-// Theme
-// -------------------------
+// // Theme
+// // -------------------------
 @import 'theme/animation';
 @import 'theme/color-scheme';
 @import 'theme/background-color';
@@ -88,13 +88,13 @@
 @import 'theme/active-state';
 @import 'theme/focus-state';
 
-// Resets
-// -------------------------
+// // Resets
+// // -------------------------
 @import 'miscellaneous/normalize';
 @import 'miscellaneous/reset';
 
-// Components
-// -------------------------
+// // Components
+// // -------------------------
 @import 'components/loader';
 @import 'components/page-wrap';
 @import 'components/grid';
@@ -113,11 +113,11 @@
 @import 'components/table';
 @import 'components/popover';
 @import 'components/modal';
-@import 'components/info';
-@import 'components/antiscroll';
-@import 'components/range-slider';
-@import 'components/progress-bar';
+// @import 'components/info';
+// @import 'components/antiscroll';
+// @import 'components/range-slider';
+// @import 'components/progress-bar';
 
-// Pages
-// -------------------------
-@import 'pages/styleguide';
+// // Pages
+// // -------------------------
+// @import 'pages/styleguide';
