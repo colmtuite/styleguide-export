@@ -307,7 +307,7 @@ $modal-icon-size--m: 40px;
 
 .modal-overlay.is-active,
 .overlay.activated {
-    opacity: 1; visibility: visibile;
+    opacity: 1; visibility: visible;
     @extend .transitionDuration-l;
     @extend .transitionProperty-all;
     -webkit-overflow-scrolling: touch;
