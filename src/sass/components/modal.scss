@@ -7,7 +7,7 @@
     @extend .centered;
     @extend .cf;
 
-    @extend .concealed;
+    opacity: 0; visibility: hidden;
     @extend .transformStyle-preserve3d;
 
     transform: scale(0.5);
@@ -48,7 +48,7 @@ $modal-icon-size--m: 40px;
 
 .modal-image,
 .modal-icon-wrapper {
-    @extend .concealed;
+    opacity: 0; visibility: hidden;
     @extend .transitionDuration-xl;
     @extend .transitionProperty-all;
     @extend .transitionTimingFunction-ease-in-out;
@@ -246,7 +246,7 @@ $modal-icon-size--m: 40px;
 // -------------------------
 
 .modal-subtext {
-    @extend .concealed;
+    opacity: 0; visibility: hidden;
     @extend .transitionDuration-xl;
     @extend .transitionProperty-all;
     @extend .transitionTimingFunction-cv-easeOutCircular;
@@ -280,7 +280,7 @@ $modal-icon-size--m: 40px;
 .modal-overlay,
 .overlay {
   	@extend .posFixAll;
-  	@extend .concealed;
+  	opacity: 0; visibility: hidden;
 
     @extend .transitionDuration-l;
     @extend .transitionProperty-all;
@@ -307,7 +307,7 @@ $modal-icon-size--m: 40px;
 
 .modal-overlay.is-active,
 .overlay.activated {
-    @extend .disclosed;
+    opacity: 1; visibility: visibile;
     @extend .transitionDuration-l;
     @extend .transitionProperty-all;
     -webkit-overflow-scrolling: touch;

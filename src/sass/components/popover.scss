@@ -11,7 +11,7 @@
     @extend .borderRadius-m;
     @extend .boxShadow-subtle;
 
-    @extend .concealed;
+    opacity: 0; visibility: hidden;
 }
 
 // Popover has stuff
@@ -32,7 +32,7 @@
 }
 
 .popover.is-visible {
-    @extend .disclosed;
+    opacity: 1; visibility: visibile;
 }
 
 // TODO:
