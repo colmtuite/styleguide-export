@@ -100,34 +100,36 @@
 // Syntax
 // -------------------------
 
-.hljs { color: #657b83; }
+.hljs { color: $solarized-base-1; }
 
 .hljs-comment,
-.hljs-quote { color: #93a1a1; }
+.hljs-quote { color: $solarized-base-2; }
 
 .hljs-keyword,
 .hljs-selector-tag,
-.hljs-addition { color: #073642; }
+.hljs-addition { color: $solarized-green; }
 
 .hljs-number,
 .hljs-string,
 .hljs-meta .hljs-meta-string,
 .hljs-literal,
 .hljs-doctag,
-.hljs-regexp { color: #d33682; }
+.hljs-regexp { color: $solarized-magenta; }
 
 .hljs-title,
 .hljs-section,
 .hljs-name,
 .hljs-selector-id,
-.hljs-selector-class { color: #268bd2; }
+.hljs-selector-class { color: $solarized-base-4; }
 
 .hljs-attribute,
 .hljs-attr,
 .hljs-variable,
 .hljs-template-variable,
 .hljs-class .hljs-title,
-.hljs-type { color: #b58900; }
+.hljs-type { color: $solarized-cyan; }
+
+.hljs-value { color: $solarized-magenta; }
 
 .hljs-symbol,
 .hljs-bullet,
@@ -136,14 +138,12 @@
 .hljs-meta .hljs-keyword,
 .hljs-selector-attr,
 .hljs-selector-pseudo,
-.hljs-link { color: #cb4b16; }
+.hljs-link { color: $solarized-orange; }
 
 .hljs-built_in,
-.hljs-deletion { color: #2aa198; }
+.hljs-deletion { color: $solarized-red; }
 
-.hljs-formula { background: #eee8d5 }
-.hljs-emphasis { font-style: italic }
-.hljs-strong { font-weight: bold }
+.hljs-formula { background: $solarized-base-3; }
 
 //
 // Responsive rules
@@ -238,17 +238,6 @@
     .breakPointS-c-google              { color: $google; }
     .breakPointS-c-instagram           { color: $instagram; }
     .breakPointS-c-linkedin            { color: $linkedin; }
-
-    // Syntax highlighting
-    // -------------------------
-
-    .breakPointS-hljs-tag               { color: $hljs-tag; }
-    .breakPointS-hljs-value             { color: $hljs-value; }
-    .breakPointS-hljs-attribute         { color: $hljs-attribute; }
-
-    .breakPointS-hljs-keyword           { color: $hljs-tag; }
-    .breakPointS-hljs-string            { color: $hljs-value; }
-    .breakPointS-hljs-built_in          { color: $hljs-attribute; }
 }
 
 @include breakPoint(m) {
