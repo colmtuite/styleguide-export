@@ -5,6 +5,7 @@ import SectionCode from '~/components/SectionCode.react';
 import SectionDescription from '~/components/SectionDescription.react';
 import SectionExample from '~/components/SectionExample.react';
 import SectionTitle from '~/components/SectionTitle.react';
+import ButtonToggle from '~/pages/components/buttons/ButtonToggle.react';
 
 import { statefulButtonsCode } from '~/components/CodeSnippets.js';
 
@@ -27,7 +28,7 @@ export default function StatefulButtons() {
             </div>
 
             <SectionExample>
-                <div className="grid grid--4">
+                <div className="grid grid--3">
                     <div className="padding-m textAlign-center borderWidth-0 borderRightWidth-1 borderStyle-solid borderColor-smoke">
                         <div className="marginTop-xs marginBottom-s">
                             <a
@@ -42,23 +43,10 @@ export default function StatefulButtons() {
 
                     <div className="padding-m textAlign-center borderWidth-0 borderRightWidth-1 borderStyle-solid borderColor-smoke">
                         <div className="marginTop-xs marginBottom-s">
-                            <a
-                                className="button button--m button--flat button--stateful bg-positive"
-                                role="button">
-                                <span>Click me!</span>
-                            </a>
-                        </div>
-
-                        <p className="lineHeight-s fontSize-s fontWeight-3 c-silver">Instant positive response</p>
-                    </div>
-
-                    <div className="padding-m textAlign-center borderWidth-0 borderRightWidth-1 borderStyle-solid borderColor-smoke">
-                        <div className="marginTop-xs marginBottom-s">
-                            <a
-                                className="button button--m button--flat button--stateful bg-positive"
-                                role="button">
-                                <span>Click me!</span>
-                            </a>
+                            <ButtonToggle
+                                defaultClass="button button--m button--flat button--stateful bg-positive"
+                                activeClass="has-succeeded has-responded"
+                            />
                         </div>
 
                         <p className="lineHeight-s fontSize-s fontWeight-3 c-silver">Positive response</p>
@@ -66,11 +54,10 @@ export default function StatefulButtons() {
 
                     <div className="padding-m textAlign-center">
                         <div className="marginTop-xs marginBottom-s">
-                            <a
-                                className="js-fail-button button button--m button--flat button--stateful bg-marvel"
-                                role="button">
-                                <span>Click me!</span>
-                            </a>
+                            <ButtonToggle
+                                defaultClass="button button--m button--flat button--stateful bg-marvel"
+                                activeClass="has-failed has-responded"
+                            />
                         </div>
 
                         <p className="lineHeight-s fontSize-s fontWeight-3 c-silver">Negative response</p>
