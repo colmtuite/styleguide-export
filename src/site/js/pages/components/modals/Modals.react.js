@@ -1,5 +1,5 @@
 import React from 'react';
-import PageTitle from '~/components/PageTitle';
+import PageTitle from '~/components/PageTitle.react';
 
 export default function Modals() {
     return (

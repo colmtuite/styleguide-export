@@ -1,5 +1,5 @@
 import React from 'react';
-import PageTitle from '~/components/PageTitle';
+import PageTitle from '~/components/PageTitle.react';
 
 import PageWrap from '~/pages/components/grid/PageWrap.react';
 import BasicGrid from '~/pages/components/grid/BasicGrid.react';

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import SectionDescription from '~/components/SectionDescription';
-import SectionTitle from '~/components/SectionTitle';
+import SectionDescription from '~/components/SectionDescription.react';
+import SectionTitle from '~/components/SectionTitle.react';
 
 export default function ReversibleGreys() {
     return (

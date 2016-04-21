@@ -5,7 +5,7 @@ import ColourfulLinks from '~/pages/components/links/ColourfulLinks.react';
 import LightLink from '~/pages/components/links/LightLink.react';
 import LightLinkReversed from '~/pages/components/links/LightLinkReversed.react';
 import NegativeLink from '~/pages/components/links/NegativeLink.react';
-import PageTitle from '~/components/PageTitle';
+import PageTitle from '~/components/PageTitle.react';
 import SnowBackgroundLink from '~/pages/components/links/SnowBackgroundLink.react';
 
 export default function Links() {

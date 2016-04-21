@@ -1,9 +1,9 @@
 import React from 'react';
-import SectionTitle from '~/components/SectionTitle';
-import SectionDescription from '~/components/SectionDescription';
-import SectionExample from '~/components/SectionExample';
-import SectionCode from '~/components/SectionCode';
-import InlineCode from '~/components/InlineCode';
+import SectionTitle from '~/components/SectionTitle.react';
+import SectionDescription from '~/components/SectionDescription.react';
+import SectionExample from '~/components/SectionExample.react';
+import SectionCode from '~/components/SectionCode.react';
+import InlineCode from '~/components/InlineCode.react';
 import { customAvatarSizesCode } from '~/components/CodeSnippets.js';
 
 export default function CustomAvatarSizes() {

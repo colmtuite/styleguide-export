@@ -1,8 +1,8 @@
 import React from 'react';
-import SectionTitle from '~/components/SectionTitle';
-import SectionDescription from '~/components/SectionDescription';
-import SectionExample from '~/components/SectionExample';
-import SectionCode from '~/components/SectionCode';
+import SectionTitle from '~/components/SectionTitle.react';
+import SectionDescription from '~/components/SectionDescription.react';
+import SectionExample from '~/components/SectionExample.react';
+import SectionCode from '~/components/SectionCode.react';
 import { hideElementsVisuallyCode } from '~/components/CodeSnippets.js';
 
 export default function HideElementsVisually() {

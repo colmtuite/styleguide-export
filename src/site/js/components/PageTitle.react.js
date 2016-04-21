@@ -7,7 +7,9 @@ export default function PageTitle({ title }) {
 
     return (
         <div className="marginTop-m marginBottom-xl">
-            <h2 className="fontSize-xxxl">{ title }</h2>
+            <h2 className="fontSize-xxxl">
+                { title }
+            </h2>
         </div>
     );
 }

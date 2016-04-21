@@ -2,8 +2,8 @@ import React from 'react';
 
 import ColorBlock from '~/pages/design/colors/ColorBlock.react';
 import ColorRow from '~/pages/design/colors/ColorRow.react';
-import SectionDescription from '~/components/SectionDescription';
-import SectionTitle from '~/components/SectionTitle';
+import SectionDescription from '~/components/SectionDescription.react';
+import SectionTitle from '~/components/SectionTitle.react';
 
 export default function GreyColors() {
     const border = <div className="posPinAll boxShadow-smoke borderRadius-m pointerEvents-none"></div>;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import OrderedList from '~/pages/components/lists/OrderedList.react';
-import PageTitle from '~/components/PageTitle';
+import PageTitle from '~/components/PageTitle.react';
 import UnorderedList from '~/pages/components/lists/UnorderedList.react';
 
 export default function Lists() {

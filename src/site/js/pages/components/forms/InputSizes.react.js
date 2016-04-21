@@ -1,9 +1,9 @@
 import React from 'react';
 
-import SectionCode from '~/components/SectionCode';
-import SectionDescription from '~/components/SectionDescription';
-import SectionExample from '~/components/SectionExample';
-import SectionTitle from '~/components/SectionTitle';
+import SectionCode from '~/components/SectionCode.react';
+import SectionDescription from '~/components/SectionDescription.react';
+import SectionExample from '~/components/SectionExample.react';
+import SectionTitle from '~/components/SectionTitle.react';
 
 import { inputSizesCode } from '~/components/CodeSnippets.js';
 

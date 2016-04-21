@@ -7,7 +7,9 @@ export default function SectionTitle({ sectionTitle }) {
 
     return (
         <div className="marginBottom-xxs">
-            <h3 className="fontSize-xl lineHeight-xl">{ sectionTitle }</h3>
+            <h3 className="fontSize-xl lineHeight-xl">
+                { sectionTitle }
+            </h3>
         </div>
     );
 }
