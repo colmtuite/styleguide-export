@@ -40,6 +40,67 @@ export const unorderedListCode = `<ul class="list list--unordered">
 </ul>`;
 
 //
+// Modals
+// -------------------------
+
+export const modalsCode = `<div class="overlay zIndex-Overlay">
+  <div class="modal-container">
+    <div class="display-table width-100 height-100">
+      <div class="modal-icon-wrapper">
+        <div class="modal-icon modal-icon--light modal-iconClose modal-iconClose--outside">
+        </div>
+      </div>
+
+      <div class="display-tableCell verticalAlign-middle padding-m">
+        <div class="modal modal--s">...</div>
+        <div class="modal-subtext modal-subtext--after textAlign-center">
+          Don't have an account?
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`;
+
+//
+// Popovers
+//
+
+export const basicPopoversCode = `<div class="popover popover--s popover--top has-caret">
+    <div class="padding-s">
+        <span class="fontSize-m lineHeight-m">...</span>
+    </div>
+</div>
+
+<div class="popover popover--s popover--right has-caret">
+    <div class="padding-s">
+        <span class="fontSize-m lineHeight-m">...</span>
+    </div>
+</div>
+
+<div class="popover popover--s popover--bottom has-caret">
+    <div class="padding-s">
+        <span class="fontSize-m lineHeight-m">...</span>
+    </div>
+</div>
+
+<div class="popover popover--s popover--left has-caret">
+    <div class="padding-s">
+        <span class="fontSize-m lineHeight-m">...</span>
+    </div>
+</div>`;
+
+export const popoverWithLinks = `<div class="popover popover--s popover--top has-caret">
+    <div class="popover-list">
+        <a href="#">...</a>
+        <a href="#">...</a>
+        <a href="#">...</a>
+        <a href="#">...</a>
+        <div class="popover-separator"></div>
+        <a href="#">...</a>
+    </div>
+</div>`;
+
+//
 // Avatars
 // -------------------------
 

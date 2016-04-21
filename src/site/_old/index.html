@@ -1,618 +1,351 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <title>Styleguide - Marvel</title>
+<body>
+    <div style="padding-left: 20%">
+        <section class="marginBottom-xl" id="popovers">
+            <div class="marginBottom-l">
+                <h2 class="fontSize-xxxl">Popovers</h2>
+            </div>
 
-        <meta charset="utf-8">
-        <meta name="author" content="Marvel">
-        <meta name="description" content="Base styling from Marvelapp">
+            <h3 class="fontSize-xl lineHeight-xl">Popover with select menu</h3>
+            <p class="lineHeight-l fontSize-l fontWeight-3"></p>
 
-        <link rel="stylesheet" href="assets/css/styleguide.css?v=0.0.1">
+            <div class="marginTop-m marginBottom-l">
+                <div class="padding-m borderWidth-1 borderStyle-solid borderColor-smoke borderRadiusTop-m">
+                    <div class="inline">
+                        <div class="position-relative marginRight-m">
+                            <div class="popover popover--top has-caret" style="width: 260px">
+                                <div class="js-popover-select-item popover-select-item paddingLeftRight-m paddingTopBottom-s has-border is-active">
+                                    <div class="inline">
+                                        <div class="verticalAlign-middle marginRight-m">
+                                            <div class="select-toggle"></div>
+                                        </div>
 
-        <script src="assets/js/lib/jquery.min.js"></script>
-        <script src="assets/js/lib/highlight.min.js"></script>
-        <script src="assets/js/lib/antiscroll.min.js"></script>
-        <script src="assets/js/styleguide.js"></script>
-    </head>
+                                        <div class="verticalAlign-middle">
+                                            <div class="marginBottom-xxs">
+                                                <span class="popover-select-title fontWeight-5">Editor</span>
+                                            </div>
+                                            <span class="popover-select-subtitle">Create and edit projects</span>
+                                        </div>
+                                    </div>
+                                </div>
 
-    <body>
-        <div style="padding-left: 20%">
-            <section class="marginBottom-xl" id="popovers">
+                                <div class="js-popover-select-item popover-select-item paddingLeftRight-m paddingTopBottom-s has-border">
+                                    <div class="inline">
+                                        <div class="verticalAlign-middle marginRight-m">
+                                            <div class="select-toggle"></div>
+                                        </div>
+
+                                        <div class="verticalAlign-middle">
+                                            <div class="marginBottom-xxs">
+                                                <span class="popover-select-title fontWeight-5">Client/Reviewer</span>
+                                            </div>
+                                            <span class="popover-select-subtitle">Read and comment only</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="js-popover-select-item popover-select-item paddingLeftRight-m paddingTopBottom-s has-border">
+                                    <div class="inline">
+                                        <div class="verticalAlign-middle marginRight-m">
+                                            <div class="select-toggle"></div>
+                                        </div>
+
+                                        <div class="verticalAlign-middle">
+                                            <div class="marginBottom-xxs">
+                                                <span class="popover-select-title fontWeight-5">Account Admin</span>
+                                            </div>
+                                            <span class="popover-select-subtitle">Add and remove people</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="js-popover-button button button--ghost button--m bg-marvel--hover" data-active-color="marvel">Popover with select menu</button>
+                        </div>
+
+                        <div class="position-relative">
+                            <div class="popover popover--s popover--top has-caret">
+                                <div class="js-popover-select-item popover-select-item cursor-default padding-s has-border">
+                                    <svg class="fill-silver marginRight-xs" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M9.11,4H3.47L5.69,1.78A1,1,0,0,0,4.21.31L0.3,4.22A1,1,0,0,0,0,5a1,1,0,0,0,.3.78L4.21,9.69A1,1,0,0,0,5.69,8.22L3.47,6H9.11A0.9,0.9,0,0,0,10,5.11V4.89A0.9,0.9,0,0,0,9.11,4Z"/></svg>
+                                    <span class="popover-select-title display-inline link link-light">Back</span>
+                                </div>
+
+                                <div class="js-popover-select-item popover-select-item paddingLeftRight-s paddingTopBottom-xs paddingTop-m is-active">
+                                    <div class="inline">
+                                        <div class="verticalAlign-middle marginRight-s">
+                                            <div class="select-toggle"></div>
+                                        </div>
+
+                                        <div class="verticalAlign-middle">
+                                            <span class="popover-select-title">My Folder</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="js-popover-select-item popover-select-item paddingLeftRight-s paddingTopBottom-xs">
+                                    <div class="inline">
+                                        <div class="verticalAlign-middle marginRight-s">
+                                            <div class="select-toggle"></div>
+                                        </div>
+
+                                        <div class="verticalAlign-middle">
+                                            <span class="popover-select-title">Personal Projects</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="js-popover-select-item popover-select-item paddingLeftRight-s paddingTopBottom-xs paddingBottom-m has-border">
+                                    <div class="inline">
+                                        <div class="verticalAlign-middle marginRight-s">
+                                            <div class="select-toggle"></div>
+                                        </div>
+
+                                        <div class="verticalAlign-middle">
+                                            <span class="popover-select-title">Wireframes</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="js-popover-select-item popover-select-item cursor-default padding-s has-border">
+                                    <svg class="fill-silver marginRight-xs" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M9,4H6V1A1,1,0,0,0,4,1V4H1A1,1,0,0,0,1,6H4V9A1,1,0,0,0,6,9V6H9A1,1,0,0,0,9,4Z"/></svg>
+                                    <span class="popover-select-title display-inline link link-light">New folder</span>
+                                </div>
+                            </div>
+
+                            <button class="js-popover-button button button--ghost button--m bg-marvel--hover" data-active-color="marvel">Folders</button>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="styleguide-code-snippet">
+                    <pre>
+                        <code>&lt;div class="popover popover--s popover--top has-caret">
+      &lt;div class="popover-list">
+        &lt;a href="#">...&lt;/a>
+        &lt;a href="#">...&lt;/a>
+        &lt;a href="#">...&lt;/a>
+        &lt;div class="popover-separator">&lt;/div>
+        &lt;a href="#">...&lt;/a>
+      &lt;/div>
+    &lt;/div></code>
+                    </pre>
+                </aside>
+            </div>
+        </section>
+
+        <section class="marginBottom-xl" id="modals">
+            <div>
                 <div class="marginBottom-l">
-                    <h2 class="fontSize-xxxl">Popovers</h2>
-                </div>
-
-                <h3 class="fontSize-xl lineHeight-xl">Basic popover structure</h3>
-                <p class="lineHeight-l fontSize-l fontWeight-3">Popovers are used for any contextual content that shouldn't block the the user. Some common uses are dropdown link menus, hovercards, complex tooltips etc. Below are some guidelines for usage and structure:</p>
-
-                <ul class="list list--unordered lineHeight-l fontSize-l fontWeight-3 marginTop-s marginBottom-m">
-                  <li>Only shared styles are componentised globally. Variable styles are applied with additional classes.</li>
-                  <li>Padding size can vary. Padding can either be applied to a <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">&lt;div&gt;</code> inside the popover element or can be applied directly to children of the popover element. The best approach depends on the structure of the content inside the popover component.</li>
-                  <li>Popover content can vary, there are no strict dos and don'ts.</li>
-                  <li>Popover max-widths and max-heights usually vary on a case-by-case basis. These properties are not shared globally, therefore, we set the max-width and max-height inline.</li>
-                </ul>
-
-                <div class="marginTop-m marginBottom-l">
-                    <div class="padding-m borderWidth-1 borderStyle-solid borderColor-smoke borderRadiusTop-m">
-                        <div class="inline">
-                            <div class="position-relative marginRight-m">
-                                <div class="popover popover--s popover--top has-caret">
-                                    <div class="padding-s">
-                                        <div class="fontSize-m lineHeight-m">I am a normal popover and I can have text and everything</div>
-                                    </div>
-                                </div>
-                                <button class="js-popover-button button button--ghost button--m bg-marvel--hover" data-active-color="marvel">Top Popover</button>
-                            </div>
-
-                            <div class="position-relative marginRight-m">
-                                <div class="popover popover--s popover--right has-caret">
-                                    <div class="padding-s">
-                                        <div class="fontSize-m lineHeight-m">I am a normal popover and I can have text and everything</div>
-                                    </div>
-                                </div>
-                                <button class="js-popover-button button button--ghost button--m bg-marvel--hover" data-active-color="marvel">Right Popover</button>
-                            </div>
-
-                            <div class="position-relative marginRight-m">
-                                <div class="popover popover--s popover--bottom has-caret">
-                                    <div class="padding-s">
-                                        <div class="fontSize-m lineHeight-m">I am a normal popover and I can have text and everything</div>
-                                    </div>
-                                </div>
-                                <button class="js-popover-button button button--ghost button--m bg-marvel--hover" data-active-color="marvel">Bottom Popover</button>
-                            </div>
-
-                            <div class="position-relative">
-                                <div class="popover popover--s popover--left has-caret">
-                                    <div class="padding-s">
-                                        <div class="fontSize-m lineHeight-m">I am a normal popover and I can have text and everything</div>
-                                    </div>
-                                </div>
-                                <button class="js-popover-button button button--ghost button--m bg-marvel--hover" data-active-color="marvel">Left Popover</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <aside class="styleguide-code-snippet">
-                        <pre>
-                          <code>&lt;div class="popover popover--s popover--top has-caret">
-          &lt;div class="padding-s">
-            &lt;span class="fontSize-m lineHeight-m">...&lt;/span>
-          &lt;/div>
-        &lt;/div>
-
-        &lt;div class="popover popover--s popover--right has-caret">
-          &lt;div class="padding-s">
-            &lt;span class="fontSize-m lineHeight-m">...&lt;/span>
-          &lt;/div>
-        &lt;/div>
-
-        &lt;div class="popover popover--s popover--bottom has-caret">
-          &lt;div class="padding-s">
-            &lt;span class="fontSize-m lineHeight-m">...&lt;/span>
-          &lt;/div>
-        &lt;/div>
-
-        &lt;div class="popover popover--s popover--left has-caret">
-          &lt;div class="padding-s">
-            &lt;span class="fontSize-m lineHeight-m">...&lt;/span>
-          &lt;/div>
-        &lt;/div></code>
-                        </pre>
-                    </aside>
-                </div>
-
-                <h3 class="fontSize-xl lineHeight-xl">Popover with links</h3>
-                <p class="lineHeight-l fontSize-l fontWeight-3">A simple popout menu with links, possibly used for header nav menus, filters etc.</p>
-
-                <div class="marginTop-m marginBottom-l">
-                    <div class="padding-m borderWidth-1 borderStyle-solid borderColor-smoke borderRadiusTop-m">
-                        <div class="position-relative display-inlineBlock">
-                            <div class="popover popover--s popover--top has-caret">
-                                <div class="popover-list">
-                                    <a href="#">Facebook</a>
-                                    <a href="#">Twitter</a>
-                                    <a href="#">Google+</a>
-                                    <a href="#">Write a Medium post</a>
-                                </div>
-                            </div>
-                            <button class="js-popover-button button button--ghost button--m bg-marvel--hover" data-active-color="marvel">Popover with links</button>
-                        </div>
-                    </div>
-
-                    <aside class="styleguide-code-snippet">
-                        <pre>
-                          <code>&lt;div class="popover popover--s popover--top has-caret">
-          &lt;div class="popover-list">
-            &lt;a href="#">...&lt;/a>
-            &lt;a href="#">...&lt;/a>
-            &lt;a href="#">...&lt;/a>
-            &lt;a href="#">...&lt;/a>
-          &lt;/div>
-        &lt;/div></code>
-                        </pre>
-                    </aside>
-                </div>
-
-                <h3 class="fontSize-xl lineHeight-xl">Popover with separator</h3>
-                <p class="lineHeight-l fontSize-l fontWeight-3">Add an optional element <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.popover-separator</code> as a separator between popover list elements.</p>
-
-                <div class="marginTop-m marginBottom-l">
-                    <div class="padding-m borderWidth-1 borderStyle-solid borderColor-smoke borderRadiusTop-m">
-                        <div class="position-relative display-inlineBlock">
-                            <div class="popover popover--s popover--top has-caret">
-                                <div class="popover-list">
-                                    <a href="#">Facebook</a>
-                                    <a href="#">Twitter</a>
-                                    <a href="#">Google+</a>
-                                    <div class="popover-separator"></div>
-                                    <a href="#">Write a Medium post</a>
-                                </div>
-                            </div>
-                            <button class="js-popover-button button button--ghost button--m bg-marvel--hover" data-active-color="marvel">Popover with separator</button>
-                        </div>
-                    </div>
-
-                    <aside class="styleguide-code-snippet">
-                        <pre>
-                            <code>&lt;div class="popover popover--s popover--top has-caret">
-          &lt;div class="popover-list">
-            &lt;a href="#">...&lt;/a>
-            &lt;a href="#">...&lt;/a>
-            &lt;a href="#">...&lt;/a>
-            &lt;div class="popover-separator">&lt;/div>
-            &lt;a href="#">...&lt;/a>
-          &lt;/div>
-        &lt;/div></code>
-                        </pre>
-                    </aside>
-                </div>
-
-                <h3 class="fontSize-xl lineHeight-xl">Popover with select menu</h3>
-                <p class="lineHeight-l fontSize-l fontWeight-3">Add an optional element <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.popover-separator</code> as a separator between popover list elements.</p>
-
-                <div class="marginTop-m marginBottom-l">
-                    <div class="padding-m borderWidth-1 borderStyle-solid borderColor-smoke borderRadiusTop-m">
-                        <div class="inline">
-                            <div class="position-relative marginRight-m">
-                                <div class="popover popover--top has-caret" style="width: 260px">
-                                    <div class="js-popover-select-item popover-select-item paddingLeftRight-m paddingTopBottom-s has-border is-active">
-                                        <div class="inline">
-                                            <div class="verticalAlign-middle marginRight-m">
-                                                <div class="select-toggle"></div>
-                                            </div>
-
-                                            <div class="verticalAlign-middle">
-                                                <div class="marginBottom-xxs">
-                                                    <span class="popover-select-title fontWeight-5">Editor</span>
-                                                </div>
-                                                <span class="popover-select-subtitle">Create and edit projects</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="js-popover-select-item popover-select-item paddingLeftRight-m paddingTopBottom-s has-border">
-                                        <div class="inline">
-                                            <div class="verticalAlign-middle marginRight-m">
-                                                <div class="select-toggle"></div>
-                                            </div>
-
-                                            <div class="verticalAlign-middle">
-                                                <div class="marginBottom-xxs">
-                                                    <span class="popover-select-title fontWeight-5">Client/Reviewer</span>
-                                                </div>
-                                                <span class="popover-select-subtitle">Read and comment only</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="js-popover-select-item popover-select-item paddingLeftRight-m paddingTopBottom-s has-border">
-                                        <div class="inline">
-                                            <div class="verticalAlign-middle marginRight-m">
-                                                <div class="select-toggle"></div>
-                                            </div>
-
-                                            <div class="verticalAlign-middle">
-                                                <div class="marginBottom-xxs">
-                                                    <span class="popover-select-title fontWeight-5">Account Admin</span>
-                                                </div>
-                                                <span class="popover-select-subtitle">Add and remove people</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <button class="js-popover-button button button--ghost button--m bg-marvel--hover" data-active-color="marvel">Popover with select menu</button>
-                            </div>
-
-                            <div class="position-relative">
-                                <div class="popover popover--s popover--top has-caret">
-                                    <div class="js-popover-select-item popover-select-item cursor-default padding-s has-border">
-                                        <svg class="fill-silver marginRight-xs" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M9.11,4H3.47L5.69,1.78A1,1,0,0,0,4.21.31L0.3,4.22A1,1,0,0,0,0,5a1,1,0,0,0,.3.78L4.21,9.69A1,1,0,0,0,5.69,8.22L3.47,6H9.11A0.9,0.9,0,0,0,10,5.11V4.89A0.9,0.9,0,0,0,9.11,4Z"/></svg>
-                                        <span class="popover-select-title display-inline link link-light">Back</span>
-                                    </div>
-
-                                    <div class="js-popover-select-item popover-select-item paddingLeftRight-s paddingTopBottom-xs paddingTop-m is-active">
-                                        <div class="inline">
-                                            <div class="verticalAlign-middle marginRight-s">
-                                                <div class="select-toggle"></div>
-                                            </div>
-
-                                            <div class="verticalAlign-middle">
-                                                <span class="popover-select-title">My Folder</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="js-popover-select-item popover-select-item paddingLeftRight-s paddingTopBottom-xs">
-                                        <div class="inline">
-                                            <div class="verticalAlign-middle marginRight-s">
-                                                <div class="select-toggle"></div>
-                                            </div>
-
-                                            <div class="verticalAlign-middle">
-                                                <span class="popover-select-title">Personal Projects</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="js-popover-select-item popover-select-item paddingLeftRight-s paddingTopBottom-xs paddingBottom-m has-border">
-                                        <div class="inline">
-                                            <div class="verticalAlign-middle marginRight-s">
-                                                <div class="select-toggle"></div>
-                                            </div>
-
-                                            <div class="verticalAlign-middle">
-                                                <span class="popover-select-title">Wireframes</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="js-popover-select-item popover-select-item cursor-default padding-s has-border">
-                                        <svg class="fill-silver marginRight-xs" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M9,4H6V1A1,1,0,0,0,4,1V4H1A1,1,0,0,0,1,6H4V9A1,1,0,0,0,6,9V6H9A1,1,0,0,0,9,4Z"/></svg>
-                                        <span class="popover-select-title display-inline link link-light">New folder</span>
-                                    </div>
-                                </div>
-
-                                <button class="js-popover-button button button--ghost button--m bg-marvel--hover" data-active-color="marvel">Folders</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <aside class="styleguide-code-snippet">
-                        <pre>
-                            <code>&lt;div class="popover popover--s popover--top has-caret">
-          &lt;div class="popover-list">
-            &lt;a href="#">...&lt;/a>
-            &lt;a href="#">...&lt;/a>
-            &lt;a href="#">...&lt;/a>
-            &lt;div class="popover-separator">&lt;/div>
-            &lt;a href="#">...&lt;/a>
-          &lt;/div>
-        &lt;/div></code>
-                        </pre>
-                    </aside>
-                </div>
-
-                <h3 class="fontSize-xl lineHeight-xl">Popover that appears on hover</h3>
-                <p class="lineHeight-l fontSize-l fontWeight-3">Add an optional element <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">.popover-separator</code> as a separator between popover list elements.</p>
-
-                <div class="marginTop-m marginBottom-l">
-                    <div class="padding-m borderWidth-1 borderStyle-solid borderColor-smoke borderRadiusTop-m">
-                        <div class="popover-trigger position-relative display-inlineBlock">
-                            <div class="popover popover--s popover--top has-caret">
-                                <div class="popover-list">
-                                    <a href="#">Facebook</a>
-                                    <a href="#">Twitter</a>
-                                    <a href="#">Google+</a>
-                                    <div class="popover-separator"></div>
-                                    <a href="#">Write a Medium post</a>
-                                </div>
-                            </div>
-                            <button class="js-popover-button button button--ghost button--m bg-marvel--hover" data-active-color="marvel">Popover on hover</button>
-                        </div>
-                    </div>
-
-                    <aside class="styleguide-code-snippet">
-                        <pre>
-                            <code>&lt;div class="popover-trigger">
-          &lt;div class="popover popover--s popover--top has-caret">
-            &lt;div class="popover-list">
-              &lt;a href="#">...&lt;/a>
-              &lt;a href="#">...&lt;/a>
-              &lt;a href="#">...&lt;/a>
-              &lt;div class="popover-separator">&lt;/div>
-              &lt;a href="#">...&lt;/a>
-            &lt;/div>
-          &lt;/div>
-        &lt;/div></code>
-                        </pre>
-                    </aside>
-                </div>
-
-                <h3 class="fontSize-xl lineHeight-xl">Popover with avatar and helper text.</h3>
-                <p class="lineHeight-l fontSize-l fontWeight-3">Use a single class to define a size for your button.</p>
-
-                <div class="marginTop-m marginBottom-l">
-                    <div class="padding-m borderWidth-1 borderStyle-solid borderColor-smoke borderRadiusTop-m">
-                        <div class="popover" style="max-width: 257px;">
-                            <div class="padding-s">
-                                <div class="inline">
-                                    <div>
-                                        <div class="avatar avatar--m" title="Dean Blacc" style="background-color: #776FB3;">
-                                            <div class="avatar-img" style="background-image: url('https://res.cloudinary.com/marvel-content/image/fetch/s--Z3QEVGWe--/t_profile_image_200/https://marvelapp-live.storage.googleapis.com/serve/1435759062.46_6862311.gif')"></div>
-                                            <div class="avatar-initials">DB</div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <span class="fontSize-s lineHeight-xs c-silver">Created on 26th Sep by Brendan Moore in <a class="" href="#">Marvel</a>.</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <span class="popover-tick popover-top-tick"></span>
-                        </div>
-                    </div>
-
-                    <aside class="styleguide-code-snippet">
-                        <pre>
-                          <code></code>
-                        </pre>
-                        </pre>
-                    </aside>
-                </div>
-
-                <h3 class="fontSize-xl lineHeight-xl">Action popovers.</h3>
-                <p class="lineHeight-l fontSize-l fontWeight-3">Use a single class to define a size for your button.</p>
-
-                <div class="marginTop-m marginBottom-l">
-                    <div class="padding-m borderWidth-1 borderStyle-solid borderColor-smoke borderRadiusTop-m">
-                      <div class="popover display-inlineBlock">
-                          <div class="inline">
-                              <div class="popover-block">
-                                  <div class="popover-block-icon">
-                                      <svg class="fill-positive display-block verticallyCenter centered" width="32" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 32" enable-background="new 0 0 30 32"><path d="M29.6 16.2c-1.5-2.4-3.4-5.4-5.7-8-2.3-2.6-4-4.4-5.3-5.6-1.2-1.2-2.1-1.9-2.5-2.3-.3-.2-.7-.3-1.1-.3s-.8.1-1.1.4c-.1.1-.5.4-1 .9-.6.5-1.4 1.3-2.4 2.3-1.1 1.1-2.2 2.2-3.3 3.4-1.1 1.2-2.3 2.6-3.6 4.2-1.3 1.6-2.4 3.7-3.4 5.2-.3.5-.3 1.1 0 1.7.3.6.8.9 1.5.9h6.7c.4 2.6.8 4.4 1.3 6.6.5 2.3.9 3.6 1.1 4 .9 1.6 2.3 2.4 4.2 2.4 1.9 0 3.4-.8 4.3-2.4.2-.4.6-1.8 1.1-4.1.5-2.3.9-4.1 1.3-6.6h6.6c.5 0 .9-.2 1.2-.5.3-.3.5-.7.5-1.2 0-.3-.1-.7-.4-1z"/></svg>
-                                  </div>
-                                  <div class="fontSize-s lineHeight-m c-silver textAlign-center">From Computer</div>
-                              </div>
-
-                              <div class="popover-block">
-                                  <div class="popover-block-icon"></div>
-                                  <div class="fontSize-s lineHeight-m c-silver textAlign-center">From Dropbox</div>
-                              </div>
-
-                              <div class="popover-block">
-                                  <div class="popover-block-icon"></div>
-                                  <div class="fontSize-s lineHeight-m c-silver textAlign-center">From Google Drive</div>
-                              </div>
-                          </div>
-                      </div>
-                    </div>
-
-                    <aside class="styleguide-code-snippet">
-                        <pre>
-                          <code></code>
-                        </pre>
-                        </pre>
-                    </aside>
-                </div>
-            </section>
-
-            <section class="marginBottom-xl" id="modals">
-                <div>
-                    <div class="marginBottom-l">
-                        <h2 class="fontSize-xxxl">Modals</h2>
-                    </div>
-                </div>
-
-                <h3 class="fontSize-xl lineHeight-xl">Default modal</h3>
-                <p class="lineHeight-l fontSize-l fontWeight-3">Use <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">&lt;ul&gt;</code> when the list order is irrelevant.</p>
-
-                <div class="marginTop-m marginBottom-l">
-                    <div class="padding-m borderWidth-1 borderStyle-solid borderColor-smoke borderRadiusTop-m">
-                        <div class="inline">
-                            <div class="marginRight-m">
-                                <div class="button button--m button--flat bg-blue open-modal">Modal</div>
-                            </div>
-                            <div class="marginRight-m">
-                                <div class="button button--m button--flat bg-blue open-modal-with-subtext">Modal with subtext</div>
-                            </div>
-                            <div>
-                                <div class="button button--m button--flat bg-blue open-modal-with-title">Modal with title</div>
-                            </div>
-                        </div>
-                    </div>
-                    <aside class="styleguide-code-snippet">
-                        <pre>
-                            <code>&lt;div class="modal-overlay is-active">
-            &lt;div class="display-table posPinAll">
-                &lt;div class="display-tableCell verticalAlign-middle padding-m">
-                    &lt;div class="modal-icon-wrapper">
-                        &lt;div class="modal-icon modal-icon--light modal-iconBack">&lt;/div>
-                        &lt;div class="modal-icon modal-icon--light modal-iconClose">&lt;/div>
-                    &lt;/div>
-                &lt;/div>
-            &lt;/div>
-        &lt;/div></code>
-                        </pre>
-                    </aside>
-                </div>
-            </section>
-        </div>
-
-        <div class="modal-overlay" id="demo-modal">
-            <div class="display-table width-100 height-100">
-                <div class="display-tableCell verticalAlign-middle">
-                    <div class="modal modal--s">
-                        <div class="marginBottom-xs">
-                            <h3 class="c-slate fontSize-xl fontWeight-5 textAlign-center">Good morning! Welcome back.</h3>
-                        </div>
-
-                        <div class="marginBottom-l textAlign-center">
-                            <span class="fontSize-m fontWeight-3 c-silver">Log into your account here:</span>
-                        </div>
-
-                        <form class="marginBottom-l">
-                            <div class="marginBottom-m">
-                                <input class="width-100 input input--default input--l" type="email" spellcheck="false" name="signin-email" placeholder="Email address">
-                                <div class="error"></div>
-                            </div>
-
-                            <div class="marginBottom-s">
-                                <input class="width-100 input input--default input--l" type="password" spellcheck="false" name="signin-password" placeholder="Password">
-                                <div class="error"></div>
-                            </div>
-
-                            <div class="marginBottom-m textAlign-right">
-                                <span class="forgot-password link link--light fontWeight-3">Forgotten password?</span>
-                            </div>
-
-                            <div>
-                                <input id="login-button" type="submit" class="width-100 button button--l button--flat bg-green c-white" value="Log in">
-                            </div>
-                        </form>
-
-                        <div class="marginBottom-l textAlign-center position-relative">
-                            <span class="divider c-silver fontWeight-3">Or use Dropbox / Google</span>
-                        </div>
-
-                        <div class="grid grid--m breakPointM-grid--2">
-                            <div>
-                                <a class="width-100 button button--flat bg-dropbox textAlign-center paddingTopBottom-xs borderRadius-m" id="connect-dropbox" href="/auth/dropbox_auth_start/">
-                                    <svg class="fill-white display-block centered" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 46" enable-background="new 0 0 48 46"><path d="M14.1 0l-14.1 9.5 9.8 8.1 14.2-9.1-9.9-8.5zm-14.1 25.6l14.1 9.5 9.9-8.5-14.2-9-9.8 8zm24 1l9.9 8.5 14.1-9.5-9.8-8.1-14.2 9.1zm24-17.1l-14.1-9.5-9.9 8.5 14.2 9.1 9.8-8.1zm-24 18.9l-9.9 8.5-4.2-2.9v3.2l14.1 8.8 14.1-8.7v-3.2l-4.2 2.9-9.9-8.6z"></path></svg>
-                                </a>
-                            </div>
-
-                            <div>
-                                <a href="/auth/drive_auth_start/" id="connect-drive" class="width-100 button button--flat bg-google textAlign-center paddingTopBottom-xs borderRadius-m">
-                                    <svg class="fill-white display-block centered" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="6 -3 52 46" enable-background="new 6 -3 52 46"><path d="M30.8 12.1l-7.7-13.7-17.1 29.5 7.6 13.9 8.1-14zM24.1 29.1l-8.1 13.9h33.9l8.1-14-16.1.1zM41.9 26.3h16.1l-17.1-29.3h-15.7l7.8 13.7z"></path></svg>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="modal-icon-wrapper">
-                            <div class="js-close-modal modal-icon modal-icon--light modal-iconClose"></div>
-                        </div>
-                    </div>
+                    <h2 class="fontSize-xxxl">Modals</h2>
                 </div>
             </div>
-        </div>
 
-        <div class="modal-overlay" id="demo-modal-with-title">
-            <div class="display-table width-100 height-100">
-                <div class="display-tableCell verticalAlign-middle">
-                    <div class="modal-subtext modal-subtext--before">
+            <h3 class="fontSize-xl lineHeight-xl">Default modal</h3>
+            <p class="lineHeight-l fontSize-l fontWeight-3">Use <code class="padding-xxs fontSize-xs c-marvel borderRadius-s bg-snow">&lt;ul&gt;</code> when the list order is irrelevant.</p>
+
+            <div class="marginTop-m marginBottom-l">
+                <div class="padding-m borderWidth-1 borderStyle-solid borderColor-smoke borderRadiusTop-m">
+                    <div class="inline">
+                        <div class="marginRight-m">
+                            <div class="button button--m button--flat bg-blue open-modal">Modal</div>
+                        </div>
+                        <div class="marginRight-m">
+                            <div class="button button--m button--flat bg-blue open-modal-with-subtext">Modal with subtext</div>
+                        </div>
+                        <div>
+                            <div class="button button--m button--flat bg-blue open-modal-with-title">Modal with title</div>
+                        </div>
+                    </div>
+                </div>
+                <aside class="styleguide-code-snippet">
+                    <pre>
+                        <code>&lt;div class="modal-overlay is-active">
+        &lt;div class="display-table posPinAll">
+            &lt;div class="display-tableCell verticalAlign-middle padding-m">
+                &lt;div class="modal-icon-wrapper">
+                    &lt;div class="modal-icon modal-icon--light modal-iconBack">&lt;/div>
+                    &lt;div class="modal-icon modal-icon--light modal-iconClose">&lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div></code>
+                    </pre>
+                </aside>
+            </div>
+        </section>
+    </div>
+
+    <div class="modal-overlay" id="demo-modal">
+        <div class="display-table width-100 height-100">
+            <div class="display-tableCell verticalAlign-middle">
+                <div class="modal modal--s">
+                    <div class="marginBottom-xs">
                         <h3 class="c-slate fontSize-xl fontWeight-5 textAlign-center">Good morning! Welcome back.</h3>
                     </div>
 
-                    <div class="modal modal--s">
-                        <form class="marginBottom-l">
-                            <div class="marginBottom-m">
-                                <input class="width-100 input input--default input--l" type="email" spellcheck="false" name="signin-email" placeholder="Email address">
-                                <div class="error"></div>
-                            </div>
+                    <div class="marginBottom-l textAlign-center">
+                        <span class="fontSize-m fontWeight-3 c-silver">Log into your account here:</span>
+                    </div>
 
-                            <div class="marginBottom-s">
-                                <input class="width-100 input input--default input--l" type="password" spellcheck="false" name="signin-password" placeholder="Password">
-                                <div class="error"></div>
-                            </div>
-
-                            <div class="marginBottom-m textAlign-right">
-                                <span class="forgot-password link link--light fontWeight-3">Forgotten password?</span>
-                            </div>
-
-                            <div>
-                                <input id="login-button" type="submit" class="width-100 button button--l button--flat bg-green c-white" value="Log in">
-                            </div>
-                        </form>
-
-                        <div class="marginBottom-l textAlign-center position-relative">
-                            <span class="divider c-silver fontWeight-3">Or use Dropbox / Google</span>
+                    <form class="marginBottom-l">
+                        <div class="marginBottom-m">
+                            <input class="width-100 input input--default input--l" type="email" spellcheck="false" name="signin-email" placeholder="Email address">
+                            <div class="error"></div>
                         </div>
 
-                        <div class="grid grid--m breakPointM-grid--2">
-                            <div>
-                                <a class="width-100 button button--flat bg-dropbox textAlign-center paddingTopBottom-xs borderRadius-m" id="connect-dropbox" href="/auth/dropbox_auth_start/">
-                                    <svg class="fill-white display-block centered" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 46" enable-background="new 0 0 48 46"><path d="M14.1 0l-14.1 9.5 9.8 8.1 14.2-9.1-9.9-8.5zm-14.1 25.6l14.1 9.5 9.9-8.5-14.2-9-9.8 8zm24 1l9.9 8.5 14.1-9.5-9.8-8.1-14.2 9.1zm24-17.1l-14.1-9.5-9.9 8.5 14.2 9.1 9.8-8.1zm-24 18.9l-9.9 8.5-4.2-2.9v3.2l14.1 8.8 14.1-8.7v-3.2l-4.2 2.9-9.9-8.6z"></path></svg>
-                                </a>
-                            </div>
-
-                            <div>
-                                <a href="/auth/drive_auth_start/" id="connect-drive" class="width-100 button button--flat bg-google textAlign-center paddingTopBottom-xs borderRadius-m">
-                                    <svg class="fill-white display-block centered" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="6 -3 52 46" enable-background="new 6 -3 52 46"><path d="M30.8 12.1l-7.7-13.7-17.1 29.5 7.6 13.9 8.1-14zM24.1 29.1l-8.1 13.9h33.9l8.1-14-16.1.1zM41.9 26.3h16.1l-17.1-29.3h-15.7l7.8 13.7z"></path></svg>
-                                </a>
-                            </div>
+                        <div class="marginBottom-s">
+                            <input class="width-100 input input--default input--l" type="password" spellcheck="false" name="signin-password" placeholder="Password">
+                            <div class="error"></div>
                         </div>
 
-                        <div class="modal-icon-wrapper">
-                            <div class="js-close-modal modal-icon modal-icon--light modal-iconClose"></div>
+                        <div class="marginBottom-m textAlign-right">
+                            <span class="forgot-password link link--light fontWeight-3">Forgotten password?</span>
                         </div>
+
+                        <div>
+                            <input id="login-button" type="submit" class="width-100 button button--l button--flat bg-green c-white" value="Log in">
+                        </div>
+                    </form>
+
+                    <div class="marginBottom-l textAlign-center position-relative">
+                        <span class="divider c-silver fontWeight-3">Or use Dropbox / Google</span>
+                    </div>
+
+                    <div class="grid grid--m breakPointM-grid--2">
+                        <div>
+                            <a class="width-100 button button--flat bg-dropbox textAlign-center paddingTopBottom-xs borderRadius-m" id="connect-dropbox" href="/auth/dropbox_auth_start/">
+                                <svg class="fill-white display-block centered" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 46" enable-background="new 0 0 48 46"><path d="M14.1 0l-14.1 9.5 9.8 8.1 14.2-9.1-9.9-8.5zm-14.1 25.6l14.1 9.5 9.9-8.5-14.2-9-9.8 8zm24 1l9.9 8.5 14.1-9.5-9.8-8.1-14.2 9.1zm24-17.1l-14.1-9.5-9.9 8.5 14.2 9.1 9.8-8.1zm-24 18.9l-9.9 8.5-4.2-2.9v3.2l14.1 8.8 14.1-8.7v-3.2l-4.2 2.9-9.9-8.6z"></path></svg>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="/auth/drive_auth_start/" id="connect-drive" class="width-100 button button--flat bg-google textAlign-center paddingTopBottom-xs borderRadius-m">
+                                <svg class="fill-white display-block centered" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="6 -3 52 46" enable-background="new 6 -3 52 46"><path d="M30.8 12.1l-7.7-13.7-17.1 29.5 7.6 13.9 8.1-14zM24.1 29.1l-8.1 13.9h33.9l8.1-14-16.1.1zM41.9 26.3h16.1l-17.1-29.3h-15.7l7.8 13.7z"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="modal-icon-wrapper">
+                        <div class="js-close-modal modal-icon modal-icon--light modal-iconClose"></div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="modal-overlay" id="demo-modal-with-subtext">
-            <div class="display-table width-100 height-100">
-                <div class="display-tableCell verticalAlign-middle">
-                    <div class="modal modal--s">
-                        <div class="marginBottom-xs">
-                            <h3 class="c-slate fontSize-xl fontWeight-5 textAlign-center">Good morning! Welcome back.</h3>
+    <div class="modal-overlay" id="demo-modal-with-title">
+        <div class="display-table width-100 height-100">
+            <div class="display-tableCell verticalAlign-middle">
+                <div class="modal-subtext modal-subtext--before">
+                    <h3 class="c-slate fontSize-xl fontWeight-5 textAlign-center">Good morning! Welcome back.</h3>
+                </div>
+
+                <div class="modal modal--s">
+                    <form class="marginBottom-l">
+                        <div class="marginBottom-m">
+                            <input class="width-100 input input--default input--l" type="email" spellcheck="false" name="signin-email" placeholder="Email address">
+                            <div class="error"></div>
                         </div>
 
-                        <div class="marginBottom-l textAlign-center">
-                            <span class="fontSize-m fontWeight-3 c-silver">Log into your account here:</span>
+                        <div class="marginBottom-s">
+                            <input class="width-100 input input--default input--l" type="password" spellcheck="false" name="signin-password" placeholder="Password">
+                            <div class="error"></div>
                         </div>
 
-                        <form class="marginBottom-l">
-                            <div class="marginBottom-m">
-                                <input class="width-100 input input--default input--l" type="email" spellcheck="false" name="signin-email" placeholder="Email address">
-                                <div class="error"></div>
-                            </div>
-
-                            <div class="marginBottom-s">
-                                <input class="width-100 input input--default input--l" type="password" spellcheck="false" name="signin-password" placeholder="Password">
-                                <div class="error"></div>
-                            </div>
-
-                            <div class="marginBottom-m textAlign-right">
-                                <span class="forgot-password link link--light fontWeight-3">Forgotten password?</span>
-                            </div>
-
-                            <div>
-                                <input id="login-button" type="submit" class="width-100 button button--l button--flat bg-green c-white" value="Log in">
-                            </div>
-                        </form>
-
-                        <div class="marginBottom-l textAlign-center position-relative">
-                            <span class="divider c-silver fontWeight-3">Or use Dropbox / Google</span>
+                        <div class="marginBottom-m textAlign-right">
+                            <span class="forgot-password link link--light fontWeight-3">Forgotten password?</span>
                         </div>
 
-                        <div class="grid grid--m breakPointM-grid--2">
-                            <div>
-                                <a class="width-100 button button--flat bg-dropbox textAlign-center paddingTopBottom-xs borderRadius-m" id="connect-dropbox" href="/auth/dropbox_auth_start/">
-                                    <svg class="fill-white display-block centered" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 46" enable-background="new 0 0 48 46"><path d="M14.1 0l-14.1 9.5 9.8 8.1 14.2-9.1-9.9-8.5zm-14.1 25.6l14.1 9.5 9.9-8.5-14.2-9-9.8 8zm24 1l9.9 8.5 14.1-9.5-9.8-8.1-14.2 9.1zm24-17.1l-14.1-9.5-9.9 8.5 14.2 9.1 9.8-8.1zm-24 18.9l-9.9 8.5-4.2-2.9v3.2l14.1 8.8 14.1-8.7v-3.2l-4.2 2.9-9.9-8.6z"></path></svg>
-                                </a>
-                            </div>
+                        <div>
+                            <input id="login-button" type="submit" class="width-100 button button--l button--flat bg-green c-white" value="Log in">
+                        </div>
+                    </form>
 
-                            <div>
-                                <a href="/auth/drive_auth_start/" id="connect-drive" class="width-100 button button--flat bg-google textAlign-center paddingTopBottom-xs borderRadius-m">
-                                    <svg class="fill-white display-block centered" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="6 -3 52 46" enable-background="new 6 -3 52 46"><path d="M30.8 12.1l-7.7-13.7-17.1 29.5 7.6 13.9 8.1-14zM24.1 29.1l-8.1 13.9h33.9l8.1-14-16.1.1zM41.9 26.3h16.1l-17.1-29.3h-15.7l7.8 13.7z"></path></svg>
-                                </a>
-                            </div>
+                    <div class="marginBottom-l textAlign-center position-relative">
+                        <span class="divider c-silver fontWeight-3">Or use Dropbox / Google</span>
+                    </div>
+
+                    <div class="grid grid--m breakPointM-grid--2">
+                        <div>
+                            <a class="width-100 button button--flat bg-dropbox textAlign-center paddingTopBottom-xs borderRadius-m" id="connect-dropbox" href="/auth/dropbox_auth_start/">
+                                <svg class="fill-white display-block centered" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 46" enable-background="new 0 0 48 46"><path d="M14.1 0l-14.1 9.5 9.8 8.1 14.2-9.1-9.9-8.5zm-14.1 25.6l14.1 9.5 9.9-8.5-14.2-9-9.8 8zm24 1l9.9 8.5 14.1-9.5-9.8-8.1-14.2 9.1zm24-17.1l-14.1-9.5-9.9 8.5 14.2 9.1 9.8-8.1zm-24 18.9l-9.9 8.5-4.2-2.9v3.2l14.1 8.8 14.1-8.7v-3.2l-4.2 2.9-9.9-8.6z"></path></svg>
+                            </a>
                         </div>
 
-                        <div class="modal-icon-wrapper">
-                            <div class="js-close-modal modal-icon modal-icon--light modal-iconClose"></div>
+                        <div>
+                            <a href="/auth/drive_auth_start/" id="connect-drive" class="width-100 button button--flat bg-google textAlign-center paddingTopBottom-xs borderRadius-m">
+                                <svg class="fill-white display-block centered" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="6 -3 52 46" enable-background="new 6 -3 52 46"><path d="M30.8 12.1l-7.7-13.7-17.1 29.5 7.6 13.9 8.1-14zM24.1 29.1l-8.1 13.9h33.9l8.1-14-16.1.1zM41.9 26.3h16.1l-17.1-29.3h-15.7l7.8 13.7z"></path></svg>
+                            </a>
                         </div>
                     </div>
 
-                    <div class="modal-subtext modal-subtext--after">
-                        <span class="c-silver fontWeight-3">Don't have an account? </span>
-                        <a class="js-signup-link link link--blue">Sign up</a>
+                    <div class="modal-icon-wrapper">
+                        <div class="js-close-modal modal-icon modal-icon--light modal-iconClose"></div>
                     </div>
                 </div>
             </div>
         </div>
-        -->
-    </body>
-</html>
+    </div>
+
+    <div class="modal-overlay" id="demo-modal-with-subtext">
+        <div class="display-table width-100 height-100">
+            <div class="display-tableCell verticalAlign-middle">
+                <div class="modal modal--s">
+                    <div class="marginBottom-xs">
+                        <h3 class="c-slate fontSize-xl fontWeight-5 textAlign-center">Good morning! Welcome back.</h3>
+                    </div>
+
+                    <div class="marginBottom-l textAlign-center">
+                        <span class="fontSize-m fontWeight-3 c-silver">Log into your account here:</span>
+                    </div>
+
+                    <form class="marginBottom-l">
+                        <div class="marginBottom-m">
+                            <input class="width-100 input input--default input--l" type="email" spellcheck="false" name="signin-email" placeholder="Email address">
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="marginBottom-s">
+                            <input class="width-100 input input--default input--l" type="password" spellcheck="false" name="signin-password" placeholder="Password">
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="marginBottom-m textAlign-right">
+                            <span class="forgot-password link link--light fontWeight-3">Forgotten password?</span>
+                        </div>
+
+                        <div>
+                            <input id="login-button" type="submit" class="width-100 button button--l button--flat bg-green c-white" value="Log in">
+                        </div>
+                    </form>
+
+                    <div class="marginBottom-l textAlign-center position-relative">
+                        <span class="divider c-silver fontWeight-3">Or use Dropbox / Google</span>
+                    </div>
+
+                    <div class="grid grid--m breakPointM-grid--2">
+                        <div>
+                            <a class="width-100 button button--flat bg-dropbox textAlign-center paddingTopBottom-xs borderRadius-m" id="connect-dropbox" href="/auth/dropbox_auth_start/">
+                                <svg class="fill-white display-block centered" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 46" enable-background="new 0 0 48 46"><path d="M14.1 0l-14.1 9.5 9.8 8.1 14.2-9.1-9.9-8.5zm-14.1 25.6l14.1 9.5 9.9-8.5-14.2-9-9.8 8zm24 1l9.9 8.5 14.1-9.5-9.8-8.1-14.2 9.1zm24-17.1l-14.1-9.5-9.9 8.5 14.2 9.1 9.8-8.1zm-24 18.9l-9.9 8.5-4.2-2.9v3.2l14.1 8.8 14.1-8.7v-3.2l-4.2 2.9-9.9-8.6z"></path></svg>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="/auth/drive_auth_start/" id="connect-drive" class="width-100 button button--flat bg-google textAlign-center paddingTopBottom-xs borderRadius-m">
+                                <svg class="fill-white display-block centered" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="6 -3 52 46" enable-background="new 6 -3 52 46"><path d="M30.8 12.1l-7.7-13.7-17.1 29.5 7.6 13.9 8.1-14zM24.1 29.1l-8.1 13.9h33.9l8.1-14-16.1.1zM41.9 26.3h16.1l-17.1-29.3h-15.7l7.8 13.7z"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="modal-icon-wrapper">
+                        <div class="js-close-modal modal-icon modal-icon--light modal-iconClose"></div>
+                    </div>
+                </div>
+
+                <div class="modal-subtext modal-subtext--after">
+                    <span class="c-silver fontWeight-3">Don't have an account? </span>
+                    <a class="js-signup-link link link--blue">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
