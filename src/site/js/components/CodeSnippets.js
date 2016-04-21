@@ -102,12 +102,8 @@ export const outlinedButtonCode = '<button class="button button--m button--outli
 
 export const ghostButtonReversedCode = '<button class="button button--m button--ghost bg-white--hover is-reversed" type="button">...</button>';
 
-export const statefulButtonsCode = `<button class="button button--m button--ghost bg-negative--hover is-sad">...</button>
-
-<!-- Add classes "has-succeeded" and "has-responded" on click -->
-<button class="button button--m button--flat button--stateful bg-positive">
-    <span>Response</span>
-</button>
+export const statefulButtonsCode = `<!-- Add class "is-sad" to activate the sad face on hover -->
+<button class="button button--m button--ghost bg-negative--hover is-sad">...</button>
 
 <!-- Add class "is-loading" on click until the server responds,
 then "is-delayed", "has-succeeded" and "has-responded" -->
