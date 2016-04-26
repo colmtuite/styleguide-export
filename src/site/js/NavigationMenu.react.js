@@ -51,7 +51,8 @@ export default class NavigationMenu extends React.Component {
                                     className="display-block fill-smoke--d"
                                     width="8"
                                     height="4"
-                                    viewBox="0 0 8 4">
+                                    viewBox="0 0 8 4"
+                                    style={{ transform: this.state.active ? 'rotate(180deg)' : 'rotate(0)' }}>
                                     <path d="M7.76,1L4.46,3.84a0.73,0.73,0,0,1-.92,0L0.24,1A0.56,0.56,0,0,1,.1.24,0.55,0.55,0,0,1,.7,0H7.3A0.55,0.55,0,0,1,8,.41,0.56,0.56,0,0,1,7.76,1Z" />
                                 </svg>
                             </div>
