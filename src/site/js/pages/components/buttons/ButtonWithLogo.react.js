@@ -14,7 +14,8 @@ export default function ButtonWithLogo() {
                 <SectionTitle sectionTitle={"Button with logo"} />
 
                 <SectionDescription>
-                    Use a single class to define a size for your button.
+                    Special case buttons used mainly for integrations with other
+                    services.
                 </SectionDescription>
             </div>
 

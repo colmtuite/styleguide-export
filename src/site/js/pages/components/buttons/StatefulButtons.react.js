@@ -20,7 +20,7 @@ export default function StatefulButtons() {
                     regular ones. The pre-action feedback button, defined with
                     <InlineCode>.is-sad</InlineCode>, will show a sad face on
                     hover and is meant to be used on negative action buttons like
-                    deleting an account or downgrading. There are 3 post-click
+                    deleting an account or downgrading. There are 2 post-click
                     feedback buttons to be used for instant feedback and feedback
                     after contacting a server. Those are defined by
                     <InlineCode>.is-stateful</InlineCode>.

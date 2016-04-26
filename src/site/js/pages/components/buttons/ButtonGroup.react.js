@@ -14,8 +14,8 @@ export default function ButtonGroup() {
                 <SectionTitle sectionTitle={"Button group"} />
 
                 <SectionDescription>
-                    Group multiple buttons inline. Useful for action bars. Only
-                    ghost buttons should be placed in a button group.
+                    Button groups consist of an inline set of ghost buttons.
+                    Useful for action bars.
                 </SectionDescription>
             </div>
 

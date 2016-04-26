@@ -14,11 +14,12 @@ export default function GhostButtonReversed() {
                 <SectionTitle sectionTitle={"Ghost button on dark background"} />
 
                 <SectionDescription>
-                    Ghost buttons should be used to signify optional, infrequent
-                    or subtle actions. There are three color options, specified
-                    with an additional class <InlineCode>.bg--marvel--hover</InlineCode>,
-                    <InlineCode>.bg--orange--hover</InlineCode> or
-                    <InlineCode>.bg--negative--hover</InlineCode>.
+                    This is the reversed version of ghost buttons which is meant
+                    to be used on dark backgrounds or reversed themes. The color
+                    options are specified with an additional class
+                    <InlineCode>.bg--marvel--hover</InlineCode>,
+                    <InlineCode>.bg--orange--hover</InlineCode>,
+                    <InlineCode>.bg--negative--hover</InlineCode>, etc.
                 </SectionDescription>
             </div>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import InlineCode from '~/components/InlineCode.react';
 import SectionCode from '~/components/SectionCode.react';
 import SectionDescription from '~/components/SectionDescription.react';
 import SectionExample from '~/components/SectionExample.react';
@@ -14,7 +15,11 @@ export default function ButtonWithLoneIcon() {
                 <SectionTitle sectionTitle={"Button with lone icon"} />
 
                 <SectionDescription>
-                    Use a single class to define a size for your button.
+                    Unlike the button with icon, the button with lone icon doesn't
+                    have a parent componet but instead has the
+                    <InlineCode>.uiIcon</InlineCode> class added alongside
+                    <InlineCode>.uiIcon--m</InlineCode> and
+                    <InlineCode>.button--m</InlineCode> classes.
                 </SectionDescription>
             </div>
 

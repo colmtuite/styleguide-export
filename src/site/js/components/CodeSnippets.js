@@ -174,30 +174,23 @@ export const statefulButtonsCode = `<!-- Add class "is-sad" to activate the sad 
 <!-- Add class "is-loading" on click until the server responds,
 then "is-delayed", "has-succeeded" and "has-responded" -->
 <button class="button button--m button--flat button--stateful bg-positive">
-    <span>Response</span>
+    <span>...</span>
 </button>
 
 <!-- Add class "is-loading" on click until the server responds,
 then "is-delayed", "has-failed" and "has-responded" -->
 <button class="button button--m button--flat button--stateful bg-marvel">
-    <span>Response</span>
+    <span>...</span>
 </button>`;
 
-export const buttonWithIconCode = `<button class="button button--xl">
-    <span class="display-inlineBlock marginRight-xs">
-        <svg class="verticalAlign-middle">...</svg>
-    </span>
+export const buttonWithIconCode = `<div class="uiIcon uiIcon--m">
+    <span class="button button--m button--ghost bg-marvel--hover" role="button">...</span>
+    <svg class="svgIcon">...</svg>
+</div>`;
 
-    <span class="display-inlineBlock">...</span>
-</button>`;
-
-export const buttonWithLoneIconCode = `<button class="button button--xl">
-    <span class="display-inlineBlock marginRight-xs">
-        <svg class="verticalAlign-middle">...</svg>
-    </span>
-
-    <span class="display-inlineBlock">...</span>
-</button>`;
+export const buttonWithLoneIconCode = `<span class="uiIcon uiIcon--m button button--m button--ghost bg-marvel--hover" role="button">
+    <svg class="svgIcon">...</svg>
+</span>`;
 
 export const disabledButtonCode = '<button class="button button--m button--flat bg-marvel is-disabled" disabled>Button</button>';
 
@@ -209,7 +202,7 @@ export const buttonWithLogoCode = `<button class="button button--xl">
     <span class="display-inlineBlock">...</span>
 </button>`;
 
-export const buttonWaitingCode = '<button class="button button--m button--flat bg-marvel is-disabled" disabled>Button</button>';
+export const buttonWaitingCode = '<button class="button button--m button--flat bg-marvel is-disabled" disabled>...</button>';
 
 export const buttonGroupCode = `<div class="buttonGroup">
     <div>

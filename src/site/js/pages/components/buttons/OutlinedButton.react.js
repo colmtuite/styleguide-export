@@ -15,11 +15,12 @@ export default function OutlinedButton() {
                 <SectionTitle sectionTitle={"Outlined button"} />
 
                 <SectionDescription>
-                    Outlined buttons should be used to signify optional,
-                    infrequent or subtle actions. There are three color options,
-                    specified with an additional class <InlineCode>.bg--marvel--hover</InlineCode>,
-                    <InlineCode>.bg--orange--hover</InlineCode> or
-                    <InlineCode>.bg--negative--hover</InlineCode>.
+                    Outlined buttons are very similar to ghost buttons and are used on
+                    light grey backgrounds where a button background has to be applied.
+                    The color options are specified with an additional class
+                    <InlineCode>.bg--marvel--hover</InlineCode>,
+                    <InlineCode>.bg--orange--hover</InlineCode>,
+                    <InlineCode>.bg--negative--hover</InlineCode>, etc.
                 </SectionDescription>
             </div>
 
@@ -37,6 +38,15 @@ export default function OutlinedButton() {
                     <div className="marginRight-m">
                         <a
                             className="button button--m button--outlined bg-white bg-orange--hover"
+                            href="#"
+                            role="button">
+                            Orange
+                        </a>
+                    </div>
+
+                    <div className="marginRight-m">
+                        <a
+                            className="button button--m button--outlined bg-orange--hover"
                             href="#"
                             role="button">
                             Orange

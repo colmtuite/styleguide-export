@@ -9,7 +9,7 @@ import { projectCardCode } from '~/components/CodeSnippets.js';
 
 export default function ProjectCard() {
     return (
-        <section className="marginBottom-xl">
+        <section className="marginBottom-m">
             <div className="marginBottom-l">
                 <SectionTitle sectionTitle={"Project card"} />
 

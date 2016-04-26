@@ -16,10 +16,10 @@ export default function FlatButton() {
 
                 <SectionDescription>
                     Ghost buttons should be used to signify optional, infrequent
-                    or subtle actions. There are three color options, specified
+                    or subtle actions. The color options are specified
                     with an additional class <InlineCode>.bg--marvel--hover</InlineCode>,
-                    <InlineCode>.bg--orange--hover</InlineCode> or
-                    <InlineCode>.bg--negative--hover</InlineCode>.
+                    <InlineCode>.bg--orange--hover</InlineCode>,
+                    <InlineCode>.bg--negative--hover</InlineCode>, etc.
                 </SectionDescription>
             </div>
 
@@ -40,6 +40,15 @@ export default function FlatButton() {
                             href="#"
                             role="button">
                             Orange
+                        </a>
+                    </div>
+
+                    <div className="marginRight-m">
+                        <a
+                            className="button button--m button--ghost bg-positive--hover"
+                            href="#"
+                            role="button">
+                            Positive
                         </a>
                     </div>
 
