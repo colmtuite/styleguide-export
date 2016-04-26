@@ -7,13 +7,12 @@
     @extend .centered;
     @extend .cf;
 
-    opacity: 0; visibility: hidden;
-    @extend .transformStyle-preserve3d;
-
     transform: scale(0.5);
+    opacity: 0; visibility: hidden;
 
-    @extend .transitionProperty-all;
+    @extend .transformStyle-preserve3d;
     @extend .transitionDuration-l;
+    @extend .transitionProperty-all;
     @extend .transitionTimingFunction-cb--scaleOut;
 }
 
@@ -49,6 +48,7 @@ $modal-icon-size--m: 40px;
 .modal-image,
 .modal-icon-wrapper {
     opacity: 0; visibility: hidden;
+
     @extend .transitionDuration-xl;
     @extend .transitionProperty-all;
     @extend .transitionTimingFunction-ease-in-out;
@@ -186,8 +186,6 @@ $modal-icon-size--m: 40px;
     margin-left: -7px;
 }
 
-
-
 .modal-icon--s.modal-iconBack:before,
 .modal-icon--s.modal-iconBack:after {
     width: 9px;
@@ -280,6 +278,7 @@ $modal-icon-size--m: 40px;
 .modal-overlay,
 .overlay {
   	@extend .posFixAll;
+
   	opacity: 0; visibility: hidden;
 
     @extend .transitionDuration-l;
@@ -308,9 +307,10 @@ $modal-icon-size--m: 40px;
 .modal-overlay.is-active,
 .overlay.activated {
     opacity: 1; visibility: visible;
+    -webkit-overflow-scrolling: touch;
+
     @extend .transitionDuration-l;
     @extend .transitionProperty-all;
-    -webkit-overflow-scrolling: touch;
 }
 
 .modal-overlay.is-active > div:not(.concealed) .modal,

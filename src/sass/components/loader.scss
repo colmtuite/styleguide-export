@@ -51,6 +51,16 @@ $loader-s: 8px;
     @extend .borderRightColor-transparent;
 }
 
+.is-loading--silver:after {
+    @extend .borderColor-silver;
+    @extend .borderRightColor-transparent;
+}
+
+.is-loading--silver--d:after {
+    @extend .borderColor-silver--d;
+    @extend .borderRightColor-transparent;
+}
+
 
 // Loader sizes
 // -------------------------
