@@ -67,7 +67,7 @@ export default function Sidebar() {
                             'marginRight-m',
                             'breakPointL-marginRight-l'
                         )}>
-                        <a href="https://github.com/marvelapp" target="blank">
+                        <a href="https://github.com/marvelapp/styleguide" target="blank">
                             <svg
                                 className={classNames(
                                     'fill-smoke--d',

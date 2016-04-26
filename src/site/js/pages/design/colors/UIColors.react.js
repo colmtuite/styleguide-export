@@ -11,7 +11,10 @@ export default function UIColors() {
                 <SectionTitle sectionTitle={"UI Colors"} />
 
                 <SectionDescription>
-                    UI colors are used for action buttons and alert messages.
+                    The main UI colors are used for action buttons, alert messages,
+                    and form elements. Input fields, for example, can get positive
+                    and negative feedback, whereas alert messages can have warning
+                    feedback.
                 </SectionDescription>
             </div>
 
@@ -22,6 +25,7 @@ export default function UIColors() {
                             color="blue"
                             title="blue"
                             textColor="white"
+                            hexValue="#1FB6FF"
                         />
                     </div>
                 </div>
@@ -32,6 +36,7 @@ export default function UIColors() {
                             color="positive"
                             title="Positive"
                             textColor="white"
+                            hexValue="#13CE66"
                         />
                     </div>
                 </div>
@@ -42,6 +47,18 @@ export default function UIColors() {
                             color="negative"
                             title="negative"
                             textColor="white"
+                            hexValue="#FF4949"
+                        />
+                    </div>
+                </div>
+
+                <div>
+                    <div className="position-relative bg-black borderRadius-m overflow-hidden">
+                        <ColorRow
+                            color="warning"
+                            title="warning"
+                            textColor="white"
+                            hexValue="#FFC82C"
                         />
                     </div>
                 </div>

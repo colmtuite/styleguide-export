@@ -11,9 +11,10 @@ export default function ReversibleGreys() {
 
                 <SectionDescription>
                     The gray colors are reversible. Each light gray color has
-                    a complementary dark gray color. The helps keep the colors
+                    a complementary dark gray color. This helps keeping the colors
                     well balanced and also makes it easier to implement
-                    light/dark themes.
+                    light/dark themes. Good example of this is the Marvel editor,
+                    which is implemented in the dark theme.
                 </SectionDescription>
             </div>
 

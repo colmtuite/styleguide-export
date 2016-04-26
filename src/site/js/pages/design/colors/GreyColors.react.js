@@ -4,6 +4,7 @@ import ColorBlock from '~/pages/design/colors/ColorBlock.react';
 import ColorRow from '~/pages/design/colors/ColorRow.react';
 import SectionDescription from '~/components/SectionDescription.react';
 import SectionTitle from '~/components/SectionTitle.react';
+import InlineCode from '~/components/InlineCode.react';
 
 export default function GreyColors() {
     const border = <div className="posPinAll boxShadow-smoke borderRadius-m pointerEvents-none"></div>;
@@ -14,7 +15,9 @@ export default function GreyColors() {
                 <SectionTitle sectionTitle={"Grey colors"} />
 
                 <SectionDescription>
-                    Primary brand colors, used for elements that must reflect Marvel's brand.
+                    Gray colors are used for text, backgrounds, lines and borders.
+                    <InlineCode>Smoke</InlineCode> and <InlineCode>Snow</InlineCode>
+                    have two darker shades, which are used for icons and backgrounds.
                 </SectionDescription>
             </div>
 
@@ -25,6 +28,7 @@ export default function GreyColors() {
                             color="black"
                             title="black"
                             textColor="white"
+                            hexValue="#1F2D3D"
                         />
                     </div>
                 </div>
@@ -35,6 +39,7 @@ export default function GreyColors() {
                             color="steel"
                             title="steel"
                             textColor="white"
+                            hexValue="#273444"
                         />
                     </div>
                 </div>
@@ -45,6 +50,7 @@ export default function GreyColors() {
                             color="slate"
                             title="slate"
                             textColor="white"
+                            hexValue="#3C4858"
                         />
                     </div>
                 </div>
@@ -55,6 +61,7 @@ export default function GreyColors() {
                             color="silver"
                             title="silver"
                             textColor="white"
+                            hexValue="#8492A6"
                         />
                     </div>
                 </div>
@@ -63,12 +70,18 @@ export default function GreyColors() {
                     color="smoke"
                     textColor="slate"
                     lightColor="1"
+                    hexValue="#E0E6ED"
+                    hexValueDark="#D3DCE6"
+                    hexValueExtraDark="#C0CCDA"
                 />
 
                 <ColorBlock
                     color="snow"
                     textColor="slate"
                     lightColor="1"
+                    hexValue="#F9FAFC"
+                    hexValueDark="#EFF2F7"
+                    hexValueExtraDark="#E5E9F2"
                     border={border}
                 />
             </div>
