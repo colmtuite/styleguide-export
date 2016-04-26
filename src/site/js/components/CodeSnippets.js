@@ -104,39 +104,44 @@ export const popoverWithLinks = `<div class="popover popover--s popover--top has
 // Avatars
 // -------------------------
 
-export const basicAvatarsCode = `<div class="avatar avatar--m" title="Dean Blacc" style="...">
-<div class="avatar-img" style="..."></div>
-<div class="avatar-initials">...</div>`;
-
-export const avatarSizesCode = `<div class="avatar avatar--xs" title="Dean Blacc" style="...">
-    <div class="avatar-img" style="..."></div>
-    <div class="avatar-initials">...</div>
-</div>
-
-<div class="avatar avatar--s" title="Dean Blacc" style="...">
-    <div class="avatar-img" style="..."></div>
-    <div class="avatar-initials">...</div>
-</div>
-
-<div class="avatar avatar--m" title="Dean Blacc" style="...">
-    <div class="avatar-img" style="..."></div>
-    <div class="avatar-initials">...</div>
-</div>
-
-<div class="avatar avatar--l" title="Dean Blacc" style="...">
-    <div class="avatar-img" style="..."></div>
+export const basicAvatarsCode = `<div class="avatar avatar--m" title="Dean Blacc" style="background-color: (...)">
+    <div class="avatar-img" style="background-image: (...)"></div>
     <div class="avatar-initials">...</div>
 </div>`;
 
-export const avatarsWithIconsCode = `<div class="avatar avatar--m" title="Dean Blacc" style="...">
-    <div class="avatar-img" style="..."></div>
+export const avatarSizesCode = `<!-- Extra small -->
+<div class="avatar avatar--xs" title="Dean Blacc" style="background-color: (...)">
+    <div class="avatar-img" style="background-image: (...)"></div>
     <div class="avatar-initials">...</div>
-    <div class="avatar-team" style="..."></div>
+</div>
+
+<!-- Small -->
+<div class="avatar avatar--s" title="Dean Blacc" style="background-color: (...)">
+    <div class="avatar-img" style="background-image: (...)"></div>
+    <div class="avatar-initials">...</div>
+</div>
+
+<!-- Medium -->
+<div class="avatar avatar--m" title="Dean Blacc" style="background-color: (...)">
+    <div class="avatar-img" style="background-image: (...)"></div>
+    <div class="avatar-initials">...</div>
+</div>
+
+<!-- Large -->
+<div class="avatar avatar--l" title="Dean Blacc" style="background-color: (...)">
+    <div class="avatar-img" style="background-image: (...)"></div>
+    <div class="avatar-initials">...</div>
 </div>`;
 
-export const customAvatarSizesCode = `<div style="width: 200px; height: 200px;">
-    <div class="avatar avatar--custom" title="Dean Blacc" style="...">
-        <div class="avatar-img" style="..."></div>
+export const avatarsWithIconsCode = `<div class="avatar avatar--m" title="Dean Blacc" style="background-color: (...)">
+    <div class="avatar-img" style="background-image: (...)"></div>
+    <div class="avatar-initials">...</div>
+    <div class="avatar-team" style="background-image: (...)"></div>
+</div>`;
+
+export const customAvatarSizesCode = `<div style="width: 200px; height: 200px">
+    <div class="avatar avatar--custom" title="Dean Blacc" style="background-color: (...)">
+        <div class="avatar-img" style="background-image: (...)"></div>
         <div class="display-table posPinTL width-100 height-100">
             <div class="display-tableCell verticalAlign-middle">
                 <div class="avatar-initials">...</div>

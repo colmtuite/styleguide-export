@@ -17,10 +17,11 @@ export default function BasicAvatars() {
                 <SectionDescription>
                     Avatars display an image if the user has uploaded one but
                     if not, initials are shown instead. The background color is
-                    pulled from ... and set inline on <InlineCode>.avatar</InlineCode>.
-                    The image URL is set inline on <InlineCode>.avatar-img</InlineCode>.
-                    Each avatar should have a <InlineCode>title</InlineCode> attribute
-                    which displays the user's name.
+                    chosen randomly for each user and set inline on
+                    <InlineCode>.avatar</InlineCode>. The image URL is set inline
+                    on <InlineCode>.avatar-img</InlineCode>. Additionally, each
+                    avatar should have a <InlineCode>title</InlineCode>
+                    attribute with the user's name.
                 </SectionDescription>
             </div>
 
