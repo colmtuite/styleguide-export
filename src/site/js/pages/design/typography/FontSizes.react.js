@@ -1,6 +1,7 @@
 import React from 'react';
 
 import FontSize from '~/pages/design/typography/FontSize.react';
+import InlineCode from '~/components/InlineCode.react';
 import SectionCode from '~/components/SectionCode.react';
 import SectionDescription from '~/components/SectionDescription.react';
 import SectionExample from '~/components/SectionExample.react';
@@ -15,7 +16,8 @@ export default function FontSizes() {
                 <SectionTitle sectionTitle={"Font sizes"} />
 
                 <SectionDescription>
-                    Use a single class to define a font size.
+                    The font scale consists of 9 different font sizes. The default
+                    size applied to the <InlineCode>body</InlineCode> is Medium.
                 </SectionDescription>
             </div>
 

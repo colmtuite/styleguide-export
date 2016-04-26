@@ -4,6 +4,7 @@ import SectionCode from '~/components/SectionCode.react';
 import SectionDescription from '~/components/SectionDescription.react';
 import SectionExample from '~/components/SectionExample.react';
 import SectionTitle from '~/components/SectionTitle.react';
+import InlineCode from '~/components/InlineCode.react';
 
 import { fontWeightCode } from '~/components/CodeSnippets.js';
 
@@ -14,7 +15,10 @@ export default function FontWeight() {
                 <SectionTitle sectionTitle={"Font weight"} />
 
                 <SectionDescription>
-                    Use a single class to define a font size.
+                    There are three font weights available to use &mdash; Blond,
+                    Regular and Medium. These can be applied with <InlineCode>.fontWeight-3</InlineCode>,
+                    <InlineCode>.fontWeight-4</InlineCode> and <InlineCode>.fontWeight-5</InlineCode>
+                    respectively.
                 </SectionDescription>
             </div>
 

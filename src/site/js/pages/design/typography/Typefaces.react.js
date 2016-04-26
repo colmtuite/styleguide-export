@@ -14,10 +14,9 @@ export default function Typefaces() {
                 <SectionTitle sectionTitle={"Typefaces"} />
 
                 <SectionDescription>
-                    Marvel's primary typeface is Fakt Pro Rounded. We chose
-                    Fakt Pro Rounded because we needed a robust typeface with
-                    legible numbers that rendered well at small sizes. It needed
-                    to be soft and friendly, yet plain enough to get out of the
+                    Marvel's primary typeface is Fakt Soft Pro &mdash; a robust
+                    typeface with legible numbers that renders well at all sizes.
+                    It is soft and friendly, yet plain enough to get out of the
                     way and let the user's designs shine.
                 </SectionDescription>
             </div>

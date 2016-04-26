@@ -10,9 +10,9 @@ export const fontSizesCode = `<p class="fontSize-xxl">...</p>
 <p class="fontSize-s">...</p>
 <p class="fontSize-xs">...</p>`;
 
-export const fontWeightCode = `<p class="fontWeight-5">...</p>
+export const fontWeightCode = `<p class="fontWeight-3">...</p>
 <p class="fontWeight-4">...</p>
-<p class="fontWeight-3">...</p>`;
+<p class="fontWeight-5">...</p>`;
 
 export const typeTagsCode = `<strong class="fontWeight-5">...</strong>
 <small class="fontSize-s fontWeight-3">...</small>`;
@@ -63,7 +63,7 @@ export const modalsCode = `<div class="overlay zIndex-Overlay">
 
 //
 // Popovers
-//
+// -------------------------
 
 export const basicPopoversCode = `<div class="popover popover--s popover--top has-caret">
     <div class="padding-s">
