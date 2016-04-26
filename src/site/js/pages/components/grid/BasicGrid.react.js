@@ -20,11 +20,9 @@ export default function BasicGrid() {
                     specified by a class <InlineCode>.grid--1</InlineCode>,
                     <InlineCode>.grid--2</InlineCode>, <InlineCode>.grid--3</InlineCode>,
                     <InlineCode>.grid--4</InlineCode>, <InlineCode>.grid--5</InlineCode>
-                    or <InlineCode>.grid--6</InlineCode>. If you need more
-                    than 6 columns, try taking a long, hard look in the mirror.
-                    There are also two grids with uneven widths which can be
-                    specified by using classes <InlineCode>.grid--6-4</InlineCode>
-                    and <InlineCode>.grid--7-3</InlineCode>.
+                    or <InlineCode>.grid--6</InlineCode>. There are also two special case
+                    grids with uneven widths which can be initialized by using classes
+                    <InlineCode>.grid--6-4</InlineCode> and <InlineCode>.grid--7-3</InlineCode>.
                 </SectionDescription>
             </div>
 

@@ -15,10 +15,10 @@ export default function GridSize() {
                 <SectionTitle sectionTitle={"Grid sizes"} />
 
                 <SectionDescription>
-                    You have three grid size options to choose from, specified
-                    by a class. <InlineCode>.grid--m</InlineCode> is the default.
-                    <InlineCode>.grid--l</InlineCode> and <InlineCode>.grid--xl</InlineCode>
-                    are used mostly in the marketing site.
+                    There are three grid size options to choose from, specified
+                    by a class. The default is <InlineCode>.grid--m</InlineCode>,
+                    whereas <InlineCode>.grid--l</InlineCode> and
+                    <InlineCode>.grid--xl</InlineCode> are used mostly in the marketing site.
                 </SectionDescription>
             </div>
 
