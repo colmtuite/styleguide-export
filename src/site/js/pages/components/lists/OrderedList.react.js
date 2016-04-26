@@ -17,13 +17,13 @@ export default function OrderedList() {
                 <SectionDescription>
                     Use <InlineCode>&lt;ol&gt;</InlineCode> with
                     <InlineCode>list--ordered</InlineCode> when the list order
-                    is irrelevant.
+                    is relevant.
                 </SectionDescription>
             </div>
 
             <SectionExample>
                 <div className="padding-m">
-                    <ol className="list list--ordered lineHeight-m">
+                    <ol className="list list--ordered marginTopBottom-xs lineHeight-m">
                         <li>This is a list item</li>
                         <li>This is another list item</li>
                         <li>Yep, another list item</li>

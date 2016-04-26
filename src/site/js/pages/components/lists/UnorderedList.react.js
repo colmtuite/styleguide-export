@@ -23,7 +23,7 @@ export default function UnorderedList() {
 
             <SectionExample>
                 <div className="padding-m">
-                    <ul className="list list--unordered lineHeight-m">
+                    <ul className="list list--unordered marginTopBottom-xs lineHeight-m">
                         <li>This is a list item</li>
                         <li>This is another list item</li>
                         <li>Yep, another list item</li>
