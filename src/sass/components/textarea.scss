@@ -49,7 +49,7 @@
     min-height: 80px;
     padding: 6px 8px;
     @extend .fontSize-s;
-    @extend .lineHeight-xm;
+    @extend .lineHeight-s;
     @extend .borderRadius-s;
     @extend .resize-vertical;
 }
@@ -58,7 +58,7 @@
     min-height: 80px;
     padding: 6px 8px;
     @extend .fontSize-xs;
-    @extend .lineHeight-xm;
+    @extend .lineHeight-xs;
     @extend .borderRadius-s;
     @extend .resize-vertical;
 }
@@ -71,7 +71,9 @@
     @extend .borderRadius-s;
     @extend .resize-none;
     @extend .transitionDelay-l;
+    @extend .transitionDuration-l;
 }
+
 .textarea--growing:focus {
     height: 140px;
     @extend .transitionDelay-0;

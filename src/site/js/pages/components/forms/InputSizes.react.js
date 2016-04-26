@@ -4,6 +4,7 @@ import SectionCode from '~/components/SectionCode.react';
 import SectionDescription from '~/components/SectionDescription.react';
 import SectionExample from '~/components/SectionExample.react';
 import SectionTitle from '~/components/SectionTitle.react';
+import InlineCode from '~/components/InlineCode.react';
 
 import { inputSizesCode } from '~/components/CodeSnippets.js';
 
@@ -14,7 +15,12 @@ export default function InputSizes() {
                 <SectionTitle sectionTitle={"Input sizes"} />
 
                 <SectionDescription>
-                    Use a single class to define an input size.
+                    Input fields come in four sizes which can be applied with
+                    <InlineCode>.input--xl</InlineCode>,
+                    <InlineCode>.input--l</InlineCode>,
+                    <InlineCode>.input--m</InlineCode> and
+                    <InlineCode>.input--s</InlineCode> on the
+                    <InlineCode>.input</InlineCode> component itself.
                 </SectionDescription>
             </div>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import InlineCode from '~/components/InlineCode.react';
 import SectionCode from '~/components/SectionCode.react';
 import SectionDescription from '~/components/SectionDescription.react';
 import SectionExample from '~/components/SectionExample.react';
@@ -14,7 +15,12 @@ export default function SelectMenu() {
                 <SectionTitle sectionTitle={"Select menu"} />
 
                 <SectionDescription>
-                    Use a single class to define a size for your button.
+                    Select menus come in fours sizes which are applied with
+                    <InlineCode>.select--xl</InlineCode>,
+                    <InlineCode>.select--l</InlineCode>,
+                    <InlineCode>.select--m</InlineCode> and
+                    <InlineCode>.select--s</InlineCode> on the
+                    <InlineCode>.select</InlineCode> wrapper component.
                 </SectionDescription>
             </div>
 
@@ -73,7 +79,7 @@ export default function SelectMenu() {
 
                     <div className="padding-m textAlign-center">
                         <div className="width-80 display-inlineBlock marginTop-xs marginBottom-s paddingTopBottom-s">
-                            <div className="select select--default select--legible">
+                            <div className="select select--default select--s">
                                 <select>
                                     <option>Placeholder text</option>
                                     <option>Option 1</option>

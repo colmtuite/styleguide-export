@@ -1,5 +1,6 @@
 import React from 'react';
 
+import InlineCode from '~/components/InlineCode.react';
 import SectionCode from '~/components/SectionCode.react';
 import SectionDescription from '~/components/SectionDescription.react';
 import SectionExample from '~/components/SectionExample.react';
@@ -14,7 +15,8 @@ export default function InputSizes() {
                 <SectionTitle sectionTitle={"Input styles"} />
 
                 <SectionDescription>
-                    Use a single class to define an input style.
+                    There is currently one input style, which can be applied with
+                    a <InlineCode>.input--default</InlineCode> class.
                 </SectionDescription>
             </div>
 

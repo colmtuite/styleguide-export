@@ -15,7 +15,7 @@ export default function GrowingTextarea() {
 
                 <SectionDescription>
                     This textarea looks like an input intially, but grows when
-                    focused. It is not resizeable. It usually works best with
+                    focused. It is not resizeable and usually works best with
                     invisible input styling, though can be used with other
                     input styling if necessary.
                 </SectionDescription>

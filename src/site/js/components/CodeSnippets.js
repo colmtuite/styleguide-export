@@ -253,9 +253,18 @@ export const inputSizesCode = `<input class="input input--xl" type="text">
 <input class="input input--m" type="text">
 <input class="input input--s" type="text">`;
 
-export const inputStyleCode = '<input class="input input--m input-default" type="text">';
+export const inputStyleCode = '<input class="input input--m input--default" type="text">';
 
-export const inputWithIconCode = `<label class="componentIcon componentIcon--m componentIcon--input">
+export const inputWithIconCode = `<div class="uiIcon uiIcon--m">
+    <input class="input input--m input--default" type="text" placeholder="...">
+    <svg class="svgIcon">...</svg>
+</div>`;
+
+// Important save dis
+// Is the future
+// Need to save it
+// The whole world depends on this input implementation
+export const inputWithIconCodeFuture = `<label class="componentIcon componentIcon--m componentIcon--input">
     <input class="input input--default" type="text" placeholder="Placeholder text">
 
     <div class="componentIconContainer">
@@ -266,6 +275,7 @@ export const inputWithIconCode = `<label class="componentIcon componentIcon--m c
         </div>
     </div>
 </label>`;
+// ---------------
 
 export const disabledInputCode = '<input class="input input--m input-default is-disabled" type="text" disabled>';
 

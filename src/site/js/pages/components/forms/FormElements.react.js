@@ -20,10 +20,10 @@ export default function FormElements() {
             <InputStyles />
             <InputWithIcon />
             <DisabledInput />
+            <InputWithContext />
             <Textarea />
             <TextareaWithIcon />
             <GrowingTextarea />
-            <InputWithContext />
             <SelectMenu />
             <Checkbox />
         </div>
