@@ -14,7 +14,7 @@ export default function ColourfulLinks() {
                 <SectionTitle sectionTitle={"Colourful links"} />
 
                 <SectionDescription>
-                    Colourful and friendly links used mainly on the blog to
+                    Colourful and friendly links used on the blog to
                     differenciate categories.
                 </SectionDescription>
             </div>

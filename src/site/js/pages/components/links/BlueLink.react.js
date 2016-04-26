@@ -14,7 +14,7 @@ export default function BlueLink() {
                 <SectionTitle sectionTitle={"Blue link"} />
 
                 <SectionDescription>
-                    This is your go-to link. To be used on light backgrounds.
+                    This is the default, most common link style.
                 </SectionDescription>
             </div>
 
