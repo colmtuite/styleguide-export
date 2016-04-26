@@ -21,16 +21,16 @@ export default function TransformationClasses() {
             <SectionExample>
                 <div className="padding-m">
                     <div className="padding-xxs">
-                        <div className="grid grid--3">
-                            <div className="textTransform-lowercase textAlign-left">
+                        <div className="grid grid--m grid--1 breakPointM-grid--3">
+                            <div className="textTransform-lowercase breakPointM-textAlign-left">
                                 Lowercased text
                             </div>
 
-                            <div className="textTransform-uppercase textAlign-center">
+                            <div className="textTransform-uppercase breakPointM-textAlign-center">
                                 Uppercased text
                             </div>
 
-                            <div className="textTransform-capitalize textAlign-right">
+                            <div className="textTransform-capitalize breakPointM-textAlign-right">
                                 Capitalized text
                             </div>
                         </div>

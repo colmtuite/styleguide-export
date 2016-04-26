@@ -21,7 +21,7 @@ export default function AlignmentClasses() {
             <SectionExample>
                 <div className="padding-m">
                     <div className="padding-xxs">
-                        <div className="grid grid--3">
+                        <div className="grid grid--m grid--1 breakPointM-grid--3">
                             <div className="textAlign-left">
                                 Left aligned text
                             </div>

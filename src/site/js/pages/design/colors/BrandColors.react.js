@@ -16,7 +16,7 @@ export default function BandColors() {
                 </SectionDescription>
             </div>
 
-            <div className="grid grid--m grid--2 breakPointM-grid--3 breakPointL-grid--4">
+            <div className="grid grid--m grid--1 breakPointS-grid--2 breakPointM-grid--3 breakPointL-grid--4">
                 <ColorBlock
                     color="marvel"
                     textColor="white"

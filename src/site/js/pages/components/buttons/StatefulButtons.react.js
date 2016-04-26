@@ -28,8 +28,8 @@ export default function StatefulButtons() {
             </div>
 
             <SectionExample>
-                <div className="grid grid--3">
-                    <div className="padding-m textAlign-center borderWidth-0 borderRightWidth-1 borderStyle-solid borderColor-smoke">
+                <div className="grid grid--1 breakPointM-grid--3">
+                    <div className="padding-m textAlign-center borderWidth-0 borderBottomWidth-1 breakPointM-borderBottomWidth-0 breakPointM-borderRightWidth-1 borderStyle-solid borderColor-smoke">
                         <div className="marginTop-xs marginBottom-s">
                             <a
                                 className="button button--m button--ghost bg-negative--hover is-sad"
@@ -41,7 +41,7 @@ export default function StatefulButtons() {
                         <p className="lineHeight-s fontSize-s fontWeight-3 c-silver">Pre-click feedback</p>
                     </div>
 
-                    <div className="padding-m textAlign-center borderWidth-0 borderRightWidth-1 borderStyle-solid borderColor-smoke">
+                    <div className="padding-m textAlign-center borderWidth-0 borderBottomWidth-1 breakPointM-borderBottomWidth-0 breakPointM-borderRightWidth-1 borderStyle-solid borderColor-smoke">
                         <div className="marginTop-xs marginBottom-s">
                             <ButtonToggle
                                 defaultClass="button button--m button--flat button--stateful bg-positive"

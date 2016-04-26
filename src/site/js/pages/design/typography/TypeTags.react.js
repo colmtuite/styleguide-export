@@ -29,12 +29,12 @@ export default function TypeTags() {
                 <div className="padding-m">
                     <div className="padding-xxs">
                         <div className="marginBottom-m">
-                            <strong className="fontSize-l fontWeight-5">
+                            <strong className="fontSize-l lineHeight-l fontWeight-5">
                                 This is semantically emphasized text which is also bold.
                             </strong>
                         </div>
 
-                        <small className="fontSize-s fontWeight-3">
+                        <small className="fontSize-s lineHeight-s fontWeight-3">
                             This is semantically de-emphasized text which is also small.
                         </small>
                     </div>

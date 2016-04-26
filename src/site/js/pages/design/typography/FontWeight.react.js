@@ -23,8 +23,8 @@ export default function FontWeight() {
             </div>
 
             <SectionExample>
-                <div className="grid grid--3">
-                    <div className="padding-m textAlign-center borderWidth-0 borderRightWidth-1 borderStyle-solid borderColor-smoke">
+                <div className="grid grid--1 breakPointM-grid--3">
+                    <div className="padding-m textAlign-center borderWidth-0 borderBottomWidth-1 breakPointM-borderRightWidth-0 breakPointM-borderRightWidth-1 borderStyle-solid borderColor-smoke">
                         <div className="marginBottom-xxs">
                             <span
                                 className="fontWeight-3"
@@ -38,7 +38,7 @@ export default function FontWeight() {
                         </p>
                     </div>
 
-                    <div className="padding-m textAlign-center borderWidth-0 borderRightWidth-1 borderStyle-solid borderColor-smoke">
+                    <div className="padding-m textAlign-center borderWidth-0 borderBottomWidth-1 breakPointM-borderRightWidth-0 breakPointM-borderRightWidth-1 borderStyle-solid borderColor-smoke">
                         <div className="marginBottom-xxs">
                             <span
                                 className="fontWeight-4"

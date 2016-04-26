@@ -13,7 +13,7 @@ export default function App(props) {
 
             <div style={{ paddingLeft: '20%' }}>
                 <div
-                    className="padding-xl centered"
+                    className="padding-m breakPointS-padding-l breakPointM-padding-xl centered"
                     style={{ maxWidth: '960px' }}>
                     {props.children}
                 </div>

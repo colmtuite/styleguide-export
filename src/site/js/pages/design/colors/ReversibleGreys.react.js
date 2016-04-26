@@ -18,7 +18,7 @@ export default function ReversibleGreys() {
                 </SectionDescription>
             </div>
 
-            <div className="grid grid--m grid--2">
+            <div className="grid grid--m grid--1 breakPointS-grid--2">
                 <div>
                     <div className="position-relative borderRadius-m">
                         <div className="padding-m bg-white borderRadiusTop-s">

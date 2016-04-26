@@ -21,7 +21,7 @@ export default function GreyColors() {
                 </SectionDescription>
             </div>
 
-            <div className="grid grid--m grid--2 breakPointM-grid--3 breakPointL-grid--4">
+            <div className="grid grid--m grid--1 breakPointS-grid--2 breakPointM-grid--3 breakPointL-grid--4">
                 <div>
                     <div className="position-relative bg-black borderRadius-m overflow-hidden">
                         <ColorRow

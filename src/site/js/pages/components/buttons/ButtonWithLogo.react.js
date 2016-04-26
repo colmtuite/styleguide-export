@@ -21,7 +21,7 @@ export default function ButtonWithLogo() {
 
             <SectionExample>
                 <div className="padding-m">
-                    <div className="grid grid--2 grid--m">
+                    <div className="grid grid--1 breakPointM-grid--2 grid--m">
                         <div>
                             <button className="asana import width-100 button button--l button--ghost bg-marvel--hover">
                                 <span
