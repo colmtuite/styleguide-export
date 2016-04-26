@@ -64,9 +64,9 @@ $formControl-m: 30px;
 // -------------------------
 
 .form-control input:checked ~ .form-control-indicator {
-    @extend .transitionDuration-xl;
-    @extend .transitionProperty-all;
-	@extend .transitionTimingFunction-cb--scaleIn;
+    transition-property: all;
+    transition-duration: $transitionDuration-xl;
+	transition-timing-function: $transitionTimingFunction-cb--scaleIn;
 }
 
 //
@@ -74,9 +74,9 @@ $formControl-m: 30px;
 // -------------------------
 
 .form-control input:active ~ .form-control-indicator {
-    @extend .transitionDuration-xl;
-    @extend .transitionProperty-all;
-	@extend .transitionTimingFunction-cb--scaleIn;
+    transition-property: all;
+    transition-duration: $transitionDuration-xl;
+	transition-timing-function: $transitionTimingFunction-cb--scaleIn;
 }
 
 //
@@ -88,11 +88,11 @@ $formControl-m: 30px;
 }
 
 .checkbox input:checked ~ .form-control-indicator .checkbox-tick {
-    @extend .opacity-100;
-    @extend .transitionDelay-l;
-    @extend .transitionDuration-xl;
-    @extend .transitionProperty-all;
-	@extend .transitionTimingFunction-cb--scaleIn;
+    opacity: 100;
+    transition-property: all;
+    transition-delay: $transitionDelay-l;
+    transition-duration: $transitionDuration-xl;
+	transition-timing-function: $transitionTimingFunction-cb--scaleIn;
     transform: scale(1);
 }
 
@@ -105,7 +105,7 @@ $formControl-m: 30px;
 }
 
 .radio input:checked ~ .form-control-indicator .radio-tick {
-    @extend .opacity-100;
+    opacity: 100;
 }
 
 //

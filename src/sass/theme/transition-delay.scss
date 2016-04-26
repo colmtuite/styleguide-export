@@ -2,9 +2,16 @@
 // Transition delay
 // -------------------------
 
-.transitionDelay-xxl  { transition-delay: 700ms }
-.transitionDelay-xl  { transition-delay: 500ms }
-.transitionDelay-l   { transition-delay: 300ms }
-.transitionDelay-m   { transition-delay: 150ms }
-.transitionDelay-s   { transition-delay: 80ms }
-.transitionDelay-0   { transition-duration: 0 }
+$transitionDelay-xxl: 700ms;
+$transitionDelay-xl: 500ms;
+$transitionDelay-l: 300ms;
+$transitionDelay-m: 150ms;
+$transitionDelay-s: 80ms;
+$transitionDelay-0: 0;
+
+.transitionDelay-xxl { transition-delay: $transitionDelay-xxl; }
+.transitionDelay-xl  { transition-delay: $transitionDelay-xl; }
+.transitionDelay-l   { transition-delay: $transitionDelay-l; }
+.transitionDelay-m   { transition-delay: $transitionDelay-m; }
+.transitionDelay-s   { transition-delay: $transitionDelay-s; }
+.transitionDelay-0   { transition-delay: $transitionDelay-0; }

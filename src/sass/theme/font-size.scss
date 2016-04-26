@@ -48,13 +48,13 @@ $fontSize-xxs: 10px;
     .breakPointS-fontSize-xxxxl {
         margin-left: -4px;
         font-size: $fontSize-xxxxl;
-        @extend .letterSpacing-xs;
+        letter-spacing: $letterSpacing-xs;
     }
 
     .breakPointS-fontSize-xxxl {
         margin-left: -2px;
         font-size: $fontSize-xxxl;
-        @extend .letterSpacing-xs;
+        letter-spacing: $letterSpacing-xs;
     }
 
     .breakPointS-fontSize-xxl {
@@ -75,13 +75,13 @@ $fontSize-xxs: 10px;
     .breakPointM-fontSize-xxxxl {
         margin-left: -4px;
         font-size: $fontSize-xxxxl;
-        @extend .letterSpacing-xs;
+        letter-spacing: $letterSpacing-xs;
     }
 
     .breakPointM-fontSize-xxxl {
         margin-left: -2px;
         font-size: $fontSize-xxxl;
-        @extend .letterSpacing-xs;
+        letter-spacing: $letterSpacing-xs;
     }
 
     .breakPointM-fontSize-xxl {
@@ -102,13 +102,13 @@ $fontSize-xxs: 10px;
     .breakPointL-fontSize-xxxxl {
         margin-left: -4px;
         font-size: $fontSize-xxxxl;
-        @extend .letterSpacing-xs;
+        letter-spacing: $letterSpacing-xs;
     }
 
     .breakPointL-fontSize-xxxl {
         margin-left: -2px;
         font-size: $fontSize-xxxl;
-        @extend .letterSpacing-xs;
+        letter-spacing: $letterSpacing-xs;
     }
 
     .breakPointL-fontSize-xxl {
