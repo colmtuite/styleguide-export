@@ -44,7 +44,7 @@ export default class NavigationMenu extends React.Component {
                         </span>
                     </span>
 
-                    <div className="posPinTR height-100">
+                    <div className="posPinTR height-100 pointerEvents-none paddingRight-s">
                         <div className="display-table height-100">
                             <div className="display-tableCell verticalAlign-middle padding-m">
                                 <svg
@@ -52,7 +52,7 @@ export default class NavigationMenu extends React.Component {
                                     width="8"
                                     height="4"
                                     viewBox="0 0 8 4">
-                                    <path d="M7.027 1.577c-.346.354-.658.654-.937.9s-.572.492-.88.738l-.63.492-.284.208c-.083.056-.181.085-.293.085-.112 0-.21-.028-.293-.085l-.279-.2c-.147-.108-.359-.273-.634-.496-.276-.223-.559-.463-.851-.719-.292-.256-.607-.556-.947-.9-.34-.344-.638-.679-.894-1.008-.07-.067-.106-.144-.106-.231 0-.097.045-.182.135-.254.09-.072.195-.108.317-.108h7.094c.179 0 .311.062.394.185.083.128.08.251-.01.369-.256.328-.558.669-.904 1.023z" />
+                                    <path d="M7.76,1L4.46,3.84a0.73,0.73,0,0,1-.92,0L0.24,1A0.56,0.56,0,0,1,.1.24,0.55,0.55,0,0,1,.7,0H7.3A0.55,0.55,0,0,1,8,.41,0.56,0.56,0,0,1,7.76,1Z" />
                                 </svg>
                             </div>
                         </div>
@@ -61,7 +61,7 @@ export default class NavigationMenu extends React.Component {
 
                 <dd
                     style={{ display: this.state.active ? 'block' : 'none' }}
-                    className="paddingLeftRight-l paddingBottom-l">
+                    className="bg-snow paddingLeftRight-l paddingTopBottom-m borderWidth-0 borderTopWidth-1 borderStyle-solid borderColor-smoke">
                     {menuItems}
                 </dd>
             </dl>
@@ -79,7 +79,7 @@ function NavigationMenuItem(props) {
     return (
         <Link
             activeClassName="is-active"
-            className="padding-s display-block fontSize-m link link--light"
+            className="paddingLeftRight-m paddingTopBottom-s display-block fontSize-m link link--light"
             to={url}>
             {title}
         </Link>

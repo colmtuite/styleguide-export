@@ -32,7 +32,7 @@ export default function Sidebar() {
                                 className={classNames(
                                     'link',
                                     'fill-blue',
-                                    'fill-effect--hover'
+                                    'fill-marvel--d--hover'
                                 )}
                                 id="marvel-logo"
                                 width={80}
