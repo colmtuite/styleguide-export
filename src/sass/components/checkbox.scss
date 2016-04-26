@@ -78,8 +78,8 @@ $checkBox-size: 16px;
 // -------------------------
 
 .form-control input:active ~ .form-control-indicator {
-    @extend .bg-positive--d;
-    @extend .borderColor-positive--d;
+    @extend .bg-positive;
+    @extend .borderColor-positive;
 }
 
 //

@@ -14,11 +14,9 @@
 // -------------------------
 
 .concealed {
-    @extend .visibility-hidden;
-    @extend .opacity-0;
+	opacity: 0; visibility: hidden;
 }
 
 .disclosed {
-    @extend .visibility-visible;
-    @extend .opacity-100;
+	opacity: 1; visibility: visible;
 }

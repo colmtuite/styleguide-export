@@ -17,13 +17,46 @@
 .inline > div                   { @extend .display-inlineBlock; }
 
 @include breakPoint(s) {
-    .breakPointS-inline         { @extend .cf; font-size: 0; }
+    .breakPointS-inline {
+        font-size: 0;
+
+        &:before, &:after{
+            content: "";
+            display: table;
+        }
+
+        &:after{
+            clear: both;
+        }
+    }
 }
 
 @include breakPoint(m) {
-    .breakPointM-inline         { @extend .cf; font-size: 0; }
+	.breakPointM-inline {
+        font-size: 0;
+
+        &:before, &:after{
+            content: "";
+            display: table;
+        }
+
+        &:after{
+            clear: both;
+        }
+    }
 }
 
 @include breakPoint(l) {
-    .breakPointL-inline         { @extend .cf; font-size: 0; }
+    .breakPointL-inline {
+        font-size: 0;
+
+        &:before, &:after{
+            content: "";
+            display: table;
+        }
+
+        &:after{
+            clear: both;
+        }
+    }
 }
