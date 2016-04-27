@@ -23,8 +23,8 @@ export default function Checkbox() {
             </div>
 
             <SectionExample>
-                <div className="grid grid--2">
-                    <div className="padding-m textAlign-center borderWidth-0 borderRightWidth-1 borderStyle-solid borderColor-smoke">
+                <div className="grid grid--1 breakPointL-grid--2">
+                    <div className="padding-m textAlign-center borderWidth-0 borderBottomWidth-1 breakPointL-borderRightWidth-1 borderStyle-solid borderColor-smoke">
                         <label className="form-control form-control--m checkbox c-silver c-slate--hover userSelect-none">
                             <input type="checkbox" />
 
