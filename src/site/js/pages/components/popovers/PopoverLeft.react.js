@@ -10,6 +10,7 @@ export default class PopoverLeft extends React.Component {
     click = () => {
         this.setState({ active: !this.state.active });
     }
+
     render() {
         const { active } = this.state;
         const togglePopoverClass = classNames('popover popover--s popover--left has-caret', { ['is-visible']: active });

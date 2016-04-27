@@ -3,13 +3,13 @@
 // -------------------------
 
 
-.sidebar {
+.sidebar:not(.is-open) {
     transform: translateX(-100%);
 }
 
 @include breakPoint(m) {
-    .sidebar {
-        transform: translateX(0%);
+    .sidebar:not(.is-open) {
+        transform: translateX(0);
     }
 }
 

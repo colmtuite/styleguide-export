@@ -13,7 +13,9 @@ export default function App(props) {
             <Sidebar />
 
             <div className="main-content">
-                <div className="bg-white width-100 textAlign-center boxShadow-close breakPointM-display-none">
+                <div style={{ height: '108px' }}></div>
+
+                <div className="posFixTL zi-chrome bg-white width-100 textAlign-center boxShadow-close breakPointM-display-none">
                     <SidebarLogo />
                 </div>
 
