@@ -14,7 +14,7 @@ export default function TextManipulation() {
             <PageTitle title="Text manipulation" />
 
             <section className="marginBottom-m">
-                <div className="marginBottom-l">
+                <div className="marginBottom-m breakPointM-marginBottom-l">
                     <SectionTitle sectionTitle={"Truncate text"} />
 
                     <SectionDescription>

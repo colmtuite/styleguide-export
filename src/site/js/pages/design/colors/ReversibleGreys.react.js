@@ -6,7 +6,7 @@ import SectionTitle from '~/components/SectionTitle.react';
 export default function ReversibleGreys() {
     return (
         <section className="marginBottom-m">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Reversible grays"} />
 
                 <SectionDescription>

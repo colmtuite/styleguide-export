@@ -11,7 +11,7 @@ import { ghostButtonCode } from '~/components/CodeSnippets.js';
 export default function FlatButton() {
     return (
         <section className="marginBottom-xl">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Ghost button"} />
 
                 <SectionDescription>

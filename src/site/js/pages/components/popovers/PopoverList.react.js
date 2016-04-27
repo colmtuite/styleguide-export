@@ -13,7 +13,7 @@ import { popoverWithLinks } from '~/components/CodeSnippets.js';
 export default function PopoverList() {
     return (
         <section className="marginBottom-xl">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Popover with links"} />
 
                 <SectionDescription>

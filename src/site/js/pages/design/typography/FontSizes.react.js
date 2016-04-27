@@ -12,7 +12,7 @@ import { fontSizesCode } from '~/components/CodeSnippets.js';
 export default function FontSizes() {
     return (
         <section className="marginBottom-xl">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Font sizes"} />
 
                 <SectionDescription>

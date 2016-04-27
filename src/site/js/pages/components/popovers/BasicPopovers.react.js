@@ -16,7 +16,7 @@ import { basicPopoversCode } from '~/components/CodeSnippets.js';
 export default function BasicPopovers() {
     return (
         <section className="marginBottom-xl">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Basic popover structure"} />
 
                 <SectionDescription>

@@ -11,7 +11,7 @@ export default function GreyColors() {
 
     return (
         <section className="marginBottom-xl">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Grey colors"} />
 
                 <SectionDescription>

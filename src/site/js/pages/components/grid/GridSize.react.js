@@ -11,7 +11,7 @@ import { gridSizeCode } from '~/components/CodeSnippets.js';
 export default function GridSize() {
     return (
         <section className="marginBottom-m">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Grid sizes"} />
 
                 <SectionDescription>

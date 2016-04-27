@@ -11,7 +11,7 @@ import { fontWeightCode } from '~/components/CodeSnippets.js';
 export default function FontWeight() {
     return (
         <section className="marginBottom-xl">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Font weight"} />
 
                 <SectionDescription>

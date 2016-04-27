@@ -10,7 +10,7 @@ import { transitionsCode } from '~/components/CodeSnippets.js';
 export default function Transitions() {
     return (
         <section className="marginBottom-m">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Transitions"} />
 
                 <SectionDescription>

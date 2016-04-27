@@ -11,7 +11,7 @@ import { unorderedListCode } from '~/components/CodeSnippets.js';
 export default function UnorderedList() {
     return (
         <section className="marginBottom-m">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Unordered list"} />
 
                 <SectionDescription>

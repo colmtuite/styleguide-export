@@ -10,7 +10,7 @@ import { projectCardCode } from '~/components/CodeSnippets.js';
 export default function ProjectCard() {
     return (
         <section className="marginBottom-m">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Project card"} />
 
                 <SectionDescription>

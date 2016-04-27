@@ -11,7 +11,7 @@ import { popoverWithLinks } from '~/components/CodeSnippets.js';
 export default function PopoverWithSelect() {
     return (
         <section className="marginBottom-xl">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Popover with select menu"} />
 
                 <SectionDescription>

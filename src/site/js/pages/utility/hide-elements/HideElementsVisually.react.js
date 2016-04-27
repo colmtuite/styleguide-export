@@ -8,7 +8,7 @@ import { hideElementsVisuallyCode } from '~/components/CodeSnippets.js';
 export default function HideElementsVisually() {
     return (
         <section className="marginBottom-xl">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Hide elements visually"} />
 
                 <SectionDescription>

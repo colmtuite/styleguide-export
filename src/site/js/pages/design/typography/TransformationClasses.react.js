@@ -10,7 +10,7 @@ import { transformationClassesCode } from '~/components/CodeSnippets.js';
 export default function TransformationClasses() {
     return (
         <section className="marginBottom-m">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Transformation classes"} />
 
                 <SectionDescription>

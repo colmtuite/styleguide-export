@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 
 export default function PageTitle({ title }) {
     PageTitle.propTypes = {
@@ -6,9 +7,15 @@ export default function PageTitle({ title }) {
     };
 
     return (
-        <div className="marginTopBottom-xl breakPointM-marginTop-m">
+        <div className={classNames(
+                'marginTopBottom-l',
+                'textAlign-center',
+                'breakPointM-marginTop-m ',
+                'breakPointM-textAlign-left',
+                'breakPointS-marginTopBottom-xl',
+            )}>
             <h2 className="fontSize-xxxl">
-                { title }
+                {title}
             </h2>
         </div>
     );

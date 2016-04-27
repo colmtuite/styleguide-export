@@ -18,7 +18,7 @@ export default function Modals() {
             <PageTitle title="Modals" />
 
             <section className="marginBottom-m">
-                <div className="marginBottom-l">
+                <div className="marginBottom-m breakPointM-marginBottom-l">
                     <SectionTitle sectionTitle={"Default modal"} />
 
                     <SectionDescription>
