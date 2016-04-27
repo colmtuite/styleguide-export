@@ -20,7 +20,7 @@ export default function WaitingButton() {
             </div>
 
             <SectionExample>
-                <div className="padding-m">
+                <div className="padding-m textAlign-center breakPointM-textAlign-left">
                     <div className="uiIcon uiIcon--m is-loading">
                         <button
                             className="button button--m button--flat bg-marvel is-disabled"

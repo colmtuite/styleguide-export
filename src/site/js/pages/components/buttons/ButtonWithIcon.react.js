@@ -26,7 +26,7 @@ export default function ButtonWithIcon() {
             </div>
 
             <SectionExample>
-                <div className="padding-m">
+                <div className="padding-m textAlign-center breakPointM-textAlign-left">
                     <div className="uiIcon uiIcon--m">
                         <span
                             className="button button--m button--ghost bg-marvel--hover"

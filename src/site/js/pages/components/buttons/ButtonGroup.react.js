@@ -20,14 +20,8 @@ export default function ButtonGroup() {
             </div>
 
             <SectionExample>
-                <div className="padding-m">
+                <div className="padding-m textAlign-center breakPointM-textAlign-left">
                     <div className="buttonGroup">
-                        <div>
-                            <button className="button button--m button--ghost bg-marvel--hover">
-                                Button
-                            </button>
-                        </div>
-
                         <div>
                             <button className="button button--m button--ghost bg-marvel--hover">
                                 Button

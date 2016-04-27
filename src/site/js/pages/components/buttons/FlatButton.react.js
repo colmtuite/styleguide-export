@@ -23,8 +23,8 @@ export default function FlatButton() {
             </div>
 
             <SectionExample>
-                <div className="padding-m inline">
-                    <div className="marginRight-m">
+                <div className="padding-m textAlign-center breakPointM-inline breakPointM-textAlign-left">
+                    <div className="marginBottom-m breakPointM-marginBottom-0 breakPointM-marginRight-m">
                         <a
                             className="button button--m button--flat bg-marvel"
                             href="#"

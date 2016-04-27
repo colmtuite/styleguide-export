@@ -24,7 +24,7 @@ export default function ButtonWithLoneIcon() {
             </div>
 
             <SectionExample>
-                <div className="padding-m">
+                <div className="padding-m textAlign-center breakPointM-textAlign-left">
                     <a
                         className="uiIcon uiIcon--m button button--m button--ghost bg-marvel--hover"
                         href="#"

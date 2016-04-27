@@ -23,7 +23,7 @@ export default function GhostButtonReversed() {
                 </SectionDescription>
             </div>
 
-            <div className="padding-m inline bg-steel borderRadiusTop-m">
+            <div className="padding-m textAlign-center bg-steel borderRadiusTop-m breakPointM-inline breakPointM-textAlign-left">
                 <div>
                     <a
                         className="button button--m button--ghost bg-white--hover is-reversed"

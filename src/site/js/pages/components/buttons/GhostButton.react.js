@@ -24,8 +24,8 @@ export default function FlatButton() {
             </div>
 
             <SectionExample>
-                <div className="padding-m inline">
-                    <div className="marginRight-m">
+                <div className="padding-m textAlign-center breakPointM-inline breakPointM-textAlign-left">
+                    <div className="marginBottom-m breakPointM-marginBottom-0 breakPointM-marginRight-m">
                         <a
                             className="button button--m button--ghost bg-marvel--hover"
                             href="#"
@@ -34,7 +34,7 @@ export default function FlatButton() {
                         </a>
                     </div>
 
-                    <div className="marginRight-m">
+                    <div className="marginBottom-m breakPointM-marginBottom-0 breakPointM-marginRight-m">
                         <a
                             className="button button--m button--ghost bg-orange--hover"
                             href="#"
@@ -43,7 +43,7 @@ export default function FlatButton() {
                         </a>
                     </div>
 
-                    <div className="marginRight-m">
+                    <div className="marginBottom-m breakPointM-marginBottom-0 breakPointM-marginRight-m">
                         <a
                             className="button button--m button--ghost bg-positive--hover"
                             href="#"

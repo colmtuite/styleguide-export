@@ -21,7 +21,7 @@ export default function DisabledButton() {
             </div>
 
             <SectionExample>
-                <div className="padding-m">
+                <div className="padding-m textAlign-center breakPointM-textAlign-left">
                     <button
                         className="button button--m button--flat bg-marvel is-disabled"
                         type="button"

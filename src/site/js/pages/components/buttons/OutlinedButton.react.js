@@ -25,8 +25,8 @@ export default function OutlinedButton() {
             </div>
 
             <SectionExample>
-                <div className="padding-m inline bg-snow borderRadiusTop-m">
-                    <div className="marginRight-m">
+                <div className="padding-m textAlign-center bg-snow borderRadiusTop-m breakPointM-inline breakPointM-textAlign-left">
+                    <div className="marginBottom-m breakPointM-marginBottom-0 breakPointM-marginRight-m">
                         <a
                             className="button button--m button--outlined bg-white bg-marvel--hover"
                             href="#"
@@ -35,7 +35,7 @@ export default function OutlinedButton() {
                         </a>
                     </div>
 
-                    <div className="marginRight-m">
+                    <div className="marginBottom-m breakPointM-marginBottom-0 breakPointM-marginRight-m">
                         <a
                             className="button button--m button--outlined bg-white bg-orange--hover"
                             href="#"
@@ -44,12 +44,12 @@ export default function OutlinedButton() {
                         </a>
                     </div>
 
-                    <div className="marginRight-m">
+                    <div className="marginBottom-m breakPointM-marginBottom-0 breakPointM-marginRight-m">
                         <a
-                            className="button button--m button--outlined bg-orange--hover"
+                            className="button button--m button--outlined bg-white bg-positive--hover"
                             href="#"
                             role="button">
-                            Orange
+                            Positive
                         </a>
                     </div>
 
