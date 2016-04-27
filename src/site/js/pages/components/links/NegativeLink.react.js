@@ -17,7 +17,7 @@ export default function NegativeLink() {
             </div>
 
             <SectionExample>
-                <div className="padding-m">
+                <div className="padding-m textAlign-center breakPointM-textAlign-left">
                     <a className="link link--negative" href="#">Negative link</a>
                 </div>
             </SectionExample>

@@ -21,7 +21,7 @@ export default function SnowBackgroundLink() {
             </div>
 
             <SectionExample>
-                <div className="padding-m">
+                <div className="padding-m textAlign-center breakPointM-textAlign-left">
                     <a
                         className="link link--snowBg paddingTopBottom-xxs paddingLeftRight-s borderRadius-s"
                         href="#">

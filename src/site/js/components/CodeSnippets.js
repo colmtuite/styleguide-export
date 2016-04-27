@@ -43,46 +43,76 @@ export const unorderedListCode = `<ul class="list list--unordered">
 // Modals
 // -------------------------
 
-export const modalsCode = `<div class="overlay zIndex-Overlay">
-  <div class="modal-container">
+export const modalsCode = `<!-- Standard modal -->
+<div class="modal-container">
     <div class="display-table width-100 height-100">
-      <div class="modal-icon-wrapper">
-        <div class="modal-icon modal-icon--light modal-iconClose modal-iconClose--outside">
+        <div class="modal-icon-wrapper">
+            <div class="modal-icon modal-icon--light modal-iconClose modal-iconClose--outside">
+            </div>
         </div>
-      </div>
 
-      <div class="display-tableCell verticalAlign-middle padding-m">
-        <div class="modal modal--s">...</div>
-        <div class="modal-subtext modal-subtext--after textAlign-center">
-          Don't have an account?
+        <div class="display-tableCell verticalAlign-middle padding-m">
+            <div class="modal modal--s">...</div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
+
+<!-- Modal with subtext animating in -->
+<div class="modal-container">
+    <div class="display-table width-100 height-100">
+        <div class="modal-icon-wrapper">
+            <div class="modal-icon modal-icon--light modal-iconClose modal-iconClose--outside">
+            </div>
+        </div>
+
+        <div class="display-tableCell verticalAlign-middle padding-m">
+            <div class="modal modal--s">...</div>
+            <div class="modal-subtext modal-subtext--after textAlign-center">...</div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal with title animating in -->
+<div class="modal-container">
+    <div class="display-table width-100 height-100">
+        <div class="modal-icon-wrapper">
+            <div class="modal-icon modal-icon--light modal-iconClose modal-iconClose--outside">
+            </div>
+        </div>
+
+        <div class="display-tableCell verticalAlign-middle padding-m">
+            <div class="modal-subtext modal-subtext--before">...</div>
+            <div class="modal modal--s">...</div>
+        </div>
+    </div>
 </div>`;
 
 //
 // Popovers
 // -------------------------
 
-export const basicPopoversCode = `<div class="popover popover--s popover--top has-caret">
+export const basicPopoversCode = `<!-- Top popover -->
+<div class="popover popover--s popover--top has-caret">
     <div class="padding-s">
         <span class="fontSize-m lineHeight-m">...</span>
     </div>
 </div>
 
+<!-- Right popover -->
 <div class="popover popover--s popover--right has-caret">
     <div class="padding-s">
         <span class="fontSize-m lineHeight-m">...</span>
     </div>
 </div>
 
+<!-- Bottom popover -->
 <div class="popover popover--s popover--bottom has-caret">
     <div class="padding-s">
         <span class="fontSize-m lineHeight-m">...</span>
     </div>
 </div>
 
+<!-- Left popover -->
 <div class="popover popover--s popover--left has-caret">
     <div class="padding-s">
         <span class="fontSize-m lineHeight-m">...</span>

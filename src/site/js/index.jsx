@@ -48,7 +48,7 @@ import ThemeClasses from '~/pages/utility/theme-classes/ThemeClasses.react';
 
 export function render(container) {
     ReactDOM.render(
-        <Router history={hashHistory}>
+        <Router onUpdate={() => window.scrollTo(0, 0)} history={hashHistory}>
             <Route path="/" component={App}>
                 <IndexRedirect to="design/colors" />
             </Route>
