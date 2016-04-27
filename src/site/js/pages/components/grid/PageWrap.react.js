@@ -11,7 +11,7 @@ import { pageWrapCode } from '~/components/CodeSnippets.js';
 export default function PageWrap() {
     return (
         <section className="marginBottom-xl">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Page wrap"} />
 
                 <SectionDescription>

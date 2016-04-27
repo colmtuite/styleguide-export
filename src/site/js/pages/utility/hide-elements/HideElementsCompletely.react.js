@@ -10,7 +10,7 @@ import { hideElementsCompletelyCode } from '~/components/CodeSnippets.js';
 export default function HideElementsCompletely() {
     return (
         <section className="marginBottom-xl">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Hide elements completely"} />
 
                 <SectionDescription>

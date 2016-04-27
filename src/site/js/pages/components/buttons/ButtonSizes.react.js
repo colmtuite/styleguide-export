@@ -11,7 +11,7 @@ import { buttonSizesCode } from '~/components/CodeSnippets.js';
 export default function ButtonSizes() {
     return (
         <section className="marginBottom-xl">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Button sizes"} />
 
                 <SectionDescription>
@@ -23,10 +23,8 @@ export default function ButtonSizes() {
             </div>
 
             <SectionExample>
-                <div
-                    className="grid grid--1 breakPointM-grid--2 breakPointL-grid--4"
-                    style={{ marginBottom: '-1px' }}>
-                    <div className="padding-m textAlign-center borderWidth-0 borderBottomWidth-1 borderRightWidth-1 borderStyle-solid borderColor-smoke">
+                <div className="grid grid--1 breakPointM-grid--2 breakPointL-grid--4">
+                    <div className="padding-m textAlign-center borderStyle-solid borderColor-smoke borderWidth-0 borderBottomWidth-1 breakPointM-borderRightWidth-1 breakPointL-borderBottomWidth-0">
                         <div className="marginTop-xs marginBottom-s">
                             <button
                                 className="button button--xl button--flat bg-marvel"
@@ -38,7 +36,7 @@ export default function ButtonSizes() {
                         <p className="lineHeight-s fontSize-s fontWeight-3 c-silver">Extra Large Button</p>
                     </div>
 
-                    <div className="padding-m textAlign-center borderWidth-0 borderBottomWidth-1 breakPointL-borderRightWidth-1 borderStyle-solid borderColor-smoke">
+                    <div className="padding-m textAlign-center borderStyle-solid borderColor-smoke borderWidth-0 borderBottomWidth-1 breakPointL-borderBottomWidth-0 breakPointL-borderRightWidth-1">
                         <div className="marginTop-xs marginBottom-s paddingTopBottom-xxs">
                             <button
                                 className="button button--l button--flat bg-marvel"
@@ -50,7 +48,7 @@ export default function ButtonSizes() {
                         <p className="lineHeight-s fontSize-s fontWeight-3 c-silver">Large Button</p>
                     </div>
 
-                    <div className="padding-m textAlign-center borderWidth-0 borderBottomWidth-1 breakPointM-borderRightWidth-1 borderStyle-solid borderColor-smoke">
+                    <div className="padding-m textAlign-center borderStyle-solid borderColor-smoke borderWidth-0 borderBottomWidth-1 breakPointM-borderBottomWidth-0 breakPointM-borderRightWidth-1">
                         <div className="marginTop-xs marginBottom-s paddingTopBottom-xs">
                             <button
                                 className="button button--m button--flat bg-marvel"
@@ -62,7 +60,7 @@ export default function ButtonSizes() {
                         <p className="lineHeight-s fontSize-s fontWeight-3 c-silver">Medium Button</p>
                     </div>
 
-                    <div className="padding-m textAlign-center borderWidth-0 borderBottomWidth-1 borderStyle-solid borderColor-smoke">
+                    <div className="padding-m textAlign-center">
                         <div className="marginTop-xs marginBottom-s paddingTopBottom-s">
                             <button
                                 className="button button--s button--flat bg-marvel"

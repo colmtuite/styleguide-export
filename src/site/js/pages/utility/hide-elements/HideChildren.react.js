@@ -10,7 +10,7 @@ import { hideChildrenCode } from '~/components/CodeSnippets.js';
 export default function HideElementsVisually() {
     return (
         <section className="marginBottom-m">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Hide children"} />
 
                 <SectionDescription>

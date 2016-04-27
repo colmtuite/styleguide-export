@@ -11,7 +11,7 @@ import { popoverWithLinks } from '~/components/CodeSnippets.js';
 export default function PopoverOnHover() {
     return (
         <section className="marginBottom-m">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Popover that appears on hover"} />
 
                 <SectionDescription>
@@ -21,7 +21,7 @@ export default function PopoverOnHover() {
             </div>
 
             <SectionExample>
-                <div className="padding-m">
+                <div className="padding-m textAlign-center breakPointM-textAlign-left">
                     <div className="popover-trigger position-relative display-inlineBlock">
                         <div className="popover popover--s popover--top has-caret">
                             <div className="popover-list">

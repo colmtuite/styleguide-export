@@ -10,7 +10,7 @@ import { verticallyCenterElementsCode } from '~/components/CodeSnippets.js';
 export default function VerticallyCenter() {
     return (
         <section className="marginBottom-m">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Vertically center"} />
 
                 <SectionDescription>

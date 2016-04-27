@@ -10,7 +10,7 @@ import { snowBackgroundLinkCode } from '~/components/CodeSnippets.js';
 export default function SnowBackgroundLink() {
     return (
         <section className="marginBottom-xl">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Snow background link"} />
 
                 <SectionDescription>

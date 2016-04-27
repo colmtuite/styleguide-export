@@ -10,7 +10,7 @@ import { alignmentClassesCode } from '~/components/CodeSnippets.js';
 export default function AlignmentClasses() {
     return (
         <section className="marginBottom-xl">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Alignment classes"} />
 
                 <SectionDescription>

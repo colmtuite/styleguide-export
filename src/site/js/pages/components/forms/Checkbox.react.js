@@ -11,7 +11,7 @@ import { checkboxCode } from '~/components/CodeSnippets.js';
 export default function Checkbox() {
     return (
         <section className="marginBottom-m">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Checkbox"} />
 
                 <SectionDescription>
@@ -19,12 +19,13 @@ export default function Checkbox() {
                     <InlineCode>.form-control--m</InlineCode> and
                     <InlineCode>.form-control--s</InlineCode> on the
                     <InlineCode>.form-control</InlineCode> wrapper element.
+                    Original implementation from <a className="link link--blue" href="http://wtfforms.com/" target="blank">WTF, forms?</a> by <a className="link link--blue" href="https://twitter.com/mdo" target="blank">@mdo</a>.
                 </SectionDescription>
             </div>
 
             <SectionExample>
                 <div className="grid grid--1 breakPointL-grid--2">
-                    <div className="padding-m textAlign-center borderWidth-0 borderBottomWidth-1 breakPointL-borderRightWidth-1 borderStyle-solid borderColor-smoke">
+                    <div className="padding-m textAlign-center borderStyle-solid borderColor-smoke borderWidth-0 borderBottomWidth-1 breakPointL-borderBottomWidth-0 breakPointL-borderRightWidth-1">
                         <label className="form-control form-control--m checkbox c-silver c-slate--hover userSelect-none">
                             <input type="checkbox" />
 

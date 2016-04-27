@@ -12,7 +12,7 @@ export default class PopoverBottom extends React.Component {
     }
     render() {
         const { active } = this.state;
-        const togglePopoverClass = classNames('popover popover--s popover--right has-caret', { ['is-visible']: active });
+        const togglePopoverClass = classNames('popover popover--s popover--right has-caret display-none', { ['is-visible display-block']: active });
 
         return (
             <div className="display-inlineBlock position-relative">

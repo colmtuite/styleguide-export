@@ -7,7 +7,7 @@ import SectionTitle from '~/components/SectionTitle.react';
 export default function UIColors() {
     return (
         <section className="marginBottom-xl">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"UI Colors"} />
 
                 <SectionDescription>

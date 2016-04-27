@@ -9,7 +9,7 @@ import { customAvatarSizesCode } from '~/components/CodeSnippets.js';
 export default function CustomAvatarSizes() {
     return (
         <section className="marginBottom-m">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Custom avatar sizes"} />
 
                 <SectionDescription>

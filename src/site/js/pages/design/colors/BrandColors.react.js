@@ -7,7 +7,7 @@ import SectionTitle from '~/components/SectionTitle.react';
 export default function BandColors() {
     return (
         <section className="marginBottom-xl">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Brand colors"} />
 
                 <SectionDescription>

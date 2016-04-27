@@ -11,7 +11,7 @@ import { clearfixCode } from '~/components/CodeSnippets.js';
 export default function Clearfix() {
     return (
         <section className="marginBottom-xl">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={ "Clearfix" } />
 
                 <SectionDescription>

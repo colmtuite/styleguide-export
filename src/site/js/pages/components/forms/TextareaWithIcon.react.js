@@ -11,7 +11,7 @@ import { textareaWithIconCode } from '~/components/CodeSnippets.js';
 export default function TextareaWithIcon() {
     return (
         <section className="marginBottom-xl">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Textarea with icon"} />
 
                 <SectionDescription>

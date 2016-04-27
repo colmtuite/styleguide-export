@@ -14,7 +14,7 @@ export default function Scrollbar() {
             <PageTitle title="Scrollbar" />
 
             <section className="marginBottom-m">
-                <div className="marginBottom-l">
+                <div className="marginBottom-m breakPointM-marginBottom-l">
                     <SectionTitle sectionTitle={"Scrollbar"} />
 
                     <SectionDescription>

@@ -11,7 +11,7 @@ import { orderedListCode } from '~/components/CodeSnippets.js';
 export default function OrderedList() {
     return (
         <section className="marginBottom-xl">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Ordered list"} />
 
                 <SectionDescription>

@@ -10,7 +10,7 @@ import { colourfulLinksCode } from '~/components/CodeSnippets.js';
 export default function ColourfulLinks() {
     return (
         <section className="marginBottom-m">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Colourful links"} />
 
                 <SectionDescription>

@@ -11,7 +11,7 @@ import { outlinedButtonCode } from '~/components/CodeSnippets.js';
 export default function OutlinedButton() {
     return (
         <section className="marginBottom-xl">
-            <div className="marginBottom-l">
+            <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Outlined button"} />
 
                 <SectionDescription>
