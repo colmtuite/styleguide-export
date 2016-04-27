@@ -33,7 +33,7 @@ export default function Modals() {
 
                 <SectionExample>
                     <div className="grid grid--1 breakPointM-grid--3">
-                        <div className="padding-m textAlign-center borderWidth-0 borderBottomWidth-1 breakPointM-borderRightWidth-0 breakPointM-borderRightWidth-1 borderStyle-solid borderColor-smoke">
+                        <div className="padding-m textAlign-center borderStyle-solid borderColor-smoke borderWidth-0 borderBottomWidth-1 breakPointM-borderBottomWidth-0">
                             <div className="marginTop-xs marginBottom-s">
                                 <ModalStandardButton />
                             </div>
@@ -41,7 +41,7 @@ export default function Modals() {
                             <p className="lineHeight-s fontSize-s fontWeight-3 c-silver">Default modal</p>
                         </div>
 
-                        <div className="padding-m textAlign-center borderWidth-0 borderBottomWidth-1 breakPointM-borderRightWidth-0 breakPointM-borderRightWidth-1 borderStyle-solid borderColor-smoke">
+                        <div className="padding-m textAlign-center borderStyle-solid borderColor-smoke borderWidth-0 borderBottomWidth-1 breakPointM-borderBottomWidth-0 breakPointM-borderLeftWidth-1 breakPointM-borderRightWidth-1">
                             <div className="marginTop-xs marginBottom-s">
                                 <ModalWithSubtextButton />
                             </div>
