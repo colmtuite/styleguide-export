@@ -14,13 +14,13 @@ export default function InlineCode({ children }) {
                 'display-inlineBlock',
                 'fontSize-xs',
                 'hljs-string',
-                'paddingLeftRight-xs',
+                'paddingLeftRight-xxs',
                 'verticalAlign-middle',
             )}
             style={{
-                lineHeight: '21px',
-                marginLeft: '3px',
-                marginRight: '2px',
+                lineHeight: '24px',
+                marginLeft: '4px',
+                marginTop: '-1px',
             }}>
                 {children}
         </code>
