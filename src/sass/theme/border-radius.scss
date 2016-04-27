@@ -41,6 +41,10 @@ $borderRadius-s: 3px;
 .borderRadiusBottomLeft-m    { border-radius: 0 0 0 $borderRadius-m; }
 .borderRadiusBottomLeft-s    { border-radius: 0 0 0 $borderRadius-s; }
 
+.borderRadiusBottomRight-l    { border-radius: 0 0 0 $borderRadius-l; }
+.borderRadiusBottomRight-m    { border-radius: 0 0 0 $borderRadius-m; }
+.borderRadiusBottomRight-s    { border-radius: 0 0 0 $borderRadius-s; }
+
 .borderRadiusTopLeft-l    { border-radius: $borderRadius-l 0 0 0; }
 .borderRadiusTopLeft-m    { border-radius: $borderRadius-m 0 0 0; }
 .borderRadiusTopLeft-s    { border-radius: $borderRadius-s 0 0 0; }
