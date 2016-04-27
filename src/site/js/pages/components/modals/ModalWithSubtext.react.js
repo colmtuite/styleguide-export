@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ModalStandard() {
+export default function ModalWithSubtext() {
     return (
         <div className="display-tableCell verticalAlign-middle">
             <div className="modal modal--s">
@@ -34,7 +34,7 @@ export default function ModalStandard() {
                     </div>
 
                     <div className="marginBottom-m textAlign-right">
-                        <span className="link link--light fontWeight-3">
+                        <span className="forgot-password link link--light fontWeight-3">
                             Forgotten password?
                         </span>
                     </div>
@@ -56,14 +56,14 @@ export default function ModalStandard() {
 
                 <div className="grid grid--m breakPointM-grid--2">
                     <div>
-                        <span className="width-100 button button--flat bg-dropbox textAlign-center paddingTopBottom-xs borderRadius-m">
+                        <a className="width-100 button button--flat bg-dropbox textAlign-center paddingTopBottom-xs borderRadius-m" id="connect-dropbox" href="/auth/dropbox_auth_start/">
                             <svg
                                 className="fill-white display-block centered"
                                 height="30"
                                 viewBox="0 0 48 46">
                                 <path d="M14.1 0l-14.1 9.5 9.8 8.1 14.2-9.1-9.9-8.5zm-14.1 25.6l14.1 9.5 9.9-8.5-14.2-9-9.8 8zm24 1l9.9 8.5 14.1-9.5-9.8-8.1-14.2 9.1zm24-17.1l-14.1-9.5-9.9 8.5 14.2 9.1 9.8-8.1zm-24 18.9l-9.9 8.5-4.2-2.9v3.2l14.1 8.8 14.1-8.7v-3.2l-4.2 2.9-9.9-8.6z"></path>
                             </svg>
-                        </span>
+                        </a>
                     </div>
 
                     <div>
@@ -77,6 +77,11 @@ export default function ModalStandard() {
                         </span>
                     </div>
                 </div>
+            </div>
+
+            <div className="modal-subtext modal-subtext--after">
+                <span className="c-silver fontWeight-3">Don't have an account? </span>
+                <a className="js-signup-link link link--blue">Sign up</a>
             </div>
         </div>
     );

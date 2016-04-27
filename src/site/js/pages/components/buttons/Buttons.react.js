@@ -21,14 +21,14 @@ export default function Buttons() {
             <ButtonSizes />
             <FlatButton />
             <GhostButton />
-            <OutlinedButton />
             <GhostButtonReversed />
-            <StatefulButtons />
+            <OutlinedButton />
+            <DisabledButton />
+            <WaitingButton />
             <ButtonWithIcon />
             <ButtonWithLoneIcon />
-            <DisabledButton />
             <ButtonWithLogo />
-            <WaitingButton />
+            <StatefulButtons />
             <ButtonGroup />
         </div>
     );

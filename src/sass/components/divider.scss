@@ -1,0 +1,59 @@
+// Divider with text
+// -------------------------
+
+.divider {
+    @extend .position-relative;
+}
+
+.divider:before,
+.divider:after {
+    @extend .bg-smoke;
+    @extend .position-absolute;
+
+    height: 1px;
+    content: "";
+    top: 50%;
+}
+
+.divider--mobile:before,
+.divider--mobile:after {
+    width: 30px;
+}
+
+.divider--mobile:before {
+    left: -40px;
+}
+
+.divider--mobile:after {
+    right: -40px;
+}
+
+@include breakPoint(s) {
+    .divider:before,
+    .divider:after {
+        width: 30px;
+    }
+
+    .divider:before {
+        left: -40px;
+    }
+
+    .divider:after {
+        right: -40px;
+    }
+}
+
+@include breakPoint(m) {
+    .divider:before,
+    .divider:after {
+        width: 50px;
+    }
+
+    .divider:before {
+        left: -70px;
+    }
+
+    .divider:after {
+        right: -70px;
+    }
+}
