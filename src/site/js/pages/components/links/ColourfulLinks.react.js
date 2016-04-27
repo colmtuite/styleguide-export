@@ -20,9 +20,9 @@ export default function ColourfulLinks() {
             </div>
 
             <SectionExample>
-                <div className="padding-m">
-                    <div className="inline">
-                        <div className="marginRight-m">
+                <div className="padding-m textAlign-center breakPointM-textAlign-left">
+                    <div className="breakPointM-inline">
+                        <div className="marginBottom-m breakPointM-marginBottom-0 breakPointM-marginRight-m">
                             <a
                                 className="link link--blue fontSize-m"
                                 href="#">
@@ -30,7 +30,7 @@ export default function ColourfulLinks() {
                             </a>
                         </div>
 
-                        <div className="marginRight-m">
+                        <div className="marginBottom-m breakPointM-marginBottom-0 breakPointM-marginRight-m">
                             <a
                                 className="link link--green fontSize-m"
                                 href="#">
@@ -38,7 +38,7 @@ export default function ColourfulLinks() {
                             </a>
                         </div>
 
-                        <div className="marginRight-m">
+                        <div className="marginBottom-m breakPointM-marginBottom-0 breakPointM-marginRight-m">
                             <a
                                 className="link link--orange fontSize-m"
                                 href="#">
@@ -46,7 +46,7 @@ export default function ColourfulLinks() {
                             </a>
                         </div>
 
-                        <div className="marginRight-m">
+                        <div className="marginBottom-m breakPointM-marginBottom-0 breakPointM-marginRight-m">
                             <a
                                 className="link link--pink fontSize-m"
                                 href="#">
@@ -54,7 +54,7 @@ export default function ColourfulLinks() {
                             </a>
                         </div>
 
-                        <div className="marginRight-m">
+                        <div className="marginBottom-m breakPointM-marginBottom-0 breakPointM-marginRight-m">
                             <a
                                 className="link link--purple fontSize-m"
                                 href="#">
@@ -62,7 +62,7 @@ export default function ColourfulLinks() {
                             </a>
                         </div>
 
-                        <div className="marginRight-m">
+                        <div>
                             <a
                                 className="link link--red fontSize-m"
                                 href="#">

@@ -18,7 +18,7 @@ export default function LightLinkReversed() {
                 </SectionDescription>
             </div>
 
-            <div className="padding-m bg-steel borderRadiusTop-m">
+            <div className="padding-m textAlign-center breakPointM-textAlign-left bg-steel borderRadiusTop-m">
                 <a
                     className="link link--lightReversed"
                     href="#">

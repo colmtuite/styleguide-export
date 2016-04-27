@@ -12,7 +12,7 @@ export default function InlineCode({ children }) {
                 'bg-snow--d',
                 'borderRadius-s',
                 'display-inlineBlock',
-                'fontSize-xxs',
+                'fontSize-xs',
                 'hljs-string',
                 'paddingLeftRight-xs',
                 'verticalAlign-middle',

@@ -19,7 +19,7 @@ export default function LightLink() {
             </div>
 
             <SectionExample>
-                <div className="padding-m">
+                <div className="padding-m textAlign-center breakPointM-textAlign-left">
                     <a
                         className="link link--light"
                         href="#">

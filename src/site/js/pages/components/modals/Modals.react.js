@@ -1,11 +1,13 @@
 import React from 'react';
 
+import classNames from 'classnames';
+import InlineCode from '~/components/InlineCode.react';
 import PageTitle from '~/components/PageTitle.react';
 import SectionCode from '~/components/SectionCode.react';
 import SectionDescription from '~/components/SectionDescription.react';
 import SectionExample from '~/components/SectionExample.react';
 import SectionTitle from '~/components/SectionTitle.react';
-import classNames from 'classnames';
+import ModalStandard from '~/pages/components/modals/ModalStandard.react';
 
 import { modalsCode } from '~/components/CodeSnippets.js';
 
@@ -21,7 +23,7 @@ export default class Modals extends React.Component {
 
     render() {
         const { active } = this.state;
-        const instantFeedbackClasses = classNames('marginTop-xs marginBottom-s display-none', { ['display-block']: active });
+        const modalStandard = classNames('modal-overlay', { ['is-active']: active });
 
         return (
             <div>
@@ -32,7 +34,12 @@ export default class Modals extends React.Component {
                         <SectionTitle sectionTitle={"Default modal"} />
 
                         <SectionDescription>
-                            Some description goes here.
+                            There are two modal sizes that can be triggered with
+                            classes <InlineCode>.modal--s</InlineCode> and
+                            <InlineCode>.modal--s</InlineCode>. All modals should
+                            be placed in a wrapper component that has classes
+                            <InlineCode>.modal-overlay</InlineCode> and
+                            <InlineCode>.zi-overlay</InlineCode>.
                         </SectionDescription>
                     </div>
 
@@ -43,10 +50,6 @@ export default class Modals extends React.Component {
                                     <button className="button button--m button--flat button--stateful bg-marvel" onClick={this.click}>
                                         Click me!
                                     </button>
-                                </div>
-
-                                <div className={instantFeedbackClasses}>
-                                    <div className="lineHeight-s fontSize-s fontWeight-3 c-silver">Response</div>
                                 </div>
 
                                 <p className="lineHeight-s fontSize-s fontWeight-3 c-silver">Default modal</p>
@@ -75,6 +78,10 @@ export default class Modals extends React.Component {
                     </SectionExample>
 
                     <SectionCode code={modalsCode} />
+
+                    <div className={modalStandard}>
+                        <ModalStandard />
+                    </div>
                 </section>
             </div>
         );
