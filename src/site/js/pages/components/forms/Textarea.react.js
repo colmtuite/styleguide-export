@@ -28,7 +28,7 @@ export default function Textarea() {
 
             <SectionExample>
                 <div className="padding-m">
-                    <div className="width-50">
+                    <div className="width-100 breakPointM-width-50">
                         <textarea
                             className="textarea textarea--m textarea--default"
                             placeholder="Write a comment...">

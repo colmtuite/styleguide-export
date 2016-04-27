@@ -27,7 +27,7 @@ export default function TextareaWithIcon() {
 
             <SectionExample>
                 <div className="padding-m">
-                    <div className="width-50">
+                    <div className="width-100 breakPointM-width-50">
                         <div className="uiIcon uiIcon--m uiIcon--textarea width-100">
                             <textarea
                                 className="textarea textarea--m textarea--default"

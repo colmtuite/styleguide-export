@@ -37,10 +37,17 @@ $borderRadius-s: 3px;
 .borderRadiusRight-m  { border-radius: 0 $borderRadius-m $borderRadius-m 0; }
 .borderRadiusRight-s  { border-radius: 0 $borderRadius-s $borderRadius-s 0; }
 
-
 .borderRadiusBottomLeft-l    { border-radius: 0 0 0 $borderRadius-l; }
 .borderRadiusBottomLeft-m    { border-radius: 0 0 0 $borderRadius-m; }
 .borderRadiusBottomLeft-s    { border-radius: 0 0 0 $borderRadius-s; }
+
+.borderRadiusTopLeft-l    { border-radius: $borderRadius-l 0 0 0; }
+.borderRadiusTopLeft-m    { border-radius: $borderRadius-m 0 0 0; }
+.borderRadiusTopLeft-s    { border-radius: $borderRadius-s 0 0 0; }
+
+.borderRadiusTopRight-l    { border-radius: 0 $borderRadius-l 0 0; }
+.borderRadiusTopRight-m    { border-radius: 0 $borderRadius-m 0 0; }
+.borderRadiusTopRight-s    { border-radius: 0 $borderRadius-s 0 0; }
 
 @include breakPoint(s) {
     // Equal corners
@@ -74,6 +81,14 @@ $borderRadius-s: 3px;
     .breakPointS-borderRadiusBottomLeft-l    { border-radius: 0 0 0 $borderRadius-l; }
     .breakPointS-borderRadiusBottomLeft-m    { border-radius: 0 0 0 $borderRadius-m; }
     .breakPointS-borderRadiusBottomLeft-s    { border-radius: 0 0 0 $borderRadius-s; }
+
+    .breakPointS-borderRadiusTopLeft-l    { border-radius: $borderRadius-l 0 0 0; }
+    .breakPointS-borderRadiusTopLeft-m    { border-radius: $borderRadius-m 0 0 0; }
+    .breakPointS-borderRadiusTopLeft-s    { border-radius: $borderRadius-s 0 0 0; }
+
+    .breakPointS-borderRadiusTopRight-l    { border-radius: 0 $borderRadius-l 0 0; }
+    .breakPointS-borderRadiusTopRight-m    { border-radius: 0 $borderRadius-m 0 0; }
+    .breakPointS-borderRadiusTopRight-s    { border-radius: 0 $borderRadius-s 0 0; }
 }
 
 @include breakPoint(m) {
@@ -108,6 +123,14 @@ $borderRadius-s: 3px;
     .breakPointM-borderRadiusBottomLeft-l    { border-radius: 0 0 0 $borderRadius-l; }
     .breakPointM-borderRadiusBottomLeft-m    { border-radius: 0 0 0 $borderRadius-m; }
     .breakPointM-borderRadiusBottomLeft-s    { border-radius: 0 0 0 $borderRadius-s; }
+
+    .breakPointM-borderRadiusTopLeft-l    { border-radius: $borderRadius-l 0 0 0; }
+    .breakPointM-borderRadiusTopLeft-m    { border-radius: $borderRadius-m 0 0 0; }
+    .breakPointM-borderRadiusTopLeft-s    { border-radius: $borderRadius-s 0 0 0; }
+
+    .breakPointM-borderRadiusTopRight-l    { border-radius: 0 $borderRadius-l 0 0; }
+    .breakPointM-borderRadiusTopRight-m    { border-radius: 0 $borderRadius-m 0 0; }
+    .breakPointM-borderRadiusTopRight-s    { border-radius: 0 $borderRadius-s 0 0; }
 }
 
 @include breakPoint(l) {
@@ -142,6 +165,14 @@ $borderRadius-s: 3px;
     .breakPointL-borderRadiusBottomLeft-l    { border-radius: 0 0 0 $borderRadius-l; }
     .breakPointL-borderRadiusBottomLeft-m    { border-radius: 0 0 0 $borderRadius-m; }
     .breakPointL-borderRadiusBottomLeft-s    { border-radius: 0 0 0 $borderRadius-s; }
+
+    .breakPointL-borderRadiusTopLeft-l    { border-radius: $borderRadius-l 0 0 0; }
+    .breakPointL-borderRadiusTopLeft-m    { border-radius: $borderRadius-m 0 0 0; }
+    .breakPointL-borderRadiusTopLeft-s    { border-radius: $borderRadius-s 0 0 0; }
+
+    .breakPointL-borderRadiusTopRight-l    { border-radius: 0 $borderRadius-l 0 0; }
+    .breakPointL-borderRadiusTopRight-m    { border-radius: 0 $borderRadius-m 0 0; }
+    .breakPointL-borderRadiusTopRight-s    { border-radius: 0 $borderRadius-s 0 0; }
 }
 
 @include breakPoint(xl) {
@@ -176,4 +207,12 @@ $borderRadius-s: 3px;
     .breakPointXL-borderRadiusBottomLeft-l    { border-radius: 0 0 0 $borderRadius-l; }
     .breakPointXL-borderRadiusBottomLeft-m    { border-radius: 0 0 0 $borderRadius-m; }
     .breakPointXL-borderRadiusBottomLeft-s    { border-radius: 0 0 0 $borderRadius-s; }
+
+    .breakPointXL-borderRadiusTopLeft-l    { border-radius: $borderRadius-l 0 0 0; }
+    .breakPointXL-borderRadiusTopLeft-m    { border-radius: $borderRadius-m 0 0 0; }
+    .breakPointXL-borderRadiusTopLeft-s    { border-radius: $borderRadius-s 0 0 0; }
+
+    .breakPointXL-borderRadiusTopRight-l    { border-radius: 0 $borderRadius-l 0 0; }
+    .breakPointXL-borderRadiusTopRight-m    { border-radius: 0 $borderRadius-m 0 0; }
+    .breakPointXL-borderRadiusTopRight-s    { border-radius: 0 $borderRadius-s 0 0; }
 }
