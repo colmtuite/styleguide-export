@@ -1,0 +1,26 @@
+//
+// Mixins
+// -------------------------
+
+
+.sidebar {
+    transform: translateX(-100%);
+}
+
+@include breakPoint(m) {
+    .sidebar {
+        transform: translateX(0%);
+    }
+}
+
+@include breakPoint(m) {
+    .main-content {
+        padding-left: 30%;
+    }
+}
+
+@include breakPoint(l) {
+    .main-content {
+        padding-left: 20%;
+    }
+}

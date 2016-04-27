@@ -80,7 +80,7 @@ function NavigationMenuItem(props) {
     return (
         <Link
             activeClassName="is-active"
-            className="paddingLeftRight-m paddingTopBottom-s display-block fontSize-m link link--light"
+            className="paddingLeftRight-m paddingTopBottom-xs display-block fontSize-m lineHeight-m link link--light"
             to={url}>
             {title}
         </Link>

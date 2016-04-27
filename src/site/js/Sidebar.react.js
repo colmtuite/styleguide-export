@@ -8,22 +8,30 @@ import { IndexLink } from 'react-router';
 export default function Sidebar() {
     return (
         <aside className={classNames(
-                'posFixTL',
-                'width-20',
-                'height-100',
-                'borderWidth-0',
+                'sidebar',
+
+                'bg-white',
+                'borderColor-smoke',
                 'borderRightWidth-1',
                 'borderStyle-solid',
-                'borderColor-smoke',
-                'overflow-auto'
+                'borderWidth-0',
+                'height-100',
+                'overflow-auto',
+                'posFixTL',
+                'width-80',
+
+                'breakPointM-width-30',
+                'breakPointL-width-20',
             )}>
             <div className={classNames(
-                    'textAlign-center',
-                    'paddingTopBottom-l',
-                    'borderWidth-0',
                     'borderBottomWidth-1',
+                    'borderColor-smoke',
                     'borderStyle-solid',
-                    'borderColor-smoke'
+                    'borderWidth-0',
+                    'display-none',
+                    'paddingTopBottom-l',
+                    'textAlign-center',
+                    'breakPointM-display-block',
                 )}>
                 <div className="paddingTopBottom-m">
                     <div className="marginBottom-s">

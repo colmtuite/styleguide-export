@@ -11,7 +11,7 @@ export default function App(props) {
         <div>
             <Sidebar />
 
-            <div style={{ paddingLeft: '20%' }}>
+            <div className="main-content">
                 <div
                     className="padding-m breakPointS-padding-l breakPointM-padding-xl centered"
                     style={{ maxWidth: '960px' }}>

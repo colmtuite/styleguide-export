@@ -7,10 +7,12 @@ export default function SectionCode({ code }) {
     };
 
     return (
-        <div className="padding-m bg-snow borderWidth-0 borderRightWidth-1 borderBottomWidth-1 borderLeftWidth-1 borderStyle-solid borderColor-smoke borderRadiusBottom-m">
-            <Highlight className="language-html">
-                {code}
-            </Highlight>
+        <div className="padding-m bg-snow borderWidth-0 borderRightWidth-1 borderBottomWidth-1 borderLeftWidth-1 borderStyle-solid borderColor-smoke borderRadiusBottom-m overflow-auto">
+            <div style={{ minWidth: '770px' }}>
+                <Highlight className="language-html">
+                    {code}
+                </Highlight>
+            </div>
         </div>
     );
 }

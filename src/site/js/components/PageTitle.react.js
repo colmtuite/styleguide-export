@@ -6,7 +6,7 @@ export default function PageTitle({ title }) {
     };
 
     return (
-        <div className="marginTop-m marginBottom-xl">
+        <div className="marginTopBottom-xl breakPointM-marginTop-m">
             <h2 className="fontSize-xxxl">
                 { title }
             </h2>
