@@ -8,7 +8,7 @@ import SectionTitle from '~/components/SectionTitle.react';
 
 import { borderRadiusCode } from '~/components/CodeSnippets.js';
 
-export default function BorderRadius() {
+export default function UniformBorderRadius() {
     return (
         <section className="marginBottom-xl">
             <div className="marginBottom-m breakPointM-marginBottom-l">

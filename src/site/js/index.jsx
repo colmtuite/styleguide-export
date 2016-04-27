@@ -22,6 +22,7 @@ import NamingConvention from '~/pages/overview/naming-convention/NamingConventio
 
 import ColorScheme from '~/pages/design/colors/ColorScheme.react';
 import Typography from '~/pages/design/typography/Typography.react';
+import BorderRadius from '~/pages/design/border-radius/BorderRadius.react';
 
 // Components pages
 // -------------------------
@@ -64,6 +65,7 @@ export function render(container) {
                 <IndexRedirect to="colors" />
                 <Route path="colors" component={ColorScheme} />
                 <Route path="typography" component={Typography} />
+                <Route path="border-radius" component={BorderRadius} />
             </Route>
 
             <Route path="/components" component={App}>

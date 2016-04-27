@@ -15,6 +15,7 @@ const menus = [
         items: [
             { title: 'Colors', url: '/design/colors' },
             { title: 'Typography', url: '/design/typography' },
+            { title: 'Border Radius', url: '/design/border-radius' },
         ],
     }, {
         title: 'Components',
