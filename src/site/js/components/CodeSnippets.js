@@ -436,17 +436,15 @@ export const gridSizeCode = `<div class="grid grid--m grid--2">
 </div>`;
 
 //
-// Theme classes
+// Border Radius
 // -------------------------
 
-export const borderRadiusCode = `<!-- Uniform border radius -->
-<div class="borderRadius-s"></div>
+export const uniformBorderRadiusCode = `<div class="borderRadius-s"></div>
 <div class="borderRadius-m"></div>
 <div class="borderRadius-l"></div>
-<div class="borderRadius-circle"></div>
+<div class="borderRadius-circle"></div>`;
 
-<!-- Unequal border radius -->
-<div class="borderRadiusTopLeft-l"></div>
+export const unequalBorderRadiusCode = `<div class="borderRadiusTopLeft-l"></div>
 <div class="borderRadiusTopRight-l"></div>
 <div class="borderRadiusBottomRight-l"></div>
 <div class="borderRadiusBottomLeft-l"></div>`;

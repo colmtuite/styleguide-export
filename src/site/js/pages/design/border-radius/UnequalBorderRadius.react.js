@@ -6,13 +6,13 @@ import SectionDescription from '~/components/SectionDescription.react';
 import SectionExample from '~/components/SectionExample.react';
 import SectionTitle from '~/components/SectionTitle.react';
 
-import { uniformBorderRadiusCode } from '~/components/CodeSnippets.js';
+import { unequalBorderRadiusCode } from '~/components/CodeSnippets.js';
 
-export default function UniformBorderRadius() {
+export default function UnequalBorderRadius() {
     return (
         <section className="marginBottom-xl">
             <div className="marginBottom-m breakPointM-marginBottom-l">
-                <SectionTitle sectionTitle={"Uniform Border radius"} />
+                <SectionTitle sectionTitle={"Unequal Border radius"} />
 
                 <SectionDescription>
                     You can apply uniform or unequal border radius. There are 3
@@ -30,28 +30,28 @@ export default function UniformBorderRadius() {
                     <div className="inline">
                         <div className="marginRight-m">
                             <div
-                                className="bg-smoke borderRadiusTopLeft-l"
+                                className="bg-smoke borderRadius-s"
                                 style={{ height: '100px', width: '100px' }}>
                             </div>
                         </div>
 
                         <div className="marginRight-m">
                             <div
-                                className="bg-smoke borderRadiusTopRight-l"
+                                className="bg-smoke borderRadius-m"
                                 style={{ height: '100px', width: '100px' }}>
                             </div>
                         </div>
 
                         <div className="marginRight-m">
                             <div
-                                className="bg-smoke borderRadiusBottomRight-l"
+                                className="bg-smoke borderRadius-l"
                                 style={{ height: '100px', width: '100px' }}>
                             </div>
                         </div>
 
                         <div>
                             <div
-                                className="bg-smoke borderRadiusBottomLeft-l"
+                                className="bg-smoke borderRadius-circle"
                                 style={{ height: '100px', width: '100px' }}>
                             </div>
                         </div>
@@ -59,7 +59,7 @@ export default function UniformBorderRadius() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={uniformBorderRadiusCode} />
+            <SectionCode code={unequalBorderRadiusCode} />
         </section>
     );
 }
