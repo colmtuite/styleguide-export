@@ -21,7 +21,7 @@ export default function PopoverOnHover() {
             </div>
 
             <SectionExample>
-                <div className="padding-m">
+                <div className="padding-m textAlign-center breakPointM-textAlign-left">
                     <div className="popover-trigger position-relative display-inlineBlock">
                         <div className="popover popover--s popover--top has-caret">
                             <div className="popover-list">

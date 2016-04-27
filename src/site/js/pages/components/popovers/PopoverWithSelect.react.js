@@ -21,7 +21,7 @@ export default function PopoverWithSelect() {
             </div>
 
             <SectionExample>
-                <div className="padding-m">
+                <div className="padding-m textAlign-center breakPointM-textAlign-left">
                     <PopoverSelect />
                 </div>
             </SectionExample>
