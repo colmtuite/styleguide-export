@@ -26,11 +26,12 @@ export default function AvatarSizes() {
 
             <SectionExample>
                 <div className="padding-m">
-                    <div className="inline">
-                        <div className="marginRight-m verticalAlign-middle">
+                    <div className="textAlign-center breakPointM-inline breakPointM-textAlign-left">
+                        <div className="marginBottom-m breakPointM-marginBottom-0 breakPointM-marginRight-xs breakPointL-marginRight-m verticalAlign-middle">
                             <div
                                 className="avatar avatar--xl"
-                                title="Dean Blacc">
+                                title="Dean Blacc"
+                                style={{ margin: '0 auto' }}>
                                 <div
                                     className="avatar-img"
                                     style={{ backgroundImage: 'url(https://res.cloudinary.com/marvel-content/image/fetch/s--Z3QEVGWe--/t_profile_image_200/https://marvelapp-live.storage.googleapis.com/serve/1435759062.46_6862311.gif)' }}>
@@ -40,10 +41,11 @@ export default function AvatarSizes() {
                             </div>
                         </div>
 
-                        <div className="marginRight-m verticalAlign-middle">
+                        <div className="marginBottom-m breakPointM-marginBottom-0 breakPointM-marginRight-xs breakPointL-marginRight-m verticalAlign-middle">
                             <div
                                 className="avatar avatar--l"
-                                title="Dean Blacc">
+                                title="Dean Blacc"
+                                style={{ margin: '0 auto' }}>
                                 <div
                                     className="avatar-img"
                                     style={{ backgroundImage: 'url(https://res.cloudinary.com/marvel-content/image/fetch/s--Z3QEVGWe--/t_profile_image_200/https://marvelapp-live.storage.googleapis.com/serve/1435759062.46_6862311.gif)' }}>
@@ -53,10 +55,11 @@ export default function AvatarSizes() {
                             </div>
                         </div>
 
-                        <div className="marginRight-m verticalAlign-middle">
+                        <div className="marginBottom-m breakPointM-marginBottom-0 breakPointM-marginRight-xs breakPointL-marginRight-m verticalAlign-middle">
                             <div
                                 className="avatar avatar--m"
-                                title="Dean Blacc">
+                                title="Dean Blacc"
+                                style={{ margin: '0 auto' }}>
                                 <div
                                     className="avatar-img"
                                     style={{ backgroundImage: 'url(https://res.cloudinary.com/marvel-content/image/fetch/s--Z3QEVGWe--/t_profile_image_200/https://marvelapp-live.storage.googleapis.com/serve/1435759062.46_6862311.gif)' }}>
@@ -66,10 +69,11 @@ export default function AvatarSizes() {
                             </div>
                         </div>
 
-                        <div className="marginRight-m verticalAlign-middle">
+                        <div className="marginBottom-m breakPointM-marginBottom-0 breakPointM-marginRight-xs breakPointL-marginRight-m verticalAlign-middle">
                             <div
                                 className="avatar avatar--s"
-                                title="Dean Blacc">
+                                title="Dean Blacc"
+                                style={{ margin: '0 auto' }}>
                                 <div
                                     className="avatar-img"
                                     style={{ backgroundImage: 'url(https://res.cloudinary.com/marvel-content/image/fetch/s--Z3QEVGWe--/t_profile_image_200/https://marvelapp-live.storage.googleapis.com/serve/1435759062.46_6862311.gif)' }}>
@@ -79,10 +83,11 @@ export default function AvatarSizes() {
                             </div>
                         </div>
 
-                        <div className="marginRight-m verticalAlign-middle">
+                        <div className="marginBottom-m breakPointM-marginBottom-0 verticalAlign-middle">
                             <div
                                 className="avatar avatar--xs"
-                                title="Dean Blacc">
+                                title="Dean Blacc"
+                                style={{ margin: '0 auto' }}>
                                 <div
                                     className="avatar-img"
                                     style={{ backgroundImage: 'url(https://res.cloudinary.com/marvel-content/image/fetch/s--Z3QEVGWe--/t_profile_image_200/https://marvelapp-live.storage.googleapis.com/serve/1435759062.46_6862311.gif)' }}>
