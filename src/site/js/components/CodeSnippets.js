@@ -470,6 +470,11 @@ export const hoverBoxShadowCode = `<div class="boxShadow-bevel--hover"></div>
 <div class="boxShadow-bevelRaise--hover"></div>`;
 
 
+export const spacingCode = `<div class="boxShadow-bevel--hover"></div>
+<div class="boxShadow-bevelInverse--hover"></div>
+<div class="boxShadow-bevelRaise--hover"></div>`;
+
+
 export const transitionsCode = '<div class="scaleUp--hover"></div>';
 
 //

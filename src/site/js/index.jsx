@@ -24,6 +24,7 @@ import ColorScheme from '~/pages/design/colors/ColorScheme.react';
 import Typography from '~/pages/design/typography/Typography.react';
 import BorderRadius from '~/pages/design/border-radius/BorderRadius.react';
 import BoxShadow from '~/pages/design/box-shadow/BoxShadow.react';
+import DesignLayout from '~/pages/design/layout/DesignLayout.react';
 
 // Components pages
 // -------------------------
@@ -67,6 +68,7 @@ export function render(container) {
                 <Route path="typography" component={Typography} />
                 <Route path="border-radius" component={BorderRadius} />
                 <Route path="box-shadow" component={BoxShadow} />
+                <Route path="layout" component={DesignLayout} />
             </Route>
 
             <Route path="/components" component={App}>
