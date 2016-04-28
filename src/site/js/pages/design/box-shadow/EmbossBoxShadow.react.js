@@ -11,7 +11,7 @@ export default function BoxShadow() {
     return (
         <section className="marginBottom-xl">
             <div className="marginBottom-m breakPointM-marginBottom-l">
-                <SectionTitle sectionTitle={"Box shadow"} />
+                <SectionTitle sectionTitle={"3D shadows"} />
 
                 <SectionDescription>
                     These are the available values for box shadow.
@@ -32,7 +32,6 @@ export default function BoxShadow() {
                                 </div>
                             </div>
                         </div>
-
                         <div className="marginRight-m">
                             <div
                                 className="bg-white borderRadius-m borderWidth-1 borderStyle-solid borderColor-smoke textAlign-center boxShadow-deboss"
@@ -40,6 +39,28 @@ export default function BoxShadow() {
                                 <div className="display-table height-100">
                                     <div className="display-tableCell verticalAlign-middle">
                                         <span className="fontSize-m cursor-default">Deboss</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="marginRight-m">
+                            <div
+                                className="bg-white borderRadius-m borderWidth-1 borderStyle-solid borderColor-smoke textAlign-center boxShadow-raise"
+                                style={{ height: '100px', width: '100px' }}>
+                                <div className="display-table height-100">
+                                    <div className="display-tableCell verticalAlign-middle">
+                                        <span className="fontSize-m cursor-default">Raise</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="marginRight-m">
+                            <div
+                                className="bg-white borderRadius-m borderWidth-1 borderStyle-solid borderColor-smoke textAlign-center boxShadow-depress"
+                                style={{ height: '100px', width: '100px' }}>
+                                <div className="display-table height-100">
+                                    <div className="display-tableCell verticalAlign-middle">
+                                        <span className="fontSize-m cursor-default">Depress</span>
                                     </div>
                                 </div>
                             </div>

@@ -458,16 +458,14 @@ export const raiseBoxShadowCode = `<div class="boxShadow-raise"></div>
 <div class="boxShadow-depress"></div>
 <div class="boxShadow-smokeDepress"></div>`;
 
-export const emobssBoxShadowCode = `<div class="boxShadow-emboss"></div>
-<div class="boxShadow-deboss"></div>`;
+export const embossBoxShadowCode = `<div class="boxShadow-emboss"></div>
+<div class="boxShadow-deboss"></div>
+<div class="boxShadow-raise"></div>
+<div class="boxShadow-depress"></div>`;
 
-export const bevelBoxShadowCode = `<div class="boxShadow-bevel"></div>
-<div class="boxShadow-bevelInverse"></div>
-<div class="boxShadow-bevelRaise"></div>`;
-
-export const hoverBoxShadowCode = `<div class="boxShadow-bevel--hover"></div>
-<div class="boxShadow-bevelInverse--hover"></div>
-<div class="boxShadow-bevelRaise--hover"></div>`;
+export const hoverBoxShadowCode = `<div class="boxShadow-deboss--hover"></div>
+<div class="boxShadow-emboss--hover"></div>
+<div class="boxShadow-raise--hover"></div>`;
 
 
 export const spacingCode = `<div class="boxShadow-bevel--hover"></div>

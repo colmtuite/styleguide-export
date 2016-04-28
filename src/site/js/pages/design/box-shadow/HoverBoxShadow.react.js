@@ -9,12 +9,12 @@ import { hoverBoxShadowCode } from '~/components/CodeSnippets.js';
 
 export default function BoxShadow() {
     return (
-        <section className="marginBottom-xl">
+        <section>
             <div className="marginBottom-m breakPointM-marginBottom-l">
-                <SectionTitle sectionTitle={"Box shadow"} />
+                <SectionTitle sectionTitle={"Hover shadows"} />
 
                 <SectionDescription>
-                    These are the available values for box shadow.
+                    These shadow effects are applied on hover. Good example use cases include buttons, text inputs and other interactive UI elements.
                 </SectionDescription>
             </div>
 
@@ -32,7 +32,6 @@ export default function BoxShadow() {
                                 </div>
                             </div>
                         </div>
-
                         <div className="marginRight-m">
                             <div
                                 className="bg-white borderRadius-m borderWidth-1 borderStyle-solid borderColor-smoke textAlign-center boxShadow-emboss--hover"
@@ -44,7 +43,6 @@ export default function BoxShadow() {
                                 </div>
                             </div>
                         </div>
-
                         <div>
                             <div
                                 className="bg-white borderRadius-m borderWidth-1 borderStyle-solid borderColor-smoke textAlign-center boxShadow-raise--hover"

@@ -11,10 +11,10 @@ export default function BoxShadow() {
     return (
         <section className="marginBottom-xl">
             <div className="marginBottom-m breakPointM-marginBottom-l">
-                <SectionTitle sectionTitle={"Box shadow"} />
+                <SectionTitle sectionTitle={"Perspective shadows"} />
 
                 <SectionDescription>
-                    These are the available values for box shadow.
+                    Use these shadow effects to give the illusion of perspective. A modal is a good use case for such an effect.
                 </SectionDescription>
             </div>
 
