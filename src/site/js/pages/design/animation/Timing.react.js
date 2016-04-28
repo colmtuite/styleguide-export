@@ -21,7 +21,7 @@ export default function Timing() {
                     <InlineCode>.transitionDuration-l</InlineCode>, <InlineCode>.transitionDuration-xl</InlineCode> or
                     <InlineCode>.transitionDuration-xxl</InlineCode>. You can also
                     use <InlineCode>.transitionDuration-0</InlineCode>, to reset
-                    the duration to 0. Responsive options are available for all durations.
+                    the duration to zero. Responsive options are available for all durations.
                 </SectionDescription>
             </div>
 
