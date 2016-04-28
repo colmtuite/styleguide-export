@@ -51,7 +51,7 @@ export default function Timing() {
                             style={{ height: '60px', width: '60px' }}>
                         </div>
                     </div>
-                    <div className="padding-m textAlign-center borderStyle-solid borderColor-smoke borderWidth-0 borderBottomWidth-1 breakPointS-borderBottomWidth-0 breakPointL-borderBottomWidth-0 borderRightWidth-1 breakPointL-borderRightWidth-0">
+                    <div className="padding-m textAlign-center borderStyle-solid borderColor-smoke borderWidth-0 breakPointL-borderBottomWidth-0 borderRightWidth-1 breakPointL-borderRightWidth-0">
                         <div
                             className="bg-marvel borderRadius-circle centered scaleUp--hover transitionProperty-transform transitionDuration-xxl transitionTimingFunction-cb--scaleIn"
                             style={{ height: '60px', width: '60px' }}>
