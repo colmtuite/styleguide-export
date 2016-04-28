@@ -23,6 +23,7 @@ import NamingConvention from '~/pages/overview/naming-convention/NamingConventio
 import ColorScheme from '~/pages/design/colors/ColorScheme.react';
 import Typography from '~/pages/design/typography/Typography.react';
 import BorderRadius from '~/pages/design/border-radius/BorderRadius.react';
+import BoxShadow from '~/pages/design/box-shadow/BoxShadow.react';
 
 // Components pages
 // -------------------------
@@ -45,7 +46,6 @@ import HideElements from '~/pages/utility/hide-elements/HideElements.react';
 import Layout from '~/pages/utility/layout/Layout.react';
 import Scrollbar from '~/pages/utility/scrollbar/Scrollbar.react';
 import TextManipulation from '~/pages/utility/text-manipulation/TextManipulation.react';
-import ThemeClasses from '~/pages/utility/theme-classes/ThemeClasses.react';
 
 export function render(container) {
     ReactDOM.render(
@@ -66,6 +66,7 @@ export function render(container) {
                 <Route path="colors" component={ColorScheme} />
                 <Route path="typography" component={Typography} />
                 <Route path="border-radius" component={BorderRadius} />
+                <Route path="box-shadow" component={BoxShadow} />
             </Route>
 
             <Route path="/components" component={App}>
@@ -83,7 +84,6 @@ export function render(container) {
 
             <Route path="/utility" component={App}>
                 <IndexRedirect to="layout" />
-                <Route path="theme-classes" component={ThemeClasses} />
                 <Route path="layout" component={Layout} />
                 <Route path="hide-elements" component={HideElements} />
                 <Route path="center-elements" component={CenterElements} />

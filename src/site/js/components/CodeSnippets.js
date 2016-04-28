@@ -450,29 +450,25 @@ export const unequalBorderRadiusCode = `<div class="borderRadiusTopLeft-l"></div
 <div class="borderRadiusBottomLeft-l"></div>`;
 
 
-export const boxShadowCode = `<!-- Distance effects -->
-<div class="boxShadow-distant"></div>
+export const distantBoxShadowCode = `<div class="boxShadow-distant"></div>
 <div class="boxShadow-close"></div>
-<div class="boxShadow-subtle"></div>
+<div class="boxShadow-subtle"></div>`;
 
-<!-- Raise effects -->
-<div class="boxShadow-raise"></div>
+export const raiseBoxShadowCode = `<div class="boxShadow-raise"></div>
 <div class="boxShadow-depress"></div>
-<div class="boxShadow-smokeDepress"></div>
+<div class="boxShadow-smokeDepress"></div>`;
 
-<!-- Emboss effects -->
-<div class="boxShadow-emboss"></div>
-<div class="boxShadow-deboss"></div>
+export const emobssBoxShadowCode = `<div class="boxShadow-emboss"></div>
+<div class="boxShadow-deboss"></div>`;
 
-<!-- Bevel -->
-<div class="boxShadow-bevel"></div>
+export const bevelBoxShadowCode = `<div class="boxShadow-bevel"></div>
 <div class="boxShadow-bevelInverse"></div>
-<div class="boxShadow-bevelRaise"></div>
+<div class="boxShadow-bevelRaise"></div>`;
 
-<!-- Hover effects -->
-<div class="boxShadow-bevel--hover"></div>
+export const hoverBoxShadowCode = `<div class="boxShadow-bevel--hover"></div>
 <div class="boxShadow-bevelInverse--hover"></div>
 <div class="boxShadow-bevelRaise--hover"></div>`;
+
 
 export const transitionsCode = '<div class="scaleUp--hover"></div>';
 

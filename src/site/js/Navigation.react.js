@@ -16,6 +16,10 @@ const menus = [
             { title: 'Colors', url: '/design/colors' },
             { title: 'Typography', url: '/design/typography' },
             { title: 'Border Radius', url: '/design/border-radius' },
+            { title: 'Box Shadow', url: '/design/box-shadow' },
+            { title: 'Layout', url: '/design/layout' },
+            { title: 'Icons', url: '/design/icons' },
+            { title: 'Animation', url: '/design/animation' },
         ],
     }, {
         title: 'Components',
@@ -33,7 +37,6 @@ const menus = [
     }, {
         title: 'Utility',
         items: [
-            { title: 'Theme classes', url: '/utility/theme-classes' },
             { title: 'Scrollbar', url: '/utility/scrollbar' },
             { title: 'Hide elements', url: '/utility/hide-elements' },
             { title: 'Center elements', url: '/utility/center-elements' },
