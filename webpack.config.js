@@ -46,7 +46,7 @@ module.exports = {
         loaders: [
             {
                 test: /\.(html|png|jpg|jpeg|gif|svg)$/,
-                loader: 'file?name=[name].[ext]',
+                loader: 'file?name=[path][name].[ext]',
             },
             {
                 test: /\.jsx?$/,
@@ -68,6 +68,7 @@ module.exports = {
     output: {
         filename: 'app.js',
         path: path.resolve(paths.dist, 'site'),
+        publicPath: '/',
         libraryTarget: 'umd',
         library: 'marvelStyleguide',
     },
