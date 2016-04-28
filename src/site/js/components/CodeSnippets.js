@@ -473,7 +473,14 @@ export const spacingCode = `<div class="boxShadow-bevel--hover"></div>
 <div class="boxShadow-bevelRaise--hover"></div>`;
 
 
-export const transitionsCode = '<div class="scaleUp--hover"></div>';
+export const transitionsCode = `<div class="scaleUp--hover"></div>
+`;
+
+export const timingCode = `<div class="transitionDuration-s"></div>
+<div class="transitionDuration-m"></div>
+<div class="transitionDuration-l"></div>
+<div class="transitionDuration-xl"></div>
+<div class="transitionDuration-xxl"></div>`;
 
 //
 // Scrollbar

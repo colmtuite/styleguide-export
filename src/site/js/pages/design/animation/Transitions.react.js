@@ -9,7 +9,7 @@ import { transitionsCode } from '~/components/CodeSnippets.js';
 
 export default function Transitions() {
     return (
-        <section className="marginBottom-m">
+        <section className="marginBottom-xl">
             <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Transitions"} />
 
@@ -21,9 +21,27 @@ export default function Transitions() {
             <SectionExample>
                 <div className="padding-m">
                     <div className="inline">
-                        <div className="marginRight-m">
+                        <div className="marginRight-l">
                             <div
                                 className="bg-marvel borderRadius-m scaleUp--hover transitionProperty-transform transitionDuration-l transitionTimingFunction-cb--scaleUp"
+                                style={{ height: '100px', width: '100px' }}>
+                            </div>
+                        </div>
+                        <div className="marginRight-l">
+                            <div
+                                className="bg-marvel borderRadius-m animation-spin"
+                                style={{ height: '100px', width: '100px' }}>
+                            </div>
+                        </div>
+                        <div className="marginRight-l">
+                            <div
+                                className="bg-marvel borderRadius-m animation-rotate"
+                                style={{ height: '100px', width: '100px' }}>
+                            </div>
+                        </div>
+                        <div className="marginRight-l">
+                            <div
+                                className="bg-marvel borderRadius-m animation-bounce"
                                 style={{ height: '100px', width: '100px' }}>
                             </div>
                         </div>
