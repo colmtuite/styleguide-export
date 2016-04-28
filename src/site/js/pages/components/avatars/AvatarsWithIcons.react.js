@@ -8,6 +8,7 @@ import SectionTitle from '~/components/SectionTitle.react';
 
 import { avatarsWithIconsCode } from '~/components/CodeSnippets.js';
 
+const teamDemoLogo = require('images/team-demo-logo.png');
 export default function AvatarsWithIcons() {
     return (
         <section className="marginBottom-xl">
@@ -42,7 +43,7 @@ export default function AvatarsWithIcons() {
 
                                 <div
                                     className="avatar-team"
-                                    style={{ backgroundImage: 'url(assets/images/team-demo-logo.png)' }}>
+                                    style={{ backgroundImage: `url(${teamDemoLogo})` }}>
                                 </div>
                             </div>
                         </div>
@@ -64,7 +65,7 @@ export default function AvatarsWithIcons() {
 
                                 <div
                                     className="avatar-team"
-                                    style={{ backgroundImage: 'url(assets/images/team-demo-logo.png)' }}>
+                                    style={{ backgroundImage: `url(${teamDemoLogo})` }}>
                                 </div>
                             </div>
                         </div>
@@ -86,7 +87,7 @@ export default function AvatarsWithIcons() {
 
                                 <div
                                     className="avatar-team"
-                                    style={{ backgroundImage: 'url(assets/images/team-demo-logo.png)' }}>
+                                    style={{ backgroundImage: `url(${teamDemoLogo})` }}>
                                 </div>
                             </div>
                         </div>
@@ -108,7 +109,7 @@ export default function AvatarsWithIcons() {
 
                                 <div
                                     className="avatar-team"
-                                    style={{ backgroundImage: 'url(assets/images/team-demo-logo.png)' }}>
+                                    style={{ backgroundImage: `url(${teamDemoLogo})` }}>
                                 </div>
                             </div>
                         </div>
@@ -130,7 +131,7 @@ export default function AvatarsWithIcons() {
 
                                 <div
                                     className="avatar-team"
-                                    style={{ backgroundImage: 'url(assets/images/team-demo-logo.png)' }}>
+                                    style={{ backgroundImage: `url(${teamDemoLogo})` }}>
                                 </div>
                             </div>
                         </div>
