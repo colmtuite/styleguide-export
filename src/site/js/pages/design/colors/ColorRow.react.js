@@ -12,11 +12,26 @@ export default class ColorRow extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { active: false };
+        this.state = {
+            active: false,
+            disabled: false,
+        };
     }
 
     click = () => {
-        this.setState({ active: !this.state.active });
+        if (this.state.disabled) return;
+
+        this.setState({
+            active: !this.state.active,
+            disabled: true,
+        });
+
+        setTimeout(() => {
+            this.setState({
+                active: !this.state.active,
+                disabled: false,
+            });
+        }, 500);
     }
 
     render() {

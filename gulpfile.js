@@ -97,7 +97,7 @@ gulp.task('default', ['clean', 'build:css', 'watch:css'], () => {
     yargs.option('port', {
         alias: 'p',
         describe: 'port to run webpack-dev-server on',
-        default: 8080,
+        default: 9000,
     });
     const port = yargs.argv.port;
     const uri = `http://localhost:${port}/`;

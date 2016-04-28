@@ -37,6 +37,8 @@ module.exports = {
     ],
 
     module: {
+        // TODO: Remove this line when https://github.com/webpack/webpack/issues/1721 is fixed
+        noParse: [/autoit.js/],
         preLoaders: [
             {
                 test: /\.js$/,
