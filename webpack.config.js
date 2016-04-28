@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const Eyeglass = require('eyeglass');
+const autoprefixer = require('autoprefixer');
 
 const paths = {
     root: __dirname,
@@ -54,7 +55,7 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                loaders: ['style', 'css', 'sass'],
+                loaders: ['style', 'css', 'postcss', 'sass'],
             },
         ],
     },
@@ -72,6 +73,7 @@ module.exports = {
     },
 
     sassLoader: eyeglass.options,
+    postcss: () => [autoprefixer],
 
     plugins: [new webpack.HotModuleReplacementPlugin()],
 
@@ -80,6 +82,7 @@ module.exports = {
             colors: true,
         },
         contentBase: path.resolve(paths.dist, 'site'),
+        historyApiFallback: true,
         hot: true,
     },
 };

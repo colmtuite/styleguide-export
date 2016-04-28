@@ -2,7 +2,7 @@ require('../../sass/all.scss');
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRedirect, hashHistory } from 'react-router';
+import { Router, Route, IndexRedirect, browserHistory } from 'react-router';
 
 // App pages
 // -------------------------
@@ -51,7 +51,7 @@ import TextManipulation from '~/pages/utility/text-manipulation/TextManipulation
 
 export function render(container) {
     ReactDOM.render(
-        <Router onUpdate={() => window.scrollTo(0, 0)} history={hashHistory}>
+        <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
             <Route path="/" component={App}>
                 <IndexRedirect to="design/colors" />
             </Route>
