@@ -10,18 +10,14 @@ import { unequalBorderRadiusCode } from '~/components/CodeSnippets.js';
 
 export default function UnequalBorderRadius() {
     return (
-        <section className="marginBottom-xl">
+        <section>
             <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Unequal Border radius"} />
 
                 <SectionDescription>
-                    You can apply uniform or unequal border radius. There are 3
-                    sizes to choose from, <InlineCode>.borderRadius-s</InlineCode>,
-                    <InlineCode>.borderRadius-m</InlineCode> or
-                    <InlineCode>.borderRadius-l</InlineCode>. Use
-                    <InlineCode>.borderRadius-circle</InlineCode> to make an element
-                    circular. The same size options are available for unequal
-                    border radius. All classes have responsive options.
+                    Unequal border radius affects only a single corner of the element.
+                    The other corners remain unaffected. Again, there are 3 sizes
+                    to choose from and all classes have responsive options.
                 </SectionDescription>
             </div>
 
@@ -30,28 +26,28 @@ export default function UnequalBorderRadius() {
                     <div className="inline">
                         <div className="marginRight-m">
                             <div
-                                className="bg-smoke borderRadius-s"
+                                className="bg-smoke borderRadiusTopLeft-l"
                                 style={{ height: '100px', width: '100px' }}>
                             </div>
                         </div>
 
                         <div className="marginRight-m">
                             <div
-                                className="bg-smoke borderRadius-m"
+                                className="bg-smoke borderRadiusTopRight-l"
                                 style={{ height: '100px', width: '100px' }}>
                             </div>
                         </div>
 
                         <div className="marginRight-m">
                             <div
-                                className="bg-smoke borderRadius-l"
+                                className="bg-smoke borderRadiusBottomRight-l"
                                 style={{ height: '100px', width: '100px' }}>
                             </div>
                         </div>
 
                         <div>
                             <div
-                                className="bg-smoke borderRadius-circle"
+                                className="bg-smoke borderRadiusBottomLeft-l"
                                 style={{ height: '100px', width: '100px' }}>
                             </div>
                         </div>
