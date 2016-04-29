@@ -26,118 +26,118 @@ export default function Spacing() {
             </div>
 
             <SectionExample>
-                <div className="grid grid--1 breakPointM-grid--3">
-                    <div className="padding-m">
+                <div className="grid grid--1 breakPointS-grid--2 breakPointL-grid--3">
+                    <div className="padding-m textAlign-center borderStyle-solid borderColor-smoke borderWidth-0 borderBottomWidth-1 breakPointS-borderRightWidth-1">
                         <div
                             className="position-relative bg-blue--transparent borderRadius-m textAlign-center padding-xxs centered"
                             style={{ height: '200px', width: '200px' }}>
                             <div className="width-100 height-100 bg-marvel"></div>
                             <div
-                                className="posPinBL bg-red width-100 marginBottom-xxs"
+                                className="posPinBL borderWidth-0 borderBottomWidth-1 borderStyle-solid borderColor-blue width-100 marginBottom-xxs"
                                 style={{ height: '1px' }}>
                             </div>
                             <div
-                                className="posPinTL bg-red width-100 marginTop-xxs"
+                                className="posPinTL borderWidth-0 borderTopWidth-1 borderStyle-solid borderColor-blue width-100 marginTop-xxs"
                                 style={{ height: '1px' }}>
                             </div>
                             <div
-                                className="posPinTL bg-red height-100 marginLeft-xxs"
+                                className="posPinTL borderWidth-0 borderLeftWidth-1 borderStyle-solid borderColor-blue height-100 marginLeft-xxs"
                                 style={{ width: '1px' }}>
                             </div>
                             <div
-                                className="posPinTR bg-red height-100 marginRight-xxs"
+                                className="posPinTR borderWidth-0 borderRightWidth-1 borderStyle-solid borderColor-blue height-100 marginRight-xxs"
                                 style={{ width: '1px' }}>
                             </div>
                         </div>
                     </div>
-                    <div className="padding-m">
+                    <div className="padding-m textAlign-center borderStyle-solid borderColor-smoke borderWidth-0 borderBottomWidth-1 breakPointL-borderRightWidth-1">
                         <div
                             className="position-relative bg-blue--transparent borderRadius-m textAlign-center padding-xs centered"
                             style={{ height: '200px', width: '200px' }}>
                             <div className="width-100 height-100 bg-marvel"></div>
                             <div
-                                className="posPinBL bg-red width-100 marginBottom-xs"
+                                className="posPinBL borderWidth-0 borderBottomWidth-1 borderStyle-dashed borderColor-blue width-100 marginBottom-xs"
                                 style={{ height: '1px' }}>
                             </div>
                             <div
-                                className="posPinTL bg-red width-100 marginTop-xs"
+                                className="posPinTL borderWidth-0 borderTopWidth-1 borderStyle-dashed borderColor-blue width-100 marginTop-xs"
                                 style={{ height: '1px' }}>
                             </div>
                             <div
-                                className="posPinTL bg-red height-100 marginLeft-xs"
+                                className="posPinTL borderWidth-0 borderLeftWidth-1 borderStyle-dashed borderColor-blue height-100 marginLeft-xs"
                                 style={{ width: '1px' }}>
                             </div>
                             <div
-                                className="posPinTR bg-red height-100 marginRight-xs"
+                                className="posPinTR borderWidth-0 borderRightWidth-1 borderStyle-dashed borderColor-blue height-100 marginRight-xs"
                                 style={{ width: '1px' }}>
                             </div>
                         </div>
                     </div>
-                    <div className="padding-m">
+                    <div className="padding-m textAlign-center borderStyle-solid borderColor-smoke borderWidth-0 borderBottomWidth-1 breakPointS-borderRightWidth-1 breakPointL-borderRightWidth-0">
                         <div
                             className="position-relative bg-blue--transparent borderRadius-m textAlign-center padding-s centered"
                             style={{ height: '200px', width: '200px' }}>
                             <div className="width-100 height-100 bg-marvel"></div>
                             <div
-                                className="posPinBL bg-red width-100 marginBottom-s"
+                                className="posPinBL borderWidth-0 borderBottomWidth-1 borderStyle-dashed borderColor-blue width-100 marginBottom-s"
                                 style={{ height: '1px' }}>
                             </div>
                             <div
-                                className="posPinTL bg-red width-100 marginTop-s"
+                                className="posPinTL borderWidth-0 borderTopWidth-1 borderStyle-dashed borderColor-blue width-100 marginTop-s"
                                 style={{ height: '1px' }}>
                             </div>
                             <div
-                                className="posPinTL bg-red height-100 marginLeft-s"
+                                className="posPinTL borderWidth-0 borderLeftWidth-1 borderStyle-dashed borderColor-blue height-100 marginLeft-s"
                                 style={{ width: '1px' }}>
                             </div>
                             <div
-                                className="posPinTR bg-red height-100 marginRight-s"
+                                className="posPinTR borderWidth-0 borderRightWidth-1 borderStyle-dashed borderColor-blue height-100 marginRight-s"
                                 style={{ width: '1px' }}>
                             </div>
                         </div>
                     </div>
-                    <div className="padding-m">
+                    <div className="padding-m textAlign-center borderStyle-solid borderColor-smoke borderWidth-0 borderBottomWidth-1 breakPointL-borderRightWidth-1 breakPointL-borderBottomWidth-0">
                         <div
                             className="position-relative bg-blue--transparent borderRadius-m textAlign-center padding-m centered"
                             style={{ height: '200px', width: '200px' }}>
                             <div className="width-100 height-100 bg-marvel"></div>
                             <div
-                                className="posPinBL bg-red width-100 marginBottom-m"
+                                className="posPinBL borderWidth-0 borderBottomWidth-1 borderStyle-dashed borderColor-blue width-100 marginBottom-m"
                                 style={{ height: '1px' }}>
                             </div>
                             <div
-                                className="posPinTL bg-red width-100 marginTop-m"
+                                className="posPinTL borderWidth-0 borderTopWidth-1 borderStyle-dashed borderColor-blue width-100 marginTop-m"
                                 style={{ height: '1px' }}>
                             </div>
                             <div
-                                className="posPinTL bg-red height-100 marginLeft-m"
+                                className="posPinTL borderWidth-0 borderLeftWidth-1 borderStyle-dashed borderColor-blue height-100 marginLeft-m"
                                 style={{ width: '1px' }}>
                             </div>
                             <div
-                                className="posPinTR bg-red height-100 marginRight-m"
+                                className="posPinTR borderWidth-0 borderRightWidth-1 borderStyle-dashed borderColor-blue height-100 marginRight-m"
                                 style={{ width: '1px' }}>
                             </div>
                         </div>
                     </div>
-                    <div className="padding-m">
+                    <div className="padding-m textAlign-center borderStyle-solid borderColor-smoke borderWidth-0 borderBottomWidth-1 breakPointS-borderBottomWidth-0 breakPointS-borderRightWidth-1 breakPointL-borderBottomWidth-0">
                         <div
                             className="position-relative bg-blue--transparent borderRadius-m textAlign-center padding-l centered"
                             style={{ height: '200px', width: '200px' }}>
                             <div className="width-100 height-100 bg-marvel"></div>
                             <div
-                                className="posPinBL bg-red width-100 marginBottom-l"
+                                className="posPinBL borderWidth-0 borderBottomWidth-1 borderStyle-dashed borderColor-blue width-100 marginBottom-l"
                                 style={{ height: '1px' }}>
                             </div>
                             <div
-                                className="posPinTL bg-red width-100 marginTop-l"
+                                className="posPinTL borderWidth-0 borderTopWidth-1 borderStyle-dashed borderColor-blue width-100 marginTop-l"
                                 style={{ height: '1px' }}>
                             </div>
                             <div
-                                className="posPinTL bg-red height-100 marginLeft-l"
+                                className="posPinTL borderWidth-0 borderLeftWidth-1 borderStyle-dashed borderColor-blue height-100 marginLeft-l"
                                 style={{ width: '1px' }}>
                             </div>
                             <div
-                                className="posPinTR bg-red height-100 marginRight-l"
+                                className="posPinTR borderWidth-0 borderRightWidth-1 borderStyle-dashed borderColor-blue height-100 marginRight-l"
                                 style={{ width: '1px' }}>
                             </div>
                         </div>
@@ -148,19 +148,19 @@ export default function Spacing() {
                             style={{ height: '200px', width: '200px' }}>
                             <div className="width-100 height-100 bg-marvel"></div>
                             <div
-                                className="posPinBL bg-red width-100 marginBottom-xl"
+                                className="posPinBL borderWidth-0 borderBottomWidth-1 borderStyle-dashed borderColor-blue width-100 marginBottom-xl"
                                 style={{ height: '1px' }}>
                             </div>
                             <div
-                                className="posPinTL bg-red width-100 marginTop-xl"
+                                className="posPinTL borderWidth-0 borderTopWidth-1 borderStyle-dashed borderColor-blue width-100 marginTop-xl"
                                 style={{ height: '1px' }}>
                             </div>
                             <div
-                                className="posPinTL bg-red height-100 marginLeft-xl"
+                                className="posPinTL borderWidth-0 borderLeftWidth-1 borderStyle-dashed borderColor-blue height-100 marginLeft-xl"
                                 style={{ width: '1px' }}>
                             </div>
                             <div
-                                className="posPinTR bg-red height-100 marginRight-xl"
+                                className="posPinTR borderWidth-0 borderRightWidth-1 borderStyle-dashed borderColor-blue height-100 marginRight-xl"
                                 style={{ width: '1px' }}>
                             </div>
                         </div>
