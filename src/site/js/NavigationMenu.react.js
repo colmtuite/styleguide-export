@@ -23,7 +23,8 @@ export default class NavigationMenu extends React.Component {
     }
 
     toggleActive = () => {
-        this.props.onToggleActive(this.props.title);
+        const title = (this.props.isActive) ? '' : this.props.title;
+        this.props.onToggleActive(title);
     }
 
     render() {
