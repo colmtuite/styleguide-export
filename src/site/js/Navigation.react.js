@@ -46,10 +46,51 @@ const menus = [
     },
 ];
 
-export default function Navigation() {
-    return (
-        <div className="position-relative bg-white">
-            { menus.map(({ title, items }, i) => <NavigationMenu title={title} items={items} key={i} />) }
-        </div>
-    );
+export default class Navigation extends React.Component {
+    static contextTypes = {
+        router: React.PropTypes.object,
+    };
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            openSection: menus[0].title,
+        };
+    }
+
+    componentWillMount() {
+        const router = this.context.router;
+
+        for (const menu of menus) {
+            const containsActiveRoute = menu.items.some(item => router.isActive(item.url));
+            if (containsActiveRoute) {
+                this.state = {
+                    openSection: menu.title,
+                };
+            }
+        }
+    }
+
+    toggleActive = (title) => {
+        this.setState({
+            openSection: title,
+        });
+    }
+
+    render() {
+        return (
+            <div className="position-relative bg-white">
+                {
+                    menus.map(({ title, items }, i) => {
+                        let activeState = title === this.state.openSection;
+
+                        return (
+                            <NavigationMenu title={title} items={items} key={i} onToggleActive={this.toggleActive} isActive={activeState} />
+                        );
+                    })
+                }
+            </div>
+        );
+    }
 }

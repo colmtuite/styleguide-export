@@ -9,6 +9,8 @@ export default class NavigationMenu extends React.Component {
 
     static propTypes = {
         title: React.PropTypes.string.isRequired,
+        onToggleActive: React.PropTypes.func.isRequired,
+        isActive: React.PropTypes.bool.isRequired,
         items: React.PropTypes.arrayOf(React.PropTypes.shape({
             title: React.PropTypes.string.isRequired,
             url: React.PropTypes.string.isRequired,
@@ -20,14 +22,8 @@ export default class NavigationMenu extends React.Component {
         this.state = { active: false };
     }
 
-    componentWillMount() {
-        const router = this.context.router;
-        const containsActiveRoute = this.props.items.some(item => router.isActive(item.url));
-        this.setState({ active: containsActiveRoute });
-    }
-
     toggleActive = () => {
-        this.setState({ active: !this.state.active });
+        this.props.onToggleActive(this.props.title);
     }
 
     render() {
@@ -52,7 +48,7 @@ export default class NavigationMenu extends React.Component {
                                     width="8"
                                     height="4"
                                     viewBox="0 0 8 4"
-                                    style={{ transform: this.state.active ? 'rotate(180deg)' : 'rotate(0)' }}>
+                                    style={{ transform: this.props.isActive ? 'rotate(180deg)' : 'rotate(0)' }}>
                                     <path d="M7.76,1L4.46,3.84a0.73,0.73,0,0,1-.92,0L0.24,1A0.56,0.56,0,0,1,.1.24,0.55,0.55,0,0,1,.7,0H7.3A0.55,0.55,0,0,1,8,.41,0.56,0.56,0,0,1,7.76,1Z" />
                                 </svg>
                             </div>
@@ -61,7 +57,7 @@ export default class NavigationMenu extends React.Component {
                 </dt>
 
                 <dd
-                    style={{ display: this.state.active ? 'block' : 'none' }}
+                    style={{ display: this.props.isActive ? 'block' : 'none' }}
                     className="bg-snow paddingLeftRight-l paddingTopBottom-m borderWidth-0 borderTopWidth-1 borderStyle-solid borderColor-smoke">
                     {menuItems}
                 </dd>
