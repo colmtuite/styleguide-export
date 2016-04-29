@@ -6,24 +6,20 @@ export default class PopoverSelect extends React.Component {
         title: React.PropTypes.string.isRequired,
         subtitle: React.PropTypes.string.isRequired,
         hasBorder: React.PropTypes.bool.isRequired,
-    }
-
-    constructor(props) {
-        super(props);
-        this.state = { active: false };
+        onSelectToggle: React.PropTypes.func.isRequired,
+        activeItem: React.PropTypes.string,
     }
 
     click = () => {
-        this.setState({ active: !this.state.active });
+        this.props.onSelectToggle(this.props.title);
     }
     render() {
-        const { active } = this.state;
-        const { title, subtitle, hasBorder } = this.props;
+        const { title, subtitle, hasBorder, activeItem } = this.props;
         const togglePopoverItemClass = classNames(
             'popover-select-item',
             'paddingLeftRight-m',
             'paddingTopBottom-s', {
-                ['is-active']: active,
+                ['is-active']: activeItem === title,
                 ['has-border']: hasBorder,
             }
         );
