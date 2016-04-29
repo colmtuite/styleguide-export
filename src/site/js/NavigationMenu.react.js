@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 
 import { Link } from 'react-router';
 
@@ -14,6 +15,7 @@ export default class NavigationMenu extends React.Component {
         items: React.PropTypes.arrayOf(React.PropTypes.shape({
             title: React.PropTypes.string.isRequired,
             url: React.PropTypes.string.isRequired,
+            disabled: React.PropTypes.bool,
         })),
     };
 
@@ -29,7 +31,8 @@ export default class NavigationMenu extends React.Component {
 
     render() {
         const { title, items } = this.props;
-        const menuItems = items.map((item, i) => <NavigationMenuItem title={item.title} url={item.url} key={i} />);
+        const menuItems = items.map((item, i) => <NavigationMenuItem title={item.title} url={item.url} disabled={item.disabled} key={i} />);
+
         return (
             <dl className="borderWidth-0 borderBottomWidth-1 borderStyle-solid borderColor-smoke">
                 <dt
@@ -71,15 +74,26 @@ function NavigationMenuItem(props) {
     NavigationMenuItem.propTypes = {
         title: React.PropTypes.string.isRequired,
         url: React.PropTypes.string.isRequired,
+        disabled: React.PropTypes.bool,
     };
 
-    const { title, url } = props;
+    let label;
+    const { title, url, disabled } = props;
+    const linkClass = classNames('paddingLeftRight-m paddingTopBottom-xs display-block fontSize-m lineHeight-m link link--light', { ['pointerEvents-none display-inlineBlock c-smoke--xd']: disabled });
+
+    if (disabled) {
+        label = <span className="bg-snow--d c-silver textTransform-uppercase fontWeight-4 padding-xxs borderRadius-m verticalAlign-middle" style={{ marginLeft: '-10px', fontSize: '8px', letterSpacing: '0.5px' }}>Coming Soon</span>;
+    }
+
     return (
-        <Link
-            activeClassName="is-active"
-            className="paddingLeftRight-m paddingTopBottom-xs display-block fontSize-m lineHeight-m link link--light"
-            to={url}>
-            {title}
-        </Link>
+        <div>
+            <Link
+                activeClassName="is-active"
+                className={linkClass}
+                to={url}>
+                {title}
+            </Link>
+            {label}
+        </div>
     );
 }

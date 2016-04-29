@@ -18,8 +18,8 @@ const menus = [
             { title: 'Border Radius', url: '/design/border-radius' },
             { title: 'Box Shadow', url: '/design/box-shadow' },
             { title: 'Layout', url: '/design/layout' },
-            { title: 'Icons', url: '/design/icons' },
             { title: 'Animation', url: '/design/animation' },
+            { title: 'Icons', url: '/design/icons', disabled: true },
         ],
     }, {
         title: 'Components',
