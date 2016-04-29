@@ -468,9 +468,19 @@ export const hoverBoxShadowCode = `<div class="boxShadow-deboss--hover"></div>
 <div class="boxShadow-raise--hover"></div>`;
 
 
-export const spacingCode = `<div class="boxShadow-bevel--hover"></div>
-<div class="boxShadow-bevelInverse--hover"></div>
-<div class="boxShadow-bevelRaise--hover"></div>`;
+export const spacingCode = `<div class="margin-xxs"></div>
+<div class="margin-xs"></div>
+<div class="margin-s"></div>
+<div class="margin-m"></div>
+<div class="margin-l"></div>
+<div class="margin-xl"></div>
+
+<div class="padding-xxs"></div>
+<div class="padding-xs"></div>
+<div class="padding-s"></div>
+<div class="padding-m"></div>
+<div class="padding-l"></div>
+<div class="padding-xl"></div>`;
 
 
 export const transitionsCode = `<div class="scaleUp--hover"></div>
