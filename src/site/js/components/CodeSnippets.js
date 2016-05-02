@@ -497,14 +497,31 @@ export const individualSpacingCode = `<!-- Margin classes -->
 <div class="paddingLeft-m"></div>`;
 
 
-export const transitionsCode = `<div class="scaleUp--hover"></div>
-`;
+export const transitionsCode = `<div class="scaleUp--hover transitionTimingFunction-cb--scaleUp"></div>
+<div class="animation--spin"></div>
+<div class="animation--rotate"></div>
+<div class="animation--bounce"></div>`;
 
 export const timingCode = `<div class="transitionDuration-s"></div>
 <div class="transitionDuration-m"></div>
 <div class="transitionDuration-l"></div>
 <div class="transitionDuration-xl"></div>
 <div class="transitionDuration-xxl"></div>`;
+
+export const easingCode = `<!-- No curve. Good for color/opacity fades -->
+<div class="transitionTimingFunction-linear"></div>
+
+<!-- Slight curve. Good for subtle transitions -->
+<div class="transitionTimingFunction-ease"></div>
+
+<!-- Starts fast and decelerates as it progresses -->
+<div class="transitionTimingFunction-cb--scaleIn"></div>
+
+<!-- Starts slow and accelerates as it progresses  -->
+<div class="transitionTimingFunction-cb--scaleOut"></div>
+
+<!-- Springy feel. Good for drawing focus -->
+<div class="transitionTimingFunction-cb--scaleUp"></div>`;
 
 //
 // Scrollbar
