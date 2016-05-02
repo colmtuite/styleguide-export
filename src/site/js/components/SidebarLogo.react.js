@@ -6,12 +6,17 @@ import { IndexLink } from 'react-router';
 
 const logoMax = 8;
 const logos = [];
+
 for (let i = 1; i <= logoMax; i++) {
     const logo = require(`images/logo-${i}.gif`);
     logos.push(logo);
 }
 
 export default class SidebarLogo extends React.Component {
+    static propTypes = {
+        styleguideText: React.PropTypes.bool,
+    };
+
     constructor(props) {
         super(props);
         this.state = { logoEffect: Math.floor(Math.random() * logoMax) };
@@ -22,10 +27,20 @@ export default class SidebarLogo extends React.Component {
     }
 
     render() {
+        let label;
+        const { styleguideText } = this.props;
+
+        if (styleguideText) {
+            label = <span className={classNames('textTransform-uppercase', 'fontSize-xxs', 'c-silver')} style={{ letterSpacing: 3 }}>Styleguide</span>;
+        }
+
         return (
             <div>
                 <div className="paddingTopBottom-m">
-                    <div className="marginBottom-s">
+                    <div
+                        className={classNames({
+                            ['marginBottom-s']: styleguideText,
+                        })}>
                         <IndexLink to="/">
                             <svg
                                 className={classNames(
@@ -44,13 +59,7 @@ export default class SidebarLogo extends React.Component {
                         </IndexLink>
                     </div>
 
-                    <span
-                        className={classNames(
-                            'textTransform-uppercase',
-                            'fontSize-xxs',
-                            'c-silver'
-                        )}
-                        style={{ letterSpacing: 3 }}>Styleguide</span>
+                    {label}
                 </div>
             </div>
         );

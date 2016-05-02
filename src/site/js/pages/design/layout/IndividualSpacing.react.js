@@ -27,7 +27,7 @@ export default function individualSpacing() {
                             <div className="aspectRatio-content">
                                 <div
                                     className="position-relative height-100 bg-blue--transparent borderRadius-m paddingTop-m">
-                                    <div className="width-100 height-100 bg-marvel"></div>
+                                    <div className="width-100 height-100 bg-marvel--l"></div>
                                     <div
                                         className="posPinTL borderWidth-0 borderTopWidth-1 borderStyle-dashed borderColor-blue--d width-100 marginTop-m"
                                         style={{ height: '1px' }}>
@@ -41,7 +41,7 @@ export default function individualSpacing() {
                             <div className="aspectRatio-content">
                                 <div
                                     className="position-relative height-100 bg-blue--transparent borderRadius-m paddingRight-m">
-                                    <div className="width-100 height-100 bg-marvel"></div>
+                                    <div className="width-100 height-100 bg-marvel--l"></div>
                                     <div
                                         className="posPinTR borderWidth-0 borderRightWidth-1 borderStyle-dashed borderColor-blue--d height-100 marginRight-m"
                                         style={{ width: '1px' }}>
@@ -55,7 +55,7 @@ export default function individualSpacing() {
                             <div className="aspectRatio-content">
                                 <div
                                     className="position-relative height-100 bg-blue--transparent borderRadius-m paddingBottom-m">
-                                    <div className="width-100 height-100 bg-marvel"></div>
+                                    <div className="width-100 height-100 bg-marvel--l"></div>
                                     <div
                                         className="posPinBL borderWidth-0 borderBottomWidth-1 borderStyle-dashed borderColor-blue--d width-100 marginBottom-m"
                                         style={{ height: '1px' }}>
@@ -69,7 +69,7 @@ export default function individualSpacing() {
                             <div className="aspectRatio-content">
                                 <div
                                     className="position-relative height-100 bg-blue--transparent borderRadius-m paddingLeft-m">
-                                    <div className="width-100 height-100 bg-marvel"></div>
+                                    <div className="width-100 height-100 bg-marvel--l"></div>
                                     <div
                                         className="posPinTL borderWidth-0 borderLeftWidth-1 borderStyle-dashed borderColor-blue--d height-100 marginLeft-m"
                                         style={{ width: '1px' }}>

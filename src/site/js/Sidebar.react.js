@@ -21,8 +21,8 @@ export default class Sidebar extends React.Component {
         return (
             <aside className={toggleClasses}>
                 <div
-                    className="position-absolute width-15 breakPointM-display-none cursor-pointer"
-                    style={{ height: '108px', right: '-15%' }}
+                    className="position-absolute width-20 breakPointM-display-none cursor-pointer"
+                    style={{ height: '77px', right: '-20%' }}
                     onClick={this.click}>
                     <div
                         className="absolutelyCenter borderRadius-s"
@@ -40,7 +40,7 @@ export default class Sidebar extends React.Component {
 
                 <div className="overflow-auto">
                     <div className="borderBottomWidth-1 borderColor-smoke borderStyle-solid borderWidth-0 display-none paddingTopBottom-l textAlign-center breakPointM-display-block">
-                        <SidebarLogo />
+                        <SidebarLogo styleguideText="true" />
                     </div>
 
                     <div className="posPinBL width-100 paddingBottom-l textAlign-center">

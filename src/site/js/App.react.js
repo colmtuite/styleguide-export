@@ -13,6 +13,8 @@ export default function App(props) {
             <Sidebar />
 
             <div className="main-content">
+                <div className="breakPointM-display-none" style={{ height: '77px' }}></div>
+
                 <div className="posFixTL zi-chrome bg-white width-100 textAlign-center boxShadow-close breakPointM-display-none">
                     <SidebarLogo />
                 </div>

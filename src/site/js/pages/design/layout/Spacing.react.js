@@ -33,7 +33,7 @@ export default function Spacing() {
                             <div className="aspectRatio-content">
                                 <div
                                     className="position-relative height-100 bg-blue--transparent borderRadius-m padding-xxs">
-                                    <div className="width-100 height-100 bg-marvel"></div>
+                                    <div className="width-100 height-100 bg-marvel--l"></div>
                                     <div
                                         className="posPinBL borderWidth-0 borderBottomWidth-1 borderStyle-dashed borderColor-blue--d width-100 marginBottom-xxs"
                                         style={{ height: '1px' }}>
@@ -59,7 +59,7 @@ export default function Spacing() {
                             <div className="aspectRatio-content">
                                 <div
                                     className="position-relative height-100 bg-blue--transparent borderRadius-m padding-xs">
-                                    <div className="width-100 height-100 bg-marvel"></div>
+                                    <div className="width-100 height-100 bg-marvel--l"></div>
                                     <div
                                         className="posPinBL borderWidth-0 borderBottomWidth-1 borderStyle-dashed borderColor-blue--d width-100 marginBottom-xs"
                                         style={{ height: '1px' }}>
@@ -85,7 +85,7 @@ export default function Spacing() {
                             <div className="aspectRatio-content">
                                 <div
                                     className="position-relative height-100 bg-blue--transparent borderRadius-m padding-s">
-                                    <div className="width-100 height-100 bg-marvel"></div>
+                                    <div className="width-100 height-100 bg-marvel--l"></div>
                                     <div
                                         className="posPinBL borderWidth-0 borderBottomWidth-1 borderStyle-dashed borderColor-blue--d width-100 marginBottom-s"
                                         style={{ height: '1px' }}>
@@ -111,7 +111,7 @@ export default function Spacing() {
                             <div className="aspectRatio-content">
                                 <div
                                     className="position-relative height-100 bg-blue--transparent borderRadius-m padding-m">
-                                    <div className="width-100 height-100 bg-marvel"></div>
+                                    <div className="width-100 height-100 bg-marvel--l"></div>
                                     <div
                                         className="posPinBL borderWidth-0 borderBottomWidth-1 borderStyle-dashed borderColor-blue--d width-100 marginBottom-m"
                                         style={{ height: '1px' }}>
@@ -137,7 +137,7 @@ export default function Spacing() {
                             <div className="aspectRatio-content">
                                 <div
                                     className="position-relative height-100 bg-blue--transparent borderRadius-m padding-l">
-                                    <div className="width-100 height-100 bg-marvel"></div>
+                                    <div className="width-100 height-100 bg-marvel--l"></div>
                                     <div
                                         className="posPinBL borderWidth-0 borderBottomWidth-1 borderStyle-dashed borderColor-blue--d width-100 marginBottom-l"
                                         style={{ height: '1px' }}>
@@ -163,7 +163,7 @@ export default function Spacing() {
                             <div className="aspectRatio-content">
                                 <div
                                     className="position-relative height-100 bg-blue--transparent borderRadius-m padding-xl">
-                                    <div className="width-100 height-100 bg-marvel"></div>
+                                    <div className="width-100 height-100 bg-marvel--l"></div>
                                     <div
                                         className="posPinBL borderWidth-0 borderBottomWidth-1 borderStyle-dashed borderColor-blue--d width-100 marginBottom-xl"
                                         style={{ height: '1px' }}>
