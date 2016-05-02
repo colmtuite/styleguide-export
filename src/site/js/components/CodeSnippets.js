@@ -468,19 +468,33 @@ export const hoverBoxShadowCode = `<div class="boxShadow-deboss--hover"></div>
 <div class="boxShadow-raise--hover"></div>`;
 
 
-export const spacingCode = `<div class="margin-xxs"></div>
+export const spacingCode = `<!-- Margin classes -->
+<div class="margin-xxs"></div>
 <div class="margin-xs"></div>
 <div class="margin-s"></div>
 <div class="margin-m"></div>
 <div class="margin-l"></div>
 <div class="margin-xl"></div>
 
+<!-- Padding classes -->
 <div class="padding-xxs"></div>
 <div class="padding-xs"></div>
 <div class="padding-s"></div>
 <div class="padding-m"></div>
 <div class="padding-l"></div>
 <div class="padding-xl"></div>`;
+
+export const individualSpacingCode = `<!-- Margin classes -->
+<div class="marginTop-m"></div>
+<div class="marginRight-m"></div>
+<div class="marginBottom-m"></div>
+<div class="marginLeft-m"></div>
+
+<!-- Padding classes -->
+<div class="paddingTop-m"></div>
+<div class="paddingRight-m"></div>
+<div class="paddingBottom-m"></div>
+<div class="paddingLeft-m"></div>`;
 
 
 export const transitionsCode = `<div class="scaleUp--hover"></div>
