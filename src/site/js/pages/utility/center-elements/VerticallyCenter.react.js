@@ -14,7 +14,9 @@ export default function VerticallyCenter() {
                 <SectionTitle sectionTitle={"Vertically center"} />
 
                 <SectionDescription>
-                    Center an element horizontally. The element must have a width declared.
+                    Center an element vertically. As the element increases or
+                    decreases in height, it will remain vertically centered inside
+                    its container.
                 </SectionDescription>
             </div>
 
