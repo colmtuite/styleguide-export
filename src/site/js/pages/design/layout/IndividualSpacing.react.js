@@ -1,6 +1,5 @@
 import React from 'react';
 
-import InlineCode from '~/components/InlineCode.react';
 import SectionCode from '~/components/SectionCode.react';
 import SectionDescription from '~/components/SectionDescription.react';
 import SectionExample from '~/components/SectionExample.react';
