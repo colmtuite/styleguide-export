@@ -2,14 +2,14 @@ import React from 'react';
 import SectionTitle from '~/components/SectionTitle.react';
 import SectionDescription from '~/components/SectionDescription.react';
 import SectionCode from '~/components/SectionCode.react';
-import { classNamingCode } from '~/components/CodeSnippets';
+import { scalesCode } from '~/components/CodeSnippets';
 
 export default function Scales() {
     return (
         <div>
             <section className="marginBottom-xl">
                 <div className="marginBottom-m breakPointM-marginBottom-l">
-                    <SectionTitle sectionTitle={"Class naming"} />
+                    <SectionTitle sectionTitle={"Scales"} />
 
                     <SectionDescription>
                         Style properties which accept custom values often adhere
@@ -18,7 +18,7 @@ export default function Scales() {
                     </SectionDescription>
                 </div>
 
-                <SectionCode codeType="language-css" code={classNamingCode} topBorder="true" />
+                <SectionCode codeType="language-css" code={scalesCode} topBorder="true" />
             </section>
         </div>
     );
