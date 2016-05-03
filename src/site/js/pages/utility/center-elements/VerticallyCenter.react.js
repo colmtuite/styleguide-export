@@ -34,7 +34,7 @@ export default function VerticallyCenter() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={verticallyCenterElementsCode} />
+            <SectionCode codeType="language-html" code={verticallyCenterElementsCode} />
         </section>
     );
 }

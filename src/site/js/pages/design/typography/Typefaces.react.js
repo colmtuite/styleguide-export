@@ -98,7 +98,7 @@ export default function Typefaces() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={fontFamilyCode} />
+            <SectionCode codeType="language-html" code={fontFamilyCode} />
         </section>
     );
 }

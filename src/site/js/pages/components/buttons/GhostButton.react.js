@@ -63,7 +63,7 @@ export default function FlatButton() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={ghostButtonCode} />
+            <SectionCode codeType="language-html" code={ghostButtonCode} />
         </section>
     );
 }

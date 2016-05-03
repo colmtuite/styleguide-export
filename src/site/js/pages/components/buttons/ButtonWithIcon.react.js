@@ -44,7 +44,7 @@ export default function ButtonWithIcon() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={buttonWithIconCode} />
+            <SectionCode codeType="language-html" code={buttonWithIconCode} />
         </section>
     );
 }

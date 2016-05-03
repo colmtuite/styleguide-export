@@ -46,7 +46,7 @@ export default function TextareaWithIcon() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={textareaWithIconCode} />
+            <SectionCode codeType="language-html" code={textareaWithIconCode} />
         </section>
     );
 }

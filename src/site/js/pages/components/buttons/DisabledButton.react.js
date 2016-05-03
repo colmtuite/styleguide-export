@@ -31,7 +31,7 @@ export default function DisabledButton() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={disabledButtonCode} />
+            <SectionCode codeType="language-html" code={disabledButtonCode} />
         </section>
     );
 }

@@ -38,7 +38,7 @@ export default function TransformationClasses() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={transformationClassesCode} />
+            <SectionCode codeType="language-html" code={transformationClassesCode} />
         </section>
     );
 }

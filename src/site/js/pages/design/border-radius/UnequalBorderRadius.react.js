@@ -54,7 +54,7 @@ export default function UnequalBorderRadius() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={unequalBorderRadiusCode} />
+            <SectionCode codeType="language-html" code={unequalBorderRadiusCode} />
         </section>
     );
 }

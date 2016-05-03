@@ -38,7 +38,7 @@ export default function AlignmentClasses() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={alignmentClassesCode} />
+            <SectionCode codeType="language-html" code={alignmentClassesCode} />
         </section>
     );
 }

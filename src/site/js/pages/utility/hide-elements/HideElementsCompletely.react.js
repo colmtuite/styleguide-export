@@ -29,7 +29,7 @@ export default function HideElementsCompletely() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={hideElementsCompletelyCode} />
+            <SectionCode codeType="language-html" code={hideElementsCompletelyCode} />
         </section>
     );
 }

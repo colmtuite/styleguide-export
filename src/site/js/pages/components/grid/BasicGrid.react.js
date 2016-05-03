@@ -69,7 +69,7 @@ export default function BasicGrid() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={gridCode} />
+            <SectionCode codeType="language-html" code={gridCode} />
         </section>
     );
 }

@@ -58,7 +58,7 @@ export default function BoxShadow() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={hoverBoxShadowCode} />
+            <SectionCode codeType="language-html" code={hoverBoxShadowCode} />
         </section>
     );
 }

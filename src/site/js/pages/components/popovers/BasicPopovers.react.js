@@ -91,7 +91,7 @@ export default function BasicPopovers() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={basicPopoversCode} />
+            <SectionCode codeType="language-html" code={basicPopoversCode} />
         </section>
     );
 }

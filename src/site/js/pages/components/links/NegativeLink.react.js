@@ -22,7 +22,7 @@ export default function NegativeLink() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={ negativeLinkCode } />
+            <SectionCode codeType="language-html" code={ negativeLinkCode } />
         </section>
     );
 }

@@ -30,7 +30,7 @@ export default function GrowingTextarea() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={growingTextarea} />
+            <SectionCode codeType="language-html" code={growingTextarea} />
         </section>
     );
 }

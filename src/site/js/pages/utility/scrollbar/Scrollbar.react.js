@@ -81,7 +81,7 @@ export default function Scrollbar() {
                     </div>
                 </SectionExample>
 
-                <SectionCode code={scrollbarCode} />
+                <SectionCode codeType="language-html" code={scrollbarCode} />
             </section>
         </div>
     );

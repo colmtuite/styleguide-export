@@ -2,9 +2,11 @@ import React from 'react';
 import Highlight from 'react-highlight';
 import classNames from 'classNames';
 
-export default function SectionCode({ code }) {
+export default function SectionCode({ code, codeType, topBorder }) {
     SectionCode.propTypes = {
         code: React.PropTypes.string.isRequired,
+        codeType: React.PropTypes.string.isRequired,
+        topBorder: React.PropTypes.bool,
     };
 
     return (
@@ -18,14 +20,16 @@ export default function SectionCode({ code }) {
                 'borderLeftWidth-1',
                 'borderStyle-solid',
                 'borderColor-smoke',
-                'borderRadiusBottom-m',
-                'overflow-auto',
+                'overflow-auto', {
+                    ['borderTopWidth-1 borderRadius-m']: topBorder,
+                    ['borderRadiusBottom-m']: !topBorder,
+                }
             )}>
             <div
                 style={{
                     minWidth: '770px',
                 }}>
-                <Highlight className="language-html">
+                <Highlight className={codeType}>
                     {code}
                 </Highlight>
             </div>

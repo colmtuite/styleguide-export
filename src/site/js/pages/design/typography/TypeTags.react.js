@@ -41,7 +41,7 @@ export default function TypeTags() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={typeTagsCode} />
+            <SectionCode codeType="language-html" code={typeTagsCode} />
         </section>
     );
 }

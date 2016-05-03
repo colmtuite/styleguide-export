@@ -56,7 +56,7 @@ export default function ProjectCard() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={projectCardCode} />
+            <SectionCode codeType="language-html" code={projectCardCode} />
         </section>
     );
 }

@@ -40,7 +40,7 @@ export default function WaitingButton() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={buttonWaitingCode} />
+            <SectionCode codeType="language-html" code={buttonWaitingCode} />
         </section>
     );
 }

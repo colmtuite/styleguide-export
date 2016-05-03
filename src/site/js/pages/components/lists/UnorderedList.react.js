@@ -38,7 +38,7 @@ export default function UnorderedList() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={unorderedListCode} />
+            <SectionCode codeType="language-html" code={unorderedListCode} />
         </section>
     );
 }

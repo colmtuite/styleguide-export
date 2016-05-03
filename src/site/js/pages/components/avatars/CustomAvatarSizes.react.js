@@ -74,7 +74,7 @@ export default function CustomAvatarSizes() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={customAvatarSizesCode} />
+            <SectionCode codeType="language-html" code={customAvatarSizesCode} />
         </section>
     );
 }

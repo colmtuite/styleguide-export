@@ -38,7 +38,7 @@ export default function OrderedList() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={orderedListCode} />
+            <SectionCode codeType="language-html" code={orderedListCode} />
         </section>
     );
 }

@@ -30,7 +30,7 @@ export default function InputSizes() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={inputStyleCode} />
+            <SectionCode codeType="language-html" code={inputStyleCode} />
         </section>
     );
 }

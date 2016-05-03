@@ -43,7 +43,7 @@ export default function ButtonGroup() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={buttonGroupCode} />
+            <SectionCode codeType="language-html" code={buttonGroupCode} />
         </section>
     );
 }

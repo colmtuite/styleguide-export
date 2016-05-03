@@ -139,7 +139,7 @@ export default function AvatarsWithIcons() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={avatarsWithIconsCode} />
+            <SectionCode codeType="language-html" code={avatarsWithIconsCode} />
         </section>
     );
 }

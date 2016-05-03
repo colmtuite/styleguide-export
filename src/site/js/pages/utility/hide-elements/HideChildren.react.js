@@ -30,7 +30,7 @@ export default function HideElementsVisually() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={hideChildrenCode} />
+            <SectionCode codeType="language-html" code={hideChildrenCode} />
         </section>
     );
 }

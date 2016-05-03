@@ -59,7 +59,7 @@ export default function Checkbox() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={checkboxCode} />
+            <SectionCode codeType="language-html" code={checkboxCode} />
         </section>
     );
 }

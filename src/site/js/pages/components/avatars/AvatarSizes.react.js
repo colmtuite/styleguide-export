@@ -100,7 +100,7 @@ export default function AvatarSizes() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={avatarSizesCode} />
+            <SectionCode codeType="language-html" code={avatarSizesCode} />
         </section>
     );
 }

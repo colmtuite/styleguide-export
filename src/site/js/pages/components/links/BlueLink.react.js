@@ -28,7 +28,7 @@ export default function BlueLink() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={blueLinkCode} />
+            <SectionCode codeType="language-html" code={blueLinkCode} />
         </section>
     );
 }

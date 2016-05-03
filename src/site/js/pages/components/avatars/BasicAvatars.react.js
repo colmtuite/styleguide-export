@@ -62,7 +62,7 @@ export default function BasicAvatars() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={basicAvatarsCode} />
+            <SectionCode codeType="language-html" code={basicAvatarsCode} />
         </section>
     );
 }

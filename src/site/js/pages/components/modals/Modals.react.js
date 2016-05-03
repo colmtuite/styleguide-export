@@ -59,7 +59,7 @@ export default function Modals() {
                     </div>
                 </SectionExample>
 
-                <SectionCode code={modalsCode} />
+                <SectionCode codeType="language-html" code={modalsCode} />
             </section>
         </div>
     );

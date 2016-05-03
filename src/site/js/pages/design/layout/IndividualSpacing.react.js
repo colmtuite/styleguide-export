@@ -81,7 +81,7 @@ export default function individualSpacing() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={individualSpacingCode} />
+            <SectionCode codeType="language-html" code={individualSpacingCode} />
         </section>
     );
 }

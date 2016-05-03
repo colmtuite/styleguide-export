@@ -44,7 +44,7 @@ export default function GridSize() {
                 </div>
             </div>
 
-            <SectionCode code={gridSizeCode} />
+            <SectionCode codeType="language-html" code={gridSizeCode} />
         </section>
     );
 }

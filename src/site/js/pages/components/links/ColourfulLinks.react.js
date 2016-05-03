@@ -73,7 +73,7 @@ export default function ColourfulLinks() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={colourfulLinksCode} />
+            <SectionCode codeType="language-html" code={colourfulLinksCode} />
         </section>
     );
 }

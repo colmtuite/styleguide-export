@@ -96,7 +96,7 @@ export default function SelectMenu() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={selectMenuCode} />
+            <SectionCode codeType="language-html" code={selectMenuCode} />
         </section>
     );
 }

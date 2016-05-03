@@ -37,7 +37,7 @@ export default function Textarea() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={textareaCode} />
+            <SectionCode codeType="language-html" code={textareaCode} />
         </section>
     );
 }

@@ -76,7 +76,7 @@ export default function InputSizes() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={inputSizesCode} />
+            <SectionCode codeType="language-html" code={inputSizesCode} />
         </section>
     );
 }

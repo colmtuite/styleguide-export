@@ -31,7 +31,7 @@ export default function DisabledInput() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={disabledInputCode} />
+            <SectionCode codeType="language-html" code={disabledInputCode} />
         </section>
     );
 }

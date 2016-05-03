@@ -40,7 +40,7 @@ export default function ButtonWithLoneIcon() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={buttonWithLoneIconCode} />
+            <SectionCode codeType="language-html" code={buttonWithLoneIconCode} />
         </section>
     );
 }

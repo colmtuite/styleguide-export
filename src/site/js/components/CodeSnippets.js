@@ -610,3 +610,51 @@ export const pinCode = `<!-- Absolutely pin an element to its closest relative p
 <div class="posFixTR"></div>
 <div class="posFixBL"></div>
 <div class="posFixBR"></div>`;
+
+//
+// Code guidelines
+// -------------------------
+
+export const fileNamingCode = `/* Do */
+@import 'button.scss';
+@import 'font-size.scss';
+
+/* Don't */
+@import 'buttons.scss';
+@import 'font-sizes.scss';`;
+
+export const classNamingCode = `/* stylePropertyName-valueName */
+.float-left           { float: left; }
+.textAlign-center     { text-align: center; }
+.verticalAlign-middle { vertical-align: middle; }`;
+
+export const scalesCode = `/* Size scale */
+.fontSize-xl   { font-size: 40px; }
+.fontSize-l    { font-size: 32px; }
+.fontSize-m    { font-size: 16px; }
+.fontSize-s    { font-size: 14px; }
+.fontSize-xs   { font-size: 12px; }
+
+/* Lightness scale */
+.color-blue-xd { color: ExtraDarkBlue; }
+.color-blue-d  { color: DarkBlue; }
+.color-blue    { color: blue; }
+.color-blue-l  { color: LightBlue; }
+.color-blue-xl { color: ExtraLightBlue; }
+
+/* Fixed scale */
+.fontWeight-1  { font-weight: 100; }
+.fontWeight-2  { font-weight: 200; }
+.fontWeight-3  { font-weight: 300; }
+.fontWeight-4  { font-weight: 400; }
+.fontWeight-5  { font-weight: 500; }
+.fontWeight-6  { font-weight: 600; }
+.fontWeight-7  { font-weight: 700; }
+.fontWeight-8  { font-weight: 800; }
+.fontWeight-9  { font-weight: 900; }`;
+
+export const responsiveClassesCode = `/* stylePropertyName-valueName */
+.breakPointS-float-left  { float: left; }
+.breakPointM-float-left  { float: left; }
+.breakPointL-float-left  { float: left; }
+.breakPointXL-float-left { float: left; }`;

@@ -69,7 +69,7 @@ export default function Inline() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={inlineCode} />
+            <SectionCode codeType="language-html" code={inlineCode} />
         </section>
     );
 }

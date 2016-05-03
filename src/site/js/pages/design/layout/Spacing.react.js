@@ -187,7 +187,7 @@ export default function Spacing() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={spacingCode} />
+            <SectionCode codeType="language-html" code={spacingCode} />
         </section>
     );
 }

@@ -33,7 +33,7 @@ export default function TextManipulation() {
                     </div>
                 </SectionExample>
 
-                <SectionCode code={truncateTextCode} />
+                <SectionCode codeType="language-html" code={truncateTextCode} />
             </section>
         </div>
     );

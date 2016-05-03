@@ -28,7 +28,7 @@ export default function LightLink() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={lightLinkCode} />
+            <SectionCode codeType="language-html" code={lightLinkCode} />
         </section>
     );
 }

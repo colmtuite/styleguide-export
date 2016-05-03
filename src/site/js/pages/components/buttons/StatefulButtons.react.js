@@ -65,7 +65,7 @@ export default function StatefulButtons() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={statefulButtonsCode} />
+            <SectionCode codeType="language-html" code={statefulButtonsCode} />
         </section>
     );
 }

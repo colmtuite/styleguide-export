@@ -26,7 +26,7 @@ export default function LightLinkReversed() {
                 </a>
             </div>
 
-            <SectionCode code={ lightLinkReversedCode } />
+            <SectionCode codeType="language-html" code={ lightLinkReversedCode } />
         </section>
     );
 }

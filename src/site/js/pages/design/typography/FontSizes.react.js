@@ -61,7 +61,7 @@ export default function FontSizes() {
             </SectionExample>
 
             <div style={{ marginTop: '-1px' }}>
-                <SectionCode code={fontSizesCode} />
+                <SectionCode codeType="language-html" code={fontSizesCode} />
             </div>
         </section>
     );

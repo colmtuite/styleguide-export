@@ -40,7 +40,7 @@ export default function PopoverOnHover() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={popoverWithLinks} />
+            <SectionCode codeType="language-html" code={popoverWithLinks} />
         </section>
     );
 }

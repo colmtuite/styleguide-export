@@ -44,7 +44,7 @@ export default function FlatButton() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={flatButtonCode} />
+            <SectionCode codeType="language-html" code={flatButtonCode} />
         </section>
     );
 }

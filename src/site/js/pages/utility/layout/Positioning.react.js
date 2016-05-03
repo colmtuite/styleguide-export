@@ -47,7 +47,7 @@ export default function Positioning() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={pinCode} />
+            <SectionCode codeType="language-html" code={pinCode} />
         </section>
     );
 }

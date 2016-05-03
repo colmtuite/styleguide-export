@@ -35,7 +35,7 @@ export default function PageWrap() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={pageWrapCode} />
+            <SectionCode codeType="language-html" code={pageWrapCode} />
         </section>
     );
 }

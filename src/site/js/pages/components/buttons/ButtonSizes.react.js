@@ -74,7 +74,7 @@ export default function ButtonSizes() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={buttonSizesCode} />
+            <SectionCode codeType="language-html" code={buttonSizesCode} />
         </section>
     );
 }

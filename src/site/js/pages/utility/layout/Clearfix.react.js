@@ -38,7 +38,7 @@ export default function Clearfix() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={ clearfixCode } />
+            <SectionCode codeType="language-html" code={ clearfixCode } />
         </section>
     );
 }

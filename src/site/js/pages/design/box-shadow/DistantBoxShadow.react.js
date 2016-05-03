@@ -60,7 +60,7 @@ export default function BoxShadow() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={distantBoxShadowCode} />
+            <SectionCode codeType="language-html" code={distantBoxShadowCode} />
         </section>
     );
 }

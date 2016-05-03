@@ -69,7 +69,7 @@ export default function ButtonWithLogo() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={buttonWithLogoCode} />
+            <SectionCode codeType="language-html" code={buttonWithLogoCode} />
         </section>
     );
 }

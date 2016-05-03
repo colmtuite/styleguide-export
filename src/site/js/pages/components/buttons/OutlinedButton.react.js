@@ -64,7 +64,7 @@ export default function OutlinedButton() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={outlinedButtonCode} />
+            <SectionCode codeType="language-html" code={outlinedButtonCode} />
         </section>
     );
 }

@@ -34,7 +34,7 @@ export default function GhostButtonReversed() {
                 </div>
             </div>
 
-            <SectionCode code={ghostButtonReversedCode} />
+            <SectionCode codeType="language-html" code={ghostButtonReversedCode} />
         </section>
     );
 }

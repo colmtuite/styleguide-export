@@ -68,7 +68,7 @@ export default function FontWeight() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={fontWeightCode} />
+            <SectionCode codeType="language-html" code={fontWeightCode} />
         </section>
     );
 }

@@ -69,7 +69,7 @@ export default function BoxShadow() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={embossBoxShadowCode} />
+            <SectionCode codeType="language-html" code={embossBoxShadowCode} />
         </section>
     );
 }

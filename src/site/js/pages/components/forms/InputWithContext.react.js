@@ -72,7 +72,7 @@ export default function InputWithContext() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={inputWithContextCode} />
+            <SectionCode codeType="language-html" code={inputWithContextCode} />
         </section>
     );
 }

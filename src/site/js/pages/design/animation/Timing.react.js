@@ -60,7 +60,7 @@ export default function Timing() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={timingCode} />
+            <SectionCode codeType="language-html" code={timingCode} />
         </section>
     );
 }

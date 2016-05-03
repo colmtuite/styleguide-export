@@ -26,7 +26,7 @@ export default function HideElementsVisually() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={hideElementsVisuallyCode} />
+            <SectionCode codeType="language-html" code={hideElementsVisuallyCode} />
         </section>
     );
 }

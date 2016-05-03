@@ -27,7 +27,7 @@ export default function HorizontallyCenter() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={horizontallyCenterElementsCode} />
+            <SectionCode codeType="language-html" code={horizontallyCenterElementsCode} />
         </section>
     );
 }

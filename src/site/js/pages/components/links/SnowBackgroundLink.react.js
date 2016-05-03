@@ -30,7 +30,7 @@ export default function SnowBackgroundLink() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={snowBackgroundLinkCode} />
+            <SectionCode codeType="language-html" code={snowBackgroundLinkCode} />
         </section>
     );
 }

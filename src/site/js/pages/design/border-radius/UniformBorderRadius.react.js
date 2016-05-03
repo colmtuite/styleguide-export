@@ -58,7 +58,7 @@ export default function UniformBorderRadius() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={uniformBorderRadiusCode} />
+            <SectionCode codeType="language-html" code={uniformBorderRadiusCode} />
         </section>
     );
 }

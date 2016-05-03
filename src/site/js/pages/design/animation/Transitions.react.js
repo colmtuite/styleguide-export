@@ -47,7 +47,7 @@ export default function Transitions() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={transitionsCode} />
+            <SectionCode codeType="language-html" code={transitionsCode} />
         </section>
     );
 }

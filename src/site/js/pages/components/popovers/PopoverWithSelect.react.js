@@ -26,7 +26,7 @@ export default function PopoverWithSelect() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={popoverWithLinks} />
+            <SectionCode codeType="language-html" code={popoverWithLinks} />
         </section>
     );
 }

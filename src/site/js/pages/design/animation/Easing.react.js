@@ -54,7 +54,7 @@ export default function Easing() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={easingCode} />
+            <SectionCode codeType="language-html" code={easingCode} />
         </section>
     );
 }
