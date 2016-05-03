@@ -21,6 +21,7 @@
     "url": "https://github.com/marvelapp/styleguide/issues"
   },
   "dependencies": {
+    "history": "^2.1.1",
     "react-highlight": "^0.8.0"
   },
   "devDependencies": {
