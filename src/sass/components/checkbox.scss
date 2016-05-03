@@ -2,15 +2,13 @@
 // Checkboxes and radio buttons
 // -------------------------
 
-$checkBox-size: 16px;
+$formControl-s: 20px;
+$formControl-m: 30px;
 
 .form-control {
     @extend .position-relative;
     @extend .display-inlineBlock;
     @extend .cursor-pointer;
-
-    padding-left: $checkBox-size + 10;
-    line-height: $checkBox-size;
 }
 
 .form-control input {
@@ -23,45 +21,42 @@ $checkBox-size: 16px;
     @extend .posPinTL;
     @extend .display-block;
 
-    @extend .bg-snow;
-    @extend .borderWidth-1;
-    @extend .borderStyle-solid;
-    @extend .borderColor-smoke;
+    @extend .bg-white;
 
     @extend .userSelect-none;
     @extend .boxSizing-borderBox;
 
-    @extend .transitionDuration-m;
+    @extend .transitionDuration-xl;
     @extend .transitionProperty-all;
+	@extend .transitionTimingFunction-cb--scaleIn;
 
-    width: $checkBox-size;
-    height: $checkBox-size;
+    box-shadow: inset 0 0 0 2px $smoke;
 }
 
 .checkbox-tick {
     @extend .opacity-0;
     @extend .fill-white;
-    @extend .absolutelyCenter;
 
-    @extend .transitionDuration-s;
+    @extend .transitionDuration-xl;
     @extend .transitionProperty-all;
+	@extend .transitionTimingFunction-cb--scaleIn;
+
+    transform: scale(0);
 }
 
 .radio-tick {
-    width: $checkBox-size / 2 - 2;
-    height: $checkBox-size / 2 - 2;
-
     @extend .bg-white;
     @extend .opacity-0;
     @extend .absolutelyCenter;
     @extend .borderRadius-circle;
 
-    @extend .transitionDuration-s;
+    @extend .transitionDuration-xl;
     @extend .transitionProperty-all;
+	@extend .transitionTimingFunction-cb--scaleIn;
 }
 
 .form-control:hover .form-control-indicator {
-    @extend .bg-smoke;
+    @extend .bg-snow--d;
 }
 
 //
@@ -69,8 +64,9 @@ $checkBox-size: 16px;
 // -------------------------
 
 .form-control input:checked ~ .form-control-indicator {
-    @extend .bg-positive;
-    @extend .borderColor-positive;
+    transition-property: all;
+    transition-duration: $transitionDuration-xl;
+	transition-timing-function: $transitionTimingFunction-cb--scaleIn;
 }
 
 //
@@ -78,8 +74,9 @@ $checkBox-size: 16px;
 // -------------------------
 
 .form-control input:active ~ .form-control-indicator {
-    @extend .bg-positive;
-    @extend .borderColor-positive;
+    transition-property: all;
+    transition-duration: $transitionDuration-xl;
+	transition-timing-function: $transitionTimingFunction-cb--scaleIn;
 }
 
 //
@@ -87,11 +84,16 @@ $checkBox-size: 16px;
 // -------------------------
 
 .checkbox .form-control-indicator {
-    @extend .borderRadius-m;
+    @extend .borderRadius-circle;
 }
 
 .checkbox input:checked ~ .form-control-indicator .checkbox-tick {
-    @extend .opacity-100;
+    opacity: 100;
+    transition-property: all;
+    transition-delay: $transitionDelay-l;
+    transition-duration: $transitionDuration-xl;
+	transition-timing-function: $transitionTimingFunction-cb--scaleIn;
+    transform: scale(1);
 }
 
 //
@@ -99,9 +101,73 @@ $checkBox-size: 16px;
 // -------------------------
 
 .radio .form-control-indicator {
-    @extend .borderRadius-circle;
+    @extend .borderRadius-m;
 }
 
 .radio input:checked ~ .form-control-indicator .radio-tick {
-    @extend .opacity-100;
+    opacity: 100;
+}
+
+//
+// Small checkbox size
+// -------------------------
+
+.form-control--s {
+    padding-left: $formControl-s + $formControl-s / 2;
+    line-height: $formControl-s;
+}
+
+.form-control--s .form-control-indicator {
+    width: $formControl-s;
+    height: $formControl-s;
+}
+
+.form-control--s .checkbx-tick {
+    width: $formControl-s;
+    height: $formControl-s;
+}
+
+.form-control--s .radio-tick {
+    width: $formControl-s / 2 - 2;
+    height: $formControl-s / 2 - 2;
+}
+
+.form-control--s input:checked ~ .form-control-indicator {
+    box-shadow: inset 0 0 0 $formControl-s / 2 $positive;
+}
+
+.form-control--s input:active ~ .form-control-indicator {
+    box-shadow: inset 0 0 0 $formControl-s / 2 $green--d;
+}
+
+//
+// Medium checkbox size
+// -------------------------
+
+.form-control--m {
+    padding-left: $formControl-m + $formControl-m / 2;
+    line-height: $formControl-m;
+}
+
+.form-control--m .form-control-indicator {
+    width: $formControl-m;
+    height: $formControl-m;
+}
+
+.form-control--m .checkbx-tick {
+    width: $formControl-m;
+    height: $formControl-m;
+}
+
+.form-control--m .radio-tick {
+    width: $formControl-m / 2 - 2;
+    height: $formControl-m / 2 - 2;
+}
+
+.form-control--m input:checked ~ .form-control-indicator {
+    box-shadow: inset 0 0 0 $formControl-m / 2 $positive;
+}
+
+.form-control--m input:active ~ .form-control-indicator {
+    box-shadow: inset 0 0 0 $formControl-m / 2 $green--d;
 }

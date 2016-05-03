@@ -19,7 +19,7 @@
 .c-purple              { color: $purple; }
 .c-red                 { color: $red; }
 
-.c-marvel--d           { color: $marvel--d; }
+.c-marvel--d           { color: $green--d; }
 .c-marvel--l           { color: $marvel--l; }
 
 .c-green--d            { color: $green--d; }
@@ -96,14 +96,6 @@
 .c-google              { color: $google; }
 .c-instagram           { color: $instagram; }
 .c-linkedin            { color: $linkedin; }
-
-// Syntax highlighting
-// -------------------------
-
-.hljs-tag              { color: $hljs-tag; }
-.hljs-value            { color: $hljs-value; }
-.hljs-attribute        { color: $hljs-attribute; }
-
 
 //
 // Responsive rules
@@ -198,13 +190,6 @@
     .breakPointS-c-google              { color: $google; }
     .breakPointS-c-instagram           { color: $instagram; }
     .breakPointS-c-linkedin            { color: $linkedin; }
-
-    // Syntax highlighting
-    // -------------------------
-
-    .breakPointS-hljs-tag              { color: $hljs-tag; }
-    .breakPointS-hljs-value            { color: $hljs-value; }
-    .breakPointS-hljs-attribute        { color: $hljs-attribute; }
 }
 
 @include breakPoint(m) {
@@ -296,13 +281,6 @@
     .breakPointM-c-google              { color: $google; }
     .breakPointM-c-instagram           { color: $instagram; }
     .breakPointM-c-linkedin            { color: $linkedin; }
-
-    // Syntax highlighting
-    // -------------------------
-
-    .breakPointM-hljs-tag              { color: $hljs-tag; }
-    .breakPointM-hljs-value            { color: $hljs-value; }
-    .breakPointM-hljs-attribute        { color: $hljs-attribute; }
 }
 
 @include breakPoint(l) {
@@ -394,11 +372,4 @@
     .breakPointL-c-google              { color: $google; }
     .breakPointL-c-instagram           { color: $instagram; }
     .breakPointL-c-linkedin            { color: $linkedin; }
-
-    // Syntax highlighting
-    // -------------------------
-
-    .breakPointL-hljs-tag              { color: $hljs-tag; }
-    .breakPointL-hljs-value            { color: $hljs-value; }
-    .breakPointL-hljs-attribute        { color: $hljs-attribute; }
 }

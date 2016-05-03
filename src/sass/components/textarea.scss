@@ -71,7 +71,9 @@
     @extend .borderRadius-s;
     @extend .resize-none;
     @extend .transitionDelay-l;
+    @extend .transitionDuration-l;
 }
+
 .textarea--growing:focus {
     height: 140px;
     @extend .transitionDelay-0;

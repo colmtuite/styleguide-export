@@ -1,0 +1,57 @@
+//
+// Hightlight.js Syntax theme
+// -------------------------
+
+// Solarized synatx highlighting theme, originally by Ethan Schoonover.
+// Modified to match Marvel's styleguide and blog.
+
+// Soruce: https://github.com/isagalaev/highlight.js/tree/master/src/styles
+// -------------------------
+
+.hljs { color: $solarized-base-1; }
+
+.hljs-comment,
+.hljs-quote { color: $solarized-base-2; }
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-addition { color: $solarized-cyan; }
+
+.hljs-number,
+.hljs-string,
+.hljs-meta .hljs-meta-string,
+.hljs-literal,
+.hljs-doctag,
+.hljs-regexp { color: $solarized-magenta; }
+
+.hljs-title,
+.hljs-section,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-class { color: $solarized-base-4; }
+
+.hljs-attribute,
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-class .hljs-title,
+.hljs-type { color: $solarized-cyan; }
+
+.hljs-value { color: $solarized-magenta; }
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-subst,
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-link { color: $solarized-orange; }
+
+.hljs-built_in,
+.hljs-deletion { color: $solarized-red; }
+
+.hljs-formula { background: $solarized-base-3; }
+
+.hljs-comment { @extend .fontStyle-italic; }
