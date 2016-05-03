@@ -130,6 +130,24 @@ export const popoverWithLinks = `<div class="popover popover--s popover--top has
     </div>
 </div>`;
 
+export const popoverOnHover = `<div className="popover-trigger position-relative display-inlineBlock">
+    <div className="popover popover--s popover--top has-caret">
+        <div class="popover-list">
+            <a href="#">...</a>
+            <a href="#">...</a>
+            <a href="#">...</a>
+            <a href="#">...</a>
+            <div class="popover-separator"></div>
+            <a href="#">...</a>
+        </div>
+    </div>
+
+    <button className="button button--flat button--m bg-positive">
+        Hover over me!
+    </button>
+</div>
+`;
+
 //
 // Avatars
 // -------------------------

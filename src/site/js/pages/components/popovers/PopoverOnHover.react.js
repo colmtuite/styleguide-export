@@ -6,7 +6,7 @@ import SectionExample from '~/components/SectionExample.react';
 import SectionTitle from '~/components/SectionTitle.react';
 import InlineCode from '~/components/InlineCode.react';
 
-import { popoverWithLinks } from '~/components/CodeSnippets.js';
+import { popoverOnHover } from '~/components/CodeSnippets.js';
 
 export default function PopoverOnHover() {
     return (
@@ -15,8 +15,7 @@ export default function PopoverOnHover() {
                 <SectionTitle sectionTitle={"Popover that appears on hover"} />
 
                 <SectionDescription>
-                    Add an optional element <InlineCode>.popover-separator</InlineCode>
-                    as a separator between popover list elements.
+                    Add an optional class <InlineCode>.popover-trigger</InlineCode> to the parent element of your popover to have it appear on hover.
                 </SectionDescription>
             </div>
 
@@ -40,7 +39,7 @@ export default function PopoverOnHover() {
                 </div>
             </SectionExample>
 
-            <SectionCode code={popoverWithLinks} />
+            <SectionCode code={popoverOnHover} />
         </section>
     );
 }
