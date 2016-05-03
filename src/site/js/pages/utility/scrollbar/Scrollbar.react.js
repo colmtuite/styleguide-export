@@ -29,7 +29,7 @@ export default function Scrollbar() {
                                 className="antiscroll-inner boxShadow-smoke borderRadius-m"
                                 style={{ width: '500px', height: '250px' }}>
                                 <div
-                                    className="padding-xs"
+                                    className="padding-s"
                                     style={{ width: '800px', height: 'auto' }}>
                                     <p className="padding-xs fontWeight-3 fontSize-m lineHeight-m c-silver">
                                         Give thanks to the most high. Look at the sunset, life is amazing,
