@@ -7,7 +7,6 @@ const menus = [
         title: 'Overview',
         items: [
            { title: 'Introduction', url: '/overview/introduction' },
-           { title: 'Code Guidelines', url: '/overview/code-guidelines' },
            { title: 'Naming Convention', url: '/overview/naming-convention' },
         ],
     }, {
