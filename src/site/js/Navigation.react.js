@@ -25,7 +25,6 @@ const menus = [
         items: [
             { title: 'Avatars', url: '/components/avatars' },
             { title: 'Buttons', url: '/components/buttons' },
-            { title: 'Cards', url: '/components/cards' },
             { title: 'Form elements', url: '/components/form-elements' },
             { title: 'Grid', url: '/components/grid' },
             { title: 'Links', url: '/components/links' },
