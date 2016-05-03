@@ -14,9 +14,9 @@ const eyeglass = new Eyeglass({
     // eyeglass options
     eyeglass: {
         root: paths.root,
-        buildDir: path.resolve(paths.dist, 'site', 'styleguide'),
+        buildDir: path.resolve(paths.dist, 'site'),
         assets: {
-            httpPrefix: 'assets',
+            httpPrefix: path.join('styleguide', 'assets'),
             sources: [{
                 directory: path.resolve(paths.src, 'assets'),
                 globOpts: {
