@@ -1,6 +1,6 @@
 import React from 'react';
 import Highlight from 'react-highlight';
-import classNames from 'classNames';
+import classNames from 'classnames';
 
 export default function SectionCode({ code, codeType, topBorder }) {
     SectionCode.propTypes = {

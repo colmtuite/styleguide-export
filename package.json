@@ -1,6 +1,6 @@
 {
   "name": "marvel-styleguide",
-  "version": "1.1.5",
+  "version": "1.1.9",
   "description": "Base styling for Marvel products",
   "main": "eyeglass-exports.js",
   "scripts": {
@@ -21,6 +21,7 @@
     "url": "https://github.com/marvelapp/styleguide/issues"
   },
   "dependencies": {
+    "history": "^2.1.1",
     "react-highlight": "^0.8.0"
   },
   "devDependencies": {

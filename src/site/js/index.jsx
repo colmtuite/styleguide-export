@@ -2,12 +2,13 @@ require('../../sass/all.scss');
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRedirect, browserHistory } from 'react-router';
+import { Router, Route, IndexRedirect } from 'react-router';
+import { createHistory, useBasename } from 'history';
 
 // App pages
 // -------------------------
-
 import App from '~/App.react';
+import Page from '~/pages/Page.react';
 import NoMatch from '~/pages/404.react';
 
 // Overview pages
@@ -48,52 +49,54 @@ import Layout from '~/pages/utility/layout/Layout.react';
 import Scrollbar from '~/pages/utility/scrollbar/Scrollbar.react';
 import TextManipulation from '~/pages/utility/text-manipulation/TextManipulation.react';
 
+const rootPath = __webpack_require__.p || '/';
+const browserHistory = useBasename(createHistory)({
+    basename: rootPath,
+});
 export function render(container) {
     ReactDOM.render(
         <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
             <Route path="/" component={App}>
                 <IndexRedirect to="overview/introduction" />
-            </Route>
+                <Route path="overview" component={Page}>
+                    <IndexRedirect to="introduction" />
+                    <Route path="introduction" component={Introduction} />
+                    <Route path="code-guidelines" component={CodeGuidelines} />
+                </Route>
 
-            <Route path="/overview" component={App}>
-                <IndexRedirect to="introduction" />
-                <Route path="introduction" component={Introduction} />
-                <Route path="code-guidelines" component={CodeGuidelines} />
-            </Route>
+                <Route path="design" component={Page}>
+                    <IndexRedirect to="colors" />
+                    <Route path="colors" component={ColorScheme} />
+                    <Route path="typography" component={Typography} />
+                    <Route path="border-radius" component={BorderRadius} />
+                    <Route path="box-shadow" component={BoxShadow} />
+                    <Route path="layout" component={DesignLayout} />
+                    <Route path="animation" component={Animation} />
+                </Route>
 
-            <Route path="/design" component={App}>
-                <IndexRedirect to="colors" />
-                <Route path="colors" component={ColorScheme} />
-                <Route path="typography" component={Typography} />
-                <Route path="border-radius" component={BorderRadius} />
-                <Route path="box-shadow" component={BoxShadow} />
-                <Route path="layout" component={DesignLayout} />
-                <Route path="animation" component={Animation} />
-            </Route>
+                <Route path="components" component={Page}>
+                    <IndexRedirect to="avatars" />
+                    <Route path="avatars" component={Avatars} />
+                    <Route path="buttons" component={Buttons} />
+                    <Route path="cards" component={Cards} />
+                    <Route path="form-elements" component={FormElements} />
+                    <Route path="grid" component={Grid} />
+                    <Route path="links" component={Links} />
+                    <Route path="lists" component={Lists} />
+                    <Route path="Modals" component={Modals} />
+                    <Route path="Popovers" component={Popovers} />
+                </Route>
 
-            <Route path="/components" component={App}>
-                <IndexRedirect to="avatars" />
-                <Route path="avatars" component={Avatars} />
-                <Route path="buttons" component={Buttons} />
-                <Route path="cards" component={Cards} />
-                <Route path="form-elements" component={FormElements} />
-                <Route path="grid" component={Grid} />
-                <Route path="links" component={Links} />
-                <Route path="lists" component={Lists} />
-                <Route path="Modals" component={Modals} />
-                <Route path="Popovers" component={Popovers} />
+                <Route path="utility" component={Page}>
+                    <IndexRedirect to="layout" />
+                    <Route path="layout" component={Layout} />
+                    <Route path="hide-elements" component={HideElements} />
+                    <Route path="center-elements" component={CenterElements} />
+                    <Route path="text-manipulation" component={TextManipulation} />
+                    <Route path="scrollbar" component={Scrollbar} />
+                </Route>
+                <Route path="*" component={NoMatch} />
             </Route>
-
-            <Route path="/utility" component={App}>
-                <IndexRedirect to="layout" />
-                <Route path="layout" component={Layout} />
-                <Route path="hide-elements" component={HideElements} />
-                <Route path="center-elements" component={CenterElements} />
-                <Route path="text-manipulation" component={TextManipulation} />
-                <Route path="scrollbar" component={Scrollbar} />
-            </Route>
-
-            <Route path="*" component={NoMatch} />
         </Router>,
     container);
 }

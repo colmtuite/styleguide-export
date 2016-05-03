@@ -19,4 +19,7 @@ module.exports = {
             'selfClosing': 'tag-aligned',
         }],
     },
+    'globals': {
+        '__webpack_require__': true,
+    }
 };
