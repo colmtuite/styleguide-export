@@ -9,7 +9,7 @@ import { individualSpacingCode } from '~/components/CodeSnippets.js';
 
 export default function individualSpacing() {
     return (
-        <section className="marginBottom-xl">
+        <section className="marginBottom-m">
             <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Individual spacing"} />
 

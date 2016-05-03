@@ -9,7 +9,7 @@ import { transitionsCode } from '~/components/CodeSnippets.js';
 
 export default function Transitions() {
     return (
-        <section className="marginBottom-xl">
+        <section className="marginBottom-m">
             <div className="marginBottom-m breakPointM-marginBottom-l">
                 <SectionTitle sectionTitle={"Animations"} />
 
