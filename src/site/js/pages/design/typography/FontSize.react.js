@@ -8,17 +8,19 @@ export default function FontSize({ fontSize, fontDescription }) {
 
     return (
         <div className="borderWidth-0 borderBottomWidth-1 borderStyle-solid borderColor-smoke">
-            <div className="padding-m overflowY-hidden overflowX-scroll whiteSpace-nowrap">
-                <div className="padding-xxs">
-                    <div className="marginBottom-s">
-                        <p className={`fontSize-${fontSize}`}>
-                            The quick brown fox jumps over the lazy dog
+            <div className="antiscroll-wrap width-100">
+                <div className="antiscroll-inner overflowX-scroll whiteSpace-nowrap padding-m">
+                    <div className="padding-xxs">
+                        <div className="marginBottom-s">
+                            <p className={`fontSize-${fontSize}`}>
+                                The quick brown fox jumps over the lazy dog
+                            </p>
+                        </div>
+
+                        <p className="fontSize-s fontWeight-3 c-silver">
+                            { fontDescription }
                         </p>
                     </div>
-
-                    <p className="fontSize-s fontWeight-3 c-silver">
-                        { fontDescription }
-                    </p>
                 </div>
             </div>
         </div>
