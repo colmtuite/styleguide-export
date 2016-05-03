@@ -52,7 +52,7 @@ export function render(container) {
     ReactDOM.render(
         <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
             <Route path="/" component={App}>
-                <IndexRedirect to="design/colors" />
+                <IndexRedirect to="overview/introduction" />
             </Route>
 
             <Route path="/overview" component={App}>
