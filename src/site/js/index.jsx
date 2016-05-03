@@ -57,8 +57,6 @@ export function render(container) {
     ReactDOM.render(
         <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
             <Route path="/" component={App}>
-                <Route path="*" component={NoMatch} />
-
                 <IndexRedirect to="overview/introduction" />
                 <Route path="overview" component={Page}>
                     <IndexRedirect to="introduction" />
@@ -97,8 +95,8 @@ export function render(container) {
                     <Route path="text-manipulation" component={TextManipulation} />
                     <Route path="scrollbar" component={Scrollbar} />
                 </Route>
+                <Route path="*" component={NoMatch} />
             </Route>
-
         </Router>,
     container);
 }
