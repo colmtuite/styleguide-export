@@ -37,18 +37,18 @@ export default class Sidebar extends React.Component {
             <aside className={toggleClasses}>
                 <div
                     className="position-absolute width-20 breakPointM-display-none cursor-pointer"
-                    style={{ height: '76px', right: '-20%' }}
+                    style={{ height: '80px', right: '-20%' }}
                     onClick={this.click}>
                     <div
                         className="absolutelyCenter borderRadius-s"
-                        style={{ width: '24px', height: '4px', backgroundColor: this.state.active ? 'transparent' : '#1fb6ff' }}>
+                        style={{ width: '22px', height: '4px', backgroundColor: this.state.active ? 'transparent' : '#1fb6ff' }}>
                         <div
                             className="position-absolute bg-marvel borderRadius-s"
-                            style={{ width: '24px', height: '4px', top: this.state.active ? '0' : '-8px', transform: this.state.active ? 'rotate(45deg)' : 'rotate(0)' }}>
+                            style={{ width: '22px', height: '4px', top: this.state.active ? '0' : '-8px', transform: this.state.active ? 'rotate(45deg)' : 'rotate(0)' }}>
                         </div>
                         <div
                             className="position-absolute bg-marvel borderRadius-s"
-                            style={{ width: '24px', height: '4px', bottom: this.state.active ? '0' : '-8px', transform: this.state.active ? 'rotate(-45deg)' : 'rotate(0)' }}>
+                            style={{ width: '22px', height: '4px', bottom: this.state.active ? '0' : '-8px', transform: this.state.active ? 'rotate(-45deg)' : 'rotate(0)' }}>
                         </div>
                     </div>
                 </div>

@@ -36,7 +36,9 @@ export default class SidebarLogo extends React.Component {
 
         return (
             <div>
-                <div className="paddingTopBottom-m">
+                <div className={classNames({
+                    ['paddingTopBottom-m']: styleguideText,
+                })}>
                     <div
                         className={classNames({
                             ['marginBottom-s']: styleguideText,
