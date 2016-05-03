@@ -21,7 +21,7 @@ export default class Sidebar extends React.Component {
         return (
             <aside className={toggleClasses}>
                 <div
-                    className="position-absolute width-20 breakPointM-display-none cursor-pointer"
+                    className="antiscroll-wrap position-absolute width-20 breakPointM-display-none cursor-pointer"
                     style={{ height: '77px', right: '-20%' }}
                     onClick={this.click}>
                     <div
@@ -38,7 +38,7 @@ export default class Sidebar extends React.Component {
                     </div>
                 </div>
 
-                <div className="overflow-auto">
+                <div className="antiscroll-inner height-100 overflow-auto">
                     <div className="borderBottomWidth-1 borderColor-smoke borderStyle-solid borderWidth-0 display-none paddingTopBottom-l textAlign-center breakPointM-display-block">
                         <SidebarLogo styleguideText="true" />
                     </div>
