@@ -18,7 +18,7 @@ export default function NoMatch() {
                     </div>
 
                     <p className="lineHeight-l fontSize-l fontWeight-3 c-silver">
-                        Oh well there's no such page. Better luck next time little fella ¯\_(ツ)_/¯
+                        The page you’re looking for could have been deleted or never have existed.
                     </p>
                 </div>
             </div>
