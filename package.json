@@ -1,6 +1,6 @@
 {
   "name": "marvel-styleguide",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "description": "Base styling for Marvel products",
   "main": "eyeglass-exports.js",
   "scripts": {
