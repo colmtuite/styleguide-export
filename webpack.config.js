@@ -14,7 +14,7 @@ const eyeglass = new Eyeglass({
     // eyeglass options
     eyeglass: {
         root: paths.root,
-        buildDir: path.resolve(paths.dist, 'site'),
+        buildDir: path.resolve(paths.dist, 'site', 'styleguide'),
         assets: {
             httpPrefix: 'assets',
             sources: [{
@@ -69,8 +69,8 @@ module.exports = {
     },
     output: {
         filename: 'app.js',
-        path: path.resolve(paths.dist, 'site'),
-        publicPath: '/',
+        path: path.resolve(paths.dist, 'site', 'styleguide'),
+        publicPath: '/styleguide/',
         libraryTarget: 'umd',
         library: 'marvelStyleguide',
     },
