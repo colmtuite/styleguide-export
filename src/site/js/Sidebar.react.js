@@ -8,10 +8,25 @@ export default class Sidebar extends React.Component {
     constructor(props) {
         super(props);
         this.state = { active: false };
+        this.handleScroll = this.handleScroll.bind(this);
     }
 
     click = () => {
         this.setState({ active: !this.state.active });
+    }
+
+    handleScroll(event) {
+        let preventScroll = false;
+        const node = this.refs.sidebar.getDOMNode();
+        if (event.nativeEvent.wheelDelta > 0 || event.nativeEvent.detail < 0) {
+            preventScroll = node.scrollTop === 0;
+        } else {
+            preventScroll = node.scrollHeight - node.scrollTop === node.clientHeight;
+        }
+        if (preventScroll) {
+            event.stopPropagation();
+            event.preventDefault();
+        }
     }
 
     render() {
@@ -21,7 +36,7 @@ export default class Sidebar extends React.Component {
         return (
             <aside className={toggleClasses}>
                 <div
-                    className="antiscroll-wrap position-absolute width-20 breakPointM-display-none cursor-pointer"
+                    className="position-absolute width-20 breakPointM-display-none cursor-pointer"
                     style={{ height: '77px', right: '-20%' }}
                     onClick={this.click}>
                     <div
@@ -38,7 +53,7 @@ export default class Sidebar extends React.Component {
                     </div>
                 </div>
 
-                <div className="antiscroll-inner height-100 overflow-auto">
+                <div className="height-100 overflow-auto" ref="sidebar" onWheel={this.handleScroll}>
                     <div className="borderBottomWidth-1 borderColor-smoke borderStyle-solid borderWidth-0 display-none paddingTopBottom-l textAlign-center breakPointM-display-block">
                         <SidebarLogo styleguideText="true" />
                     </div>
