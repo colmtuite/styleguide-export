@@ -14,7 +14,7 @@ import NoMatch from '~/pages/404.react';
 // -------------------------
 
 import Introduction from '~/pages/overview/introduction/Introduction.react';
-import NamingConvention from '~/pages/overview/naming-convention/NamingConvention.react';
+import CodeGuidelines from '~/pages/overview/code-guidelines/CodeGuidelines.react';
 
 // Design pages
 // -------------------------
@@ -58,7 +58,7 @@ export function render(container) {
             <Route path="/overview" component={App}>
                 <IndexRedirect to="introduction" />
                 <Route path="introduction" component={Introduction} />
-                <Route path="naming-convention" component={NamingConvention} />
+                <Route path="code-guidelines" component={CodeGuidelines} />
             </Route>
 
             <Route path="/design" component={App}>

@@ -1,10 +1,10 @@
 import React from 'react';
 import PageTitle from '~/components/PageTitle.react';
 
-export default function NamingConvention() {
+export default function CodeGuidelines() {
     return (
         <div>
-            <PageTitle title="Naming convention" />
+            <PageTitle title="Code guidelines" />
 
             <div className="marginBottom-xl">
                 <p className="c-slate lineHeight-xl fontSize-xl fontWeight-3 marginBottom-m">The majority of the styleguide is built using single-purpose classes. Single-purpose classes are CSS classes which declare a single value for a single style property, therefore performing a single purpose. The primary benefit here is that when you see a single-purpose class in HTML, you know exactly how it affects that markup but more importantly, you can change it without affecting any other views.</p>
