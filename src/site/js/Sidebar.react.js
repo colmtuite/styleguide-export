@@ -59,7 +59,7 @@ export default class Sidebar extends React.Component {
                     </div>
 
                     <div className="posPinBL width-100 paddingBottom-l textAlign-center">
-                        <div className="paddingBottom-s inline textAlign-center">
+                        <div className="inline textAlign-center">
                             <div className="marginRight-m breakPointL-marginRight-l">
                                 <a href="https://github.com/marvelapp/styleguide" target="blank">
                                     <svg
