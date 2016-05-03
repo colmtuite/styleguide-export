@@ -3,6 +3,10 @@
 // -------------------------
 
 
+.sidebar {
+    -webkit-overflow-scrolling: touch;
+}
+
 .sidebar:not(.is-open) {
     transform: translateX(-100%);
 }

@@ -14,10 +14,10 @@ const menus = [
         items: [
             { title: 'Colors', url: '/design/colors' },
             { title: 'Typography', url: '/design/typography' },
+            { title: 'Animation', url: '/design/animation' },
             { title: 'Border Radius', url: '/design/border-radius' },
             { title: 'Box Shadow', url: '/design/box-shadow' },
             { title: 'Layout', url: '/design/layout' },
-            { title: 'Animation', url: '/design/animation' },
             { title: 'Icons', url: '/design/icons', disabled: true },
         ],
     }, {
@@ -36,11 +36,10 @@ const menus = [
     }, {
         title: 'Utility',
         items: [
-            { title: 'Scrollbar', url: '/utility/scrollbar' },
-            { title: 'Hide elements', url: '/utility/hide-elements' },
             { title: 'Center elements', url: '/utility/center-elements' },
-            { title: 'Text manipulation', url: '/utility/text-manipulation' },
+            { title: 'Hide elements', url: '/utility/hide-elements' },
             { title: 'Layout', url: '/utility/layout' },
+            { title: 'Text manipulation', url: '/utility/text-manipulation' },
         ],
     },
 ];

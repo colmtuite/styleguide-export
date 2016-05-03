@@ -37,7 +37,7 @@ export default class Sidebar extends React.Component {
             <aside className={toggleClasses}>
                 <div
                     className="position-absolute width-20 breakPointM-display-none cursor-pointer"
-                    style={{ height: '77px', right: '-20%' }}
+                    style={{ height: '76px', right: '-20%' }}
                     onClick={this.click}>
                     <div
                         className="absolutelyCenter borderRadius-s"
