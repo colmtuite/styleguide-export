@@ -41,7 +41,7 @@ export default function Transitions() {
                     <div className="padding-m textAlign-center borderStyle-solid borderColor-smoke borderWidth-0 borderRightWidth-1 breakPointM-borderRightWidth-0 breakPointL-borderRightWidth-1 breakPointL-borderBottomWidth-0">
                         <div
                             className="bg-yellow borderRadius-m animation-bounce centered"
-                            style={{ height: '100px', width: '100px' }}>
+                            style={{ height: '100px', width: '100px', webkitAnimationIterationCount: 'infinite', animationIterationCount: 'infinite' }}>
                         </div>
                     </div>
                 </div>
