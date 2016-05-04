@@ -56,10 +56,7 @@ const browserHistory = useBasename(createHistory)({
 export function render(container) {
     ReactDOM.render(
         <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
-            <Route path="/" component={App}>
-                <Route path="styleguide" component={Page}>
-                    <IndexRedirect to="/" />
-                </Route>
+            <Route path="/?" component={App}>
                 <IndexRedirect to="overview/introduction" />
                 <Route path="overview" component={Page}>
                     <IndexRedirect to="introduction" />
