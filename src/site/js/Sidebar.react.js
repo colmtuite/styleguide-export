@@ -15,6 +15,10 @@ export default class Sidebar extends React.Component {
         this.setState({ active: !this.state.active });
     }
 
+    clickNavigation = () => {
+        this.setState({ active: false });
+    }
+
     handleScroll(event) {
         let preventScroll = false;
         const node = this.refs.sidebar.getDOMNode();
@@ -98,7 +102,7 @@ export default class Sidebar extends React.Component {
                         </div>
                     </div>
 
-                    <Navigation />
+                    <Navigation onClickNavigation={this.clickNavigation} />
                 </div>
             </aside>
         );
