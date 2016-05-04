@@ -12,7 +12,7 @@ const menus = [
     }, {
         title: 'Design',
         items: [
-            { title: 'Colors', url: '/design/colors' },
+            { title: 'Color Scheme', url: '/design/color-scheme' },
             { title: 'Typography', url: '/design/typography' },
             { title: 'Animation', url: '/design/animation' },
             { title: 'Border Radius', url: '/design/border-radius' },

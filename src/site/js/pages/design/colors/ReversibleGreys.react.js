@@ -7,11 +7,11 @@ export default function ReversibleGreys() {
     return (
         <section className="marginBottom-m">
             <div className="marginBottom-m breakPointM-marginBottom-l">
-                <SectionTitle sectionTitle={"Reversible grays"} />
+                <SectionTitle sectionTitle={"Reversible greys"} />
 
                 <SectionDescription>
-                    The gray colors are reversible. Each light gray color has
-                    a complementary dark gray color. This helps keeping the colors
+                    The grey colors are reversible. Each light grey color has
+                    a complementary dark grey color. This helps keeping the colors
                     well balanced and also makes it easier to implement
                     light/dark themes. Good example of this is the Marvel editor,
                     which is implemented in the dark theme.

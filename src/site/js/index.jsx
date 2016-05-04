@@ -56,7 +56,7 @@ const browserHistory = useBasename(createHistory)({
 export function render(container) {
     ReactDOM.render(
         <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
-            <Route path="/?" component={App}>
+            <Route path="/" component={App}>
                 <IndexRedirect to="overview/introduction" />
                 <Route path="overview" component={Page}>
                     <IndexRedirect to="introduction" />
@@ -65,8 +65,8 @@ export function render(container) {
                 </Route>
 
                 <Route path="design" component={Page}>
-                    <IndexRedirect to="colors" />
-                    <Route path="colors" component={ColorScheme} />
+                    <IndexRedirect to="color-scheme" />
+                    <Route path="color-scheme" component={ColorScheme} />
                     <Route path="typography" component={Typography} />
                     <Route path="border-radius" component={BorderRadius} />
                     <Route path="box-shadow" component={BoxShadow} />

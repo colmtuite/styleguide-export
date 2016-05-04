@@ -14,7 +14,7 @@ export default function SnowBackgroundLink() {
                 <SectionTitle sectionTitle={"Snow background link"} />
 
                 <SectionDescription>
-                    This link receives a light gray background on hover.
+                    This link receives a light grey background on hover.
                     This link style is commonly used in popovers, modals and
                     navigation menus to provide a larger click area.
                 </SectionDescription>
