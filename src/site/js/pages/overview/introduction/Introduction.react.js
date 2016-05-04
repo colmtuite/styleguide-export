@@ -7,7 +7,7 @@ export default function Introduction() {
             <PageTitle title="Introduction" />
 
             <div className="marginBottom-xl">
-                <p className="c-slate lineHeight-xl fontSize-xl fontWeight-3">As Marvel continues to grow, both as a product and a company, one challenge we are faced with is learning how to refine the Marvel brand identity and apply it cohesively to each of our products. We created this styleguide to act as a central location where we house a live inventory of UI components, brand guidelines, brand assets, code snippets, developer guidelines and more. Anyone working on the Marvel product is encouraged to stay familiar with this styleguide and help ensure that it is kept up-to-date.</p>
+                <p className="c-slate lineHeight-xl fontSize-xl fontWeight-3">As <a href="http://www.marvelapp.com/" className="link link--blue" target="blank">Marvel</a> continues to grow, both as a product and a company, one challenge we are faced with is learning how to refine the Marvel brand identity and apply it cohesively to each of our products. We created this styleguide to act as a central location where we house a live inventory of UI components, brand guidelines, brand assets, code snippets, developer guidelines and more. Anyone working on the Marvel product is encouraged to stay familiar with this styleguide and help ensure that it is kept up-to-date.</p>
             </div>
 
             <div className="marginBottom-l">
