@@ -78,6 +78,8 @@ gulp.task('build:site', ['clean:site'], done => {
     });
 });
 
+gulp.task('build', ['build:css', 'build:site']);
+
 gulp.task('watch:css', () => {
     const sassGlob = path.join(paths.src, 'sass/**/*.scss');
     return gulp.watch(sassGlob, ['build:css']);

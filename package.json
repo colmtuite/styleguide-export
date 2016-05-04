@@ -5,6 +5,7 @@
   "main": "eyeglass-exports.js",
   "scripts": {
     "start": "gulp",
+    "build": "gulp build",
     "build:css": "gulp build:css",
     "build:site": "gulp build:site",
     "watch:css": "gulp watch:css",

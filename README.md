@@ -17,7 +17,7 @@ Add to your `package.json` dependencies like so:
 Then run `npm install`.
 
 *PROTIP: You can add a `#version` to the end to get a specific version
-`"https://github.com/marvelapp/styleguide#1.1.3"` would pull version `1.1.3`.*
+`"https://github.com/marvelapp/styleguide#1.1.12"` would pull version `1.1.12`.*
 
 ### With sass-eyeglass
 
@@ -74,19 +74,11 @@ Clone the repository then `npm install`.
 
 ### Development
 
-`npm start` command will start a development server on port 8080 (configurable via the `--port, -p` option, e.g., `npm start -- --port 6969`).
+`npm start` command will start a development server on port 9000 (configurable via the `--port, -p` option, e.g., `npm start -- --port 6969`).
 
 Open `http://localhost:8080` in your browser to preview it. Changes will be automatically reloaded.
 
 ### Release
 
-Execute the `npm run build:css` command to compile the CSS.  
-This should be done before all releases as some projects will just use the
-compiled CSS for convenience.
-
-### Deploying the site
-
-First execute `npm run build:site`. To build the site.
-Then execute `git subtree push --prefix dist/site origin gh-pages`.  
-
-**Note:** There is no reason to make manual edits to the `gh-pages` branch.
+Execute the `npm run build` command to compile the CSS and documentation site.  
+This should be done before all releases.
