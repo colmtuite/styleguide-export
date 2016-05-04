@@ -15,9 +15,9 @@ export default function Checkbox() {
                 <SectionTitle sectionTitle={"Checkbox"} />
 
                 <SectionDescription>
-                    Checkboxes come in two sizes which are applied with
-                    <InlineCode>.form-control--m</InlineCode> and
-                    <InlineCode>.form-control--s</InlineCode> on the
+                    Checkboxes come in two sizes which are applied with{' '}
+                    <InlineCode>.form-control--m</InlineCode> and{' '}
+                    <InlineCode>.form-control--s</InlineCode> on the{' '}
                     <InlineCode>.form-control</InlineCode> wrapper element.
                     Original implementation from <a className="link link--blue" href="http://wtfforms.com/" target="blank">WTF, forms?</a> by <a className="link link--blue" href="https://twitter.com/mdo" target="blank">@mdo</a>.
                 </SectionDescription>

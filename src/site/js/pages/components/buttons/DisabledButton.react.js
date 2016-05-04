@@ -15,7 +15,7 @@ export default function DisabledButton() {
                 <SectionTitle sectionTitle={"Disabled button"} />
 
                 <SectionDescription>
-                    Disabled buttons receive an <InlineCode>.is-disabled</InlineCode>
+                    Disabled buttons receive an <InlineCode>.is-disabled</InlineCode>{' '}
                     class and a <InlineCode>disabled</InlineCode> attribute.
                 </SectionDescription>
             </div>

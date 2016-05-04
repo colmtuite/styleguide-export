@@ -16,9 +16,9 @@ export default function PageWrap() {
 
                 <SectionDescription>
                     Page wrap is a wrapper for the whole page. There are 3
-                    different widths, defined by an additional class
-                    <InlineCode>.pageWrap--s</InlineCode>,
-                    <InlineCode>.pageWrap--m</InlineCode>,
+                    different widths, defined by an additional class{' '}
+                    <InlineCode>.pageWrap--s</InlineCode>,{' '}
+                    <InlineCode>.pageWrap--m</InlineCode>,{' '}
                     <InlineCode>.pageWrap--l</InlineCode>.
                 </SectionDescription>
             </div>

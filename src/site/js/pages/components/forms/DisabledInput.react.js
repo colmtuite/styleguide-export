@@ -15,7 +15,7 @@ export default function DisabledInput() {
                 <SectionTitle sectionTitle={"Disabled input"} />
 
                 <SectionDescription>
-                    Disabled inputs recieve an <InlineCode>is-disabled</InlineCode>
+                    Disabled inputs recieve an <InlineCode>is-disabled</InlineCode>{' '}
                     class and a <InlineCode>disabled</InlineCode> attribute.
                 </SectionDescription>
             </div>

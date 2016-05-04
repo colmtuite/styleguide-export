@@ -16,9 +16,9 @@ export default function GhostButtonReversed() {
                 <SectionDescription>
                     This is the reversed version of ghost buttons which is meant
                     to be used on dark backgrounds or reversed themes. The color
-                    options are specified with an additional class
-                    <InlineCode>.bg--marvel--hover</InlineCode>,
-                    <InlineCode>.bg--orange--hover</InlineCode>,
+                    options are specified with an additional class{' '}
+                    <InlineCode>.bg--marvel--hover</InlineCode>,{' '}
+                    <InlineCode>.bg--orange--hover</InlineCode>,{' '}
                     <InlineCode>.bg--negative--hover</InlineCode>, etc.
                 </SectionDescription>
             </div>

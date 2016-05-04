@@ -15,9 +15,9 @@ export default function ButtonSizes() {
                 <SectionTitle sectionTitle={"Button sizes"} />
 
                 <SectionDescription>
-                    Define a button size with <InlineCode>.button--xs</InlineCode>,
-                    <InlineCode>.button--s</InlineCode>, <InlineCode>.button--m</InlineCode>,
-                    <InlineCode>.button--l</InlineCode> or <InlineCode>.button--xl</InlineCode>.
+                    Define a button size with <InlineCode>.button--xs</InlineCode>,{' '}
+                    <InlineCode>.button--s</InlineCode>, <InlineCode>.button--m</InlineCode>,{' '}
+                    <InlineCode>.button--l</InlineCode> or <InlineCode>.button--xl</InlineCode>.{' '}
                     The default button size is <InlineCode>.button--m</InlineCode>.
                 </SectionDescription>
             </div>

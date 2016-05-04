@@ -15,14 +15,13 @@ export default function Spacing() {
                 <SectionTitle sectionTitle={"Uniform spacing"} />
 
                 <SectionDescription>
-                    Spacing can be applied using either margin or padding. Both
-                    <InlineCode>margin</InlineCode> and <InlineCode>padding</InlineCode>
-                      share the same predefined scale. There are 6 available spacing
-                      sizes;
-                    <InlineCode>.margin-xxs</InlineCode>, <InlineCode>.margin-xs</InlineCode>,
-                     <InlineCode>.margin-s</InlineCode>, <InlineCode>.margin-m</InlineCode>,
-                    <InlineCode>.margin-l</InlineCode> or <InlineCode>.margin-xl</InlineCode>.
-                        All classes have responsive options available.
+                    Spacing can be applied using either margin or padding. Both{' '}
+                    <InlineCode>margin</InlineCode> and <InlineCode>padding</InlineCode>{' '}
+                    share the same predefined scale. There are 6 available spacing
+                    sizes; <InlineCode>.margin-xxs</InlineCode>, <InlineCode>.margin-xs</InlineCode>,{' '}
+                    <InlineCode>.margin-s</InlineCode>, <InlineCode>.margin-m</InlineCode>,{' '}
+                    <InlineCode>.margin-l</InlineCode> or <InlineCode>.margin-xl</InlineCode>.{' '}
+                    All classes have responsive options available.
                 </SectionDescription>
             </div>
 

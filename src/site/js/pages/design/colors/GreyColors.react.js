@@ -15,7 +15,7 @@ export default function GreyColors() {
                 <SectionTitle sectionTitle={"Grey colors"} />
 
                 <SectionDescription>
-                    Gray colors are used for text, backgrounds, lines and borders. <InlineCode>Smoke</InlineCode> and <InlineCode>Snow</InlineCode> have two darker shades, which are used for icons and backgrounds.
+                    Grey colors are used for text, backgrounds, lines and borders. <InlineCode>Smoke</InlineCode> and <InlineCode>Snow</InlineCode> have two darker shades, which are used for icons and backgrounds.
                 </SectionDescription>
             </div>
 

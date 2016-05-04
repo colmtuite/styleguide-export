@@ -15,9 +15,9 @@ export default function TextareaWithIcon() {
                 <SectionTitle sectionTitle={"Textarea with icon"} />
 
                 <SectionDescription>
-                    Textareas with icons are wrapped in a parent component
+                    Textareas with icons are wrapped in a parent component{' '}
                     <InlineCode>.uiIcon</InlineCode> which has to have the textarea
-                    size applied to with an additional class. For example,
+                    size applied to with an additional class. For example,{' '}
                     <InlineCode>.textarea--m</InlineCode> will have a parent
                     element with a class <InlineCode>.uiIcon--m</InlineCode>.
                     The icon has to be placed straight after the input and

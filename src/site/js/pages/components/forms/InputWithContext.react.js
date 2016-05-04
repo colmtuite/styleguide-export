@@ -4,6 +4,7 @@ import SectionCode from '~/components/SectionCode.react';
 import SectionDescription from '~/components/SectionDescription.react';
 import SectionExample from '~/components/SectionExample.react';
 import SectionTitle from '~/components/SectionTitle.react';
+import InlineCode from '~/components/InlineCode.react';
 
 import { inputWithContextCode } from '~/components/CodeSnippets.js';
 
@@ -14,7 +15,9 @@ export default function InputWithContext() {
                 <SectionTitle sectionTitle={"Input with context"} />
 
                 <SectionDescription>
-                    Use a single class to define a size for your button.
+                    Sometimes there might be the need for pre-set context to inputs,
+                    for example when requesting a website &mdash; it should always start with{' '}
+                    <InlineCode>http://</InlineCode> or just <InlineCode>www</InlineCode>.
                 </SectionDescription>
             </div>
 

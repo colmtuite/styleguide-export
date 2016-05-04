@@ -15,11 +15,11 @@ export default function InputSizes() {
                 <SectionTitle sectionTitle={"Input sizes"} />
 
                 <SectionDescription>
-                    Input fields come in four sizes which can be applied with
-                    <InlineCode>.input--xl</InlineCode>,
-                    <InlineCode>.input--l</InlineCode>,
-                    <InlineCode>.input--m</InlineCode> and
-                    <InlineCode>.input--s</InlineCode> on the
+                    Input fields come in four sizes which can be applied with{' '}
+                    <InlineCode>.input--xl</InlineCode>,{' '}
+                    <InlineCode>.input--l</InlineCode>,{' '}
+                    <InlineCode>.input--m</InlineCode> and{' '}
+                    <InlineCode>.input--s</InlineCode> on the{' '}
                     <InlineCode>.input</InlineCode> component itself.
                 </SectionDescription>
             </div>

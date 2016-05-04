@@ -17,9 +17,9 @@ export default function OutlinedButton() {
                 <SectionDescription>
                     Outlined buttons are very similar to ghost buttons and are used on
                     light grey backgrounds where a button background has to be applied.
-                    The color options are specified with an additional class
-                    <InlineCode>.bg--marvel--hover</InlineCode>,
-                    <InlineCode>.bg--orange--hover</InlineCode>,
+                    The color options are specified with an additional class{' '}
+                    <InlineCode>.bg--marvel--hover</InlineCode>,{' '}
+                    <InlineCode>.bg--orange--hover</InlineCode>,{' '}
                     <InlineCode>.bg--negative--hover</InlineCode>, etc.
                 </SectionDescription>
             </div>

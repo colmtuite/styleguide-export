@@ -15,10 +15,10 @@ export default function AvatarSizes() {
                 <SectionTitle sectionTitle={"Avatar sizes"} />
 
                 <SectionDescription>
-                    Use size classes <InlineCode>.avatar--xs</InlineCode>,
-                    <InlineCode>.avatar--s</InlineCode>,
-                    <InlineCode>.avatar--m</InlineCode>,
-                    <InlineCode>.avatar--l</InlineCode>, or
+                    Use size classes <InlineCode>.avatar--xs</InlineCode>,{' '}
+                    <InlineCode>.avatar--s</InlineCode>,{' '}
+                    <InlineCode>.avatar--m</InlineCode>,{' '}
+                    <InlineCode>.avatar--l</InlineCode>, or{' '}
                     <InlineCode>.avatar--xl</InlineCode> to set the
                     appropriate size. The default size is medium.
                 </SectionDescription>

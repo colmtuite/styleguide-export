@@ -65,8 +65,8 @@ export function render(container) {
                 </Route>
 
                 <Route path="design" component={Page}>
-                    <IndexRedirect to="colors" />
-                    <Route path="colors" component={ColorScheme} />
+                    <IndexRedirect to="color-scheme" />
+                    <Route path="color-scheme" component={ColorScheme} />
                     <Route path="typography" component={Typography} />
                     <Route path="border-radius" component={BorderRadius} />
                     <Route path="box-shadow" component={BoxShadow} />
