@@ -1,4 +1,4 @@
 node_modules/
 .eyeglass_cache/
-
+.idea/
 npm-debug.log
