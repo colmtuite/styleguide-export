@@ -70,7 +70,7 @@ module.exports = {
     output: {
         filename: 'app.js',
         path: path.resolve(paths.dist, 'site', 'styleguide'),
-        publicPath: '/styleguide',
+        publicPath: '/styleguide/',
         libraryTarget: 'umd',
         library: 'marvelStyleguide',
     },
@@ -85,7 +85,12 @@ module.exports = {
             colors: true,
         },
         contentBase: path.resolve(paths.dist, 'site'),
-        historyApiFallback: true,
+        historyApiFallback: {
+            rewrites: [
+                { from: /\/styleguide\/app.js/, to: '/app.js' },
+                { from: /\/styleguide\/images\/(.*)/, to: context => `/images/${context.match[1]}` },
+            ],
+        },
         hot: true,
     },
 };
