@@ -8,7 +8,7 @@ const logoMax = 8;
 const logos = [];
 
 for (let i = 1; i <= logoMax; i++) {
-    const logo = `/images/logo-${i}.gif`;
+    const logo = `/styleguide/images/logo-${i}.gif`;
     logos.push(logo);
 }
 
