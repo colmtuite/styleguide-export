@@ -21,7 +21,7 @@ export default class PopoverSelect extends React.Component {
 
     render() {
         const { active } = this.state;
-        const togglePopoverClass = classNames('popover popover--top has-caret', { ['is-visible']: active });
+        const togglePopoverClass = classNames('popover popover--top has-caret textAlign-left', { ['is-visible']: active });
 
         return (
             <div className="display-inlineBlock position-relative">
