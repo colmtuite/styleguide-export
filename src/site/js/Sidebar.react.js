@@ -37,7 +37,7 @@ export default class Sidebar extends React.Component {
             <aside className={toggleClasses}>
                 <div
                     className="position-absolute width-20 breakPointM-display-none cursor-pointer"
-                    style={{ height: '80px', right: '-20%' }}
+                    style={{ height: '70px', right: '-20%' }}
                     onClick={this.click}>
                     <div
                         className="absolutelyCenter borderRadius-s"
@@ -61,7 +61,7 @@ export default class Sidebar extends React.Component {
                     <div className="posPinBL width-100 paddingBottom-l textAlign-center">
                         <div className="inline textAlign-center">
                             <div className="marginRight-m breakPointL-marginRight-l">
-                                <a href="https://github.com/marvelapp/styleguide" target="blank">
+                                <a href="https://github.com/marvelapp" target="blank">
                                     <svg
                                         className="fill-smoke--d fill-steel--hover scaleUp--hover cursor-pointer transitionDuration-m transitionTimingFunction-cb--scaleUp"
                                         width="32"
