@@ -10,6 +10,7 @@ export default class NavigationMenu extends React.Component {
 
     static propTypes = {
         title: React.PropTypes.string.isRequired,
+        onClickNavigation: React.PropTypes.func.isRequired,
         onToggleActive: React.PropTypes.func.isRequired,
         isActive: React.PropTypes.bool.isRequired,
         items: React.PropTypes.arrayOf(React.PropTypes.shape({
@@ -31,7 +32,7 @@ export default class NavigationMenu extends React.Component {
 
     render() {
         const { title, items } = this.props;
-        const menuItems = items.map((item, i) => <NavigationMenuItem title={item.title} url={item.url} disabled={item.disabled} key={i} />);
+        const menuItems = items.map((item, i) => <NavigationMenuItem title={item.title} url={item.url} disabled={item.disabled} key={i} onClickNavigation={this.props.onClickNavigation} />);
 
         return (
             <dl className="borderWidth-0 borderBottomWidth-1 borderStyle-solid borderColor-smoke">
@@ -75,6 +76,7 @@ function NavigationMenuItem(props) {
         title: React.PropTypes.string.isRequired,
         url: React.PropTypes.string.isRequired,
         disabled: React.PropTypes.bool,
+        onClickNavigation: React.PropTypes.func.isRequired,
     };
 
     let label;
@@ -90,7 +92,8 @@ function NavigationMenuItem(props) {
             <Link
                 activeClassName="is-active"
                 className={linkClass}
-                to={url}>
+                to={url}
+                onClick={props.onClickNavigation}>
                 {title}
             </Link>
             {label}

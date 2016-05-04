@@ -48,6 +48,10 @@ export default class Navigation extends React.Component {
         router: React.PropTypes.object,
     };
 
+    static propTypes = {
+        onClickNavigation: React.PropTypes.func.isRequired,
+    };
+
     constructor(props) {
         super(props);
 
@@ -83,7 +87,7 @@ export default class Navigation extends React.Component {
                         let activeState = title === this.state.openSection;
 
                         return (
-                            <NavigationMenu title={title} items={items} key={i} onToggleActive={this.toggleActive} isActive={activeState} />
+                            <NavigationMenu title={title} items={items} key={i} onToggleActive={this.toggleActive} isActive={activeState} onClickNavigation={this.props.onClickNavigation} />
                         );
                     })
                 }
