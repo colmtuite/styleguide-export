@@ -16,8 +16,8 @@ export default function FontWeight() {
 
                 <SectionDescription>
                     There are three font weights available to use &mdash; Blond,
-                    Regular and Medium. These can be applied with <InlineCode>.fontWeight-3</InlineCode>,
-                    <InlineCode>.fontWeight-4</InlineCode> and <InlineCode>.fontWeight-5</InlineCode>
+                    Regular and Medium. These can be applied with <InlineCode>.fontWeight-3</InlineCode>,{' '}
+                    <InlineCode>.fontWeight-4</InlineCode> and <InlineCode>.fontWeight-5</InlineCode>{' '}
                     respectively.
                 </SectionDescription>
             </div>

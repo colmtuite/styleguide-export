@@ -15,7 +15,7 @@ export default function OrderedList() {
                 <SectionTitle sectionTitle={"Ordered list"} />
 
                 <SectionDescription>
-                    Use <InlineCode>&lt;ol&gt;</InlineCode> with
+                    Use <InlineCode>&lt;ol&gt;</InlineCode> with{' '}
                     <InlineCode>list--ordered</InlineCode> when the list order
                     is relevant.
                 </SectionDescription>

@@ -17,7 +17,7 @@ export default function GridSize() {
                 <SectionDescription>
                     There are three grid size options to choose from, specified
                     by a class. The default is <InlineCode>.grid--m</InlineCode>,
-                    whereas <InlineCode>.grid--l</InlineCode> and
+                    whereas <InlineCode>.grid--l</InlineCode> and{' '}
                     <InlineCode>.grid--xl</InlineCode> are used mostly in the marketing site.
                 </SectionDescription>
             </div>

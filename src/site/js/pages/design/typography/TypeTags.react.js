@@ -15,9 +15,9 @@ export default function TypeTags() {
                 <SectionTitle sectionTitle={"Type tags"} />
 
                 <SectionDescription>
-                    Text can be set in a number of different html tags &mdash;
-                    <InlineCode>&lt;p&gt;</InlineCode>, <InlineCode>&lt;small&gt;</InlineCode>,
-                    <InlineCode>&lt;strong&gt;</InlineCode>, <InlineCode>&lt;time&gt;</InlineCode>,
+                    Text can be set in a number of different html tags &mdash;{' '}
+                    <InlineCode>&lt;p&gt;</InlineCode>, <InlineCode>&lt;small&gt;</InlineCode>,{' '}
+                    <InlineCode>&lt;strong&gt;</InlineCode>, <InlineCode>&lt;time&gt;</InlineCode>,{' '}
                     etc. Each tag communicates a different semantic meaning but
                     tags don't carry any aesthetic value. To order the appearance
                     of a string of text, add additional classes for font size or

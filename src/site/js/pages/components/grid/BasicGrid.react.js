@@ -16,12 +16,12 @@ export default function BasicGrid() {
 
                 <SectionDescription>
                     We use grids exclusively for layouts which require a number
-                    of columns of equal width. Grids can have 1-6 columns,
-                    specified by a class <InlineCode>.grid--1</InlineCode>,
-                    <InlineCode>.grid--2</InlineCode>, <InlineCode>.grid--3</InlineCode>,
+                    of columns of equal width. Grids can have 1-6 columns,{' '}
+                    specified by a class <InlineCode>.grid--1</InlineCode>,{' '}
+                    <InlineCode>.grid--2</InlineCode>, <InlineCode>.grid--3</InlineCode>,{' '}
                     <InlineCode>.grid--4</InlineCode>, <InlineCode>.grid--5</InlineCode>
                     or <InlineCode>.grid--6</InlineCode>. There are also two special case
-                    grids with uneven widths which can be initialized by using classes
+                    grids with uneven widths which can be initialized by using classes{' '}
                     <InlineCode>.grid--6-4</InlineCode> and <InlineCode>.grid--7-3</InlineCode>.
                 </SectionDescription>
             </div>

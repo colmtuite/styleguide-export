@@ -15,11 +15,11 @@ export default function SelectMenu() {
                 <SectionTitle sectionTitle={"Select menu"} />
 
                 <SectionDescription>
-                    Select menus come in fours sizes which are applied with
-                    <InlineCode>.select--xl</InlineCode>,
-                    <InlineCode>.select--l</InlineCode>,
-                    <InlineCode>.select--m</InlineCode> and
-                    <InlineCode>.select--s</InlineCode> on the
+                    Select menus come in fours sizes which are applied with{' '}
+                    <InlineCode>.select--xl</InlineCode>,{' '}
+                    <InlineCode>.select--l</InlineCode>,{' '}
+                    <InlineCode>.select--m</InlineCode> and{' '}
+                    <InlineCode>.select--s</InlineCode> on the{' '}
                     <InlineCode>.select</InlineCode> wrapper component.
                 </SectionDescription>
             </div>

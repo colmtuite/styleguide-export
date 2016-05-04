@@ -18,7 +18,7 @@ export default function PopoverList() {
 
                 <SectionDescription>
                     A simple popout menu with links, possibly used for header
-                    nav menus, filters etc. Add an optional element
+                    nav menus, filters etc. Add an optional element{' '}
                     <InlineCode>.popover-separator</InlineCode> as a separator
                     between popover list elements.
                 </SectionDescription>

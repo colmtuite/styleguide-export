@@ -23,10 +23,10 @@ export default function Modals() {
 
                     <SectionDescription>
                         There are two modal sizes which can be triggered with
-                        classes <InlineCode>.modal--s</InlineCode> and
+                        classes <InlineCode>.modal--s</InlineCode> and{' '}
                         <InlineCode>.modal--s</InlineCode>. All modals should
-                        be placed in a wrapper component that has classes
-                        <InlineCode>.modal-overlay</InlineCode> and
+                        be placed in a wrapper component that has classes{' '}
+                        <InlineCode>.modal-overlay</InlineCode> and{' '}
                         <InlineCode>.zi-overlay</InlineCode>.
                     </SectionDescription>
                 </div>

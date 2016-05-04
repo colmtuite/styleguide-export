@@ -17,7 +17,7 @@ export default function FlatButton() {
                 <SectionDescription>
                     Flat buttons should be used to signify necessary or mandatory
                     actions. There are two color options, specified with an
-                    additional class <InlineCode>.bg--marvel</InlineCode> or
+                    additional class <InlineCode>.bg--marvel</InlineCode> or{' '}
                     <InlineCode>.bg--positive</InlineCode>.
                 </SectionDescription>
             </div>

@@ -38,7 +38,7 @@ export default class NavigationMenu extends React.Component {
                 <dt
                     onClick={this.toggleActive}
                     className="position-relative">
-                    <span className="link link--dark display-block padding-m fontSize-xl cursor-pointer">
+                    <span className="link link--dark display-block padding-s fontSize-xl cursor-pointer">
                         <span className="display-block padding-xs userSelect-none">
                             {title}
                         </span>

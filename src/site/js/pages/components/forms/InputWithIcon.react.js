@@ -15,9 +15,9 @@ export default function InputSizes() {
                 <SectionTitle sectionTitle={"Input with icon"} />
 
                 <SectionDescription>
-                    Inputs with icons are wrapped in a parent component
+                    Inputs with icons are wrapped in a parent component{' '}
                     <InlineCode>.uiIcon</InlineCode> which has to have the input
-                    size applied to with an additional class. For example,
+                    size applied to with an additional class. For example,{' '}
                     <InlineCode>.input--m</InlineCode> will have a parent
                     element with a class <InlineCode>.uiIcon--m</InlineCode>.
                     The icon has to be placed straight after the input and

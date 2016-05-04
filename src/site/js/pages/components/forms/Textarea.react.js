@@ -15,13 +15,13 @@ export default function Textarea() {
                 <SectionTitle sectionTitle={"Textarea"} />
 
                 <SectionDescription>
-                    Textareas come in four sizes which can be applied with
-                    <InlineCode>.textarea--xl</InlineCode>,
-                    <InlineCode>.textarea--l</InlineCode>,
-                    <InlineCode>.textarea--m</InlineCode> and
-                    <InlineCode>.textarea--s</InlineCode> on the
+                    Textareas come in four sizes which can be applied with{' '}
+                    <InlineCode>.textarea--xl</InlineCode>,{' '}
+                    <InlineCode>.textarea--l</InlineCode>,{' '}
+                    <InlineCode>.textarea--m</InlineCode> and{' '}
+                    <InlineCode>.textarea--s</InlineCode> on the{' '}
                     <InlineCode>.textarea</InlineCode> component itself.
-                    There is currently only one style which can be applied with
+                    There is currently only one style which can be applied with{' '}
                     <InlineCode>.textarea--default</InlineCode>.
                 </SectionDescription>
             </div>

@@ -15,7 +15,7 @@ export default function UnorderedList() {
                 <SectionTitle sectionTitle={"Unordered list"} />
 
                 <SectionDescription>
-                    Use <InlineCode>&lt;ul&gt;</InlineCode> with
+                    Use <InlineCode>&lt;ul&gt;</InlineCode> with{' '}
                     <InlineCode>list--unordered</InlineCode> when the list
                     order is irrelevant.
                 </SectionDescription>
