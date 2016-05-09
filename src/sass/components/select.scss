@@ -11,31 +11,38 @@ $dropdown-s: 18px;
 // -------------------------
 
 .select {
-    box-shadow: none;
     width: 100%;
+    height: auto;
+    display: inline-block;
+    position: relative;
     top: auto;
     right: auto;
     z-index: auto;
-    position: relative;
-    text-align: initial;
-    display: inline-block;
+
+    box-shadow: none;
     cursor: default;
-    height: auto;
     border-radius: 0;
-    transition: none;
+
     text-indent: 0;
+    text-align: initial;
     font-weight: 300;
+
+    transition-duration: 80ms;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
 }
 
 .select:after {
-    background: none;
-    background-size: auto;
     width: auto;
     height: auto;
+    background: none;
+    background-size: auto;
+
     position: absolute;
     top: 0;
     right: 0;
     content: '';
+
     transition: none;
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -58,10 +65,6 @@ $dropdown-s: 18px;
     @extend .outlineStyle-none;
     @extend .borderWidth-0;
     @extend .cursor-pointer;
-
-    @extend .transitionDuration-s;
-    @extend .transitionProperty-all;
-    @extend .transitionTimingFunction-ease-in-out;
 }
 
 // Select menu styles
