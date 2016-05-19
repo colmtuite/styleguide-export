@@ -43,6 +43,7 @@ import Popovers from '~/pages/components/popovers/Popovers.react';
 // Utility pages
 // -------------------------
 
+import AspectRatio from '~/pages/utility/aspect-ratio/AspectRatio.react';
 import CenterElements from '~/pages/utility/center-elements/CenterElements.react';
 import HideElements from '~/pages/utility/hide-elements/HideElements.react';
 import Layout from '~/pages/utility/layout/Layout.react';
@@ -88,7 +89,8 @@ export function render(container) {
                 </Route>
 
                 <Route path="utility" component={Page}>
-                    <IndexRedirect to="layout" />
+                    <IndexRedirect to="aspect-ratio" />
+                    <Route path="aspect-ratio" component={AspectRatio} />
                     <Route path="layout" component={Layout} />
                     <Route path="hide-elements" component={HideElements} />
                     <Route path="center-elements" component={CenterElements} />

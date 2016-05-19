@@ -18,7 +18,17 @@
     outline-offset: 3px;
 }
 
-// General link styles
+// Underline
+// -------------------------
+
+.link--underline {
+    @extend .backgroundRepeat-repeatX;
+
+    background-size: 2px 2px;
+    background-position: 0 24px;
+}
+
+// Light link
 // -------------------------
 
 .link--light {
@@ -31,6 +41,17 @@
     @extend .c-blue--d--hover;
 }
 
+.link--light.link--underline {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, $silver 50%);
+}
+
+.link--light.is-active.link--underline {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, $marvel 50%);
+}
+
+// Light link (reversed)
+// -------------------------
+
 .link--lightReversed {
     @extend .c-silver;
     @extend .c-white--hover;
@@ -41,10 +62,28 @@
     @extend .c-white--hover;
 }
 
+.link--lightReversed.link--underline {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, $silver 50%);
+}
+
+.link--lightReversed.is-active.link--underline {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, $white 50%);
+}
+
+// Dark link
+// -------------------------
+
 .link--dark {
     @extend .c-slate;
     @extend .c-black--hover;
 }
+
+.link--dark.link--underline {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, $slate 50%);
+}
+
+// Negative link
+// -------------------------
 
 .link--negative {
     @extend .c-silver;

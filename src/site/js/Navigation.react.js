@@ -35,6 +35,7 @@ const menus = [
     }, {
         title: 'Utility',
         items: [
+            { title: 'Aspect ratio', url: '/utility/aspect-ratio' },
             { title: 'Center elements', url: '/utility/center-elements' },
             { title: 'Hide elements', url: '/utility/hide-elements' },
             { title: 'Layout', url: '/utility/layout' },
