@@ -366,11 +366,16 @@ export const checkboxCode = `<label className="form-control checkbox">
 
 export const blueLinkCode = '<a class="link link--blue" href="#">...</a>';
 
+export const darkLinkCode = '<a class="link link--dark" href="#">...</a>';
+
 export const lightLinkCode = '<a class="link link--light" href="#">...</a>';
 
 export const lightLinkReversedCode = '<a class="link link--lightReversed" href="#">...</a>';
 
 export const negativeLinkCode = '<a class="link link--negative" href="#">Negative link</a>';
+
+export const underlinedLinkCode = `<a class="link link--light link--underline" href="#">...</a>
+<a class="link link--dark link--underline" href="#">...</a>`;
 
 export const snowBackgroundLinkCode = '<a class="padding-s link link--snowBg" href="#">...</a>';
 
@@ -676,3 +681,23 @@ export const responsiveClassesCode = `/* stylePropertyName-valueName */
 .breakPointM-float-left  { float: left; }
 .breakPointL-float-left  { float: left; }
 .breakPointXL-float-left { float: left; }`;
+
+//
+// Aspect ratio
+// -------------------------
+
+export const aspectRatio100Code = `<div class="aspectRatio aspectRatio--100">
+    <div class="aspectRatio-content">...</div>
+</div>`;
+
+export const aspectRatio75Code = `<div class="aspectRatio aspectRatio--75">
+    <div class="aspectRatio-content">...</div>
+</div>`;
+
+export const aspectRatio60Code = `<div class="aspectRatio aspectRatio--60">
+    <div class="aspectRatio-content">...</div>
+</div>`;
+
+export const aspectRatio169Code = `<div class="aspectRatio aspectRatio--16-9">
+    <div class="aspectRatio-content">...</div>
+</div>`;
