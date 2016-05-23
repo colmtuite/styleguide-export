@@ -25,7 +25,7 @@
     @extend .backgroundRepeat-repeatX;
 
     background-size: 2px 2px;
-    background-position: 0 24px;
+    background-position: 0 23px;
 }
 
 // Light link
@@ -49,6 +49,18 @@
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, $marvel 50%);
 }
 
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .link--light.link--underline {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 75%, $silver 75%);
+    }
+
+    .link--light.is-active.link--underline {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 75%, $marvel 75%);
+    }
+}
+
 // Light link (reversed)
 // -------------------------
 
@@ -70,6 +82,18 @@
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, $white 50%);
 }
 
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .link--lightReversed.link--underline {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 75%, $silver 75%);
+    }
+
+    .link--lightReversed.is-active.link--underline {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 75%, $white 75%);
+    }
+}
+
 // Dark link
 // -------------------------
 
@@ -80,6 +104,14 @@
 
 .link--dark.link--underline {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, $slate 50%);
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .link--dark.link--underline {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 75%, $slate 75%);
+    }
 }
 
 // Negative link
