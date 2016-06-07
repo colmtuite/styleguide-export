@@ -1,7 +1,7 @@
 # Marvel styleguide
 
 Base styling for Marvelapp projects.  
-See [marvelapp.github.io/styleguide/](http://marvelapp.github.io/styleguide/) for documentation and usage.
+See [https://marvelapp.com/styleguide](https://marvelapp.com/styleguide) for documentation and usage.
 
 ## Importing marvel styleguide into your projects
 
