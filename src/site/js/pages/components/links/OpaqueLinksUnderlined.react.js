@@ -10,18 +10,18 @@ export default function OpaqueLinksUnderlined() {
     return (
         <section className="marginBottom-xl">
             <div className="marginBottom-m breakPointM-marginBottom-l">
-                <SectionTitle sectionTitle={ "Opaque link" } />
+                <SectionTitle sectionTitle={ "Opaque underlined link" } />
 
                 <SectionDescription>
-                    To be used on dark backgrounds that are not part of the
+                    Mainly for the marketing and blog pages. To be used on dark backgrounds that are not part of the
                     Marvel color scheme.
                 </SectionDescription>
             </div>
 
-            <div className="inline padding-m textAlign-center breakPointM-textAlign-left bg-steel borderRadiusTop-m">
+            <div className="inline padding-s textAlign-center breakPointM-textAlign-left bg-steel borderRadiusTop-m">
                 <div className="marginRight-m">
                     <a
-                        className="link link--opaque link--underline fontSize-m"
+                        className="link link--opaque link--underline fontSize-m lineHeight-m display-inlineBlock"
                         href="#">
                         Opaque link
                     </a>
@@ -29,7 +29,7 @@ export default function OpaqueLinksUnderlined() {
 
                 <div>
                     <a
-                        className="link link--opaqueReversed link--underline fontSize-m"
+                        className="link link--opaqueReversed link--underline fontSize-m lineHeight-m display-inlineBlock"
                         href="#">
                         Opaque link reversed
                     </a>

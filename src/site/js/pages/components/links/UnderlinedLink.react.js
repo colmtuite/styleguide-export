@@ -23,11 +23,11 @@ export default function UnderlinedLink() {
             </div>
 
             <SectionExample>
-                <div className="padding-m textAlign-center breakPointM-textAlign-left">
+                <div className="padding-s textAlign-center breakPointM-textAlign-left">
                     <div className="inline">
                         <div className="marginRight-m">
                             <a
-                                className="link link--light link--underline fontSize-m display-inlineBlock"
+                                className="link link--light link--underline fontSize-m lineHeight-m display-inlineBlock"
                                 href="#">
                                 Light underlined link
                             </a>
@@ -35,7 +35,7 @@ export default function UnderlinedLink() {
 
                         <div className="marginRight-m">
                             <a
-                                className="link link--dark link--underline fontSize-m display-inlineBlock"
+                                className="link link--dark link--underline fontSize-m lineHeight-m display-inlineBlock"
                                 href="#">
                                 Dark underlined link
                             </a>
