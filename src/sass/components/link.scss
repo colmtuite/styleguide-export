@@ -170,10 +170,34 @@
     @extend .c-white--hover;
 }
 
+.link--opaque.link--underline {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, $white 50%);
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .link--opaque.link--underline {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 75%, $white 75%);
+    }
+}
+
 .link--opaqueReversed {
     @extend .c-white;
     @extend .opacity-100;
     @extend .opacity-60--hover;
+}
+
+.link--opaqueReversed.link--underline {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, $white 50%);
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .link--opaqueReversed.link--underline {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 75%, $white 75%);
+    }
 }
 
 // Background link styles
