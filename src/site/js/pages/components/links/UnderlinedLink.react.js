@@ -23,7 +23,7 @@ export default function UnderlinedLink() {
             </div>
 
             <SectionExample>
-                <div className="padding-m textAlign-center breakPointM-textAlign-left">
+                <div className="padding-s textAlign-center breakPointM-textAlign-left">
                     <div className="inline">
                         <div className="marginRight-m">
                             <a
