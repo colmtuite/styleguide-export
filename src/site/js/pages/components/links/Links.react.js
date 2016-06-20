@@ -8,6 +8,8 @@ import LightLinkReversed from '~/pages/components/links/LightLinkReversed.react'
 import NegativeLink from '~/pages/components/links/NegativeLink.react';
 import PageTitle from '~/components/PageTitle.react';
 import SnowBackgroundLink from '~/pages/components/links/SnowBackgroundLink.react';
+import OpaqueLinks from '~/pages/components/links/OpaqueLinks.react';
+import OpaqueLinksUnderlined from '~/pages/components/links/OpaqueLinksUnderlined.react';
 import UnderlinedLink from '~/pages/components/links/UnderlinedLink.react';
 
 export default function Links() {
@@ -20,6 +22,8 @@ export default function Links() {
             <LightLinkReversed />
             <NegativeLink />
             <UnderlinedLink />
+            <OpaqueLinks />
+            <OpaqueLinksUnderlined />
             <SnowBackgroundLink />
             <ColourfulLinks />
         </div>

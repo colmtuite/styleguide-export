@@ -377,6 +377,12 @@ export const negativeLinkCode = '<a class="link link--negative" href="#">Negativ
 export const underlinedLinkCode = `<a class="link link--light link--underline" href="#">...</a>
 <a class="link link--dark link--underline" href="#">...</a>`;
 
+export const opaqueLinks = `<a class="link link--opaque" href="#">...</a>
+<a class="link link--opaqueReversed" href="#">...</a>`;
+
+export const opaqueLinksUnderlined = `<a class="link link--underline link--opaque" href="#">...</a>
+<a class="link link--underline link--opaqueReversed" href="#">...</a>`;
+
 export const snowBackgroundLinkCode = '<a class="padding-s link link--snowBg" href="#">...</a>';
 
 export const colourfulLinksCode = `<a class="link link--blue" href="#">...</a>
