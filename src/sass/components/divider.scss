@@ -1,12 +1,13 @@
+//
 // Divider with text
 // -------------------------
 
-.divider {
+.divider-with-text {
     @extend .position-relative;
 }
 
-.divider:before,
-.divider:after {
+.divider-with-text:before,
+.divider-with-text:after {
     @extend .bg-smoke;
     @extend .position-absolute;
 
@@ -15,45 +16,45 @@
     top: 50%;
 }
 
-.divider--mobile:before,
-.divider--mobile:after {
+.divider-with-text--mobile:before,
+.divider-with-text--mobile:after {
     width: 30px;
 }
 
-.divider--mobile:before {
+.divider-with-text--mobile:before {
     left: -40px;
 }
 
-.divider--mobile:after {
+.divider-with-text--mobile:after {
     right: -40px;
 }
 
 @include breakPoint(s) {
-    .divider:before,
-    .divider:after {
+    .divider-with-text:before,
+    .divider-with-text:after {
         width: 30px;
     }
 
-    .divider:before {
+    .divider-with-text:before {
         left: -40px;
     }
 
-    .divider:after {
+    .divider-with-text:after {
         right: -40px;
     }
 }
 
 @include breakPoint(m) {
-    .divider:before,
-    .divider:after {
+    .divider-with-text:before,
+    .divider-with-text:after {
         width: 50px;
     }
 
-    .divider:before {
+    .divider-with-text:before {
         left: -70px;
     }
 
-    .divider:after {
+    .divider-with-text:after {
         right: -70px;
     }
 }

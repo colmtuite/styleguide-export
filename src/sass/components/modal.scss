@@ -8,7 +8,8 @@
     @extend .cf;
 
     transform: scale(0.5);
-    opacity: 0; visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
 
     @extend .transformStyle-preserve3d;
     @extend .transitionDuration-l;
@@ -287,7 +288,7 @@ $modal-icon-size--m: 40px;
 
   	@extend .bg-white--translucent;
   	@extend .zi-overlay;
-    @extend .overflowY-scroll;
+    @extend .overflowY-auto;
 }
 
 .modal-container {
