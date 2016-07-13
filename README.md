@@ -82,3 +82,4 @@ Open `http://localhost:8080` in your browser to preview it. Changes will be auto
 
 Execute the `npm run build` command to compile the CSS and documentation site.  
 This should be done before all releases.
+# styleguide-demo
